@@ -1,0 +1,2526 @@
+{
+  "CONTACT.Pre-A1.s1": {
+    "new_ids": [
+      "CONTACT.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.Pre-A1.s2": {
+    "new_ids": [
+      "CONTACT.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.Pre-A1.s3": {
+    "new_ids": [
+      "CONTACT.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A1.s1": {
+    "new_ids": [
+      "CONTACT.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A1.s2": {
+    "new_ids": [
+      "CONTACT.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A1.s3": {
+    "new_ids": [
+      "CONTACT.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A2.s1": {
+    "new_ids": [
+      "CONTACT.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A2.s2": {
+    "new_ids": [
+      "CONTACT.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.A2.s3": {
+    "new_ids": [
+      "CONTACT.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B1.s1": {
+    "new_ids": [
+      "CONTACT.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B1.s2": {
+    "new_ids": [
+      "CONTACT.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B1.s3": {
+    "new_ids": [
+      "CONTACT.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B2.s1": {
+    "new_ids": [
+      "CONTACT.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B2.s2": {
+    "new_ids": [
+      "CONTACT.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.B2.s3": {
+    "new_ids": [
+      "CONTACT.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C1.s1": {
+    "new_ids": [
+      "CONTACT.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C1.s2": {
+    "new_ids": [
+      "CONTACT.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C1.s3": {
+    "new_ids": [
+      "CONTACT.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C2.s1": {
+    "new_ids": [
+      "CONTACT.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C2.s2": {
+    "new_ids": [
+      "CONTACT.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "CONTACT.C2.s3": {
+    "new_ids": [
+      "CONTACT.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.Pre-A1.s1": {
+    "new_ids": [
+      "INFO.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.Pre-A1.s2": {
+    "new_ids": [
+      "INFO.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.Pre-A1.s3": {
+    "new_ids": [
+      "INFO.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A1.s1": {
+    "new_ids": [
+      "INFO.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A1.s2": {
+    "new_ids": [
+      "INFO.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A1.s3": {
+    "new_ids": [
+      "INFO.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A2.s1": {
+    "new_ids": [
+      "INFO.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A2.s2": {
+    "new_ids": [
+      "INFO.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.A2.s3": {
+    "new_ids": [
+      "INFO.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B1.s1": {
+    "new_ids": [
+      "INFO.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B1.s2": {
+    "new_ids": [
+      "INFO.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B1.s3": {
+    "new_ids": [
+      "INFO.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B2.s1": {
+    "new_ids": [
+      "INFO.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B2.s2": {
+    "new_ids": [
+      "INFO.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.B2.s3": {
+    "new_ids": [
+      "INFO.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C1.s1": {
+    "new_ids": [
+      "INFO.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C1.s2": {
+    "new_ids": [
+      "INFO.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C1.s3": {
+    "new_ids": [
+      "INFO.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C2.s1": {
+    "new_ids": [
+      "INFO.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C2.s2": {
+    "new_ids": [
+      "INFO.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "INFO.C2.s3": {
+    "new_ids": [
+      "INFO.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.Pre-A1.s1": {
+    "new_ids": [
+      "DESCRIBE.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.Pre-A1.s2": {
+    "new_ids": [
+      "DESCRIBE.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.Pre-A1.s3": {
+    "new_ids": [
+      "DESCRIBE.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A1.s1": {
+    "new_ids": [
+      "DESCRIBE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A1.s2": {
+    "new_ids": [
+      "DESCRIBE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A1.s3": {
+    "new_ids": [
+      "DESCRIBE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A2.s1": {
+    "new_ids": [
+      "DESCRIBE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A2.s2": {
+    "new_ids": [
+      "DESCRIBE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.A2.s3": {
+    "new_ids": [
+      "DESCRIBE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B1.s1": {
+    "new_ids": [
+      "DESCRIBE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B1.s2": {
+    "new_ids": [
+      "DESCRIBE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B1.s3": {
+    "new_ids": [
+      "DESCRIBE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B2.s1": {
+    "new_ids": [
+      "DESCRIBE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B2.s2": {
+    "new_ids": [
+      "DESCRIBE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.B2.s3": {
+    "new_ids": [
+      "DESCRIBE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C1.s1": {
+    "new_ids": [
+      "DESCRIBE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C1.s2": {
+    "new_ids": [
+      "DESCRIBE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C1.s3": {
+    "new_ids": [
+      "DESCRIBE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C2.s1": {
+    "new_ids": [
+      "DESCRIBE.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C2.s2": {
+    "new_ids": [
+      "DESCRIBE.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DESCRIBE.C2.s3": {
+    "new_ids": [
+      "DESCRIBE.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.Pre-A1.s1": {
+    "new_ids": [
+      "NEEDS.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.Pre-A1.s2": {
+    "new_ids": [
+      "NEEDS.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.Pre-A1.s3": {
+    "new_ids": [
+      "NEEDS.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A1.s1": {
+    "new_ids": [
+      "NEEDS.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A1.s2": {
+    "new_ids": [
+      "NEEDS.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A1.s3": {
+    "new_ids": [
+      "NEEDS.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A2.s1": {
+    "new_ids": [
+      "NEEDS.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A2.s2": {
+    "new_ids": [
+      "NEEDS.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.A2.s3": {
+    "new_ids": [
+      "NEEDS.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B1.s1": {
+    "new_ids": [
+      "NEEDS.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B1.s2": {
+    "new_ids": [
+      "NEEDS.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B1.s3": {
+    "new_ids": [
+      "NEEDS.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B2.s1": {
+    "new_ids": [
+      "NEEDS.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B2.s2": {
+    "new_ids": [
+      "NEEDS.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.B2.s3": {
+    "new_ids": [
+      "NEEDS.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C1.s1": {
+    "new_ids": [
+      "NEEDS.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C1.s2": {
+    "new_ids": [
+      "NEEDS.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C1.s3": {
+    "new_ids": [
+      "NEEDS.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C2.s1": {
+    "new_ids": [
+      "NEEDS.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C2.s2": {
+    "new_ids": [
+      "NEEDS.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "NEEDS.C2.s3": {
+    "new_ids": [
+      "NEEDS.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A1.s1": {
+    "new_ids": [
+      "STORY.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A1.s2": {
+    "new_ids": [
+      "STORY.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A1.s3": {
+    "new_ids": [
+      "STORY.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A2.s1": {
+    "new_ids": [
+      "STORY.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A2.s2": {
+    "new_ids": [
+      "STORY.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.A2.s3": {
+    "new_ids": [
+      "STORY.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B1.s1": {
+    "new_ids": [
+      "STORY.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B1.s2": {
+    "new_ids": [
+      "STORY.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B1.s3": {
+    "new_ids": [
+      "STORY.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B2.s1": {
+    "new_ids": [
+      "STORY.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B2.s2": {
+    "new_ids": [
+      "STORY.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.B2.s3": {
+    "new_ids": [
+      "STORY.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C1.s1": {
+    "new_ids": [
+      "STORY.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C1.s2": {
+    "new_ids": [
+      "STORY.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C1.s3": {
+    "new_ids": [
+      "STORY.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C2.s1": {
+    "new_ids": [
+      "STORY.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C2.s2": {
+    "new_ids": [
+      "STORY.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STORY.C2.s3": {
+    "new_ids": [
+      "STORY.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A1.s1": {
+    "new_ids": [
+      "EXPLAIN.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A1.s2": {
+    "new_ids": [
+      "EXPLAIN.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A1.s3": {
+    "new_ids": [
+      "EXPLAIN.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A2.s1": {
+    "new_ids": [
+      "EXPLAIN.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A2.s2": {
+    "new_ids": [
+      "EXPLAIN.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.A2.s3": {
+    "new_ids": [
+      "EXPLAIN.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B1.s1": {
+    "new_ids": [
+      "EXPLAIN.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B1.s2": {
+    "new_ids": [
+      "EXPLAIN.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B1.s3": {
+    "new_ids": [
+      "EXPLAIN.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B2.s1": {
+    "new_ids": [
+      "EXPLAIN.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B2.s2": {
+    "new_ids": [
+      "EXPLAIN.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.B2.s3": {
+    "new_ids": [
+      "EXPLAIN.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C1.s1": {
+    "new_ids": [
+      "EXPLAIN.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C1.s2": {
+    "new_ids": [
+      "EXPLAIN.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C1.s3": {
+    "new_ids": [
+      "EXPLAIN.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C2.s1": {
+    "new_ids": [
+      "EXPLAIN.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C2.s2": {
+    "new_ids": [
+      "EXPLAIN.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "EXPLAIN.C2.s3": {
+    "new_ids": [
+      "EXPLAIN.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.Pre-A1.s1": {
+    "new_ids": [
+      "REQUEST.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.Pre-A1.s2": {
+    "new_ids": [
+      "REQUEST.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.Pre-A1.s3": {
+    "new_ids": [
+      "REQUEST.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.A1.s1": {
+    "new_ids": [
+      "REQUEST.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.A1.s2": {
+    "new_ids": [
+      "REQUEST.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.A1.s3": {
+    "new_ids": [
+      "REQUEST.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.A2.s1": {
+    "new_ids": [
+      "REQUEST.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.A2.s2": {
+    "new_ids": [
+      "REQUEST.A2.s2.accept",
+      "REQUEST.A2.s2.decline"
+    ],
+    "evidence_transfer": "原复合目标的总成功标记不能自动分给拆分后的子目标；需依据旧音频核查各沟通动作"
+  },
+  "REQUEST.A2.s3": {
+    "new_ids": [
+      "REQUEST.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B1.s1": {
+    "new_ids": [
+      "REQUEST.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B1.s2": {
+    "new_ids": [
+      "REQUEST.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B1.s3": {
+    "new_ids": [
+      "REQUEST.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B2.s1": {
+    "new_ids": [
+      "REQUEST.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B2.s2": {
+    "new_ids": [
+      "REQUEST.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.B2.s3": {
+    "new_ids": [
+      "REQUEST.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C1.s1": {
+    "new_ids": [
+      "REQUEST.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C1.s2": {
+    "new_ids": [
+      "REQUEST.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C1.s3": {
+    "new_ids": [
+      "REQUEST.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C2.s1": {
+    "new_ids": [
+      "REQUEST.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C2.s2": {
+    "new_ids": [
+      "REQUEST.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REQUEST.C2.s3": {
+    "new_ids": [
+      "REQUEST.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A1.s1": {
+    "new_ids": [
+      "ARRANGE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A1.s2": {
+    "new_ids": [
+      "ARRANGE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A1.s3": {
+    "new_ids": [
+      "ARRANGE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A2.s1": {
+    "new_ids": [
+      "ARRANGE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A2.s2": {
+    "new_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.A2.s3": {
+    "new_ids": [
+      "ARRANGE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B1.s1": {
+    "new_ids": [
+      "ARRANGE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B1.s2": {
+    "new_ids": [
+      "ARRANGE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B1.s3": {
+    "new_ids": [
+      "ARRANGE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B2.s1": {
+    "new_ids": [
+      "ARRANGE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B2.s2": {
+    "new_ids": [
+      "ARRANGE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.B2.s3": {
+    "new_ids": [
+      "ARRANGE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C1.s1": {
+    "new_ids": [
+      "ARRANGE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C1.s2": {
+    "new_ids": [
+      "ARRANGE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C1.s3": {
+    "new_ids": [
+      "ARRANGE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C2.s1": {
+    "new_ids": [
+      "ARRANGE.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C2.s2": {
+    "new_ids": [
+      "ARRANGE.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "ARRANGE.C2.s3": {
+    "new_ids": [
+      "ARRANGE.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.Pre-A1.s1": {
+    "new_ids": [
+      "SERVICE.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.Pre-A1.s2": {
+    "new_ids": [
+      "SERVICE.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.Pre-A1.s3": {
+    "new_ids": [
+      "SERVICE.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A1.s1": {
+    "new_ids": [
+      "SERVICE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A1.s2": {
+    "new_ids": [
+      "SERVICE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A1.s3": {
+    "new_ids": [
+      "SERVICE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A2.s1": {
+    "new_ids": [
+      "SERVICE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A2.s2": {
+    "new_ids": [
+      "SERVICE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.A2.s3": {
+    "new_ids": [
+      "SERVICE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B1.s1": {
+    "new_ids": [
+      "SERVICE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B1.s2": {
+    "new_ids": [
+      "SERVICE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B1.s3": {
+    "new_ids": [
+      "SERVICE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B2.s1": {
+    "new_ids": [
+      "SERVICE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B2.s2": {
+    "new_ids": [
+      "SERVICE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.B2.s3": {
+    "new_ids": [
+      "SERVICE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.C1.s1": {
+    "new_ids": [
+      "SERVICE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.C1.s2": {
+    "new_ids": [
+      "SERVICE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SERVICE.C1.s3": {
+    "new_ids": [
+      "SERVICE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A1.s1": {
+    "new_ids": [
+      "COMPARE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A1.s2": {
+    "new_ids": [
+      "COMPARE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A1.s3": {
+    "new_ids": [
+      "COMPARE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A2.s1": {
+    "new_ids": [
+      "COMPARE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A2.s2": {
+    "new_ids": [
+      "COMPARE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.A2.s3": {
+    "new_ids": [
+      "COMPARE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B1.s1": {
+    "new_ids": [
+      "COMPARE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B1.s2": {
+    "new_ids": [
+      "COMPARE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B1.s3": {
+    "new_ids": [
+      "COMPARE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B2.s1": {
+    "new_ids": [
+      "COMPARE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B2.s2": {
+    "new_ids": [
+      "COMPARE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.B2.s3": {
+    "new_ids": [
+      "COMPARE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C1.s1": {
+    "new_ids": [
+      "COMPARE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C1.s2": {
+    "new_ids": [
+      "COMPARE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C1.s3": {
+    "new_ids": [
+      "COMPARE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C2.s1": {
+    "new_ids": [
+      "COMPARE.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C2.s2": {
+    "new_ids": [
+      "COMPARE.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COMPARE.C2.s3": {
+    "new_ids": [
+      "COMPARE.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A1.s1": {
+    "new_ids": [
+      "OPINION.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A1.s2": {
+    "new_ids": [
+      "OPINION.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A1.s3": {
+    "new_ids": [
+      "OPINION.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A2.s1": {
+    "new_ids": [
+      "OPINION.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A2.s2": {
+    "new_ids": [
+      "OPINION.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.A2.s3": {
+    "new_ids": [
+      "OPINION.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B1.s1": {
+    "new_ids": [
+      "OPINION.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B1.s2": {
+    "new_ids": [
+      "OPINION.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B1.s3": {
+    "new_ids": [
+      "OPINION.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B2.s1": {
+    "new_ids": [
+      "OPINION.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B2.s2": {
+    "new_ids": [
+      "OPINION.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.B2.s3": {
+    "new_ids": [
+      "OPINION.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C1.s1": {
+    "new_ids": [
+      "OPINION.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C1.s2": {
+    "new_ids": [
+      "OPINION.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C1.s3": {
+    "new_ids": [
+      "OPINION.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C2.s1": {
+    "new_ids": [
+      "OPINION.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C2.s2": {
+    "new_ids": [
+      "OPINION.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "OPINION.C2.s3": {
+    "new_ids": [
+      "OPINION.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.Pre-A1.s1": {
+    "new_ids": [
+      "RELATE.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.Pre-A1.s2": {
+    "new_ids": [
+      "RELATE.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.Pre-A1.s3": {
+    "new_ids": [
+      "RELATE.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.A1.s1": {
+    "new_ids": [
+      "RELATE.A1.s1.express",
+      "RELATE.A1.s1.respond"
+    ],
+    "evidence_transfer": "原复合目标的总成功标记不能自动分给拆分后的子目标；需依据旧音频核查各沟通动作"
+  },
+  "RELATE.A1.s2": {
+    "new_ids": [
+      "RELATE.A1.s2.express",
+      "RELATE.A1.s2.respond"
+    ],
+    "evidence_transfer": "原复合目标的总成功标记不能自动分给拆分后的子目标；需依据旧音频核查各沟通动作"
+  },
+  "RELATE.A1.s3": {
+    "new_ids": [
+      "RELATE.A1.s3.express",
+      "RELATE.A1.s3.respond"
+    ],
+    "evidence_transfer": "原复合目标的总成功标记不能自动分给拆分后的子目标；需依据旧音频核查各沟通动作"
+  },
+  "RELATE.A2.s1": {
+    "new_ids": [
+      "RELATE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.A2.s2": {
+    "new_ids": [
+      "RELATE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.A2.s3": {
+    "new_ids": [
+      "RELATE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B1.s1": {
+    "new_ids": [
+      "RELATE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B1.s2": {
+    "new_ids": [
+      "RELATE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B1.s3": {
+    "new_ids": [
+      "RELATE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B2.s1": {
+    "new_ids": [
+      "RELATE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B2.s2": {
+    "new_ids": [
+      "RELATE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.B2.s3": {
+    "new_ids": [
+      "RELATE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C1.s1": {
+    "new_ids": [
+      "RELATE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C1.s2": {
+    "new_ids": [
+      "RELATE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C1.s3": {
+    "new_ids": [
+      "RELATE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C2.s1": {
+    "new_ids": [
+      "RELATE.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C2.s2": {
+    "new_ids": [
+      "RELATE.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "RELATE.C2.s3": {
+    "new_ids": [
+      "RELATE.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.A2.s1": {
+    "new_ids": [
+      "COLLAB.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.A2.s2": {
+    "new_ids": [
+      "COLLAB.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.A2.s3": {
+    "new_ids": [
+      "COLLAB.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B1.s1": {
+    "new_ids": [
+      "COLLAB.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B1.s2": {
+    "new_ids": [
+      "COLLAB.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B1.s3": {
+    "new_ids": [
+      "COLLAB.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B2.s1": {
+    "new_ids": [
+      "COLLAB.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B2.s2": {
+    "new_ids": [
+      "COLLAB.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.B2.s3": {
+    "new_ids": [
+      "COLLAB.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C1.s1": {
+    "new_ids": [
+      "COLLAB.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C1.s2": {
+    "new_ids": [
+      "COLLAB.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C1.s3": {
+    "new_ids": [
+      "COLLAB.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C2.s1": {
+    "new_ids": [
+      "COLLAB.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C2.s2": {
+    "new_ids": [
+      "COLLAB.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "COLLAB.C2.s3": {
+    "new_ids": [
+      "COLLAB.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.Pre-A1.s1": {
+    "new_ids": [
+      "REPAIR.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.Pre-A1.s2": {
+    "new_ids": [
+      "REPAIR.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.Pre-A1.s3": {
+    "new_ids": [
+      "REPAIR.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A1.s1": {
+    "new_ids": [
+      "REPAIR.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A1.s2": {
+    "new_ids": [
+      "REPAIR.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A1.s3": {
+    "new_ids": [
+      "REPAIR.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A2.s1": {
+    "new_ids": [
+      "REPAIR.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A2.s2": {
+    "new_ids": [
+      "REPAIR.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.A2.s3": {
+    "new_ids": [
+      "REPAIR.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B1.s1": {
+    "new_ids": [
+      "REPAIR.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B1.s2": {
+    "new_ids": [
+      "REPAIR.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B1.s3": {
+    "new_ids": [
+      "REPAIR.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B2.s1": {
+    "new_ids": [
+      "REPAIR.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B2.s2": {
+    "new_ids": [
+      "REPAIR.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.B2.s3": {
+    "new_ids": [
+      "REPAIR.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C1.s1": {
+    "new_ids": [
+      "REPAIR.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C1.s2": {
+    "new_ids": [
+      "REPAIR.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C1.s3": {
+    "new_ids": [
+      "REPAIR.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C2.s1": {
+    "new_ids": [
+      "REPAIR.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C2.s2": {
+    "new_ids": [
+      "REPAIR.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "REPAIR.C2.s3": {
+    "new_ids": [
+      "REPAIR.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.Pre-A1.s1": {
+    "new_ids": [
+      "LISTEN.Pre-A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.Pre-A1.s2": {
+    "new_ids": [
+      "LISTEN.Pre-A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.Pre-A1.s3": {
+    "new_ids": [
+      "LISTEN.Pre-A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A1.s1": {
+    "new_ids": [
+      "LISTEN.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A1.s2": {
+    "new_ids": [
+      "LISTEN.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A1.s3": {
+    "new_ids": [
+      "LISTEN.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A2.s1": {
+    "new_ids": [
+      "LISTEN.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A2.s2": {
+    "new_ids": [
+      "LISTEN.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.A2.s3": {
+    "new_ids": [
+      "LISTEN.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B1.s1": {
+    "new_ids": [
+      "LISTEN.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B1.s2": {
+    "new_ids": [
+      "LISTEN.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B1.s3": {
+    "new_ids": [
+      "LISTEN.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B2.s1": {
+    "new_ids": [
+      "LISTEN.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B2.s2": {
+    "new_ids": [
+      "LISTEN.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.B2.s3": {
+    "new_ids": [
+      "LISTEN.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C1.s1": {
+    "new_ids": [
+      "LISTEN.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C1.s2": {
+    "new_ids": [
+      "LISTEN.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C1.s3": {
+    "new_ids": [
+      "LISTEN.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C2.s1": {
+    "new_ids": [
+      "LISTEN.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C2.s2": {
+    "new_ids": [
+      "LISTEN.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LISTEN.C2.s3": {
+    "new_ids": [
+      "LISTEN.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A1.s1": {
+    "new_ids": [
+      "MEDIA.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A1.s2": {
+    "new_ids": [
+      "MEDIA.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A1.s3": {
+    "new_ids": [
+      "MEDIA.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A2.s1": {
+    "new_ids": [
+      "MEDIA.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A2.s2": {
+    "new_ids": [
+      "MEDIA.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.A2.s3": {
+    "new_ids": [
+      "MEDIA.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B1.s1": {
+    "new_ids": [
+      "MEDIA.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B1.s2": {
+    "new_ids": [
+      "MEDIA.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B1.s3": {
+    "new_ids": [
+      "MEDIA.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B2.s1": {
+    "new_ids": [
+      "MEDIA.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B2.s2": {
+    "new_ids": [
+      "MEDIA.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.B2.s3": {
+    "new_ids": [
+      "MEDIA.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C1.s1": {
+    "new_ids": [
+      "MEDIA.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C1.s2": {
+    "new_ids": [
+      "MEDIA.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C1.s3": {
+    "new_ids": [
+      "MEDIA.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C2.s1": {
+    "new_ids": [
+      "MEDIA.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C2.s2": {
+    "new_ids": [
+      "MEDIA.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIA.C2.s3": {
+    "new_ids": [
+      "MEDIA.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A1.s1": {
+    "new_ids": [
+      "PHONE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A1.s2": {
+    "new_ids": [
+      "PHONE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A1.s3": {
+    "new_ids": [
+      "PHONE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A2.s1": {
+    "new_ids": [
+      "PHONE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A2.s2": {
+    "new_ids": [
+      "PHONE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.A2.s3": {
+    "new_ids": [
+      "PHONE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B1.s1": {
+    "new_ids": [
+      "PHONE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B1.s2": {
+    "new_ids": [
+      "PHONE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B1.s3": {
+    "new_ids": [
+      "PHONE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B2.s1": {
+    "new_ids": [
+      "PHONE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B2.s2": {
+    "new_ids": [
+      "PHONE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.B2.s3": {
+    "new_ids": [
+      "PHONE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.C1.s1": {
+    "new_ids": [
+      "PHONE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.C1.s2": {
+    "new_ids": [
+      "PHONE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "PHONE.C1.s3": {
+    "new_ids": [
+      "PHONE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A1.s1": {
+    "new_ids": [
+      "MEDIATE.A1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A1.s2": {
+    "new_ids": [
+      "MEDIATE.A1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A1.s3": {
+    "new_ids": [
+      "MEDIATE.A1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A2.s1": {
+    "new_ids": [
+      "MEDIATE.A2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A2.s2": {
+    "new_ids": [
+      "MEDIATE.A2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.A2.s3": {
+    "new_ids": [
+      "MEDIATE.A2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B1.s1": {
+    "new_ids": [
+      "MEDIATE.B1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B1.s2": {
+    "new_ids": [
+      "MEDIATE.B1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B1.s3": {
+    "new_ids": [
+      "MEDIATE.B1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B2.s1": {
+    "new_ids": [
+      "MEDIATE.B2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B2.s2": {
+    "new_ids": [
+      "MEDIATE.B2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.B2.s3": {
+    "new_ids": [
+      "MEDIATE.B2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C1.s1": {
+    "new_ids": [
+      "MEDIATE.C1.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C1.s2": {
+    "new_ids": [
+      "MEDIATE.C1.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C1.s3": {
+    "new_ids": [
+      "MEDIATE.C1.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C2.s1": {
+    "new_ids": [
+      "MEDIATE.C2.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C2.s2": {
+    "new_ids": [
+      "MEDIATE.C2.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "MEDIATE.C2.s3": {
+    "new_ids": [
+      "MEDIATE.C2.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.CONTRAST.s1": {
+    "new_ids": [
+      "SOUND.CONTRAST.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.CONTRAST.s2": {
+    "new_ids": [
+      "SOUND.CONTRAST.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.CONTRAST.s3": {
+    "new_ids": [
+      "SOUND.CONTRAST.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.ENDING.s1": {
+    "new_ids": [
+      "SOUND.ENDING.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.ENDING.s2": {
+    "new_ids": [
+      "SOUND.ENDING.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.ENDING.s3": {
+    "new_ids": [
+      "SOUND.ENDING.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.SYLLABLE.s1": {
+    "new_ids": [
+      "SOUND.SYLLABLE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.SYLLABLE.s2": {
+    "new_ids": [
+      "SOUND.SYLLABLE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.SYLLABLE.s3": {
+    "new_ids": [
+      "SOUND.SYLLABLE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.STRESS.s1": {
+    "new_ids": [
+      "SOUND.STRESS.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.STRESS.s2": {
+    "new_ids": [
+      "SOUND.STRESS.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.STRESS.s3": {
+    "new_ids": [
+      "SOUND.STRESS.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.REDUCTION.s1": {
+    "new_ids": [
+      "SOUND.REDUCTION.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.REDUCTION.s2": {
+    "new_ids": [
+      "SOUND.REDUCTION.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.REDUCTION.s3": {
+    "new_ids": [
+      "SOUND.REDUCTION.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.GROUP.s1": {
+    "new_ids": [
+      "SOUND.GROUP.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.GROUP.s2": {
+    "new_ids": [
+      "SOUND.GROUP.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.GROUP.s3": {
+    "new_ids": [
+      "SOUND.GROUP.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.INTONATION.s1": {
+    "new_ids": [
+      "SOUND.INTONATION.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.INTONATION.s2": {
+    "new_ids": [
+      "SOUND.INTONATION.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.INTONATION.s3": {
+    "new_ids": [
+      "SOUND.INTONATION.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.VARIETY.s1": {
+    "new_ids": [
+      "SOUND.VARIETY.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.VARIETY.s2": {
+    "new_ids": [
+      "SOUND.VARIETY.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "SOUND.VARIETY.s3": {
+    "new_ids": [
+      "SOUND.VARIETY.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.RETRIEVE.s1": {
+    "new_ids": [
+      "LEX.RETRIEVE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.RETRIEVE.s2": {
+    "new_ids": [
+      "LEX.RETRIEVE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.RETRIEVE.s3": {
+    "new_ids": [
+      "LEX.RETRIEVE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.CHUNK.s1": {
+    "new_ids": [
+      "LEX.CHUNK.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.CHUNK.s2": {
+    "new_ids": [
+      "LEX.CHUNK.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.CHUNK.s3": {
+    "new_ids": [
+      "LEX.CHUNK.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.PARAPHRASE.s1": {
+    "new_ids": [
+      "LEX.PARAPHRASE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.PARAPHRASE.s2": {
+    "new_ids": [
+      "LEX.PARAPHRASE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.PARAPHRASE.s3": {
+    "new_ids": [
+      "LEX.PARAPHRASE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.REGISTER.s1": {
+    "new_ids": [
+      "LEX.REGISTER.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.REGISTER.s2": {
+    "new_ids": [
+      "LEX.REGISTER.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.REGISTER.s3": {
+    "new_ids": [
+      "LEX.REGISTER.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUESTION.s1": {
+    "new_ids": [
+      "FORM.QUESTION.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUESTION.s2": {
+    "new_ids": [
+      "FORM.QUESTION.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUESTION.s3": {
+    "new_ids": [
+      "FORM.QUESTION.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.TIME.s1": {
+    "new_ids": [
+      "FORM.TIME.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.TIME.s2": {
+    "new_ids": [
+      "FORM.TIME.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.TIME.s3": {
+    "new_ids": [
+      "FORM.TIME.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CONDITION.s1": {
+    "new_ids": [
+      "FORM.CONDITION.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CONDITION.s2": {
+    "new_ids": [
+      "FORM.CONDITION.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CONDITION.s3": {
+    "new_ids": [
+      "FORM.CONDITION.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.LINK.s1": {
+    "new_ids": [
+      "DISCOURSE.LINK.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.LINK.s2": {
+    "new_ids": [
+      "DISCOURSE.LINK.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.LINK.s3": {
+    "new_ids": [
+      "DISCOURSE.LINK.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.HEDGE.s1": {
+    "new_ids": [
+      "DISCOURSE.HEDGE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.HEDGE.s2": {
+    "new_ids": [
+      "DISCOURSE.HEDGE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.HEDGE.s3": {
+    "new_ids": [
+      "DISCOURSE.HEDGE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.PLAN.s1": {
+    "new_ids": [
+      "STRATEGY.PLAN.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.PLAN.s2": {
+    "new_ids": [
+      "STRATEGY.PLAN.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.PLAN.s3": {
+    "new_ids": [
+      "STRATEGY.PLAN.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.MONITOR.s1": {
+    "new_ids": [
+      "STRATEGY.MONITOR.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.MONITOR.s2": {
+    "new_ids": [
+      "STRATEGY.MONITOR.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.MONITOR.s3": {
+    "new_ids": [
+      "STRATEGY.MONITOR.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.TURN.s1": {
+    "new_ids": [
+      "STRATEGY.TURN.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.TURN.s2": {
+    "new_ids": [
+      "STRATEGY.TURN.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "STRATEGY.TURN.s3": {
+    "new_ids": [
+      "STRATEGY.TURN.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.ACQUIRE.s1": {
+    "new_ids": [
+      "LEX.ACQUIRE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.ACQUIRE.s2": {
+    "new_ids": [
+      "LEX.ACQUIRE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "LEX.ACQUIRE.s3": {
+    "new_ids": [
+      "LEX.ACQUIRE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CLAUSE.s1": {
+    "new_ids": [
+      "FORM.CLAUSE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CLAUSE.s2": {
+    "new_ids": [
+      "FORM.CLAUSE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.CLAUSE.s3": {
+    "new_ids": [
+      "FORM.CLAUSE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.NEGATION.s1": {
+    "new_ids": [
+      "FORM.NEGATION.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.NEGATION.s2": {
+    "new_ids": [
+      "FORM.NEGATION.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.NEGATION.s3": {
+    "new_ids": [
+      "FORM.NEGATION.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUANTITY.s1": {
+    "new_ids": [
+      "FORM.QUANTITY.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUANTITY.s2": {
+    "new_ids": [
+      "FORM.QUANTITY.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.QUANTITY.s3": {
+    "new_ids": [
+      "FORM.QUANTITY.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.SPACE.s1": {
+    "new_ids": [
+      "FORM.SPACE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.SPACE.s2": {
+    "new_ids": [
+      "FORM.SPACE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "FORM.SPACE.s3": {
+    "new_ids": [
+      "FORM.SPACE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.REFERENCE.s1": {
+    "new_ids": [
+      "DISCOURSE.REFERENCE.s1"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.REFERENCE.s2": {
+    "new_ids": [
+      "DISCOURSE.REFERENCE.s2"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  },
+  "DISCOURSE.REFERENCE.s3": {
+    "new_ids": [
+      "DISCOURSE.REFERENCE.s3"
+    ],
+    "evidence_transfer": "保留目标ID；原证据需携带任务条件和支持记录"
+  }
+}

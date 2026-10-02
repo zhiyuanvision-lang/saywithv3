@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "GSE.GRAMMAR.p7.1",
+    "gse": 24,
+    "text": "Can ask basic questions using ‘What’s your ...?’",
+    "structure": "‘what’s your’+ NP?",
+    "examples": "What’s your name? What’s your job?",
+    "categories": "Pronoun | Question words Verb | Tags and question forms Clause | With ‘be’",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.2",
+    "gse": 24,
+    "text": "Can use the correct form of ‘be’ with singular and plural nouns.",
+    "structure": "agreement between nouns and verb ‘be’",
+    "examples": "The coffee is hot. The boys are Spanish. I’mChinese. We’restudents.",
+    "categories": "Clause | Basic construction Clause | With ‘be’ Noun | Plural",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.3",
+    "gse": 24,
+    "text": "Can make basic statements with subject + verb + object.",
+    "structure": "statements with subject + verb + object",
+    "examples": "I like rock music. She drinks coffee. We study English.",
+    "categories": "Clause | Basic construction",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.4",
+    "gse": 24,
+    "text": "Can use subject personal pronouns.",
+    "structure": "subject personal pronouns",
+    "examples": "I, you, he, she, it, we, they",
+    "categories": "Pronoun | Personal Clause | With ‘be’",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.5",
+    "gse": 24,
+    "text": "Can say their own age using ‘I’m [number]’.",
+    "structure": "‘I’m’ + number for age",
+    "examples": "I’m25. I’mfifty.",
+    "categories": "Clause | Basic construction Clause | With ‘be’",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.6",
+    "gse": 24,
+    "text": "Can make simple statements with ‘it’s/it is’.",
+    "structure": "‘it’ + ‘be’",
+    "examples": "It’s cold. It’s ten o’clock. It’s Monday today. It’seasy. It’s late.",
+    "categories": "Phrase | With ‘be’ Pronoun | Generic/impersonal Clause | Basic construction",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.7",
+    "gse": 24,
+    "text": "Can use regular nouns in the plural form.",
+    "structure": "regular nouns - plural",
+    "examples": "Boys, classes, books, pens, days, chairs",
+    "categories": "Noun | Plural",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.8",
+    "gse": 24,
+    "text": "Can use subject pronouns with the correct form of the verb ‘be’ in the simple present.",
+    "structure": "subject pronouns + ‘be’ + adj",
+    "examples": "I’mFrench. They’reold. She’snice.",
+    "categories": "Pronoun | Personal Clause | With ‘be’ Clause | Basic construction",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.9",
+    "gse": 25,
+    "text": "Can use possessive adjectives such as ‘my’, ‘your’, etc.",
+    "structure": "possessive adjectives (determiners)",
+    "examples": "my hand, your house, his mother, her sister",
+    "categories": "Determiner | Possessive",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.10",
+    "gse": 25,
+    "text": "Can use ‘a/an’with the names of jobs.",
+    "structure": "‘a/an’ with jobs",
+    "examples": "I’ma teacher She’san accountant.",
+    "categories": "Determiner | Articles",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.11",
+    "gse": 25,
+    "text": "Can form questions with ‘what’ and ‘who’ and answer them.",
+    "structure": "interrogative pronouns: ‘what/who’",
+    "examples": "What’sthis? It’smy phone. Who’sthat? It’sthe new teacher.",
+    "categories": "Pronoun | Question words Pronoun | Personal Verb | Tags and question forms",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.12",
+    "gse": 25,
+    "text": "Can ask someone’s age using ‘How old …?’",
+    "structure": "‘Howold’+ ‘is/are’ + NP?",
+    "examples": "How old are you? How old is Nigel?",
+    "categories": "Determiner | Quantifiers Verb | Tags and question forms Clause | With ‘be’",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p7.13",
+    "gse": 25,
+    "text": "Can use ‘and’ to link nouns and noun phrases.",
+    "structure": "NP + ‘and’ + NP",
+    "examples": "boys and girls a cat and a dog the tall man and the short woman",
+    "categories": "Conjunction | Coordinating",
+    "pdf_page": 7,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.1",
+    "gse": 25,
+    "text": "Can use the verb ‘be’in the simple present with adjectives.",
+    "structure": "‘be’+ adjective",
+    "examples": "I’mhappy. It’s cold. Her hair’s long and dark. They’renot friendly.",
+    "categories": "Phrase |With‘be’ Clause | Basic construction",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.2",
+    "gse": 25,
+    "text": "Can use ‘this is’for an introduction.",
+    "structure": "‘this is’ for an introduction",
+    "examples": "This is Maria. This is my sister. This is my teacher.",
+    "categories": "Determiner | Deictic (this/that) Clause | Basic construction Phrase | With ‘be’",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.3",
+    "gse": 25,
+    "text": "Can use common forms of ‘have’in the present tense.",
+    "structure": "‘have’ in the present tense",
+    "examples": "I have a sister.",
+    "categories": "Clause | Basic construction Verb | Tense",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.4",
+    "gse": 25,
+    "text": "Can use common irregular nouns in the plural form.",
+    "structure": "irregular nouns – plural",
+    "examples": "People, women, children",
+    "categories": "Noun | Plural",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.5",
+    "gse": 25,
+    "text": "Can ask where other people are using ‘Where is/are …?’",
+    "structure": "‘Where’+ ‘is/are’+ NP?",
+    "examples": "Where’s the bathroom? Where are your children?",
+    "categories": "Pronoun | Question words Verb | Tags and question forms Clause | With ‘be’",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.6",
+    "gse": 26,
+    "text": "Can use ‘a/an’ with single countable nouns.",
+    "structure": "‘a/an’with single countable nouns",
+    "examples": "a good film, an interesting lesson, an hour",
+    "categories": "Determiner | Articles Clause | Basic construction",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.7",
+    "gse": 26,
+    "text": "Can make affirmative statements using the present simple without time reference.",
+    "structure": "present simple for facts and states (affirmative only)",
+    "examples": "He lives in the city. She’smarried. He works for Siemens.",
+    "categories": "Verb | Tense",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.8",
+    "gse": 26,
+    "text": "Can make negative statements using the present simple.",
+    "structure": "present simple – negative forms",
+    "examples": "He doesn’t understand. I don’t speak Japanese.",
+    "categories": "Clause | Negation Verb | Negative forms",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.9",
+    "gse": 26,
+    "text": "Can ask wh- questions using the present simple.",
+    "structure": "wh- questions in the present simple",
+    "examples": "What do you want? Where does she live?",
+    "categories": "Verb | Tags and question forms Pronoun | Question words",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.10",
+    "gse": 26,
+    "text": "Can use the present simple to refer to daily routines.",
+    "structure": "present simple for daily routines",
+    "examples": "He gets the bus to work. I drink six cups of tea a day.",
+    "categories": "Verb | Tense",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.11",
+    "gse": 26,
+    "text": "Can ask yes/no questions using the present simple.",
+    "structure": "yes/no questions in the present simple",
+    "examples": "Do you know her? Does he want a drink?",
+    "categories": "Verb | Tags and question forms",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.12",
+    "gse": 26,
+    "text": "Can use ‘a/an’ with jobs to talk about work and professions.",
+    "structure": "‘a/an’ + jobs",
+    "examples": "She’sa teacher. I’ma student. He’san architect.",
+    "categories": "Determiner | Articles Clause | Basic construction",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.13",
+    "gse": 26,
+    "text": "Can use basic prepositions of place with nouns and noun phrases.",
+    "structure": "basic prepositions of place (prepositional phrases)",
+    "examples": "The money’s in my bag. The wine is on the diningroom table. The church is opposite my uncle’s house.",
+    "categories": "Preposition | Place Adverb | Place & movement Clause | Basic construction",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.14",
+    "gse": 27,
+    "text": "Can use verbs in the imperative.",
+    "structure": "Imperatives + negative imperatives",
+    "examples": "Tellme! Don’t speak to me! Help me!",
+    "categories": "Verb | Imperative",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.15",
+    "gse": 27,
+    "text": "Can use personal pronouns as objects and complements.",
+    "structure": "object personal pronouns",
+    "examples": "I like him. I can see her. He wants us.",
+    "categories": "Pronoun | Personal Clause | Basic construction",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.16",
+    "gse": 27,
+    "text": "Can use a range of time expressions with whole numbers (+ ‘o’clock’).",
+    "structure": "basic time expressions with ‘o’clock’",
+    "examples": "three o’clock nine (o’clock) in the morning",
+    "categories": "Preposition | Time Adverb | Time",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p8.17",
+    "gse": 27,
+    "text": "Can use ‘there’ + ‘be’ to express presence/ absence.",
+    "structure": "‘there is(n’t)/are(n’t)’",
+    "examples": "There’sa small house. There isn’t a window.",
+    "categories": "Clause | With ‘be’ Adverb | Place & movement",
+    "pdf_page": 8,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.1",
+    "gse": 27,
+    "text": "Can ask about the price of something using ‘How much is/are …?’",
+    "structure": "‘Howmuch’+ ‘is/are’+ NP?",
+    "examples": "How much is a sandwich? How much are the tomatoes?",
+    "categories": "Determiner | Quantifiers Verb | Tags and question forms Clause | With ‘be’",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.2",
+    "gse": 27,
+    "text": "Can ask a range of wh- questions.",
+    "structure": "types of wh- questions",
+    "examples": "What’s this? Who’s that? Where’s your house?",
+    "categories": "Pronoun | Question words Clause | Basic construction Verb | Tags and question forms",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.3",
+    "gse": 27,
+    "text": "Can say where they and other people are using a few basic prepositions.",
+    "structure": "NP + ‘is/are’ + PP with common prepositions of place",
+    "examples": "John’sin the bar. My parents are at home.",
+    "categories": "Preposition | Position Clause | With ‘be’",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.4",
+    "gse": 27,
+    "text": "Can use the present simple to refer to likes, dislikes and opinions.",
+    "structure": "present simple for opinions, likes and dislikes",
+    "examples": "I like football. I don’t like tennis. Do you like pop music? I think it’s delicious.",
+    "categories": "Verb | Tense Clause | Basic construction",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.5",
+    "gse": 28,
+    "text": "Can use ‘but’to link clauses and sentences.",
+    "structure": "basic ‘but’",
+    "examples": "She likes coffee, but I like tea. She’s good at maths but not English.",
+    "categories": "Conjunction | Concession and contrast Clause | Comparison",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.6",
+    "gse": 28,
+    "text": "Can use common forms of ‘have got’ (BrE) in the present tense.",
+    "structure": "‘have got’ in the present tense",
+    "examples": "Have you got a car? (BrE)",
+    "categories": "Verb | Auxiliary",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.7",
+    "gse": 28,
+    "text": "Can give dates (e.g. their date of birth) using ordinal numbers in the form day- monthyear or monthdayyear.",
+    "structure": "ordinal number + month/month + ordinal number + year",
+    "examples": "The thirteenth of May 1979 September the 5th 1986",
+    "categories": "Phrase | Basic construction",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.8",
+    "gse": 28,
+    "text": "Can use ‘’s’ to express possession with singular nouns.",
+    "structure": "‘‘s’ for possession",
+    "examples": "Diego’sbook my friend’s car",
+    "categories": "Noun | Possessive (genitive) Clause | Basic construction",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.9",
+    "gse": 28,
+    "text": "Can construct short answers to questions in the present simple using the verb ‘do’.",
+    "structure": "tag responses (short answers to present simple yes/no questions)",
+    "examples": "Yes, I do. No, I don’t. Yes, they do. Yes, she does.",
+    "categories": "Verb | Tags and question forms Verb | Auxiliary",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.10",
+    "gse": 29,
+    "text": "Can tell when to use the present simple and when to use the present continuous.",
+    "structure": "present simple vs. present continuous",
+    "examples": "I get up at 7 o’clock every day. It’s7 o’clock and I’m getting up now.",
+    "categories": "Verb | Tense",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.11",
+    "gse": 29,
+    "text": "Can use ‘I’dlike …/Iwant …’toexpress wants and wishes.",
+    "structure": "‘I’d like/I want’ + NP",
+    "examples": "I’dlike a drink. I want a burger.",
+    "categories": "Clause | Basic construction Clause | Conditional",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.12",
+    "gse": 29,
+    "text": "Can use ‘can’ to refer to ability in the present.",
+    "structure": "‘can’for ability",
+    "examples": "I can swim. She can’t understand that book.",
+    "categories": "Modal verb | Ability Verb | Tense",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p9.13",
+    "gse": 29,
+    "text": "Can use negative forms of the simple past.",
+    "structure": "past tense – negative",
+    "examples": "They didn’t understand. She didn’t catch her plane.",
+    "categories": "Verb | Tense Clause | Negation Verb | Negative forms",
+    "pdf_page": 9,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.1",
+    "gse": 30,
+    "text": "Can use ‘that’ and ‘this’ as determiners relating to people or objects.",
+    "structure": "‘this’ and ‘that’ as determiners (general)",
+    "examples": "I like this film. Can you see that woman?",
+    "categories": "Determiner | Deictic (this/that)",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.2",
+    "gse": 30,
+    "text": "Can use the present continuous to refer to events at the time of speaking.",
+    "structure": "present continuous for time of speaking",
+    "examples": "I’m watching TV. What are you doing? She’s not listening. He’s checking his email.",
+    "categories": "Verb | Tense",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.3",
+    "gse": 30,
+    "text": "Can ask about quantities using ‘how much/ many’ with count and uncountable nouns.",
+    "structure": "Questions with ‘how much/many’ + count/ mass nouns",
+    "examples": "How much do you earn? How many children do they have?",
+    "categories": "Determiner | Quantifiers Verb | Tags and question forms Noun | Mass/count",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.4",
+    "gse": 30,
+    "text": "Can make affirmative statements using common irregular past simple forms.",
+    "structure": "irregular past simple for finished time (affirmative only)",
+    "examples": "We saw the match. They went to London.",
+    "categories": "Verb | Tense",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.5",
+    "gse": 30,
+    "text": "Can use ‘and’ with verbs and verb phrases.",
+    "structure": "VP + ‘and’ + VP",
+    "examples": "We eat and (we) sleep in the hotel. She’s an IT expert, and she speaks good English.",
+    "categories": "Conjunction | Coordinating",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.6",
+    "gse": 30,
+    "text": "Can ask yes/no questions using the past tense of verbs.",
+    "structure": "yes/no questions in the past",
+    "examples": "Did you see him? Did they catch their plane?",
+    "categories": "Verb | Tense Verb | Tags and question forms",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.7",
+    "gse": 30,
+    "text": "Can use ‘s’’ to express possession with plural nouns.",
+    "structure": "‘s’’ for possession",
+    "examples": "the soldiers’ guns the students’ books",
+    "categories": "Noun | Possessive (genitive) Clause | Basic construction",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.8",
+    "gse": 30,
+    "text": "Can use ‘at’ as a preposition of time.",
+    "structure": "prepositions of time: ‘at’",
+    "examples": "at two o’clock at lunchtime at the weekend",
+    "categories": "Preposition | Time Adverb | Time",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.9",
+    "gse": 30,
+    "text": "Can use an adjective as a subject complement after a linking verb.",
+    "structure": "adjective as subject complement (verb + adjective)",
+    "examples": "Chiara is Italian. You look tired.",
+    "categories": "Adjective | Position Clause | Basic construction Clause | With ‘be’",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.10",
+    "gse": 30,
+    "text": "Can make affirmative statements using common regular past simple forms.",
+    "structure": "regular past simple for finished time (affirmative only)",
+    "examples": "I asked a question. They walked home.",
+    "categories": "Verb | Tense",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.11",
+    "gse": 30,
+    "text": "Can use a range of prepositions of place.",
+    "structure": "common prepositions of place",
+    "examples": "against; behind; in front of; next to; under",
+    "categories": "Preposition | Place",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.12",
+    "gse": 31,
+    "text": "Can use ‘like/hate/love’ with the ‘ ing’ forms of verbs.",
+    "structure": "‘like/love/hate’ + VPgerund",
+    "examples": "I love going to museums. Do you like working here? She hates watching TV. They love dancing.",
+    "categories": "Phrase | With gerund ( ing)",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.13",
+    "gse": 31,
+    "text": "Can ask for information about time, measurement, size etc. with ‘how’ + adjective/quantifier.",
+    "structure": "‘how’ questions for time, measurement, size etc. (except ‘much/many’)",
+    "examples": "How big is it? How tall is he? How long is the film?",
+    "categories": "Determiner | Quantifiers Verb | Tags and question forms Pronoun | Question words",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.14",
+    "gse": 31,
+    "text": "Can place adjectives in the correct position (before nouns).",
+    "structure": "position of adjectives (adjective + NP)",
+    "examples": "a white car a small box of biscuits",
+    "categories": "Adjective | Position Clause | Basic construction",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.15",
+    "gse": 31,
+    "text": "Can use a range of common time expressions with ‘past’/’to’ and fractions.",
+    "structure": "basic time expressions with ‘past/to’ and ‘half/quarter’",
+    "examples": "a quarter to/past three half past six",
+    "categories": "Preposition | Time Adverb | Time",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p10.16",
+    "gse": 31,
+    "text": "Can use ‘want to’ + infinitive to express intentions.",
+    "structure": "‘want to’ + VPinf for intentions",
+    "examples": "I want to help you. Do they want to buy it?",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 10,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.1",
+    "gse": 31,
+    "text": "Can ask wh- questions using the past tense of verbs.",
+    "structure": "wh- questions in the past",
+    "examples": "Where did you go? How much did it cost? When did he arrive?",
+    "categories": "Verb | Tense Verb | Tags and question forms Pronoun | Question words",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.2",
+    "gse": 32,
+    "text": "Can use ‘after’ as a preposition in time expressions.",
+    "structure": "‘after’ + NP",
+    "examples": "after the show after dinner",
+    "categories": "Preposition | Time Clause | Time",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.3",
+    "gse": 32,
+    "text": "Can use uncountable (mass) nouns with no quantifier or an appropriate quantifier.",
+    "structure": "determiners + uncountable nouns",
+    "examples": "I want some food, She doesn’t eat cheese. Do we have any paper?",
+    "categories": "Determiner | Quantifiers Determiner | Articles Noun | Mass/count",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.4",
+    "gse": 32,
+    "text": "Can use ‘was’ and ‘were’ with a range of complement phrases.",
+    "structure": "‘was/were’ + complement",
+    "examples": "It was cold yesterday. He wasn’t at school last week. We were in Mexico on Monday.",
+    "categories": "Clause | Basic construction Verb | Tense Clause | With ‘be’",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.5",
+    "gse": 32,
+    "text": "Can link clauses and sentences with a range of basic connectors.",
+    "structure": "basic connectors (‘and/but/or’)",
+    "examples": "I did the shopping and cleaned the house. It’s the right size, but I don’t like the colour. We can get the bus, or go there by train.",
+    "categories": "Conjunction | Coordinating Clause | Basic construction",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.6",
+    "gse": 32,
+    "text": "Can use the definite article to refer to a specific person, thing, or situation.",
+    "structure": "definite article for specific example",
+    "examples": "the hotel manager the British people the house on the hill",
+    "categories": "Determiner | Articles",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.7",
+    "gse": 32,
+    "text": "Can form questions with ‘How often’ in the present tense.",
+    "structure": "How often’ + ‘do/does’ +VPquestion",
+    "examples": "How often do you go to the beach? How often does it rain?",
+    "categories": "Determiner | Quantifiers Verb | Tags and question forms Verb | Tense",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.8",
+    "gse": 32,
+    "text": "Can use ‘this’ with time expressions referring to the present or future.",
+    "structure": "‘this’ + (unfinished) time expression",
+    "examples": "this week this Monday this weekend this lesson this afternoon",
+    "categories": "Determiner | Deictic (this/that) Adverb | Time",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.9",
+    "gse": 33,
+    "text": "Can give, deny or ask about permission in the present and near future with ‘can’.",
+    "structure": "‘can’ for permission",
+    "examples": "Can I have some more? You can’t use a phone in class. He can’t take my car I need it.",
+    "categories": "Modal verb | Requests, offers and permission",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.10",
+    "gse": 33,
+    "text": "Can use ‘can’t’ to decline offers and invitations.",
+    "structure": "‘can’t’ to decline offers and invitations",
+    "examples": "Sorry, I can’t come on Friday. I’m afraid I can’t eat that.",
+    "categories": "Modal verb | Requests, offers and permission Modal verb | Ability",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.11",
+    "gse": 33,
+    "text": "Can ask questions about how to do things.",
+    "structure": "‘How do you’ + VPinf?",
+    "examples": "How do you get there? How do you do it?",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.12",
+    "gse": 33,
+    "text": "Can use a range of common adverbs of frequency.",
+    "structure": "adverbs and adverbials of frequency",
+    "examples": "It always rains. She never smokes. They usually come by car.",
+    "categories": "Adverb | Time Adverb | Position Verb | Tense",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.13",
+    "gse": 33,
+    "text": "Can make requests and offers with ‘would like’ + nouns and noun phrases.",
+    "structure": "‘would like’ + NP",
+    "examples": "I’dlike some more soup. Would you like a cup of tea?",
+    "categories": "Modal verb | Requests, offers and permission Clause | Conditional",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p11.14",
+    "gse": 33,
+    "text": "Can make basic polite requests with ‘could’.",
+    "structure": "‘could’ for polite requests",
+    "examples": "Could I have a drink? Could you repeat that?",
+    "categories": "Modal verb | Requests, offers and permission",
+    "pdf_page": 11,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.1",
+    "gse": 33,
+    "text": "Can use the correct preposition (‘on’ or ‘at’) with various common time expressions.",
+    "structure": "‘on’ vs. ‘at’ + time",
+    "examples": "On Friday at 7 p.m. at the same time as …",
+    "categories": "Preposition | Time",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.2",
+    "gse": 33,
+    "text": "Can describe times exactly using numbers from 1 to 59 (+ ‘past/to’).",
+    "structure": "exact time expressions with numbers from 1 to 59 (plus ‘past/to’)",
+    "examples": "five seventeen sixteen minutes to seven one minute past three",
+    "categories": "Preposition | Time Adverb | Time",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.3",
+    "gse": 33,
+    "text": "Can use ‘it’ as a dummy (impersonal) subject when talking about weather conditions.",
+    "structure": "impersonal ‘it’",
+    "examples": "It’s raining. It’s very windy tonight.",
+    "categories": "Pronoun | Generic/impersonal Phrase | With ‘be’",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.4",
+    "gse": 34,
+    "text": "Can use ‘(not) here’ and ‘(not) there’ to refer to presence and absence.",
+    "structure": "‘(not)’ + ‘here/there’ for presence and absence",
+    "examples": "There’s plenty of food here. There’s no one there.",
+    "categories": "Adverb | Place & movement Clause | With ‘be’",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.5",
+    "gse": 34,
+    "text": "Can make offers, requests, and suggestions using ‘can’.",
+    "structure": "‘can’ for offers, requests, and suggestions",
+    "examples": "Can I help you? Can we meet for a coffee? Can you tell her you’re sorry?",
+    "categories": "Modal verb | Requests, offers and permission Modal verb | Obligation",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.6",
+    "gse": 34,
+    "text": "Can form questions with ‘what’ and ‘which’ as adjectives.",
+    "structure": "interrogative adjectives (determiners): ‘what’, ‘which’",
+    "examples": "What temperature is it? Which train did he get?",
+    "categories": "Determiner | Question words Pronoun | Question words Verb | Tags and question forms",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.7",
+    "gse": 34,
+    "text": "Can form questions with ‘whose’.",
+    "structure": "interrogative pronoun/adjective: ‘whose …?’",
+    "examples": "Whose is this? Whose car is that?",
+    "categories": "Determiner | Possessive Pronoun | Question words Determiner | Question words",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.8",
+    "gse": 34,
+    "text": "Can use ‘can’ and ‘can’t’ with verbs of perception.",
+    "structure": "‘can(not/’t)’ + verbs of perception",
+    "examples": "I can see you. We can’t hear him.",
+    "categories": "Modal verb | Ability",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.9",
+    "gse": 34,
+    "text": "Can use ‘Let’s …’ for suggestions and invitations.",
+    "structure": "‘Let’s …’ for suggestions and invitations",
+    "examples": "Let’s go to a movie. Let’s have dinner now.",
+    "categories": "Modal verb | Obligation Verb | Imperative",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.10",
+    "gse": 35,
+    "text": "Can use a range of common adverbs of movement and direction.",
+    "structure": "adverbs and adverbials of movement",
+    "examples": "going back coming down turn left/right travelling west",
+    "categories": "Adverb | Place & movement",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.11",
+    "gse": 35,
+    "text": "Can use a range of common time markers for the past, present and future.",
+    "structure": "time markers for past, present and future",
+    "examples": "ago last night/week yesterday right now at the moment next Saturday/week",
+    "categories": "Adverb | Time Clause | Time Preposition | Time",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.12",
+    "gse": 35,
+    "text": "Can express personal plans and intentions for the future using ‘going to’.",
+    "structure": "NP + ‘going to’ + VPinf",
+    "examples": "I’m going to change my job. Susan’s going to call a meeting.",
+    "categories": "Verb | Tense Phrase | With infinitive",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.13",
+    "gse": 35,
+    "text": "Can make requests and offers with ‘would like to’ + verbs in the infinitive.",
+    "structure": "‘would like to’ + VPinf",
+    "examples": "I’d like to go home. Would you like to borrow some money?",
+    "categories": "Modal verb | Wishes and intentions Clause | Conditional Modal verb | Requests, offers and permission",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p12.14",
+    "gse": 35,
+    "text": "Can use ‘(not) many/much’ with count (countable) and mass (uncountable) nouns respectively.",
+    "structure": "‘(not) much/many’ + mass/count NPs",
+    "examples": "Many people live there. There isn’t much food in my apartment.",
+    "categories": "Determiner | Quantifiers Noun | Mass/count",
+    "pdf_page": 12,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.1",
+    "gse": 35,
+    "text": "Can use the definite article to refer back to something already mentioned.",
+    "structure": "definite article for back reference",
+    "examples": "She was in the meeting too. Did you see the match last night?",
+    "categories": "Determiner | Articles",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.2",
+    "gse": 35,
+    "text": "Can use plural countable nouns without an article or quantifier.",
+    "structure": "zero (dummy) quantifier with plural countable nouns",
+    "examples": "I love dogs. Cars are expensive.",
+    "categories": "Determiner | Quantifiers Noun | Plural",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.3",
+    "gse": 35,
+    "text": "Can use ‘because’ with verb phrases to refer to causes and reasons.",
+    "structure": "‘because’ for causes and reasons",
+    "examples": "I can’t buy it because I haven’t got any money. Because she loves you, she forgives you.",
+    "categories": "Conjunction | Cause and result Clause | Result/cause",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.4",
+    "gse": 35,
+    "text": "Can use a range of common prepositions of movement.",
+    "structure": "prepositions of movement",
+    "examples": "get on/off the bus get into/out of bed walk/go to work jump into the water",
+    "categories": "Preposition | Movement Adverb | Place & movement",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.5",
+    "gse": 35,
+    "text": "Can use ‘please’ in the correct position with imperative verb forms.",
+    "structure": "(‘please’) + VPimperative (‘, please’) (position of please)",
+    "examples": "Please don’t say anything. Come here, please.",
+    "categories": "Verb | Imperative Adverb | Position",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.6",
+    "gse": 35,
+    "text": "Can use ‘will’ to ask questions about the future.",
+    "structure": "‘will’ + VP?",
+    "examples": "Will you be here tomorrow? Will she come back?",
+    "categories": "Verb | Tags and question forms Phrase | With infinitive",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.7",
+    "gse": 36,
+    "text": "Can form the superlative of longer regular adjectives with ‘most’.",
+    "structure": "superlative of adjectives (‘most’ + adjective)",
+    "examples": "the most expensive the most interesting",
+    "categories": "Adjective | Comparison Clause | Comparison",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.8",
+    "gse": 36,
+    "text": "Can use uncountable nouns without an article.",
+    "structure": "zero (dummy) quantifier with uncountable nouns",
+    "examples": "We need food. There’s no gas.",
+    "categories": "Determiner | Quantifiers",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.9",
+    "gse": 36,
+    "text": "Can use ‘a lot of/lots of’ to refer to quantities.",
+    "structure": "‘alot of’/’lots of’as quantifiers",
+    "examples": "a lot of money lots of people",
+    "categories": "Determiner | Quantifiers Noun | Plural",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.10",
+    "gse": 36,
+    "text": "Can use ‘should(n’t)’ to offer or ask for advice or suggestions.",
+    "structure": "‘should(n’t)’for advice or suggestions",
+    "examples": "You should go to a doctor. He shouldn’t drink so much. Where should we go?",
+    "categories": "Modal verb | Obligation Phrase | With infinitive",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.11",
+    "gse": 36,
+    "text": "Can make comparisons with ‘more’ + longer adjectives.",
+    "structure": "comparative forms of adjectives with ‘more ‘",
+    "examples": "You’re more intelligent than me. The film was more interesting than the book.",
+    "categories": "Adjective | Comparison Clause | Comparison",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.12",
+    "gse": 36,
+    "text": "Can use adverbs of frequency and manner in the correct position.",
+    "structure": "position of adverbs of frequency and manner",
+    "examples": "I never watch TV. She drives that car very fast. You should always tell the truth. He’s always late.",
+    "categories": "Adverb | Position Adverb | Time Clause | Basic construction",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.13",
+    "gse": 36,
+    "text": "Can form the superlative of regular adjectives with ‘est’.",
+    "structure": "superlative of adjectives with ‘est’",
+    "examples": "the biggest the funniest",
+    "categories": "Adjective | Comparison Clause | Comparison",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p13.14",
+    "gse": 36,
+    "text": "Can use ‘of’ to refer to possession and attribution.",
+    "structure": "‘of’for a part or aspect",
+    "examples": "the property of the school; the colour of her hair; the start of the lesson",
+    "categories": "Preposition | Possession Clause | Basic construction",
+    "pdf_page": 13,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.2",
+    "gse": 36,
+    "text": "Can ask questions with ‘whatkind/sort of …?’",
+    "structure": "‘whatkind/ sort of …?’",
+    "examples": "Whatkind of cheese is this? What sort of music do you like?",
+    "categories": "Determiner | Question words Pronoun | Question words Preposition | Logical",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.3",
+    "gse": 36,
+    "text": "Can deny intention and desire with ‘wouldn’tlike/ don’twant to …’",
+    "structure": "‘wouldn’tlike/don’twant’+ ‘to’+ VPinf",
+    "examples": "I wouldn’tlike to live here. I don’twant to eat that.",
+    "categories": "Modal verb | Wishes and intentions Clause |Conditional Verb|Auxiliary",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.5",
+    "gse": 36,
+    "text": "Can use ‘some’as a quantifier with count andmass nouns.",
+    "structure": "‘some’ in affirmative statements with countable and uncountable nouns",
+    "examples": "There’ssome milk in the fridge. Some men are waiting outside.",
+    "categories": "Determiner | Quantifiers Noun |Mass/count",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.6",
+    "gse": 37,
+    "text": "Can use ‘with’and ‘without’to refer to (lack of) possession and attribution.",
+    "structure": "NP + ‘with/without’+NP forattribution",
+    "examples": "aboy with dark hair acar with a sunroof the woman with a child acomputer without a screen",
+    "categories": "Preposition | Possession Clause |Basicconstruction",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.7",
+    "gse": 37,
+    "text": "Can express obligation and necessity in the present and near future with ‘have to’.",
+    "structure": "‘have to’ for present and near future obligation",
+    "examples": "I have to do my homework. I have to get up early tomorrow. You don’t have to pay.",
+    "categories": "Modal verb | Obligation Verb | Tense",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.8",
+    "gse": 37,
+    "text": "Can form basic adverbs by adding ‘ly’ to adjectives.",
+    "structure": "formation of basic adverbs with ‘ly’",
+    "examples": "Slowly, badly, carefully",
+    "categories": "Adverb | Formation",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.9",
+    "gse": 37,
+    "text": "Can use a range of basic quantifiers with ‘of’ and noun phrases.",
+    "structure": "basic quantifiers: ‘lots/some/a bit/a lot’ + ‘of’ + NP",
+    "examples": "Lots of people like him. I lost some of my money. We’ve had a bit of luck.",
+    "categories": "Determiner | Quantifiers Preposition | Possession",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.10",
+    "gse": 37,
+    "text": "Can use ‘must’ to express obligation and necessity in the present and near future.",
+    "structure": "NP + ‘must’+ VPinf/’Must’ + NP + VPinf?",
+    "examples": "You must try to relax. I must cook dinner now. Must you go?",
+    "categories": "Modal verb | Obligation Verb | Tags and question forms",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.11",
+    "gse": 37,
+    "text": "Can generalise about persons, things, or situations using plural nouns/noun phrases with no (zero) article.",
+    "structure": "plural NPs with no article",
+    "examples": "People are kind. I don’t like dogs.",
+    "categories": "Determiner | Articles Noun | Mass/count",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.12",
+    "gse": 37,
+    "text": "Can use verb + ‘ing’forms as the complement of a sentence.",
+    "structure": "gerundives (‘ing’ forms) as complement",
+    "examples": "I love watching football. I hate studying English. She enjoys swimming in the sea.",
+    "categories": "Phrase | With gerund (ing)",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.13",
+    "gse": 37,
+    "text": "Can form and use irregular adverbs.",
+    "structure": "irregular adverbs",
+    "examples": "good – well fast – fast hard - hard",
+    "categories": "Adverb | Formation",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.14",
+    "gse": 37,
+    "text": "Can use phrases with prepositions + adjectives + nouns.",
+    "structure": "prepositional phrases (adj./noun phrases)",
+    "examples": "a woman with an old hat and a cheap coat two men in a large black car",
+    "categories": "Phrase | Basic construction Adjective | Position",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p14.15",
+    "gse": 37,
+    "text": "Can use ‘some’ and ‘any’ as quantifiers in negative statements and questions with mass and count nouns.",
+    "structure": "‘some’ and ‘any’ in questions and negative statements with countable and uncountable nouns",
+    "examples": "Can I have some coffee? Do you want some chocolate/biscuits? Is there any bread? There aren’t any biscuits left.",
+    "categories": "Determiner | Quantifiers Noun | Mass/count",
+    "pdf_page": 14,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.1",
+    "gse": 38,
+    "text": "Can use a range of common adverbs and adverbial phrases of position.",
+    "structure": "adverbs and adverbials of position",
+    "examples": "the level above sitting at the back the man in the middle",
+    "categories": "Adverb | Place & movement",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.2",
+    "gse": 38,
+    "text": "Can use ‘will’+ infinitive for predictions about the future.",
+    "structure": "‘will’ + VPinf for predictions",
+    "examples": "That will be really difficult. She’llbe late. I’msure it won’t be open.",
+    "categories": "Modal verb | Timerelated Verb | Auxiliary Verb | Tense",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.3",
+    "gse": 38,
+    "text": "Can express means using ‘by’ with nouns and noun phrases.",
+    "structure": "‘by’+ NP for means of doing something",
+    "examples": "go by bus/train/bike send it by email",
+    "categories": "Preposition | Instrumental Preposition | Movement",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.4",
+    "gse": 38,
+    "text": "Can distinguish between adjectives ending with ‘ed’ and ‘ing’.",
+    "structure": "adjectives with ‘ed/ing’",
+    "examples": "I’mbored. It’sa very boring film. We’revery excited. It was an exciting party.",
+    "categories": "Adjective | Formation",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.5",
+    "gse": 38,
+    "text": "Can form irregular superlatives of adjectives and adverbs such as ‘best’, ‘worst’.",
+    "structure": "superlative of adjectives (irregular)",
+    "examples": "the best the worst",
+    "categories": "Adjective | Comparison Clause | Comparison Adverb | Comparison",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.6",
+    "gse": 38,
+    "text": "Can make comparisons with regular shorter adjectives + ‘er’.",
+    "structure": "inflected comparative forms of adjectives",
+    "examples": "The journey by road is quicker (than by train). She’scleverer than me.",
+    "categories": "Adjective | Comparison Clause | Comparison",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.7",
+    "gse": 38,
+    "text": "Can use the present continuous to refer to temporary situations.",
+    "structure": "present continuous for temporary situation",
+    "examples": "I’m staying with my parents. She’sworking in Oxford. She’s working a lot at the moment.",
+    "categories": "Verb | Tense",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.8",
+    "gse": 38,
+    "text": "Can use ‘in’as a preposition of time with future reference.",
+    "structure": "‘in’for future time",
+    "examples": "in four weeks in a few minutes",
+    "categories": "Preposition | Time Adverb | Time",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.9",
+    "gse": 38,
+    "text": "Can use ‘so’ to refer to results and consequences.",
+    "structure": "‘so’for results and consequences",
+    "examples": "It’sraining, so we’restaying in. He failed the exam, so he didn’t get the certificate.",
+    "categories": "Conjunction | Cause and result Clause | Result/cause",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.10",
+    "gse": 38,
+    "text": "Can ask wh- questions about the subject.",
+    "structure": "wh- questions about the subject",
+    "examples": "Who loves you? Who saw you? What eats birds? Who is sitting here?",
+    "categories": "Pronoun | Question words Verb | Tags and question forms",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.11",
+    "gse": 38,
+    "text": "Can use ’ll+ infinitive for spontaneous decisions and offers.",
+    "structure": "‘…‘ll’for offers and decisions",
+    "examples": "I’llget it. We’llhelp you.",
+    "categories": "Modal verb | Requests, offers and permission Verb | Tense",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.12",
+    "gse": 38,
+    "text": "Can make statements and questions with ‘know’ + whclauses.",
+    "structure": "‘know’ + whclause",
+    "examples": "I know where he lives. Do you know what they want?",
+    "categories": "Clause | Reported speech and ideas Clause | Relative",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.13",
+    "gse": 39,
+    "text": "Can use ‘no’ as a quantifier to indicate the absence or lack of something.",
+    "structure": "‘no’ as quantifier (determiner)",
+    "examples": "There’sno sugar left. There are no chocolates in this box. There’s no time to do it.",
+    "categories": "Determiner | Quantifiers",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p15.14",
+    "gse": 39,
+    "text": "Can express sufficiency and insufficiency with ‘enough’ and ‘too’.",
+    "structure": "‘(not) enough/too much/too many’ + NP",
+    "examples": "We have enough bread. There are too many people here. Don’t have enough money.",
+    "categories": "Determiner | Quantifiers",
+    "pdf_page": 15,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.2",
+    "gse": 39,
+    "text": "Can use ‘that’ and ‘this’ as subject and object pronouns.",
+    "structure": "‘this’ and ‘that’ as pronouns",
+    "examples": "That’sclear This is ridiculous Have a look at this.",
+    "categories": "Pronoun | Demonstrative",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.3",
+    "gse": 39,
+    "text": "Can use direct + indirect objects together after ditransitive verbs like ‘give/tell/pass’.",
+    "structure": "usage of common ditransitive verbs such as ‘give/tell/pass’",
+    "examples": "Pass her the book. Give it to him. Give them some food. Don’ttell me lies.",
+    "categories": "Clause | Basic construction Pronoun | Personal Verb | Imperative",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.4",
+    "gse": 39,
+    "text": "Can make irregular comparisons of adjectives and adverbs such as ‘better’, ‘worse’.",
+    "structure": "inflected comparative forms of irregular adjectives and adverbs",
+    "examples": "It’sbetter here than in London. I’mfeeling worse today.",
+    "categories": "Adjective | Comparison Adverb | Comparison Clause | Comparison",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.5",
+    "gse": 40,
+    "text": "Can use the definite article correctly with geographical names and locations.",
+    "structure": "definite article for: uniqueness, public buildings, geographical names, other proper names",
+    "examples": "the Black Sea the White House",
+    "categories": "Determiner | Articles",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.6",
+    "gse": 40,
+    "text": "Can use ‘before/after’ as conjunctions with complement clauses.",
+    "structure": "‘before/after’ + clause",
+    "examples": "after we got home before she had finished speaking",
+    "categories": "Conjunction | Time Verb | Tense",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.7",
+    "gse": 40,
+    "text": "Can distinguish between the past simple and past continuous.",
+    "structure": "past simple vs. past continuous",
+    "examples": "I opened the door when you arrived. vs I was opening the door when you arrived.",
+    "categories": "Verb | Tense Clause | Time",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.8",
+    "gse": 40,
+    "text": "Can make statements with the verb ‘be’ and adjectives with verbs in the infinitive.",
+    "structure": "‘it’ + ‘be’ + adjective + infinitive",
+    "examples": "It was good to see you. It’s difficult to pass the exam. It wasn’t easy to find the restaurant.",
+    "categories": "Phrase | With ‘be’ Phrase | With infinitive",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.9",
+    "gse": 40,
+    "text": "Can use all forms of comparatives and superlatives of adjectives.",
+    "structure": "comparatives and superlatives (all forms)",
+    "examples": "the best news older than him the most useful present speaking more slowly",
+    "categories": "Adjective | Comparison Adverb | Comparison",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.10",
+    "gse": 40,
+    "text": "Can use singular verb forms with impersonal pronouns ‘every/any/no/ some+body/where/ one/thing’",
+    "structure": "impersonal pronouns + single verb forms",
+    "examples": "No one is safe. Everything looks good.",
+    "categories": "Pronoun | Generic/impersonal Clause | Basic construction",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.11",
+    "gse": 41,
+    "text": "Can use ‘May I/we ...?’ for formal and polite requests for permission.",
+    "structure": "‘May I/we ...?’",
+    "examples": "May we come in? May I explain what I mean?",
+    "categories": "Modal verb | Requests, offers and permission Phrase | With infinitive",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.12",
+    "gse": 41,
+    "text": "Can use ‘when’to link two clauses in the past simple.",
+    "structure": "‘when’+ past simple + past simple",
+    "examples": "I met him when I was at school. I played tennis when I was young.",
+    "categories": "Conjunction | Time Verb | Tense Clause | Time",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.13",
+    "gse": 41,
+    "text": "Can use ‘so …’ to express results and consequences.",
+    "structure": "‘so…’ for results and consequences",
+    "examples": "You weren’t there, so I came home. He was very tired, so he went to bed early.",
+    "categories": "Clause | Result/cause",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.14",
+    "gse": 41,
+    "text": "Can distinguish between the most common ways of expressing the future.",
+    "structure": "comparison of all common future forms (‘going to’, ‘will’, present simple and present continuous)",
+    "examples": "I’mgoing to go to bed now. vs. I’ll go to bed later. The train leaves at 2:15. vs. I’mleaving for Spain in two weeks.",
+    "categories": "Verb | Tense Modal verb | Timerelated",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p16.15",
+    "gse": 41,
+    "text": "Can use the present perfect to refer to personal experiences in the past.",
+    "structure": "present perfect for personal experiences in the past",
+    "examples": "She’s worked in several countries. I’ve been to Kiev before. Have you seen Star Wars?",
+    "categories": "Verb | Tense",
+    "pdf_page": 16,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.1",
+    "gse": 41,
+    "text": "Can use a range of indefinite compound pronouns prefixed with ‘some’.",
+    "structure": "‘some’+ ‘thing/one/where/body’",
+    "examples": "Someone is waiting for you. I need something to eat.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.2",
+    "gse": 41,
+    "text": "Can refer to impossibility and inability in the past using ‘couldn’t’.",
+    "structure": "‘couldn’t’ for past impossibility and inability",
+    "examples": "I couldn’t go to the party. I couldn’t swim when I was ten. Women couldn’t vote in the 19th century.",
+    "categories": "Modal verb | Ability Verb | Tense",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.3",
+    "gse": 41,
+    "text": "Can qualify adverbs with ‘really/quite/very’.",
+    "structure": "‘really/very/quite’ + adverbs",
+    "examples": "He talks really fast. She goes there quite often. She can speak Chinese very well.",
+    "categories": "Adverb | Modifier",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.4",
+    "gse": 41,
+    "text": "Can ask questions using the present perfect with ‘ever’.",
+    "structure": "present perfect + ‘ever’(questions)",
+    "examples": "Have you ever been to Las Vegas? Has she ever seen your apartment?",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.5",
+    "gse": 41,
+    "text": "Can use ‘a bit/a little’ to refer to quantities with mass (uncountable) nouns.",
+    "structure": "‘a bit/a little’ (+ ‘of’) + mass (uncountable) nouns",
+    "examples": "There’s only a little/a bit of milk left. There’s a little/a bit of money in the desk.",
+    "categories": "Determiner | Quantifiers Noun | Mass/count",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.6",
+    "gse": 41,
+    "text": "Can make offers and suggestions using ‘could’.",
+    "structure": "‘could’ for offers and suggestions",
+    "examples": "I could drive you to the airport. You could look it up on the internet.",
+    "categories": "Modal verb | Requests, offers and permission Modal verb | Obligation",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.7",
+    "gse": 42,
+    "text": "Can use ‘like’ with sensory verbs to express similarity.",
+    "structure": "sensory verbs + ‘like’",
+    "examples": "She looks like her mother. It tastes like chocolate.",
+    "categories": "Preposition | Logical Clause | Comparison",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.8",
+    "gse": 42,
+    "text": "Can use the present perfect with present reference.",
+    "structure": "present perfect with present reference (indefinite past)",
+    "examples": "I’ve hurt my knee. He’s cooked us a delicious dinner.",
+    "categories": "Verb | Tense",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.9",
+    "gse": 42,
+    "text": "Can report current and future plans and intentions.",
+    "structure": "‘tell/say’ + present/future for reported speech",
+    "examples": "He says he can do it. She tells me she’s happy",
+    "categories": "Clause | Reported speech and ideas",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.10",
+    "gse": 42,
+    "text": "Can use the present continuous with future reference.",
+    "structure": "present continuous with future reference",
+    "examples": "What are you doing on Saturday? We’replaying tennis tomorrow. We’re meeting at 3 p.m.",
+    "categories": "Verb | Tense",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.11",
+    "gse": 42,
+    "text": "Can use ‘both’ and ‘both of’ with nouns and noun phrases.",
+    "structure": "NP + ‘both’ + VP/NP + ‘both of’ + NP",
+    "examples": "They both went home. I want both of them.",
+    "categories": "Determiner | Conjunction and disjunction Conjunction | Coordinating Adverb | Conjunction and disjunction",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.12",
+    "gse": 42,
+    "text": "Can use a range of pronouns and adverbials for anaphoric (back) reference.",
+    "structure": "anaphoric reference (overview)",
+    "examples": "The child was unhappy; he wanted his mother. I quickly walked home. There I found Marsha waiting for me. The house had already been sold. This was a great surprise to me.",
+    "categories": "Pronoun | Demonstrative Clause | Result/cause",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.13",
+    "gse": 42,
+    "text": "Can construct doublecomplement sentences with verbs such as ‘give’, ‘tell’, ‘ask’,etc.",
+    "structure": "object pronouns as indirect objects",
+    "examples": "give him the book tell me the time ask them a question",
+    "categories": "Pronoun | Personal Phrase | Basic construction",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.14",
+    "gse": 42,
+    "text": "Can express basic cause and effect with ‘because of …’",
+    "structure": "‘because of …’ + NP",
+    "examples": "We didn’t go out, because of the weather. Because of my illness, I wasn’t able to go with them.",
+    "categories": "Preposition | Logical Preposition | Cause and result Clause | Result/cause",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p17.15",
+    "gse": 42,
+    "text": "Can form adjectives from nouns with common affixes.",
+    "structure": "adjectives from nouns with common suffixes (‘y’, ‘ful’)",
+    "examples": "success - successful sport - sporty",
+    "categories": "Adjective | Formation",
+    "pdf_page": 17,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.1",
+    "gse": 43,
+    "text": "Can use a range of indefinite compound pronouns prefixed with ‘every’.",
+    "structure": "‘every’ + ‘thing/one/where/body’",
+    "examples": "Everyone loves chocolate. Everywhere I go, she’s there.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.2",
+    "gse": 43,
+    "text": "Can use a wide range of quantifiers with countable (count) and uncountable (non- count) nouns.",
+    "structure": "overview of all quantifiers incl. ‘several’ with countable/uncountable (count/noncount) nouns",
+    "examples": "several people few customers many years some coffee a little wine",
+    "categories": "Determiner | Quantifiers Noun | Plural",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.3",
+    "gse": 43,
+    "text": "Can use ‘needn’t’ and ‘don’t/doesn’t have to’ to express absence of obligation in the present and future.",
+    "structure": "‘don’t/doesn’t have to/needn’t’ for absence of obligation",
+    "examples": "You don’t have to apologise. She needn’t stay if she wants to go home.",
+    "categories": "Modal verb | Obligation",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.4",
+    "gse": 43,
+    "text": "Can use ‘with’ to refer to the instrument or means of doing something.",
+    "structure": "instrumental ‘with’adjunct",
+    "examples": "You can open the door with this key. Wash it with soap.",
+    "categories": "Preposition | Instrumental",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.5",
+    "gse": 43,
+    "text": "Can use verb + ‘ing’ forms as the subject of a sentence.",
+    "structure": "gerundives (‘ing’ forms) as subject",
+    "examples": "Swimming is my favourite sport. Learning English is fun.",
+    "categories": "Phrase | With gerund (ing) Clause | Basic construction",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.6",
+    "gse": 43,
+    "text": "Can form compound nouns from nouns plus other nouns and adjectives.",
+    "structure": "compound nouns",
+    "examples": "credit card, bookshelf , DVD player, whiteboard, greatgrandfather",
+    "categories": "Noun | Formation",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.7",
+    "gse": 44,
+    "text": "Can use a range of indefinite compound pronouns prefixed with ‘no’.",
+    "structure": "‘no’ + ‘thing/one/where/body’",
+    "examples": "No one knows you. There’s nothing to do.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.8",
+    "gse": 44,
+    "text": "Can use common adverbials to express combinations and similarities between nouns and phrases.",
+    "structure": "conjunction with common adverbials (‘as well’,‘as well as’,‘both... and ...’, ‘also’, ‘too’)",
+    "examples": "John’sleaving too. She ate my dinner as well as hers.",
+    "categories": "Adverb | Conjunction and disjunction",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.9",
+    "gse": 44,
+    "text": "Can use reflexive pronouns as objects or complements.",
+    "structure": "reflexive pronouns as object/complement",
+    "examples": "Did you enjoy yourself? I hurt myself. She’s hurt herself. He wanted to kill himself.",
+    "categories": "Pronoun | Reflexive",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.10",
+    "gse": 44,
+    "text": "Can use ‘all of’, ‘none of’, and ‘most of’ to describe subsets and proportions of groups of people and things.",
+    "structure": "‘all/none/most’ + ‘of’ + people/things",
+    "examples": "Most of the students did the homework. We spent all of the money.",
+    "categories": "Determiner | Quantifiers",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.11",
+    "gse": 44,
+    "text": "Can use a range of prepositions of time, such as ‘before’,‘during’, ‘since’, ‘till/until’.",
+    "structure": "other prepositions in time phrases, e.g. ‘during’, ‘for’, ‘since’, ‘throughout’, ‘till’, ‘until’",
+    "examples": "before 7 p.m. after breakfast during lunch Between 3 and 4 p.m. by Friday till tomorrow",
+    "categories": "Preposition | Time Clause | Time",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.12",
+    "gse": 44,
+    "text": "Can correctly use ‘since’ and ‘for’ in time expressions.",
+    "structure": "‘since/for’ + NP",
+    "examples": "since 2011 for two weeks since I arrived",
+    "categories": "Preposition | Time Clause | Dependent Adverb | Time",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p18.13",
+    "gse": 44,
+    "text": "Can use the present perfect with ‘for/since’ to talk about the duration of states and conditions.",
+    "structure": "present perfect + adverbial clauses with ‘since/for’",
+    "examples": "She’s lived there since 2011. I’vebeen here for a long time. I haven’t seen her for two weeks.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 18,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.1",
+    "gse": 44,
+    "text": "Can refer to someone’s practical knowledge using ‘knowhow to’+ verb phrase.",
+    "structure": "‘know how to’ + VPinf",
+    "examples": "I don’tknow how to change a wheel on a car. Do you know how to use this camera?",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.2",
+    "gse": 44,
+    "text": "Can make statements and ask questions with ‘know about’ + nouns and noun phrases.",
+    "structure": "‘know’ (+ ‘anything’) + ‘about’ + NP",
+    "examples": "Do you know (anything) about Thai cooking? She already knows about your problems.",
+    "categories": "Preposition | Topicalising",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.3",
+    "gse": 44,
+    "text": "Can use the present perfect with ‘yet’ and ‘still’.",
+    "structure": "present perfect + ‘yet/still’",
+    "examples": "Have you done it yet? Have they arrived yet? They still haven’t called. She hasn’t done the report yet.",
+    "categories": "Adverb | Time Verb | Tense",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.4",
+    "gse": 44,
+    "text": "Can use ‘need’ in affirmative statements and questions relating to the present and near future.",
+    "structure": "affirmative statements and questions with ‘need’",
+    "examples": "She needs to stay here. Do we need to pay?",
+    "categories": "Modal verb | Obligation Phrase | With infinitive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.5",
+    "gse": 44,
+    "text": "Can make comparisons using ‘(not) as … as’ with adjectives and adverbs.",
+    "structure": "comparisons with (not) ‘as … as …’",
+    "examples": "He’s not as tall as you. I’m as good as you. Your car isn’t as fast as mine.",
+    "categories": "Clause | Comparison",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.6",
+    "gse": 44,
+    "text": "Can use ‘a few’ to refer to quantities with count (countable) nouns.",
+    "structure": "count nouns with ‘a few’",
+    "examples": "Only a few people came. I’veseen a few of his films.",
+    "categories": "Determiner | Quantifiers Noun | Plural",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.7",
+    "gse": 44,
+    "text": "Can use ‘going to’ with reference to predicted future events and situations.",
+    "structure": "‘going to’ for predictions",
+    "examples": "It’s going to be a fantastic party. I don’t think it’s going to rain. What’s going to happen to us?",
+    "categories": "Verb | Tense Phrase | With infinitive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.8",
+    "gse": 44,
+    "text": "Can make comparisons with regular shorter adverbs + ‘er’.",
+    "structure": "inflected comparative forms of adverbs",
+    "examples": "The film lasted longer than three hours. She drove faster than me.",
+    "categories": "Adverb | Comparison Clause | Comparison",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.9",
+    "gse": 44,
+    "text": "Can describe live (e.g. sporting) events using the present simple.",
+    "structure": "present simple for live events",
+    "examples": "He passes the ball to Rooney. Rooney scores. The Queen waves to the crowd.",
+    "categories": "Verb | Tense",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.10",
+    "gse": 44,
+    "text": "Can tell when to use the past simple and when to use the present perfect (BrE).",
+    "structure": "present perfect vs past simple (BrE)",
+    "examples": "I’ve eaten at that restaurant many times. vs. I ate that restaurant yesterday.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.11",
+    "gse": 45,
+    "text": "Can express agency using ‘by’ with nouns and noun phrases.",
+    "structure": "‘by’ + agent",
+    "examples": "a book by Dickens a painting by Picasso",
+    "categories": "Preposition | Instrumental Verb | Passive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.12",
+    "gse": 45,
+    "text": "Can use possessive pronouns as objects and complements.",
+    "structure": "possessive pronouns as complement",
+    "examples": "These are ours. Let’s use theirs. I don’t like hers. I gave him his.",
+    "categories": "Pronoun | Possessive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.13",
+    "gse": 45,
+    "text": "Can construct basic phrases with ‘(not) (the) same … as …’",
+    "structure": "‘(not) (the) same … as …’",
+    "examples": "Your problem isn’t the same as mine. The time in London is the same as in Dublin.",
+    "categories": "Adjective | Comparison Clause | Comparison",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.14",
+    "gse": 45,
+    "text": "Can use ‘Shall I/we …?’ to make formal suggestions and offers.",
+    "structure": "offers and suggestions with ‘Shall I/we …?’",
+    "examples": "Shall I do it for you? Shall we try it again?",
+    "categories": "Modal verb | Requests, offers and permission Modal verb | Wishes and intentions",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.15",
+    "gse": 45,
+    "text": "Can use verbs of state change with object complements.",
+    "structure": "factitive as object of verb of state change",
+    "examples": "She made everything better. We painted the wall green.",
+    "categories": "Clause | Basic construction",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p19.16",
+    "gse": 45,
+    "text": "Can use ‘used to’ to refer to past habits and routines.",
+    "structure": "‘used to’ + VPinf for past habits",
+    "examples": "I used to smoke 20 a day. He used to live in Athens.",
+    "categories": "Modal verb | Timerelated Phrase | With infinitive",
+    "pdf_page": 19,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.1",
+    "gse": 45,
+    "text": "Can express preference with ‘like … better more/than ….’",
+    "structure": "‘like … better/more than …’",
+    "examples": "I like coffee more than tea. She likes dancing better than running.",
+    "categories": "Adverb | Comparison Clause | Comparison",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.2",
+    "gse": 45,
+    "text": "Can use a range of indefinite compound pronouns prefixed with ‘any’.",
+    "structure": "‘any’ + ‘thing/one/where/body’",
+    "examples": "I can’t find anybody. Anything is OK by me.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.3",
+    "gse": 45,
+    "text": "Can respond to a suggestion with ‘Yes, let’s’.",
+    "structure": "‘Yes,let’s.’",
+    "examples": "Shall we go? - Yes, let’s.",
+    "categories": "Verb | Tags and question forms Modal verb | Requests, offers and permission Modal verb | Obligation",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.4",
+    "gse": 45,
+    "text": "Can qualify adverbs with ‘too/enough’.",
+    "structure": "‘too/enough’ + adverbs of manner",
+    "examples": "She speaks too fast. He eats too quickly. They don’t work hard enough.",
+    "categories": "Adverb | Modifier Adverb | Position",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.5",
+    "gse": 45,
+    "text": "Can use the present perfect with ‘just’ (BrE).",
+    "structure": "present perfect + ‘just’ (BrE)",
+    "examples": "The alarm’s just gone off. I’ve just had lunch. Hurry, the match has just started.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.6",
+    "gse": 45,
+    "text": "Can refer to the recipient or indirect object with ‘to’ + noun or noun phrase.",
+    "structure": "dative in ‘to’adjunct",
+    "examples": "He gave the ticket to my brother. I’llexplain the situation to you.",
+    "categories": "Clause | Basic construction Preposition | Logical",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.7",
+    "gse": 45,
+    "text": "Can use a range of common linking words to sequence events or activities.",
+    "structure": "common linking words for chronological sequence",
+    "examples": "in the end, finally, before/after that, next, during",
+    "categories": "Adverb | Time Preposition | Time Adverb | Position",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.8",
+    "gse": 46,
+    "text": "Can correctly use ‘a bit/a little’ and ‘a few’ to refer to quantities with mass and count nouns respectively.",
+    "structure": "‘a bit/a little/a few’ + mass (uncountable) vs. count quantities",
+    "examples": "There’s a little/a bit of cheese in the fridge. I’ve got a few ideas. We need a little/a bit of help here. They bought a few books.",
+    "categories": "Determiner | Quantifiers Noun | Mass/count",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.9",
+    "gse": 46,
+    "text": "Can use the present continuous to refer to changing situations.",
+    "structure": "present continuous for changing states and situations",
+    "examples": "Prices are going up. He’s getting better. It’s getting colder. We’re getting hungry.",
+    "categories": "Verb | Tense",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.10",
+    "gse": 46,
+    "text": "Can identify which article (including no article) to use with a range of nouns and noun phrases.",
+    "structure": "definite/indefinite/no article (overview)",
+    "examples": "the BBC a broadcasting organisation broadcasting German railways a German train the German railway system",
+    "categories": "Determiner | Articles Noun | Plural",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.11",
+    "gse": 46,
+    "text": "Can make suggestions using ‘what about/ how about’ with verbs in the gerund.",
+    "structure": "‘what about/how about’ + NP/VPgerund?",
+    "examples": "What about going out for a drink? How about calling them?",
+    "categories": "Phrase | With gerund (ing) Pronoun | Question words",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.12",
+    "gse": 46,
+    "text": "Can use ‘of’ with possessive forms to describe possessions or attributes.",
+    "structure": "NP + ‘of’ + NP + ‘‘s’ + NP",
+    "examples": "one of John’s best ideas the size of Akiko’s flat part of the city’s financial centre",
+    "categories": "Noun | Possessive (genitive) Preposition | Possession",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.13",
+    "gse": 46,
+    "text": "Can use ‘had to ...’/’Did …have to…?’to refer to past necessity and obligation.",
+    "structure": "‘had to/Did ... have to’+ VPinf (+ ‘?’)",
+    "examples": "They had to walk home. Did you have to pay?",
+    "categories": "Modal verb | Obligation Verb | Tense",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.14",
+    "gse": 46,
+    "text": "Can make offers using the first conditional.",
+    "structure": "‘if’ + present simple + ‘will’ + VP for offers",
+    "examples": "I’ll pay for lunch if you pay for dinner. I’llhelp you if you help me.",
+    "categories": "Clause | Conditional Clause | Result/cause",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p20.15",
+    "gse": 46,
+    "text": "Can use common quantifiers such as ‘a lot’ and ‘much’ as adverbs.",
+    "structure": "verb + ‘a lot/a bit/a little/(very) much’ as adverbs",
+    "examples": "It didn’t hurt very much. She talked a lot. I only understand a bit.",
+    "categories": "Determiner | Quantifiers Adverb | Modifier Adverb | Position",
+    "pdf_page": 20,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.1",
+    "gse": 46,
+    "text": "Can speculate about the future using ‘may/ might/could’ + infinitive.",
+    "structure": "NP + ‘may/might/could’ + VPinf",
+    "examples": "He could get better. They may accept the offer.",
+    "categories": "Modal verb | Likelihood Phrase | With infinitive",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.2",
+    "gse": 46,
+    "text": "Can make offers and suggestions with ‘Why not/why don’t you/we …’?",
+    "structure": "‘Why not’ + VPinf?/’Why don’t we/you’ + VPinf?",
+    "examples": "Why not stay at my place? Why don’t we get a taxi?",
+    "categories": "Verb | Tags and question forms Phrase | With infinitive",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.3",
+    "gse": 46,
+    "text": "Can use the present simple with future reference.",
+    "structure": "present simple with future reference",
+    "examples": "The train leaves at 6 p.m. The concert starts at eight. We land at 5 a.m. tomorrow.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.4",
+    "gse": 46,
+    "text": "Can use infinitives after some common adjectives.",
+    "structure": "adjective + ‘to’ + VPinf",
+    "examples": "easy to do happy to help not difficult to learn",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.5",
+    "gse": 46,
+    "text": "Can use phrasal verbs with separated object.",
+    "structure": "phrasal verbs with separated object",
+    "examples": "put on your jacket/put your jacket on take your shoes off/take off your shoes",
+    "categories": "Phrasal verb Verb | Phrasal and prepositional Clause | Basic construction",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.6",
+    "gse": 46,
+    "text": "Can form a range of nouns from adjectives and verbs with common suffixes.",
+    "structure": "nouns formed with suffixes (overview)",
+    "examples": "arrive - arrival transport - transportation happy - happiness safe - safety",
+    "categories": "Noun | Formation",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.7",
+    "gse": 46,
+    "text": "Can describe possible future outcomes of a present action or situation using the first conditional.",
+    "structure": "‘if’ + present simple + ‘will’ + verb (first conditional)",
+    "examples": "If we don’t hurry, we’ll be late. What will you do if they don’t call?",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.8",
+    "gse": 46,
+    "text": "Can use transitive verbs in the passive with the object as the grammatical subject.",
+    "structure": "objective as subject of passive",
+    "examples": "The door was opened by John. The picture was painted by Rembrandt.",
+    "categories": "Verb | Passive Preposition | Instrumental Verb | Tense",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.9",
+    "gse": 46,
+    "text": "Can use ‘mustn’t’ to express prohibition in the present and near future.",
+    "structure": "NP + ‘mustn’t’ + VPinf",
+    "examples": "He mustn’t come here again. You mustn’t tell anyone.",
+    "categories": "Modal verb | Obligation Modal verb | Requests, offers and permission Verb | Negative forms",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.10",
+    "gse": 46,
+    "text": "Can express preference with regard to things using ‘prefer … (to …)’",
+    "structure": "‘prefer’+ NP (+ ‘to’+ NP)",
+    "examples": "I prefer dogs to cats. She prefers tea.",
+    "categories": "Clause | Basic construction Clause | Comparison",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.11",
+    "gse": 46,
+    "text": "Can describe quantities using ‘hardly/not’ + ‘any/much/many’.",
+    "structure": "negative quantifiers such as ‘hardly any/not much/not many’",
+    "examples": "There’s hardly any milk left. Not many people came.",
+    "categories": "Determiner | Quantifiers Adverb | Modifier",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.12",
+    "gse": 46,
+    "text": "Can use indefinite compound pronouns followed by infinitive verb phrases.",
+    "structure": "‘something/anything/nothing’ + ‘to’ + VPinf",
+    "examples": "Something to do Have you got anything to eat? I’ve got nothing to read.",
+    "categories": "Pronoun | Generic/impersonal Phrase | With infinitive",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.13",
+    "gse": 46,
+    "text": "Can use ‘that’ with time expressions referring to the past.",
+    "structure": "‘that’ + (finished) time expressions",
+    "examples": "that day, that week, that Monday, that summer, that weekend, that afternoon",
+    "categories": "Determiner | Deictic (this/that) Adverb | Time",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.14",
+    "gse": 46,
+    "text": "Can use ‘when’ to link clauses in the past simple and past continuous.",
+    "structure": "‘when’ + past continuous + past simple",
+    "examples": "I was eating when the phone rang. The phone rang when I was eating. I was talking when you interrupted me.",
+    "categories": "Verb | Tense Clause | Dependent Conjunction | Time",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.15",
+    "gse": 46,
+    "text": "Can use ‘till/until’ with the present tense to refer to events in the future.",
+    "structure": "clause1 + ‘’till/until’ + clause2 (present) with future reference",
+    "examples": "I’mstaying here till it stops raining. Can you wait until she comes out?",
+    "categories": "Conjunction | Time Verb | Tense",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p21.16",
+    "gse": 47,
+    "text": "Can distinguish between present perfect simple and continuous.",
+    "structure": "present perfect simple vs. continuous",
+    "examples": "I’ve lived here before. vs I’ve been living here for six months.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 21,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.1",
+    "gse": 47,
+    "text": "Can correctly use ‘(the) other’ and ‘another’ with nouns.",
+    "structure": "‘(the) other’ vs. ‘another’",
+    "examples": "Give me another book. I want the other book.",
+    "categories": "Adverb | Modifier Determiner | Deictic (this/that)",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.2",
+    "gse": 47,
+    "text": "Can describe simple conditions where one event follows another.",
+    "structure": "‘if’ + present simple + present simple",
+    "examples": "If you heat ice, it melts. If you don’t water plants, they die.",
+    "categories": "Clause | Conditional Verb | Tense Clause | Result/cause",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.3",
+    "gse": 47,
+    "text": "Can use ‘you’ in a generic or impersonal sense.",
+    "structure": "‘you’ as generic pronoun",
+    "examples": "You use this key to open it. You can’t buy love.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.4",
+    "gse": 47,
+    "text": "Can form and use phrases with prepositions + verbs (+’ing’).",
+    "structure": "prepositional phrases (verb phrases)",
+    "examples": "after leaving school without talking to us",
+    "categories": "Preposition | Time Phrase | With gerund (ing) Preposition | Logical",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.5",
+    "gse": 47,
+    "text": "Can use the present perfect continuous with present reference plus ‘recently/lately’.",
+    "structure": "present perfect continuous with present reference (+ ‘recently’/’lately’)",
+    "examples": "I haven’t been feeling well lately. She’s been drinking a lot recently.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.6",
+    "gse": 47,
+    "text": "Can express attitude and agreement with ‘agree/think (that)’ + complement clause.",
+    "structure": "‘agree/think’ (+ ‘that)’ + complement clause",
+    "examples": "I think London is great. Do you agree that we should go home now?",
+    "categories": "Clause | Dependent",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.7",
+    "gse": 47,
+    "text": "Can form a range of adjectives from nouns and verbs with common suffixes.",
+    "structure": "adjectives formed with suffixes (overview)",
+    "examples": "drink drinkable amuse - amusing/amused beauty - beautiful home - homeless",
+    "categories": "Adjective | Formation",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.8",
+    "gse": 47,
+    "text": "Can form nouns from adjectives with common suffixes.",
+    "structure": "nouns from adjectives with common suffixes (‘ity’, ‘ness’, etc.)",
+    "examples": "reliable – reliability happy - happiness",
+    "categories": "Noun | Formation",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.9",
+    "gse": 47,
+    "text": "Can use ‘after/before’ as prepositions with the gerundive (ing) form of verbs.",
+    "structure": "‘after/before’ + VPgerund",
+    "examples": "You spoke before thinking. After leaving home she caught a bus.",
+    "categories": "Preposition | Time Phrase | With gerund (ing)",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.10",
+    "gse": 47,
+    "text": "Can express thanks for an action using verbs in the gerund.",
+    "structure": "‘thank’ + NP + ‘for’ + VPgerund",
+    "examples": "Thank you for listening to me. Can you thank her for inviting us?",
+    "categories": "Phrase | With gerund (ing) Preposition | Complementiser",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.11",
+    "gse": 47,
+    "text": "Can correctly use ‘as’ and’ like’ with noun phrases to express capacity and similarity.",
+    "structure": "‘as’vs. ‘like’+ NP",
+    "examples": "…working as a teacher … talk like a teacher",
+    "categories": "Preposition | Instrumental Preposition | Logical",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.12",
+    "gse": 47,
+    "text": "Can make comparisons with ‘more’ + longer adverbs.",
+    "structure": "comparative forms of adverbs with ‘more …’",
+    "examples": "He works more carefully than you. She speaks more fluently than her sister.",
+    "categories": "Adverb | Comparison Clause | Comparison",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.13",
+    "gse": 47,
+    "text": "Can use the present perfect continuous with ‘for/since’ and time expressions.",
+    "structure": "present perfect continuous + ‘for/since’ + time adverbial",
+    "examples": "I’ve been working since three o’clock. We’ve been waiting for hours.",
+    "categories": "Preposition | Time Verb | Tense Adverb | Time",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.14",
+    "gse": 47,
+    "text": "Can use a range of verbs taking ‘to’ + infinitive.",
+    "structure": "verbs taking ‘to’ + infinitive",
+    "examples": "agree to do it promise to do it offer to help refuse to leave want to go",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.15",
+    "gse": 47,
+    "text": "Can use a range of common prefixes with verbs.",
+    "structure": "prefixes + verbs (overview)",
+    "examples": "dis+connect re+write un+do",
+    "categories": "Verb | Formation",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p22.16",
+    "gse": 47,
+    "text": "Can correctly use the present perfect with ‘been (to)’ and ‘gone (to)’, referring to places.",
+    "structure": "present perfect + ‘been’ vs ‘gone’ (BrE)",
+    "examples": "Have you been to Paris? He’s just gone to the shop. She hasn’t gone yet.",
+    "categories": "Verb | Tense",
+    "pdf_page": 22,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.1",
+    "gse": 47,
+    "text": "Can form questions with prepositional verbs and final prepositions.",
+    "structure": "questions with prepositional verbs",
+    "examples": "What are you laughing at? Who are you talking about? What kind of music do you listen to?",
+    "categories": "Preposition | Position Phrasal verb Verb | Phrasal and prepositional",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.2",
+    "gse": 48,
+    "text": "Can report past orders and requests with ‘tell/ask’.",
+    "structure": "‘asked/told’ + person + ‘to’ + VPinf",
+    "examples": "I told you to shut the door. Did you ask them to help you?",
+    "categories": "Phrase | With infinitive Clause | Reported speech and ideas",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.3",
+    "gse": 48,
+    "text": "Can express strong wishes or aversion using ‘would love/hate to …’",
+    "structure": "‘would love/hate’ + ‘to’ + VPinf",
+    "examples": "I’d love to come to your party. I’d hate to miss the party.",
+    "categories": "Modal verb | Wishes and intentions Clause | Conditional",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.4",
+    "gse": 48,
+    "text": "Can make statements and ask questions with ‘know (that)’ + complement clauses.",
+    "structure": "‘know’ + ‘(that)’ + complement clause",
+    "examples": "I didn’t know (that) she was still married. We know (that) you don’t like us.",
+    "categories": "Clause | Reported speech and ideas Clause | Dependent",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.5",
+    "gse": 48,
+    "text": "Can use conjunctions such as ‘when’ and ‘before’ with the present simple, with future reference.",
+    "structure": "‘when/as soon as/before’, etc. + present simple with future reference",
+    "examples": "I’ll tell her when I see her. I’ll call as soon as I get there. I’ll do it before I leave.",
+    "categories": "Conjunction | Time Verb | Tense Clause | Time",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.6",
+    "gse": 48,
+    "text": "Can use the present perfect continuous to refer to ongoing states and conditions.",
+    "structure": "present perfect continuous (general)",
+    "examples": "I’ve been sitting here waiting. It’s been raining all day.",
+    "categories": "Verb | Tense Clause | Time",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.7",
+    "gse": 48,
+    "text": "Can correctly place the indirect object with verbs taking ‘for’ and ‘to.",
+    "structure": "transitive verbs with ‘for/to’ and indirect object",
+    "examples": "Thank him for the present. Ask her for the book. Invite them to the party.",
+    "categories": "Phrasal verb Verb | Phrasal and prepositional",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.8",
+    "gse": 48,
+    "text": "Can use ‘till/until’ referring to events in the past using appropriate verb forms.",
+    "structure": "clause1 + ‘’till/until’ + clause2 (past)",
+    "examples": "I worked till John arrived. She stayed in bed until everyone had left.",
+    "categories": "Conjunction | Time Verb | Tense",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.9",
+    "gse": 48,
+    "text": "Can use ‘one/ones’ to replace nouns.",
+    "structure": "‘one/ones’ as substitutes/propwords",
+    "examples": "Which one do you want? I like those ones.",
+    "categories": "Pronoun | Generic/impersonal",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.10",
+    "gse": 48,
+    "text": "Can use ‘who/that/which’ in basic defining (restrictive) relative clauses.",
+    "structure": "‘who/that/which’ in relative clauses",
+    "examples": "He’s the friend who lives in Prague. That’s the car that/which I’m going to buy.",
+    "categories": "Clause | Relative",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.11",
+    "gse": 48,
+    "text": "Can use ‘by’ with verbs and verb phrases to express the means or way of doing something.",
+    "structure": "‘by’ + VPgerund",
+    "examples": "I learned French by watching French TV. You make it by cooking fruit and sugar together.",
+    "categories": "Phrase | With gerund (ing) Preposition | Instrumental",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.12",
+    "gse": 48,
+    "text": "Can give, deny or ask about permission in the past with ‘was(n’t) able to/allowed to’.",
+    "structure": "‘was(n’t) able/allowed to’ for permission",
+    "examples": "He wasn’t able to leave the room. Were you allowed to leave the hotel?",
+    "categories": "Modal verb | Ability Modal verb | Requests, offers and permission Verb | Tense",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.13",
+    "gse": 48,
+    "text": "Can refer to general truths using ‘can’.",
+    "structure": "‘can’for generalisations",
+    "examples": "It can get very cold in November. People can be very cruel sometimes.",
+    "categories": "Modal verb | Likelihood",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.14",
+    "gse": 48,
+    "text": "Can negate adjectives with the correct negative prefix.",
+    "structure": "negation of adjectives with prefixes",
+    "examples": "un+likely in+appropriate",
+    "categories": "Adjective | Formation",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.15",
+    "gse": 48,
+    "text": "Can use a wide range of subject and object relative pronouns, including zero (omission of pronoun).",
+    "structure": "overview of relative pronouns",
+    "examples": "the house where I was born the girl who lives next door the carpet I bought in Egypt",
+    "categories": "Clause | Relative Pronoun | Question words",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.16",
+    "gse": 48,
+    "text": "Can use ‘when’ and ‘where’ in relative clauses.",
+    "structure": "‘when/where’ in relative clauses",
+    "examples": "The day when we arrived was a Thursday. Is there a place where I can get a coffee?",
+    "categories": "Clause | Relative Pronoun | Question words",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p23.17",
+    "gse": 48,
+    "text": "Can use ‘was/were going to’ to refer to past intentions.",
+    "structure": "NP + ‘was/were going to’+ VPinf",
+    "examples": "We were going to eat at home tonight. I was going to tell you, but I forgot.",
+    "categories": "Verb | Tense Verb | Auxiliary",
+    "pdf_page": 23,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.1",
+    "gse": 48,
+    "text": "Can describe hypothetical (counterfactual) results of a current action or situation using the second conditional.",
+    "structure": "second conditional",
+    "examples": "I’dcall her if I had her number. If I had the money, I’d buy it.",
+    "categories": "Clause | Conditional",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.2",
+    "gse": 48,
+    "text": "Can make generalisations about groups and nationalities using ‘the’ + adjective (+ ‘s’).",
+    "structure": "‘the’ + NP derived from adjective for generalisations",
+    "examples": "the unemployed the Brazilians the young the rich the Europeans",
+    "categories": "Determiner | Articles",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.3",
+    "gse": 48,
+    "text": "Can use ‘let/make/help’ to refer to enabling, forcing, or allowing things to be done.",
+    "structure": "‘make/help/let’ + NP + VPinf",
+    "examples": "Help her find it. Make him do it. Let me help you. Help me carry this.",
+    "categories": "Clause | Result/cause Phrase | With infinitive",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.4",
+    "gse": 48,
+    "text": "Can use ‘both … and …’ to connect two words or phrases.",
+    "structure": "‘both … and …’",
+    "examples": "Both John and Mary speak Italian. I drink both tea and coffee.",
+    "categories": "Determiner | Conjunction and disjunction Conjunction | Coordinating",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.5",
+    "gse": 48,
+    "text": "Can use the past simple passive.",
+    "structure": "past simple passive",
+    "examples": "It was built in 1922. John was taken to hospital.",
+    "categories": "Verb | Passive Verb | Tense",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.6",
+    "gse": 48,
+    "text": "Can use a range of common placeholders or propwords.",
+    "structure": "propwords: ‘one(s)’,‘some’,‘any’",
+    "examples": "Which one do you like? Do you prefer the red ones or the blue ones? She wants some too. Do you want any?",
+    "categories": "Pronoun | Generic/impersonal Pronoun | Question words",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.7",
+    "gse": 48,
+    "text": "Can correctly use a range of common phrasal (separable) and prepositional (inseparable phrasal) verbs.",
+    "structure": "verb + NP + preposition/verb + preposition + NP; separable/phrasal verb vs. inseparable phrasal/prepositional verb",
+    "examples": "Put your clothes on. Put on your clothes. I’m looking for my clothes. (I’m looking my clothes for - INCORRECT).",
+    "categories": "Phrasal verb Verb | Phrasal and prepositional",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.8",
+    "gse": 48,
+    "text": "Can express purpose with ‘for’ + verb + ‘ing’.",
+    "structure": "‘for’ + VPgerund for purpose",
+    "examples": "I use it for washing the car. This money’s for spending on holiday.",
+    "categories": "Phrase | With gerund (ing) Clause | Result/ cause Preposition | Logical",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.9",
+    "gse": 48,
+    "text": "Can use the present simple passive.",
+    "structure": "present simple passive",
+    "examples": "It’s only sold online. They’re made with flour and water.",
+    "categories": "Verb | Passive Verb | Tense",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.10",
+    "gse": 49,
+    "text": "Can use ‘whose’to talk about possession in relative clauses.",
+    "structure": "relative clauses with ‘whose’",
+    "examples": "the man whose brother won a gold medal the man whose dog you took for a walk",
+    "categories": "Clause | Relative Pronoun | Possessive Clause | Dependent",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.11",
+    "gse": 49,
+    "text": "Can put a range of different adjectives into the correct sequence.",
+    "structure": "sequence of different types of adjectives",
+    "examples": "a big old yellow French car a tall attractive young Asian man",
+    "categories": "Adjective | Position Phrase | Basic construction",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.12",
+    "gse": 49,
+    "text": "Can form adjectives from verbs and nouns with common suffixes.",
+    "structure": "adjectives from verbs with common suffixes (‘able’, ‘less’)",
+    "examples": "believe - believable hope - hopeless",
+    "categories": "Adjective | Formation",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.13",
+    "gse": 49,
+    "text": "Can make negative suggestions with ‘Let’s not ...’",
+    "structure": "‘Let’s not …’ for negative suggestions",
+    "examples": "Let’s not fight about this. Let’s not spend too much money.",
+    "categories": "Modal verb | Obligation Verb | Imperative",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.14",
+    "gse": 49,
+    "text": "Can refer to general concepts using abstract nouns without articles.",
+    "structure": "abstract nouns without article",
+    "examples": "Hope never dies. Love is the answer.",
+    "categories": "Determiner | Articles",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p24.15",
+    "gse": 49,
+    "text": "Can use ‘must’ and ‘can’t’for inferences and assumptions in the present.",
+    "structure": "‘can’t/must’ for inferences",
+    "examples": "She can’t be over 30 - she looks so young! From her accent, she must be American.",
+    "categories": "Modal verb | Likelihood",
+    "pdf_page": 24,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.1",
+    "gse": 49,
+    "text": "Can ask indirect questions using ‘would like to know’ with wh- pronouns.",
+    "structure": "NP + ‘would like to know’ + whpronoun + VP",
+    "examples": "I’d like to know where I can buy this. Would you like to know how much it costs?",
+    "categories": "Clause | Conditional Clause | Relative Pronoun | Question words",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.2",
+    "gse": 49,
+    "text": "Can use ‘quite’ and ‘quite a(n)’ as adverbials with adjectives and noun phrases.",
+    "structure": "uses of ‘quite (a)’",
+    "examples": "quite interesting quite an expensive meal quite a lot of money",
+    "categories": "Adverb | Modifier",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.3",
+    "gse": 49,
+    "text": "Can use ‘either ... or …’ in relation to a choice between two things or actions.",
+    "structure": "‘either…or …’",
+    "examples": "We can either take the bus or get a taxi. We can have either Italian or Chinese food.",
+    "categories": "Adverb | Conjunction and disjunction Conjunction | Coordinating",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.4",
+    "gse": 49,
+    "text": "Can distinguish between ‘to’+ infinitive and ‘ing’ after certain verbs with a change of meaning.",
+    "structure": "verb + ‘to’ + VPinf vs. VPgerund with change of meaning",
+    "examples": "remember to do/remember doing stop to do/ stop doing forgot to do/forget doing",
+    "categories": "Phrase | With infinitive Phrase | With gerund (ing)",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.5",
+    "gse": 49,
+    "text": "Can construct complement clauses starting with ‘about’.",
+    "structure": "complement clauses with ‘about’ + VP",
+    "examples": "Her talk was about how to make money working from home. His email is about why he’s leaving the company.",
+    "categories": "Preposition | Complementiser Clause | Dependent",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.6",
+    "gse": 49,
+    "text": "Can correctly use positive/positive (Br Eng), positive/negative and negative/positive question tags.",
+    "structure": "pos/neg, neg/pos and pos/pos question tags",
+    "examples": "You know her, do you? vs. You know her, don’t you? vs. You don’t know her, do you?",
+    "categories": "Verb | Tags and question forms Verb | Auxiliary",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.7",
+    "gse": 49,
+    "text": "Can correctly use ‘between’ and ‘among’ with noun phrases referring to two or more items or entities.",
+    "structure": "‘between’ vs. ‘among’",
+    "examples": "The village is between the river and the mountain. She found herself among unfamiliar people.",
+    "categories": "Preposition | Place",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.8",
+    "gse": 49,
+    "text": "Can use the present perfect with the superlative forms of adjectives.",
+    "structure": "present perfect + superlative of adjectives",
+    "examples": "the best book I’ve ever read the worst film I’ve seen the best holiday I’ve ever had",
+    "categories": "Verb | Tense Clause | Comparison",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.9",
+    "gse": 50,
+    "text": "Can give, deny or ask about permission in the future with ‘will/won’t be able to/ allowed to’.",
+    "structure": "‘will/won’t be able/allowed to’ + VPinf for permission",
+    "examples": "You’llbe able to go home soon. We won’t be allowed to drive there.",
+    "categories": "Modal verb | Ability Phrase | With infinitive",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.10",
+    "gse": 50,
+    "text": "Can use a range of negative question tags.",
+    "structure": "question tags (negative, all tenses)",
+    "examples": "It’seasy, isn’t it? You know him, don’t you? He’s finished the job, hasn’t he?",
+    "categories": "Verb | Tags and question forms Verb | Auxiliary",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.11",
+    "gse": 50,
+    "text": "Can ask indirect questions using ‘would like to know’ with ‘if/whether’.",
+    "structure": "NP + ‘would like to know’ + ‘if/whether’ + clause",
+    "examples": "I’d like to know if it’s available now. Would you like to know whether she’s free?",
+    "categories": "Clause | Conditional Clause | Dependent",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.12",
+    "gse": 50,
+    "text": "Can use past participles as adjectives.",
+    "structure": "past participles as adjectives",
+    "examples": "made of/by/in built in painted/written/directed by discovered/invented by/in",
+    "categories": "Verb | Passive Preposition | Instrumental Preposition | Position",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.13",
+    "gse": 50,
+    "text": "Can refer to groups and subgroups using ‘neither’, ‘either’, ‘each’ and ‘all’ with noun phrases.",
+    "structure": "‘neither/either/each/all’ (+ ‘of’) + NP",
+    "examples": "I don’t like either of them. Neither of my sisters lives here. All of us agree with you.",
+    "categories": "Determiner | Conjunction and disjunction Determiner | Quantifiers",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.14",
+    "gse": 50,
+    "text": "Can express hope and aspiration with ‘hope (that)’ + complement clause.",
+    "structure": "‘hope (that)’ + complement clause",
+    "examples": "I hope you get better soon. They hope that we’ll forget the incident.",
+    "categories": "Clause | Dependent",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p25.15",
+    "gse": 50,
+    "text": "Can use a range of common prefixes with nouns.",
+    "structure": "prefixes + nouns (overview)",
+    "examples": "semi+circle ex+wife mal+function",
+    "categories": "Noun | Formation",
+    "pdf_page": 25,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.1",
+    "gse": 50,
+    "text": "Can form a range of verbs from adjectives and nouns with common suffixes.",
+    "structure": "verbs formed with suffixes (overview)",
+    "examples": "soft+en sympath(y)+ise activ(e)+ate",
+    "categories": "Verb | Formation",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.2",
+    "gse": 50,
+    "text": "Can form a range of hyphenated compound adjectives.",
+    "structure": "adjective/adverb + hyphen + adjective/ noun",
+    "examples": "wellpaid highquality fulltime",
+    "categories": "Adjective | Formation Adverb | Formation",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.3",
+    "gse": 50,
+    "text": "Can report past wh- questions.",
+    "structure": "reported past tense questions with ‘wh’ clauses",
+    "examples": "She asked me how much I earned. I wondered how long they had been there.",
+    "categories": "Clause | Reported speech and ideas Determiner | Quantifiers",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.4",
+    "gse": 50,
+    "text": "Can use ‘should’ to express likelihood in the present and near future.",
+    "structure": "‘should’ for likelihood",
+    "examples": "She should be here soon. It should work.",
+    "categories": "Modal verb | Likelihood",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.5",
+    "gse": 50,
+    "text": "Can correctly place prepositions (particles) with phrasal (separable) and prepositional (inseparable phrasal) verbs.",
+    "structure": "prepositional vs. phrasal (separable vs. inseparable phrasal) verbs",
+    "examples": "looking for my bag/looking for it putting on your coat/putting your coat on/ putting it on.",
+    "categories": "Verb | Phrasal and prepositional Phrasal verb Preposition | Position",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.6",
+    "gse": 50,
+    "text": "Can use ‘while’ with the past simple and past continuous to refer to past actions and states.",
+    "structure": "past continuous with ‘while’",
+    "examples": "I saw her while I was shopping. We met while we were living in Paris.",
+    "categories": "Conjunction | Time Verb | Tense Clause | Dependent",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.7",
+    "gse": 50,
+    "text": "Can use ‘going’ to and ‘will’ future forms of the passive.",
+    "structure": "NP + ‘going to/will’ + VPpassive",
+    "examples": "The house is going to be sold. Everything will be explained.",
+    "categories": "Verb | Passive Verb | Tense Phrase | With infinitive",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.8",
+    "gse": 50,
+    "text": "Can express hope and aspiration with ‘… hope to’ + infinitive.",
+    "structure": "‘hope to’ + VPinf",
+    "examples": "I hope to see you again soon. She’s hoping to hear from you.",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.9",
+    "gse": 50,
+    "text": "Can construct relative clauses with ‘what’.",
+    "structure": "“free” relative (noun) clauses with ‘what’",
+    "examples": "I decided what I’m going to do. You can say what you like.",
+    "categories": "Clause | Relative Clause | Dependent",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.10",
+    "gse": 50,
+    "text": "Can use a range of common prefixes enhancing the meaning of adjectives.",
+    "structure": "prefixes + adjectives (overview; not negation)",
+    "examples": "over+used under+paid super+human",
+    "categories": "Adjective | Formation",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.11",
+    "gse": 51,
+    "text": "Can refer to acquired information using ‘hear’ + ‘of/about’ with nouns and noun phrases.",
+    "structure": "‘hear of/about’ + NP",
+    "examples": "I’ve never heard of him. Have you heard about Mary’s boyfriend?",
+    "categories": "Preposition | Topicalising Clause | Reported speech and ideas",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.12",
+    "gse": 51,
+    "text": "Can use the present continuous with ‘always’ and other adverbs of frequency to express negative attitude.",
+    "structure": "present continuous (+ ‘always’) expressing negative attitude",
+    "examples": "You’re always working. She’s usually talking on the phone when I go to see her.",
+    "categories": "Verb | Tense Adverb | Time",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.13",
+    "gse": 51,
+    "text": "Can use embedded defining (restrictive) relative clauses.",
+    "structure": "embedded relative clauses",
+    "examples": "The car we rented broke down outside Reno. The woman who was looking for you has just gone.",
+    "categories": "Clause | Relative Clause | Dependent",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p26.14",
+    "gse": 51,
+    "text": "Can use a range of adverbial intensifiers with adjectives.",
+    "structure": "adverbial intensifiers",
+    "examples": "extremely hot amazingly difficult surprisingly cheap",
+    "categories": "Adverb | Modifier",
+    "pdf_page": 26,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.1",
+    "gse": 51,
+    "text": "Can make requests using ‘Will you (please) ...?’",
+    "structure": "requests with ‘will you (please) …?’",
+    "examples": "Will you tell me something? Will you please stop doing that?",
+    "categories": "Modal verb | Requests, offers and permission Verb | Imperative",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.2",
+    "gse": 51,
+    "text": "Can use ‘so’ + adjective/quantifier + ‘that’ to express results and consequences.",
+    "structure": "‘so [adjective/quantifier] that’ + VP for result",
+    "examples": "He ate so much that he became ill. It was so cold that we all went home.",
+    "categories": "Clause | Result/cause Conjunction | Cause and result",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.3",
+    "gse": 51,
+    "text": "Can express necessity or absence of necessity with ‘(not) necessary to …’",
+    "structure": "‘(not) necessary’ + (‘for’ + NP) + ‘to’ + VPinf",
+    "examples": "Is it necessary to fill this in? It’s not necessary for the children to stay.",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.4",
+    "gse": 51,
+    "text": "Can use object relative clauses with relative pronouns to specify or define.",
+    "structure": "Defining (restrictive) object relative clause",
+    "examples": "This is the film that/which I wanted you to see. Henry is the man whom I intend to marry.",
+    "categories": "Clause | Relative",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.5",
+    "gse": 51,
+    "text": "Can use ‘do’/’did’ as a general placeholder (substitute) for verbs.",
+    "structure": "‘do/did’as a placeholder (substitute) for verbs",
+    "examples": "She asked me to buy it, so I did. He doesn’t think I like him, but I do.",
+    "categories": "Verb | Auxiliary Verb | Tags and question forms",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.6",
+    "gse": 51,
+    "text": "Can give advice using ‘If I were you …’",
+    "structure": "‘If I were you I’d/Iwouldn’t’ + VP for advice",
+    "examples": "I wouldn’t do that if I were you. If I were you, I’d apologise.",
+    "categories": "Clause | Conditional Modal verb | Obligation",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.7",
+    "gse": 51,
+    "text": "Can correctly use ‘each other’ and reflexive pronouns.",
+    "structure": "‘themselves’ vs. ‘each other/one another’",
+    "examples": "They were looking at themselves in the mirror. vs. They were looking at each other.",
+    "categories": "Pronoun | Reflexive",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.8",
+    "gse": 51,
+    "text": "Can correctly use ‘not … either’ and ‘neither … (nor)’ with noun and verb phrases.",
+    "structure": "disjunction with common adverbials: ‘either’/’neither (… nor’)",
+    "examples": "John’s not here either. Neither John nor Mary was at home.",
+    "categories": "Adverb | Conjunction and disjunction",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.9",
+    "gse": 51,
+    "text": "Can use a range of positive question tags.",
+    "structure": "question tags (positive, all tenses)",
+    "examples": "They’re not here, are they? It isn’t true, is it? It wasn’t too cold, was it?",
+    "categories": "Verb | Tags and question forms",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.10",
+    "gse": 51,
+    "text": "Can use phrasal verbs with two particles.",
+    "structure": "phrasal (prepositional) verbs with two particles",
+    "examples": "Stand up for yourself. We’ve run out of milk.",
+    "categories": "Verb | Phrasal and prepositional Phrasal verb",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.11",
+    "gse": 51,
+    "text": "Can express agreement and disagreement with ‘…hope so/not’.",
+    "structure": "‘hope so/not’",
+    "examples": "Is she coming? - I hope so/not.",
+    "categories": "Verb | Tags and question forms",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.12",
+    "gse": 51,
+    "text": "Can express indirect requests with ‘would like’ + noun phrase + verb (infinitive).",
+    "structure": "‘would like’ + NP + ‘to’ + VPinf",
+    "examples": "I’d like you to stay. Would you like Mustafa to come as well?",
+    "categories": "Modal verb | Requests, offers and permission Clause | Conditional Phrase | With infinitive",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.13",
+    "gse": 51,
+    "text": "Can use reflexive pronouns for emphasis.",
+    "structure": "reflexive pronouns for emphasis",
+    "examples": "I made it myself. Do it yourself.",
+    "categories": "Pronoun | Reflexive",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.14",
+    "gse": 51,
+    "text": "Can use ‘’s’ in time expressions.",
+    "structure": "time expressions with ‘‘s’",
+    "examples": "a week’s holiday a year’s break a day’s rest",
+    "categories": "Noun | Possessive (genitive) Adverb | Time Clause | Time",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.15",
+    "gse": 51,
+    "text": "Can correctly place adverbs of comment and manner in longer sentences.",
+    "structure": "position of adverbs of comment and manner (before/after verb, end of sentence)",
+    "examples": "You’re ^ going to have to take it back ^. (probably) He ^ explained the problem to me ^. (carefully)",
+    "categories": "Adverb | Position",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p27.16",
+    "gse": 51,
+    "text": "Can use the correct verb form (infinitive or ‘ing’) following a range of phrasal (separable) and prepositional (inseparable phrasal) verbs.",
+    "structure": "verb+’ing’ vs. + ‘to’+inf.",
+    "examples": "… think about leaving … expect to go …manage to finish …succeed in finishing",
+    "categories": "Verb | Phrasal and prepositional Phrase | With infinitive Phrase | With gerund (ing)",
+    "pdf_page": 27,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.1",
+    "gse": 51,
+    "text": "Can use the past continuous to refer to temporary or changing past states or situations.",
+    "structure": "past continuous for temporary or changing past situations",
+    "examples": "I was living in Rome at the time. I was studying in Germany during the early 1990s.",
+    "categories": "Verb | Tense Adverb | Time Clause | Time",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.2",
+    "gse": 51,
+    "text": "Can construct phrases with wh- question words followed by verbs in the infinitive.",
+    "structure": "wh- adverbials + ‘to’ + VPinf",
+    "examples": "She knows where to go. I asked her what to do. Do you know how to get there?",
+    "categories": "Phrase | With infinitive Pronoun | Question words",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.3",
+    "gse": 51,
+    "text": "Can use a range of common verb + verb combinations using the ‘ing’ form.",
+    "structure": "verbs taking VPgerund",
+    "examples": "I look forward to hearing from you soon. We started eating dinner at eight o’clock.",
+    "categories": "Phrase | With gerund (ing)",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.4",
+    "gse": 52,
+    "text": "Can use the present perfect passive with ‘yet’.",
+    "structure": "present perfect passive + ‘yet’",
+    "examples": "It hasn’t been delivered yet. They haven’t been told yet. Has it been released yet?",
+    "categories": "Verb | Passive Verb | Tense Adverb | Time",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.5",
+    "gse": 52,
+    "text": "Can use the present perfect passive with ‘just/already’.",
+    "structure": "present perfect passive + ‘just/already’",
+    "examples": "It’s just been done. She’s just been fired. They’ve already been marked.",
+    "categories": "Verb | Passive Adverb | Time Verb | Tense",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.6",
+    "gse": 52,
+    "text": "Can correctly use ‘such’ and ‘such a’ with mass and count nouns respectively.",
+    "structure": "‘such (a)’ (+ adjective) + NP",
+    "examples": "It was such fun! He is such a nice boy!",
+    "categories": "Adverb | Modifier Noun | Mass/count",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.7",
+    "gse": 52,
+    "text": "Can use genitive ‘‘s’ + genitive ‘‘s’ in a noun phrase.",
+    "structure": "Double genitive ‘‘s’",
+    "examples": "my brother’s girlfriend’s car her teacher’s computer’s password",
+    "categories": "Noun | Possessive (genitive) Clause | Basic construction",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.8",
+    "gse": 52,
+    "text": "Can correctly use ‘so’ and ‘such (a)’ with adjectives and nouns respectively.",
+    "structure": "‘so’ + adjective vs. ‘such (a)’ (+ adjective) + NP",
+    "examples": "There’s such a lot of rain. It’sso wet.",
+    "categories": "Adverb | Modifier Determiner | Conjunction and disjunction",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.9",
+    "gse": 52,
+    "text": "Can use ‘wouldrather …(than) …’to express preference.",
+    "structure": "‘wouldrather’+ VPinf (+ ‘than’+ VPinf)",
+    "examples": "I’d rather not eat there. I’drather take a taxi. We’d rather stay in tonight than go out.",
+    "categories": "Modal verb | Wishes and intentions Clause | Comparison",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.10",
+    "gse": 52,
+    "text": "Can correctly use ‘little/a little’ and ‘few/a few’ to refer to quantities with mass and count nouns respectively.",
+    "structure": "‘a little’ vs. ‘little’; ‘few’ vs. ‘a few’",
+    "examples": "She eats very little food. We have a little money left. Few people understand statistics. A few people came to the party.",
+    "categories": "Determiner | Quantifiers Noun | Mass/count",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.11",
+    "gse": 52,
+    "text": "Can use ‘as’ with a noun or noun phrase referring to a job, or instrument for doing something.",
+    "structure": "‘as’ + NP (job or instrument)",
+    "examples": "work as a waiter use it as a tool",
+    "categories": "Preposition | Instrumental",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.12",
+    "gse": 52,
+    "text": "Can use ‘(in order) to’ to express purpose and intention.",
+    "structure": "clause + ‘(in order) to’ + VPinf",
+    "examples": "He came to help me. I do it in order to save money. So as to save money, she walks everywhere.",
+    "categories": "Conjunction | Cause and result Phrase | With infinitive",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.13",
+    "gse": 52,
+    "text": "Can ask negative questions with ‘wasn’t’, ‘didn’t’, etc.",
+    "structure": "negative ‘yes/no’ questions",
+    "examples": "Wasn’t the film rubbish? Didn’t you enjoy the book?",
+    "categories": "Verb | Tags and question forms Verb | Auxiliary",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.14",
+    "gse": 52,
+    "text": "Can use ‘except (for)’ and ‘apart from’ after general and other noun phrases.",
+    "structure": "‘apart from/except (for)’ + NP",
+    "examples": "I’ve seen all their films apart from/except (for) True Grit. The house was silent, apart from/ except for the ticking of the clock.",
+    "categories": "Preposition | Logical",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p28.15",
+    "gse": 52,
+    "text": "Can use ‘plan’/’intend’/’mean’ + ‘to’ + infinitive to talk about present and future plans and intentions.",
+    "structure": "‘mean/intend/plan to’ + VPinf",
+    "examples": "Do you intend to stay in this house? We’re planning to sell our car. I mean to get this job.",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 28,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p29.1",
+    "gse": 52,
+    "text": "Can refer to general truths and frequent occurrences using ‘could’. Can talk about permission using ‘(not) allowed/",
+    "structure": "‘could’ for generalisations",
+    "examples": "Letters could take days to arrive in those days. She could be very aggressive at times. Children are not allowed to come in here. Will we",
+    "categories": "Modal verb | Likelihood",
+    "pdf_page": 29,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p29.6",
+    "gse": 53,
+    "text": "Can use ‘such a/an’ + adjective with finite clauses to refer to results and consequences.",
+    "structure": "‘such a/an’ + adjective + NP (+ ‘that’) + clause",
+    "examples": "It’ssuch an important event; everybody will be there. It was such a hot day that we decided to stay at home.",
+    "categories": "Adverb | Modifier Conjunction | Cause and result Clause | Dependent",
+    "pdf_page": 29,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p29.7",
+    "gse": 53,
+    "text": "Can use ‘so’ and ‘neither’ in short phrases to express agreement and disagreement.",
+    "structure": "‘so/neither’ for agreement and disagreement",
+    "examples": "so am/do I me too neither do I nor do I",
+    "categories": "Verb | Tags and question forms",
+    "pdf_page": 29,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p29.8",
+    "gse": 53,
+    "text": "Can use parallel comparatives (‘the’ + comparative1, ‘the’ + comparative2).",
+    "structure": "‘the’ + adj1/adv1 (comparative) + ‘the’ + adj2/ adv2 (comparative)",
+    "examples": "The faster you drive, the more dangerous it is. The more he drinks, the less sense he makes. He must have made a mistake. You must have spoken to my brother.",
+    "categories": "Adjective | Comparison Adverb | Comparison",
+    "pdf_page": 29,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p29.9",
+    "gse": 53,
+    "text": "Can use ‘must have …’ to express inferences and assumptions about the past. Can use ‘neither … nor …’ to connect two",
+    "structure": "‘must have’ + perfect participle for inferences about the past",
+    "examples": "I neither speak nor write Chinese. It’s neither",
+    "categories": "Modal verb | Likelihood Verb | Tense",
+    "pdf_page": 29,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.1",
+    "gse": 54,
+    "text": "Can use ‘get’ with the passive in informal speech to express unexpected or dramatic change. Can describe present or future outcomes of a",
+    "structure": "passive with ‘get’ compared with ‘be’",
+    "examples": "He got killed in a fight outside a pub. You’llget hurt if you aren’t more careful. Even if she’s wrong, I’ll still support her. I’d marry",
+    "categories": "Verb | Passive",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.3",
+    "gse": 54,
+    "text": "Can express intentions and plans for the near future with ‘thinking of’ and verbs in the gerund.",
+    "structure": "‘thinking of’ + VPgerund in the present",
+    "examples": "I’m thinking of going back to the States. Is he thinking of leaving?",
+    "categories": "Phrase | With gerund ing) Preposition | Complementiser",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.4",
+    "gse": 54,
+    "text": "Can use the past perfect in a range of common situations.",
+    "structure": "past perfect (general)",
+    "examples": "I remembered it after I’d already left home. By the time I got there she’d gone.",
+    "categories": "Verb | Tense Adverb | Time Clause | Time",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.5",
+    "gse": 54,
+    "text": "Can use ‘could(n’t) have ...’to talk about past possibilities.",
+    "structure": "‘could(n’t) have’ + VPpp for speculation",
+    "examples": "You could have died in there. They couldn’t have understood you.",
+    "categories": "Modal verb | Likelihood Modal verb | Timerelated Modal verb | Ability",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.6",
+    "gse": 55,
+    "text": "Can express preference with regard to actions using ‘prefer … (to …)’ Can construct a range of phrases using",
+    "structure": "‘prefer’ + VPgerund (+ ‘to’ + VPgerund) phrases with ‘when’/’what’/’where’/’who’ +",
+    "examples": "They preferred staying silent (to speaking). Most people prefer drinking tea with milk. Wherever you go, I’ll be there. I don’t have time to",
+    "categories": "Phrase | With gerund (ing) Clause | Comparison Adverb | Formation Pronoun | Generic/",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.8",
+    "gse": 55,
+    "text": "Can report yes/no questions with ‘if/ whether’.",
+    "structure": "reported yes/no questions",
+    "examples": "to know if I’d finished the work.",
+    "categories": "Conjunction | Coordinating Clause | Dependent",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.9",
+    "gse": 55,
+    "text": "Can correctly use ‘even’ and ‘not even’ in the right position to emphasise a point. Can talk about expectations and obligations in",
+    "structure": "‘(not) even’ for emphasis",
+    "examples": "She even wanted me to pay her hotel bill. Not even a dog would eat that. You’re not supposed to touch that. Are we",
+    "categories": "Adverb | Modifier Modal verb | Obligation Phrase | With",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.11",
+    "gse": 55,
+    "text": "Can use ‘oneof/some of/among’ in phrases with superlative adjectives.",
+    "structure": "‘one of/some of/among’ + superlative phrases",
+    "examples": "one of the best schools among the richest people some of the finest examples",
+    "categories": "Adjective | Comparison Preposition | Logical",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.12",
+    "gse": 55,
+    "text": "Can use ‘about to’ to talk about imminent events in the present and past. Can use ‘would’ to refer to past habits and",
+    "structure": "immediate future or future in the past with ‘about to’ + VPinf",
+    "examples": "She’sabout to have a baby. We were about to go out when Jane called. When I lived in the country I would go for long",
+    "categories": "Adverb | Time Verb | Tense Clause | With ‘be’ Modal verb | Timerelated Phrase | With",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.14",
+    "gse": 55,
+    "text": "Can use the present continuous passive.",
+    "structure": "present continuous passive",
+    "examples": "My car is being repaired. It’s being discussed. The book is being printed. Your son is being spoken to.",
+    "categories": "Verb | Passive Verb | Tense",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p30.15",
+    "gse": 55,
+    "text": "Can describe present or future outcomes of a hypothetical situation using ‘unless’.",
+    "structure": "‘unless’ + first/second conditional",
+    "examples": "Unless you want it, I’ll take the last sandwich. I’m sure he would call us, unless he had a problem with his phone.",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 30,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.1",
+    "gse": 55,
+    "text": "Can make statements about plans using ‘plan/ intend to’ + infinitive. Can express dislike using ‘not’ with verbs in the",
+    "structure": "‘intend/plan to’ + VPinf",
+    "examples": "Do you intend to stay in this house? They’re planning to go to Egypt for their holidays. I hate not arriving on time. I don’t like not",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.4",
+    "gse": 56,
+    "text": "Can use ‘get/have’ to refer to having things done by other people.",
+    "structure": "‘have/get’+ NP + past participle for impersonal agency",
+    "examples": "I’m having my flat painted. I’ve just had my car repaired. You need to get your hair cut.",
+    "categories": "Clause | Result/cause",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.5",
+    "gse": 56,
+    "text": "Can construct defining (restrictive) relative clauses with ‘to’ + infinitive verb phrases.",
+    "structure": "defining infinitive clauses (NP + ‘to’ + VP1inf + VP2inf)",
+    "examples": "the first person to fly the only one to stay up late",
+    "categories": "Clause | Relative Phrase | With infinitive",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.6",
+    "gse": 56,
+    "text": "Can use ‘in case’ with the present tense to refer to future eventualities. Can use ‘only’ as an adverb in the correct",
+    "structure": "‘in case’ + subordinate clause (present tense)",
+    "examples": "Take an umbrella in case it rains. In case no one there speaks English, I’m bringing Paul as an interpreter.",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.11",
+    "gse": 56,
+    "text": "Can use ‘beforehand/afterwards’ to express sequences of events or actions. Can use ‘had/’d better (not)’ + verb for strong",
+    "structure": "advanced adverbials of time: ‘beforehand/ afterwards’",
+    "examples": "I arrived at the hotel late, but I had booked a room beforehand. They went to the play first and had dinner afterwards. You’d better not tell anyone. Your brother had",
+    "categories": "Adverb | Time",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.13",
+    "gse": 56,
+    "text": "Can use despite/in spite of’ with noun phrases to express concession.",
+    "structure": "concession with ‘despite/in spite of’",
+    "examples": "Despite the terrible weather, we had a lovely day. He climbed the mountain in spite of his headache.",
+    "categories": "Conjunction | Concession and contrast Preposition | Logical",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.14",
+    "gse": 56,
+    "text": "Can use ‘so …’ and ‘therefore …’ to express conclusions and inferences.",
+    "structure": "(declarative sentence) + ‘so/therefore’+ declarative sentence",
+    "examples": "This book has my name on it, so it must be mine. I think, therefore I am. He said (that) he was tired.",
+    "categories": "Clause | Result/cause Conjunction | Cause and result Clause | Dependent",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.15",
+    "gse": 56,
+    "text": "Can make tense changes (present to past) in reported speech.",
+    "structure": "reported speech changing present to past tenses",
+    "examples": "She told me (that) she wasn’t feeling well.",
+    "categories": "Clause | Reported speech and ideas Verb | Tense Clause | Dependent",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.16",
+    "gse": 56,
+    "text": "Can use ‘meant/planned/intended’ + ‘to’ + infinitive to talk about past plans and intentions.",
+    "structure": "‘meant/intended/planned to’ + VPinf",
+    "examples": "Did you intend to invite so many people? They planned to go to Egypt for their holidays. I meant to tell her, but I forgot to.",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p31.17",
+    "gse": 56,
+    "text": "Can use ‘though’ and ‘although’ as conjunctions to express concession.",
+    "structure": "concession with ‘though/although’",
+    "examples": "She’ll listen to you, although she won’t like it.",
+    "categories": "Conjunction | Concession and contrast",
+    "pdf_page": 31,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.1",
+    "gse": 57,
+    "text": "Can use ‘thought’ to express past expectations, with appropriate tense changes. Can use a range of verbs of advice and",
+    "structure": "‘thought’+ past tense referring to expectations",
+    "examples": "I thought you were going to help me. I thought we were friends.",
+    "categories": "Clause | Reported speech and ideas Verb | Tense Clause | Dependent",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.4",
+    "gse": 57,
+    "text": "Can omit words and phrases in a range of parallel structures.",
+    "structure": "ellipsis: omission of noun/verb/ infinitive/’wh’ clauses",
+    "examples": "My parents expected me to go to college, but I didn’t want to. [go to college] We need money for the flight and [money] to pay for the hotel.",
+    "categories": "Clause | Basic construction Conjunction | Coordinating",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.5",
+    "gse": 57,
+    "text": "Can soften orders and requests using ‘think’, ‘imagine’, ‘wonder’, etc.",
+    "structure": "softening orders and requests with ‘I hope/ think/ wonder’",
+    "examples": "I wonder if you’d like to come for a walk. Do you think you’ll be able to lend me some money?",
+    "categories": "Clause | Reported speech and ideas Conjunction | Coordinating Clause | Dependent",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.6",
+    "gse": 57,
+    "text": "Can use ‘due to’ and ‘owing to’ to express causation and consequence.",
+    "structure": "prepositions of reason and purpose: ‘due to’, ‘owing to’",
+    "examples": "Due/Owing to the hot weather, the school is closed today. The concert was cancelled due to/owing to problems with the sound system.",
+    "categories": "Preposition | Cause and result Clause | Result/ cause",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.7",
+    "gse": 57,
+    "text": "Can use nondefining (nonrestrictive) relative clauses to add information.",
+    "structure": "nondefining relative clauses for information",
+    "examples": "My sister, who is married, lives in Prague. His house, which is for sale now, is beautiful. We thought she would be killed.",
+    "categories": "Clause | Relative Clause | Dependent",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.8",
+    "gse": 57,
+    "text": "Can talk about past beliefs and intentions in the passive.",
+    "structure": "Past clause of belief/reporting + ‘would’/’was/ were going to’ + passive infinitive",
+    "examples": "I told you he wasn’t going to be elected.",
+    "categories": "Clause | Reported speech and ideas Verb | Tense Verb | Passive",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.9",
+    "gse": 58,
+    "text": "Can use ‘so’ in sentencefinal positions as a placeholder (substitute) for verbs and verb phrases.",
+    "structure": "‘so’ as a placeholder past regrets with ‘should(n’t) have’ + past",
+    "examples": "It was too expensive. - I told you so. John is from Seattle. - I thought so. Ishould have gone to bed earlier. You shouldn’t",
+    "categories": "Adverb | Position Verb | Tags and question forms Adverb | Conjunction and disjunction Modal verb | Obligation Modal verb | Wishes",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.10",
+    "gse": 58,
+    "text": "Can use ‘should(n’t) have …’ to express regrets, wishes, or disapproval about the past.",
+    "structure": "participle",
+    "examples": "have bought that house. He seems to be quite rich. She appears to work",
+    "categories": "and intentions",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.11",
+    "gse": 58,
+    "text": "Can make statements about appearance using ‘seem/appear’ with verbs in the infinitive.",
+    "structure": "‘seem/appear’ + ‘to’ + VPinf NP + ‘was intending/planning/hoping’ + ‘to’",
+    "examples": "hard.",
+    "categories": "Phrase | With infinitive",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p32.12",
+    "gse": 58,
+    "text": "Can use a range of verbs in the past continuous to refer to past plans and intentions.",
+    "structure": "+ VPinf",
+    "examples": "I was planning to buy a car. I wasn’t intending to talk about it, but I changed my mind.",
+    "categories": "Verb | Tense",
+    "pdf_page": 32,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p33.1",
+    "gse": 58,
+    "text": "Can express various degrees of likelihood and possibility using complement clauses.",
+    "structure": "‘It’s (un)certain/(im)probable/(im)possible/ (un)likely’ (+ ‘that’) + complement clause",
+    "examples": "It’s unlikely that they’ll come. It’s possible I’m wrong.",
+    "categories": "Clause | With ‘be’ Clause | Dependent",
+    "pdf_page": 33,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p33.2",
+    "gse": 58,
+    "text": "Can describe hypothetical (counterfactual) past results of a previous action or situation using the third conditional.",
+    "structure": "third (past) conditional",
+    "examples": "I could have passed, if I’d studied harder. If we’d left earlier, we wouldn’t have missed her.",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 33,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p33.3",
+    "gse": 58,
+    "text": "Can use ‘for’ to introduce an infinitive clause with a different subject.",
+    "structure": "clause with ‘is’ + for + VPinf",
+    "examples": "The important thing is for you to arrive on time. My aim is for my children to go to university.",
+    "categories": "Phrase | With infinitive Clause | Dependent",
+    "pdf_page": 33,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p34.1",
+    "gse": 59,
+    "text": "Can use a range of modals with passive infinitives referring to the present or future.",
+    "structure": "modals + passive",
+    "examples": "It could be done. It could be improved. The train might be delayed.",
+    "categories": "Modal verb | Likelihood Modal verb | Ability Verb | Passive",
+    "pdf_page": 34,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p34.2",
+    "gse": 59,
+    "text": "Can refer to certainty and probability using ‘certain/likely/due to’ with verb phrases. Can o",
+    "structure": "‘certain/likely/due’ + ‘to’ + VPinf",
+    "examples": "He’s certain to pass the exam. The train is likely to be late. When are they due to arrive?",
+    "categories": "Phrase | With ‘be’ Phrase | With infinitive",
+    "pdf_page": 34,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p34.5",
+    "gse": 59,
+    "text": "Can express alternative conditions with ‘whether … or not’.",
+    "structure": "‘whether + VP1 + ‘or’ VP2/’whether or not’ +VP",
+    "examples": "Whether she likes it or not, she’s coming with us. The show starts tomorrow, whether or not it rains.",
+    "categories": "Conjunction | Coordinating Clause | Conditional",
+    "pdf_page": 34,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p34.6",
+    "gse": 59,
+    "text": "Can describe beliefs and opinions using verbs of judgement and evaluation in the passive. Can use clauses with ‘It’ + ‘be’ … to emphasise",
+    "structure": "‘it’s thought/believed/considered/etc. + that’ + complement clause",
+    "examples": "It’s believed that he died in Iraq. It’s expected that students will graduate in three years. It’s the money that keeps me in this job. It was his",
+    "categories": "Verb | Passive Clause | Dependent Clause | Reported speech and ideas Clause | Clefting and fronting Phrase | With",
+    "pdf_page": 34,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p34.9",
+    "gse": 59,
+    "text": "Can use clauses with ‘What ...’ to emphasise the topic or main point. Can soften orders and requests by using",
+    "structure": "fronting: cleft sentences with ‘What ...’ softening orders and requests with past",
+    "examples": "What we need now is a good night’s sleep. What I said was that I don’t need your help. I thought perhaps you could help me. We hoped you’d come to our party.",
+    "categories": "Clause | Clefting and fronting Clause | Relative Verb | Tense",
+    "pdf_page": 34,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.1",
+    "gse": 60,
+    "text": "Can talk about past plans and intentions using ‘(not) meant/supposed to’ + infinitive.",
+    "structure": "‘(not) meant/supposed to’ + infinitive",
+    "examples": "It was meant to be fun. He wasn’t supposed to do that.",
+    "categories": "Verb | Passive Phrase | With infinitive",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.2",
+    "gse": 60,
+    "text": "Can express prohibition in the present or future with ‘forbid’ and ‘(not) allow’.",
+    "structure": "‘forbid/not allow’ + person + ‘to’ + VPinf",
+    "examples": "I forbid you to speak to him. We won’t be allowed to take pictures.",
+    "categories": "Phrase | With infinitive Verb | Passive",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.3",
+    "gse": 60,
+    "text": "Can report orders, requests and advice with infinitive clauses.",
+    "structure": "reported orders/requests/advice with ‘to’ + VPinf+ VPinf",
+    "examples": "She told me not to do it. He warned us not to be late. She encouraged him to study.",
+    "categories": "Phrase | With infinitive Clause | Reported speech and ideas",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.4",
+    "gse": 60,
+    "text": "Can express negative purpose with ‘so as/ in order not to’.",
+    "structure": "so as/in order’ + ‘notto’+ VPinf for negative purpose",
+    "examples": "In order not to seem stupid, he didn’t say anything. I came in very quietly, so as not to wake anyone.",
+    "categories": "Conjunction | Cause and result Phrase | With infinitive Clause | Negation",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.5",
+    "gse": 60,
+    "text": "Can correctly use defining (restrictive) and nondefining (non- restrictive) relative clauses. Can use the future continuous with reference",
+    "structure": "defining (restrictive) vs. nondefining (nonrestrictive) relative clauses",
+    "examples": "I told my sister, who already knew what happened. Tell only the people who need the information.",
+    "categories": "Clause | Relative",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.7",
+    "gse": 61,
+    "text": "Can use adverbials such as ‘however’,‘on the other hand’, and ‘though’ to express concession. Can make statements about appearance",
+    "structure": "concessive adverbials ‘seems/appears/looks’(+ ‘like/that’) +",
+    "examples": "I don’t earn much - however, I have plenty of free time. We’llget there quicker by train. On the other hand, the bus is much cheaper. It looks like he isn’t coming. It appears that John",
+    "categories": "Conjunction | Concession and contrast Clause | Dependent Clause | Dependent Clause | Reported",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.9",
+    "gse": 61,
+    "text": "Can construct phrases with ‘(not) worth ...’and ‘(no) point ...’to express the (lack of) usefulness or value of an action or suggestion.",
+    "structure": "‘(not) worth/(no) point (in)’ + VPgerund",
+    "examples": "repairing such an old car.",
+    "categories": "Phrase | With gerund (ing)",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.10",
+    "gse": 61,
+    "text": "Can emphasise a statement by adding ‘do’ or ‘did’. Can express past intentions and plans with",
+    "structure": "additional auxiliary ‘do’or ‘did’for stress or emphasis",
+    "examples": "He does look nice in his new suit. I didn’t get to see John, but I did see his mother. We were thinking of selling the house. Were you",
+    "categories": "Verb | Auxiliary",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.12",
+    "gse": 61,
+    "text": "Can use nondefining (nonrestrictive) relative clauses to make a comment.",
+    "structure": "nondefining relative clause for comment",
+    "examples": "He was late, which was unusual. It’s raining, which is really annoying.",
+    "categories": "Clause | Relative",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.13",
+    "gse": 61,
+    "text": "Can describe past beliefs and opinions using ‘it was’ + passive forms of verbs of judgement and evaluation.",
+    "structure": "it’s/it was thought/believed/considered/ etc.(that)’ + complement clause",
+    "examples": "It was expected that women would get married in their 20s. It was thought that all the records had been destroyed.",
+    "categories": "Verb | Passive Clause | Dependent Verb | Tense",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p35.14",
+    "gse": 62,
+    "text": "Can speak about information acquired from others using ‘hear’ + ‘(that +)’ complement clause.",
+    "structure": "‘hear’ + ‘(that)’ + complement clause",
+    "examples": "I hear that John and Susie are getting married. I’ve heard that Martin’s lost his job.",
+    "categories": "Clause | Reported speech and ideas Conjunction | Coordinating",
+    "pdf_page": 35,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.1",
+    "gse": 62,
+    "text": "Can use ‘ought(n’t) to’ to offer or ask for advice or suggestions.",
+    "structure": "‘ought(n’t)’ to for advice or suggestions",
+    "examples": "You ought to go to a doctor. He oughtn’t to drink so much. Where ought we to go?",
+    "categories": "Modal verb | Obligation Phrase | With infinitive",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.2",
+    "gse": 62,
+    "text": "Can use ‘as soon as’ with the past simple and past perfect.",
+    "structure": "‘as soon as’ + past simple + past perfect",
+    "examples": "I handed the work in as soon as I had finished it. As soon as she’d eaten, she fell asleep.",
+    "categories": "Conjunction | Time Verb | Tense",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.3",
+    "gse": 62,
+    "text": "Can use the past perfect continuous in a range of common situations.",
+    "structure": "past perfect continuous",
+    "examples": "I’d been living in London for three years when I met her. How long had you been waiting when I arrived?",
+    "categories": "Verb | Tense Verb | Auxiliary",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.4",
+    "gse": 62,
+    "text": "Can use a range of common reporting verbs with ‘that’ + complement clause.",
+    "structure": "reporting verbs + ‘that’ + complement clause",
+    "examples": "He suggested that we come back later. She warned me that she would have to tell her father.",
+    "categories": "Clause | Reported speech and ideas Conjunction | Coordinating Clause | Dependent",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.5",
+    "gse": 62,
+    "text": "Can use ‘I wish/if only …’ to express regrets and wishes about the past.",
+    "structure": "past regrets with ‘I wish/if only’",
+    "examples": "If only I’d worked harder. I wish we’d bought that house.",
+    "categories": "Modal verb | Wishes and intentions Verb | Tense",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.6",
+    "gse": 62,
+    "text": "Can make complex comparisons between verb/noun phrases.",
+    "structure": "VP1/NP1 + comparative adjective + ‘than’ + VP2/NP1",
+    "examples": "Being happy is more important than making money. The loss of his job made a bigger difference than the end of his marriage.",
+    "categories": "Adjective | Comparison Conjunction | Coordinating",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.7",
+    "gse": 63,
+    "text": "Can use ‘need’ with verbs in the gerund to express necessity.",
+    "structure": "‘need’ + VPgerund",
+    "examples": "My hair needs cutting. The children need picking up.",
+    "categories": "Modal verb | Obligation Phrase | With gerund (ing)",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.8",
+    "gse": 63,
+    "text": "Can use the past perfect with adverbial clauses of time.",
+    "structure": "past perfect with adverbial clauses of time",
+    "examples": "I remembered it after I’d already left home. By the time I got there she’d gone.",
+    "categories": "Clause | Time Verb | Tense Adverb | Time",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.9",
+    "gse": 64,
+    "text": "Can use the past perfect passive.",
+    "structure": "past perfect passive",
+    "examples": "The goods had already been stolen. It had all been said before. The show had been cancelled.",
+    "categories": "Verb | Passive Verb | Tense",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.10",
+    "gse": 64,
+    "text": "Can use noun phrases in place of verb phrases in formal written language.",
+    "structure": "noun phrases to verb phrases (nominalisation)",
+    "examples": "The weather has changed, which surprised us. vs. The change in the weather surprised us. The money disappeared, which puzzled Marian. vs. Marian was puzzled by the disappearance of the money.",
+    "categories": "Clause | Basic construction hrase | Clefting and fronting",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.11",
+    "gse": 64,
+    "text": "Can use gerunds in the passive form as complement.",
+    "structure": "NP + VP +VPgerund (passive)",
+    "examples": "My mother loves being taken out. Children enjoy being read to.",
+    "categories": "Phrase | With gerund (ing) Verb | Passive",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.12",
+    "gse": 64,
+    "text": "Can use a range of complex conjunctions in conditional statements (all three types).",
+    "structure": "clause1 (action or event) + ‘on condition that/as long as/ providing that/provided that’ + clause 2 (condition)",
+    "examples": "on condition that as long as providing/provided that",
+    "categories": "Clause | Conditional Conjunction | Cause and result",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.13",
+    "gse": 65,
+    "text": "Can use ‘will’ + infinitive for orders and instructions.",
+    "structure": "‘he/you/they will’ + VPinf for instructions",
+    "examples": "You will do as you are told. They will wait till they’re called.",
+    "categories": "Modal verb | Obligation Verb | Imperative Verb | Tense",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p36.14",
+    "gse": 66,
+    "text": "Can make complex comparisons between clauses.",
+    "structure": "clause1 + comparative adjective + ‘than’ + clause2",
+    "examples": "There’s more work to do than we have time for. She was more concerned with getting the job done than with doing it well.",
+    "categories": "Adjective | Comparison Conjunction | Coordinating",
+    "pdf_page": 36,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.1",
+    "gse": 66,
+    "text": "Can express purpose using ‘soas to’ with infinitive clauses.",
+    "structure": "‘so as to’ + VPinf for purpose",
+    "examples": "I got up at 6:00 so as to be on time. So as to keep fit, I go for a run every morning.",
+    "categories": "Conjunction | Cause and result Phrase | With infinitive",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.2",
+    "gse": 66,
+    "text": "Can express regrets and preferences with ‘would rather/it’s time’ with past tense clauses.",
+    "structure": "‘would rather/it’stime’ + VP (past)",
+    "examples": "I’d rather we stayed in tonight. I’d rather we went to the cinema. It’s time we left.",
+    "categories": "Modal verb | Wishes and intentions",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.3",
+    "gse": 66,
+    "text": "Can use ‘as if/as though’ with the present simple to refer to what appears to be the case.",
+    "structure": "‘as if/as though’ + complement clause (present; equivalent to first conditional)",
+    "examples": "It looks as though they’re not coming.",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.4",
+    "gse": 66,
+    "text": "Can omit subject + ‘be’ after ‘if’ in fixed expressions.",
+    "structure": "‘if’ + adjective/NP/PP with omission of pronoun + ‘be’",
+    "examples": "if necessary, if any, if anything, if in doubt",
+    "categories": "Clause | Conditional Phrase | Basic construction",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.5",
+    "gse": 66,
+    "text": "Can use ‘shall’ + infinitive for formal first- person statements about the future.",
+    "structure": "‘I/we shall’ + VPinf",
+    "examples": "I shall do my best.",
+    "categories": "Modal verb | Wishes and intentions Verb | Tense",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.6",
+    "gse": 66,
+    "text": "Can use the future perfect with reference to actions to be completed by a specific time in the future.",
+    "structure": "future perfect",
+    "examples": "I’ll have finished it by Saturday. The match won’t have finished by 8 p.m.",
+    "categories": "Verb | Tense Adverb | Time Preposition | Time",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.7",
+    "gse": 66,
+    "text": "Can use adverbial phrases to make comments.",
+    "structure": "adverbial phrases for comment",
+    "examples": "Practically speaking … At the end of the day... Taking the long view…",
+    "categories": "Adverb | Modifier Phrase | Clefting and fronting",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.8",
+    "gse": 67,
+    "text": "Can use the future perfect passive.",
+    "structure": "future perfect passive",
+    "examples": "The job will have been completed by next month. The package will have been delivered before you get home.",
+    "categories": "Verb | Passive Verb | Tense",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.9",
+    "gse": 67,
+    "text": "Can use ‘it is/was believed/reported that’ + VP to report beliefs, reportes, rumours, etc.",
+    "structure": "passive reporting structures: ‘it’ + ‘be’ + ‘believed/reported that’ + VP",
+    "examples": "It’s now believed that over 300 people died in the fire. It was reported that the army had taken control of the capital.",
+    "categories": "Clause | Reported speech and ideas",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.10",
+    "gse": 67,
+    "text": "Can describe hypothetical current results of a past action or situation using ‘would …’ with the third conditional.",
+    "structure": "‘if’ + past perfect, hypothetical with ‘would’ + VPinf (present)",
+    "examples": "If I’d worked harder at school, I’d have a better job now. She would be here now if anyone had told her about the party.",
+    "categories": "Clause | Conditional Clause | Result/cause Verb | Tense",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.11",
+    "gse": 68,
+    "text": "Can use initial ‘No matter’ with relative pronouns for emphatic statements about the present and near future.",
+    "structure": "‘Nomatter’ + relative pronoun + clause",
+    "examples": "No matter what you say, I’m coming. No matter how much it costs, we’re buying it.",
+    "categories": "Clause | Clefting and fronting Clause | Relative",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p37.12",
+    "gse": 69,
+    "text": "Can express beliefs and opinions with ‘is/ are/ was/were’ + ‘thought/believed to…’.",
+    "structure": "NP + ‘be’ + ‘thought/considered/believed/ etc. to’ + VPinf",
+    "examples": "He’s thought to be about 50. Everyone was believed to have died in the fire.",
+    "categories": "Verb | Passive Phrase | With infinitive Clause | Reported speech and ideas",
+    "pdf_page": 37,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.1",
+    "gse": 70,
+    "text": "Can use ‘should’ in hypothetical statements about the present and near future with inversion and omission of ‘if’.",
+    "structure": "‘should’ + NP + VP. ‘would’ clause (second conditional)",
+    "examples": "Should you wish to invest in the business, please contact our office.",
+    "categories": "Clause | Conditional Verb | Tags and question forms",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.2",
+    "gse": 71,
+    "text": "Can use ‘as if/as though’ with the past simple to refer to hypothetical or counterfactual circumstances.",
+    "structure": "‘asif/as though’ + complement clause (past simple; equivalent to second conditional) ‘wh’ word + ‘is/was it’ + complement clause",
+    "examples": "You talk as though we didn’t know each other. What was it you wanted?",
+    "categories": "Clause | Conditional Verb | Tense",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.3",
+    "gse": 71,
+    "text": "Can ask questions with ‘is it/was it’ and complement clauses. Can use a range of cleft sentences in the",
+    "structure": "(question)",
+    "examples": "Where is it that you were brought up?",
+    "categories": "Phrase | Clefting and fronting Clause | Relative",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.5",
+    "gse": 71,
+    "text": "Can add information using ‘not only … but also …’",
+    "structure": "‘not only’ + ‘but also’ reduced adverbial clauses with present participle",
+    "examples": "The information is not only poorly presented, but also inaccurate. Walking into the room, I bumped into Hiro.",
+    "categories": "Clause | Result/cause Clause | Appended (participle) Clause |",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.6",
+    "gse": 71,
+    "text": "Can order a sequence of events using an appended clause with present participle or ‘having’ + past participle.",
+    "structure": "or ‘having’ + past participle",
+    "examples": "Walking into the room, I bumped into Hiro. Having bought the tickets, we went for a coffee.",
+    "categories": "Dependent",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.7",
+    "gse": 71,
+    "text": "Can describe present or future outcomes of a hypothetical situation using initial ‘only if’ with inversion of subject and object.",
+    "structure": "‘Only if’ + first/second conditional with inversion",
+    "examples": "Only if you pay now will you avoid prosecution. Only if the weather conditions became much worse would they turn back.",
+    "categories": "Clause | Conditional Clause | Clefting and fronting",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.8",
+    "gse": 71,
+    "text": "Can use ‘one’s’ as an impersonal possessive adjective.",
+    "structure": "‘one’s’ as generic possessive adjective immediate future with ‘on the point of’ +",
+    "examples": "One should always do one’s best.",
+    "categories": "Pronoun | Generic/impersonal Noun | Possessive (genitive)",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.9",
+    "gse": 71,
+    "text": "Can use ‘on the point of’ (Br Eng) to talk about imminent events in the present and past.",
+    "structure": "VPgerund",
+    "examples": "She’s on the point of leaving her job. We were on the point of going out when Jane called.",
+    "categories": "Adverb | Time Phrase | With gerund (ing)",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.10",
+    "gse": 71,
+    "text": "Can use ‘as if/as though’ with the past perfect to refer to hypothetical (counterfactual) circumstances in the past.",
+    "structure": "‘as if/as though’ + complement clause (past perfect; equivalent to third conditional)",
+    "examples": "The house looked as though no one had lived there for years.",
+    "categories": "Clause | Conditional Conjunction | Coordinating Verb | Tense",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.11",
+    "gse": 72,
+    "text": "Can use ‘since …’ to talk about reasons, causes and explanations.",
+    "structure": "‘since’ (=because) + subclause",
+    "examples": "Since you don’t need your car today, can I borrow it? I assumed that you were out, since the lights were off.",
+    "categories": "Clause | Result/cause Conjunction | Cause and result",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p38.12",
+    "gse": 73,
+    "text": "Can express impersonal belief and opinion using ‘thought/believed to …’ Can invert subject and verb after initial complex",
+    "structure": "‘thought/considered/believed/etc.’ +’ to’ + VPinf",
+    "examples": "Leonardo is often thought to be the greatest artist who ever lived. This is believed to be the most valuable diamond in the world. In no way do I approve of the way he talked to you. Under no circumstances should you",
+    "categories": "Phrase | With infinitive Verb | Passive Clause | Clefting and fronting",
+    "pdf_page": 38,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p39.1",
+    "gse": 76,
+    "text": "Can add information using appended clauses with ‘being’ and/or passive participles.",
+    "structure": "appended participle clauses (present and passive)",
+    "examples": "Being a student, he gets a discount. Given enough time, she’ll do it eventually.",
+    "categories": "Clause | Appended (participle) Clause | Dependent Clause | Result/cause",
+    "pdf_page": 39,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p39.2",
+    "gse": 77,
+    "text": "Can replace past conditionals with ‘but for’ in formal statements.",
+    "structure": "‘but for’ + NP, ‘would have’ clause (third conditional)",
+    "examples": "But for their support, I would never have succeeded. He would have died but for the doctor’s prompt action.",
+    "categories": "Clause | Conditional Preposition | Logical",
+    "pdf_page": 39,
+    "source_file": "sources/gse-grammar.pdf"
+  },
+  {
+    "id": "GSE.GRAMMAR.p39.3",
+    "gse": 80,
+    "text": "Can make very polite requests with ‘would you be so kind as to’+ verbs in the infinitive.",
+    "structure": "‘Wouldyou be so kind as to’ + VPinf ...?",
+    "examples": "Would you be so kind as to lend me some money?",
+    "categories": "Modal verb | Requests, offers and permission Phrase | With infinitive",
+    "pdf_page": 39,
+    "source_file": "sources/gse-grammar.pdf"
+  }
+]

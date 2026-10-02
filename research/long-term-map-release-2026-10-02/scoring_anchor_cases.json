@@ -1,0 +1,3332 @@
+[
+  {
+    "id": "CONTACT.success",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Lin. Nice to meet you.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.missing_meaning",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.contradiction",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Wang.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.answer_support",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Lin. Nice to meet you.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.bad_audio",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Lin. Nice to meet you.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.role_leak",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Lin. Nice to meet you.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.uncertain_extractor",
+    "family": "CONTACT",
+    "scenario": "Meet a classmate; supplied identity is Lin",
+    "learner_utterance": "Hi, I’m Lin. Nice to meet you.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": [
+        "greet",
+        "introduce"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.success",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday in room 204?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.missing_meaning",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.contradiction",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "So it is Thursday in room 204.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.answer_support",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday in room 204?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.bad_audio",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday in room 204?",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.role_leak",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday in room 204?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "INFO.uncertain_extractor",
+    "family": "INFO",
+    "scenario": "Confirm workshop information",
+    "learner_utterance": "Is it on Friday in room 204?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": [
+        "date",
+        "room"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.success",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The blue bag is under the chair.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.missing_meaning",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "It is blue.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.contradiction",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The red bag is under the chair.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.answer_support",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The blue bag is under the chair.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.bad_audio",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The blue bag is under the chair.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.role_leak",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The blue bag is under the chair.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "DESCRIBE.uncertain_extractor",
+    "family": "DESCRIBE",
+    "scenario": "Identify a missing bag",
+    "learner_utterance": "The blue bag is under the chair.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": [
+        "colour",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.success",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "I cannot eat peanuts. Could I have a nut-free meal?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.missing_meaning",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "Could I have another meal?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.contradiction",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "Peanuts are fine for me.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.answer_support",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "I cannot eat peanuts. Could I have a nut-free meal?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.bad_audio",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "I cannot eat peanuts. Could I have a nut-free meal?",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.role_leak",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "I cannot eat peanuts. Could I have a nut-free meal?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "NEEDS.uncertain_extractor",
+    "family": "NEEDS",
+    "scenario": "Explain a food restriction",
+    "learner_utterance": "I cannot eat peanuts. Could I have a nut-free meal?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": [
+        "restriction",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.success",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus, so I called a taxi and arrived on time.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.missing_meaning",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.contradiction",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I arrived before I missed the bus.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.answer_support",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus, so I called a taxi and arrived on time.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.bad_audio",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus, so I called a taxi and arrived on time.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.role_leak",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus, so I called a taxi and arrived on time.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "STORY.uncertain_extractor",
+    "family": "STORY",
+    "scenario": "Tell a supplied event sequence",
+    "learner_utterance": "I missed the bus, so I called a taxi and arrived on time.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": [
+        "order",
+        "resolution"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.success",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "First plug it in, then hold the power button.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.missing_meaning",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "Plug it in.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.contradiction",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "Press the power button before plugging it in.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.answer_support",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "First plug it in, then hold the power button.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.bad_audio",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "First plug it in, then hold the power button.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.role_leak",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "First plug it in, then hold the power button.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "EXPLAIN.uncertain_extractor",
+    "family": "EXPLAIN",
+    "scenario": "Explain device instructions",
+    "learner_utterance": "First plug it in, then hold the power button.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": [
+        "first_step",
+        "next_step"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.success",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Thanks, but I cannot come because I am working.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.missing_meaning",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "I cannot come.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.contradiction",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Great, I will be there.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.answer_support",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Thanks, but I cannot come because I am working.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.bad_audio",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Thanks, but I cannot come because I am working.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.role_leak",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Thanks, but I cannot come because I am working.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REQUEST.uncertain_extractor",
+    "family": "REQUEST",
+    "scenario": "Decline an invitation politely",
+    "learner_utterance": "Thanks, but I cannot come because I am working.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": [
+        "decline",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.success",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty in the library?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.missing_meaning",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.contradiction",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Let’s meet at six in the library.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.answer_support",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty in the library?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.bad_audio",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty in the library?",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.role_leak",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty in the library?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "ARRANGE.uncertain_extractor",
+    "family": "ARRANGE",
+    "scenario": "Agree a feasible meeting",
+    "learner_utterance": "Could we meet at four thirty in the library?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": [
+        "feasible_time",
+        "location"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.success",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered soup, but this is salad. Could you replace it?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.missing_meaning",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "This is the wrong order.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.contradiction",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered salad, and this salad is fine.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.answer_support",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered soup, but this is salad. Could you replace it?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.bad_audio",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered soup, but this is salad. Could you replace it?",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.role_leak",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered soup, but this is salad. Could you replace it?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "SERVICE.uncertain_extractor",
+    "family": "SERVICE",
+    "scenario": "Resolve a wrong order",
+    "learner_utterance": "I ordered soup, but this is salad. Could you replace it?",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": [
+        "problem",
+        "remedy"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.success",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A costs less, and it arrives before nine, so I’ll take A.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.missing_meaning",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A is cheaper.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.contradiction",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "I’ll take B even though it arrives after nine.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.answer_support",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A costs less, and it arrives before nine, so I’ll take A.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.bad_audio",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A costs less, and it arrives before nine, so I’ll take A.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.role_leak",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A costs less, and it arrives before nine, so I’ll take A.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COMPARE.uncertain_extractor",
+    "family": "COMPARE",
+    "scenario": "Select a train under a supplied constraint",
+    "learner_utterance": "Train A costs less, and it arrives before nine, so I’ll take A.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": [
+        "comparison",
+        "selection"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.success",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park because we can talk without loud music.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.missing_meaning",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.contradiction",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the cafe because it has no loud music.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.answer_support",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park because we can talk without loud music.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.bad_audio",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park because we can talk without loud music.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.role_leak",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park because we can talk without loud music.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "OPINION.uncertain_extractor",
+    "family": "OPINION",
+    "scenario": "Give any opinion; supplied fact: park is quiet, cafe has loud music",
+    "learner_utterance": "I prefer the park because we can talk without loud music.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": [
+        "position",
+        "reason"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.success",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I’m sorry I damaged your book.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.missing_meaning",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "Your book is damaged.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.contradiction",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I did not damage your book.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.answer_support",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I’m sorry I damaged your book.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.bad_audio",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I’m sorry I damaged your book.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.role_leak",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I’m sorry I damaged your book.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "RELATE.uncertain_extractor",
+    "family": "RELATE",
+    "scenario": "Apologise for a damaged borrowed book; supplied fact: learner damaged it",
+    "learner_utterance": "I’m sorry I damaged your book.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": [
+        "acknowledgement",
+        "apology"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.success",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides, and you can check the figures.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.missing_meaning",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.contradiction",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "Neither of us will prepare the slides.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.answer_support",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides, and you can check the figures.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.bad_audio",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides, and you can check the figures.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.role_leak",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides, and you can check the figures.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "COLLAB.uncertain_extractor",
+    "family": "COLLAB",
+    "scenario": "Agree responsibilities",
+    "learner_utterance": "I’ll prepare the slides, and you can check the figures.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": [
+        "my_role",
+        "partner_role"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.success",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, I said thirteen, not thirty.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.missing_meaning",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, that is not right.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.contradiction",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Yes, thirty is correct.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.answer_support",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, I said thirteen, not thirty.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.bad_audio",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, I said thirteen, not thirty.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.role_leak",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, I said thirteen, not thirty.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "REPAIR.uncertain_extractor",
+    "family": "REPAIR",
+    "scenario": "Correct a misunderstood number",
+    "learner_utterance": "Sorry, I said thirteen, not thirty.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": [
+        "signal",
+        "correction"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.success",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn left after the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.missing_meaning",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll go past the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.contradiction",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn right after the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.answer_support",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn left after the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.bad_audio",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn left after the bank.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.role_leak",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn left after the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "LISTEN.uncertain_extractor",
+    "family": "LISTEN",
+    "scenario": "Act on supplied directions",
+    "learner_utterance": "I’ll turn left after the bank.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": [
+        "direction",
+        "landmark"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.success",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight now leaves at ten from gate seven.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.missing_meaning",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "It leaves at ten.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.contradiction",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight leaves at nine from gate seven.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.answer_support",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight now leaves at ten from gate seven.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.bad_audio",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight now leaves at ten from gate seven.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.role_leak",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight now leaves at ten from gate seven.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIA.uncertain_extractor",
+    "family": "MEDIA",
+    "scenario": "Relay a supplied announcement",
+    "learner_utterance": "The flight now leaves at ten from gate seven.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": [
+        "new_time",
+        "place"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.success",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin. Please call me back about tomorrow’s meeting.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.missing_meaning",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.contradiction",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Wang calling to cancel next month’s meeting.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.answer_support",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin. Please call me back about tomorrow’s meeting.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.bad_audio",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin. Please call me back about tomorrow’s meeting.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.role_leak",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin. Please call me back about tomorrow’s meeting.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "PHONE.uncertain_extractor",
+    "family": "PHONE",
+    "scenario": "Leave an actionable message",
+    "learner_utterance": "This is Lin. Please call me back about tomorrow’s meeting.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": [
+        "identity",
+        "request"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.success",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today, so we need to go tomorrow.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "pass",
+    "actual": "pass",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.missing_meaning",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.contradiction",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is open today, so let’s go now.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "fail",
+    "actual": "fail",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.answer_support",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today, so we need to go tomorrow.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": true,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "partial",
+    "actual": "partial",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.bad_audio",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today, so we need to go tomorrow.",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.role_leak",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today, so we need to go tomorrow.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": true,
+      "semantic_uncertain": false,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "MEDIATE.uncertain_extractor",
+    "family": "MEDIATE",
+    "scenario": "Relay a supplied change",
+    "learner_utterance": "The museum is closed today, so we need to go tomorrow.",
+    "evidence": {
+      "valid_input": true,
+      "answer_leaked": false,
+      "semantic_uncertain": true,
+      "critical_contradiction": false,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": [
+        "change",
+        "consequence"
+      ]
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable",
+    "evidence_origin": "assistant_authored_fixture_not_actual_model_prediction"
+  },
+  {
+    "id": "CONTACT.invalid_precedence",
+    "family": "CONTACT",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "greet",
+        "introduce"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "INFO.invalid_precedence",
+    "family": "INFO",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "date",
+        "room"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "DESCRIBE.invalid_precedence",
+    "family": "DESCRIBE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "colour",
+        "location"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "NEEDS.invalid_precedence",
+    "family": "NEEDS",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "restriction",
+        "request"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "STORY.invalid_precedence",
+    "family": "STORY",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "order",
+        "resolution"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "EXPLAIN.invalid_precedence",
+    "family": "EXPLAIN",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "first_step",
+        "next_step"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "REQUEST.invalid_precedence",
+    "family": "REQUEST",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "decline",
+        "reason"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "ARRANGE.invalid_precedence",
+    "family": "ARRANGE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "feasible_time",
+        "location"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "SERVICE.invalid_precedence",
+    "family": "SERVICE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "problem",
+        "remedy"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "COMPARE.invalid_precedence",
+    "family": "COMPARE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "comparison",
+        "selection"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "OPINION.invalid_precedence",
+    "family": "OPINION",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "position",
+        "reason"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "RELATE.invalid_precedence",
+    "family": "RELATE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "acknowledgement",
+        "apology"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "COLLAB.invalid_precedence",
+    "family": "COLLAB",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "my_role",
+        "partner_role"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "REPAIR.invalid_precedence",
+    "family": "REPAIR",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "signal",
+        "correction"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "LISTEN.invalid_precedence",
+    "family": "LISTEN",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "direction",
+        "landmark"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "MEDIA.invalid_precedence",
+    "family": "MEDIA",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "new_time",
+        "place"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "PHONE.invalid_precedence",
+    "family": "PHONE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "identity",
+        "request"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  },
+  {
+    "id": "MEDIATE.invalid_precedence",
+    "family": "MEDIATE",
+    "evidence": {
+      "valid_input": false,
+      "answer_leaked": false,
+      "semantic_uncertain": false,
+      "critical_contradiction": true,
+      "answer_support": false,
+      "required": [
+        "change",
+        "consequence"
+      ],
+      "evidenced": []
+    },
+    "expected": "unjudgeable",
+    "actual": "unjudgeable"
+  }
+]

@@ -1,0 +1,2102 @@
+=== PDF PAGE 1 ===
+Alignment of the 
+Canadian Language 
+Benchmarks to the 
+Global Scale of English:
+Stage I Basic
+November 2024
+
+=== PDF PAGE 2 ===
+Contents
+About the GSE...........................................................................3
+About Canadian Language Benchmarks.....5
+Alignment Methodology and Results..............6
+Stage I – Benchmark 1.....................................................7
+Listening............................................................................................7
+Speaking...........................................................................................8
+Reading..............................................................................................9
+Writing.............................................................................................10
+Stage I – Benchmark 2................................................11
+Listening........................................................................................11
+Speaking.......................................................................................12
+Reading..........................................................................................14
+Writing.............................................................................................15
+Stage I – Benchmark 3................................................16
+Listening........................................................................................16
+Speaking.......................................................................................17
+Reading..........................................................................................20
+Writing.............................................................................................21
+Stage I – Benchmark 4................................................22
+Listening........................................................................................22
+Speaking.......................................................................................24
+Reading..........................................................................................26
+Writing.............................................................................................28
+References................................................................................30
+
+=== PDF PAGE 3 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  3
+About the GSE
+Pearson developed the Global Scale of English (GSE) to provide instructors and learners with a more detailed understanding 
+of English language proficiency. It has been designed to build learners’ confidence by revealing exactly where they are on their 
+learning journey and setting personalised goals to help them progress. 
+The GSE is an ecosystem that underpins the Pearson English Journey:
+	• GSE Scale: a proficiency scale from 10 to 90.
+	• GSE Learning Objectives: descriptions of what learners can do at each level of proficiency in speaking, listening,  
+reading, and writing.
+	• Courseware: all of Pearson’s English language learning courseware is developed using the GSE Learning Objectives.
+	• Assessment: institutions can develop their own assessment materials using the GSE Learning Objectives and Assessment 
+Frameworks or choose one of Pearson’s digital assessments which report on the GSE.
+The GSE is the result of many years of research with more than 6,000 teachers from over 50 countries. It serves as a standard 
+against which English language courses and assessments worldwide can be benchmarked.
+The GSE has been psychometrically aligned to the Common European Framework of Reference or CEFR (see De Jong, Mayor, & 
+Hayes, 2016). It complements and extends the CEFR by adding an extra layer of detail to the CEFR levels and providing thousands 
+of additional learning objectives. This extra information helps learners understand where they are now and offers a step-by-step 
+guide to where they want to go next. Using the GSE, teachers can match a student to course materials to suit their exact level 
+and learning goals. 
+
+=== PDF PAGE 4 ===
+4  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+CEFR level
+GSE Scale
+Below A1
+10–21
+A1
+22–29
+A2
+30–35
+A2+ (‘plus level’)
+36–42
+B1
+43–50
+B1+ (‘plus level’)
+51–58
+B2
+59–66
+B2+ (‘plus level’)
+67–75
+C1
+76–84
+C2
+85–90
+Table 1: The relationship between the GSE and the CEFR
+To address the specific needs of learners studying English 
+for different purposes, GSE Learning Objectives have been 
+developed for five different learner audiences: 
+	• adult: adults studying on a general English course 
+	• academic: adults studying academic English 
+	• professional: adults studying English for the workplace 
+	• young learner: English language learners aged 6–14
+	• pre-primary: English language learners aged 3–5
+For more information:
+pearson.com/languages/why-pearson/ 
+the-global-scale-of-english
+
+=== PDF PAGE 5 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  5
+About Canadian Language Benchmarks
+For the purposes of this alignment, we worked with the 2012 edition of Canadian Language Benchmarks: English as a Second 
+Language for Adults. The Canadian Language Benchmarks (CLB) are written as 12 benchmarks along a continuum from basic to 
+advanced. These 12 benchmarks are then organised into three stages, each associated with a degree of complexity and demand.
+This report looks at the four benchmarks in Stage I – Basic Language Ability: 
+“Basic language ability encompasses abilities that are required to communicate in common 
+and predictable contexts about basic needs, common everyday activities and familiar topics 
+of immediate personal relevance. In the CLB, these are referred to as non-demanding 
+contexts of language use.” (CLB, p10)
+Stage I – Basic Language Ability
+Benchmark and 
+Ability Level
+Listening
+Speaking
+Reading
+Writing
+CLB 1: Initial
+CLB 2: Developing
+CLB 3: Adequate
+CLB 4: Fluent
+Interpreting simple 
+spoken communication in 
+routine, non-demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Creating simple spoken 
+communication in 
+routine, non-demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Interpreting simple 
+written communication in 
+routine, non-demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Creating simple written 
+communication in 
+routine, non-demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+For each language skill, there are four broad representative competency areas: Interacting with others, Instructions,  
+Getting things done, Sharing information.
+Table 2: Stage I – Basic Language Ability (CLB, p11)
+
+=== PDF PAGE 6 ===
+6  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Alignment Methodology 
+and Results
+Each Canadian Language Benchmark 
+competency statement within each 
+competency area was aligned to one or 
+more GSE Learning Objectives. The profile 
+of ability, sample indicators of ability and 
+sample tasks were also consulted during the 
+alignment. Given that the target audience 
+for CLBs is adult learners, GSE Learning 
+Objectives for Adults, Professionals and 
+Academic were used. 
+The results of the GSE alignment show 
+consistency with the CEFR-CLB alignment 
+carried out by North and Piccardo in 2018.
+Stage
+CLB level
+GSE  
+range
+CEFR-CLB 
+alignment  
+(North & Piccardo)
+I: Basic
+1
+10-19
+<A1
+2
+20-27
+A1
+3
+28-34
+A1/A2
+4
+35-41
+A2/A2+
+II: Intermediate
+5
+42-46
+B1
+6
+47-52
+B1/B1+
+7
+53-58
+B1+
+8
+59-66
+B2
+III: Advanced
+9
+67-72
+B2+
+10
+73-78
+C1
+11
+79-84
+C1
+12
+85-90
+C2
+Table 3: CLB-GSE alignment compared to CLB-CEFR
+
+=== PDF PAGE 7 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  7
+Stage I – Benchmark 1
+Listening
+Stage I – Benchmark 1
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand individual greetings, 
+introductions and goodwill 
+expressions. 
+Can recognise simple informal greetings.
+10
+Below A1 (10-21)
+Can recognise a few familiar everyday words, if delivered slowly and clearly.
+10
+Below A1 (10-21)
+Can understand basic personal details if given carefully and slowly.
+21
+Below A1 (10-21)
+II. Comprehending instructions
+Understand very short, simple 
+instructions, commands and 
+requests related to immediate 
+personal needs. 
+Can understand cardinal numbers from 1 to 20.
+10
+Below A1 (10-21)
+Can understand the letters of the alphabet.
+10
+Below A1 (10-21)
+Can recognise the letters of the English alphabet when pronounced.
+11
+Below A1 (10-21)
+Can understand very basic common classroom instructions.
+16
+Below A1 (10-21)
+Can understand cardinal numbers from 21 to 100.
+19
+Below A1 (10-21)
+Can understand basic questions about personal details if addressed slowly 
+and clearly.
+21
+Below A1 (10-21)
+Can distinguish between ‘can’ and ‘can’t’.
+24
+A1 (22-29)
+III. Getting things done
+Understand expressions used to 
+attract attention and to request 
+assistance in situations of 
+immediate personal need. 
+Can understand some basic words and phrases to show politeness (e.g. 
+‘Please’, ‘Thank you’, ‘Excuse me’, ‘Sorry’).
+11*
+Below A1 (10-21)
+Can recognise familiar words in short phrases and sentences spoken 
+slowly and clearly, if supported by pictures.
+19
+Below A1 (10-21)
+IV. Comprehending information
+Understand very simple information 
+about highly familiar, concrete 
+topics. 
+Can understand the time of day when expressed in full hours.
+18
+Below A1 (10-21)
+Can recognise basic time words (e.g. days, months) in simple phrases or 
+sentences.
+19
+Below A1 (10-21)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 8 ===
+8  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 1
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Use and respond to basic courtesy 
+formulas and greetings. 
+Can greet people using a few basic fixed expressions.
+12
+Below A1 (10-21)
+Can use a few basic words and phrases to show politeness (e.g. ‘please’, 
+‘thank you’).
+12
+Below A1 (10-21)
+Can establish basic social contacts with simple, polite greetings and 
+farewells.
+19
+Below A1 (10-21)
+II. Giving instructions
+Give brief, simple, common, routine 
+instructions to a familiar person.
+Can ask very simply for repetition when they don’t understand.
+21
+Below A1 (10-21)
+III. Getting things done
+Make and respond to simple 
+requests related to immediate 
+personal needs (such as asking for 
+assistance, or for the time, a price 
+or an amount).
+Can make simple purchases by pointing or other gestures.
+11
+Below A1 (10-21)
+Can name a few very common everyday objects.
+12
+Below A1 (10-21)
+Can ask and answer basic requests for information with ‘What’s this/that?’
+16
+Below A1 (10-21)
+Can tell the time of day in full hours.
+16
+Below A1 (10-21)
+Can use some very basic words to ask for food and drink.
+17
+Below A1 (10-21)
+Can ask about the price of something.
+19
+Below A1 (10-21)
+Can ask for and give the day and date.
+19
+Below A1 (10-21)
+Can say a range of basic numbers, quantities and prices.
+20
+Below A1 (10-21)
+IV. Sharing information
+Give basic personal information in 
+response to direct questions from a 
+supportive listener.
+Can introduce themselves using a basic phrase (e.g. ‘My name’s ...’).
+12
+Below A1 (10-21)
+Can read out phone numbers.
+13
+Below A1 (10-21)
+Can spell out their own name and address.
+14
+Below A1 (10-21)
+Can give very limited personal information using basic fixed expressions.
+16
+Below A1 (10-21)
+Can say what they do (e.g. name of their job, student).
+19
+Below A1 (10-21)
+ Ask for basic personal information.
+Can ask someone for their name.
+10
+Below A1 (10-21)
+Can ask someone what their nationality is.
+13
+Below A1 (10-21)
+Can say their own age and ask someone about their age.
+18
+Below A1 (10-21)
+Can ask someone what their job is.
+19
+Below A1 (10-21)
+
+=== PDF PAGE 9 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  9
+Stage I – Benchmark 1
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand short greetings and 
+simple goodwill messages .
+Can recognise different basic words or phrases used for a similar purpose 
+(e.g. hi / hello) to greet someone.
+18*
+Below A1 (10-21)
+II. Comprehending instructions
+Understand very short, simple 
+instructions for common, familiar 
+everyday situations. 
+Can understand very short, simple, instructions on everyday signs (e.g. ‘No 
+parking’, ‘No food or drink’).
+20*
+Below A1 (10-21)
+Can understand basic written instructions for classroom activities (e.g. 
+‘Read and match’).
+23*
+A1 (22-29)
+III. Getting things done 
+Get information from very short, 
+simple, common formatted texts 
+(such as simple sections of forms, 
+maps, diagrams, sales receipts, or 
+common universal traffic signs and 
+civic symbols). 
+Can read and understand simple prices.
+12
+Below A1 (10-21)
+Can recognise familiar names, words and very basic phrases on simple 
+notices.
+15
+Below A1 (10-21)
+IV. Comprehending information 
+Recognize names, numbers and 
+some basic details in very simple, 
+short texts related to everyday 
+situations and immediate needs. 
+Can recognise cardinal numbers up to 10.
+10
+Below A1 (10-21)
+Can recognise the letters of the alphabet.
+10
+Below A1 (10-21)
+Can identify very common food and drink on a menu.
+14
+Below A1 (10-21)
+Can recognise basic plural forms of nouns (e.g. cars, books).
+14
+Below A1 (10-21)
+Can understand basic sentences introducing someone (e.g. name, age).
+18
+Below A1 (10-21)
+Can recognise cardinal numbers from 11-100.
+22
+A1 (22-29)
+Can understand basic sentences describing everyday objects (e.g. colour, 
+size), given visual support.
+23
+A1 (22-29)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 10 ===
+10  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 1
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey greetings or other goodwill 
+messages by completing cards or 
+other very short, simple standard 
+texts. 
+Can post simple online greetings, using basic formulaic expressions and 
+emoticons.
+16
+Below A1 (10-21)
+II. Reproducing information
+Copy numbers, letters, words, short 
+phrases or sentences from simple 
+lists or very short passages, for 
+personal use or to complete short 
+tasks.
+Can list names, numbers, prices and very simple information from texts 
+that are of immediate interest, that are composed in very simple language 
+and contain illustrations.
+10
+Below A1 (10-21)
+Can write the letters of the alphabet in upper and lower case.
+10
+Below A1 (10-21)
+Can write cardinal numbers from 1 to 20 as words.
+12
+Below A1 (10-21)
+Can copy familiar words and short phrases about everyday objects and set 
+phrases.
+18
+Below A1 (10-21)
+Can signal the end of a sentence using a full stop.
+19*
+Below A1 (10-21)
+III. Getting things done
+Complete very short, simple or 
+simplified forms that require 
+only basic personal identification 
+information. 
+Can write their name, address and nationality.
+10
+Below A1 (10-21)
+IV. Sharing information
+Write a few words to complete a 
+short, guided text or answer simple 
+questions to describe a personal 
+situation. 
+Can write a few basic sentences introducing themselves (e.g. name, age, 
+where they are from), given prompts or a model.
+24
+A1 (22-29)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 11 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  11
+Stage I – Benchmark 2
+Listening
+Stage I – Benchmark 2
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand greetings, 
+introductions, requests, goodwill 
+expressions and an expanding 
+range of basic courtesy formulas. 
+Can recognise simple formal greetings.
+13
+Below A1 (10-21)
+Can understand the main information when people introduce themselves 
+(e.g. name, age, where they are from).
+22
+A1 (22-29)
+Can recognise basic information when people introduce themselves in 
+work-related situations (name, job, etc).
+26
+A1 (22-29)
+II. Comprehending instructions
+Understand short, simple, common 
+instructions, commands, requests 
+and directions related to immediate 
+personal needs. 
+Can understand ordinal numbers from 1 to 100.
+20
+Below A1 (10-21)
+Can understand short, simple instructions addressed carefully and slowly.
+23
+A1 (22-29)
+Can understand simple spoken commands in a game or sport.
+26
+A1 (22-29)
+Can understand simple directions from X to Y on foot or public transport.
+26
+A1 (22-29)
+III. Getting things done
+Understand expressions used to 
+make and respond to requests and 
+warnings in situations of immediate 
+personal need. 
+Can understand questions addressed carefully and slowly.
+23
+A1 (22-29)
+Can distinguish between ‘can’ and ‘can’t’.
+24
+A1 (22-29)
+Can understand excuses if expressed in simple language.
+30
+A2 (30-35)
+IV. Comprehending information
+Understand simple information 
+about familiar, concrete topics. 
+Can understand simple language related to prices and quantities.
+20
+Below A1 (10-21)
+Can recognise basic factual information about times and dates.
+25
+A1 (22-29)
+Can understand basic factual statements.
+26
+A1 (22-29)
+Can recognise key information (e.g. place, time) about everyday events, if 
+spoken slowly and clearly.
+26
+A1 (22-29)
+Can recognise words and simple phrases related to familiar topics, if 
+spoken slowly and clearly and supported by pictures.
+26
+A1 (22-29)
+Can recognise familiar key words and phrases in short, basic descriptions 
+(e.g. of objects, places or people), if spoken slowly and clearly.
+27
+A1 (22-29)
+Can understand basic information about prices, times, and dates in familiar 
+contexts, if spoken slowly and clearly.
+27
+A1 (22-29)
+Can extract key factual information such as prices, times and dates from 
+short clear, simple announcements.
+30
+A2 (30-35)
+Can recognise phrases and content words related to basic personal and 
+family information.
+30
+A2 (30-35)
+
+=== PDF PAGE 12 ===
+12  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 2
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Use and respond to courtesy 
+formulas and greetings.
+Can greet people, ask how they are and react to news.
+24
+A1 (22-29)
+Can introduce themselves, their hobbies and interests in a basic way.
+26
+A1 (22-29)
+Can introduce someone in a basic way, giving their name and job title.
+26
+A1 (22-29)
+Can introduce people using basic language.
+27
+A1 (22-29)
+Can make an introduction and use basic greeting and leave-taking 
+expressions.
+28
+A1 (22-29)
+II. Giving instructions
+Give short, simple, common, 
+routine instructions to a familiar 
+person. 
+ 
+Can ask for simple directions, referring to a map or plan.
+29
+A1 (22-29)
+Can give simple classroom instructions.
+31
+A2 (30-35)
+III. Getting things done
+Make and respond to simple 
+requests related to common 
+everyday activities.
+Can ask where other people are in a limited way.
+20
+Below A1 (10-21)
+Can ask and answer simple questions about things they have in a limited 
+way.
+21
+Below A1 (10-21)
+Can give basic information about the price of something.
+23
+A1 (22-29)
+Can agree to simple requests using a few basic fixed expressions.
+24
+A1 (22-29)
+Can ask for a drink or food in a limited way.
+24
+A1 (22-29)
+Can buy tickets on public transport using basic fixed expressions.
+24
+A1 (22-29)
+Can ask and answer simple questions in areas of immediate need or on 
+very familiar topics.
+25
+A1 (22-29)
+Can make a few basic requests related to immediate personal needs (e.g. 
+‘Can I have a pen, please?’).
+26
+A1 (22-29)
+Can check into a hotel using a few basic fixed expressions.
+26
+A1 (22-29)
+Can accept offers using basic fixed expressions.
+27
+A1 (22-29)
+Can ask people for things and give people things.
+28
+A1 (22-29)
+Give very simple warnings and 
+cautions.
+Can give a simple warning of immediate danger using a fixed expression.
+25*
+A1 (22-29)
+Can ask for help using basic fixed expressions.
+27
+A1 (22-29)
+Can ask for attention.
+29
+A1 (22-29)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 13 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  13
+Stage I – Benchmark 2
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+Give expanded basic personal 
+information to a supportive listener.
+Can introduce themselves in a basic way, giving some information about 
+where they live, their family etc.
+22
+A1 (22-29)
+Can ask and answer basic questions about family and friends in a limited 
+way.
+22
+A1 (22-29)
+Can give key information to introduce themselves (e.g. name, age, where 
+they are from).
+23
+A1 (22-29)
+Can describe where they live.
+26
+A1 (22-29)
+Can express ability or lack of ability with regard to basic activities using 
+‘can’ or ‘can’t’.
+27
+A1 (22-29)
+Can express preferences about food and drink using basic fixed 
+expressions.
+28
+A1 (22-29)
+Can describe a person’s likes and dislikes using simple language.
+28
+A1 (22-29)
+Can exchange personal details (e.g. where they live, things they have).
+28
+A1 (22-29)
+Can answer simple questions about their daily activities or routines, given 
+a model.
+28
+A1 (22-29)
+Can express how they are feeling using very basic fixed expressions.
+28
+A1 (22-29)
+Can answer simple questions about habits and routines.
+29
+A1 (22-29)
+Can talk about the family in a basic way, given prompts.
+29
+A1 (22-29)
+Ask for basic personal information.
+Can ask for and give a date of birth.
+20
+Below A1 (10-21)
+Can ask for the spelling of a word, or for a word to be written down.
+22
+A1 (22-29)
+Can ask simple questions about other people (e.g. their name, age, where 
+they live, things they have).
+27
+A1 (22-29)
+Can ask and answer simple questions about people they know in a limited 
+way.
+28
+A1 (22-29)
+Give basic descriptions of concrete, 
+familiar objects in a few short 
+words or phrases. 
+Can name very common forms of transport.
+17
+Below A1 (10-21)
+Can use a few simple words to describe objects (e.g. colour, number), if 
+supported by pictures.
+18
+Below A1 (10-21)
+Can describe objects in a basic way (e.g. colour, size).
+24
+A1 (22-29)
+Can ask basic questions about objects (e.g. colour, size).
+26
+A1 (22-29)
+Speaking
+
+=== PDF PAGE 14 ===
+14  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 2
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand short greetings and 
+other goodwill messages. 
+Can understand short, simple messages about when and where to meet.
+28
+A1 (22-29)
+II. Comprehending instructions 
+Understand short, simple, 
+clearly sequenced instructions 
+for common, familiar everyday 
+situations. 
+Can follow short, simple written directions (e.g. to go from X to Y).
+26
+A1 (22-29)
+Can follow basic instructions for making something simple.
+28
+A1 (22-29)
+Can follow simple instructions to carry out a straightforward task.
+29
+A1 (22-29)
+III. Getting things done 
+Get information from simple 
+formatted texts (such as simple 
+forms, maps, diagrams, signs, 
+labels, tables and schedules). 
+Can recognise familiar names, words and very basic phrases on simple 
+notices and signs.
+19*
+Below A1 (10-21)
+Can understand a simple travel itinerary, including places, dates, and times.
+24
+A1 (22-29)
+Can understand a simple timesheet.
+25
+A1 (22-29)
+Can understand simple phrases related to familiar, everyday activities.
+29
+A1 (22-29)
+Get basic information from short, 
+simple business or service notices. 
+Can understand short written notices, signs and instructions with visual 
+support.
+27
+A1 (22-29)
+IV. Comprehending information 
+Understand the purpose and some 
+basic details in very simple, short 
+texts related to everyday, familiar, 
+personally relevant situations and 
+topics. 
+Can recognise cardinal numbers from 11-100.
+22
+A1 (22-29)
+Can understand short, simple descriptions of objects, people and animals, 
+given visual support.
+25
+A1 (22-29)
+Can understand basic phrases in short, simple texts.
+27
+A1 (22-29)
+Can extract personal details in a limited way.
+28
+A1 (22-29)
+Can understand basic factual statements relating to pictures or simple 
+texts.
+29
+A1 (22-29)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 15 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  15
+Stage I – Benchmark 2
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey an expanding range of 
+goodwill messages (such as thanks, 
+apologies, congratulations, get well 
+wishes, goodbyes, and sympathy) 
+by means of standard cards or 
+guided notes. 
+Can write some basic words and phrases to show politeness (e.g. ‘Please’, 
+‘Thank you’).
+21*
+Below A1 (10-21)
+Can formulate very simple messages and personal online postings as a 
+series of very short sentences about hobbies, likes/dislikes, etc., relying on 
+the aid of a translation tool.
+25
+A1 (22-29)
+Can spell a range of common greetings.
+28
+A1 (22-29)
+Can write a standard greeting on a card.
+31
+A2 (30-35)
+II. Reproducing information
+Copy a range of information, from 
+simple lists or very short passages, 
+for personal use or to complete 
+short tasks. 
+Can list names, numbers, prices and very simple information of immediate 
+interest in oral texts, provided the articulation is very slow and clear, with 
+repetition.
+22
+A1 (22-29)
+Can copy short sentences on everyday subjects (e.g. directions how to get 
+somewhere).
+24
+A1 (22-29)
+Can copy out single words and short texts presented in standard printed 
+format.
+25
+A1 (22-29)
+Can use basic punctuation (e.g. commas, full stops, question marks).
+26
+A1 (22-29)
+Can write dates using both digits and words.
+28
+A1 (22-29)
+III. Getting things done
+Complete short, simple or 
+simplified forms that require only 
+basic personal identification 
+or familiar information.
+Can complete a very simple online purchase or application, providing basic 
+personal information (e.g. name, e-mail or telephone number).
+22
+A1 (22-29)
+Can complete simple forms with basic personal details.
+23
+A1 (22-29)
+Can complete a simple form requiring travel information (e.g. landing card, 
+customs declaration).
+27
+A1 (22-29)
+IV. Sharing information
+Write a few words to complete a 
+short, guided text or answer simple 
+questions to describe a personal 
+situation. 
+Can write consistently with joined-up letters.
+20
+Below A1 (10-21)
+Can write basic sentences describing everyday objects (e.g. colour, size), 
+given a model.
+26
+A1 (22-29)
+Can write simple sentences about their family and where they live.
+27
+A1 (22-29)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 16 ===
+16  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 3
+Listening
+Stage I – Benchmark 3
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand simple social 
+exchanges, including styles of 
+greetings, introductions and leave-
+taking. 
+Can understand basic information about someone when introduced to 
+them using simple language.
+28
+A1 (22-29)
+Can follow short, simple social exchanges.
+33
+A2 (30-35)
+Can recognise simple, fixed expressions used in small talk.
+34
+A2 (30-35)
+II. Comprehending instructions
+Understand instructions and 
+directions related to familiar, 
+everyday situations of immediate 
+personal relevance. 
+Can understand simple directions, if spoken slowly and clearly.
+28
+A1 (22-29)
+Can understand the main information in short, simple dialogues about 
+familiar activities, if spoken slowly and clearly.
+33
+A2 (30-35)
+Can identify key information (e.g. places, times) from short audio 
+recordings, if spoken slowly and clearly.
+33
+A2 (30-35)
+Can understand simple requests or instructions to carry out concrete 
+work-related tasks.
+34
+A2 (30-35)
+III. Getting things done
+Understand expressions used in 
+familiar everyday situations (such as 
+requests, permission and warnings). 
+Can understand basic questions about free time activities.
+27
+A1 (22-29)
+Can understand basic information about free time activities.
+27
+A1 (22-29)
+Can understand key information about arrangements in simple dialogues 
+spoken slowly and clearly.
+32
+A2 (30-35)
+Can understand simple, everyday conversations if conducted slowly and 
+clearly.
+33
+A2 (30-35)
+IV. Comprehending information
+Understand short, simple, 
+descriptive communication about 
+a person, object, situation, scene, 
+personal experience or daily 
+routine.
+Can identify common objects from spoken descriptions, if spoken slowly 
+and clearly.
+28
+A1 (22-29)
+Can identify key words and phrases in descriptions of someone’s 
+appearance and clothes.
+31
+A2 (30-35)
+Can identify basic factual information in short, simple dialogues or 
+narratives on familiar everyday topics, if spoken slowly and clearly.
+32
+A2 (30-35)
+Can understand the main information in simple conversations about 
+hobbies and interests.
+34
+A2 (30-35)
+
+=== PDF PAGE 17 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  17
+Stage I – Benchmark 3
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Use a range of courtesy formulas 
+and greetings in very short, casual, 
+face-to-face interactions. 
+Can exchange personal details (e.g. where they live, things they have).
+28
+A1 (22-29)
+Can respond politely when introduced to someone, using a few basic fixed 
+expressions.
+29
+A1 (22-29)
+Can give a short description of their home, family and job, given some help 
+with vocabulary.
+30
+A2 (30-35)
+Can initiate and respond to simple statements on very familiar topics.
+30
+A2 (30-35)
+Can talk about everyday things (e.g. people, places, job, study) in a basic 
+way.
+31
+A2 (30-35)
+Can ask someone about their hobbies and activities using simple 
+language.
+31
+A2 (30-35)
+Can start or end a short conversation using basic fixed expressions.
+32
+A2 (30-35)
+Can ask others if they can do everyday activities using simple language, 
+given a model.
+32
+A2 (30-35)
+Can introduce themselves on the phone and close a simple call.
+33
+A2 (30-35)
+Can talk about their life (e.g. family, home, job), using simple language.
+33
+A2 (30-35)
+Can take part in a very simple conversation on a familiar topic if the other 
+speaker repeats questions and answers as necessary and speaks slowly 
+and clearly.
+34
+A2 (30-35)
+Can show understanding using a limited range of fixed expressions.
+34
+A2 (30-35)
+II. Giving instructions
+Give simple, common, routine 
+instructions and directions to a 
+familiar person. 
+Can give very simple instructions to a co-operative group given help with 
+formulation when necessary.
+32
+A2 (30-35)
+Can ask for simple directions from X to Y on foot or by public transport.
+32
+A2 (30-35)
+Can give simple directions using a map or plan.
+32
+A2 (30-35)
+Can give simple directions from X to Y on foot or by public transport.
+34
+A2 (30-35)
+
+=== PDF PAGE 18 ===
+18  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 3
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Make and respond to an expanding 
+range of simple requests related to 
+everyday activities.
+Can ask basic questions about colour, size, price etc. when shopping.
+30
+A2 (30-35)
+Can make requests related to immediate needs using basic fixed 
+expressions.
+30
+A2 (30-35)
+Can ask for and provide things using simple phrases.
+31
+A2 (30-35)
+Can ask about the location of places in a town, using simple language.
+31
+A2 (30-35)
+Can express their likes and dislikes in relation to familiar topics using simple 
+language.
+31
+A2 (30-35)
+Can make simple purchases by stating what is wanted and asking for the 
+price.
+31
+A2 (30-35)
+Can handle common everyday transactions (e.g. buying a ticket).
+32
+A2 (30-35)
+Can decline offers using basic fixed expressions.
+33
+A2 (30-35)
+Can make simple transactions in shops, post offices and banks.
+33
+A2 (30-35)
+Can answer simple questions about quantities and amounts, given help 
+with vocabulary.
+33
+A2 (30-35)
+Can agree or refuse to lend things using basic fixed expressions.
+34
+A2 (30-35)
+Can make simple requests to have or do something in relation to common 
+everyday activities.
+35
+A2 (30-35)
+Can refuse requests politely, using simple language.
+35
+A2 (30-35)
+Give an expanding range of simple 
+warnings, apologies and cautions.
+Can make and accept a simple apology.
+31
+A2 (30-35)
+IV. Sharing information
+Ask for and give information 
+about immediate needs and 
+some feelings related to common 
+everyday activities.
+Can use brief, everyday expressions to describe wants and needs, and 
+request information.
+28
+A1 (22-29)
+Can express basic intentions with simple time markers (e.g. ‘tomorrow’).
+30
+A2 (30-35)
+Can express their likes and dislikes in relation to familiar topics using simple 
+language.
+31
+A2 (30-35)
+Can use brief, everyday expressions to ask for and give personal details.
+32
+A2 (30-35)
+Can describe skills and abilities using simple language.
+33
+A2 (30-35)
+Can ask simple questions about quantities and amounts.
+33
+A2 (30-35)
+Speaking
+
+=== PDF PAGE 19 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  19
+Stage I – Benchmark 3
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+(cont.)
+Ask for and give information 
+about immediate needs and 
+some feelings related to common 
+everyday activities.
+Can exchange simple information on everyday topics, provided the other 
+person speaks slowly and clearly and is prepared to help.
+34
+A2 (30-35)
+Can give simple opinions using basic fixed expressions.
+34
+A2 (30-35)
+Can say what they like and dislike.
+34
+A2 (30-35)
+Can express general preferences using basic fixed expressions.
+34
+A2 (30-35)
+Can answer simple questions about their life and experiences.
+35
+A2 (30-35)
+Can ask and talk about very basic symptoms and ailments (e.g. cold, flu).
+36
+A2+ (36-42)
+Give simple descriptions of 
+concrete objects, people or 
+experiences in a few short 
+sentences. 
+Can describe an object using simple language.
+29
+A1 (22-29)
+Can describe a person’s hobbies and activities using simple language.
+30
+A2 (30-35)
+Can describe their daily routines in a simple way.
+31
+A2 (30-35)
+Can describe common everyday objects using simple language.
+31
+A2 (30-35)
+Can give a simple description of their school or workplace.
+32
+A2 (30-35)
+Can describe their family, living conditions, education and present or most 
+recent job.
+33
+A2 (30-35)
+Can describe basic activities or events that are happening at the time of 
+speaking.
+33
+A2 (30-35)
+Can make simple references to the past using ‘was/were’.
+33
+A2 (30-35)
+Can describe their home town or city using simple language.
+33
+A2 (30-35)
+Can describe the position of things in a picture using a range of fixed 
+expressions
+33
+A2 (30-35)
+Can describe people’s everyday lives using a short series of simple phrases 
+and sentences.
+34
+A2 (30-35)
+Speaking
+
+=== PDF PAGE 20 ===
+20  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 3
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand short, personal social 
+messages (such as invitations, 
+thanks, apologies, quick updates 
+and arrangements) within 
+predictable contexts of daily 
+experience. 
+Can understand short, simple messages on postcards, emails and social 
+networks.
+31
+A2 (30-35)
+II. Comprehending instructions 
+Understand short, simple, clearly 
+sequenced instructions for familiar 
+everyday situations. 
+Can follow basic instructions on how to play a simple board game, if 
+supported by pictures.
+31
+A2 (30-35)
+Can understand simple instructions on everyday equipment (e.g. cash 
+machines).
+34
+A2 (30-35)
+Can follow a basic sequence of events in a simple text on a familiar topic.
+36
+A2+ (36-42)
+III. Getting things done 
+Get information from simple 
+formatted texts (such as forms, 
+tables, charts, schedules and 
+directories). 
+Can understand a simple work schedule.
+30
+A2 (30-35)
+Can extract specific information (e.g. facts and numbers) from simple 
+informational texts related to everyday life (e.g. posters, leaflets).
+31
+A2 (30-35)
+Can find specific, predictable information in everyday materials (e.g. 
+menus, timetables).
+31
+A2 (30-35)
+Can understand simple questions in questionnaires on familiar topics.
+31
+A2 (30-35)
+Can understand a simple payslip, listing earnings and basic deductions.
+36
+A2+ (36-42)
+Get information from short 
+business or service texts (such as 
+brochures, notices, form letters and 
+flyers). 
+Can understand simple descriptions of places.
+27
+A1 (22-29)
+Can understand the general meaning of short, simple informational 
+material and descriptions if there is visual support.
+34
+A2 (30-35)
+IV. Comprehending information 
+Understand the purpose, main idea, 
+key information and some details 
+in simple, short texts related to 
+everyday familiar and personally 
+relevant situations and topics. 
+Can understand familiar phrases in a simple text.
+29
+A1 (22-29)
+Can get the gist of short, simple narratives, with visual support.
+32
+A2 (30-35)
+Can read a simple text and extract factual details.
+35
+A2 (30-35)
+Access simple standard 
+reference texts (such as print or 
+online bilingual dictionaries and 
+encyclopedias). 
+Can translate simple words and phrases with the help of a bilingual 
+dictionary.
+29*
+A1 (22-29)
+Can identify key information in short, simple factual texts from the 
+headings and pictures.
+35
+A2 (30-35)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 21 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  21
+Stage I – Benchmark 3
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey short, personal and 
+informal social messages on 
+topics related to familiar everyday 
+situations (such as invitations, 
+thanks, updates, cancellations and 
+apologies). 
+Can write short, simple notes, emails and postings to friends.
+28
+A1 (22-29)
+Can write times using both digits and words.
+29
+A1 (22-29)
+Can write simple sentences about what they and other people do.
+30
+A2 (30-35)
+Can write very short, simple sentences about their feelings.
+32
+A2 (30-35)
+Can engage in basic social communication online (e.g. a simple message 
+on a virtual card for a special occasion, sharing news and making/
+confirming arrangements to meet).
+33
+A2 (30-35)
+II. Reproducing information
+Copy or record a range of 
+information from short texts for 
+personal use. 
+Can copy out short texts in printed or clearly handwritten format.
+32
+A2 (30-35)
+III. Getting things done
+Complete short, simple forms that 
+require basic personal or familiar 
+information and some responses to 
+simple questions. 
+Can write simple sentences about what they and other people do.
+30
+A2 (30-35)
+Can write simple plans and arrangements on a calendar or in a diary.
+31
+A2 (30-35)
+Can give personal details in written form in a limited way.
+31
+A2 (30-35)
+Can write very short, basic directions.
+32
+A2 (30-35)
+Write short, simple business or 
+service messages. 
+Can write simple sentences about someone’s work and duties.
+31
+A2 (30-35)
+IV. Sharing information
+Write a few sentences to describe 
+a familiar person, object, place, 
+situation or event. 
+Can write simple sentences about someone’s life and routines.
+28
+A1 (22-29)
+Can describe the position of things in a picture using a few simple fixed 
+expressions.
+29
+A1 (22-29)
+Can write simple sentences about a familiar object.
+29
+A1 (22-29)
+Can write a few basic sentences to introduce someone and give basic 
+personal information about them.
+31
+A2 (30-35)
+Can write a simple description of a room, house or apartment.
+31
+A2 (30-35)
+Can write simple sentences about what they or other people can or can’t 
+do.
+31
+A2 (30-35)
+Can write short, basic descriptions of everyday activities, given a model.
+33
+A2 (30-35)
+Can write short texts about their likes and dislikes using basic fixed 
+expressions.
+34
+A2 (30-35)
+Can write short descriptive texts (4–6 sentences) on familiar personal 
+topics (e.g. family, possessions), given a model.
+34
+A2 (30-35)
+Can write short texts describing favourite objects, possessions or 
+household pets.
+36
+A2+ (36-42)
+
+=== PDF PAGE 22 ===
+22  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 4
+Listening
+Stage I – Benchmark 4
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand short social exchanges 
+containing introductions, casual 
+small talk and leave-taking.
+Can understand who a phone call is intended for.
+35
+A2 (30-35)
+Can follow a simple conversation or narrative about familiar, everyday 
+activities.
+36
+A2+ (36-42)
+Can understand standard speech on familiar matters, with some repetition 
+or reformulation.
+38
+A2+ (36-42)
+Can make basic inferences in simple conversations on familiar everyday 
+topics.
+38
+A2+ (36-42)
+Can understand enough to manage simple routine exchanges without 
+undue effort.
+40
+A2+ (36-42)
+Can understand basic information in a work-related phone call.
+42
+A2+ (36-42)
+II. Comprehending instructions
+Understand common, sequentially 
+presented instructions and 
+directions related to familiar, 
+everyday situations of personal 
+relevance. 
+Can understand simple requests or instructions to carry out concrete 
+work-related tasks.
+34
+A2 (30-35)
+Can understand simple information about work activites.
+35
+A2 (30-35)
+Can understand enough to respond to direct requests expressed slowly 
+and clearly.
+37
+A2+ (36-42)
+Can follow the sequence of events in a short, simple dialogue or narrative.
+37
+A2+ (36-42)
+III. Getting things done
+Understand short communication 
+intended to influence or persuade 
+others in familiar, everyday 
+situations. 
+Can recognise some basic fixed expressions to describe products or 
+services, given help with vocabulary.
+34
+A2 (30-35)
+Can follow the main points in a simple audio recording, if provided with 
+written supporting material.
+37
+A2+ (36-42)
+Can understand simple, factual information in a work-related video.
+42
+A2+ (36-42)
+
+=== PDF PAGE 23 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  23
+Stage I – Benchmark 4
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information
+Understand short descriptive or 
+narrative communication on topics 
+of personal relevance. 
+Can understand short, basic descriptions of familiar topics and situations, 
+if delivered slowly and clearly.
+35
+A2 (30-35)
+Can identify specific information in short, simple dialogues in which 
+speakers make arrangements to do something, if spoken slowly and 
+clearly.
+35
+A2 (30-35)
+Can get the gist of short, simple stories if told slowly and clearly.
+37
+A2+ (36-42)
+Can identify specific events from short spoken descriptions.
+38
+A2+ (36-42)
+Can generally identify the topic of discussion around them when 
+conducted slowly and clearly.
+39
+A2+ (36-42)
+Can understand the key details of hotel, restaurant, and transport 
+reservations.
+39
+A2+ (36-42)
+Can derive the probable meaning of simple, unknown words from short, 
+familiar contexts.
+41
+A2+ (36-42)
+Listening
+
+=== PDF PAGE 24 ===
+24  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 4
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Use a range of courtesy formulas 
+and some casual small talk in 
+short, one-on-one or small group 
+interactions. 
+Can ask and answer questions about what they do at work and in their free 
+time.
+35
+A2 (30-35)
+Can make small talk using simple language, given a model.
+36
+A2+ (36-42)
+Can ask someone simple questions about their life and experiences.
+36
+A2+ (36-42)
+Can confirm information using some simple fixed expressions.
+37
+A2+ (36-42)
+Can initiate, maintain and close simple, restricted face-to-face 
+conversations.
+39
+A2+ (36-42)
+Can discuss what to do in the evening or at the weekend.
+40
+A2+ (36-42)
+Can participate in short conversations in routine contexts on topics of 
+interest.
+41
+A2+ (36-42)
+Participate in very short, simple 
+phone calls. 
+Can introduce themselves on the phone and close a simple call.
+33
+A2 (30-35)
+Can leave simple phone messages using fixed expressions.
+36
+A2+ (36-42)
+Can make a hotel, restaurant, or transportation reservation on the phone.
+38
+A2+ (36-42)
+Can cancel a hotel, restaurant, or transportation reservation on the phone.
+41
+A2+ (36-42)
+II. Giving instructions
+Give a set of simple, common, 
+routine instructions and directions 
+to a familiar person. 
+ 
+Can give simple instructions to complete a basic task, given a model.
+37
+A2+ (36-42)
+Can give a simple description of how to carry out an everyday process (e.g. 
+a recipe).
+40
+A2+ (36-42)
+III. Getting things done
+Make and respond to a range 
+of requests and offers (such as 
+getting assistance, and asking for, 
+offering, accepting or rejecting 
+goods or services.)
+Can ask for and provide everyday goods and services.
+35
+A2 (30-35)
+Can communicate in routine tasks requiring simple, direct exchanges of 
+information.
+36
+A2+ (36-42)
+Can deal with practical everyday demands, exchanging straightforward 
+factual information.
+38
+A2+ (36-42)
+Can get information from a tourist office of a straightforward, non-
+specialised nature.
+39
+A2+ (36-42)
+Can give basic advice using simple language.
+39
+A2+ (36-42)
+
+=== PDF PAGE 25 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  25
+Stage I – Benchmark 4
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Make and respond to a range 
+of requests and offers (such as 
+getting assistance, and asking for, 
+offering, accepting or rejecting 
+goods or services.)
+Can ask for and give or refuse permission.
+40
+A2+ (36-42)
+Can give someone the details needed to make hotel, restaurant, or 
+transport reservations.
+41
+A2+ (36-42)
+Can make simple future arrangements and plans with reference to a diary 
+or schedule.
+42
+A2+ (36-42)
+IV. Sharing information
+Ask for and give information about 
+needs and feelings related to 
+common everyday activities.
+Can express how they feel in simple terms.
+38
+A2+ (36-42)
+Can ask and answer questions about habits and routines.
+38
+A2+ (36-42)
+Can ask and answer questions about basic plans and intentions.
+38
+A2+ (36-42)
+Can ask and answer questions about past times and past activities.
+40
+A2+ (36-42)
+Can explain what they like or dislike about something.
+40
+A2+ (36-42)
+Can ask about someone’s work experience or education using simple 
+language.
+42
+A2+ (36-42)
+Give brief descriptions of personal 
+experiences, situations or simple 
+processes, such as getting goods 
+or services. 
+Can use a limited range of fixed expressions to describe objects, 
+possessions, or products.
+35
+A2 (30-35)
+Can describe a travel experience with a few very basic stock phrases.
+35
+A2 (30-35)
+Can describe everyday activities in town (e.g. buying food at the 
+supermarket, borrowing a book from the library) using simple language.
+37
+A2+ (36-42)
+Can give an extended description of everyday topics (e.g. people, places, 
+experiences).
+38
+A2+ (36-42)
+Can talk about plans for the near future in a simple way.
+39
+A2+ (36-42)
+Can describe plans and arrangements.
+39
+A2+ (36-42)
+Can talk about past events or experiences, using simple language
+40
+A2+ (36-42)
+Can tell a story or describe something in a simple list of points.
+40
+A2+ (36-42)
+Can answer simple questions about work experience or education using 
+simple language.
+41
+A2+ (36-42)
+Can give a short, basic description of events and activities.
+42
+A2+ (36-42)
+
+=== PDF PAGE 26 ===
+26  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 4
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand simple personal social 
+messages (such as invitations, 
+thanks, apologies, quick updates 
+and arrangements) within 
+predictable contexts of daily 
+experience. 
+Can understand short, simple personal emails and letters.
+37
+A2+ (36-42)
+Can understand basic factual information in work-related emails.
+40
+A2+ (36-42)
+II. Comprehending instructions 
+Understand short, simple, clearly 
+sequenced instructions and 
+instructional texts for familiar 
+everyday situations. 
+Can follow a simple series of written instructions to carry out a task.
+35
+A2 (30-35)
+Can understand rules and regulations (e.g. safety) if expressed in simple 
+language.
+37
+A2+ (36-42)
+Can understand the instructions to buy tickets online.
+39
+A2+ (36-42)
+Can follow the sequence of actions or events in a text on a familiar 
+everyday topic.
+41
+A2+ (36-42)
+III. Getting things done 
+Get information from simple 
+formatted texts (such as forms, 
+tables, schedules and directories). 
+Can understand a simple payslip, listing earnings and basic deductions.
+36
+A2+ (36-42)
+Can understand reports of travel delays and cancellations.
+37
+A2+ (36-42)
+Can understand short, simple user tips in a software interface.
+38
+A2+ (36-42)
+Can understand a job application form requiring basic professional 
+information.
+40
+A2+ (36-42)
+Can understand information in a simple work-related diagram or chart.
+41
+A2+ (36-42)
+Get information from short 
+business or service texts (such as 
+brochures, notices, form letters and 
+flyers). 
+Can identify specific information in simple letters, brochures and short 
+articles.
+37
+A2+ (36-42)
+Can understand simple meeting titles in a work-related calendar.
+37
+A2+ (36-42)
+Can understand a short, simple cover letter from a job applicant.
+40
+A2+ (36-42)
+
+=== PDF PAGE 27 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  27
+Stage I – Benchmark 4
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand the purpose, main 
+idea, key information and specific 
+details in simple, short texts related 
+to everyday familiar and personally 
+relevant situations and topics. 
+Can identify basic biographical information in short simple texts about 
+other people.
+35
+A2 (30-35)
+Can understand short, simple narrative texts.
+37
+A2+ (36-42)
+Can make basic inferences from simple information in a short text.
+38
+A2+ (36-42)
+Can understand basic opinions expressed in simple language in short texts.
+38
+A2+ (36-42)
+Can identify basic similarities and differences in the facts between two 
+short simple texts on the same familiar topic, if supported by pictures and 
+questions.
+38
+A2+ (36-42)
+Can scan a simple text, identifying the main topic(s).
+40
+A2+ (36-42)
+Can understand simple details in informational texts (blogs, websites, 
+catalogues, etc.).
+40
+A2+ (36-42)
+Can understand a short, simple professional profile.
+41
+A2+ (36-42)
+Can identify the main topic and related ideas in a simple structured text.
+42
+A2+ (36-42)
+Access simple standard reference 
+texts (such as dictionaries and 
+encyclopedias). 
+Can find the correct meaning of a word in a bilingual dictionary.
+37*
+A2+ (36-42)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 28 ===
+28  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+Stage I – Benchmark 4
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey short, personal, informal 
+social messages on topics related 
+to familiar everyday situations (such 
+as invitations, thanks, updates, 
+cancellations and apologies). 
+Can write a simple text (e.g. an invitation to a party) containing key 
+information, given a model.
+35
+A2 (30-35)
+Can write short, simple notes, emails and messages relating to everyday 
+matters.
+38
+A2+ (36-42)
+Can write very simple personal emails/letters expressing thanks and 
+apology.
+38
+A2+ (36-42)
+Can write a simple email/letter in response to a request for information.
+39
+A2+ (36-42)
+Can use appropriate openings and endings in simple informal emails.
+40
+A2+ (36-42)
+Can write simple texts or emails making arrangements to meet, given a 
+model.
+40
+A2+ (36-42)
+Can write a simple email issuing a work-related invitation.
+40
+A2+ (36-42)
+Can write a simple email accepting a work-related invitation.
+40
+A2+ (36-42)
+Can write a simple work-related email/letter expressing thanks.
+41
+A2+ (36-42)
+II. Reproducing information
+Copy or record an expanded range 
+of information from short texts for 
+personal use. 
+Can pick out and reproduce key words and phrases or short sentences 
+from a short text within the learner’s limited competence and experience.
+39
+A2+ (36-42)
+Can write basic instructions with a simple list of points.
+39
+A2+ (36-42)
+Can write simple lists as part of a work-related task.
+40
+A2+ (36-42)
+Can rewrite a simple text to correct mistakes.
+42
+A2+ (36-42)
+III. Getting things done
+Complete simple forms that 
+require basic personal or familiar 
+information and some responses to 
+simple questions. 
+Can complete a form with basic professional information.
+35
+A2 (30-35)
+Can write a description of a simple everyday process (e.g. a recipe).
+38
+A2+ (36-42)
+Can write a brief summary of their own personal details, e.g. for a business 
+card.
+40
+A2+ (36-42)
+Can write a short, simple email/letter asking for information about an 
+apartment or house to rent.
+40
+A2+ (36-42)
+Can write simple sentences about their educational background and 
+present or past job.
+41
+A2+ (36-42)
+Can complete a simple form asking for medical information.
+41
+A2+ (36-42)
+Can complete a simple job application form requiring basic professional 
+information.
+42
+A2+ (36-42)
+
+=== PDF PAGE 29 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I  |  29
+Stage I – Benchmark 4
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Write simple business or service 
+messages. 
+Can ask for personal details in written form in a limited way.
+36
+A2+ (36-42)
+Can write a simple email to confirm information about a meeting (times, 
+dates, etc).
+38
+A2+ (36-42)
+Can place a simple written order for goods or services.
+39
+A2+ (36-42)
+Can write a simple email/letter in response to a request for information.
+39
+A2+ (36-42)
+Can post short, simple work-related messages on professional social 
+networks.
+39
+A2+ (36-42)
+Can write basic sentences comparing products, people or places.
+39
+A2+ (36-42)
+Can write basic sentences about a work-related process.
+42
+A2+ (36-42)
+IV. Sharing information
+Write a short paragraph to describe 
+a familiar situation, event, personal 
+experience or future plan. 
+Can give an example of something in a very simple text using ‘like’ or ‘for 
+example’.
+34
+A2 (30-35)
+Can write short, simple descriptions of people’s physical appearance using 
+basic connectors, given prompts or a model.
+36
+A2+ (36-42)
+Can write a short description of familiar activities, given visual support.
+37
+A2+ (36-42)
+Can write short basic descriptions of past events and activities.
+39
+A2+ (36-42)
+Can write simple sentences about a future trip or event.
+40
+A2+ (36-42)
+Can write a simple story or description of an event using basic time 
+expressions.
+40
+A2+ (36-42)
+Can write descriptions of everyday personal experiences.
+41
+A2+ (36-42)
+Can write about everyday things (e.g. people, places, job, study) in linked 
+sentences.
+41
+A2+ (36-42)
+Can make basic informal suggestions in writing.
+42
+A2+ (36-42)
+Can write simple texts giving key information about their culture (e.g. food, 
+national holidays, festivals).
+42
+A2+ (36-42)
+Can write a short description of a trip or event.
+42
+A2+ (36-42)
+Writing
+
+=== PDF PAGE 30 ===
+30  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage I
+References
+Centre for Canadian Language Benchmarks (2012) Canada Language Benchmarks English as a Second Language for Adults. 
+Retrieved from www.language.ca
+Council of Europe (2001) Common European Framework of Reference for Languages: Learning, teaching, assessment. 
+Cambridge: Cambridge University Press 
+De Jong, J.H.A.L., Mayor, M. and Hayes, C. (2016) Developing Global Scale of English Learning Objectives aligned to the Common 
+European Framework. Available at https://online.flippingbook.com/view/894261/
+North, B., and Piccardo, E. (2018) Aligning the Canadian Language Benchmarks (CLB) to the Common European Framework of 
+Reference (CEFR): Research Report. Retrieved from www.language.ca
+Pearson (2014) Global Scale of English. Available at www.pearson.com/languages/why-pearson/the-global-scale-of-english.html
+
+=== PDF PAGE 31 ===

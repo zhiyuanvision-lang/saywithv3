@@ -1,0 +1,4031 @@
+=== PDF PAGE 1 ===
+Global Scale of English  
+Learning Objectives
+GRAMMAR - ADULT LEARNERS
+September 2022
+
+=== PDF PAGE 2 ===
+All rights reserved; no part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, 
+recording or otherwise without prior written permission of the Publishers. ©Pearson Education Limited 2023 © The copyright of the descriptive scales and the illustrative scales (in 
+all languages) reproduced in this document belongs to the Council of Europe. All users and publishers must ask formal and written permission prior to using these by writing to the 
+Language Policy Unit of the Council of Europe (language.policy@coe.int)
+Students often complain about their lack of perceived 
+progress and will welcome the opportunity to work 
+towards certain, defined objectives.”
+ 
+Barbara Gardner,  Learning Technologies Training Coordinator,  Study Group
+“
+
+=== PDF PAGE 3 ===
+3
+GSE Learning Objectives Grammar Adult Learners © Pearson Education Ltd 2023
+Global Scale of English Learning Objectives: making learning more effective
+This document introduces the Global Scale of English (GSE) Learning Objectives for Adult Learners. These 
+Learning Objectives have been developed by Pearson English over a number of years in collaboration with 
+teachers, ELT authors and language experts from around the world. They form the backbone of our mission to 
+ensure that our products and services have a positive and measurable impact on learners’ lives.
+In order to learn English as effectively and efficiently as possible, a learner needs to know three things:
+•	
+What level is my English?
+•	
+Am I making progress?
+•	
+What should I aim to learn next to meet my long-term goals?
+To answer these three questions, learners and teachers need the following as part of an overall English 
+learning ecosystem:
+•	
+A clear and precise definition of what it means to be at a particular ‘level’ of proficiency
+•	
+English teaching and learning materials which are aligned to the ‘level’ definitions
+•	
+An assessment tool designed to profile a learner’s proficiency across all four skills: reading, writing, 
+speaking and listening
+The GSE Learning Objectives form part of the first point above: providing an accurate definition of what it 
+means to be at a particular ‘level’ on a scale of English language proficiency.
+Five sets of GSE Learning Objectives have been developed to meet the needs of specific audiences: Pre-
+Primary (aged under 6 years old), Young Learners (6-14), General Adult Learners, learners of Academic English 
+and Professional English.  
+ 
+For more information about our work in this field, please visit pearsonenglish.com/gse.
+“The Global Scale of English represents the 
+most significant advance in performance-based 
+approaches to language learning, teaching and 
+assessment since the development of the Common 
+European Framework of Reference.”
+David Nunan Ph.D., Professor Emeritus of Applied Linguistics, University of Hong Kong
+“
+
+=== PDF PAGE 4 ===
+4
+GSE Learning Objectives Grammar Adult Learners © Pearson Education Ltd 2023
+Extending the Common European Framework of 
+Reference for Languages
+The work to develop the GSE Learning Objectives builds upon the research carried out by Brian North and the 
+Council of Europe in creating the Common European Framework of Reference for Languages (CEFR)1 .The Global 
+Scale of English itself has been psychometrically aligned to the CEFR.
+The CEFR uses a six-level classification of learner proficiency from A1 (low basic) to C2 (fully proficient). The amount 
+of instruction needed to progress learners from one level to the next varies widely according to level, context, native 
+language, age, ability, and other factors, so it is difficult to quantify exactly. However, it has been observed that most 
+people studying for three or four hours per week (as is the case for the majority of adult learners) may take two or 
+more years to move from one CEFR level to the next – and as proficiency increases, it takes even longer to move 
+to the next CEFR level. When learners spend two or more years studying without reaching a new CEFR level, it can 
+leave them feeling that they are making little or no progress.
+In developing the GSE Learning Objectives, we have extended the number and range of learning objectives 
+– or ‘Can Do Statements’ – that are included in the CEFR, providing information to support a far more granular 
+definition of language proficiency. Students are much more motivated when they can see every small step in their 
+progression.
+For teachers, assessment specialists and content developers, the GSE ecosystem provides a detailed picture of 
+language performance at different levels of proficiency and for individual skills. By combining course materials with 
+assessment tools that are aligned to the Global Scale of English, teachers can:
+•	
+understand their students’ levels of proficiency more precisely
+•	
+monitor students’ progress at a granular level
+•	
+make more informed choices for each student or class
+1 
+These learning objectives extend and build on the principles of the Common European Framework of Reference for Languages (CEFR) 
+in their intended use “…[for]…the planning of language learning programmes in terms of their assumptions regarding prior knowledge, …their 
+objectives, [and] their content” (Council of Europe, 2001, p6). Like CEFR, the GSE Learning Objectives are also intended for use in “the planning 
+of language certification in terms of the content syllabus of examinations [and] assessment criteria, in terms of positive achievement.” (ibid)
+Global Scale of English
+10
+20
+30
+40
+50
+60
+70
+80
+90
+CEFR 
+<A1  
+A1
++
+A2 
++
+B1  
++
+B2  
+C1
+C2
+
+=== PDF PAGE 5 ===
+5
+GSE Learning Objectives Grammar Adult Learners © Pearson Education Ltd 2023
+GSE Grammar for adult learners
+GSE Grammar for adult learners is designed to provide detailed information on the key enabling skill of grammar, 
+linking grammatical structures to their usage pattern, related language functions, and GSE/ CEFR levels.
+Grammar structures have been selected from a number of authoritative sources, including the Council of Europe’s 
+own language syllabuses, and have been rated for usefulness by groups of experts.
+GSE Grammar is designed to enable teachers to find at which GSE value/CEFR level a grammar structure or group 
+of structures becomes necessary for successful communication. It will also help them to understand and define the 
+usage of an unfamiliar or partially understood grammar structure.
+The principal sources used in the creation of GSE Grammar were the Council of Europe’s series of language 
+syllabuses: Breakthrough (A1), Waystage (A2), Threshold (B1), and Vantage (B2). Other sources used included Pearson’s 
+key grammar publications: MyGrammarLab and Focus on Grammar. The CEFR levels given in these sources were 
+among the data points used to calculate the GSE values/CEFR levels of the structures in the inventory.
+The grammatical structures in this document are grouped by CEFR level and then ordered by GSE value.
+Learning Objective
+Structure
+Example
+Grammatical Categories
+         GSE
+Can use ‘and’ to link 
+nouns and noun 
+phrases.
+ 
+NP + ‘and’ + NP
+boys & girls | a cat and a dog 
+| the tall man and the short 
+woman
+ 
+Conjunction | Coordinating
+ 
+25
+The structures themselves are identified (a) by a ‘Can Do’ descriptor, in the format Can use structure X to perform task 
+Y, and (b) by a ‘label’ corresponding to the term(s) normally used in grammar and course textbooks to refer to the 
+structure. Examples of the structures in use are also provided.
+Types of language activity
+The structures in GSE Grammar have been rated for productive use, rather than receptive use, since there is very 
+little research showing how knowledge of grammar contributes to successful language comprehension. The 
+ratings do not distinguish between written and spoken language, or between interaction and production. It is 
+assumed that a learner who is able to produce a structure can do so in both written and spoken forms and in one-
+to one, one-to-many and two-way communicative contexts.
+
+=== PDF PAGE 6 ===
+6
+GSE Learning Objectives Grammar Adult Learners © Pearson Education Ltd 2023
+Ranking by GSE and CEFR
+Teachers and pedagogical experts trained in a series of workshops were asked to assess structures on a five-point 
+scale of usefulness. These findings were analysed statistically and combined with the CEFR levels assigned by the 
+Council of Europe or by Pearson’s MyGrammarLab (C1-C2) to produce a ranking of structures from the most to the 
+least useful for learners. This ranking was then mapped to the Global of Scale of English to determine GSE values for 
+each structure.
+The acquisition process
+All skill acquisition follows a gradual process from the point at which a learner notices that they need a particular 
+skill or structure, passing through the stages of increasing competence in applying it, until finally they are able to 
+produce it automatically. The value given to a grammar structure in the inventory is the mid-point of the process, 
+where a learner has a 50% chance of using it successfully, as shown in the figure below.
+10
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+100%
+20
+30
+40
+50
+Learner Ability
+Likelihood of Success
+60
+70
+80
+90
+A Learning Objective at 51 on GSE
+This model illustrates the link between the ratings given to structures in GSE Grammar and a learner’s ability to 
+produce them in practice. If a structure at GSE 51 is systematically introduced at around GSE 40 (approximately 
+10 GSE points in advance of its indicated level), then learners at GSE 51 have, on average, a 50% success rate of 
+producing it correctly.
+
+=== PDF PAGE 7 ===
+GSE Grammar Learning Objectives
+7
+ GSE Grammar Learning Objectives
+A1 (22-29)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can ask basic questions using ‘What’s your ...?’
+‘what’s your’+ NP?
+What’s your name? What’s your job?
+Pronoun | Question words Verb | Tags and 
+question forms Clause | With ‘be’
+24
+Can use the correct form of ‘be’ with singular 
+and plural nouns.
+agreement between nouns and verb ‘be’
+The coffee is hot. The boys are Spanish. 
+I’mChinese. We’restudents.
+Clause | Basic construction Clause | With ‘be’ 
+Noun | Plural
+24
+Can make basic statements with subject + 
+verb + object.
+statements with subject + verb + object
+I like rock music. She drinks coffee. We study 
+English.
+Clause | Basic construction
+24
+Can use subject personal pronouns.
+subject personal pronouns
+I, you, he, she, it, we, they
+Pronoun | Personal Clause | With ‘be’
+24
+Can say their own age using ‘I’m [number]’.
+‘I’m’ + number for age
+I’m25. I’mfifty.
+Clause | Basic construction Clause | With ‘be’
+24
+Can make simple statements with ‘it’s/it is’.
+‘it’ + ‘be’
+It’s cold. It’s ten o’clock. It’s Monday today. 
+It’seasy. It’s late.
+Phrase | With ‘be’ Pronoun | Generic/impersonal 
+Clause | Basic construction
+24
+Can use regular nouns in the plural form.
+regular nouns - plural
+Boys, classes, books, pens, days, chairs
+Noun | Plural
+24
+Can use subject pronouns with the correct 
+form of the verb ‘be’ in the simple present.
+subject pronouns + ‘be’ + adj
+I’mFrench. They’reold. She’snice.
+Pronoun | Personal Clause | With ‘be’ Clause | 
+Basic construction
+24
+Can use possessive adjectives such as ‘my’, 
+‘your’, etc.
+possessive adjectives (determiners)
+my hand, your house, his mother, her sister
+Determiner | Possessive
+25
+Can use ‘a/an’with the names of jobs.
+‘a/an’ with jobs
+I’ma teacher She’san accountant.
+Determiner | Articles
+25
+Can form questions with ‘what’ and ‘who’ and 
+answer them.
+interrogative pronouns: ‘what/who’
+What’sthis? It’smy phone. Who’sthat? It’sthe 
+new teacher.
+Pronoun | Question words Pronoun | Personal 
+Verb | Tags and question forms
+25
+Can ask someone’s age using ‘How old …?’
+‘Howold’+ ‘is/are’ + NP?
+How old are you? How old is Nigel?
+Determiner | Quantifiers Verb | Tags and question 
+forms Clause | With ‘be’
+25
+Can use ‘and’ to link nouns and noun phrases.
+NP + ‘and’ + NP
+boys and girls a cat and a dog the tall man and 
+the short woman
+Conjunction | Coordinating
+25
+
+=== PDF PAGE 8 ===
+GSE Grammar Learning Objectives
+8
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use the verb ‘be’in the simple present with 
+adjectives.
+‘be’+ adjective
+I’mhappy. It’s cold. Her hair’s long and dark. 
+They’renot friendly.
+Phrase |With‘be’
+Clause | Basic construction
+25
+Can use ‘this is’for an introduction.
+‘this is’ for an introduction
+This is Maria. This is my sister. This is my teacher.
+Determiner | Deictic (this/that) Clause | Basic 
+construction Phrase | With ‘be’
+25
+Can use common forms of ‘have’in the 
+present tense.
+‘have’ in the present tense
+I have a sister.
+Clause | Basic construction Verb | Tense
+25
+Can use common irregular nouns in the plural 
+form.
+irregular nouns – plural
+People, women, children
+Noun | Plural
+25
+Can ask where other people are using ‘Where 
+is/are …?’
+‘Where’+ ‘is/are’+ NP?
+Where’s the bathroom? Where are your 
+children?
+Pronoun | Question words Verb | Tags and 
+question forms Clause | With ‘be’
+25
+Can use ‘a/an’ with single countable nouns.
+‘a/an’with single countable nouns
+a good film, an interesting lesson, an hour
+Determiner | Articles Clause | Basic construction
+26
+Can make affirmative statements using the 
+present simple without time reference.
+present simple for facts and states (affirmative 
+only)
+He lives in the city. She’smarried. He works for 
+Siemens.
+Verb | Tense
+26
+Can make negative statements using the 
+present simple.
+present simple – negative forms
+He doesn’t understand. I don’t speak 
+Japanese.
+Clause | Negation Verb | Negative forms
+26
+Can ask wh- questions using the present 
+simple.
+wh- questions in the present simple
+What do you want? Where does she live?
+Verb | Tags and question forms Pronoun | 
+Question words
+26
+Can use the present simple to refer to daily 
+routines.
+present simple for daily routines
+He gets the bus to work. I drink six cups of tea 
+a day.
+Verb | Tense
+26
+Can ask yes/no questions using the present 
+simple.
+yes/no questions in the present simple
+Do you know her? Does he want a drink?
+Verb | Tags and question forms
+26
+Can use ‘a/an’ with jobs to talk about work and 
+professions.
+‘a/an’ + jobs
+She’sa teacher. I’ma student. He’san architect.
+Determiner | Articles Clause | Basic construction
+26
+Can use basic prepositions of place with 
+nouns and noun phrases.
+basic prepositions of place (prepositional 
+phrases)
+The money’s in my bag. The wine is on the 
+diningroom table. The church is opposite my 
+uncle’s house.
+Preposition | Place Adverb | Place & movement 
+Clause | Basic construction
+26
+Can use verbs in the imperative.
+Imperatives + negative imperatives
+Tellme! Don’t speak to me! Help me!
+Verb | Imperative
+27
+Can use personal pronouns as objects and 
+complements.
+object personal pronouns
+I like him. I can see her. He wants us.
+Pronoun | Personal Clause | Basic construction
+27
+Can use a range of time expressions with whole 
+numbers (+ ‘o’clock’).
+basic time expressions with ‘o’clock’
+three o’clock nine (o’clock) in the morning
+Preposition | Time Adverb | Time
+27
+Can use ‘there’ + ‘be’ to express presence/ 
+absence.
+‘there is(n’t)/are(n’t)’
+There’sa small house. There isn’t a window.
+Clause | With ‘be’ Adverb | Place & movement
+27
+
+=== PDF PAGE 9 ===
+GSE Grammar Learning Objectives
+9
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can ask about the price of something using 
+‘How much is/are …?’
+‘Howmuch’+ ‘is/are’+ NP?
+How much is a sandwich? How much are the 
+tomatoes?
+Determiner  | Quantifiers  
+Verb | Tags  and  question  forms 
+Clause | With ‘be’
+27
+Can ask a range of wh- questions.
+types of wh- questions
+What’s this? Who’s that? Where’s your house?
+Pronoun | Question words Clause | Basic 
+construction Verb | Tags and question forms
+27
+Can say where they and other people are 
+using a few basic prepositions.
+NP + ‘is/are’ + PP with common prepositions 
+of place
+John’sin the bar. My parents are at home.
+Preposition | Position Clause | With ‘be’
+27
+Can use the present simple to refer to likes, 
+dislikes and opinions.
+present simple for opinions, likes and dislikes
+I like football. I don’t like tennis. Do you like pop 
+music? I think it’s delicious.
+Verb | Tense Clause | Basic construction
+27
+Can use ‘but’to link clauses and sentences.
+basic ‘but’
+She likes coffee, but I like tea. She’s good at 
+maths but not English.
+Conjunction | Concession and contrast Clause | 
+Comparison
+28
+Can use common forms of ‘have got’ (BrE) in 
+the present tense.
+‘have got’ in the present tense
+Have you got a car? (BrE)
+Verb | Auxiliary
+28
+Can give dates (e.g. their date of birth) using 
+ordinal numbers in the form day- monthyear or 
+monthdayyear.
+ordinal number + month/month + ordinal 
+number + year
+The thirteenth of May 1979 September the 5th 
+1986
+Phrase | Basic construction
+28
+Can use ‘’s’ to express possession with 
+singular nouns.
+‘‘s’ for possession
+Diego’sbook my friend’s car
+Noun | Possessive (genitive) Clause | Basic 
+construction
+28
+Can construct short answers to questions in 
+the present simple using the verb ‘do’.
+tag responses (short answers to present simple 
+yes/no questions)
+Yes, I do. No, I don’t. Yes, they do. Yes, she does.
+Verb | Tags and question forms Verb | Auxiliary
+28
+Can tell when to use the present simple and 
+when to use the present continuous.
+present simple vs. present continuous
+I get up at 7 o’clock every day. It’s7 o’clock 
+and I’m getting up now.
+Verb | Tense
+29
+Can use ‘I’dlike …/Iwant …’toexpress wants and 
+wishes.
+‘I’d like/I want’ + NP
+I’dlike a drink. I want a burger.
+Clause | Basic construction Clause | Conditional
+29
+Can use ‘can’ to refer to ability in the present.
+‘can’for ability
+I can swim. She can’t understand that book.
+Modal verb | Ability Verb | Tense
+29
+Can use negative forms of the simple past.
+past tense – negative
+They didn’t understand. She didn’t catch her 
+plane.
+Verb | Tense Clause | Negation Verb | Negative 
+forms
+29
+
+=== PDF PAGE 10 ===
+GSE Grammar Learning Objectives
+10
+A2 (30 - 35)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use ‘that’ and ‘this’ as determiners 
+relating to people or objects.
+‘this’ and ‘that’ as determiners (general)
+I like this film. 
+Can you see that woman?
+Determiner | Deictic (this/that)
+30
+Can use the present continuous to refer to 
+events at the time of speaking.
+present continuous for time of speaking
+I’m watching TV. 
+What are you doing? 
+She’s not listening. 
+He’s checking his email.
+Verb | Tense
+30
+Can ask about quantities using ‘how much/ 
+many’ with count and uncountable nouns.
+Questions with ‘how much/many’ + count/ 
+mass nouns
+How much do you earn? 
+How many children do they have?
+Determiner | Quantifiers 
+Verb | Tags and question forms 
+Noun | Mass/count
+30
+Can make affirmative statements using 
+common irregular past simple forms.
+irregular past simple for finished time 
+(affirmative only)
+We saw the match. 
+They went to London.
+Verb | Tense
+30
+Can use ‘and’ with verbs and verb phrases.
+VP + ‘and’ + VP
+We eat and (we) sleep in the hotel. She’s an 
+IT expert, and she speaks good English.
+Conjunction | Coordinating
+30
+Can ask yes/no questions using the past 
+tense of verbs.
+yes/no questions in the past
+Did you see him? 
+Did they catch their plane?
+Verb | Tense 
+Verb | Tags and question forms
+30
+Can use ‘s’’ to express possession with 
+plural nouns.
+‘s’’ for possession
+the soldiers’ guns 
+the students’ books
+Noun | Possessive (genitive) 
+Clause | Basic construction
+30
+Can use ‘at’ as a preposition of time.
+prepositions of time: ‘at’
+at two o’clock 
+at lunchtime 
+at the weekend
+Preposition | Time 
+Adverb | Time
+30
+Can use an adjective as a subject 
+complement after a linking verb.
+adjective as subject complement (verb + 
+adjective)
+Chiara is Italian. 
+You look tired.
+Adjective | Position 
+Clause | Basic construction 
+Clause | With ‘be’
+30
+Can make affirmative statements using 
+common regular past simple forms.
+regular past simple for finished time 
+(affirmative only)
+I asked a question. 
+They walked home.
+Verb | Tense
+30
+Can use a range of prepositions of place.
+common prepositions of place
+against; behind; in front of; next to; under
+Preposition | Place
+30
+Can use ‘like/hate/love’ with the ‘ ing’ 
+forms of verbs.
+‘like/love/hate’ + VPgerund
+I love going to museums. 
+Do you like working here? 
+She hates watching TV. 
+They love dancing.
+Phrase | With gerund ( ing)
+31
+Can ask for information about time, 
+measurement, size etc. with ‘how’ + 
+adjective/quantifier.
+‘how’ questions for time, measurement, 
+size etc. (except ‘much/many’)
+How big is it? 
+How tall is he? 
+How long is the film?
+Determiner | Quantifiers 
+Verb | Tags and question forms 
+Pronoun | Question words
+31
+Can place adjectives in the correct position 
+(before nouns).
+position of adjectives (adjective + NP)
+a white car 
+a small box of biscuits
+Adjective | Position 
+Clause | Basic construction
+31
+Can use a range of common time 
+expressions with ‘past’/’to’ and fractions.
+basic time expressions with ‘past/to’ and 
+‘half/quarter’
+a quarter to/past three 
+half past six
+Preposition | Time 
+Adverb | Time
+31
+Can use ‘want to’ + infinitive to express 
+intentions.
+‘want to’ + VPinf for intentions
+I want to help you. 
+Do they want to buy it?
+Phrase | With infinitive
+31
+
+=== PDF PAGE 11 ===
+GSE Grammar Learning Objectives
+11
+Can ask wh- questions using the past tense of 
+verbs.
+wh- questions in the past
+Where did you go? How 
+much did it cost? When 
+did he arrive?
+Verb | Tense 
+Verb | Tags and question forms Pronoun | 
+Question words
+31
+Can use ‘after’ as a preposition in time 
+expressions.
+‘after’ + NP
+after the show 
+after dinner
+Preposition | Time 
+Clause | Time
+32
+Can use uncountable (mass) nouns with no 
+quantifier or an appropriate quantifier.
+determiners + uncountable nouns
+I want some food, 
+She doesn’t eat cheese. 
+Do we have any paper?
+Determiner | Quantifiers 
+Determiner | Articles 
+Noun | Mass/count
+32
+Can use ‘was’ and ‘were’ with a range of 
+complement phrases.
+‘was/were’ + complement
+It was cold yesterday. 
+He wasn’t at school last week. 
+We were in Mexico on Monday.
+Clause | Basic construction 
+Verb | Tense 
+Clause | With ‘be’
+32
+Can link clauses and sentences with a 
+range of basic connectors.
+basic connectors (‘and/but/or’)
+I did the shopping and cleaned the house. 
+It’s the right size, but I don’t like the colour. 
+We can get the bus, or go there by train.
+Conjunction | Coordinating 
+Clause | Basic construction
+32
+Can use the definite article to refer to a 
+specific person, thing, or situation.
+definite article for specific example
+the hotel manager 
+the British people 
+the house on the hill
+Determiner | Articles
+32
+Can form questions with ‘How often’ in the 
+present tense.
+How often’ + ‘do/does’ +VPquestion
+How often do you go to the beach? How 
+often does it rain?
+Determiner | Quantifiers 
+Verb | Tags and question forms 
+Verb | Tense
+32
+Can use ‘this’ with time expressions 
+referring to the present or future.
+‘this’ + (unfinished) time expression
+this week 
+this Monday 
+this weekend 
+this lesson 
+this afternoon
+Determiner | Deictic (this/that) 
+Adverb | Time
+32
+Can give, deny or ask about permission in 
+the present and near future with ‘can’.
+‘can’ for permission
+Can I have some more? 
+You can’t use a phone in class. 
+He can’t take my car 
+I need it.
+Modal verb | Requests, offers and 
+permission
+33
+Can use ‘can’t’ to decline offers and 
+invitations.
+‘can’t’ to decline offers and invitations
+Sorry, I can’t come on Friday. 
+I’m afraid I can’t eat that.
+Modal verb | Requests, offers and 
+permission 
+Modal verb | Ability
+33
+Can ask questions about how to do things.
+‘How do you’ + VPinf?
+How do you get there? 
+How do you do it?
+Pronoun | Generic/impersonal
+33
+Can use a range of common adverbs of 
+frequency.
+adverbs and adverbials of frequency
+It always rains. 
+She never smokes. 
+They usually come by car.
+Adverb | Time 
+Adverb | Position 
+Verb | Tense
+33
+Can make requests and offers with ‘would 
+like’ + nouns and noun phrases.
+‘would like’ + NP
+I’dlike some more soup. 
+Would you like a cup of tea?
+Modal verb | Requests, offers and 
+permission 
+Clause | Conditional
+33
+Can make basic polite requests with ‘could’.
+‘could’ for polite requests
+Could I have a drink? 
+Could you repeat that?
+Modal verb | Requests, offers and 
+permission
+33
+
+=== PDF PAGE 12 ===
+GSE Grammar Learning Objectives
+12
+Can use the correct preposition (‘on’ or ‘at’) with 
+various common time expressions.
+‘on’ vs. ‘at’ + time
+On Friday at 
+7 p.m. 
+at the same time as …
+Preposition | Time
+33
+Can describe times exactly using numbers 
+from 1 to 59 (+ ‘past/to’).
+exact time expressions with numbers from 
+1 to 59 (plus ‘past/to’)
+five seventeen 
+sixteen minutes to seven 
+one minute past three
+Preposition | Time 
+Adverb | Time
+33
+Can use ‘it’ as a dummy (impersonal) 
+subject when talking about weather 
+conditions.
+impersonal ‘it’
+It’s raining. 
+It’s very windy tonight.
+Pronoun | Generic/impersonal 
+Phrase | With ‘be’
+33
+Can use ‘(not) here’ and ‘(not) there’ to 
+refer to presence and absence.
+‘(not)’ + ‘here/there’ for presence and 
+absence
+There’s plenty of food here. 
+There’s no one there.
+Adverb | Place & movement 
+Clause | With ‘be’
+34
+Can make offers, requests, and 
+suggestions using ‘can’.
+‘can’ for offers, requests, and suggestions
+Can I help you? 
+Can we meet for a coffee? 
+Can you tell her you’re sorry?
+Modal verb | Requests, offers and 
+permission 
+Modal verb | Obligation
+34
+Can form questions with ‘what’ and ‘which’ 
+as adjectives.
+interrogative adjectives (determiners):
+‘what’, ‘which’
+What temperature is it? 
+Which train did he get?
+Determiner | Question words 
+Pronoun | Question words 
+Verb | Tags and question forms
+34
+Can form questions with ‘whose’.
+interrogative pronoun/adjective: ‘whose …?’
+Whose is this? 
+Whose car is that?
+Determiner | Possessive 
+Pronoun | Question words 
+Determiner | Question words
+34
+Can use ‘can’ and ‘can’t’ with verbs of 
+perception.
+‘can(not/’t)’ + verbs of perception
+I can see you. 
+We can’t hear him.
+Modal verb | Ability
+34
+Can use ‘Let’s …’ for suggestions and 
+invitations.
+‘Let’s …’ for suggestions and invitations
+Let’s go to a movie. 
+Let’s have dinner now.
+Modal verb | Obligation 
+Verb | Imperative
+34
+Can use a range of common adverbs of 
+movement and direction.
+adverbs and adverbials of movement
+going back 
+coming down 
+turn left/right 
+travelling west
+Adverb | Place & movement
+35
+Can use a range of common time markers 
+for the past, present and future.
+time markers for past, present and future
+ago 
+last night/week 
+yesterday 
+right now 
+at the moment 
+next Saturday/week
+Adverb | Time 
+Clause | Time 
+Preposition | Time
+35
+Can express personal plans and intentions 
+for the future using ‘going to’.
+NP + ‘going to’ + VPinf
+I’m going to change my job. 
+Susan’s going to call a meeting.
+Verb | Tense 
+Phrase | With infinitive
+35
+Can make requests and offers with ‘would 
+like to’ + verbs in the infinitive.
+‘would like to’ + VPinf
+I’d like to go home. 
+Would you like to borrow some money?
+Modal verb | Wishes and intentions 
+Clause | Conditional 
+Modal verb | Requests, offers and 
+permission
+35
+Can use ‘(not) many/much’ with count 
+(countable) and mass (uncountable) nouns 
+respectively.
+‘(not) much/many’ + mass/count NPs
+Many people live there. 
+There isn’t much food in my apartment.
+Determiner | Quantifiers 
+Noun | Mass/count
+35
+
+=== PDF PAGE 13 ===
+GSE Grammar Learning Objectives
+13
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can form the superlative of longer regular 
+adjectives with ‘most’.
+superlative of adjectives (‘most’ + adjective)
+the most expensive the most interesting
+Adjective | Comparison Clause | 
+Comparison
+36
+Can use uncountable nouns without an article.
+zero (dummy) quantifier with uncountable nouns
+We need food. There’s no gas.
+Determiner | Quantifiers
+36
+Can use ‘a lot of/lots of’ to refer to quantities.
+‘alot of’/’lots of’as quantifiers
+a lot of money lots of people
+Determiner | Quantifiers Noun | Plural
+36
+Can use ‘should(n’t)’ to offer or ask for advice 
+or suggestions.
+‘should(n’t)’for advice or suggestions
+You should go to a doctor. He shouldn’t drink so 
+much. Where should we go?
+Modal verb | Obligation Phrase | With 
+infinitive
+36
+Can make comparisons with ‘more’ + longer 
+adjectives.
+comparative forms of adjectives with ‘more ‘
+You’re more intelligent than me. The film was 
+more interesting than the book.
+Adjective | Comparison Clause | 
+Comparison
+36
+Can use adverbs of frequency and manner in 
+the correct position.
+position of adverbs of frequency and manner
+I never watch TV. She drives that car very fast. You 
+should always tell the truth. He’s always late.
+Adverb | Position Adverb | Time Clause | 
+Basic construction
+36
+Can form the superlative of regular adjectives 
+with ‘est’.
+superlative of adjectives with ‘est’
+the biggest the funniest
+Adjective | Comparison Clause | 
+Comparison
+36
+Can use ‘of’ to refer to possession and 
+attribution.
+‘of’for a part or aspect
+the property of the school; the colour of her hair; 
+the start of the lesson
+Preposition | Possession Clause | Basic 
+construction
+36
+Can use the definite article to refer back to 
+something already mentioned.
+definite article for back reference
+She was in the meeting too. 
+Did you see the match last night?
+Determiner | Articles
+35
+Can use plural countable nouns without an 
+article or quantifier.
+zero (dummy) quantifier with plural 
+countable nouns
+I love dogs. 
+Cars are expensive.
+Determiner | Quantifiers 
+Noun | Plural
+35
+Can use ‘because’ with verb phrases to 
+refer to causes and reasons.
+‘because’ for causes and reasons
+I can’t buy it because I haven’t got any 
+money. 
+Because she loves you, she forgives you.
+Conjunction | Cause and result 
+Clause | Result/cause
+35
+Can use a range of common prepositions 
+of movement.
+prepositions of movement
+get on/off the bus 
+get into/out of bed 
+walk/go to work 
+jump into the water
+Preposition | Movement 
+Adverb | Place & movement
+35
+Can use ‘please’ in the correct position 
+with imperative verb forms.
+(‘please’) + VPimperative (‘, please’) 
+(position of please)
+Please don’t say anything. 
+Come here, please.
+Verb | Imperative 
+Adverb | Position
+35
+Can use ‘will’ to ask questions about the 
+future.
+‘will’ + VP?
+Will you be here tomorrow? 
+Will she come back?
+Verb | Tags and question forms 
+Phrase | With infinitive
+35
+A2+ (36-42)
+
+=== PDF PAGE 14 ===
+GSE Grammar Learning Objectives
+14
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Cancorrectly placeadverbs offrequency in 
+longer sentences.
+position of adverbs of frequency (before/ after 
+verb)
+She^goesto work by car.(always) Ihave^ eaten in 
+this restaurant. (often)
+Adverb|Position Adverb | Time
+36
+Can ask questions with ‘whatkind/sort of …?’
+‘whatkind/ sort of …?’
+Whatkind of cheese is this? What sort of music do 
+you like?
+Determiner | Question words Pronoun | 
+Question words Preposition | Logical
+36
+Can deny intention and desire with ‘wouldn’tlike/
+don’twant to …’
+‘wouldn’tlike/don’twant’+ ‘to’+ VPinf
+I wouldn’tlike to live here. I don’twant to eat that.
+Modal verb | Wishes and intentions Clause 
+|Conditional Verb|Auxiliary
+36
+Cancorrectly use a range of nouns with both 
+countable and uncountable meanings.
+countable vs uncountable nouns
+Thiscoffee is too hot. Iwantthree coffees. I really 
+love cheese. She bought three cheeses.
+Determiner | Quantifiers Noun | Plural
+36
+Can use ‘some’as a quantifier with count 
+andmass nouns.
+‘some’ in affirmative statements with countable and 
+uncountable nouns
+There’ssome milk in the fridge. Some men are 
+waiting outside.
+Determiner | Quantifiers Noun |Mass/count
+36
+Can use ‘with’and ‘without’to refer to (lack of) 
+possession and attribution.
+NP + ‘with/without’+NP forattribution
+aboy with dark hair acar with a sunroof the woman 
+with a child acomputer without a screen
+Preposition | Possession Clause 
+|Basicconstruction
+37
+Can express obligation and necessity in the 
+present and near future with ‘have to’.
+‘have to’ for present and near future obligation
+I have to do my homework. I have to get up early 
+tomorrow. You don’t have to pay.
+Modal verb | Obligation Verb | Tense
+37
+Can form basic adverbs by adding ‘ly’ to 
+adjectives.
+formation of basic adverbs with ‘ly’
+Slowly, badly, carefully
+Adverb | Formation
+37
+Can use a range of basic quantifiers with ‘of’ 
+and noun phrases.
+basic quantifiers: ‘lots/some/a bit/a lot’ + ‘of’ 
++ NP
+Lots of people like him. I lost some of my money. 
+We’ve had a bit of luck.
+Determiner | Quantifiers Preposition | 
+Possession
+37
+Can use ‘must’ to express obligation and 
+necessity in the present and near future.
+NP + ‘must’+ VPinf/’Must’ + NP + VPinf?
+You must try to relax. I must cook dinner now. 
+Must you go?
+Modal verb | Obligation Verb | Tags and 
+question forms
+37
+Can generalise about persons, things, or 
+situations using plural nouns/noun phrases 
+with no (zero) article.
+plural NPs with no article
+People are kind. I don’t like dogs.
+Determiner | Articles Noun | Mass/count
+37
+Can use verb + ‘ing’forms as the complement 
+of a sentence.
+gerundives (‘ing’ forms) as complement
+I love watching football. I hate studying English. 
+She enjoys swimming in the sea.
+Phrase | With gerund (ing)
+37
+Can form and use irregular adverbs.
+irregular adverbs
+good – well fast – fast hard - hard
+Adverb | Formation
+37
+Can use phrases with prepositions + 
+adjectives + nouns.
+prepositional phrases (adj./noun phrases)
+a woman with an old hat and a cheap coat two 
+men in a large black car
+Phrase | Basic construction Adjective | 
+Position
+37
+Can use ‘some’ and ‘any’ as quantifiers in 
+negative statements and questions with mass 
+and count nouns.
+‘some’ and ‘any’ in questions and negative 
+statements with countable and uncountable 
+nouns
+Can I have some coffee? Do you want some 
+chocolate/biscuits? Is there any bread? There 
+aren’t any biscuits left.
+Determiner | Quantifiers Noun | Mass/count
+37
+
+=== PDF PAGE 15 ===
+GSE Grammar Learning Objectives
+15
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use a range of common adverbs and 
+adverbial phrases of position.
+adverbs and adverbials of position
+the level above sitting at the back the man in 
+the middle
+Adverb | Place & movement
+38
+Can use ‘will’+ infinitive for predictions about 
+the future.
+‘will’ + VPinf for predictions
+That will be really difficult. She’llbe late. I’msure it 
+won’t be open.
+Modal verb | Timerelated Verb | Auxiliary 
+Verb | Tense
+38
+Can express means using ‘by’ with nouns and 
+noun phrases.
+‘by’+ NP for means of doing something
+go by bus/train/bike send it by email
+Preposition | Instrumental Preposition | 
+Movement
+38
+Can distinguish between adjectives ending 
+with ‘ed’ and ‘ing’.
+adjectives with ‘ed/ing’
+I’mbored. It’sa very boring film. We’revery 
+excited. It was an exciting party.
+Adjective | Formation
+38
+Can form irregular superlatives of adjectives 
+and adverbs such as ‘best’, ‘worst’.
+superlative of adjectives (irregular)
+the best the worst
+Adjective | Comparison Clause | 
+Comparison Adverb | Comparison
+38
+Can make comparisons with regular shorter 
+adjectives + ‘er’.
+inflected comparative forms of adjectives
+The journey by road is quicker (than by train). 
+She’scleverer than me.
+Adjective | Comparison Clause | 
+Comparison
+38
+Can use the present continuous to refer to 
+temporary situations.
+present continuous for temporary situation
+I’m staying with my parents. She’sworking in 
+Oxford. She’s working a lot at the moment.
+Verb | Tense
+38
+Can use ‘in’as a preposition of time with future 
+reference.
+‘in’for future time
+in four weeks in a few minutes
+Preposition | Time Adverb | Time
+38
+Can use ‘so’ to refer to results and 
+consequences.
+‘so’for results and consequences
+It’sraining, so we’restaying in. He failed the exam, 
+so he didn’t get the certificate.
+Conjunction | Cause and result Clause | 
+Result/cause
+38
+Can ask wh- questions about the subject.
+wh- questions about the subject
+Who loves you? Who saw you? What eats birds? 
+Who is sitting here?
+Pronoun | Question words Verb | Tags and 
+question forms
+38
+Can use ’ll+ infinitive for spontaneous 
+decisions and offers.
+‘…‘ll’for offers and decisions
+I’llget it. We’llhelp you.
+Modal verb | Requests, offers and 
+permission Verb | Tense
+38
+Can make statements and questions with 
+‘know’ + whclauses.
+‘know’ + whclause
+I know where he lives. Do you know what they 
+want?
+Clause | Reported speech and ideas Clause 
+| Relative
+38
+Can use ‘no’ as a quantifier to indicate the 
+absence or lack of something.
+‘no’ as quantifier (determiner)
+There’sno sugar left. There are no chocolates in 
+this box. There’s no time to do it.
+Determiner | Quantifiers
+39
+Can express sufficiency and insufficiency with 
+‘enough’ and ‘too’.
+‘(not) enough/too much/too many’ + NP
+We have enough bread. There are too many 
+people here. Don’t have enough money.
+Determiner | Quantifiers
+39
+
+=== PDF PAGE 16 ===
+GSE Grammar Learning Objectives
+16
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Canuse adjectives afterverbs of sensation
+(e.g.‘look,sound,feel,taste,smell,seem, appear’).
+verb of sensation + adjective
+She lookstired. It smells nice.
+Adjective|Position Phrase|Basicconstruction
+39
+Can use ‘that’ and ‘this’ as subject and object 
+pronouns.
+‘this’ and ‘that’ as pronouns
+That’sclear This is ridiculous Have a look at this.
+Pronoun | Demonstrative
+39
+Can use direct + indirect objects together 
+after ditransitive verbs like ‘give/tell/pass’.
+usage of common ditransitive verbs such as 
+‘give/tell/pass’
+Pass her the book. Give it to him. Give them 
+some food. Don’ttell me lies.
+Clause | Basic construction Pronoun | 
+Personal Verb | Imperative
+39
+Can make irregular comparisons of adjectives 
+and adverbs such as ‘better’, ‘worse’.
+inflected comparative forms of irregular 
+adjectives and adverbs
+It’sbetter here than in London. I’mfeeling worse 
+today.
+Adjective | Comparison Adverb | 
+Comparison Clause | Comparison
+39
+Can use the definite article correctly with 
+geographical names and locations.
+definite article for: uniqueness, public buildings, 
+geographical names, other proper names
+the Black Sea the White House
+Determiner | Articles
+40
+Can use ‘before/after’ as conjunctions with 
+complement clauses.
+‘before/after’ + clause
+after we got home before she had finished 
+speaking
+Conjunction | Time Verb | Tense
+40
+Can distinguish between the past simple and 
+past continuous.
+past simple vs. past continuous
+I opened the door when you arrived. vs I was 
+opening the door when you arrived.
+Verb | Tense Clause | Time
+40
+Can make statements with the verb ‘be’ and 
+adjectives with verbs in the infinitive.
+‘it’ + ‘be’ + adjective + infinitive
+It was good to see you. It’s difficult to pass the 
+exam. It wasn’t easy to find the restaurant.
+Phrase | With ‘be’ Phrase | With infinitive
+40
+Can use all forms of comparatives and 
+superlatives of adjectives.
+comparatives and superlatives (all forms)
+the best news older than him the most useful 
+present speaking more slowly
+Adjective | Comparison Adverb | 
+Comparison
+40
+Can use singular verb forms with impersonal 
+pronouns ‘every/any/no/ some+body/where/
+one/thing’
+impersonal pronouns + single verb forms
+No one is safe. Everything looks good.
+Pronoun | Generic/impersonal Clause | 
+Basic construction
+40
+Can use ‘May I/we ...?’ for formal and polite 
+requests for permission.
+‘May I/we ...?’
+May we come in? May I explain what I mean?
+Modal verb | Requests, offers and 
+permission Phrase | With infinitive
+41
+Can use ‘when’to link two clauses in the past 
+simple.
+‘when’+ past simple + past simple
+I met him when I was at school. I played tennis 
+when I was young.
+Conjunction | Time Verb | Tense Clause | 
+Time
+41
+Can use ‘so …’ to express results and 
+consequences.
+‘so…’ for results and consequences
+You weren’t there, so I came home. He was very 
+tired, so he went to bed early.
+Clause | Result/cause
+41
+Can distinguish between the most common 
+ways of expressing the future.
+comparison of all common future forms (‘going 
+to’, ‘will’, present simple and present continuous)
+I’mgoing to go to bed now. vs. I’ll go to bed 
+later. The train leaves at 2:15. vs. I’mleaving for 
+Spain in two weeks.
+Verb | Tense Modal verb | Timerelated
+41
+Can use the present perfect to refer to 
+personal experiences in the past.
+present perfect for personal experiences in the 
+past
+She’s worked in several countries. I’ve been to 
+Kiev before. Have you seen Star Wars?
+Verb | Tense
+41
+
+=== PDF PAGE 17 ===
+GSE Grammar Learning Objectives
+17
+Can use a range of indefinite compound 
+pronouns prefixed with ‘some’.
+‘some’+ ‘thing/one/where/body’
+Someone is waiting for you. I need something 
+to eat.
+Pronoun | Generic/impersonal
+41
+Can refer to impossibility and inability in the 
+past using ‘couldn’t’.
+‘couldn’t’ for past impossibility and inability
+I couldn’t go to the party. I couldn’t swim when 
+I was ten. Women couldn’t vote in the 19th 
+century.
+Modal verb | Ability Verb | Tense
+41
+Can qualify adverbs with ‘really/quite/very’.
+‘really/very/quite’ + adverbs
+He talks really fast. She goes there quite often. 
+She can speak Chinese very well.
+Adverb | Modifier
+41
+Can ask questions using the present perfect 
+with ‘ever’.
+present perfect + ‘ever’(questions)
+Have you ever been to Las Vegas? Has she ever 
+seen your apartment?
+Verb | Tense Adverb | Time
+41
+Can use ‘a bit/a little’ to refer to quantities 
+with mass (uncountable) nouns.
+‘a bit/a little’ (+ ‘of’) + mass (uncountable) nouns
+There’s only a little/a bit of milk left. There’s a 
+little/a bit of money in the desk.
+Determiner | Quantifiers Noun | Mass/count
+41
+Can make offers and suggestions using
+‘could’.
+‘could’ for offers and suggestions
+I could drive you to the airport. You could look it 
+up on the internet.
+Modal verb | Requests, offers and permission 
+Modal verb | Obligation
+41
+Can use ‘like’ with sensory verbs to express 
+similarity.
+sensory verbs + ‘like’
+She looks like her mother. It tastes like 
+chocolate.
+Preposition | Logical Clause | Comparison
+42
+Can use the present perfect with present 
+reference.
+present perfect with present reference 
+(indefinite past)
+I’ve hurt my knee. He’s cooked us a delicious 
+dinner.
+Verb | Tense
+42
+Can report current and future plans and 
+intentions.
+‘tell/say’ + present/future for reported speech
+He says he can do it. She tells me she’s happy
+Clause | Reported speech and ideas
+42
+Can use the present continuous with future 
+reference.
+present continuous with future reference
+What are you doing on Saturday? We’replaying 
+tennis tomorrow. We’re meeting at 3 p.m.
+Verb | Tense
+42
+Can use ‘both’ and ‘both of’ with nouns and 
+noun phrases.
+NP + ‘both’ + VP/NP + ‘both of’ + NP
+They both went home. I want both of them.
+Determiner | Conjunction and disjunction 
+Conjunction | Coordinating Adverb | 
+Conjunction and disjunction
+42
+Can use a range of pronouns and adverbials 
+for anaphoric (back) reference.
+anaphoric reference (overview)
+The child was unhappy; he wanted his mother. 
+I quickly walked home. There I found Marsha 
+waiting for me. The house had already been 
+sold. This was a great surprise to me.
+Pronoun | Demonstrative Clause | Result/cause
+42
+Can construct doublecomplement sentences 
+with verbs such as ‘give’, ‘tell’, ‘ask’,etc.
+object pronouns as indirect objects
+give him the book tell me the time ask them a 
+question
+Pronoun | Personal Phrase | Basic construction
+42
+Can express basic cause and effect with 
+‘because of …’
+‘because of …’ + NP
+We didn’t go out, because of the weather. 
+Because of my illness, I wasn’t able to go with 
+them.
+Preposition | Logical Preposition | Cause and 
+result Clause | Result/cause
+42
+Can form adjectives from nouns with 
+common affixes.
+adjectives from nouns with common suffixes 
+(‘y’, ‘ful’)
+success - successful sport - sporty
+Adjective | Formation
+42
+
+=== PDF PAGE 18 ===
+GSE Grammar Learning Objectives
+18
+B1 (43 - 50)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use a range of indefinite compound 
+pronouns prefixed with ‘every’.
+‘every’ + ‘thing/one/where/body’
+Everyone loves chocolate. Everywhere I go, she’s 
+there.
+Pronoun | Generic/impersonal
+43
+Can use a wide range of quantifiers with 
+countable (count) and uncountable (non- 
+count) nouns.
+overview of all quantifiers incl. ‘several’ with 
+countable/uncountable (count/noncount) 
+nouns
+several people few customers many years some 
+coffee a little wine
+Determiner | Quantifiers Noun | Plural
+43
+Can use ‘needn’t’ and ‘don’t/doesn’t have to’ 
+to express absence of obligation in the present 
+and future.
+‘don’t/doesn’t have to/needn’t’ for absence of 
+obligation
+You don’t have to apologise. She needn’t stay if 
+she wants to go home.
+Modal verb | Obligation
+43
+Can use ‘with’ to refer to the instrument or 
+means of doing something.
+instrumental ‘with’adjunct
+You can open the door with this key. Wash it with 
+soap.
+Preposition | Instrumental
+43
+Can use verb + ‘ing’ forms as the subject of a 
+sentence.
+gerundives (‘ing’ forms) as subject
+Swimming is my favourite sport. Learning English 
+is fun.
+Phrase | With gerund (ing) Clause | Basic 
+construction
+43
+Can form compound nouns from nouns plus 
+other nouns and adjectives.
+compound nouns
+credit card, bookshelf , DVD player, whiteboard, 
+greatgrandfather
+Noun | Formation
+43
+Can use a range of indefinite compound 
+pronouns prefixed with ‘no’.
+‘no’ + ‘thing/one/where/body’
+No one knows you. There’s nothing to do.
+Pronoun | Generic/impersonal
+44
+Can use common adverbials to express 
+combinations and similarities between nouns 
+and phrases.
+conjunction with common adverbials (‘as 
+well’,‘as well as’,‘both... and ...’, ‘also’, ‘too’)
+John’sleaving too. She ate my dinner as well as 
+hers.
+Adverb | Conjunction and disjunction
+44
+Can use reflexive pronouns as objects or 
+complements.
+reflexive pronouns as object/complement
+Did you enjoy yourself? I hurt myself. She’s hurt 
+herself. He wanted to kill himself.
+Pronoun | Reflexive
+44
+Can use ‘all of’, ‘none of’, and ‘most of’ to 
+describe subsets and proportions of groups of 
+people and things.
+‘all/none/most’ + ‘of’ + people/things
+Most of the students did the homework. We 
+spent all of the money.
+Determiner | Quantifiers
+44
+Can use a range of prepositions of time, such as 
+‘before’,‘during’, ‘since’, ‘till/until’.
+other prepositions in time phrases, e.g.
+‘during’, ‘for’, ‘since’, ‘throughout’, ‘till’, ‘until’
+before 7 p.m. after breakfast during lunch 
+Between 3 and 4 p.m. by Friday till tomorrow
+Preposition | Time Clause | Time
+44
+Can correctly use ‘since’ and ‘for’ in time 
+expressions.
+‘since/for’ + NP
+since 2011 for two weeks since I arrived
+Preposition | Time Clause | Dependent 
+Adverb | Time
+44
+Can use the present perfect with ‘for/since’ to 
+talk about the duration of states and conditions.
+present perfect + adverbial clauses with
+‘since/for’
+She’s lived there since 2011. I’vebeen here for a 
+long time. I haven’t seen her for two weeks.
+Verb | Tense Adverb | Time
+44
+
+=== PDF PAGE 19 ===
+GSE Grammar Learning Objectives
+19
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can refer to someone’s practical knowledge 
+using ‘knowhow to’+ verb phrase.
+‘know how to’ + VPinf
+I don’tknow how to change a wheel on a car. Do 
+you know how to use this camera?
+Phrase | With infinitive
+44
+Can make statements and ask questions with 
+‘know about’ + nouns and noun phrases.
+‘know’ (+ ‘anything’) + ‘about’ + NP
+Do you know (anything) about Thai cooking? She 
+already knows about your problems.
+Preposition | Topicalising
+44
+Can use the present perfect with ‘yet’ and ‘still’.
+present perfect + ‘yet/still’
+Have you done it yet? Have they arrived yet? They 
+still haven’t called. She hasn’t done the report yet.
+Adverb | Time Verb | Tense
+44
+Can use ‘need’ in affirmative statements and 
+questions relating to the present and near 
+future.
+affirmative statements and questions with
+‘need’
+She needs to stay here. Do we need to pay?
+Modal verb | Obligation Phrase | With 
+infinitive
+44
+Can make comparisons using ‘(not) as … as’ with 
+adjectives and adverbs.
+comparisons with (not) ‘as … as …’
+He’s not as tall as you. I’m as good as you. Your car 
+isn’t as fast as mine.
+Clause | Comparison
+44
+Can use ‘a few’ to refer to quantities with count 
+(countable) nouns.
+count nouns with ‘a few’
+Only a few people came. I’veseen a few of his 
+films.
+Determiner | Quantifiers Noun | Plural
+44
+Can use ‘going to’ with reference to predicted 
+future events and situations.
+‘going to’ for predictions
+It’s going to be a fantastic party. I don’t think it’s 
+going to rain. What’s going to happen to us?
+Verb | Tense Phrase | With infinitive
+44
+Can make comparisons with regular shorter 
+adverbs + ‘er’.
+inflected comparative forms of adverbs
+The film lasted longer than three hours. She 
+drove faster than me.
+Adverb | Comparison Clause | Comparison
+44
+Can describe live (e.g. sporting) events using 
+the present simple.
+present simple for live events
+He passes the ball to Rooney. Rooney scores. The 
+Queen waves to the crowd.
+Verb | Tense
+44
+Can tell when to use the past simple and when 
+to use the present perfect (BrE).
+present perfect vs past simple (BrE)
+I’ve eaten at that restaurant many times. vs. I ate 
+that restaurant yesterday.
+Verb | Tense Adverb | Time
+44
+Can express agency using ‘by’ with nouns and 
+noun phrases.
+‘by’ + agent
+a book by Dickens a painting by Picasso
+Preposition | Instrumental Verb | Passive
+45
+Can use possessive pronouns as objects and 
+complements.
+possessive pronouns as complement
+These are ours. Let’s use theirs. I don’t like hers. I 
+gave him his.
+Pronoun | Possessive
+45
+Can construct basic phrases with ‘(not) (the) 
+same … as …’
+‘(not) (the) same … as …’
+Your problem isn’t the same as mine. The time in 
+London is the same as in Dublin.
+Adjective | Comparison Clause | Comparison
+45
+Can use ‘Shall I/we …?’ to make formal 
+suggestions and offers.
+offers and suggestions with ‘Shall I/we …?’
+Shall I do it for you? Shall we try it again?
+Modal verb | Requests, offers and 
+permission Modal verb | Wishes and 
+intentions
+45
+Can use verbs of state change with object 
+complements.
+factitive as object of verb of state change
+She made everything better. We painted the wall 
+green.
+Clause | Basic construction
+45
+Can use ‘used to’ to refer to past habits and 
+routines.
+‘used to’ + VPinf for past habits
+I used to smoke 20 a day. He used to live in 
+Athens.
+Modal verb | Timerelated Phrase | With 
+infinitive
+45
+
+=== PDF PAGE 20 ===
+GSE Grammar Learning Objectives
+20
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can express preference with ‘like … better 
+more/than ….’
+‘like … better/more than …’
+I like coffee more than tea. She likes dancing 
+better than running.
+Adverb | Comparison Clause | Comparison
+45
+Can use a range of indefinite compound 
+pronouns prefixed with ‘any’.
+‘any’ + ‘thing/one/where/body’
+I can’t find anybody. Anything is OK by me.
+Pronoun | Generic/impersonal
+45
+Can respond to a suggestion with ‘Yes, let’s’.
+‘Yes,let’s.’
+Shall we go? - Yes, let’s.
+Verb | Tags and question forms Modal verb | 
+Requests, offers and permission Modal verb 
+| Obligation
+45
+Can qualify adverbs with ‘too/enough’.
+‘too/enough’ + adverbs of manner
+She speaks too fast. He eats too quickly. They 
+don’t work hard enough.
+Adverb | Modifier Adverb | Position
+45
+Can use the present perfect with ‘just’ (BrE).
+present perfect + ‘just’ (BrE)
+The alarm’s just gone off. I’ve just had lunch. 
+Hurry, the match has just started.
+Verb | Tense Adverb | Time
+45
+Can refer to the recipient or indirect object with 
+‘to’ + noun or noun phrase.
+dative in ‘to’adjunct
+He gave the ticket to my brother. I’llexplain the 
+situation to you.
+Clause | Basic construction Preposition | 
+Logical
+45
+Can use a range of common linking words to 
+sequence events or activities.
+common linking words for chronological 
+sequence
+in the end, finally, before/after that, next, during
+Adverb | Time Preposition | Time Adverb | 
+Position
+45
+Can correctly use ‘a bit/a little’ and ‘a few’ to 
+refer to quantities with mass and count nouns 
+respectively.
+‘a bit/a little/a few’ + mass (uncountable) vs. 
+count quantities
+There’s a little/a bit of cheese in the fridge. I’ve 
+got a few ideas. We need a little/a bit of help here. 
+They bought a few books.
+Determiner | Quantifiers Noun | Mass/count
+46
+Can use the present continuous to refer to 
+changing situations.
+present continuous for changing states and 
+situations
+Prices are going up. He’s getting better. It’s 
+getting colder. We’re getting hungry.
+Verb | Tense
+46
+Can identify which article (including no article) 
+to use with a range of nouns and noun phrases.
+definite/indefinite/no article (overview)
+the BBC a broadcasting organisation 
+broadcasting German railways a German train the 
+German railway system
+Determiner | Articles Noun | Plural
+46
+Can make suggestions using ‘what about/ how 
+about’ with verbs in the gerund.
+‘what about/how about’ + NP/VPgerund?
+What about going out for a drink? How about 
+calling them?
+Phrase | With gerund (ing) Pronoun | 
+Question words
+46
+Can use ‘of’ with possessive forms to describe 
+possessions or attributes.
+NP + ‘of’ + NP + ‘‘s’ + NP
+one of John’s best ideas the size of Akiko’s flat 
+part of the city’s financial centre
+Noun | Possessive (genitive) Preposition | 
+Possession
+46
+Can use ‘had to ...’/’Did …have to…?’to refer to 
+past necessity and obligation.
+‘had to/Did ... have to’+ VPinf (+ ‘?’)
+They had to walk home. Did you have to pay?
+Modal verb | Obligation Verb | Tense
+46
+Can make offers using the first conditional.
+‘if’ + present simple + ‘will’ + VP for offers
+I’ll pay for lunch if you pay for dinner. I’llhelp you 
+if you help me.
+Clause | Conditional Clause | Result/cause
+46
+Can use common quantifiers such as ‘a lot’ and 
+‘much’ as adverbs.
+verb + ‘a lot/a bit/a little/(very) much’ as 
+adverbs
+It didn’t hurt very much. She talked a lot. I only 
+understand a bit.
+Determiner | Quantifiers Adverb | Modifier 
+Adverb | Position
+46
+
+=== PDF PAGE 21 ===
+GSE Grammar Learning Objectives
+21
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can speculate about the future using ‘may/ 
+might/could’ + infinitive.
+NP + ‘may/might/could’ + VPinf
+He could get better. They may accept the offer.
+Modal verb | Likelihood Phrase | With 
+infinitive
+46
+Can make offers and suggestions with ‘Why 
+not/why don’t you/we …’?
+‘Why not’ + VPinf?/’Why don’t we/you’ + 
+VPinf?
+Why not stay at my place? Why don’t we get a 
+taxi?
+Verb | Tags and question forms Phrase | With 
+infinitive
+46
+Can use the present simple with future 
+reference.
+present simple with future reference
+The train leaves at 6 p.m. The concert starts at 
+eight. We land at 5 a.m. tomorrow.
+Verb | Tense Adverb | Time
+46
+Can use infinitives after some common 
+adjectives.
+adjective + ‘to’ + VPinf
+easy to do happy to help not difficult to learn
+Phrase | With infinitive
+46
+Can use phrasal verbs with separated object.
+phrasal verbs with separated object
+put on your jacket/put your jacket on take your 
+shoes off/take off your shoes
+Phrasal verb Verb | Phrasal and prepositional 
+Clause | Basic construction
+46
+Can form a range of nouns from adjectives and 
+verbs with common suffixes.
+nouns formed with suffixes (overview)
+arrive - arrival transport - transportation happy - 
+happiness safe - safety
+Noun | Formation
+46
+Can describe possible future outcomes of 
+a present action or situation using the first 
+conditional.
+‘if’ + present simple + ‘will’ + verb (first 
+conditional)
+If we don’t hurry, we’ll be late. What will you do if 
+they don’t call?
+Clause | Conditional Verb | Tense
+46
+Can use transitive verbs in the passive with the 
+object as the grammatical subject.
+objective as subject of passive
+The door was opened by John. The picture was 
+painted by Rembrandt.
+Verb | Passive Preposition | Instrumental 
+Verb | Tense
+46
+Can use ‘mustn’t’ to express prohibition in the 
+present and near future.
+NP + ‘mustn’t’ + VPinf
+He mustn’t come here again. You mustn’t tell 
+anyone.
+Modal verb | Obligation Modal verb | 
+Requests, offers and permission Verb | 
+Negative forms
+46
+Can express preference with regard to things 
+using ‘prefer … (to …)’
+‘prefer’+ NP (+ ‘to’+ NP)
+I prefer dogs to cats. She prefers tea.
+Clause | Basic construction Clause | 
+Comparison
+46
+Can describe quantities using ‘hardly/not’ + 
+‘any/much/many’.
+negative quantifiers such as ‘hardly any/not 
+much/not many’
+There’s hardly any milk left. Not many people 
+came.
+Determiner | Quantifiers Adverb | Modifier
+46
+Can use indefinite compound pronouns 
+followed by infinitive verb phrases.
+‘something/anything/nothing’ + ‘to’ + VPinf
+Something to do Have you got anything to eat? 
+I’ve got nothing to read.
+Pronoun | Generic/impersonal Phrase | With 
+infinitive
+46
+Can use ‘that’ with time expressions referring 
+to the past.
+‘that’ + (finished) time expressions
+that day, that week, that Monday, that summer, 
+that weekend, that afternoon
+Determiner | Deictic (this/that) Adverb | Time
+46
+Can use ‘when’ to link clauses in the past simple 
+and past continuous.
+‘when’ + past continuous + past simple
+I was eating when the phone rang. The phone 
+rang when I was eating. I was talking when you 
+interrupted me.
+Verb | Tense Clause | Dependent 
+Conjunction | Time
+46
+Can use ‘till/until’ with the present tense to refer 
+to events in the future.
+clause1 + ‘’till/until’ + clause2 (present) with 
+future reference
+I’mstaying here till it stops raining. Can you wait 
+until she comes out?
+Conjunction | Time Verb | Tense
+46
+Can distinguish between present perfect 
+simple and continuous.
+present perfect simple vs. continuous
+I’ve lived here before. vs I’ve been living here for 
+six months.
+Verb | Tense Adverb | Time
+47
+
+=== PDF PAGE 22 ===
+GSE Grammar Learning Objectives
+22
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can correctly use ‘(the) other’ and
+‘another’ with nouns.
+‘(the) other’ vs. ‘another’
+Give me another book.
+I want the other book.
+Adverb | Modifier
+Determiner | Deictic (this/that)
+47
+Can describe simple conditions where one 
+event follows another.
+‘if’ + present simple + present simple
+If you heat ice, it melts. If you don’t water plants, 
+they die.
+Clause | Conditional Verb | Tense Clause | 
+Result/cause
+47
+Can use ‘you’ in a generic or impersonal sense.
+‘you’ as generic pronoun
+You use this key to open it. You can’t buy love.
+Pronoun | Generic/impersonal
+47
+Can form and use phrases with prepositions + 
+verbs (+’ing’).
+prepositional phrases (verb phrases)
+after leaving school without talking to us
+Preposition | Time Phrase | With gerund (ing) 
+Preposition | Logical
+47
+Can use the present perfect continuous with 
+present reference plus ‘recently/lately’.
+present perfect continuous with present 
+reference (+ ‘recently’/’lately’)
+I haven’t been feeling well lately. She’s been 
+drinking a lot recently.
+Verb | Tense Adverb | Time
+47
+Can express attitude and agreement with 
+‘agree/think (that)’ + complement clause.
+‘agree/think’ (+ ‘that)’ + complement clause
+I think London is great. Do you agree that we 
+should go home now?
+Clause | Dependent
+47
+Can form a range of adjectives from nouns and 
+verbs with common suffixes.
+adjectives formed with suffixes (overview)
+drink drinkable amuse - amusing/amused beauty 
+- beautiful home - homeless
+Adjective | Formation
+47
+Can form nouns from adjectives with common 
+suffixes.
+nouns from adjectives with common suffixes 
+(‘ity’, ‘ness’, etc.)
+reliable – reliability happy - happiness
+Noun | Formation
+47
+Can use ‘after/before’ as prepositions with the 
+gerundive (ing) form of verbs.
+‘after/before’ + VPgerund
+You spoke before thinking. After leaving home 
+she caught a bus.
+Preposition | Time Phrase | With gerund (ing)
+47
+Can express thanks for an action using verbs in 
+the gerund.
+‘thank’ + NP + ‘for’ + VPgerund
+Thank you for listening to me. Can you thank her 
+for inviting us?
+Phrase | With gerund (ing) Preposition | 
+Complementiser
+47
+Can correctly use ‘as’ and’ like’ with noun 
+phrases to express capacity and similarity.
+‘as’vs. ‘like’+ NP
+…working as a teacher … talk like a teacher
+Preposition | Instrumental Preposition | 
+Logical
+47
+Can make comparisons with ‘more’ + longer 
+adverbs.
+comparative forms of adverbs with ‘more …’
+He works more carefully than you. She speaks 
+more fluently than her sister.
+Adverb | Comparison Clause | Comparison
+47
+Can use the present perfect continuous with 
+‘for/since’ and time expressions.
+present perfect continuous + ‘for/since’ + 
+time adverbial
+I’ve been working since three o’clock. We’ve 
+been waiting for hours.
+Preposition | Time Verb | Tense Adverb | Time
+47
+Can use a range of verbs taking ‘to’ + infinitive.
+verbs taking ‘to’ + infinitive
+agree to do it promise to do it offer to help refuse 
+to leave want to go
+Phrase | With infinitive
+47
+Can use a range of common prefixes with verbs.
+prefixes + verbs (overview)
+dis+connect re+write un+do
+Verb | Formation
+47
+Can correctly use the present perfect with 
+‘been (to)’ and ‘gone (to)’, referring to places.
+present perfect + ‘been’ vs ‘gone’ (BrE)
+Have you been to Paris? He’s just gone to the 
+shop. She hasn’t gone yet.
+Verb | Tense
+47
+
+=== PDF PAGE 23 ===
+GSE Grammar Learning Objectives
+23
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can form questions with prepositional verbs 
+and final prepositions.
+questions with prepositional verbs
+What are you laughing at? Who are you talking 
+about? What kind of music do you listen to?
+Preposition | Position Phrasal verb Verb | 
+Phrasal and prepositional
+47
+Can report past orders and requests with
+‘tell/ask’.
+‘asked/told’ + person + ‘to’ + VPinf
+I told you to shut the door. Did you ask them to 
+help you?
+Phrase | With infinitive Clause | Reported 
+speech and ideas
+48
+Can express strong wishes or aversion using 
+‘would love/hate to …’
+‘would love/hate’ + ‘to’ + VPinf
+I’d love to come to your party. I’d hate to miss 
+the party.
+Modal verb | Wishes and intentions Clause | 
+Conditional
+48
+Can make statements and ask questions with 
+‘know (that)’ + complement clauses.
+‘know’ + ‘(that)’ + complement clause
+I didn’t know (that) she was still married. We know 
+(that) you don’t like us.
+Clause | Reported speech and ideas Clause 
+| Dependent
+48
+Can use conjunctions such as ‘when’ and 
+‘before’ with the present simple, with future 
+reference.
+‘when/as soon as/before’, etc. + present 
+simple with future reference
+I’ll tell her when I see her. I’ll call as soon as I get 
+there. I’ll do it before I leave.
+Conjunction | Time Verb | Tense Clause | Time
+48
+Can use the present perfect continuous to 
+refer to ongoing states and conditions.
+present perfect continuous (general)
+I’ve been sitting here waiting. It’s been raining all 
+day.
+Verb | Tense Clause | Time
+48
+Can correctly place the indirect object with 
+verbs taking ‘for’ and ‘to.
+transitive verbs with ‘for/to’ and indirect 
+object
+Thank him for the present. Ask her for the book. 
+Invite them to the party.
+Phrasal verb Verb | Phrasal and prepositional
+48
+Can use ‘till/until’ referring to events in the past 
+using appropriate verb forms.
+clause1 + ‘’till/until’ + clause2 (past)
+I worked till John arrived. She stayed in bed until 
+everyone had left.
+Conjunction | Time Verb | Tense
+48
+Can use ‘one/ones’ to replace nouns.
+‘one/ones’ as substitutes/propwords
+Which one do you want? I like those ones.
+Pronoun | Generic/impersonal
+48
+Can use ‘who/that/which’ in basic defining 
+(restrictive) relative clauses.
+‘who/that/which’ in relative clauses
+He’s the friend who lives in Prague. That’s the car 
+that/which I’m going to buy.
+Clause | Relative
+48
+Can use ‘by’ with verbs and verb phrases to 
+express the means or way of doing something.
+‘by’ + VPgerund
+I learned French by watching French TV. You 
+make it by cooking fruit and sugar together.
+Phrase | With gerund (ing) Preposition | 
+Instrumental
+48
+Can give, deny or ask about permission in the 
+past with ‘was(n’t) able to/allowed to’.
+‘was(n’t) able/allowed to’ for permission
+He wasn’t able to leave the room. Were you 
+allowed to leave the hotel?
+Modal verb | Ability Modal verb | Requests, 
+offers and permission Verb | Tense
+48
+Can refer to general truths using ‘can’.
+‘can’for generalisations
+It can get very cold in November. People can be 
+very cruel sometimes.
+Modal verb | Likelihood
+48
+Can negate adjectives with the correct 
+negative prefix.
+negation of adjectives with prefixes
+un+likely in+appropriate
+Adjective | Formation
+48
+Can use a wide range of subject and object 
+relative pronouns, including zero (omission of 
+pronoun).
+overview of relative pronouns
+the house where I was born the girl who lives next 
+door the carpet I bought in Egypt
+Clause | Relative Pronoun | Question words
+48
+Can use ‘when’ and ‘where’ in relative clauses.
+‘when/where’ in relative clauses
+The day when we arrived was a Thursday. Is there a 
+place where I can get a coffee?
+Clause | Relative Pronoun | Question words
+48
+Can use ‘was/were going to’ to refer to past 
+intentions.
+NP + ‘was/were going to’+ VPinf
+We were going to eat at home tonight. I was 
+going to tell you, but I forgot.
+Verb | Tense Verb | Auxiliary
+48
+
+=== PDF PAGE 24 ===
+GSE Grammar Learning Objectives
+24
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can describe hypothetical (counterfactual) 
+results of a current action or situation using the 
+second conditional.
+second conditional
+I’dcall her if I had her number. If I had the money, 
+I’d buy it.
+Clause | Conditional
+48
+Can make generalisations about groups and 
+nationalities using ‘the’ + adjective (+ ‘s’).
+‘the’ + NP derived from adjective for 
+generalisations
+the unemployed the Brazilians the young the rich 
+the Europeans
+Determiner | Articles
+48
+Can use ‘let/make/help’ to refer to enabling, 
+forcing, or allowing things to be done.
+‘make/help/let’ + NP + VPinf
+Help her find it. Make him do it. Let me help you. 
+Help me carry this.
+Clause | Result/cause Phrase | With infinitive
+48
+Can use ‘both … and …’ to connect two words 
+or phrases.
+‘both … and …’
+Both John and Mary speak Italian. I drink both tea 
+and coffee.
+Determiner | Conjunction and disjunction 
+Conjunction | Coordinating
+48
+Can use the past simple passive.
+past simple passive
+It was built in 1922. John was taken to hospital.
+Verb | Passive Verb | Tense
+48
+Can use a range of common placeholders or 
+propwords.
+propwords: ‘one(s)’,‘some’,‘any’
+Which one do you like? Do you prefer the red 
+ones or the blue ones? She wants some too. Do 
+you want any?
+Pronoun | Generic/impersonal Pronoun | 
+Question words
+48
+Can correctly use a range of common phrasal 
+(separable) and prepositional (inseparable 
+phrasal) verbs.
+verb + NP + preposition/verb + preposition
++ NP; separable/phrasal verb vs. inseparable 
+phrasal/prepositional verb
+Put your clothes on. Put on your clothes. I’m 
+looking for my clothes. (I’m looking my clothes 
+for - INCORRECT).
+Phrasal verb Verb | Phrasal and prepositional
+48
+Can express purpose with ‘for’ + verb + ‘ing’.
+‘for’ + VPgerund for purpose
+I use it for washing the car. This money’s for 
+spending on holiday.
+Phrase | With gerund (ing) Clause | Result/
+cause Preposition | Logical
+48
+Can use the present simple passive.
+present simple passive
+It’s only sold online. They’re made with flour and 
+water.
+Verb | Passive Verb | Tense
+48
+Can use ‘whose’to talk about possession in 
+relative clauses.
+relative clauses with ‘whose’
+the man whose brother won a gold medal the 
+man whose dog you took for a walk
+Clause | Relative Pronoun | Possessive 
+Clause | Dependent
+49
+Can put a range of different adjectives into the 
+correct sequence.
+sequence of different types of adjectives
+a big old yellow French car a tall attractive young 
+Asian man
+Adjective | Position Phrase | Basic 
+construction
+49
+Can form adjectives from verbs and nouns with 
+common suffixes.
+adjectives from verbs with common suffixes 
+(‘able’, ‘less’)
+believe - believable hope - hopeless
+Adjective | Formation
+49
+Can make negative suggestions with ‘Let’s not 
+...’
+‘Let’s not …’ for negative suggestions
+Let’s not fight about this. Let’s not spend too 
+much money.
+Modal verb | Obligation Verb | Imperative
+49
+Can refer to general concepts using abstract 
+nouns without articles.
+abstract nouns without article
+Hope never dies. Love is the answer.
+Determiner | Articles
+49
+Can use ‘must’ and ‘can’t’for inferences and 
+assumptions in the present.
+‘can’t/must’ for inferences
+She can’t be over 30 - she looks so young! From 
+her accent, she must be American.
+Modal verb | Likelihood
+49
+
+=== PDF PAGE 25 ===
+GSE Grammar Learning Objectives
+25
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can ask indirect questions using ‘would like to 
+know’ with wh- pronouns.
+NP + ‘would like to know’ + whpronoun
++ VP
+I’d like to know where I can buy this. Would you 
+like to know how much it costs?
+Clause | Conditional Clause | Relative 
+Pronoun | Question words
+49
+Can use ‘quite’ and ‘quite a(n)’ as adverbials 
+with adjectives and noun phrases.
+uses of ‘quite (a)’
+quite interesting quite an expensive meal quite a 
+lot of money
+Adverb | Modifier
+49
+Can use ‘either ... or …’ in relation to a choice 
+between two things or actions.
+‘either…or …’
+We can either take the bus or get a taxi. We can 
+have either Italian or Chinese food.
+Adverb | Conjunction and disjunction 
+Conjunction | Coordinating
+49
+Can distinguish between ‘to’+ infinitive and ‘ing’ 
+after certain verbs with a change of meaning.
+verb + ‘to’ + VPinf vs. VPgerund with change 
+of meaning
+remember to do/remember doing stop to do/
+stop doing forgot to do/forget doing
+Phrase | With infinitive Phrase | With gerund 
+(ing)
+49
+Can construct complement clauses starting 
+with ‘about’.
+complement clauses with ‘about’ + VP
+Her talk was about how to make money working 
+from home. His email is about why he’s leaving 
+the company.
+Preposition | Complementiser Clause | 
+Dependent
+49
+Can correctly use positive/positive (Br Eng), 
+positive/negative and negative/positive 
+question tags.
+pos/neg, neg/pos and pos/pos question tags
+You know her, do you? vs. You know her, don’t 
+you? vs. You don’t know her, do you?
+Verb | Tags and question forms Verb | 
+Auxiliary
+49
+Can correctly use ‘between’ and ‘among’ with 
+noun phrases referring to two or more items or 
+entities.
+‘between’ vs. ‘among’
+The village is between the river and the mountain. 
+She found herself among unfamiliar people.
+Preposition | Place
+49
+Can use the present perfect with the superlative 
+forms of adjectives.
+present perfect + superlative of adjectives
+the best book I’ve ever read the worst film I’ve 
+seen the best holiday I’ve ever had
+Verb | Tense Clause | Comparison
+49
+Can give, deny or ask about permission in the 
+future with ‘will/won’t be able to/ allowed to’.
+‘will/won’t be able/allowed to’ + VPinf for 
+permission
+You’llbe able to go home soon. We won’t be 
+allowed to drive there.
+Modal verb | Ability Phrase | With infinitive
+50
+Can use a range of negative question tags.
+question tags (negative, all tenses)
+It’seasy, isn’t it? You know him, don’t you? He’s 
+finished the job, hasn’t he?
+Verb | Tags and question forms Verb | 
+Auxiliary
+50
+Can ask indirect questions using ‘would like to 
+know’ with ‘if/whether’.
+NP + ‘would like to know’ + ‘if/whether’ + 
+clause
+I’d like to know if it’s available now. Would you like 
+to know whether she’s free?
+Clause | Conditional Clause | Dependent
+50
+Can use past participles as adjectives.
+past participles as adjectives
+made of/by/in built in painted/written/directed 
+by discovered/invented by/in
+Verb | Passive Preposition | Instrumental 
+Preposition | Position
+50
+Can refer to groups and subgroups using 
+‘neither’, ‘either’, ‘each’ and ‘all’ with noun 
+phrases.
+‘neither/either/each/all’ (+ ‘of’) + NP
+I don’t like either of them. Neither of my sisters 
+lives here. All of us agree with you.
+Determiner | Conjunction and disjunction 
+Determiner | Quantifiers
+50
+Can express hope and aspiration with ‘hope 
+(that)’ + complement clause.
+‘hope (that)’ + complement clause
+I hope you get better soon. They hope that we’ll 
+forget the incident.
+Clause | Dependent
+50
+Can use a range of common prefixes with nouns.
+prefixes + nouns (overview)
+semi+circle ex+wife mal+function
+Noun | Formation
+50
+
+=== PDF PAGE 26 ===
+GSE Grammar Learning Objectives
+26
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can form a range of verbs from adjectives and 
+nouns with common suffixes.
+verbs formed with suffixes (overview)
+soft+en sympath(y)+ise activ(e)+ate
+Verb | Formation
+50
+Can form a range of hyphenated compound 
+adjectives.
+adjective/adverb + hyphen + adjective/ noun
+wellpaid highquality fulltime
+Adjective | Formation Adverb | Formation
+50
+Can report past wh- questions.
+reported past tense questions with ‘wh’ 
+clauses
+She asked me how much I earned. I wondered 
+how long they had been there.
+Clause | Reported speech and ideas 
+Determiner | Quantifiers
+50
+Can use ‘should’ to express likelihood in the 
+present and near future.
+‘should’ for likelihood
+She should be here soon. It should work.
+Modal verb | Likelihood
+50
+Can correctly place prepositions (particles) 
+with phrasal (separable) and prepositional 
+(inseparable phrasal) verbs.
+prepositional vs. phrasal (separable vs. 
+inseparable phrasal) verbs
+looking for my bag/looking for it putting on your 
+coat/putting your coat on/ putting it on.
+Verb | Phrasal and prepositional Phrasal verb 
+Preposition | Position
+50
+Can use ‘while’ with the past simple and past 
+continuous to refer to past actions and states.
+past continuous with ‘while’
+I saw her while I was shopping. We met while we 
+were living in Paris.
+Conjunction | Time Verb | Tense Clause | 
+Dependent
+50
+Can use ‘going’ to and ‘will’ future forms of the 
+passive.
+NP + ‘going to/will’ + VPpassive
+The house is going to be sold. Everything will be 
+explained.
+Verb | Passive Verb | Tense Phrase | With 
+infinitive
+50
+Can express hope and aspiration with ‘… hope 
+to’ + infinitive.
+‘hope to’ + VPinf
+I hope to see you again soon. She’s hoping to 
+hear from you.
+Phrase | With infinitive
+50
+Can construct relative clauses with ‘what’.
+“free” relative (noun) clauses with ‘what’
+I decided what I’m going to do. You can say what 
+you like.
+Clause | Relative Clause | Dependent
+50
+Can use a range of common prefixes enhancing 
+the meaning of adjectives.
+prefixes + adjectives (overview; not negation)
+over+used under+paid super+human
+Adjective | Formation
+50
+B1+ (51 - 58)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can refer to acquired information using ‘hear’ + 
+‘of/about’ with nouns and noun phrases.
+‘hear of/about’ + NP
+I’ve never heard of him. Have you heard about 
+Mary’s boyfriend?
+Preposition | Topicalising Clause | Reported 
+speech and ideas
+51
+Can use the present continuous with ‘always’ 
+and other adverbs of frequency to express 
+negative attitude.
+present continuous (+ ‘always’) expressing 
+negative attitude
+You’re always working. She’s usually talking on 
+the phone when I go to see her.
+Verb | Tense Adverb | Time
+51
+Can use embedded defining (restrictive) 
+relative clauses.
+embedded relative clauses
+The car we rented broke down outside Reno. The 
+woman who was looking for you has just gone.
+Clause | Relative Clause | Dependent
+51
+Can use a range of adverbial intensifiers with 
+adjectives.
+adverbial intensifiers
+extremely hot amazingly difficult surprisingly 
+cheap
+Adverb | Modifier
+51
+
+=== PDF PAGE 27 ===
+GSE Grammar Learning Objectives
+27
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can make requests using ‘Will you (please) ...?’
+requests with ‘will you (please) …?’
+Will you tell me something? Will you please stop 
+doing that?
+Modal verb | Requests, offers and permission 
+Verb | Imperative
+51
+Can use ‘so’ + adjective/quantifier + ‘that’ to 
+express results and consequences.
+‘so [adjective/quantifier] that’ + VP for result
+He ate so much that he became ill. It was so cold 
+that we all went home.
+Clause | Result/cause Conjunction | Cause 
+and result
+51
+Can express necessity or absence of necessity 
+with ‘(not) necessary to …’
+‘(not) necessary’ + (‘for’ + NP) + ‘to’ + VPinf
+Is it necessary to fill this in? It’s not necessary for 
+the children to stay.
+Phrase | With infinitive
+51
+Can use object relative clauses with relative 
+pronouns to specify or define.
+Defining (restrictive) object relative clause
+This is the film that/which I wanted you to see. 
+Henry is the man whom I intend to marry.
+Clause | Relative
+51
+Can use ‘do’/’did’ as a general placeholder 
+(substitute) for verbs.
+‘do/did’as a placeholder (substitute) for verbs
+She asked me to buy it, so I did. He doesn’t think 
+I like him, but I do.
+Verb | Auxiliary Verb | Tags and question 
+forms
+51
+Can give advice using ‘If I were you …’
+‘If I were you I’d/Iwouldn’t’ + VP for advice
+I wouldn’t do that if I were you. If I were you, I’d 
+apologise.
+Clause | Conditional Modal verb | Obligation
+51
+Can correctly use ‘each other’ and reflexive 
+pronouns.
+‘themselves’ vs. ‘each other/one another’
+They were looking at themselves in the mirror. vs. 
+They were looking at each other.
+Pronoun | Reflexive
+51
+Can correctly use ‘not … either’ and ‘neither … 
+(nor)’ with noun and verb phrases.
+disjunction with common adverbials:
+‘either’/’neither (… nor’)
+John’s not here either. Neither John nor Mary was 
+at home.
+Adverb | Conjunction and disjunction
+51
+Can use a range of positive question tags.
+question tags (positive, all tenses)
+They’re not here, are they? It isn’t true, is it? It 
+wasn’t too cold, was it?
+Verb | Tags and question forms
+51
+Can use phrasal verbs with two particles.
+phrasal (prepositional) verbs with two particles
+Stand up for yourself. We’ve run out of milk.
+Verb | Phrasal and prepositional Phrasal verb
+51
+Can express agreement and disagreement with 
+‘…hope so/not’.
+‘hope so/not’
+Is she coming? - I hope so/not.
+Verb | Tags and question forms
+51
+Can express indirect requests with ‘would like’ + 
+noun phrase + verb (infinitive).
+‘would like’ + NP + ‘to’ + VPinf
+I’d like you to stay. Would you like Mustafa to 
+come as well?
+Modal verb | Requests, offers and permission 
+Clause | Conditional Phrase | With infinitive
+51
+Can use reflexive pronouns for emphasis.
+reflexive pronouns for emphasis
+I made it myself. Do it yourself.
+Pronoun | Reflexive
+51
+Can use ‘’s’ in time expressions.
+time expressions with ‘‘s’
+a week’s holiday a year’s break a day’s rest
+Noun | Possessive (genitive) Adverb | Time 
+Clause | Time
+51
+Can correctly place adverbs of comment and 
+manner in longer sentences.
+position of adverbs of comment and manner 
+(before/after verb, end of sentence)
+You’re ^ going to have to take it back ^. 
+(probably) He ^ explained the problem to me ^. 
+(carefully)
+Adverb | Position
+51
+Can use the correct verb form (infinitive or ‘ing’) 
+following a range of phrasal (separable) and 
+prepositional (inseparable phrasal) verbs.
+verb+’ing’ vs. + ‘to’+inf.
+… think about leaving … expect to go …manage 
+to finish
+…succeed in finishing
+Verb | Phrasal and prepositional Phrase | With 
+infinitive Phrase | With gerund (ing)
+51
+
+=== PDF PAGE 28 ===
+GSE Grammar Learning Objectives
+28
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use the past continuous to refer to 
+temporary or changing past states or 
+situations.
+past continuous for temporary or changing 
+past situations
+I was living in Rome at the time. I was studying in 
+Germany during the early 1990s.
+Verb | Tense Adverb | Time Clause | Time
+51
+Can construct phrases with wh- question 
+words followed by verbs in the infinitive.
+wh- adverbials + ‘to’ + VPinf
+She knows where to go. I asked her what to do. 
+Do you know how to get there?
+Phrase | With infinitive Pronoun | Question 
+words
+51
+Can use a range of common verb + verb 
+combinations using the ‘ing’ form.
+verbs taking VPgerund
+I look forward to hearing from you soon. We 
+started eating dinner at eight o’clock.
+Phrase | With gerund (ing)
+51
+Can use the present perfect passive with
+‘yet’.
+present perfect passive + ‘yet’
+It hasn’t been delivered yet. They haven’t been 
+told yet. Has it been released yet?
+Verb | Passive Verb | Tense Adverb | Time
+52
+Can use the present perfect passive with
+‘just/already’.
+present perfect passive + ‘just/already’
+It’s just been done. She’s just been fired. They’ve 
+already been marked.
+Verb | Passive Adverb | Time Verb | Tense
+52
+Can correctly use ‘such’ and ‘such a’ with mass 
+and count nouns respectively.
+‘such (a)’ (+ adjective) + NP
+It was such fun! He is such a nice boy!
+Adverb | Modifier Noun | Mass/count
+52
+Can use genitive ‘‘s’ + genitive ‘‘s’ in a noun 
+phrase.
+Double genitive ‘‘s’
+my brother’s girlfriend’s car her teacher’s 
+computer’s password
+Noun | Possessive (genitive) Clause | Basic 
+construction
+52
+Can correctly use ‘so’ and ‘such (a)’ with 
+adjectives and nouns respectively.
+‘so’ + adjective vs. ‘such (a)’ (+ adjective)
++ NP
+There’s such a lot of rain. It’sso wet.
+Adverb | Modifier Determiner | Conjunction 
+and disjunction
+52
+Can use ‘wouldrather …(than) …’to express 
+preference.
+‘wouldrather’+ VPinf (+ ‘than’+ VPinf)
+I’d rather not eat there. I’drather take a taxi. We’d 
+rather stay in tonight than go out.
+Modal verb | Wishes and intentions Clause | 
+Comparison
+52
+Can correctly use ‘little/a little’ and ‘few/a few’ 
+to refer to quantities with mass and count nouns 
+respectively.
+‘a little’ vs. ‘little’; ‘few’ vs. ‘a few’
+She eats very little food. We have a little money 
+left. Few people understand statistics. A few 
+people came to the party.
+Determiner | Quantifiers Noun | Mass/count
+52
+Can use ‘as’ with a noun or noun phrase referring 
+to a job, or instrument for doing something.
+‘as’ + NP (job or instrument)
+work as a waiter use it as a tool
+Preposition | Instrumental
+52
+Can use ‘(in order) to’ to express purpose and 
+intention.
+clause + ‘(in order) to’ + VPinf
+He came to help me. I do it in order to save 
+money. So as to save money, she walks 
+everywhere.
+Conjunction | Cause and result Phrase | With 
+infinitive
+52
+Can ask negative questions with ‘wasn’t’, 
+‘didn’t’, etc.
+negative ‘yes/no’ questions
+Wasn’t the film rubbish? Didn’t you enjoy the 
+book?
+Verb | Tags and question forms Verb | 
+Auxiliary
+52
+Can use ‘except (for)’ and ‘apart from’ after 
+general and other noun phrases.
+‘apart from/except (for)’ + NP
+I’ve seen all their films apart from/except (for) 
+True Grit. The house was silent, apart from/
+except for the ticking of the clock.
+Preposition | Logical
+52
+Can use ‘plan’/’intend’/’mean’ + ‘to’ + infinitive 
+to talk about present and future plans and 
+intentions.
+‘mean/intend/plan to’ + VPinf
+Do you intend to stay in this house? We’re 
+planning to sell our car. I mean to get this job.
+Phrase | With infinitive
+52
+
+=== PDF PAGE 29 ===
+GSE Grammar Learning Objectives
+29
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can refer to general truths and frequent 
+occurrences using ‘could’.
+‘could’ for generalisations
+Letters could take days to arrive in those days. 
+She could be very aggressive at times.
+Modal verb | Likelihood
+52
+Can talk about permission using ‘(not) allowed/
+permitted to …’.
+‘(not) allowed/permitted to’ + VPinf
+Children are not allowed to come in here. Will we 
+be permitted to see her?
+Phrase | With infinitive Verb | Passive
+52
+Can use ‘may’/’might (+not) have ...’to talk 
+about past possibilities.
+‘may/might (not) have’+ VPpp for speculation
+He may not have known the answer. She might 
+have paid for it herself.
+Modal verb | Likelihood Modal verb | 
+Timerelated
+52
+Can use ‘may not’to express prohibition in the 
+present and near future.
+‘may not’ for prohibition
+You may not leave without permission. 
+Passengers may not use this door.
+Modal verb | Requests, offers and permission
+53
+Can use verbs of state change in the passive 
+with object complements.
+factitive as subject of passive
+This cathedral was built in the thirteenth century. 
+The house hasn’t been painted for years.
+Verb | Passive
+53
+Can use ‘such a/an’ + adjective with 
+finite clauses to refer to results and 
+consequences.
+‘such a/an’ + adjective + NP (+ ‘that’) + clause
+It’ssuch an important event; everybody will be 
+there. It was such a hot day that we decided to 
+stay at home.
+Adverb | Modifier Conjunction | Cause and 
+result Clause | Dependent
+53
+Can use ‘so’ and ‘neither’ in short phrases to 
+express agreement and disagreement.
+‘so/neither’ for agreement and disagreement
+so am/do I me too neither do I nor do I
+Verb | Tags and question forms
+53
+Can use parallel comparatives (‘the’ + 
+comparative1, ‘the’ + comparative2).
+‘the’ + adj1/adv1 (comparative) + ‘the’ + adj2/
+adv2 (comparative)
+The faster you drive, the more dangerous it is. 
+The more he drinks, the less sense he makes.
+He must have made a mistake. You must have 
+spoken to my brother.
+Adjective | Comparison Adverb | Comparison
+53
+Can use ‘must have …’ to express inferences 
+and assumptions about the past.
+‘must have’ + perfect participle for inferences 
+about the past
+Modal verb | Likelihood Verb | Tense
+53
+Can use ‘neither … nor …’ to connect two 
+words or phrases.
+‘neither … nor …’
+I neither speak nor write Chinese. It’s neither 
+funny nor interesting.
+Adverb | Conjunction and disjunction
+53
+Can use ‘ever’ for emphasis with comparatives 
+and superlatives of adjectives.
+the’+ superlative of adjectives + ‘ever’/ 
+comparative of adjectives + ‘than ever’
+the best ever wider than ever
+Adjective | Comparison
+53
+Can use a wide range of common reporting 
+verbs with ‘that’ + complement clause and 
+appropriate tense changes. Can use a 
+repeated comparative to
+emphasise the rate or amount of change.
+reporting verbs + ‘that’ + complement 
+clause
+Can use a repeated comparative to
+emphasise the rate or amount of change.
+repeated comparative adjective or adverb
+(comparative + and + comparative)
+Petrol is becoming more and more
+expensive.
+He drove faster and faster.
+Adjective | Comparison
+Adverb | Comparison
+53
+Can use ‘I wish/if only’ to express wishes
+related to the present or future.
+‘I wish/If only’ + VP (past simple)
+I wish you were here.
+If only we had more time.
+Clause | Time
+Verb | Tense
+Clause | Conditional
+54
+Can make polite requests with ‘would you’
++ verbs in the infinitive.
+‘Would you’ + VPinf ‘(, please)?’
+Would you stop talking, please?
+Would you explain something?
+Modal verb | Requests, offers and
+permission
+54
+
+=== PDF PAGE 30 ===
+GSE Grammar Learning Objectives
+30
+Can use ‘get’ with the passive in informal 
+speech to express unexpected or dramatic 
+change.
+passive with ‘get’ compared with ‘be’
+He got killed in a fight outside a pub. You’llget hurt 
+if you aren’t more careful.
+Verb | Passive
+54
+Can describe present or future outcomes of a 
+hypothetical situation using ‘even if’.
+‘even if’ + first/second conditional
+Even if she’s wrong, I’ll still support her. I’d marry 
+him if, even if he had no money.
+Clause | Conditional Verb | Tense
+54
+Can express intentions and plans for the 
+near future with ‘thinking of’ and verbs in the 
+gerund.
+‘thinking of’ + VPgerund in the present
+I’m thinking of going back to the States. Is he 
+thinking of leaving?
+Phrase | With gerund ing) Preposition | 
+Complementiser
+54
+Can use the past perfect in a range of common 
+situations.
+past perfect (general)
+I remembered it after I’d already left home. By the 
+time I got there she’d gone.
+Verb | Tense Adverb | Time Clause | Time
+54
+Can use ‘could(n’t) have ...’to talk about past 
+possibilities.
+‘could(n’t) have’ + VPpp for speculation
+You could have died in there. They couldn’t have 
+understood you.
+Modal verb | Likelihood Modal verb | 
+Timerelated Modal verb | Ability
+54
+Can express preference with regard to actions 
+using ‘prefer … (to …)’
+‘prefer’ + VPgerund (+ ‘to’ + VPgerund)
+They preferred staying silent (to speaking). Most 
+people prefer drinking tea with milk.
+Phrase | With gerund (ing) Clause | 
+Comparison
+55
+Can construct a range of phrases using 
+compound adverbials composed of whwords 
++ ‘ever’.
+phrases with ‘when’/’what’/’where’/’who’ + 
+‘ever’
+Wherever you go, I’ll be there. I don’t have time to 
+see him, whoever he is.
+Adverb | Formation Pronoun | Generic/
+impersonal
+55
+Can report yes/no questions with ‘if/ whether’.
+reported yes/no questions
+She asked whether I was feeling better. He wanted 
+to know if I’d finished the work.
+Clause | Reported speech and ideas 
+Conjunction | Coordinating Clause | 
+Dependent
+55
+Can correctly use ‘even’ and ‘not even’ in the 
+right position to emphasise a point.
+‘(not) even’ for emphasis
+She even wanted me to pay her hotel bill. Not 
+even a dog would eat that.
+Adverb | Modifier
+55
+Can talk about expectations and obligations in 
+the present tense using (not) supposed to …
+(not) supposed to’ + VPinf
+You’re not supposed to touch that. Are we 
+supposed to eat this?
+Modal verb | Obligation Phrase | With 
+infinitive
+55
+Can use ‘oneof/some of/among’ in phrases 
+with superlative adjectives.
+‘one of/some of/among’ + superlative phrases
+one of the best schools among the richest 
+people some of the finest examples
+Adjective | Comparison Preposition | 
+Logical
+55
+Can use ‘about to’ to talk about imminent 
+events in the present and past.
+immediate future or future in the past with
+‘about to’ + VPinf
+She’sabout to have a baby. We were about to go 
+out when Jane called.
+Adverb | Time Verb | Tense Clause | With 
+‘be’
+55
+Can use ‘would’ to refer to past habits and 
+routines.
+‘would’ + VPinf for past habits
+When I lived in the country I would go for long 
+walks.
+Modal verb | Timerelated Phrase | With 
+infinitive
+55
+Can use the present continuous passive.
+present continuous passive
+My car is being repaired. It’s being discussed. The 
+book is being printed. Your son is being spoken 
+to.
+Verb | Passive Verb | Tense
+55
+Can describe present or future outcomes of 
+a hypothetical situation using ‘unless’.
+‘unless’ + first/second conditional
+Unless you want it, I’ll take the last 
+sandwich. 
+I’m sure he would call us, unless he had a 
+problem with his phone.
+Clause | Conditional 
+Verb | Tense
+55
+
+=== PDF PAGE 31 ===
+GSE Grammar Learning Objectives
+31
+Can make statements about plans using ‘plan/
+intend to’ + infinitive.
+‘intend/plan to’ + VPinf
+Do you intend to stay in this house?
+They’re planning to go to Egypt for their 
+holidays.
+Phrase | With infinitive
+55
+Can express dislike using ‘not’ with verbs in the 
+gerund.
+NP + ‘hate/don’t like/etc.’ + ‘not’ + VPgerund
+I hate not arriving on time. I don’t like not 
+knowing where she is.
+Phrase | With gerund (ing) Clause | Negation
+55
+Can make passive statements with ditransitive 
+verbs like ‘tell’and ‘give’.
+dative as subject of passive
+He was given a book. The children love to be 
+told stories.
+Verb | Passive
+56
+Can use ‘get/have’ to refer to having things 
+done by other people.
+‘have/get’+ NP + past participle for impersonal 
+agency
+I’m having my flat painted. I’ve just had my car 
+repaired. You need to get your hair cut.
+Clause | Result/cause
+56
+Can construct defining (restrictive) relative 
+clauses with ‘to’ + infinitive verb phrases.
+defining infinitive clauses (NP + ‘to’ + VP1inf
++ VP2inf)
+the first person to fly the only one to stay up late
+Clause | Relative Phrase | With infinitive
+56
+Can use ‘in case’ with the present tense to refer 
+to future eventualities.
+‘in case’ + subordinate clause (present tense)
+Take an umbrella in case it rains. In case no one 
+there speaks English, I’m bringing Paul as an 
+interpreter.
+Clause | Conditional Verb | Tense
+56
+Can use ‘only’ as an adverb in the correct 
+position.
+‘only’ as adverb in correct position
+I only wanted to help. It’s only a small flat.
+Adverb | Modifier Adjective | Position
+56
+Can use ‘in case of’ with noun phrases to speak 
+of eventualities.
+‘in case of’ + NP
+In case of fire, break the glass. Call this number 
+in case of accident.
+Preposition | Cause and result
+56
+Can talk about indirect causation with ‘get/ 
+make’ + person + action.
+‘get/make’ + person + ‘to’ + VPinf for indirect 
+causation
+I’ll get a friend to pick you up. You can’tmake 
+people like you.
+Phrase | With infinitive Clause | Result/cause
+56
+Can construct “reduced” defining (restrictive) 
+relative clauses with verb +ing.
+reduced relative clauses with verb + ‘ing’
+I didn’t see the man driving the car. The winner is 
+the person ending with the most cards.
+Clause | Relative
+56
+Can use ‘beforehand/afterwards’ to express 
+sequences of events or actions.
+advanced adverbials of time: ‘beforehand/ 
+afterwards’
+I arrived at the hotel late, but I had booked a 
+room beforehand. They went to the play first 
+and had dinner afterwards.
+Adverb | Time
+56
+Can use ‘had/’d better (not)’ + verb for strong 
+advice and recommendations.
+‘had better’
+You’d better not tell anyone. Your brother had 
+better try to get a job.
+Modal verb | Obligation Phrase | With ‘be’
+56
+Can use despite/in spite of’ with noun phrases 
+to express concession.
+concession with ‘despite/in spite of’
+Despite the terrible weather, we had a lovely 
+day. He climbed the mountain in spite of his 
+headache.
+Conjunction | Concession and contrast 
+Preposition | Logical
+56
+Can use ‘so …’ and ‘therefore …’ to express 
+conclusions and inferences.
+(declarative sentence) + ‘so/therefore’+ 
+declarative sentence
+This book has my name on it, so it must be mine. 
+I think, therefore I am.
+He said (that) he was tired.
+Clause | Result/cause Conjunction | Cause 
+and result Clause | Dependent
+56
+Can make tense changes (present to past) in 
+reported speech.
+reported speech changing present to past 
+tenses
+She told me (that) she wasn’t feeling well.
+Clause | Reported speech and ideas Verb | 
+Tense Clause | Dependent
+56
+Can use ‘meant/planned/intended’ + ‘to’
++ infinitive to talk about past plans and 
+intentions.
+‘meant/intended/planned to’ + VPinf
+Did you intend to invite so many people? They 
+planned to go to Egypt for their holidays. I 
+meant to tell her, but I forgot to.
+Phrase | With infinitive
+56
+Can use ‘though’ and ‘although’ as 
+conjunctions to express concession.
+concession with ‘though/although’
+She’ll listen to you, although she won’t like it. 
+Though we’re poor, we’re happy.
+Conjunction | Concession and contrast
+56
+
+=== PDF PAGE 32 ===
+GSE Grammar Learning Objectives
+32
+Can use ‘thought’ to express past 
+expectations, with appropriate tense 
+changes.
+‘thought’+ past tense referring to expectations
+I thought you were going to help me. I thought 
+we were friends.
+Clause | Reported speech and ideas Verb | 
+Tense Clause | Dependent
+57
+Can use a range of verbs of advice and 
+recommendation with noun phrases plus 
+verbs in the infinitive.
+NP + verb + NP + ‘to’ + VPinf
+I want you to do it now. I advised them to get the 
+train. I recommend people to eat first.
+Phrase | With infinitive Clause | Dependent
+57
+Can use a range of verbs of advice and 
+recommendation with noun phrases plus 
+verbs in the infinitive.
+NP + verb + NP + ‘to’ + VPinf
+I want you to do it now. I advised them to get the 
+train. I recommend people to eat first.
+Phrase | With infinitive Clause | Dependent
+57
+Can omit words and phrases in a range of 
+parallel structures.
+ellipsis: omission of noun/verb/ infinitive/’wh’ 
+clauses
+My parents expected me to go to college, but
+I didn’t want to. [go to college]
+We need money for the flight and [money] to 
+pay for the hotel.
+Clause | Basic construction Conjunction | 
+Coordinating
+57
+Can soften orders and requests using ‘think’, 
+‘imagine’, ‘wonder’, etc.
+softening orders and requests with ‘I hope/ think/
+wonder’
+I wonder if you’d like to come for a walk. Do you 
+think you’ll be able to lend me some money?
+Clause | Reported speech and ideas 
+Conjunction | Coordinating Clause | 
+Dependent
+57
+Can use ‘due to’ and ‘owing to’ to express 
+causation and consequence.
+prepositions of reason and purpose: ‘due to’, 
+‘owing to’
+Due/Owing to the hot weather, the school is 
+closed today. The concert was cancelled due 
+to/owing to problems with the sound system.
+Preposition | Cause and result Clause | Result/
+cause
+57
+Can use nondefining (nonrestrictive) relative 
+clauses to add information.
+nondefining relative clauses for information
+My sister, who is married, lives in Prague. His 
+house, which is for sale now, is beautiful.
+We thought she would be killed.
+Clause | Relative Clause | Dependent
+57
+Can talk about past beliefs and intentions in 
+the passive.
+Past clause of belief/reporting + ‘would’/’was/
+were going to’ + passive infinitive
+I told you he wasn’t going to be elected.
+Clause | Reported speech and ideas Verb | 
+Tense Verb | Passive
+57
+Can use ‘so’ in sentencefinal positions as a 
+placeholder (substitute) for verbs and verb 
+phrases.
+‘so’ as a placeholder
+It was too expensive. - I told you so. John is from 
+Seattle. - I thought so.
+Adverb | Position Verb | Tags and question 
+forms Adverb | Conjunction and disjunction
+58
+Can use ‘should(n’t) have …’ to express 
+regrets, wishes, or disapproval about the past.
+past regrets with ‘should(n’t) have’ + past 
+participle
+Ishould have gone to bed earlier. You shouldn’t 
+have bought that house.
+Modal verb | Obligation Modal verb | Wishes 
+and intentions
+58
+Can make statements about appearance 
+using ‘seem/appear’ with verbs in the infinitive.
+‘seem/appear’ + ‘to’ + VPinf
+He seems to be quite rich. She appears to work 
+hard.
+Phrase | With infinitive
+58
+Can use a range of verbs in the past continuous 
+to refer to past plans and intentions.
+NP + ‘was intending/planning/hoping’ + ‘to’
++ VPinf
+I was planning to buy a car. I wasn’t intending to 
+talk about it, but I changed my mind.
+Verb | Tense
+58
+
+=== PDF PAGE 33 ===
+GSE Grammar Learning Objectives
+33
+Can express various degrees of likelihood 
+and possibility using complement clauses.
+‘It’s (un)certain/(im)probable/(im)possible/ 
+(un)likely’ (+ ‘that’) + complement clause
+It’s unlikely that they’ll come. 
+It’s possible I’m wrong.
+Clause | With ‘be’ 
+Clause | Dependent
+58
+Can describe hypothetical (counterfactual) 
+past results of a previous action or situation 
+using the third conditional.
+third (past) conditional
+I could have passed, if I’d studied harder. 
+If we’d left earlier, we wouldn’t have missed her.
+Clause | Conditional 
+Verb | Tense
+58
+Can use ‘for’ to introduce an infinitive
+clause with a different subject.
+clause with ‘is’ + for + VPinf
+The important thing is for you to arrive on 
+time. 
+My aim is for my children to go to university.
+Phrase | With infinitive 
+Clause | Dependent
+58
+
+=== PDF PAGE 34 ===
+GSE Grammar Learning Objectives
+34
+B2 (59-66)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use a range of modals with passive 
+infinitives referring to the present or future.
+modals + passive
+It could be done. It could be improved. The train 
+might be delayed.
+Modal verb | Likelihood Modal verb | Ability 
+Verb | Passive
+59
+Can refer to certainty and probability using
+‘certain/likely/due to’ with verb phrases.
+‘certain/likely/due’ + ‘to’ + VPinf
+He’s certain to pass the exam. The train is likely to 
+be late. When are they due to arrive?
+Phrase | With ‘be’ Phrase | With infinitive
+59
+Can o
+mit the relative pronoun in defining 
+(restrictive) relative clauses.
+omission of relative pronoun in defining/ 
+restrictive clause
+He’s the friend (who) I told you about. That’sthe 
+movie (that) I wanted to see.
+Clause | Relative
+59
+Can use ‘need’with the passive infinitive to 
+express necessity.
+‘need’ + passive infinitive
+The report needs to be completed this week. 
+Homework needs to be handed in today.
+Modal verb | Obligation Phrase | With 
+infinitive Verb | Passive
+59
+Can express alternative conditions with
+‘whether … or not’.
+‘whether + VP1 + ‘or’ VP2/’whether or not’
++VP
+Whether she likes it or not, she’s coming with us. 
+The show starts tomorrow, whether or not it rains.
+Conjunction | Coordinating Clause | 
+Conditional
+59
+Can describe beliefs and opinions using 
+verbs of judgement and evaluation in the 
+passive.
+‘it’s thought/believed/considered/etc. + that’ + 
+complement clause
+It’s believed that he died in Iraq. It’s expected 
+that students will graduate in three years.
+Verb | Passive Clause | Dependent Clause | 
+Reported speech and ideas
+59
+Can use clauses with ‘It’ + ‘be’ … to emphasise 
+the topic or main point.
+fronting: cleft sentences with ‘it + be’
+It’s the money that keeps me in this job. It was his 
+accent that made him hard to understand.
+Clause | Clefting and fronting Phrase | With 
+‘be’
+59
+Can use verb phrases with ‘to’+ infinitive as 
+subject and complement.
+VPinf as subject and complement
+My dream is to live in New York. The effect of the 
+drug was to give him a headache.
+Phrase | With infinitive
+59
+Can use clauses with ‘What ...’ to 
+emphasise the topic or main point.
+fronting: cleft sentences with ‘What ...’
+What we need now is a good night’s sleep. What I 
+said was that I don’t need your help.
+Clause | Clefting and fronting Clause | 
+Relative
+59
+Can soften orders and requests by using
+verbs like ‘thought’, ‘wondered’, etc. in the
+past tense.
+softening orders and requests with past
+tense
+I thought perhaps you could help me.
+We hoped you’d come to our party.
+I was wondering if you could get me a
+ticket for the concert?
+Verb | Tense
+59
+Can use ‘while’, ‘whereas’ and ‘whilst’ (Br
+Eng) to contrast and compare actions and
+situations.
+‘while/whilst/whereas’ for contrast
+You enjoy running, whereas I find it very
+boring.
+While(st) I sympathise with you, I can’t
+forget about what you did.
+Conjunction | Concession and contrast
+Clause | Comparison
+60
+
+=== PDF PAGE 35 ===
+GSE Grammar Learning Objectives
+35
+Can talk about past plans and intentions using 
+‘(not) meant/supposed to’ + infinitive.
+‘(not) meant/supposed to’ + infinitive
+It was meant to be fun. He wasn’t supposed to 
+do that.
+Verb | Passive Phrase | With infinitive
+60
+Can express prohibition in the present or future 
+with ‘forbid’ and ‘(not) allow’.
+‘forbid/not allow’ + person + ‘to’ + VPinf
+I forbid you to speak to him. We won’t be 
+allowed to take pictures.
+Phrase | With infinitive Verb | Passive
+60
+Can report orders, requests and advice with 
+infinitive clauses.
+reported orders/requests/advice with ‘to’ + 
+VPinf+ VPinf
+She told me not to do it. He warned us not to be 
+late. She encouraged him to study.
+Phrase | With infinitive Clause | Reported 
+speech and ideas
+60
+Can express negative purpose with ‘so as/ in 
+order not to’.
+so as/in order’ + ‘notto’+ VPinf for negative 
+purpose
+In order not to seem stupid, he didn’t say 
+anything. I came in very quietly, so as not to wake 
+anyone.
+Conjunction | Cause and result Phrase | With 
+infinitive Clause | Negation
+60
+Can correctly use defining (restrictive) and 
+nondefining (non- restrictive) relative clauses.
+defining (restrictive) vs. nondefining 
+(nonrestrictive) relative clauses
+I told my sister, who already knew what 
+happened. Tell only the people who need the 
+information.
+Clause | Relative
+60
+Can use the future continuous with reference 
+to actions in progress at a specific time in the 
+future.
+future continuous
+This time tomorrow I’ll be flying to Rio. I’llbe 
+driving home from work at 5 p.m. this evening.
+Verb | Tense Adverb | Time
+60
+Can use adverbials such as ‘however’,‘on 
+the other hand’, and ‘though’ to express 
+concession.
+concessive adverbials
+I don’t earn much - however, I have plenty of free 
+time. We’llget there quicker by train. On the 
+other hand, the bus is much cheaper.
+Conjunction | Concession and contrast Clause 
+| Dependent
+61
+Can make statements about appearance 
+using ‘seem/appear’ (+ ‘like/that’) with 
+complement clauses.
+‘seems/appears/looks’(+ ‘like/that’) + 
+complement clause
+It looks like he isn’t coming. It appears that John 
+has misunderstood.
+Clause | Dependent Clause | Reported 
+speech and ideas
+61
+Can construct phrases with ‘(not) worth ...’and 
+‘(no) point ...’to express the (lack of) usefulness 
+or value of an action or suggestion.
+expressing (lack of) use or value in an action with 
+‘(not) worth/(no) point (in)’ +
+VPgerund
+There’s no point in talking about it. It’s not worth 
+repairing such an old car.
+Phrase | With gerund (ing)
+61
+Can emphasise a statement by adding ‘do’ or 
+‘did’.
+additional auxiliary ‘do’or ‘did’for stress or 
+emphasis
+He does look nice in his new suit. I didn’t get to 
+see John, but I did see his mother.
+Verb | Auxiliary
+61
+Can express past intentions and plans with
+‘thinking of’ and verbs in the gerund.
+NP + ‘was/were thinking of’ + VPgerund
+We were thinking of selling the house. Were you 
+thinking of driving there?
+Phrase | With gerund (ing) Preposition | 
+Complementiser Verb | Tense
+61
+Can use nondefining (nonrestrictive) relative 
+clauses to make a comment.
+nondefining relative clause for comment
+He was late, which was unusual. It’s raining, 
+which is really annoying.
+Clause | Relative
+61
+Can describe past beliefs and opinions
+using ‘it was’ + passive forms of verbs of
+judgement and evaluation.
+it’s/it was thought/believed/considered/
+etc.(that)’ + complement clause
+It was expected that women would get
+married in their 20s.
+It was thought that all the records had
+been destroyed.
+Verb | Passive
+Clause | Dependent
+Verb | Tense
+61
+Can speak about information acquired
+from others using ‘hear’ + ‘(that +)’
+complement clause.
+‘hear’ + ‘(that)’ + complement clause
+I hear that John and Susie are getting
+married.
+I’ve heard that Martin’s lost his job.
+Clause | Reported speech and ideas
+Conjunction | Coordinating
+62
+
+=== PDF PAGE 36 ===
+GSE Grammar Learning Objectives
+36
+Can use ‘ought(n’t) to’ to offer or ask for 
+advice or suggestions.
+‘ought(n’t)’ to for advice or suggestions
+You ought to go to a doctor. He oughtn’t to drink 
+so much. Where ought we to go?
+Modal verb | Obligation Phrase | With infinitive
+62
+Can use ‘as soon as’ with the past simple and 
+past perfect.
+‘as soon as’ + past simple + past perfect
+I handed the work in as soon as I had finished it. As 
+soon as she’d eaten, she fell asleep.
+Conjunction | Time Verb | Tense
+62
+Can use the past perfect continuous in a 
+range of common situations.
+past perfect continuous
+I’d been living in London for three years when I 
+met her. How long had you been waiting when I 
+arrived?
+Verb | Tense Verb | Auxiliary
+62
+Can use a range of common reporting verbs 
+with ‘that’ + complement clause.
+reporting verbs + ‘that’ + complement clause
+He suggested that we come back later. She 
+warned me that she would have to tell her father.
+Clause | Reported speech and ideas 
+Conjunction | Coordinating Clause | Dependent
+62
+Can use ‘I wish/if only …’ to express regrets 
+and wishes about the past.
+past regrets with ‘I wish/if only’
+If only I’d worked harder. I wish we’d bought that 
+house.
+Modal verb | Wishes and intentions Verb | Tense
+62
+Can make complex comparisons between 
+verb/noun phrases.
+VP1/NP1 + comparative adjective + ‘than’ +
+VP2/NP1
+Being happy is more important than making 
+money. The loss of his job made a bigger 
+difference than the end of his marriage.
+Adjective | Comparison Conjunction | 
+Coordinating
+62
+Can use ‘need’ with verbs in the gerund to 
+express necessity.
+‘need’ + VPgerund
+My hair needs cutting. The children need picking 
+up.
+Modal verb | Obligation Phrase | With gerund 
+(ing)
+63
+Can use the past perfect with adverbial 
+clauses of time.
+past perfect with adverbial clauses of time
+I remembered it after I’d already left home. By 
+the time I got there she’d gone.
+Clause | Time Verb | Tense Adverb | Time
+63
+Can use the past perfect passive.
+past perfect passive
+The goods had already been stolen. It had all 
+been said before. The show had been cancelled.
+Verb | Passive Verb | Tense
+64
+Can use noun phrases in place of verb phrases 
+in formal written language.
+noun phrases to verb phrases (nominalisation)
+The weather has changed, which surprised us. 
+vs. The change in the weather surprised us. The 
+money disappeared, which puzzled Marian. vs. 
+Marian was puzzled by the disappearance of the 
+money.
+Clause | Basic construction hrase | Clefting and 
+fronting
+64
+Can use gerunds in the passive form as 
+complement.
+NP + VP +VPgerund (passive)
+My mother loves being taken out. Children enjoy 
+being read to.
+Phrase | With gerund (ing) Verb | Passive
+64
+Can use a range of complex conjunctions in 
+conditional statements (all three types).
+clause1 (action or event) + ‘on condition that/as 
+long as/ providing that/provided that’ + clause 
+2 (condition)
+on condition that as long as providing/provided 
+that
+Clause | Conditional Conjunction | Cause and 
+result
+64
+Can use ‘will’ + infinitive for orders and 
+instructions.
+‘he/you/they will’ + VPinf for instructions
+You will do as you are told. They will wait till they’re 
+called.
+Modal verb | Obligation Verb | Imperative Verb 
+| Tense
+65
+Can make complex comparisons between 
+clauses.
+clause1 + comparative adjective + ‘than’ + 
+clause2
+There’s more work to do than we have time for. 
+She was more concerned with getting the job 
+done than with doing it well.
+Adjective | Comparison Conjunction | 
+Coordinating
+66
+
+=== PDF PAGE 37 ===
+GSE Grammar Learning Objectives
+37
+Can express purpose using ‘soas to’ with 
+infinitive clauses.
+‘so as to’ + VPinf for purpose
+I got up at 6:00 so as to be on time. So as to 
+keep fit, I go for a run every morning.
+Conjunction | Cause and result Phrase | With 
+infinitive
+66
+Can express regrets and preferences with 
+‘would rather/it’s time’ with past tense 
+clauses.
+‘would rather/it’stime’ + VP (past)
+I’d rather we stayed in tonight. I’d rather we went 
+to the cinema. It’s time we left.
+Modal verb | Wishes and intentions
+66
+Can use ‘as if/as though’ with the present 
+simple to refer to what appears to be the 
+case.
+‘as if/as though’ + complement clause 
+(present; equivalent to first conditional)
+It looks as though they’re not coming.
+Clause | Conditional Verb | Tense
+66
+Can omit subject + ‘be’ after ‘if’ in fixed 
+expressions.
+‘if’ + adjective/NP/PP with omission of pronoun 
++ ‘be’
+if necessary, if any, if anything, if in doubt
+Clause | Conditional Phrase | Basic construction
+66
+Can use ‘shall’ + infinitive for formal first- 
+person statements about the future.
+‘I/we shall’ + VPinf
+I shall do my best.
+Modal verb | Wishes and intentions Verb | Tense
+66
+Can use the future perfect with reference to 
+actions to be completed by a specific time in 
+the future.
+future perfect
+I’ll have finished it by Saturday. The match won’t 
+have finished by 8 p.m.
+Verb | Tense Adverb | Time Preposition | Time
+66
+Can use adverbial phrases to make 
+comments.
+adverbial phrases for comment
+Practically speaking … At the end of the day... 
+Taking the long view…
+Adverb | Modifier Phrase | Clefting and fronting
+66
+B2+ (59-66)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use the future perfect passive.
+future perfect passive
+The job will have been completed by next 
+month. The package will have been delivered 
+before you get home.
+Verb | Passive Verb | Tense
+67
+Can use ‘it is/was believed/reported that’ + VP 
+to report beliefs, reportes, rumours, etc.
+passive reporting structures: ‘it’ + ‘be’ + 
+‘believed/reported that’ + VP
+It’s now believed that over 300 people died in 
+the fire. It was reported that the army had taken 
+control of the capital.
+Clause | Reported speech and ideas
+67
+Can describe hypothetical current results of a 
+past action or situation using ‘would …’ with the 
+third conditional.
+‘if’ + past perfect, hypothetical with ‘would’
++ VPinf (present)
+If I’d worked harder at school, I’d have a better 
+job now. She would be here now if anyone had 
+told her about the party.
+Clause | Conditional Clause | Result/cause Verb 
+| Tense
+67
+Can use initial ‘No matter’ with relative pronouns 
+for emphatic statements about the present 
+and near future.
+‘Nomatter’ + relative pronoun + clause
+No matter what you say, I’m coming. No matter 
+how much it costs, we’re buying it.
+Clause | Clefting and fronting Clause | Relative
+68
+Can express beliefs and opinions with ‘is/ are/
+was/were’ + ‘thought/believed to…’.
+NP + ‘be’ + ‘thought/considered/believed/ etc. 
+to’ + VPinf
+He’s thought to be about 50. Everyone was 
+believed to have died in the fire.
+Verb | Passive Phrase | With infinitive Clause | 
+Reported speech and ideas
+69
+
+=== PDF PAGE 38 ===
+GSE Grammar Learning Objectives
+38
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can use ‘should’ in hypothetical statements 
+about the present and near future with 
+inversion and omission of ‘if’.
+‘should’ + NP + VP. ‘would’ clause (second 
+conditional)
+Should you wish to invest in the business, please 
+contact our office.
+Clause | Conditional Verb | Tags and question 
+forms
+70
+Can use ‘as if/as though’ with the past simple 
+to refer to hypothetical or counterfactual 
+circumstances.
+‘asif/as though’ + complement clause (past 
+simple; equivalent to second conditional)
+‘wh’ word + ‘is/was it’ + complement clause
+You talk as though we didn’t know each other. 
+What was it you wanted?
+Clause | Conditional Verb | Tense
+71
+Can ask questions with ‘is it/was it’ and 
+complement clauses.
+(question)
+Where is it that you were brought up?
+Phrase | Clefting and fronting Clause | Relative
+71
+Can use a range of cleft sentences in the 
+present, past and future.
+cleft sentences (fronting)
+The fact is that we can’t go. What we’ll do is 
+call the airport. What we did in the end was to 
+apologise.
+Phrase | Clefting and fronting
+71
+Can add information using ‘not only … but also 
+…’
+‘not only’ + ‘but also’
+The information is not only poorly presented, 
+but also inaccurate.
+Clause | Result/cause
+71
+Can order a sequence of events using an 
+appended clause with present participle or
+‘having’ + past participle.
+reduced adverbial clauses with present participle 
+or ‘having’ + past participle
+Walking into the room, I bumped into Hiro. 
+Having bought the tickets, we went for a 
+coffee.
+Clause | Appended (participle) Clause | 
+Dependent
+71
+Can describe present or future outcomes of a 
+hypothetical situation using initial ‘only if’ with 
+inversion of subject and object.
+‘Only if’ + first/second conditional with inversion
+Only if you pay now will you avoid prosecution. 
+Only if the weather conditions became much 
+worse would they turn back.
+Clause | Conditional Clause | Clefting and 
+fronting
+71
+Can use ‘one’s’ as an impersonal possessive 
+adjective.
+‘one’s’ as generic possessive adjective
+One should always do one’s best.
+Pronoun | Generic/impersonal Noun | Possessive 
+(genitive)
+71
+Can use ‘on the point of’ (Br Eng) to talk about 
+imminent events in the present and past.
+immediate future with ‘on the point of’ + 
+VPgerund
+She’s on the point of leaving her job. We were 
+on the point of going out when Jane called.
+Adverb | Time Phrase | With gerund (ing)
+71
+Can use ‘as if/as though’ with the past perfect 
+to refer to hypothetical (counterfactual) 
+circumstances in the past.
+‘as if/as though’ + complement clause (past 
+perfect; equivalent to third conditional)
+The house looked as though no one had lived 
+there for years.
+Clause | Conditional Conjunction | Coordinating 
+Verb | Tense
+71
+Can use ‘since …’ to talk about reasons, causes 
+and explanations.
+‘since’ (=because) + subclause
+Since you don’t need your car today, can I 
+borrow it? I assumed that you were out, since 
+the lights were off.
+Clause | Result/cause Conjunction | Cause and 
+result
+72
+Can express impersonal belief and opinion 
+using ‘thought/believed to …’
+‘thought/considered/believed/etc.’ +’ to’
++ VPinf
+Leonardo is often thought to be the greatest 
+artist who ever lived. This is believed to be the 
+most valuable diamond in the world.
+Phrase | With infinitive Verb | Passive
+73
+Can invert subject and verb after initial complex 
+adverbials.
+inversion with negative adverbials
+In no way do I approve of the way he talked
+to you.
+Under no circumstances should you
+approach him.
+Clause | Clefting and fronting
+74
+
+=== PDF PAGE 39 ===
+GSE Grammar Learning Objectives
+39
+C1 (76-84)
+Learning Objective
+Structure
+Example
+Grammatical Categories
+GSE
+Can add information using appended clauses 
+with ‘being’ and/or passive participles.
+appended participle clauses (present and 
+passive)
+Being a student, he gets a discount. Given 
+enough time, she’ll do it eventually.
+Clause | Appended (participle) Clause | 
+Dependent Clause | Result/cause
+76
+Can replace past conditionals with ‘but for’ in 
+formal statements.
+‘but for’ + NP, ‘would have’ clause (third 
+conditional)
+But for their support, I would never have 
+succeeded. He would have died but for the 
+doctor’s prompt action.
+Clause | Conditional Preposition | Logical
+77
+Can make very polite requests with ‘would you 
+be so kind as to’+ verbs in the infinitive.
+‘Wouldyou be so kind as to’ + VPinf ...?
+Would you be so kind as to lend me some 
+money?
+Modal verb | Requests, offers and 
+permission Phrase | With infinitive
+80
+
+=== PDF PAGE 40 ===
+40
+GSE Learning Objectives Grammar Adult Learners © Pearson Education Ltd 2023
+References
+Bonner, M., Fuchs, M., Maurer, J., Schoenberg, I., and Westheimer, M. (2012) Focus on Grammar (1-5). 
+Pearson Education, White Plains, N.Y., USA.
+Council of Europe (2009) Relating Language Examinations to the Common European Framework of Reference 
+for Languages: Learning, Teaching, Assessment (CEFR): A Manual. Strasbourg: Council of Europe; Language 
+Policy Division. Available on http://www.coe.int/t/dg4/linguistic/Source/ ManualRevision-proofread-FINAL_
+en.doc.
+van Ek, J. and Trim, J (1990) Waystage. Strasbourg, Council of Europe, and Cambridge University Press. 
+Available on https://www.coe.int/t/dg4/linguistic/Waystage_CUP.pdf
+van Ek, J. and Trim, J (1990) Threshold. Strasbourg, Council of Europe, and Cambridge University Press. 
+Available on https://www.coe.int/t/dg4/linguistic/Threshold-Level_CUP.pdf
+van Ek, J. and Trim, J (2001) Vantage. Strasbourg, Council of Europe, and Cambridge University Press. 
+Available on https://www.coe.int/t/dg4/linguistic/Vantage_CUP.pdf
+Foley, M. and Hall, D. (2012). MyGrammarLab. Pearson Education, Harlow, Essex, UK.
+Trim, J. (2009) Breakthrough. Strasbourg, Council of Europe. Available on www.ealta.eu.org
+
+=== PDF PAGE 41 ===
+All you need to personalise learning.
+The GSE Teacher Toolkit
+Help your learners unlock their full potential with personalised learning 
+paths created using the Global Scale
+of English Teacher Toolkit.
+Access the GSE Teacher Toolkit and learn more about the Global Scale 
+of English at pearsonenglish.com/gse
+The free online tool includes:
+Searchable databases of learning objectives, 
+vocabulary and grammar
+Downloadable search results for improved 
+reporting
+Text analyzer to measure reading difficulty

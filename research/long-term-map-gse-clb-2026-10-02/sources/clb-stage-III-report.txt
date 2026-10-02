@@ -1,0 +1,2350 @@
+=== PDF PAGE 1 ===
+Alignment of the 
+Canadian Language 
+Benchmarks to the 
+Global Scale of English:
+Stage III Advanced
+November 2024
+
+=== PDF PAGE 2 ===
+Contents
+About the GSE...........................................................................3
+About Canadian Language Benchmarks.....5
+Alignment Methodology and Results..............7
+Stage III – Benchmark 9..................................................8
+Listening............................................................................................8
+Speaking...........................................................................................9
+Reading..........................................................................................11
+Writing.............................................................................................13
+Stage III – Benchmark 10..........................................15
+Listening........................................................................................15
+Speaking.......................................................................................16
+Reading..........................................................................................18
+Writing.............................................................................................20
+Stage III – Benchmark 11..........................................22
+Listening........................................................................................22
+Speaking.......................................................................................23
+Reading..........................................................................................25
+Writing.............................................................................................26
+Stage III – Benchmark 12..........................................28
+Listening........................................................................................28
+Speaking.......................................................................................29
+Reading..........................................................................................31
+Writing.............................................................................................32
+References................................................................................34
+
+=== PDF PAGE 3 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  3
+About the GSE
+Pearson developed the Global Scale of English (GSE) to provide instructors and learners with a more detailed understanding 
+of English language proficiency. It has been designed to build learners’ confidence by revealing exactly where they are on their 
+learning journey and setting personalised goals to help them progress.
+The GSE is an ecosystem that underpins the Pearson English Journey:
+	• GSE Scale: a proficiency scale from 10 to 90.
+	• GSE Learning Objectives: descriptions of what learners can do at each level of proficiency in speaking, listening,  
+reading, and writing.
+	• Courseware: all of Pearson’s English language learning courseware is developed using the GSE Learning Objectives.
+	• Assessment: institutions can develop their own assessment materials using the GSE Learning Objectives and Assessment 
+Frameworks or choose one of Pearson’s digital assessments which report on the GSE.
+The GSE is the result of many years of research with more than 6,000 teachers from over 50 countries. It serves as a standard 
+against which English language courses and assessments worldwide can be benchmarked.
+The GSE has been psychometrically aligned to the Common European Framework of Reference or CEFR (see De Jong, Mayor, & 
+Hayes, 2016). It complements and extends the CEFR by adding an extra layer of detail to the CEFR levels and providing thousands 
+of additional learning objectives. This extra information helps learners understand where they are now and offers a step-by-step 
+guide to where they want to go next. Using the GSE, teachers can match a student to course materials to suit their exact level 
+and learning goals.
+
+=== PDF PAGE 4 ===
+4  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+CEFR level
+GSE Scale
+Below A1
+10–21
+A1
+22–29
+A2
+30–35
+A2+ (‘plus level’)
+36–42
+B1
+43–50
+B1+ (‘plus level’)
+51–58
+B2
+59–66
+B2+ (‘plus level’)
+67–75
+C1
+76–84
+C2
+85–90
+Table 1: The relationship between the GSE and the CEFR
+To address the specific needs of learners studying English 
+for different purposes, GSE Learning Objectives have been 
+developed for five different learner audiences: 
+	• adult: adults studying on a general English course 
+	• academic: adults studying academic English 
+	• professional: adults studying English for the workplace 
+	• young learner: English language learners aged 6–14
+	• pre-primary: English language learners aged 3–5
+For more information:
+pearson.com/languages/why-pearson/ 
+the-global-scale-of-english
+
+=== PDF PAGE 5 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  5
+About Canadian Language Benchmarks
+For the purposes of this alignment, we worked with the 2012 edition of Canadian Language Benchmarks: English as a Second 
+Language for Adults. The Canadian Language Benchmarks (CLB) are written as 12 benchmarks along a continuum from basic to 
+advanced. These 12 benchmarks are then organised into three stages, each associated with a degree of complexity and demand.
+This report looks at the four benchmarks in Stage III – Advanced Language Ability: 
+“Advanced language ability encompasses abilities required to communicate effectively, 
+appropriately, accurately and fluently about most topics in a wide range of contexts 
+and situations, from predictable to unfamiliar, from general to professionally complex 
+and from specific to nuanced, in communicatively demanding contexts. Learners at this 
+stage have a sense of purpose and audience when communicating (including distance, 
+politeness and formality factors, appropriate register and style, suitable volume or length 
+of communication, accuracy and coherence of discourse, vocabulary range and precision). 
+At this stage, communicating can involve using language within high-stakes or high- risk 
+social, academic and work-related contexts, and in situations in which features of the 
+communication (such as diplomacy, tact, precision) can have significant consequences. In 
+the CLB, these are referred to as demanding contexts of language use” (CLB, p10)
+
+=== PDF PAGE 6 ===
+6  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Advanced Language Ability
+Benchmark and 
+Ability Level
+Listening
+Speaking
+Reading
+Writing
+CLB 9: Initial
+CLB 10: Developing
+CLB 11: Adequate
+CLB 12: Fluent
+Interpreting complex 
+spoken communication 
+in demanding contexts of 
+language use within the 
+four Competency Areas.
+Creating complex spoken 
+communication in 
+demanding contexts of 
+language use within the 
+four Competency Areas.
+Interpreting complex 
+written communication in 
+demanding contexts of 
+language use within the 
+four Competency Areas.
+Creating complex written 
+communication in 
+demanding contexts of 
+language use within the 
+four Competency Areas.
+For each language skill, there are four broad representative competency areas: Interacting with others, Instructions,  
+Getting things done, Sharing information.
+Table 2: Stage III – Advanced Language Ability (CLB, p11)
+
+=== PDF PAGE 7 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  7
+Alignment Methodology 
+and Results
+Each Canadian Language Benchmark 
+competency statement within each 
+competency area was aligned to one or 
+more GSE Learning Objectives. The profile 
+of ability, sample indicators of ability and 
+sample tasks were also consulted during the 
+alignment. Given that the target audience 
+for CLBs is adult learners, GSE Learning 
+Objectives for Adults, Professionals and 
+Academic were used.
+The results of the GSE alignment show 
+consistency with the CEFR-CLB alignment 
+carried out by North and Piccardo in 2018.
+Stage
+CLB level
+GSE  
+range
+CEFR-CLB 
+alignment  
+(North & Piccardo)
+I: Basic
+1
+10-19
+<A1
+2
+20-27
+A1
+3
+28-34
+A1/A2
+4
+35-41
+A2/A2+
+II: Intermediate
+5
+42-46
+B1
+6
+47-52
+B1/B1+
+7
+53-58
+B1+
+8
+59-66
+B2
+III: Advanced
+9
+67-72
+B2+
+10
+73-78
+C1
+11
+79-84
+C1
+12
+85-90
+C2
+Table 3: CLB-GSE alignment compared to CLB-CEFR
+
+=== PDF PAGE 8 ===
+8  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 9
+Listening
+Stage III – Benchmark 9
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand main intent and some 
+implied meanings in complex 
+communication between speakers 
+with varying roles and relationships. 
+Can follow a discussion in which speakers use some idiomatic language.
+68
+B2+ (67-75)
+Can understand when something is being said ironically in a casual 
+conversation.
+71
+B2+ (67-75)
+Can infer attitude and mood in discussions by using contextual, 
+grammatical and lexical cues.
+71
+B2+ (67-75)
+Can recognise repetition of ideas through substitution, paraphrasing, etc. 
+in complex arguments.
+71
+B2+ (67-75)
+II. Comprehending instructions 
+Understand complex multistep 
+directions and instructions for 
+familiar procedures. 
+Can extract specific details from poor quality public announcements, e.g., 
+in a station, sports stadium, etc.
+69
+B2+ (67-75)
+III. Getting things done 
+Understand complex and extended 
+communication intended to 
+influence, persuade or inform 
+significant decisions (such 
+as proposals, suggestions or 
+recommendations for solving 
+problems). 
+Can recognise that ideas in a linguistically complex presentation or lecture 
+contrast when signalled by discourse markers.
+65
+B2 (59-66)
+Can recognise the tone and intended audience of a formal presentation.
+66
+B2 (59-66)
+Can recognise indirect disagreement expressed through modifiers used 
+during a negotiation.
+67
+B2+ (67-75)
+Can recognise that ideas in a linguistically complex presentation or lecture 
+are similar when signalled by discourse markers.
+68
+B2+ (67-75)
+Can follow a wide range of factual and creative texts and summarise 
+themes and opinions.
+70
+B2+ (67-75)
+Can understand the main points of complex academic/professional 
+presentations.
+72
+B2+ (67-75)
+Can distinguish between the main ideas and related ideas in a linguistically 
+complex presentation or lecture.
+73
+B2+ (67-75)
+Can evaluate hypothetical proposals in a presentation or lecture.
+73
+B2+ (67-75)
+Can evaluate the strength of a speaker’s argument in a linguistically 
+complex presentation or discussion.
+74
+B2+ (67-75)
+Can evaluate the effectiveness of a selected speaking style in a 
+presentation or lecture to support a point of view.
+74
+B2+ (67-75)
+IV. Comprehending information 
+Understand complex, extended 
+discussions between several 
+speakers. 
+Can understand summaries of data or research used to support an 
+extended argument.
+69
+B2+ (67-75)
+Can identify personal bias in a presentation or lecture.
+69
+B2+ (67-75)
+Can identify key information in linguistically complex conversations at 
+natural speed.
+71
+B2+ (67-75)
+
+=== PDF PAGE 9 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  9
+Stage III – Benchmark 9
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Manage a range of personal and 
+business interactions that involve 
+needs, feelings and attitudes (such 
+as respect and indifference). 
+Can adjust to the changes of direction, style and emphasis normally found 
+in conversation.
+67
+B2+ (67-75)
+Can initiate, maintain and end discourse naturally with effective turn-
+taking.
+68
+B2+ (67-75)
+Can comment tactfully on other people’s contributions to a discussion.
+69
+B2+ (67-75)
+Can express an attitude, opinion or idea using idiomatic language.
+69
+B2+ (67-75)
+Can shift between formal and informal registers as and when required.
+72
+B2+ (67-75)
+Co-facilitate or contribute to 
+discussions or debates in small 
+formal groups. 
+Can close a meeting or discussion using appropriate language.
+63
+B2 (59-66)
+Can politely intervene to prevent someone from dominating a group 
+discussion.
+68
+B2+ (67-75)
+Can encourage agreement during group discussions by indicating the 
+areas where people have the same opinion.
+68
+B2+ (67-75)
+Can lead a discussion so that the group is able to make a decision.
+69
+B2+ (67-75)
+Can politely respond to interruptions during a discussion and return to the 
+main topic.
+69
+B2+ (67-75)
+Can politely bring a discussion back to the main point when the 
+participants have gone off topic.
+70
+B2+ (67-75)
+Can redirect conversation in a meeting to include all attendees.
+70
+B2+ (67-75)
+Can negotiate different cultural perspectives in a discussion.
+71
+B2+ (67-75)
+II. Giving instructions
+Give complex instructions for some 
+technical and nontechnical tasks, 
+procedures and processes.
+Can make a complicated issue easier to understand by presenting the 
+components of the argument separately.
+72
+B2+ (67-75)
+III. Getting things done
+Present formal proposals to 
+address concerns or deal with 
+problems. 
+Can outline the main points in a disagreement with reasonable precision 
+and explain the positions of the parties involved.
+65
+B2 (59-66)
+Can, by asking questions, identify areas of common ground and invite each 
+side to highlight possible solutions.
+65
+B2 (59-66)
+Can summarise the statements made by the two sides, highlighting areas 
+of agreement and obstacles to agreement.
+66
+B2 (59-66)
+Can speculate about the causes of an issue or problem.
+67
+B2+ (67-75)
+Can precisely express the potential consequences of actions or events.
+69
+B2+ (67-75)
+Can compare the advantages and disadvantages of possible approaches 
+and solutions to an issue or problem.
+70
+B2+ (67-75)
+
+=== PDF PAGE 10 ===
+10  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 9
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Present formal proposals to 
+address concerns or deal with 
+problems.
+(cont.)
+Can present their ideas with precision and respond to complex lines of 
+argument convincingly.
+70
+B2+ (67-75)
+Can present a counter-argument to an opinion offered during a 
+negotiation.
+70
+B2+ (67-75)
+Can describe a business proposal in detail.
+71
+B2+ (67-75)
+Can negotiate a solution to a dispute (e.g. an undeserved traffic ticket, 
+blame for an accident).
+73
+B2+ (67-75)
+IV. Sharing information
+Ask for, give and discuss detailed 
+information and opinions to 
+coordinate teamwork assignments, 
+one-on-one and in business 
+meetings, discussions or debates.
+Can help define goals for teamwork and compare options for how to 
+achieve them.
+64
+B2 (59-66)
+Can describe goals using a range of expressions.
+65
+B2 (59-66)
+Can give a detailed update on a work-related project.
+67
+B2+ (67-75)
+Can describe the results and consequences of a specific action taken by 
+an employee.
+67
+B2+ (67-75)
+Can highlight the main issue that needs to be resolved in a complex task 
+and the important aspects that need to be taken into account.
+67
+B2+ (67-75)
+Can express varying degrees of certainty about a recommended course of 
+action during a discussion.
+68
+B2+ (67-75)
+Give demonstrations, briefings, 
+oral reports or position papers on 
+familiar or researched topics. 
+Can express ideas in a discussion or presentation using an appropriate 
+tone and register.
+65
+B2 (59-66)
+Can respond to follow-up questions at a presentation.
+67
+B2+ (67-75)
+Can link a logical series of ideas leading to a suggested conclusion in a 
+presentation.
+68
+B2+ (67-75)
+Can present information related to the business in a formal discussion.
+68
+B2+ (67-75)
+Can give a presentation about a product or service offered by a company 
+or institution.
+68
+B2+ (67-75)
+Can justify points made during a presentation by referring to information in 
+graphs and charts.
+68
+B2+ (67-75)
+Can talk about trends in detail.
+69
+B2+ (67-75)
+Can compare and evaluate different ideas using a range of linguistic 
+devices.
+70
+B2+ (67-75)
+Can give clear presentations highlighting significant points with relevant 
+supporting detail.
+70
+B2+ (67-75)
+Can give well-structured, detailed presentations on a wide range of familiar 
+subjects.
+71
+B2+ (67-75)
+Can use a variety of linking words efficiently to mark clearly the 
+relationships between ideas.
+71
+B2+ (67-75)
+
+=== PDF PAGE 11 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  11
+Stage III – Benchmark 9
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand complex written 
+communication (such as editorials, 
+letters to the editor, personal 
+essays and fiction) conveying 
+general opinions and points of view. 
+Can critically evaluate the effectiveness of a simple discursive essay.
+63
+B2 (59-66)
+Can critically evaluate the effectiveness of a simple argumentative essay.
+66
+B2 (59-66)
+Can understand differences and similarities between points of view in 
+extended texts.
+67
+B2+ (67-75)
+Can identify different styles, genres, and registers in written discourse.
+67
+B2+ (67-75)
+Can identify the main topic and related ideas in a linguistically complex 
+text.
+68
+B2+ (67-75)
+Can understand the positive and negative connotations of words that have 
+similar meanings.
+68
+B2+ (67-75)
+Can understand complex, detailed correspondence, with occasional 
+support from a dictionary.
+70
+B2+ (67-75)
+Can understand inferred meaning in formal structured text.
+70
+B2+ (67-75)
+Can distinguish between fact and opinion in complex formal contexts.
+71
+B2+ (67-75)
+Can identify relevant articles and reports on a range of professional topics.
+71
+B2+ (67-75)
+Can understand inferred meaning in narratives.
+73*
+B2+ (67-75)
+II. Comprehending instructions 
+Understand formal instructions 
+for familiar procedures in complex 
+texts containing advisories, 
+recommendations, policies and 
+regulations. 
+Can understand the details of long complex instructions in their field, 
+rereading as necessary.
+68
+B2+ (67-75)
+Can understand complex technical information such as operating 
+instructions, specifications for familiar products and services.
+68
+B2+ (67-75)
+Can understand advice given in a linguistically complex text.
+69
+B2+ (67-75)
+III. Getting things done 
+Obtain and accurately interpret 
+information from complex texts to 
+inform significant decisions. 
+Can infer meaning from contextual clues in an official document or report.
+68
+B2+ (67-75)
+Can quickly scan long, complex texts for key information.
+69
+B2+ (67-75)
+Can extract key details from a complex business report in their field.
+69
+B2+ (67-75)
+Can understand a complex form for company-offered services (e.g. 
+medical insurance).
+71
+B2+ (67-75)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 12 ===
+12  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 9
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand the organization, 
+underlying structure and 
+development of ideas in complex 
+texts. 
+Can infer what will come next in an unstructured text by using contextual, 
+grammatical and lexical cues.
+68
+B2+ (67-75)
+Can recognise common discourse markers that convey emphasis in a 
+linguistically complex text.
+68
+B2+ (67-75)
+Can identify key information in a linguistically complex text.
+69
+B2+ (67-75)
+Can guess the meaning of an unfamiliar word from context in a 
+linguistically complex text.
+70
+B2+ (67-75)
+Can extract key details from a scientific article.
+70
+B2+ (67-75)
+Can distinguish between the main idea and related ideas in a linguistically 
+complex academic text.
+70
+B2+ (67-75)
+Can follow the development of a central theme to support a specific 
+conclusion in an academic text.
+72
+B2+ (67-75)
+Can understand linguistically complex texts in their field.
+72
+B2+ (67-75)
+Interpret information contained in 
+complex formatted texts (such as 
+charts, graphs and diagrams). 
+Can synthesise information from different sources in order to give a 
+written or oral summary.
+69
+B2+ (67-75)
+Can understand details of the use of numerical data in charts and graphs 
+in a linguistically complex academic text.
+73
+B2+ (67-75)
+Conduct a complex search of 
+online reference sources to 
+research a defined topic that is 
+limited in scope. 
+Can use a variety of reference materials to check factual information 
+quickly and efficiently.
+69
+B2+ (67-75)
+Can use a synopsis to identify where specific information can be located in 
+a long text.
+69
+B2+ (67-75)
+
+=== PDF PAGE 13 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  13
+Stage III – Benchmark 9
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey a range of personal and 
+business messages in semi-formal 
+or formal correspondence with 
+a sense of audience, formality 
+and language appropriate to the 
+occasion, intent and context. 
+Can write about feelings and the personal significance of experiences in 
+detail.
+67
+B2+ (67-75)
+Can write clear and precise emails intended to create rapport and put the 
+addressee at ease.
+68
+B2+ (67-75)
+Can comment in writing on work-related news and events in some detail.
+69
+B2+ (67-75)
+Can express the same idea with a different level of formality appropriate to 
+the audience.
+70
+B2+ (67-75)
+Can convey information and ideas on abstract and concrete topics.
+70
+B2+ (67-75)
+II. Reproducing information
+Reduce complex information 
+and ideas from multiple sources 
+as functional notes, outlines or 
+summaries for personal use or for 
+defined audiences. 
+Can synthesise and evaluate familiar information and arguments from a 
+number of sources.
+67
+B2+ (67-75)
+Can write an effective and informative summary.
+67
+B2+ (67-75)
+Can take notes while researching an unfamiliar topic.
+68
+B2+ (67-75)
+Can summarise sources and data appropriately.
+68
+B2+ (67-75)
+Can summarise relevant data or research in support of an argument.
+69
+B2+ (67-75)
+Can make a specific, complex piece of information in their field clearer and 
+more explicit for others by paraphrasing it in simpler language.
+70
+B2+ (67-75)
+Can write a report on an academic subject.
+71
+B2+ (67-75)
+Can make a complicated issue easier to understand by presenting the 
+components of the argument separately.
+72
+B2+ (67-75)
+Can write detailed minutes of a meeting.
+73
+B2+ (67-75)
+III. Getting things done
+Write business or service 
+correspondence for a broad range 
+of purposes (such as making 
+and responding to requests for 
+information, services or products). 
+Can write a forceful but polite letter of complaint, including supporting 
+details and a statement of the desired outcome.
+67
+B2+ (67-75)
+Can write a factual comparison of products and services from different 
+companies.
+67
+B2+ (67-75)
+Can write a detailed list of an employee’s strengths and weaknesses.
+67
+B2+ (67-75)
+Can write a plan of action detailing a problem, how it will be fixed, and by 
+when.
+67
+B2+ (67-75)
+Can seek confirmation of information and ideas on abstract and concrete 
+topics.
+68
+B2+ (67-75)
+Can deal with misunderstandings and unexpected problems that arise in 
+online collaborative or transactional exchanges by responding politely and 
+appropriately in order to help resolve the issue.
+68
+B2+ (67-75)
+Can write a detailed report of work-related events.
+69
+B2+ (67-75)
+Can write work-related materials using persuasive language.
+72
+B2+ (67-75)
+
+=== PDF PAGE 14 ===
+14  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 9
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Write short reports and 
+memos to convey suggestions, 
+recommendations, requests and 
+updates. 
+Can respond in writing to other people’s arguments in an appropriate style.
+68
+B2+ (67-75)
+Can link a logical series of ideas leading to a suggested conclusion in a 
+written report.
+68
+B2+ (67-75)
+Can write a detailed work-related report outlining issues and problems.
+69
+B2+ (67-75)
+Can respond in writing to a request for a detailed status update on a 
+project.
+69
+B2+ (67-75)
+Can write a report summarising business plans and strategies.
+69
+B2+ (67-75)
+Can summarise findings in a work-related report using appropriate 
+language and style.
+69
+B2+ (67-75)
+Can write a structured report analysing advantages and disadvantages of a 
+situation and recommending action.
+70
+B2+ (67-75)
+Can write a detailed structured report on work-related topics.
+70
+B2+ (67-75)
+Can write a report explaining in detail a work-related problem, the actions 
+taken, and the results of those actions.
+71
+B2+ (67-75)
+Complete extensive complex 
+forms and documents with pre-set 
+formats.
+Can make detailed comments about numerical information in graphs and 
+charts.
+66
+B2 (59-66)
+IV. Sharing information
+Write coherent texts (such as 
+essays, reports or narratives) to 
+relate events from the past to 
+describe and compare complex 
+ideas, phenomena or processes, or 
+to express and analyze opinions.
+Can write clear, detailed descriptions on a variety of subjects related to 
+their field of interest.
+67
+B2+ (67-75)
+Can systematically develop an argument giving the reasons for or against 
+a point of view.
+67
+B2+ (67-75)
+Can write effective and appropriate paragraphs in a range of genres.
+67
+B2+ (67-75)
+Can write clear and organised guidelines for the workplace.
+68
+B2+ (67-75)
+Can summarise opposing arguments in writing, including supporting 
+evidence.
+70
+B2+ (67-75)
+Can clarify a concept in a narrative text using adverbial clauses, phrases 
+and modifiers.
+70
+B2+ (67-75)
+Can demonstrate understanding of structure and conventions of different 
+written genres.
+71
+B2+ (67-75)
+Can write a detailed, reasoned argument for or against a case.
+72
+B2+ (67-75)
+Can check and correct spelling, punctuation and grammar mistakes in 
+long written texts.
+72
+B2+ (67-75)
+Can structure an essay to incorporate counter-arguments.
+72
+B2+ (67-75)
+Can develop an argument with appropriate highlighting of significant 
+points and relevant supporting detail.
+73
+B2+ (67-75)
+
+=== PDF PAGE 15 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  15
+Stage III – Benchmark 10
+Listening
+Stage III – Benchmark 10
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand complex 
+communication to identify 
+attitudes, emotions, motivations 
+and intentions. 
+Can follow a work-related discussion between fluent speakers.
+73
+B2+ (67-75)
+Can recognise discourse markers that convey turn-taking in a linguistically 
+complex academic discussion.
+75
+B2+ (67-75)
+Can recognise the use of emphasis to highlight significant points 
+supporting an argument in a linguistically complex presentation or lecture.
+75
+B2+ (67-75)
+Can infer opinions in a linguistically complex presentation or lecture.
+77
+C1 (76-84)
+Can understand implied meaning in a linguistically complex presentation or 
+lecture.
+79
+C1 (76-84)
+Can understand stories being told by a fluent speaker using colloquial 
+language.
+79
+C1 (76-84)
+II. Comprehending instructions 
+Understand complex multistep 
+directions and instructions for less-
+familiar procedures in some urgent 
+or demanding situations. 
+Can understand detailed medical advice.
+72
+B2+ (67-75)
+III. Getting things done 
+Understand content, values and 
+assumptions in communication 
+intended to influence or persuade. 
+Can recognise the use of rhetorical questions to reveal unstated 
+assumptions.
+71
+B2+ (67-75)
+Can recognise the use of persuasive language in a linguistically complex 
+presentation or lecture.
+77
+C1 (76-84)
+Can recognise coherence devices and follow complex arguments on 
+unfamiliar topics.
+77
+C1 (76-84)
+IV. Comprehending information
+Understand extensive lectures or 
+presentations, complex expository 
+or argumentative exchanges
+or discussions between several 
+speakers.
+Can follow abstract argumentation, for example the balancing of 
+alternatives and the drawing of a conclusion. 
+73
+B2+ (67-75)
+Can recognise the use of language that expresses doubt in a linguistically 
+complex presentation or lecture.
+73
+B2+ (67-75)
+Can follow lines of argument in a linguistically complex presentation or 
+lecture.
+75
+B2+ (67-75)
+Can identify a speaker’s point of view in a linguistically complex 
+presentation or lecture in their field of specialisation.
+76
+C1 (76-84)
+Can identify logical flaws in a presentation or lecture.
+76
+C1 (76-84)
+Can evaluate the strength of a speaker’s source materials used to make a 
+point in a presentation or discussion.
+76
+C1 (76-84)
+Can identify details supporting a point of view in a linguistically complex 
+presentation or lecture in their field of specialisation.
+77
+C1 (76-84)
+
+=== PDF PAGE 16 ===
+16  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 10
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Manage an expanding range of 
+personal and business interactions 
+that involve needs, feelings and 
+attitudes (such as perceived 
+hostility, blame, sarcasm or 
+condescension). 
+Can respond politely and in detail to hostile questions.
+71
+B2+ (67-75)
+Can rephrase controversial statements into more neutral language.
+77
+C1 (76-84)
+Can participate in linguistically complex discussions about attitudes and 
+opinions.
+79
+C1 (76-84)
+Can use a range of hedging techniques to express doubt in a linguistically 
+complex academic presentation or discussion.
+79
+C1 (76-84)
+Can reformulate what they want to say during a conversation or discussion 
+using linguistically complex language.
+80
+C1 (76-84)
+Co-facilitate or contribute to 
+discussions or debates in large 
+formal groups. 
+Can make a verbal summary to confirm their understanding of a 
+linguistically complex discourse.
+73
+B2+ (67-75)
+Can effectively chair a debate, managing contributions and reaching a 
+conclusion.
+78
+C1 (76-84)
+Can adjust tone or language to build rapport in situations where there may 
+be an unequal power dynamic.
+78
+C1 (76-84)
+Can contribute to a group discussion using linguistically complex language.
+79
+C1 (76-84)
+II. Giving instructions
+Give complex instructions for 
+some technical and nontechnical 
+tasks, procedures and processes in 
+somewhat demanding situations.
+Can give detailed technical instructions in their field of specialisation.
+73
+B2+ (67-75)
+Can provide clarification of a complex point in a discussion using 
+reformulation and paraphrase.
+76
+C1 (76-84)
+Can carry out complex business transactions with vendors and suppliers.
+78
+C1 (76-84)
+III. Getting things done
+Persuade persons in authority to 
+grant approvals or accept/reject 
+proposals. 
+Can put forward a smoothly flowing and logical structured argument, 
+highlighting significant points.
+73
+B2+ (67-75)
+Can present a negotiating proposal in detail.
+75
+B2+ (67-75)
+Can justify a point of view using linguistically complex language.
+77
+C1 (76-84)
+Can give a detailed account of a complex subject, ending with a clear 
+conclusion.
+78
+C1 (76-84)
+Can give reasons and explanations for their opinions using linguistically 
+complex language.
+78
+C1 (76-84)
+Can explain the main points of a negotiating position with precision.
+78
+C1 (76-84)
+Can use a wide range of persuasive techniques in presentations and 
+discussions to encourage others to take a course of action.
+80
+C1 (76-84)
+
+=== PDF PAGE 17 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  17
+Stage III – Benchmark 10
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+Ask for, give and discuss detailed 
+complex information and 
+opinions to coordinate teamwork 
+assignments, train others, delegate, 
+solve problems, resolve conflicts 
+or make decisions in meetings and 
+business discussions. Participate in 
+a formal debate.
+Can evaluate problems, challenges and proposals in a collaborative 
+discussion in order to decide on the way forward.
+72
+B2+ (67-75)
+Can organise and manage collaborative group work efficiently.
+73
+B2+ (67-75)
+Can contribute to collaborative decision making and problem solving, 
+expressing and co-developing ideas, explaining details and making 
+suggestions for future action.
+73
+B2+ (67-75)
+Can use persuasive language to convince others to agree with their 
+recommended course of action during a discussion.
+74
+B2+ (67-75)
+Can make a clear strong argument during a formal discussion.
+74
+B2+ (67-75)
+Can exchange complex information on a wide range of matters related to 
+their work.
+74
+B2+ (67-75)
+Can elicit possible solutions from parties in disagreement in order to help 
+them to reach consensus, formulating open-ended, neutral questions to 
+minimise embarrassment or offence.
+75
+B2+ (67-75)
+Can present detailed, evidence-based arguments during work-related 
+meetings.
+76
+C1 (76-84)
+Can give a progress report including key milestones and highlighting risks.
+76
+C1 (76-84)
+Can use persuasive language to suggest that parties in disagreement shift 
+towards a new position.
+76
+C1 (76-84)
+Give seminar-style presentations 
+to explain complex concepts and 
+ideas on familiar or researched 
+topics. 
+Can describe a complex process or product development diagram.
+75
+B2+ (67-75)
+Can summarise complex diagrams and visual information during a formal 
+presentation when requested by a member of the audience.
+76
+C1 (76-84)
+Can make a linguistically complex business presentation with the help of 
+notes.
+76
+C1 (76-84)
+Can use a range of cohesive devices to structure an academic 
+presentation.
+77
+C1 (76-84)
+Can discuss charts and graphs in an academic text, using linguistically 
+complex language.
+78
+C1 (76-84)
+Can effectively discuss the meaning and implications of research data.
+78
+C1 (76-84)
+
+=== PDF PAGE 18 ===
+18  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 10
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand complex written 
+communication (such as editorials, 
+letters to the editor, personal 
+essays and fiction) conveying 
+stated and unstated values and 
+assumptions. 
+Can get the gist of specialised articles and technical texts outside their 
+field.
+74
+B2+ (67-75)
+Can understand the writer’s purpose in a linguistically complex academic 
+text.
+74
+B2+ (67-75)
+Can understand correspondence containing idiomatic or non-standard 
+language.
+76
+C1 (76-84)
+Can infer the author’s attitude in a linguistically complex academic text.
+76
+C1 (76-84)
+Can identify similar and contrasting opinions, including inferred meaning, 
+across a range of texts. 
+76*
+C1 (76-84)
+II. Comprehending instructions 
+Understand and summarize 
+complex instructional texts about 
+familiar procedures. 
+Can understand definitions of technical terms presented in a linguistically 
+complex academic text.
+75
+B2+ (67-75)
+Can understand a detailed description in a linguistically complex academic 
+text.
+77
+C1 (76-84)
+III. Getting things done 
+Obtain and accurately interpret 
+information from multiple complex 
+texts to inform significant decisions. 
+Can identify specific information in a linguistically complex factual text.
+73
+B2+ (67-75)
+Can scan a linguistically complex academic text to find specific 
+information.
+73
+B2+ (67-75)
+Can distinguish between facts and opinions in linguistically complex written 
+proposals.
+77
+C1 (76-84)
+Can follow abstract argumentation, for example the balancing of 
+alternatives and the drawing of a conclusion.
+77
+C1 (76-84)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 19 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  19
+Stage III – Benchmark 10
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand, summarize and 
+evaluate the development of 
+arguments in complex texts 
+(such as lengthy research papers, 
+problem-solution essays or 
+persuasive articles). 
+Can recognise organisational patterns within a linguistically complex 
+academic text.
+74
+B2+ (67-75)
+Can recognise the writer’s point of view in a linguistically complex 
+academic text.
+74
+B2+ (67-75)
+Can identify the main line of argument in a linguistically complex academic 
+text.
+75
+B2+ (67-75)
+Can follow the sequence of events or arguments in an extended and 
+linguistically complex academic text.
+77
+C1 (76-84)
+Can identify examples that support a particular interpretation of a 
+linguistically complex text.
+78
+C1 (76-84)
+Can evaluate evidence presented in a linguistically complex argumentative 
+text.
+80
+C1 (76-84)
+Interpret and summarize 
+information and ideas contained in 
+complex formatted texts. 
+Can extract key details from quantitative data in complex business 
+documents.
+74
+B2+ (67-75)
+Can compare and critically evaluate a summary against the original text.
+75
+B2+ (67-75)
+Conduct a complex search of 
+relevant online reference sources to 
+research a topic.
+Can use relevant material in academic textbooks and articles to support or 
+challenge an argument.
+72
+B2+ (67-75)
+Can extract information, ideas and opinions from highly specialised 
+sources within their field.
+78
+C1 (76-84)
+
+=== PDF PAGE 20 ===
+20  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 10
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey an expanding range of 
+personal and business messages 
+in semi-formal or formal 
+correspondence with a sense of 
+audience, formality and language 
+appropriate to the occasion, intent 
+and context.
+Can write a polite response to an argumentative communication about a 
+difficult work-related issue.
+72
+B2+ (67-75)
+Can engage in online exchanges, linking their contributions to previous 
+ones in the thread, understanding cultural implications and reacting 
+appropriately.
+74
+B2+ (67-75)
+Can edit a text to make the style more neutral or formal.
+74
+B2+ (67-75)
+Can modify the language and organisation of written information when 
+moving from one form of delivery to another.
+74
+B2+ (67-75)
+Can express themselves fluently in writing, adapting the level of formality 
+to the context.
+77
+C1 (76-84)
+II. Reproducing information
+Reduce complex, extensive 
+information and ideas from multiple 
+sources as an accurate outline, 
+summary or abstract, suitable for 
+other people’s use. 
+Can write a detailed summary of work-related information.
+73
+B2+ (67-75)
+Can take notes on a linguistically complex presentation or lecture in their 
+field of specialisation.
+74
+B2+ (67-75)
+Can write a clear summary of a complex factual text, maintaining its 
+original tone and message.
+76
+C1 (76-84)
+Can use complex numerical values in an academic text and explain their 
+significance to the reader.
+76
+C1 (76-84)
+Can take full notes on points made during meetings on a wide range of 
+work-related topics.
+76
+C1 (76-84)
+Can summarise information from a linguistically complex presentation or 
+lecture.
+77
+C1 (76-84)
+Can write an accurate summary of a complex, discursive text.
+77
+C1 (76-84)
+
+=== PDF PAGE 21 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  21
+Stage III – Benchmark 10
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Write business or service 
+correspondence for a broad 
+range of purposes (such as giving 
+instructions, or expressing and 
+responding to complaints, claims or 
+adjustments). 
+Can write a detailed description of a complex process.
+74
+B2+ (67-75)
+Can adapt the language and organisation of a project communication to 
+the needs of different audiences.
+76
+C1 (76-84)
+Write semi-formal reports and 
+proposals.
+Can develop a written case to persuade others about the advantages or 
+disadvantages of a course of action.
+73
+B2+ (67-75)
+Can write essays and reports synthesising information from a number of 
+sources.
+76
+C1 (76-84)
+Can write a review of a product or service using linguistically complex 
+language.
+79
+C1 (76-84)
+Complete complex forms and 
+documents with pre-set formats.
+Can write a letter of application using appropriate conventions and a range 
+of linguistically complex language.
+76
+C1 (76-84)
+IV. Sharing information
+Write effective, stylistically 
+complex, and lengthy texts (such 
+as expository or argument essays, 
+symbolic stories, inquiry papers, 
+problem-solution papers, or 
+analytic reports) on previously 
+researched topics.
+Can use a range of verb tenses to convey nuances of meaning in an 
+academic text.
+74
+B2+ (67-75)
+Can write a linguistically complex essay in response to a specific question.
+75
+B2+ (67-75)
+Can refute a counter-argument in written work.
+75
+B2+ (67-75)
+Can write a report describing business plans and strategies in detail.
+76
+C1 (76-84)
+Can write effective and appropriate essays in a range of genres.
+78
+C1 (76-84)
+Can support a thesis in an academic text using research findings.
+79
+C1 (76-84)
+
+=== PDF PAGE 22 ===
+22  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 11
+Listening
+Stage III – Benchmark 11
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand propositionally 
+and linguistically complex 
+communication between diverse 
+speakers to resolve conflicts, 
+build consensus and negotiate 
+compromise. 
+Can understand the intended double meaning of a word used in a joke.
+78
+C1 (76-84)
+Can recognise digressions and asides as an argumentative tactic in a 
+debate or discussion.
+80
+C1 (76-84)
+Can infer meaning, opinion, attitude, etc. in fast-paced conversations 
+between fluent speakers.
+81
+C1 (76-84)
+II. Comprehending instructions 
+Understand complex multistep 
+directions and instructions for 
+unfamiliar procedures in urgent or 
+demanding situations. 
+Can understand the details in a linguistically complex audio recording.
+82
+C1 (76-84)
+III. Getting things done 
+Understand the nuances and 
+subtleties of communication 
+intended to influence or persuade 
+across a broad variety of general 
+interest, academic and technical 
+topics in own field. 
+Can critically evaluate the effectiveness and appropriateness of a 
+presentation.
+77
+C1 (76-84)
+Can recognise a speaker’s feelings or attitude in linguistically complex 
+speech.
+81
+C1 (76-84)
+IV. Comprehending information 
+Understand complex, detailed and 
+extensive lectures or presentations. 
+Can follow presentations on abstract and complex topics outside their 
+field of interest.
+79
+C1 (76-84)
+Can evaluate the strength of a speaker’s assumptions in a linguistically 
+complex presentation or lecture.
+80
+C1 (76-84)
+Can identify analogies and metaphors used to support a position in a 
+linguistically complex presentation or lecture.
+81
+C1 (76-84)
+Can understand the details of extended and linguistically complex talks on 
+a range of political, environmental, and social issues.
+83
+C1 (76-84)
+Can understand implied or unstated meanings in a linguistically complex 
+presentation or lecture.
+84
+C1 (76-84)
+
+=== PDF PAGE 23 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  23
+Stage III – Benchmark 11
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Manage an expanded range of 
+personal and business interactions 
+to appropriately respond to needs, 
+feelings and attitudes (such as 
+criticism and value judgements). 
+Can contribute fluently and naturally to a conversation about a complex or 
+abstract topic.
+79
+C1 (76-84)
+Can participate in a fast-paced conversation with fluent speakers.
+80
+C1 (76-84)
+Can clarify points they are trying to make in an academic discussion, using 
+linguistically complex language.
+81
+C1 (76-84)
+Can recognise undercurrents in interaction and take appropriate steps to 
+guide the direction of discussion.
+83
+C1 (76-84)
+Facilitate or chair formal meetings, 
+discussions or debates. 
+Can act as a mediator in intercultural encounters, contributing to a shared 
+communication culture by managing ambiguity, offering advice and 
+support, and heading off misunderstandings.
+76
+C1 (76-84)
+Can participate in extended, detailed professional discussions and 
+meetings with confidence.
+80
+C1 (76-84)
+Can ask a series of open questions that build on different contributions in 
+order to stimulate logical reasoning (e.g. hypothesising, inferring, analysing, 
+justifying and predicting).
+80
+C1 (76-84)
+Can manage the participants in a fast-moving discussion to keep it on 
+course.
+81
+C1 (76-84)
+Can adjust to the changes of direction, style and emphasis in a linguistically 
+complex discussion.
+81
+C1 (76-84)
+Can intervene diplomatically in order to redirect discussion, prevent one 
+person dominating or confront disruptive behaviour.
+82
+C1 (76-84)
+Can summarise group discussions on a wide range of linguistically complex 
+topics.
+83
+C1 (76-84)
+II. Giving instructions
+Give complex instructions for 
+technical and non-technical tasks, 
+procedures and processes in many 
+demanding situations.
+Can facilitate understanding of a complex issue by highlighting and 
+categorising the main points, presenting them in a logically connected 
+pattern, and reinforcing the message by repeating the key aspects in 
+different ways.
+79
+C1 (76-84)
+Can talk about complex financial problems in detail.
+84
+C1 (76-84)
+
+=== PDF PAGE 24 ===
+24  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 11
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Negotiate mutually agreeable 
+solutions to problems. 
+Can develop the interaction and tactfully help steer it towards a 
+conclusion.
+80
+C1 (76-84)
+Can make proposals to resolve conflicts in complex negotiations.
+81
+C1 (76-84)
+Can formulate a diplomatic request to each side in a disagreement to 
+determine what is central to their position, and what they may be willing to 
+give up under certain circumstances.
+81
+C1 (76-84)
+IV. Sharing information
+Ask for, give and discuss detailed 
+complex information to solve 
+problems, make decisions, 
+supervise, motivate or discipline 
+someone or evaluate performance.
+Can frame a discussion to decide on a course of action with a partner or 
+group, reporting on what others have said, summarising, elaborating and 
+weighing up multiple points of view.
+79
+C1 (76-84)
+Can participate in discussions using linguistically complex language to 
+compare, contrast and summarise information.
+80
+C1 (76-84)
+Give expository or argumentative 
+presentations at symposia or 
+conferences to explain complex 
+concepts on known (through areas 
+of expertise) or researched non-
+personal, abstract topics. 
+Can explain subtle distinctions in the presentation of facts and arguments.
+80
+C1 (76-84)
+Can make a detailed and linguistically complex evidence-based argument 
+in an academic presentation or discussion.
+82
+C1 (76-84)
+
+=== PDF PAGE 25 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  25
+Stage III – Benchmark 11
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand complex 
+communication conveying 
+disagreement or conflict in social 
+and non-social correspondence 
+related to community, academic 
+and business contexts. 
+Can identify inferred meaning in a linguistically complex text.
+79
+C1 (76-84)
+Can understand the details of long complex texts in their field without 
+needing to reread.
+80
+C1 (76-84)
+Can recognise multiple purposes in a linguistically complex academic text.
+81
+C1 (76-84)
+II. Comprehending instructions 
+Understand extensive specialized 
+instructions for unfamiliar, complex 
+procedures. 
+Can understand complex technical work-related documents in detail.
+79
+C1 (76-84)
+III. Getting things done 
+Obtain and accurately interpret, 
+analyze and evaluate information 
+from multiple complex texts to 
+inform significant decisions and 
+tasks. 
+Can critically evaluate the effectiveness of a linguistically complex text 
+describing cause-effect relationships.
+81
+C1 (76-84)
+Can synthesise information from multiple linguistically complex academic 
+texts related to similar content.
+82
+C1 (76-84)
+Can understand the use of satire in a linguistically complex text.
+84
+C1 (76-84)
+IV. Comprehending information 
+Understand, summarize and 
+outline the message, position, 
+assumptions, bias, values and 
+motives from fragments of 
+different texts; support conclusions 
+with evidence. 
+Can understand complex arguments in newspaper articles.
+79
+C1 (76-84)
+Can synthesise information from two or more linguistically complex texts in 
+their field of specialisation.
+79
+C1 (76-84)
+Can compare the presentation of a key concept in different texts by 
+different authors using different styles of writing.
+79
+C1 (76-84)
+Can critically evaluate the effectiveness of a linguistically complex 
+argumentative essay.
+81
+C1 (76-84)
+Can critically evaluate the effectiveness of a linguistically complex 
+discursive essay.
+82
+C1 (76-84)
+Analyze, summarize and synthesize 
+information and ideas contained in 
+complex formatted texts. 
+Can research a topic by reading complex data sets.
+76
+C1 (76-84)
+IV. Comprehending information 
+Conduct a complex and 
+comprehensive search of multiple 
+online sources of information 
+related to a specialized topic. 
+Can use a range of linguistically complex reference sources to check 
+factual information.
+77
+C1 (76-84)
+
+=== PDF PAGE 26 ===
+26  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 11
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey an expanded range of 
+personal and business messages 
+in semi-formal or formal 
+correspondence with a sense of 
+audience, formality and language 
+appropriate to the occasion, intent 
+and context.
+Can deal effectively with communication problems and cultural issues that 
+arise in an online collaborative or transactional exchange by reformulating, 
+clarifying and providing examples through media (visual, audio, graphic).
+79
+C1 (76-84)
+Can smoothly switch between a range of writing styles to address specific 
+audiences and topics in a personal way.
+82
+C1 (76-84)
+II. Reproducing information
+Reduce and synthesize very 
+complex and extensive information 
+from multiple sources into a 
+variety of formats (such as point-
+form notes, minutes, outlines, 
+summaries, reports, abstracts or 
+charts). 
+Can take effective notes while listening to a linguistically complex audio 
+recording.
+80
+C1 (76-84)
+Can select relevant, detailed information and arguments on complex, 
+abstract topics from multiple oral sources (e.g. lectures, podcasts, formal 
+discussions and debates, interviews), provided the delivery is at normal 
+speed.
+80
+C1 (76-84)
+Can write summaries and reviews of professional or literary works.
+80
+C1 (76-84)
+Can write a review of a linguistically complex text, using appropriate 
+conventions.
+80
+C1 (76-84)
+Can collate information from linguistically complex academic texts and 
+summarise them for somebody else.
+81
+C1 (76-84)
+Can take notes to summarise the key points made during a technical or 
+linguistically complex discussion.
+82
+C1 (76-84)
+Can edit and add to a linguistically complex text to make it clearer or more 
+concise.
+82
+C1 (76-84)
+Can synthesise information from multiple linguistically complex academic 
+texts.
+82
+C1 (76-84)
+III. Getting things done
+Write business or service 
+correspondence for a broad range 
+of purposes and for external use 
+(such as sales and marketing 
+letters).
+Can confidently argue a case in writing, specifying needs and objectives 
+precisely and justifying them as necessary.
+81
+C1 (76-84)
+Can deal with complex online transactions in a service role (e.g. 
+applications with complicated requirements), adjusting language flexibly to 
+manage discussions and negotiations.
+81
+C1 (76-84)
+Write formal business reports, 
+requests for proposals and formal 
+proposals. 
+Can give complex information using appropriate register and conventions.
+84
+C1 (76-84)
+Can employ high-level vocabulary and structures to enhance impact in 
+written correspondence.
+84
+C1 (76-84)
+
+=== PDF PAGE 27 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  27
+Stage III – Benchmark 11
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Create forms and other materials 
+with preset formats to collect and 
+record complex information. 
+Can interpret and present clearly and reliably in writing the salient, relevant 
+points contained in complex diagrams and other visually organised data on 
+complex academic or professional topics.
+76
+C1 (76-84)
+Can make complex, challenging content more accessible by explaining 
+difficult aspects more explicitly and adding helpful detail.
+83
+C1 (76-84)
+IV. Sharing information
+Write effective, stylistically complex 
+texts (such as expository or 
+argument essays, inquiry papers, 
+problem-solution papers or analytic 
+reports) on previously researched 
+topics.
+Can use persuasive techniques appropriately in academic writing.
+78
+C1 (76-84)
+Can facilitate understanding of a complex issue by highlighting and 
+categorising the main points, presenting them in a logically connected 
+pattern, and reinforcing the message by repeating the key aspects in 
+different ways.
+79
+C1 (76-84)
+Can use linguistic devices such as fronting to emphasise key information in 
+a sentence.
+79
+C1 (76-84)
+Can precisely select vocabulary for rhetorical purposes.
+79
+C1 (76-84)
+Can reorganise a complex source text in order to focus on the points of 
+most relevance to target audience.
+81
+C1 (76-84)
+Can write a linguistically complex discursive essay.
+81
+C1 (76-84)
+Can signpost a hypothesis in a linguistically complex academic text in their 
+field of specialisation.
+81
+C1 (76-84)
+Can use linguistically complex vocabulary and structures to enhance the 
+impact in academic reports and essays.
+82
+C1 (76-84)
+Can write a linguistically complex academic essay in an appropriate style 
+and register.
+82
+C1 (76-84)
+Can adapt their language (e.g. syntax, idiomaticity, jargon) in order to make 
+a complex specialist topic accessible to recipients who are not familiar with 
+it.
+82
+C1 (76-84)
+Can write a detailed account of an experiment, including theoretical 
+background, findings, and conclusions.
+83
+C1 (76-84)
+Can write a linguistically complex account of an event, either from 
+experience or from what other people have said.
+83*
+C1 (76-84)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 28 ===
+28  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 12
+Listening
+Stage III – Benchmark 12
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand the nuances and 
+subtleties of propositionally 
+and linguistically complex 
+communication between diverse 
+speakers. 
+Can recognise a wide range of idiomatic expressions and colloquialisms, 
+appreciating register shifts.
+83
+C1 (76-84)
+Can understand in detail discussions on abstract and complex topics 
+among speakers with a variety of accents and dialects.
+88
+C2 (85-90)
+Can follow a linguistically complex lecture or discussion which contains a 
+large amount of specialised terminology or idiomatic language.
+90
+C2 (85-90)
+II. Comprehending instructions 
+Understand and evaluate detailed, 
+extensive oral instructions in a 
+broad range of situations. 
+Can follow a technically complex process described in an extended and 
+linguistically complex academic presentation.
+87
+C2 (85-90)
+III. Getting things done 
+Understand the nuances and 
+subtleties of communication 
+intended to influence or persuade 
+across a wide range of contexts, 
+whether familiar or unfamiliar, 
+including academic, workplace and 
+community. 
+Can understand nuances of meaning in a linguistically complex 
+presentation or lecture.
+82
+C1 (76-84)
+IV. Comprehending information 
+Critically evaluate complex, detailed 
+and specialized discussions, 
+interviews or formal debates. 
+Can understand the details of extended and linguistically complex 
+professional and technical presentations.
+86
+C2 (85-90)
+
+=== PDF PAGE 29 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  29
+Stage III – Benchmark 12
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Manage a broad range of personal 
+and business interactions, in both 
+formal and informal situations, 
+to appropriately and effectively 
+negotiate needs, feelings and 
+attitudes (such as recognition, 
+validation, acknowledgement and 
+conflict). 
+Can confidently take a firm but diplomatic stance over an issue of 
+principle, while showing respect for the viewpoints of others.
+87
+C2 (85-90)
+Can clarify points they are trying to make in an academic discussion, using 
+linguistically complex language.
+88
+C2 (85-90)
+Facilitate or chair formal meetings, 
+discussions, symposia or debates 
+for a variety of groups. 
+Can lead a panel discussion on abstract or academic topics.
+85
+C2 (85-90)
+Can effectively participate in a debate on complex or abstract topics using 
+linguistically complex language.
+85
+C2 (85-90)
+Can take on different roles according to the needs of the participants and 
+requirements of the activity (resource person, mediator, supervisor, etc.) 
+and provide appropriate individualised support.
+85
+C2 (85-90)
+Can effectively lead the development of ideas in a discussion of complex 
+abstract topics, giving direction by targeting questions and encouraging 
+others to elaborate on their reasoning.
+87
+C2 (85-90)
+II. Giving instructions
+Give complex instructions on 
+technical and non-technical tasks, 
+procedures and processes in most 
+demanding situations.
+Can convey finer shades of meaning precisely by accurately using a wide 
+range of modification devices.
+87
+C2 (85-90)
+III. Getting things done
+Negotiate detailed contracts or 
+agreements.
+Can summarise the position at the end of a negotiation in detail, outlining 
+their own and other people’s positions.
+78
+C1 (76-84)
+Can propose a range of different options in a complex negotiation.
+81
+C1 (76-84)
+Can talk about an industry using technical terms and linguistically complex 
+language.
+86
+C2 (85-90)
+Manage and mediate conflicts or 
+disputes.
+Can maintain and develop interaction on an abstract topic by expressing 
+interest, agreement or disagreement. 
+80*
+C1 (76-84)
+Can guide a sensitive discussion effectively, identifying nuances and 
+undercurrents.
+85
+C2 (85-90)
+Can mediate effectively and naturally between members of their own and 
+other communities, taking account of sociocultural and sociolinguistic 
+differences.
+85
+C2 (85-90)
+Can summarise, evaluate and link the various contributions in order to 
+facilitate agreement for a solution or way forward.
+87
+C2 (85-90)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 30 ===
+30  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 12
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+Ask for, give and discuss detailed 
+complex information to advise, 
+counsel or collaborate on complex 
+projects.
+Can give detailed advice on a wide range of subjects using linguistically 
+complex language.
+85
+C2 (85-90)
+Can communicate in a clear, fluent, well-structured way the sense of what 
+is said on a wide range of general and specialised topics, maintaining 
+appropriate style and register, conveying finer shades of meaning and 
+elaborating on sociocultural implications.
+90
+C2 (85-90)
+Can facilitate understanding of a complex issue by explaining the 
+relationship of parts to the whole and encourage different ways of 
+approaching it.
+90
+C2 (85-90)
+Give lecture-style presentations 
+to explain and hypothesize about 
+causal or logical relationships, or 
+to evaluate and critique demands, 
+recommendations or appeals. 
+Can spontaneously pose a series of questions to encourage people to 
+think about their prior knowledge of an abstract issue and to help them 
+establish a link to what is going to be explained.
+80
+C1 (76-84)
+Can introduce complex concepts (e.g. scientific notions) by providing 
+extended definitions and explanations that draw on assumed previous 
+knowledge.
+86
+C2 (85-90)
+Can adapt the language of a very wide range of texts in order to present 
+the main content in a register and degree of sophistication and detail 
+appropriate to the audience concerned.
+90
+C2 (85-90)
+Can interpret and describe clearly and reliably various forms of empirical 
+data and visually organised information from conceptually complex 
+research concerning academic or professional topics.
+90
+C2 (85-90)
+
+=== PDF PAGE 31 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  31
+Stage III – Benchmark 12
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand complex 
+communication conveying social 
+politeness and cooperation, or their 
+violations, in social and non-social 
+correspondence. 
+Can understand highly colloquial language in unstructured texts that use 
+complex structures.
+87
+C2 (85-90)
+Can critically evaluate the effectiveness of different arguments in a 
+linguistically complex text.
+88
+C2 (85-90)
+II. Comprehending instructions 
+Understand complex instructional 
+texts and evaluate and revise them 
+for clarity. 
+Can critically evaluate the structure, content and style of a text using 
+linguistically complex language.
+88
+C2 (85-90)
+III. Getting things done 
+Obtain and accurately interpret, 
+summarize, analyze and evaluate 
+information in multiple complex 
+public and semi-public business 
+texts in relation to their purpose 
+and audience. 
+Can critically evaluate a writer’s choice of words to express nuances of 
+meaning in an argumentative text.
+87
+C2 (85-90)
+IV. Comprehending information 
+Understand the content, 
+organization, language, tone and 
+style of complex, continuous and 
+formatted texts, and evaluate them 
+for validity, appropriateness and 
+relevance. 
+Can understand complex or extended metaphors in an academic text.
+84
+C1 (76-84)
+Can understand complex arguments in technical or academic journals.
+85
+C2 (85-90)
+Can understand long and linguistically complex factual and literary texts, 
+appreciating distinctions of style.
+87
+C2 (85-90)
+Can recognise subtle distinctions of style in linguistically complex 
+academic texts.
+87
+C2 (85-90)
+Can critically evaluate the writer’s choice of words to express nuanced 
+meaning in a linguistically complex text.
+90
+C2 (85-90)
+Conduct a complex and 
+comprehensive search of relevant 
+online reference sources related to 
+a specialized topic. 
+Can research a topic by reading linguistically complex academic texts.
+79
+C1 (76-84)
+
+=== PDF PAGE 32 ===
+32  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+Stage III – Benchmark 12
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey, in a quality, tone and style 
+suitable for publication, a range of 
+communication that synthesizes 
+complex propositions to foster 
+goodwill toward a company, 
+initiative, campaign or political or 
+social entity.
+Can create well-structured complex texts with underlying inferred 
+meaning.
+85
+C2 (85-90)
+Can communicate in a clear, fluent, well-structured way the sense of what 
+is said on a wide range of general and specialised topics, maintaining 
+appropriate style and register, conveying finer shades of meaning and 
+elaborating on sociocultural implications.
+90
+C2 (85-90)
+II. Reproducing information
+ Reduce and synthesize very 
+complex and extensive information 
+from multiple sources into a 
+variety of formats (such as point-
+form notes, minutes, outlines, 
+summaries, reports, abstracts or 
+charts).
+Can summarise in writing the author’s viewpoints, attitudes or opinions in a 
+linguistically complex text.
+85
+C2 (85-90)
+Can summarise information from different sources, reconstructing 
+arguments and accounts in a coherent presentation of the overall result.
+86
+C2 (85-90)
+Can interpret and present in writing various forms of empirical data from 
+conceptually complex research on academic or professional topics.
+88
+C2 (85-90)
+Evaluate, revise and edit summaries 
+and other reduced forms of very 
+complex and extensive information 
+by other writers (such as point-
+form notes, minutes, outlines, 
+précis, reports, abstracts or charts). 
+Can redraft a complex source text, improving coherence, cohesion and the 
+flow of an argument, while removing sections unnecessary for its purpose.
+87
+C2 (85-90)
+Can provide guidance and add precision to the work of a group at the 
+redrafting and editing stages of collaborative work
+87
+C2 (85-90)
+Can take notes selectively, paraphrasing and abbreviating successfully to 
+capture abstract concepts and relationships between ideas.
+87
+C2 (85-90)
+III. Getting things done
+Write highly specialized, complex 
+formal correspondence and 
+documents (such as external 
+correspondence, formal proposals, 
+procedures, training materials or 
+public reports). 
+Can write about complex subjects, underlining the key issues and in a style 
+appropriate to the intended reader.
+85
+C2 (85-90)
+Can edit and improve a linguistically complex text.
+85
+C2 (85-90)
+Can, while continuing to participate in a meeting or seminar, create reliable 
+notes (or minutes) for people who are not present, even when the subject 
+matter is complex and/or unfamiliar.
+87
+C2 (85-90)
+Can edit and improve a linguistically complex academic text outside their 
+field of study.
+90
+C2 (85-90)
+Can adapt the language of a very wide range of texts in order to present 
+the main content in a register and degree of sophistication and detail 
+appropriate to the audience concerned.
+90
+C2 (85-90)
+
+=== PDF PAGE 33 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III  |  33
+Stage III – Benchmark 12
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+Write effective and stylistically 
+polished texts (such as essays, 
+reports, articles or theses) to 
+inform, convince and persuade 
+others.
+Can write the introduction to a thesis or dissertation.
+79
+C1 (76-84)
+Can base a conclusion on a logically linked series of complex ideas in an 
+academic research paper.
+82
+C1 (76-84)
+Can write linguistically complex and logically structured reports and 
+articles.
+85
+C2 (85-90)
+Can write up an extended discussion of a hypothesis in a research paper in 
+their field of specialisation.
+85
+C2 (85-90)
+Can write an academic article for publication in their field.
+87
+C2 (85-90)
+Can write a research report including detailed analysis and evaluation of 
+own and others’ work on the topic of investigation.
+89
+C2 (85-90)
+Can explain in writing the way facts and arguments are presented in a 
+text, particularly when someone else’s position is being reported, drawing 
+attention to the writer’s use of understatement, veiled criticism, irony and 
+sarcasm.
+90
+C2 (85-90)
+
+=== PDF PAGE 34 ===
+34  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage III
+References
+Centre for Canadian Language Benchmarks (2012) Canada Language Benchmarks English as a Second Language for Adults. 
+Retrieved from www.language.ca
+Council of Europe (2001) Common European Framework of Reference for Languages: Learning, teaching, assessment. 
+Cambridge: Cambridge University Press 
+De Jong, J.H.A.L., Mayor, M. and Hayes, C. (2016) Developing Global Scale of English Learning Objectives aligned to the Common 
+European Framework. Available at https://online.flippingbook.com/view/894261/
+North, B., and Piccardo, E. (2018) Aligning the Canadian Language Benchmarks (CLB) to the Common European Framework of 
+Reference (CEFR): Research Report. Retrieved from www.language.ca
+Pearson (2014) Global Scale of English. Available at www.pearson.com/languages/why-pearson/the-global-scale-of-english.html
+
+=== PDF PAGE 35 ===

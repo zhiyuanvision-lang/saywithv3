@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "saywith:curriculum-map:1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "version",
+    "status",
+    "levels",
+    "capability_groups",
+    "learning_objectives",
+    "relations",
+    "lexicon",
+    "release_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "release_candidate",
+        "released"
+      ]
+    },
+    "capability_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "reference_stage",
+          "learning_objective_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "capability_group",
+              "support_track"
+            ]
+          },
+          "reference_stage": {
+            "enum": [
+              "Pre-A1",
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "learning_objective_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "learning_objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "parent_id",
+          "outcome",
+          "reference_stage",
+          "assessment_check",
+          "generation_contract",
+          "language_resources",
+          "mastery_rule",
+          "learner_release_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string",
+            "minLength": 2
+          },
+          "reference_stage": {
+            "enum": [
+              "Pre-A1",
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "C1",
+              "C2"
+            ]
+          },
+          "learner_release_status": {
+            "enum": [
+              "requires_reviewed_lesson",
+              "published"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

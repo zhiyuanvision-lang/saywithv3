@@ -1,0 +1,46 @@
+{
+  "selection": [
+    "检查任务是否获准发布",
+    "读取学习者分维度、分词义与分任务条件证据",
+    "先处理阻断沟通的缺口与应复习目标",
+    "从相关路线选择一个主目标及必要支持点",
+    "选择匹配词义，不按词形推断掌握",
+    "生成后核查任务与独立测评变体"
+  ],
+  "learner_state_schema": {
+    "objective_evidence": [
+      "objective_id",
+      "target_version",
+      "task_id",
+      "condition_signature",
+      "support_used",
+      "audio_ref",
+      "observable_results",
+      "confidence",
+      "timestamp"
+    ],
+    "sense_state": [
+      "sense_id",
+      "recognized",
+      "retrievable",
+      "flexible_use",
+      "last_evidence"
+    ],
+    "speed_state": [
+      "session_duration",
+      "completion_difficulty",
+      "fatigue_feedback",
+      "delayed_retention"
+    ]
+  },
+  "never": [
+    "仅因学习等级升高而自动掌握全部低阶目标",
+    "将转写字数当流畅度",
+    "将正确朗读当自由互动能力",
+    "将候选标准对应当官方认证",
+    "将N/A当0分词",
+    "将整段对话练完当全部目标掌握",
+    "跨目标无条件复制成功标记"
+  ],
+  "release_decision": "通过审核的具体任务进入生成池；候选库与用户课程库分开。没有审核模板时停止发布该任务，不虚构回退模板。"
+}

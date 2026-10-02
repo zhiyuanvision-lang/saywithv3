@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-rc1",
+  "public_ready": false,
+  "backend_data_ready": true,
+  "mandatory_gates": [
+    {
+      "id": "MAP_DATA",
+      "scope": "地图数据",
+      "status": "passed",
+      "requirement": "schema、引用、版本、迁移和资源完整性检查通过"
+    },
+    {
+      "id": "TASK_REVIEW",
+      "scope": "用户可见任务",
+      "status": "not_completed",
+      "requirement": "每个发布任务具备双方事实、响应规则、关键意义、难度和审核后的评分样例"
+    },
+    {
+      "id": "GENERATOR_QA",
+      "scope": "AI动态内容",
+      "status": "not_completed",
+      "requirement": "用当前实际模型与语音链路验证内容自然度、难度、信息一致性及答案隔离"
+    },
+    {
+      "id": "SCORER_CALIBRATION",
+      "scope": "自动诊断与判掌握",
+      "status": "not_completed",
+      "requirement": "有效音频与人工锚点比较，低可信度不更新掌握"
+    },
+    {
+      "id": "LEARNER_PILOT",
+      "scope": "长期教学承诺",
+      "status": "not_completed",
+      "requirement": "真实目标用户的陌生任务表现与延迟保持检查；不预先承诺最快路径"
+    }
+  ],
+  "decision": "先接入后端并制作审核任务；只有完成发布检查的目标才能进入用户课程。全量自动上线不能由结构校验代替教学审核。"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "errors": [],
+  "checks_run": 1763,
+  "counts": {
+    "groups": 140,
+    "objectives": 424,
+    "official_oral_goals": 1154,
+    "vocabulary": 41402,
+    "ungraded": 1357,
+    "starred": 540
+  },
+  "scope": "数据结构、引用、词义导出完整性、发布规则和具体任务事实正反例；不覆盖语音和教学效果",
+  "public_ready": false,
+  "remaining_gates": [
+    "TASK_REVIEW",
+    "GENERATOR_QA",
+    "SCORER_CALIBRATION",
+    "LEARNER_PILOT"
+  ]
+}

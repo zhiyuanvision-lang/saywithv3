@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "cases": 144,
+  "families": 18,
+  "failures": [],
+  "scope": "synthetic structured-evidence decision-layer consistency only",
+  "not_tested": [
+    "LLM semantic extraction",
+    "audio recognition",
+    "fluency",
+    "learner CEFR/GSE accuracy",
+    "learning gains"
+  ],
+  "independent_review": false
+}

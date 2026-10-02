@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "errors": [],
+  "counts": {
+    "nodes": 140,
+    "subtargets": 420,
+    "gse_objective_records_including_repeats": 4057,
+    "grammar": 420,
+    "official_clb_gse_links": 1244,
+    "clb_pages": 48,
+    "source_records_checked": 5769
+  },
+  "gse_source_text_mismatches": [],
+  "grammar_text_check_requires_review": [],
+  "nodes_without_direct_gse": [
+    "NEEDS.C1",
+    "STORY.C1",
+    "MEDIATE.A1",
+    "SOUND.CONTRAST",
+    "SOUND.ENDING",
+    "SOUND.SYLLABLE",
+    "SOUND.STRESS",
+    "SOUND.REDUCTION",
+    "SOUND.GROUP",
+    "SOUND.INTONATION",
+    "SOUND.VARIETY",
+    "LEX.RETRIEVE",
+    "STRATEGY.PLAN",
+    "STRATEGY.MONITOR",
+    "LEX.ACQUIRE"
+  ],
+  "subtargets_without_gse_candidates": 127,
+  "semantic_status": "对应关系为功能检索候选；未独立专家认证",
+  "source_pdf_sha256": {
+    "gse-adult-general.pdf": "ce5713618e4583f416c02276f7ec7feba7ebdd2ca4e55ec2bb0fafc29dd8604d",
+    "gse-learning-objectives-adult-academic-english.pdf": "a98b2269450afcdebec6fcbc11d046294ee092f11f1ef36e4ecf50869c76b966",
+    "gse-learning-objectives-adult-professional-english.pdf": "8c3d3bb07ae10b67edae9fd16babc028cf1c62f5b236c7aadbe7f423590d80f8",
+    "gse-grammar.pdf": "1c34b40a6baa07f110d665a41214f8550de46a9bcb7968a3e2080fcafae098ee",
+    "clb-stage-I-report.pdf": "2468178d81f407b82c18fc8c39e3385eee3c0f6fb82dc8051df403970d59a2e6",
+    "clb-stage-II-report.pdf": "c75e00651dcd25e612566fc5e2326d641f5e8bb0dee75e29f78dfbc4d0a7e083",
+    "clb-stage-III-report.pdf": "86ca3ed9db6aa1859283103646aec73ecef918d722392893242fde6a4c185b9c",
+    "clb-2012.pdf": "1cc07fd9eb4082e77f0a32fae81ea0a26c5524b64ce7720c531f2251c9c38746"
+  },
+  "limitations": [
+    "未用真人校准等级与评分",
+    "未对全部候选做逐条语义专家审核",
+    "未对HTML进行浏览器视觉检查",
+    "Toolkit词义级完整数据未导出"
+  ]
+}

@@ -1,0 +1,2941 @@
+=== PDF PAGE 1 ===
+Alignment of the 
+Canadian Language 
+Benchmarks to the 
+Global Scale of English:
+Stage II Intermediate
+November 2024
+
+=== PDF PAGE 2 ===
+Contents
+About the GSE...........................................................................3
+About Canadian Language Benchmarks.....5
+Alignment Methodology and Results..............6
+Stage II – Benchmark 5....................................................7
+Listening............................................................................................7
+Speaking...........................................................................................8
+Reading..........................................................................................10
+Writing.............................................................................................12
+Stage II – Benchmark 6...............................................14
+Listening........................................................................................14
+Speaking.......................................................................................16
+Reading..........................................................................................18
+Writing.............................................................................................20
+Stage II – Benchmark 7...............................................22
+Listening........................................................................................22
+Speaking.......................................................................................24
+Reading..........................................................................................26
+Writing.............................................................................................28
+Stage II – Benchmark 8...............................................30
+Listening........................................................................................30
+Speaking.......................................................................................32
+Reading..........................................................................................35
+Writing.............................................................................................37
+References................................................................................40
+
+=== PDF PAGE 3 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  3
+About the GSE
+Pearson developed the Global Scale of English (GSE) to provide instructors and learners with a more detailed understanding 
+of English language proficiency. It has been designed to build learners’ confidence by revealing exactly where they are on their 
+learning journey and setting personalised goals to help them progress. 
+The GSE is an ecosystem that underpins the Pearson English Journey:
+	• GSE Scale: a proficiency scale from 10 to 90.
+	• GSE Learning Objectives: descriptions of what learners can do at each level of proficiency in speaking, listening,  
+reading, and writing.
+	• Courseware: all of Pearson’s English language learning courseware is developed using the GSE Learning Objectives.
+	• Assessment: institutions can develop their own assessment materials using the GSE Learning Objectives and Assessment 
+Frameworks or choose one of Pearson’s digital assessments which report on the GSE.
+The GSE is the result of many years of research with more than 6,000 teachers from over 50 countries. It serves as a standard 
+against which English language courses and assessments worldwide can be benchmarked.
+The GSE has been psychometrically aligned to the Common European Framework of Reference or CEFR (see De Jong, Mayor, & 
+Hayes, 2016). It complements and extends the CEFR by adding an extra layer of detail to the CEFR levels and providing thousands 
+of additional learning objectives. This extra information helps learners understand where they are now and offers a step-by-step 
+guide to where they want to go next. Using the GSE, teachers can match a student to course materials to suit their exact level 
+and learning goals. 
+
+=== PDF PAGE 4 ===
+4  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+CEFR level
+GSE Scale
+Below A1
+10–21
+A1
+22–29
+A2
+30–35
+A2+ (‘plus level’)
+36–42
+B1
+43–50
+B1+ (‘plus level’)
+51–58
+B2
+59–66
+B2+ (‘plus level’)
+67–75
+C1
+76–84
+C2
+85–90
+Table 1: The relationship between the GSE and the CEFR
+To address the specific needs of learners studying English 
+for different purposes, GSE Learning Objectives have been 
+developed for five different learner audiences: 
+	• adult: adults studying on a general English course 
+	• academic: adults studying academic English 
+	• professional: adults studying English for the workplace 
+	• young learner: English language learners aged 6–14
+	• pre-primary: English language learners aged 3–5
+For more information:
+pearson.com/languages/why-pearson/ 
+the-global-scale-of-english
+
+=== PDF PAGE 5 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  5
+About Canadian Language Benchmarks
+For the purposes of this alignment, we worked with the 2012 edition of Canadian Language Benchmarks: English as a Second 
+Language for Adults. The Canadian Language Benchmarks (CLB) are written as 12 benchmarks along a continuum from basic to 
+advanced. These 12 benchmarks are then organised into three stages, each associated with a degree of complexity and demand.
+This report looks at the four benchmarks in Stage II – Intermediate Language Ability: 
+“Intermediate language ability encompasses abilities that allow fuller participation in a wider variety 
+of contexts. It is the range of abilities required to function independently in most familiar situations 
+of daily social, educational and work-related life experience, and in some less predictable contexts. 
+In the CLB, these are referred to as moderately demanding contexts of language use.” (CLB, p10)
+Stage II – Intermediate Language Ability
+Benchmark and 
+Ability Level
+Listening
+Speaking
+Reading
+Writing
+CLB 5: Initial
+CLB 6: Developing
+CLB 7: Adequate
+CLB 8: Fluent
+Interpreting moderately 
+complex spoken 
+communication in 
+moderately demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Creating moderately 
+complex spoken 
+communication in 
+moderately demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Interpreting moderately 
+complex written 
+communication in 
+moderately demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+Creating moderately 
+complex written 
+communication in 
+moderately demanding 
+contexts of language 
+use within the four 
+Competency Areas.
+For each language skill, there are four broad representative competency areas: Interacting with others, Instructions,  
+Getting things done, Sharing information.
+Table 2: Stage II – Intermediate Language Ability (CLB, p11)
+
+=== PDF PAGE 6 ===
+6  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Alignment Methodology 
+and Results
+Each Canadian Language Benchmark 
+competency statement within each 
+competency area was aligned to one or 
+more GSE Learning Objectives. The profile 
+of ability, sample indicators of ability and 
+sample tasks were also consulted during the 
+alignment. Given that the target audience 
+for CLBs is adult learners, GSE Learning 
+Objectives for Adults, Professionals and 
+Academic were used. 
+The results of the GSE alignment show 
+consistency with the CEFR-CLB alignment 
+carried out by North and Piccardo in 2018.
+Stage
+CLB level
+GSE  
+range
+CEFR-CLB 
+alignment  
+(North & Piccardo)
+I: Basic
+1
+10-19
+<A1
+2
+20-27
+A1
+3
+28-34
+A1/A2
+4
+35-41
+A2/A2+
+II: Intermediate
+5
+42-46
+B1
+6
+47-52
+B1/B1+
+7
+53-58
+B1+
+8
+59-66
+B2
+III: Advanced
+9
+67-72
+B2+
+10
+73-78
+C1
+11
+79-84
+C1
+12
+85-90
+C2
+Table 3: CLB-GSE alignment compared to CLB-CEFR
+
+=== PDF PAGE 7 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  7
+Stage II – Benchmark 5
+Listening
+Stage II – Benchmark 5
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand the gist and some 
+details in moderately complex 
+common and predictable 
+social exchanges (that may 
+express interests, likes, dislikes, 
+preferences, offers, invitations and 
+compliments). 
+Can understand the main points of a short, informal interview on a familiar 
+topic.
+42
+A2+ (36-42)
+Can follow everyday conversation, with some repetition of particular words 
+and phrases.
+44
+B1 (43-50)
+Can extract key details from conversations between colleagues about 
+familiar topics.
+44
+B1 (43-50)
+Can recognise simple expressions of agreement and disagreement in 
+extended discussions, if conducted in clear standard speech.
+46
+B1 (43-50)
+II. Comprehending instructions
+Understand simple to moderately 
+complex directions and instructions 
+for generally familiar and relevant 
+procedures. 
+Can recognise some fixed expressions to check or clarify information.
+37
+A2+ (36-42
+Can understand instructions delivered at normal speed and accompanied 
+by visual support.
+43
+B1 (43-50)
+Can identify a simple chronological sequence in a recorded narrative or 
+dialogue.
+43
+B1 (43-50)
+III. Getting things done
+Understand the gist and some 
+details in moderately complex 
+communication intended to 
+influence or persuade (such 
+as simple advice, opinion or 
+suggestions) in everyday personally 
+relevant situations. 
+Can follow the main points in a simple audio recording aimed at a general 
+audience.
+43
+B1 (43-50)
+Can identify a speaker’s point of view in a simple presentation or lecture 
+aimed at a general audience.
+48
+B1 (43-50)
+IV. Comprehending information
+Understand information about 
+familiar or relevant topics. 
+Can follow familiar topics if the speaker is clear and avoids idiomatic usage.
+45
+B1 (43-50)
+Can follow the main points of extended discussion around them if in 
+standard speech.
+46
+B1 (43-50)
+Understand descriptive or narrative 
+monologues or presentations 
+related to everyday, personally 
+relevant topics or situations. 
+Can identify key details in a simple recorded dialogue or narrative.
+39
+A2+ (36-42)
+Can listen to a short narrative and predict what will happen next.
+43
+B1 (43-50)
+Can follow familiar topics if the speaker is clear and avoids idiomatic usage.
+45
+B1 (43-50)
+Can extract key factual information such as dates, numbers and quantities 
+from a presentation.
+45
+B1 (43-50)
+
+=== PDF PAGE 8 ===
+8  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 5
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+ Participate in basic social 
+conversations for some everyday 
+purposes (such as expressing 
+feelings; making, accepting or 
+declining invitations; and engaging 
+in small talk).
+Can make an invitation including information about the time and location.
+37
+A2+ (36-42)
+Can give compliments, using fixed expressions.
+37
+A2+ (36-42)
+Can check or clarify information using some simple fixed expressions.
+41
+A2+ (36-42)
+Can use some basic interjections to express understanding, surprise, 
+disappointment, and excitement.
+42
+A2+ (36-42)
+Can react appropriately to good and bad news using fixed expressions.
+44
+B1 (43-50)
+Can use fixed expressions to keep a conversation going (e.g. ‘I see.’, ‘right’).
+44
+B1 (43-50)
+Can respond to an offer or suggestion, expressing enthusiasm.
+45
+B1 (43-50)
+Can initiate, maintain and close simple, face-to-face conversations on 
+familiar topics.
+46
+B1 (43-50)
+Participate in very short phone 
+calls.
+Can make an appointment on the phone.
+42
+A2+ (36-42)
+Can leave simple, clear and appropriately expressed work-related phone 
+messages.
+42
+A2+ (36-42)
+Can ask for changes to a hotel, restaurant, or transportation reservation on 
+the phone.
+45
+B1 (43-50)
+Can use simple appropriate language to check that information has been 
+understood on the phone.
+45
+B1 (43-50)
+Can return a phone call, explaining who is calling and the reason for the 
+call.
+45
+B1 (43-50)
+Can arrange a delivery time on the phone.
+46
+B1 (43-50)
+Can buy a ticket for an event on the phone.
+46
+B1 (43-50)
+II. Giving instructions 
+Give instructions and directions for 
+everyday activities and processes.
+Can give the order of a work-related process using simple language (eg. 
+first, second, then).
+42
+A2+ (36-42)
+Can ask for, follow and give detailed directions.
+44
+B1 (43-50)
+Can describe how often a work-related task should be completed.
+45
+B1 (43-50)
+Can explain the rules of a familiar game or sport using simple language.
+45
+B1 (43-50)
+
+=== PDF PAGE 9 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  9
+Stage II – Benchmark 5
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Give and respond to informal 
+requests, permission, suggestions 
+and advice.
+Can make and respond to suggestions.
+41
+A2+ (36-42)
+Can respond to an offer or suggestion, expressing enthusiasm.
+45
+B1 (43-50)
+Can deal with common situations when making travel arrangements or 
+travelling.
+45
+B1 (43-50)
+Can give an opinion when asked directly, provided they can ask for 
+repetition.
+45
+B1 (43-50)
+Can make simple recommendations for a course of action in familiar 
+everyday situations.
+45
+B1 (43-50)
+Can give brief reasons and explanations, using simple language.
+45
+B1 (43-50)
+Can use simple, fixed expressions to make offers in a simple business 
+transaction.
+45
+B1 (43-50)
+Can suggest possible solutions to a problem using simple language.
+47
+B1 (43-50)
+IV. Sharing information
+Ask for and give information related 
+to routine daily activities in one-on-
+one interactions.
+Can give a short, basic description of events and activities.
+42
+A2+ (36-42)
+Can convey simple relevant information emphasising the most important 
+point.
+45
+B1 (43-50)
+Can give or seek personal views and opinions in discussing topics of 
+interest.
+46
+B1 (43-50)
+Agree, disagree and give opinions 
+in small group discussions or 
+meetings. 
+Can express opinions using simple language.
+45
+B1 (43-50)
+Can express belief, opinion, agreement and disagreement politely.
+45
+B1 (43-50)
+Give presentations about 
+sequences of events; incidents in 
+the past, present or future; or to 
+describe scenes, pictures or daily 
+routines. 
+Can describe very basic events in the past using simple linking words (e.g. 
+‘then’, ‘next’).
+38
+A2+ (36-42)
+Can end a presentation by thanking the group for their time and attention.
+43
+B1 (43-50)
+Can describe future plans and intentions using fixed expressions.
+43
+B1 (43-50)
+Can give a short talk about a familiar topic, with visual support.
+44
+B1 (43-50)
+Can narrate a story.
+45
+B1 (43-50)
+Can use basic discourse markers to structure a short presentation.
+45
+B1 (43-50)
+Can convey simple information of immediate relevance and emphasise the 
+main point.
+45
+B1 (43-50)
+Can describe events, real or imagined.
+47
+B1 (43-50)
+
+=== PDF PAGE 10 ===
+10  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 5
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand simple to moderately 
+complex personal and public social 
+messages (such as those conveying 
+compliments, invitations, likes, 
+dislikes and preferences) related to 
+a familiar context. 
+Can understand simple informal written advice on a work-related situation.
+43
+B1 (43-50)
+Can understand standard emails on work-related topics.
+44
+B1 (43-50)
+Can distinguish between fact and opinion presented in simple texts on 
+familiar topics.
+47
+B1 (43-50)
+II. Comprehending instructions 
+Understand simple to moderately 
+complex, step-by-step instructions 
+and instructional texts for multistep 
+procedures related to everyday 
+situations. 
+Can understand simple technical information (e.g. instructions for everyday 
+equipment).
+43
+B1 (43-50)
+Can understand written instructions for taking medication.
+44
+B1 (43-50)
+Can understand clearly written, straightforward instructions on how to use 
+a piece of equipment.
+46
+B1 (43-50)
+III. Getting things done 
+Locate and use 1 or 2 pieces of 
+information from moderately 
+complex formatted texts (such 
+as standard maps, charts, forms, 
+tables, schedules, directories or 
+website navigation menus).
+Can understand a simple form asking for medical information
+42
+A2+ (36-42)
+Can make basic inferences or predictions about text content from 
+headings, titles or headlines.
+43
+B1 (43-50)
+Can find and understand information in advertisements for sporting or 
+cultural events.
+45
+B1 (43-50)
+Can generally understand straightforward factual texts on familiar topics.
+46
+B1 (43-50)
+Get information from simple to 
+moderately complex business 
+or service texts (such as public 
+announcements, brochures, 
+notices, business letters and flyers). 
+Can skim a short text to identify its main purpose.
+45
+B1 (43-50)
+Can understand information in advertisements for jobs and services.
+45
+B1 (43-50)
+Can find and understand information in advertisements for sporting or 
+cultural events.
+45
+B1 (43-50)
+Can understand information in advertisements for jobs and services.
+45
+B1 (43-50)
+Can scan a resume/CV for key information.
+45
+B1 (43-50)
+Can understand basic types of standard letters and emails on familiar 
+topics (e.g. enquiries, complaints).
+46
+B1 (43-50)
+
+=== PDF PAGE 11 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  11
+Stage II – Benchmark 5
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand simple to moderately 
+complex descriptive or narrative 
+texts on familiar topics. 
+Can identify similarities and differences between two short texts.
+44
+B1 (43-50)
+Can skim a simple text to identify key concepts.
+45
+B1 (43-50)
+Can identify key subject vocabulary in written descriptions.
+45
+B1 (43-50)
+Interpret information contained 
+in formatted texts (such as 
+diagrams, tables, graphs or website 
+navigation menus). 
+Can understand the main information from simple diagrams (e.g. graphs, 
+bar charts).
+42
+A2+ (36-42)
+Can recognise the departments and their functions presented in a 
+company’s organisational chart.
+45
+B1 (43-50)
+Can derive the probable meaning of simple unknown words from short, 
+familiar contexts.
+46
+B1 (43-50)
+Access and locate basic 
+information from reference 
+sources. 
+Can scan short texts to locate specific information.
+44
+B1 (43-50)
+Can search the internet for specific everyday or work-related information.
+44
+B1 (43-50)
+
+=== PDF PAGE 12 ===
+12  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 5
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey personal messages 
+in short, formal and informal 
+correspondence for a range of 
+everyday social purposes (such 
+as expressing or responding to 
+invitations and feelings, or providing 
+quick updates). 
+Can write a basic informal email/letter of invitation with simple, key details.
+41
+A2+ (36-42)
+Can write a basic email/letter accepting or declining an invitation.
+41
+A2+ (36-42)
+Can respond to simple work-related messages from colleagues on 
+professional social networks.
+43
+B1 (43-50)
+Can give basic advice in writing using simple language.
+43
+B1 (43-50)
+Can write a simple email declining a work-related invitation.
+44
+B1 (43-50)
+Can write an email/letter congratulating someone on something.
+45
+B1 (43-50)
+Can write a short reply to a message requiring an immediate response.
+45
+B1 (43-50)
+Can write simple informal emails/letters and online postings giving news or 
+opinions.
+46
+B1 (43-50)
+II. Reproducing information
+Reduce short, factual, oral 
+discourse (such as live or recorded 
+phone messages or pre-recorded 
+public information lines) to notes or 
+messages. 
+Can take simple notes on key points made during a meeting on a familiar 
+work-related topic.
+47
+B1 (43-50)
+Reduce a page of information to a 
+list of important details. 
+Can relay in writing specific information contained in short simple 
+informational texts, provided the texts concern concrete, familiar subjects 
+and are composed in simple everyday language.
+40
+A2+ (36-42)
+Can write basic work-related instructions as a list or bullet points.
+42
+A2+ (36-42)
+Can write a notice that clearly conveys information.
+46
+B1 (43-50)
+III. Getting things done
+Write short business or service 
+correspondence for routine 
+personal needs. 
+Can write a simple email requesting work-related information.
+42
+A2+ (36-42)
+Can write a short online profile.
+44
+B1 (43-50)
+Can write work-related correspondence on familiar topics using a limited 
+range of grammar and expressions.
+44
+B1 (43-50)
+Can write a resume/CV with basic information about educational and work 
+history.
+45
+B1 (43-50)
+Can write simple instructions on how to use a device or product, given a 
+model.
+46
+B1 (43-50)
+
+=== PDF PAGE 13 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  13
+Stage II – Benchmark 5
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done 
+(cont.)
+Write short business or service 
+correspondence for routine 
+personal needs.
+(cont.)
+Can write a basic formal email/letter requesting information.
+46
+B1 (43-50)
+Can write a paragraph giving information about a job or interest.
+46
+B1 (43-50)
+Can write descriptions of familiar job roles and responsibilities.
+47
+B1 (43-50)
+Can write a simple email of introduction in a professional context.
+47
+B1 (43-50)
+Can write a simple email, giving details of work-related events or plans.
+47
+B1 (43-50)
+Can write a simple letter to explain a change (e.g. a price increase).
+47
+B1 (43-50)
+Complete forms requiring detailed 
+personal information. 
+Can complete simple forms setting objectives and goals in their job role.
+44
+B1 (43-50)
+IV. Sharing information
+Write a paragraph to relate a amiliar 
+sequence of events, description of 
+a person, object or routine.
+Can make simple, logical paragraph breaks in a longer text.
+45
+B1 (43-50)
+Can write a story with a simple linear sequence.
+45
+B1 (43-50)
+Can write a basic paragraph containing a topic sentence and related 
+details, if provided with a model.
+45
+B1 (43-50)
+Can give a simple reason for an action in an informational text, given a 
+model.
+45
+B1 (43-50)
+Can write simple informal emails/letters and online postings giving news or 
+opinions.
+46
+B1 (43-50)
+Can write the concluding sentence or sentences of a basic paragraph, 
+given a model.
+46
+B1 (43-50)
+Can write a description of a future event or activity.
+46
+B1 (43-50)
+Can write descriptions of real or imaginary people.
+47
+B1 (43-50)
+
+=== PDF PAGE 14 ===
+14  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 6
+Listening
+Stage II – Benchmark 6
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand common social 
+exchanges (such as openings and 
+closings, making and cancelling of 
+appointments, apologies, regrets, 
+excuses, and problems in reception 
+and communication). 
+Can understand the main points of narratives and conversations about 
+familiar topics (e.g. work, leisure) delivered in clear standard speech.
+47
+B1 (43-50)
+Can recognise emphasis through intonation and stress, if guided by 
+questions.
+50
+B1 (43-50)
+Can recognise a speaker’s feelings or attitudes.
+50
+B1 (43-50)
+Can follow an everyday conversation or informal interview on common 
+topics.
+51
+B1+ (51-58)
+Can understand a range of formal and informal excuses.
+54
+B1+ (51-58)
+II. Comprehending instructions
+Understand moderately complex 
+directions and instructions for 
+technical or non-technical tasks. 
+Can follow the main points of short talks on familiar topics if delivered in 
+clear standard speech.
+45
+B1 (43-50)
+Can understand simple technical instructions for everyday equipment.
+49
+B1 (43-50)
+Can follow recorded instructions and information given on a phone-
+delivered service.
+51
+B1+ (51-58)
+Can recognise that a speaker is clarifying points they have made in a 
+simple presentation or lecture.
+54
+B1+ (51-58)
+III. Getting things done
+Understand moderately complex 
+communication intended 
+to influence or persuade 
+(such as suggestions, advice, 
+encouragements and requests) 
+in everyday, personally relevant 
+situations. 
+Can extract key factual information from a phone conversation on a 
+familiar topic.
+46
+B1 (43-50)
+Can understand advice on a work-related situation.
+49
+B1 (43-50)
+Can identify the main action points in a work-related meeting conducted in 
+clear, standard speech.
+50
+B1 (43-50)
+Can infer speakers’ opinions in conversations on familiar everyday topics.
+51
+B1+ (51-58)
+Can understand conversations about rules or regulations related to the 
+workplace.
+51
+B1+ (51-58)
+
+=== PDF PAGE 15 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  15
+Stage II – Benchmark 6
+Listening
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information
+Understand short group 
+interactions and discussions on 
+familiar topics.
+Can generally follow changes of topic in discussions related to their field if 
+conducted slowly and clearly.
+49
+B1 (43-50)
+Understand descriptive or narrative 
+monologues or presentations on 
+generally familiar and relevant 
+topics. 
+Can extract the key details from a presentation if delivered slowly and 
+clearly.
+47
+B1 (43-50)
+Can identify specific information in a simple presentation or lecture aimed 
+at a general audience.
+48
+B1 (43-50)
+Can identify the main point of TV news items reporting events, accidents, 
+etc. where the visual supports the commentary.
+49
+B1 (43-50)
+Can infer opinions in a simple presentation or lecture, if guided by 
+questions.
+49
+B1 (43-50)
+Can follow the linear structure of a short formal talk.
+49
+B1 (43-50)
+Can distinguish between main ideas and supporting details in familiar, 
+standard texts.
+51
+B1+ (51-58)
+Can distinguish between advantages and disadvantages in a simple 
+presentation or lecture.
+52
+B1+ (51-58)
+
+=== PDF PAGE 16 ===
+16  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 6
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Participate in routine social 
+conversations for some everyday 
+purposes (such as apologies, 
+excuses, expressing opinions, 
+and making suggestions or 
+arrangements). 
+Can make an apology with brief excuses or reasons.
+45
+B1 (43-50)
+Can enter unprepared into conversation on familiar topics (e.g. family, 
+hobbies, work).
+47
+B1 (43-50)
+Can express attitudes using simple language.
+47
+B1 (43-50)
+Can begin to use a repertoire of common idiomatic phrases in routine 
+situations.
+47
+B1 (43-50)
+Can make an invitation using formal language.
+48
+B1 (43-50)
+Can maintain professional etiquette in conversation using simple phrases 
+and fixed expressions.
+49
+B1 (43-50)
+Can repeat back what is said to confirm understanding and keep a 
+discussion on course.
+52
+B1+ (51-58)
+ Participate in short phone calls. 
+Can make simple work-related arrangements on the phone.
+46
+B1 (43-50)
+Can ask closed questions to check facts and details.
+46
+B1 (43-50)
+Can change simple work-related arrangements on the phone.
+48
+B1 (43-50)
+Can leave a voicemail message including key information.
+49
+B1 (43-50)
+Can discuss a travel-related problem (accommodation/transport) with a 
+service agent over the phone.
+49
+B1 (43-50)
+Can ask someone to clarify or elaborate what they have just said.
+50
+B1 (43-50)
+Can carry out a work-related phone conversation using polite fixed 
+expressions.
+51
+B1+ (51-58)
+II. Giving instructions
+Give sequential instructions and 
+directions for everyday activities 
+and processes.
+Can ask closed questions to check facts and details.
+46
+B1 (43-50)
+Can give simple, clear instructions to organise an activity.
+48
+B1 (43-50)
+Can make a set of instructions easier to understand by uttering them 
+slowly, a few words/signs at a time, employing verbal and non-verbal 
+emphasis to facilitate understanding.
+50
+B1 (43-50)
+III. Getting things done
+Give and respond to informal and 
+somewhat formal suggestions and 
+indirect requests.
+Can change simple work-related arrangements on the phone.
+48
+B1 (43-50)
+Can make simple recommendations on a work-related situation.
+48
+B1 (43-50)
+Can talk about risk using simple language.
+49
+B1 (43-50)
+Can express opinions and react to practical suggestions of where to go, 
+what to do, etc.
+51
+B1+ (51-58)
+Can give simple reasons to justify a viewpoint on a familiar topic.
+50
+B1 (43-50)
+
+=== PDF PAGE 17 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  17
+Stage II – Benchmark 6
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Give and respond to informal and 
+somewhat formal suggestions and 
+indirect requests.
+(cont.)
+Can briefly give reasons and explanations for opinions, plans and actions.
+51
+B1+ (51-58)
+Can express opinions and react to practical suggestions of where to go, 
+what to do, etc.
+51
+B1+ (51-58)
+Can express opinions as regards possible solutions, giving brief reasons 
+and explanations.
+51
+B1+ (51-58)
+IV. Sharing information
+Ask for and give information in 
+some detail; express opinions, 
+feelings, obligation, ability and 
+certainty one-on-one and in small 
+group discussions or meetings.
+Can give straightforward descriptions on a variety of familiar subjects.
+47
+B1 (43-50)
+Can give information in a job interview.
+48
+B1 (43-50)
+Can describe dreams, hopes and ambitions.
+48
+B1 (43-50)
+Can provide a basic description of professional goals.
+48
+B1 (43-50)
+Can discuss everyday, practical issues when the conversation is conducted 
+slowly and clearly.
+49
+B1 (43-50)
+Can make and justify a simple point of view on a work-related topic.
+49
+B1 (43-50)
+Can give a simple update on a work-related project.
+49
+B1 (43-50)
+Can summarise the main ideas in a meeting using simple language.
+50
+B1 (43-50)
+Can present a conclusion in a meeting using simple language.
+50
+B1 (43-50)
+Can report the opinions of others, using simple language.
+51
+B1+ (51-58)
+Can signal agreement in a simple negotiation using fixed expressions.
+51
+B1+ (51-58)
+Can answer questions about professional experience.
+51
+B1+ (51-58)
+Can ask questions about someone’s professional experience.
+51
+B1+ (51-58)
+Can use a suitable phrase to invite others into a discussion.
+52
+B1+ (51-58)
+Can compare and contrast alternatives about what to do, where to go, etc.
+53
+B1+ (51-58)
+Can express limited opinions and arguments during work-related 
+meetings.
+53
+B1+ (51-58)
+Give detailed presentations about 
+sequences of events; incidents 
+in the past, present or future; 
+simple processes; or to describe 
+or compare things such as people 
+and places. 
+Can talk about work-related plans and intentions.
+50
+B1 (43-50)
+Can give a simple presentation on a work-related topic.
+51
+B1+ (51-58)
+Can give a short, rehearsed talk or presentation on a familiar topic.
+53
+B1+ (51-58)
+
+=== PDF PAGE 18 ===
+18  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 6
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand moderately complex 
+social messages (such as those 
+conveying announcements, 
+cancellations of arrangements and 
+apologies) related to a personal 
+experience or a familiar context. 
+Can identify the writer’s purpose in writing a short text e.g. to arrange a 
+specific time to meet, to give specific information etc.
+47*
+B1 (43-50)
+Can identify the main topic and related ideas in a structured text.
+49
+B1 (43-50)
+Can generally understand details of events, feelings and wishes in letters, 
+emails and online postings.
+51
+B1+ (51-58)
+Can understand updates in emails about actions taken to solve problems.
+52
+B1+ (51-58)
+II. Comprehending instructions 
+Understand moderately complex 
+instructions and instructional texts 
+for multistep procedures related 
+to everyday situations, where the 
+sequence must be inferred. 
+Can understand the relationship between a main point and an example in a 
+structured text.
+50
+B1 (43-50)
+Can follow chronological sequence in a formal structured text.
+52
+B1+ (51-58)
+III. Getting things done 
+Locate and use 2 or 3 pieces of 
+information from moderately 
+complex formatted texts (such as 
+maps, course calendars, directories 
+or website navigation menus). 
+Can understand duties and responsibilities listed in job descriptions.
+48
+B1 (43-50)
+Can understand detailed information in work-related calendar 
+appointments.
+51
+B1+ (51-58)
+Can compare a resume/CV against a job posting to determine if key 
+requirements have been met.
+54
+B1+ (51-58)
+Get information from moderately 
+complex business/service texts 
+containing advice, requests or 
+detailed specifications. 
+Can understand responses to multiple choice questions about familiar 
+products or services.
+44
+B1 (43-50)
+Can understand the main information in the agenda for a work-related 
+meeting.
+47
+B1 (43-50)
+Can extract relevant details in everyday letters, brochures and short official 
+documents.
+48
+B1 (43-50)
+Can understand standard documents related to the daily activities of a 
+company or institution.
+49
+B1 (43-50)
+* GSE Learning Objectives with an asterisk indicate provisional levels.
+
+=== PDF PAGE 19 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  19
+Stage II – Benchmark 6
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand moderately complex 
+descriptive or narrative texts on 
+familiar topics. 
+Can identify the topic sentence of a paragraph.
+47
+B1 (43-50)
+Can derive the probable meaning of a few unknown words from short, 
+familiar contexts.
+48
+B1 (43-50)
+Can scan several short, simple texts on the same topic to find specific 
+information.
+48
+B1 (43-50)
+Can make simple inferences based on information given in a short article.
+51
+B1+ (51-58)
+Can distinguish between fact and opinion in relation to common topics.
+51
+B1+ (51-58)
+Can understand cause and effect relationships in a simple academic text, if 
+clearly signalled.
+52
+B1+ (51-58)
+Can recognise the organisational structure of a paragraph in a simple 
+academic text.
+52
+B1+ (51-58)
+Interpret information contained 
+in formatted texts (such as 
+diagrams, tables, graphs or website 
+navigation menus). 
+Can identify the key points presented in graphs and charts in a simple 
+academic text, if guided by questions.
+54
+B1+ (51-58)
+Access, locate and compare 2 or 3 
+pieces of information from online 
+reference sources. 
+Can scan a simple academic text to find specific information.
+49
+B1 (43-50)
+Can understand the main idea of a passage using textual clues.
+50
+B1 (43-50)
+
+=== PDF PAGE 20 ===
+20  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 6
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey personal messages 
+in short, formal, and informal 
+correspondence for an expanding 
+range of everyday social 
+purposes (such as expressing 
+congratulations, thanks, apologies, 
+or offering assistance). 
+Can write descriptions of past events, activities, or personal experiences.
+47
+B1 (43-50)
+Can write personal emails/letters giving some details of events, 
+experiences and feelings.
+48
+B1 (43-50)
+Can explain in writing why a meeting has been cancelled.
+49
+B1 (43-50)
+Can write personal emails/letters giving advice.
+50
+B1 (43-50)
+Can write about experiences, feelings and reactions in a simple connected 
+text.
+50
+B1 (43-50)
+Can write a formal email declining a work-related invitation.
+53
+B1+ (51-58)
+Can write an email invitation to a work-related meeting, briefly addressing 
+the reason for the meeting and what will be discussed.
+53
+B1+ (51-58)
+II. Reproducing information
+Reduce short, factual oral 
+discourse (such as live or recorded 
+phone messages, pre-recorded 
+public information lines, podcasts 
+and short presentations) to notes 
+or messages. 
+Can relay in writing specific information given in a straightforward recorded 
+message, provided the topics concerned are familiar and the delivery is 
+slow and clear. 
+50
+B1 (43-50)
+Can take notes on a simple presentation or lecture aimed at a general 
+audience.
+50
+B1 (43-50)
+Can write down a set of instructions being dictated to them.
+51
+B1+ (51-58)
+Reduce a page of information to an 
+outline or summary. 
+Can relay in writing specific, relevant information contained in 
+straightforward informational texts on familiar subjects. 
+49
+B1 (43-50)
+Can write a basic summary of a simple text using the original wording and 
+paragraph order.
+50
+B1 (43-50)
+Can summarise the main message from simple diagrams (e.g. graphs, bar 
+charts).
+52
+B1+ (51-58)
+
+=== PDF PAGE 21 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  21
+Stage II – Benchmark 6
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Write short business or service 
+correspondence for routine 
+purposes. 
+Can write a simple email requesting work-related information, emphasising 
+the most important points.
+49
+B1 (43-50)
+Can describe general work-related experiences.
+50
+B1 (43-50)
+Can write a short report on a work-related task or event.
+51
+B1+ (51-58)
+Can write a basic email/letter of complaint requesting action.
+51
+B1+ (51-58)
+Can write a simple summary of action points in a meeting.
+52
+B1+ (51-58)
+Can write an email giving some detail of work-related news and events.
+53
+B1+ (51-58)
+Complete forms requiring detailed 
+personal information.
+Can complete a detailed form requiring travel information (e.g. visa 
+application).
+48
+B1 (43-50)
+Can write a basic letter of application with limited supporting details.
+48
+B1 (43-50)
+Can complete a form requiring educational information (e.g. applying for a 
+course of study).
+51
+B1+ (51-58)
+IV. Sharing information
+Write 1 or 2 connected paragraphs 
+to relate a familiar sequence 
+of events, a story, a detailed 
+description, or a comparison of 
+people, things, routines or simple 
+procedures.
+Can write an everyday connected text using a set of short elements or 
+facts and building them into a sequence.
+47
+B1 (43-50)
+Can describe the sequence in a process when writing a simple text, using 
+common discourse markers.
+47
+B1 (43-50)
+Can write a short, simple factual description of a familiar sector or industry.
+49
+B1 (43-50)
+Can use common connectors to tell a story or describe an event in writing.
+51
+B1+ (51-58)
+Can clearly signal chronological sequence in narrative text.
+52
+B1+ (51-58)
+Can write a simple review of a film, book or TV programme using a limited 
+range of language.
+52
+B1+ (51-58)
+Can write a short, simple comparison of products and services from 
+different companies.
+52
+B1+ (51-58)
+Can write a description of a real or imagined event (e.g. a recent trip).
+53
+B1+ (51-58)
+Can give someone clear, detailed directions on how to get somewhere in a 
+letter, email, or online posting.
+53
+B1+ (51-58)
+
+=== PDF PAGE 22 ===
+22  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 7
+Listening
+Stage II – Benchmark 7
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand moderately complex 
+social exchanges (such as 
+expressions of and responses to 
+gratitude, hopes, appreciation, 
+complaints, disappointment, 
+satisfaction, dissatisfaction, 
+approval and disapproval). 
+Can understand the main points of feedback from clients and colleagues if 
+delivered slowly and clearly.
+48
+B1 (43-50)
+Can understand problem and solution relationships in informal 
+conversation.
+58
+B1+ (51-58)
+Can distinguish between different points of view in a discussion or 
+presentation.
+56
+B1+ (51-58)
+Can recognise misunderstandings without explicit prompting.
+58
+B1+ (51-58)
+II. Comprehending instructions
+Understand moderately complex 
+directions and instructions for 
+technical or non-technical tasks. 
+Can follow detailed directions.
+53
+B1+ (51-58)
+Can understand advice and instructions for resolving a problem with a 
+product or piece of equipment.
+55
+B1+ (51-58)
+Can generally follow rapid or extended speech, but may require repetition 
+or clarification.
+57
+B1+ (51-58)
+Can follow classes and training courses on a range of subjects, provided 
+the content is simple.
+57
+B1+ (51-58)
+III. Getting things done
+Understand moderately complex 
+communication intended to 
+influence or persuade (such as 
+requests, reminders, orders and 
+pleas) in situations related to 
+personal or general experiences. 
+Can recognise cause and effect relationships in a simple presentation or 
+lecture when signalled by discourse markers.
+54
+B1+ (51-58)
+Can predict the content of a simple presentation or lecture by listening to 
+the introductory statement.
+55
+B1+ (51-58)
+Can extract the meaning of unknown words from context if the topic 
+discussed is familiar.
+57
+B1+ (51-58)
+Can recognise the use of persuasive language in a simple presentation or 
+lecture.
+57
+B1+ (51-58)
+
+=== PDF PAGE 23 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  23
+Stage II – Benchmark 7
+Listening
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information
+Understand short group 
+interactions, discussions and 
+meetings on generally familiar 
+topics. 
+Can recognise discourse markers that introduce supporting examples.
+55
+B1+ (51-58)
+Can extract the key details from discussions in meetings conducted in 
+clear, standard speech.
+57
+B1+ (51-58)
+Understand extended descriptive 
+or narrative monologues or 
+presentations about personal 
+experiences, general knowledge 
+or familiar work-related topics, 
+even when some information is 
+presented out of sequence. 
+Can identify details that support a point of view in a simple presentation or 
+lecture aimed at a general audience.
+51
+B1+ (51-58)
+Can recognise that ideas in a simple presentation or lecture are similar 
+when signalled by discourse markers.
+51
+B1+ (51-58)
+Can infer opinions in a simple presentation or lecture.
+54
+B1+ (51-58)
+Can distinguish between main ideas and supporting details in a simple 
+presentation or lecture.
+53
+B1+ (51-58)
+Can recognise discourse markers that compare and contrast ideas.
+53
+B1+ (51-58)
+Can distinguish facts from opinions in a simple, straightforward 
+presentation or lecture.
+55
+B1+ (51-58)
+Can recognise that ideas in a simple presentation or lecture contrast when 
+signalled by stress.
+56
+B1+ (51-58)
+Can recognise when a speaker uses basic rhetorical questions in 
+conversation.
+57
+B1+ (51-58)
+Can deduce the general meaning of a passage from context in a longer, 
+structured text.
+57
+B1+ (51-58)
+Can follow most of a clearly structured presentation within their own field.
+57
+B1+ (51-58)
+
+=== PDF PAGE 24 ===
+24  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 7
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Participate in less routine social 
+conversations for many everyday 
+purposes (such as expressing 
+and responding to appreciation, 
+complaints, satisfaction, 
+dissatisfaction and hope). 
+Can make a complaint.
+51
+B1+ (51-58)
+Can use a basic repertoire of conversation strategies to maintain a 
+discussion.
+53
+B1+ (51-58)
+Can signal that they wish to bring a conversation to an end.
+53
+B1+ (51-58)
+Can make excuses using a range of polite forms.
+54
+B1+ (51-58)
+Can respond to interruptions in a meeting using fixed expressions.
+54
+B1+ (51-58)
+Can use polite questions to build rapport in work-related social situations.
+54
+B1+ (51-58)
+Can politely interrupt during a formal conversation, using fixed expressions
+55
+B1+ (51-58)
+Can use synonyms to describe or gloss an unknown word.
+55
+B1+ (51-58)
+Participate in routine phone calls. 
+Can explain the reasons for their phone call to a business or client.
+53
+B1+ (51-58)
+Can leave phone messages containing detailed information.
+54
+B1+ (51-58)
+Can clarify information and check understanding on the phone.
+54
+B1+ (51-58)
+II. Giving instructions
+Give instructions and directions for 
+technical and nontechnical tasks, 
+procedures and processes.
+Can give clear work-related instructions.
+55
+B1+ (51-58)
+Can reasonably fluently relate a straightforward narrative or description as 
+a linear sequence of points.
+57
+B1+ (51-58)
+Can explain technical issues during an online meeting using simple 
+language.
+58
+B1+ (51-58)
+III. Getting things done
+Give extended warnings, 
+suggestions, recommendations or 
+advice.
+Can express general concern about a work-related issue.
+54
+B1+ (51-58)
+Can explain the main points in an idea or problem with reasonable 
+precision.
+55
+B1+ (51-58)
+Can respond to ideas and suggestions in informal discussions.
+55
+B1+ (51-58)
+Can express and comment on ideas and suggestions in informal 
+discussions.
+56
+B1+ (51-58)
+Can decline offers politely using a range of formal and informal 
+expressions.
+56
+B1+ (51-58)
+Can ask for advice on a wide range of subjects.
+57
+B1+ (51-58)
+Can collaborate on a shared task, e.g. formulating and responding to 
+suggestions, asking whether people agree, and proposing alternative 
+approaches.
+58
+B1+ (51-58)
+
+=== PDF PAGE 25 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  25
+Stage II – Benchmark 7
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+Give detailed information; express 
+and qualify opinions and feelings; 
+express reservations, approval, 
+disapproval, possibilities and 
+probabilities one-on-one and 
+in small group discussions or 
+meetings.
+Can respond to opinions expressed by others.
+51
+B1+ (51-58)
+Can express opinions and attitudes using a range of basic expressions and 
+sentences.
+52
+B1+ (51-58)
+Can express general concern about a work-related issue.
+54
+B1+ (51-58)
+Can describe basic symptoms to a doctor, but with limited precision.
+54
+B1+ (51-58)
+Can report factual information given by other people.
+55
+B1+ (51-58)
+Can respond to ideas and suggestions in informal discussions.
+55
+B1+ (51-58)
+Can express approval and appreciation of other people’s ideas in a 
+discussion.
+56
+B1+ (51-58)
+Can give an opinion on practical problems, with support when necessary.
+56
+B1+ (51-58)
+Can give brief comments on the views of others.
+56
+B1+ (51-58)
+Can check that everyone agrees in group discussions using fixed 
+expressions.
+57
+B1+ (51-58)
+Can report the opinions of others.
+58
+B1+ (51-58)
+Can discuss problems and solutions related to change in the workplace.
+58
+B1+ (51-58)
+Can express disagreement in a manner that shows they were actively 
+listening to the other person.
+58
+B1+ (51-58)
+Can tell someone about a discussion or conversation in some detail.
+58
+B1+ (51-58)
+Can express support in a manner that shows they were actively listening to 
+the other person.
+58
+B1+ (51-58)
+Can exchange information on a wide range of topics within their field with 
+some confidence.
+59
+B2 (59-66)
+Give presentations about 
+moderately complex processes, 
+to tell stories (including future 
+scenarios), or to describe, compare 
+and contrast in detail 2 events, jobs 
+or procedures. 
+Can give an effective presentation about a familiar topic.
+52
+B1+ (51-58)
+Can present findings from a research project in a simple way.
+53
+B1+ (51-58)
+Can develop an argument using common fixed expressions.
+53
+B1+ (51-58)
+Can give a short, prepared update on a work-related project.
+53
+B1+ (51-58)
+Can answer simple factual questions about a presentation they have given.
+54
+B1+ (51-58)
+Can present results in a meeting or presentation using fixed expressions
+54
+B1+ (51-58)
+Can explain the main points in an idea or problem with reasonable 
+precision.
+55
+B1+ (51-58)
+Can present information related to the business in an informal discussion.
+56
+B1+ (51-58)
+Can use appropriate linking expressions to signal transitions within a 
+presentation.
+58
+B1+ (51-58)
+Can describe people’s reactions to change.
+58
+B1+ (51-58)
+
+=== PDF PAGE 26 ===
+26  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 7
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand moderately complex 
+personal and public social 
+messages (such as those conveying 
+appreciation, complaints, hopes, 
+satisfaction and dissatisfaction). 
+Can infer meaning based on information in a text.
+55
+B1+ (51-58)
+Can understand factual details in work-related emails.
+56
+B1+ (51-58)
+Can identify the writers’ communicative purpose in a text.
+57
+B1+ (51-58)
+Can recognise the writer’s point of view in a structured text.
+58
+B1+ (51-58)
+II. Comprehending instructions 
+Understand moderately complex 
+instructions and instructional texts 
+for multistep procedures related 
+to familiar tasks, which may be 
+specialized or technical. 
+Can understand the main information in technical work-related 
+documents.
+53
+B1+ (51-58)
+Can understand written advice and instructions for resolving a problem 
+with a product or piece of equipment.
+55
+B1+ (51-58)
+Can understand details of written product information (e.g. specifications).
+58
+B1+ (51-58)
+III. Getting things done 
+Locate and use 3 or 4 pieces 
+of information from moderately 
+complex formatted texts (such 
+as course calendars, extensive 
+directories, extensive website 
+navigation menus).
+Can understand the session details listed in a conference programme.
+53
+B1+ (51-58)
+Can identify key details in work-related documents.
+55
+B1+ (51-58)
+Get information from moderately 
+complex business/service 
+texts containing assessments, 
+evaluations and advice. 
+Can extract the key details from simple informational materials (e.g. 
+company policies).
+49
+B1 (43-50)
+Can extract key details from a company blog or article.
+53
+B1+ (51-58)
+Can recognise significant points in straightforward reports and business 
+letters.
+53
+B1+ (51-58)
+Can understand written explanations of skills needed for career 
+progression.
+53
+B1+ (51-58)
+Can understand written feedback about what they are doing well and what 
+they need to improve on in their job performance.
+56
+B1+ (51-58)
+Can understand the details of a product or service well enough to make a 
+purchasing decision.
+56
+B1+ (51-58)
+Can extract key details from official documents and reports.
+58
+B1+ (51-58)
+Can understand details of written product information (e.g. specifications).
+58
+B1+ (51-58)
+
+=== PDF PAGE 27 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  27
+Stage II – Benchmark 7
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+Understand moderately complex 
+extended descriptions, reports and 
+narrations on familiar topics. 
+Can recognise common discourse markers that convey emphasis in a 
+simple text.
+53
+B1+ (51-58)
+Can recognise examples and their relation to the idea they support.
+54
+B1+ (51-58)
+Can guess the meaning of an unfamiliar word from context.
+55
+B1+ (51-58)
+Can recognise significant points and arguments in straightforward 
+newspaper articles on familiar topics.
+56
+B1+ (51-58)
+Can understand problem and solution relationships in a structured text.
+58
+B1+ (51-58)
+Interpret information contained 
+in moderately complex formatted 
+texts (such as tables, graphs, 
+diagrams and flow charts or 
+website navigation menus). 
+Can understand numerical values in graphs and charts in a simple 
+academic text.
+54
+B1+ (51-58)
+Can identify the key points presented in graphs and charts in a simple 
+academic text, if guided by questions.
+54
+B1+ (51-58)
+Access, locate and integrate 
+information from online reference 
+sources. 
+Can compare information given in different texts and media on the same 
+topic.
+58
+B1+ (51-58)
+Can synthesise information from two or more basic texts, if guided by 
+questions.
+58
+B1+ (51-58)
+
+=== PDF PAGE 28 ===
+28  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 7
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey personal messages 
+in formal and informal 
+correspondence for an expanding 
+range of social purposes (such 
+as expressing and responding 
+to appreciation, complaints, 
+disappointment, satisfaction, 
+dissatisfaction or hope). 
+Can write an email/letter sending a message of sympathy.
+51
+B1+ (51-58)
+Can respond to and comment on other people’s personal updates on a 
+social media website.
+54
+B1+ (51-58)
+Can write a formal email accepting a work-related invitation.
+54
+B1+ (51-58)
+Can post comments on the discussion board of a website.
+55
+B1+ (51-58)
+Can vary the formality of greetings in emails/letters based on intended 
+recipients.
+55
+B1+ (51-58)
+Can write personal updates on a social media website using an appropriate 
+style.
+55
+B1+ (51-58)
+Can write a work-related email/letter expressing thanks in detail.
+56
+B1+ (51-58)
+Can write emails/letters responding to personal news and views in detail.
+58
+B1+ (51-58)
+II. Reproducing information
+Reduce short oral discourse 
+(such as live or recorded phone 
+messages, pre-recorded public 
+information, podcasts or short 
+presentations) to notes. 
+Can take messages, communicate enquiries and explain problems.
+53
+B1+ (51-58)
+Can write a simple summary of action points from a meeting.
+53
+B1+ (51-58)
+Can take notes of key points during a talk on a familiar topic, if delivered 
+clearly.
+55
+B1+ (51-58)
+Can write notes when someone is describing a problem.
+57
+B1+ (51-58)
+Reduce a text of up to about 2 
+pages to an outline or summary.
+Can take notes while researching a familiar topic.
+53
+B1+ (51-58)
+Can write a simple project plan with key deliverables.
+55
+B1+ (51-58)
+Can collate short pieces of information and summarise them for 
+somebody else.
+58
+B1+ (51-58)
+
+=== PDF PAGE 29 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  29
+Stage II – Benchmark 7
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+Write business or service 
+correspondence for a range of 
+routine and less routine purposes 
+(such as passing on information, 
+and making and responding to 
+requests, recommendations and 
+warnings). 
+Can write emails/letters exchanging information, emphasising the most 
+important point.
+53
+B1+ (51-58)
+Can write a short, simple work-related report outlining key issues.
+53
+B1+ (51-58)
+Can write a formal email/letter requesting information.
+54
+B1+ (51-58)
+Can make suggestions and recommendations on work-related topics.
+54
+B1+ (51-58)
+Can write a short, simple marketing document, describing products or 
+services.
+56
+B1+ (51-58)
+Can write an email, giving details of work-related events, facts, or plans.
+57
+B1+ (51-58)
+Can write a description of a problem with a product or piece of equipment.
+58
+B1+ (51-58)
+Can write comments and complaints about products and services.
+58
+B1+ (51-58)
+Complete extended forms requiring 
+detailed personal information. 
+Can complete a form requiring health information.
+54
+B1+ (51-58)
+Can complete a form requiring financial information (e.g. application for a 
+bank account or credit agreement).
+55
+B1+ (51-58)
+IV. Sharing information
+Write 2 or 3 connected paragraphs 
+to relate a familiar sequence of 
+events, make a comparison, or 
+provide a detailed description 
+of a person, system, routine or 
+procedure.
+Can write simple structured essays, organising basic ideas.
+53
+B1+ (51-58)
+Can check and correct spelling, punctuation and grammar in simple 
+written texts.
+54
+B1+ (51-58)
+Can show a simple relationship between a main point and an example in a 
+structured text.
+55
+B1+ (51-58)
+Can write instructions on how to use a device or product.
+56
+B1+ (51-58)
+Can write a business report using a standard template.
+58
+B1+ (51-58)
+
+=== PDF PAGE 30 ===
+30  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 8
+Listening
+Stage II – Benchmark 8
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Understand moderately complex 
+social exchanges (such as 
+expressions of and responses to 
+gratitude, hopes, appreciation, 
+complaints, disappointment, 
+satisfaction, dissatisfaction, 
+approval, disapproval, formal 
+welcomes and farewells, 
+condolences and congratulations). 
+Can identify the main reasons for and against an argument or idea in a 
+discussion delivered in clear standard speech.
+59
+B2 (59-66)
+Can understand in detail work-related phone messages.
+61
+B2 (59-66)
+Can recognise emphasis through intonation and stress.
+61
+B2 (59-66)
+Can understand main points and check comprehension by using 
+contextual clues.
+64
+B2 (59-66)
+Can understand the speaker’s point of view on most topics delivered at 
+natural speed and in standard language.
+65
+B2 (59-66)
+II. Comprehending instructions
+Understand extended multistep 
+directions or instructions for 
+technical or non-technical tasks. 
+Can follow the stages of a complex process described using non-technical 
+language.
+61
+B2 (59-66)
+Can understand detailed instructions well enough to be able to follow 
+them without making mistakes.
+62
+B2 (59-66)
+Can follow chronological sequences in extended informal speech at 
+natural speed.
+65
+B2 (59-66)
+Can understand the main ideas of complex technical discussions in their 
+field.
+66
+B2 (59-66)
+III. Getting things done
+Understand communication 
+intended to influence or 
+persuade (such as extended 
+warnings, threats, suggestions, 
+recommendations and proposed 
+solutions) in situations related to 
+personal decisions or to work-
+related issues in own field. 
+Can recognise inferred meaning in a simple presentation or lecture.
+59
+B2 (59-66)
+Can critically evaluate the main points of a straightforward presentation or 
+lecture.
+61
+B2 (59-66)
+Can recognise that a speaker is expressing concerns in a formal 
+discussion.
+60
+B2 (59-66)
+Can understand the advantages and disadvantages of different options 
+during a discussion.
+64
+B2 (59-66)
+Can understand main points and check comprehension by using 
+contextual clues.
+64
+B2 (59-66)
+Can understand a course of action suggested during a negotiation.
+67
+B2+ (67-75)
+
+=== PDF PAGE 31 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  31
+Stage II – Benchmark 8
+Listening
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information
+Understand group interactions 
+about abstract and complex ideas 
+on familiar topics. 
+Can identify the main reasons for and against an argument or idea in a 
+discussion delivered in clear standard speech.
+59
+B2 (59-66)
+Can recognise generalisations and their supporting ideas.
+59
+B2 (59-66)
+Can follow a natural group discussion, but may find it difficult to participate 
+effectively.
+62
+B2 (59-66)
+Can distinguish between fact and opinion in informal discussion at natural 
+speed.
+66
+B2 (59-66)
+Understand extended monologues 
+or presentations on topics that are 
+generally familiar and related to 
+general knowledge or technical/
+work-related issues in own field. 
+Can recognise the basic organisational structure of different types of 
+presentations.
+60
+B2 (59-66)
+Can distinguish between relevant and irrelevant content in extended 
+informal speech.
+60
+B2 (59-66)
+Can recognise paraphrasing and repetition in a straightforward 
+presentation or lecture.
+61
+B2 (59-66)
+Can follow the stages of a complex process described using non-technical 
+language.
+61
+B2 (59-66)
+Can critically evaluate the effectiveness of slides or other visual materials 
+that accompany a simple presentation.
+62
+B2 (59-66)
+Can recognise the speaker’s point of view in a structured presentation.
+63
+B2 (59-66)
+Can interpret the purpose of content of visuals (e.g. diagrams, charts) used 
+to support an academic lecture or presentation.
+63
+B2 (59-66)
+Can understand specialised vocabulary used in presentations or 
+discussions within their field.
+66
+B2 (59-66)
+Can follow chronological sequences in extended informal speech at 
+natural speed.
+65
+B2 (59-66)
+Can understand cause and effect relationships in informal conversation at 
+natural speed.
+65
+B2 (59-66)
+Can extract the main points from news items, etc. with opinions, 
+arguments and discussion.
+65
+B2 (59-66)
+
+=== PDF PAGE 32 ===
+32  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 8
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Participate in less routine social 
+conversations for most everyday 
+purposes (such as expressing 
+and responding to empathy, 
+clarifying conflicts, and providing 
+reassurance). 
+Can respond to conflict in a simple negotiation using fixed expressions.
+58
+B1+ (51-58)
+Can discuss details of a work-related task (e.g. deadlines, specifications).
+59
+B2 (59-66)
+Can pass on a detailed piece of information reliably.
+60
+B2 (59-66)
+Can engage in extended conversation in a clearly participatory fashion on 
+most general topics.
+61
+B2 (59-66)
+Can express feelings (e.g. sympathy, surprise, interest) with confidence, 
+using a range of expressions.
+61
+B2 (59-66)
+Can make a formal apology with detailed excuses or reasons.
+62
+B2 (59-66)
+Can use a range of language to express degrees of enthusiasm.
+62
+B2 (59-66)
+Can encourage discussion by inviting others to join in, say what they think, 
+etc.
+62
+B2 (59-66)
+Can adjust their tone of voice to express empathy when delivering bad 
+news to a colleague or client.
+63
+B2 (59-66)
+Can contribute to a conversation fluently and naturally, provided the topic 
+is not too abstract or complex.
+66
+B2 (59-66)
+Participate in brief professional 
+phone calls. 
+Can repeat back what is said during a teleconference to confirm 
+understanding.
+59
+B2 (59-66)
+Can invite others into the discussion during a teleconference by asking for 
+questions.
+60
+B2 (59-66)
+Can end an extended professional phone conversation, summarising 
+content and conclusions.
+70
+B2+ (67-75)
+II. Giving instructions
+Give instructions and directions 
+for a broad range of technical and 
+non-technical tasks, procedures 
+and processes.
+Can describe how to do something, giving detailed instructions.
+62
+B2 (59-66)
+Can give a clear, detailed spoken description of how to carry out a 
+procedure.
+63
+B2 (59-66)
+Can give clear instructions about solving job-related problems.
+64
+B2 (59-66)
+Can explain the different roles of participants in the collaborative process, 
+giving clear instructions for group work.
+65
+B2 (59-66)
+
+=== PDF PAGE 33 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  33
+Stage II – Benchmark 8
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+II. Giving instructions
+(cont.)
+Propose or recommend solutions 
+to problems in a familiar area. 
+Can politely express dissatisfaction for products and services offered by a 
+company or institution.
+59
+B2 (59-66)
+Can express specific concerns about a work-related issue.
+59
+B2 (59-66)
+Can suggest solutions to problems and explain why they would work.
+60
+B2 (59-66)
+Can describe an everyday consumer-related problem and request a 
+correction or solution.
+60
+B2 (59-66)
+Can discuss possible options for dealing with a work-related task.
+60
+B2 (59-66)
+Can ask questions to stimulate discussion on how to organise collaborative 
+work.
+62
+B2 (59-66)
+Can answer complaints from dissatisfied employees and customers 
+politely.
+62
+B2 (59-66)
+Can explain a problem and demand what action should be taken in an 
+appropriate way.
+64
+B2 (59-66)
+Can deal with dissatisfied clients or customers politely.
+64
+B2 (59-66)
+Can give advice on a wide range of subjects.
+66
+B2 (59-66)
+Can outline an issue or problem clearly.
+66
+B2 (59-66)
+IV. Sharing information
+Give detailed information; express 
+and qualify opinions or concerns; 
+present solutions and options; 
+indicate opposition or support for 
+a stand in one-on-one interactions 
+and small group discussions or 
+meetings.
+Can take part in routine formal discussions conducted in clear standard 
+speech in which factual information is exchanged.
+60
+B2 (59-66)
+Can discuss a plan of action for dealing with a work-related task.
+59
+B2 (59-66)
+Can encourage agreement in meetings using fixed expressions.
+59
+B2 (59-66)
+Can describe the degree of necessity of various actions.
+60
+B2 (59-66)
+Can encourage decision-making in meetings using fixed expressions.
+60
+B2 (59-66)
+Can recommend a course of action, giving reasons.
+62
+B2 (59-66)
+Can make a factual comparison of products and services from different 
+companies.
+62
+B2 (59-66)
+Can develop an argument giving reasons in support of or against a 
+particular point of view.
+63
+B2 (59-66)
+Can express views clearly and evaluate hypothetical proposals in informal 
+discussions.
+64
+B2 (59-66)
+Can use stock phrases to gain time and keep the turn whilst formulating 
+what to say.
+64
+B2 (59-66)
+
+=== PDF PAGE 34 ===
+34  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 8
+Speaking
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Sharing information
+(cont.)
+Give detailed information; express 
+and qualify opinions or concerns; 
+present solutions and options; 
+indicate opposition or support for 
+a stand in one-on-one interactions 
+and small group discussions or 
+meetings.
+(cont.)
+Can use a range of language to express degrees of reluctance.
+65
+B2 (59-66)
+Can express opinions about news stories using a wide range of everyday 
+language.
+65
+B2 (59-66)
+Can use intonation to indicate various degrees of certainty during a 
+discussion.
+65
+B2 (59-66)
+Can manage discussion on familiar topics confirming comprehension, 
+inviting others in, etc.
+65
+B2 (59-66)
+Can give feedback to an employee about what they are doing well and 
+what they need to improve on.
+65
+B2 (59-66)
+Can discuss specific comments made on a performance evaluation form.
+65
+B2 (59-66)
+Can introduce new information during a formal discussion or presentation
+66
+B2 (59-66)
+Can develop an argument well enough to be followed without difficulty 
+most of the time.
+66
+B2 (59-66)
+Can give detailed feedback about someone’s performance on a familiar 
+task or project.
+67
+B2+ (67-75)
+Give presentations to describe 
+and explain structures, systems or 
+processes based on research. 
+Can respond to clearly expressed questions on a presentation they have 
+given.
+61
+B2 (59-66)
+Can justify the reasons for a particular decision or course of action.
+62
+B2 (59-66)
+Can construct a chain of reasoned argument.
+62
+B2 (59-66)
+Can recommend particular actions at the end of a presentation.
+63
+B2 (59-66)
+Can compare and contrast situations in some detail and speculate about 
+the reasons for the current situation.
+64
+B2 (59-66)
+Can develop a clear argument with supporting subsidiary points and 
+relevant examples.
+66
+B2 (59-66)
+
+=== PDF PAGE 35 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  35
+Stage II – Benchmark 8
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others 
+Understand moderately complex 
+social messages (such as those 
+conveying general opinions, 
+assessments of current events 
+or situations, and responses to 
+complaints or sympathy). 
+Can understand most correspondence relating to their field of interest.
+58
+B1+ (51-58)
+Can understand the author’s purpose and intended audience.
+62
+B2 (59-66)
+Can distinguish between ambiguity and certainty in emails/letters.
+63
+B2 (59-66)
+Can recognise the tone and intended audience of a structured text.
+65
+B2 (59-66)
+II. Comprehending instructions 
+Understand extended, moderately 
+complex, multistep instructions and 
+instructional texts for established 
+(set) procedures related to 
+specialized tasks. 
+Can understand instructions for making financial transactions online.
+59
+B2 (59-66)
+Can understand the rules and expected behaviours described in a 
+company’s code of conduct document.
+61
+B2 (59-66)
+III. Getting things done 
+Locate, integrate and use 3 or 
+4 pieces of information from 
+moderately complex formatted 
+texts. 
+Can recognise the use of cohesive devices to link ideas within and 
+between paragraphs in a written text.
+62
+B2 (59-66)
+Can interpret the main message from complex diagrams and visual 
+information.
+62
+B2 (59-66)
+Get information from moderately 
+complex business/service 
+texts containing proposals, 
+recommendations and statements 
+of rules, regulations or policies. 
+Can infer the meaning of words from context in work-related documents 
+or publications on unfamiliar topics.
+64
+B2 (59-66)
+Can understand in detail the agenda for a work-related meeting.
+62
+B2 (59-66)
+Can extract key details from an article on a business-related topic.
+63
+B2 (59-66)
+Can scan a long text or a set of related texts in order to find specific 
+information.
+63
+B2 (59-66)
+IV. Comprehending information 
+Understand moderately complex 
+extended descriptions, feature 
+articles, reports and narrations. 
+Can infer the meaning of words from context in work-related documents 
+on familiar topics.
+59
+B2 (59-66)
+Can identify language used to persuade the reader.
+60
+B2 (59-66)
+Can distinguish between facts and opinions in structured meeting notes.
+60
+B2 (59-66)
+Can make inferences or predictions about the content of newspaper and 
+magazine articles from headings, titles or headlines.
+60
+B2 (59-66)
+Can distinguish supporting details from the main points in a text.
+61
+B2 (59-66)
+Can understand the plot of extended narratives written in standard, non-
+literary language.
+62
+B2 (59-66)
+Can make inferences about the attitudes and feelings of characters based 
+on evidence in the text.
+63
+B2 (59-66)
+Can summarise, comment on and discuss a wide range of factual and 
+imaginative texts.
+66
+B2 (59-66)
+
+=== PDF PAGE 36 ===
+36  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 8
+Reading
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+IV. Comprehending information 
+(cont.)
+Interpret information contained 
+in moderately complex formatted 
+texts (such as tables, graphs, 
+diagrams and website navigation 
+menus). 
+Can follow the exchanges on the discussion board of a website.
+61
+B2 (59-66)
+Can interpret the main message from complex diagrams and visual 
+information.
+62
+B2 (59-66)
+Can understand the use of numerical data in graphs and charts in a 
+linguistically complex academic text, if guided by questions.
+63
+B2 (59-66)
+Access, locate and integrate 
+several pieces of information from 
+relevant online reference sources. 
+Can use a monolingual dictionary to check the meaning of words without 
+needing to refer to a bilingual dictionary.
+59
+B2 (59-66)
+Can use reference materials to check factual information, when guidance 
+on finding relevant sources of information is provided.
+63
+B2 (59-66)
+
+=== PDF PAGE 37 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  37
+Stage II – Benchmark 8
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+I. Interacting with others
+Convey personal messages 
+in formal and informal 
+correspondence for an expanded 
+range of social purposes (such 
+as expressing and responding to 
+sympathy, clarifying a conflict, or 
+giving reassurance). 
+Can write a formal email/letter of thanks or apology with appropriate 
+conventions.
+59
+B2 (59-66)
+Can write personal emails/letters giving and commenting on news in detail.
+60
+B2 (59-66)
+Can respond effectively to emails requesting work-related information.
+60
+B2 (59-66)
+Can politely reply in writing to emails/letters of complaint.
+60
+B2 (59-66)
+Can write a formal email/letter of invitation with appropriate register and 
+conventions.
+60
+B2 (59-66)
+Can write personal emails/letters giving and commenting on news in detail.
+60
+B2 (59-66)
+Can give advice, including reasons.
+61
+B2 (59-66)
+Can politely disagree with a suggestion or recommendation made in email.
+61
+B2 (59-66)
+Can write a formal email/letter of apology using appropriate conventions.
+61
+B2 (59-66)
+Can recognise misunderstandings and disagreements that arise in an 
+online interaction and deal with them, provided the interlocutor(s) are 
+willing to co-operate.
+62
+B2 (59-66)
+Can write personal emails/letters about abstract or cultural topics (e.g. 
+music, films).
+64
+B2 (59-66)
+Can express news and views effectively in writing and relate to those of 
+others.
+65
+B2 (59-66)
+Can adopt a level of formality appropriate to the circumstances.
+66
+B2 (59-66)
+II. Reproducing information
+Reduce oral discourse about 
+established procedures (given in a 
+live demonstration, over the phone, 
+or from pre-recorded audio or 
+video material) into notes that can 
+be used to write instructions. 
+Can take notes to record the main points raised during meetings on 
+familiar topics.
+59
+B2 (59-66)
+Can record the details of project-related actions and results in a log.
+59
+B2 (59-66)
+Can take notes on a presentation or lecture in their field of specialisation.
+61
+B2 (59-66)
+Can summarise information from a presentation or lecture in their field of 
+specialisation.
+65
+B2 (59-66)
+Can write a summary of the decisions and action items identified during a 
+meeting.
+66
+B2 (59-66)
+Can take accurate notes in meetings and seminars on most matters likely 
+to arise within their field of interest.
+66
+B2 (59-66)
+
+=== PDF PAGE 38 ===
+38  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+Stage II – Benchmark 8
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+II. Reproducing information
+(cont.)
+Reduce a text of up to about 2 
+pages to an outline or summary.
+Can summarise in writing the main content of complex texts on subjects 
+related to their fields of interest and specialisation.
+62
+B2 (59-66)
+Can summarise in writing different points of view.
+64
+B2 (59-66)
+Can edit notes or bullet points to make them more concise.
+64
+B2 (59-66)
+Can write a concise summary of the main ideas of a longer structured text.
+64
+B2 (59-66)
+Can relay in writing the significant point(s) contained in formal 
+correspondence.
+65
+B2 (59-66)
+Can write bullet points to summarise key points in an academic text.
+66
+B2 (59-66)
+III. Getting things done
+Write business or service 
+correspondence for an expanding 
+range of purposes (such as 
+giving information in memoranda, 
+documenting work done, indicating 
+a problem, requesting a change, or 
+requesting information). 
+Can write a detailed description of an object, device or product.
+59
+B2 (59-66)
+Can organise a work-related email to emphasise the main point.
+59
+B2 (59-66)
+Can demonstrate understanding of formality and conventions in standard 
+letters.
+59
+B2 (59-66)
+Can write a brief standard report conveying factual information, stating 
+reasons for actions.
+61
+B2 (59-66)
+Can write instructions on how to repair an object, device or product.
+61
+B2 (59-66)
+Can clearly signal problem and solution relationships in structured text.
+62
+B2 (59-66)
+Can write a formal letter of complaint about a product or service.
+62
+B2 (59-66)
+Can use appropriate register in work-related written communication.
+62
+B2 (59-66)
+Can write a short, concise report explaining how a product meets a 
+specific need.
+62
+B2 (59-66)
+Can respond to work-related emails, clearly addressing the sender’s points 
+and arguments.
+63
+B2 (59-66)
+Can write clear, detailed instructions about how to complete a familiar 
+work-related task or project.
+64
+B2 (59-66)
+Can give a structured written explanation of a problem.
+65
+B2 (59-66)
+Can write a letter of complaint with appropriate register, structure and 
+conventions.
+65
+B2 (59-66)
+Can make written requests for updates on actions taken to solve 
+problems.
+65
+B2 (59-66)
+
+=== PDF PAGE 39 ===
+Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II  |  39
+Stage II – Benchmark 8
+Writing
+CLB Competency Area
+CLB Competency Statement
+GSE Learning Objective
+GSE 
+level
+CEFR level
+III. Getting things done
+(cont.)
+Complete an expanded range 
+of forms, including extended 
+application forms and workplace 
+forms with pre-set formats. 
+Can write a covering letter addressing specific information mentioned in a 
+job posting.
+60
+B2 (59-66)
+Can write a letter of application with appropriate register, conventions and 
+supporting detail.
+65
+B2 (59-66)
+IV. Sharing information
+Write 3 or 4 connected paragraphs 
+to relate a historical event, 
+provide a detailed description of a 
+phenomenon, explain a procedure, 
+or express and analyze opinions on 
+a familiar abstract topic.
+Can support ideas with relevant examples.
+59
+B2 (59-66)
+Can clearly signal cause and effect relationships in a structured text.
+60
+B2 (59-66)
+Can compare information from different sources.
+61
+B2 (59-66)
+Can end a discursive argument with a clear conclusion and opinion.
+61
+B2 (59-66)
+Can present additional ideas using a range of linking words and phrases.
+62
+B2 (59-66)
+Can structure longer texts in clear, logical paragraphs.
+65
+B2 (59-66)
+Can systematically evaluate the advantages and disadvantages of various 
+options.
+65
+B2 (59-66)
+Can compare and evaluate ideas in a structured and logical text.
+66
+B2 (59-66)
+Write a paragraph to explain 
+information in a table, graph, flow 
+chart or diagram.
+Can contrast two ideas when writing a simple academic text by using 
+discourse markers.
+61
+B2 (59-66)
+Can write a short analysis of a business trend in their own professional 
+field.
+62
+B2 (59-66)
+Can use statistical data, fractions, and percentages in an academic text.
+62
+B2 (59-66)
+Can write a structured paragraph on an academic topic in their field of 
+study.
+65
+B2 (59-66)
+Can interpret and present reliably in writing detailed information from 
+diagrams and visually organised data in their fields of interest.
+66
+B2 (59-66)
+
+=== PDF PAGE 40 ===
+40  |  Alignment of the Canadian Language Benchmarks to the Global Scale of English: Stage II
+References
+Centre for Canadian Language Benchmarks (2012) Canada Language Benchmarks English as a Second Language for Adults. 
+Retrieved from www.language.ca
+Council of Europe (2001) Common European Framework of Reference for Languages: Learning, teaching, assessment. 
+Cambridge: Cambridge University Press 
+De Jong, J.H.A.L., Mayor, M. and Hayes, C. (2016) Developing Global Scale of English Learning Objectives aligned to the Common 
+European Framework. Available at https://online.flippingbook.com/view/894261/
+North, B., and Piccardo, E. (2018) Aligning the Canadian Language Benchmarks (CLB) to the Common European Framework of 
+Reference (CEFR): Research Report. Retrieved from www.language.ca
+Pearson (2014) Global Scale of English. Available at www.pearson.com/languages/why-pearson/the-global-scale-of-english.html
+
+=== PDF PAGE 41 ===

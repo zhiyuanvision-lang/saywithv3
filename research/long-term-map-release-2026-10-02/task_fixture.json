@@ -1,0 +1,75 @@
+{
+  "id": "ARRANGE.A2.fixture.1",
+  "version": "1",
+  "objective_ids": [
+    "ARRANGE.A2.s1",
+    "ARRANGE.A2.s2",
+    "ARRANGE.A2.s3"
+  ],
+  "learner_prompt": "你要和同伴在图书馆见面。你下午4:30或6:00有空，请商定双方能参加的时间。",
+  "learner_facts": {
+    "available": [
+      "16:30",
+      "18:00"
+    ]
+  },
+  "partner_private_facts": {
+    "available": [
+      "15:00",
+      "16:30"
+    ],
+    "location": "library"
+  },
+  "initial_partner_offer": "15:00",
+  "required_actions": [
+    "说明15:00不可用",
+    "提出可行时间",
+    "确认双方接受的时间地点"
+  ],
+  "acceptable_outcomes": [
+    {
+      "time": "16:30",
+      "location": "library"
+    }
+  ],
+  "role_response_rules": [
+    "只按对方已提出问题提供信息",
+    "接受16:30和library组合",
+    "不直接告诉用户完整最终答案",
+    "允许请求重复"
+  ],
+  "allowed_support": {
+    "independent": [
+      "task_prompt",
+      "reasonable_clarification"
+    ],
+    "prohibited": [
+      "model_answer",
+      "sentence_completion"
+    ]
+  },
+  "assessment_anchors": {
+    "pass": "说明冲突，协商并确认16:30/library；不要求特定英语句式",
+    "partial": "得到可行时间但未核查地点或未明确确认",
+    "fail": "坚持18:00且未解决对方不可用",
+    "unjudgeable": "音频不能可靠识别或伙伴提前给出完整答案"
+  },
+  "independent_variant": {
+    "learner_available": [
+      "10:00",
+      "14:00"
+    ],
+    "partner_available": [
+      "11:00",
+      "14:00"
+    ],
+    "partner_location": "park",
+    "acceptable_outcomes": [
+      {
+        "time": "14:00",
+        "location": "park"
+      }
+    ]
+  },
+  "publication_status": "requires_audio_and_task_review"
+}

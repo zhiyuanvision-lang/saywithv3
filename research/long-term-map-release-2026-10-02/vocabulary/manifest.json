@@ -1,0 +1,318 @@
+{
+  "status": "complete_for_public_toolkit_query_scope",
+  "retrieved_utc": "2026-10-02T10:42:28.434296+00:00",
+  "endpoint": "https://www.english.com/gse/teacher-toolkit/user/api/v1/vocabulary/search",
+  "scope": {
+    "audiences": [
+      "GL",
+      "YL",
+      "SSGL"
+    ],
+    "gse": [
+      10,
+      90
+    ],
+    "query_string": "*",
+    "topics": [],
+    "grammaticalCategories": []
+  },
+  "server_total": 41402,
+  "exported_total": 41402,
+  "unique_item_ids": 41402,
+  "by_audience": {
+    "GL": 34794,
+    "SSGL": 3513,
+    "YL": 3095
+  },
+  "bands": [
+    {
+      "from": 10,
+      "to": 90,
+      "server_count": 41402,
+      "exported_rows": 41402,
+      "pages": [
+        {
+          "page": 1,
+          "file": "raw/band-10-90-page-1.json",
+          "rows": 1000,
+          "sha256": "ef3dcfcffaf1055ebb2f107312c5a7d3004982152e02558007a9bd6bec87a475"
+        },
+        {
+          "page": 2,
+          "file": "raw/band-10-90-page-2.json",
+          "rows": 1000,
+          "sha256": "8d591c49b4a1590c0d43a6e59b242d51661544aba3bd35a3d4516105d55384e9"
+        },
+        {
+          "page": 3,
+          "file": "raw/band-10-90-page-3.json",
+          "rows": 1000,
+          "sha256": "0442b428ab9f3b5e6f9cc35ca9755cfd5cc05ad06b64abe4cb8776b0c5200695"
+        },
+        {
+          "page": 4,
+          "file": "raw/band-10-90-page-4.json",
+          "rows": 1000,
+          "sha256": "a261e026689fbf2faec7f30dc7cdc0ea2430cffc74b55f547faa1e9db1b32f40"
+        },
+        {
+          "page": 5,
+          "file": "raw/band-10-90-page-5.json",
+          "rows": 1000,
+          "sha256": "2e1c117e8113edb11da733182004ce57184da4756c41aa959ae11316b49d09bd"
+        },
+        {
+          "page": 6,
+          "file": "raw/band-10-90-page-6.json",
+          "rows": 1000,
+          "sha256": "53d10aa3c7a460962e1299f458e5a88653a8e2e368567ce9f5c909b54bc6d5e8"
+        },
+        {
+          "page": 7,
+          "file": "raw/band-10-90-page-7.json",
+          "rows": 1000,
+          "sha256": "8ceb834fe9413cb63c574984e2953580287a2a5962ab9e2b4b044619af2285d9"
+        },
+        {
+          "page": 8,
+          "file": "raw/band-10-90-page-8.json",
+          "rows": 1000,
+          "sha256": "1c20f3d146df845af6fd8cac726f590c8de107bffba0ae5c33115b405083a9f2"
+        },
+        {
+          "page": 9,
+          "file": "raw/band-10-90-page-9.json",
+          "rows": 1000,
+          "sha256": "1a2e82f85dae667844d537f62064ac1089e6582c61c3c2fab4f2875fedfb900b"
+        },
+        {
+          "page": 10,
+          "file": "raw/band-10-90-page-10.json",
+          "rows": 1000,
+          "sha256": "8825c615dba6621e2bc6643ac48949b2d78a75ebffdf96a6b1ad0ba9f5a7c0e0"
+        },
+        {
+          "page": 11,
+          "file": "raw/band-10-90-page-11.json",
+          "rows": 1000,
+          "sha256": "2c1b8cc3cd0ffa6679d4fea2c57724f5b19b47f3a7d0a778beae99dcdbe164c2"
+        },
+        {
+          "page": 12,
+          "file": "raw/band-10-90-page-12.json",
+          "rows": 1000,
+          "sha256": "15e3436d116a6f720d88194c637327d5166bb2cebdd585fb57ecc3aa9f3c2d53"
+        },
+        {
+          "page": 13,
+          "file": "raw/band-10-90-page-13.json",
+          "rows": 1000,
+          "sha256": "92a4662522741c240a3eafa94d7406743d5210f78b83cf074b25f77a3464912a"
+        },
+        {
+          "page": 14,
+          "file": "raw/band-10-90-page-14.json",
+          "rows": 1000,
+          "sha256": "f28db9ddccb3e0718814dd2afd1d5c5ae79f878e40fb5f1313f7f6b1efa2f3e1"
+        },
+        {
+          "page": 15,
+          "file": "raw/band-10-90-page-15.json",
+          "rows": 1000,
+          "sha256": "778aaa52f913aefd5599f07f874ded37446a6d19dee93bb46a581433b30e23d4"
+        },
+        {
+          "page": 16,
+          "file": "raw/band-10-90-page-16.json",
+          "rows": 1000,
+          "sha256": "04dd529f96b5496aad40008d824d3aa1f55082414f74dc9653fdaaac2ab800e4"
+        },
+        {
+          "page": 17,
+          "file": "raw/band-10-90-page-17.json",
+          "rows": 1000,
+          "sha256": "a6c500eb203935fa7c3396d29c145bb092b549437241de210b03af4f8f232d72"
+        },
+        {
+          "page": 18,
+          "file": "raw/band-10-90-page-18.json",
+          "rows": 1000,
+          "sha256": "c22f6fdf7579a8277f0cdc0d89c79e92682649267009b2ebe896daeab188cf2e"
+        },
+        {
+          "page": 19,
+          "file": "raw/band-10-90-page-19.json",
+          "rows": 1000,
+          "sha256": "0126ee67c4ebc7a9f18b0e0b1bfa0b97f23618ee5b59c931c506bf4f35c20a2a"
+        },
+        {
+          "page": 20,
+          "file": "raw/band-10-90-page-20.json",
+          "rows": 1000,
+          "sha256": "04f3df3d07c5a7ae03839c11b7807df9b4d72aa92db8dcc306a4e7c1aeb8537d"
+        },
+        {
+          "page": 21,
+          "file": "raw/band-10-90-page-21.json",
+          "rows": 1000,
+          "sha256": "a60c4d2bdc49da37166afb014db92616ebdc9ee027bb761f3942cf188d41d0ea"
+        },
+        {
+          "page": 22,
+          "file": "raw/band-10-90-page-22.json",
+          "rows": 1000,
+          "sha256": "36063ffcb33799e2946cfedfc00c2eb6a4d34dd825c11b31e98bba2e538ecdf8"
+        },
+        {
+          "page": 23,
+          "file": "raw/band-10-90-page-23.json",
+          "rows": 1000,
+          "sha256": "a56fdd7de5bbe787fcd4ab136d821ff4c7521aa3fff9ee3d6344a211c8734162"
+        },
+        {
+          "page": 24,
+          "file": "raw/band-10-90-page-24.json",
+          "rows": 1000,
+          "sha256": "b1ee980572054fc1b651eba66493d5b812000e6dae54e3b6185b19765de50d79"
+        },
+        {
+          "page": 25,
+          "file": "raw/band-10-90-page-25.json",
+          "rows": 1000,
+          "sha256": "b1d49cd77b7d782fbce5736fbb4dbcc3ea639b2f4aa4ef59cd382e72727074c3"
+        },
+        {
+          "page": 26,
+          "file": "raw/band-10-90-page-26.json",
+          "rows": 1000,
+          "sha256": "bb25999260f21c05d79304228babb48b663196c03713ded55a8d58ea3b8a5f9e"
+        },
+        {
+          "page": 27,
+          "file": "raw/band-10-90-page-27.json",
+          "rows": 1000,
+          "sha256": "b485046dc98bd8bd8beffa6433445cb24433710bd7e11671e49466fe486d1a75"
+        },
+        {
+          "page": 28,
+          "file": "raw/band-10-90-page-28.json",
+          "rows": 1000,
+          "sha256": "dbdc721bd8508b835c164464eec87cd9ac643ac7b7ef6e23b099c27e9b22b3b2"
+        },
+        {
+          "page": 29,
+          "file": "raw/band-10-90-page-29.json",
+          "rows": 1000,
+          "sha256": "c9613c292e55319d46ac894b8c352a41c0657aae9d5e0bb10937885819ee6f39"
+        },
+        {
+          "page": 30,
+          "file": "raw/band-10-90-page-30.json",
+          "rows": 1000,
+          "sha256": "86515c4d02c6ae8a658e2c5dfd0f76e0cb505e04e78b36aa22606df4abdcb951"
+        },
+        {
+          "page": 31,
+          "file": "raw/band-10-90-page-31.json",
+          "rows": 1000,
+          "sha256": "2b7020a584334d0826ad0ce5ac32dbc26bf9866442ab8d4888fa3b57e87ce432"
+        },
+        {
+          "page": 32,
+          "file": "raw/band-10-90-page-32.json",
+          "rows": 1000,
+          "sha256": "58a87f109cb00ae2ad9dc75fb21fc69fe2cee15319e73e6f300cf7e6be4779c9"
+        },
+        {
+          "page": 33,
+          "file": "raw/band-10-90-page-33.json",
+          "rows": 1000,
+          "sha256": "c9329edd1ca6b8e26349759ca3e79a3ab112727ac4da8102c63a23614e9d9982"
+        },
+        {
+          "page": 34,
+          "file": "raw/band-10-90-page-34.json",
+          "rows": 1000,
+          "sha256": "6893b5ccf53aa4f2bfaa43055bbf75a4445dfbda7f07a8d745694e9f578f0f10"
+        },
+        {
+          "page": 35,
+          "file": "raw/band-10-90-page-35.json",
+          "rows": 1000,
+          "sha256": "1f1631cb0655baa9c7a718e17edbe586bc2502e20faea19867fae62490914661"
+        },
+        {
+          "page": 36,
+          "file": "raw/band-10-90-page-36.json",
+          "rows": 1000,
+          "sha256": "471632097d1cacbafa2d116db80f019dcac2926a4e47496e8fd4bdb40ef089f6"
+        },
+        {
+          "page": 37,
+          "file": "raw/band-10-90-page-37.json",
+          "rows": 1000,
+          "sha256": "14de14183b1b1e332d023664e3accb5bae4579ef43f2178005002f76c5f57134"
+        },
+        {
+          "page": 38,
+          "file": "raw/band-10-90-page-38.json",
+          "rows": 1000,
+          "sha256": "34813e0c9afd60c03742057e57b1a4890c9a85635172994df2b2b380c83860cb"
+        },
+        {
+          "page": 39,
+          "file": "raw/band-10-90-page-39.json",
+          "rows": 1000,
+          "sha256": "e73e985b21d1a9ce1ac2055e968ad8446f8b57a511690794db7422e1861356c9"
+        },
+        {
+          "page": 40,
+          "file": "raw/band-10-90-page-40.json",
+          "rows": 1000,
+          "sha256": "d2eb0aa9702fd2f2e4ef8ae1854fe39fc91985d2b79d788c20a0b5bacb51f55a"
+        },
+        {
+          "page": 41,
+          "file": "raw/band-10-90-page-41.json",
+          "rows": 1000,
+          "sha256": "2469240b6e54258f91d703a59fac571c4b999307f449980cfc98f16a4926b814"
+        },
+        {
+          "page": 42,
+          "file": "raw/band-10-90-page-42.json",
+          "rows": 402,
+          "sha256": "c8d8b1701599cd146efb0ad8ad8976d07247af14928f770aa95111ce1c92293c"
+        }
+      ]
+    }
+  ],
+  "metadata_counts": {
+    "topics": 68,
+    "grammaticalCategories": 13
+  },
+  "fields": [
+    "itemId",
+    "expression",
+    "definition",
+    "example",
+    "gse",
+    "cefr",
+    "audience",
+    "grammaticalCategories",
+    "collos",
+    "variants",
+    "topics",
+    "audioFiles",
+    "region",
+    "thesaurus"
+  ],
+  "authorization_assumption": "按用户要求视为已获得授权；没有绕过登录或访问限制",
+  "completeness_limit": "对当前Toolkit全部GL、SSGL、YL词义查询的完整快照，含N/A未分级词义；不是Pearson未公开内部数据。音频仅保存链接。",
+  "sha256": {
+    "gse_vocabulary.jsonl": "26ba5dfbb27ab8b2eb99d8616cf2661e916108da66f294ca3eef79b52048bbd2",
+    "gse_vocabulary.csv": "f5731ef2f2f41376dfc041ac629130c548f0325e33d18c6e13a769857fb8d3c6",
+    "gse_vocabulary.sqlite": "631293f247d71e34a2f61e4197e0f2dff9b92f6a1387af9622e90c4b451987b2"
+  },
+  "gse_na_count": 1357,
+  "gse_starred_count": 540
+}

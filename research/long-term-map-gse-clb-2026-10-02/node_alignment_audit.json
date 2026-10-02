@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "CONTACT.Pre-A1",
+    "label": "打招呼并回应告别",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "CONTACT.A1",
+    "label": "介绍自己并询问对方姓名",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 7,
+    "clb_links": 6,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "CONTACT.A2",
+    "label": "开启短闲聊并接续对方回应",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "CONTACT.B1",
+    "label": "主动延展闲聊并转换话题",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "CONTACT.B2",
+    "label": "在不同关系与场合加入持续交谈",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "CONTACT.C1",
+    "label": "在多人社交中捕捉暗示并自然加入退出",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "CONTACT.C2",
+    "label": "在复杂社交中表达细微态度并澄清含蓄意图",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "INFO.Pre-A1",
+    "label": "说出姓名并识别一个数字",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "INFO.A1",
+    "label": "交换时间地点联系方式",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "INFO.A2",
+    "label": "获取并提供日程路线与数量",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "INFO.B1",
+    "label": "追问不完整信息并核查关键细节",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 4,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "INFO.B2",
+    "label": "综合不同来源的信息以发现矛盾",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "INFO.C1",
+    "label": "在高信息密度交流中限定条件与可信度",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "INFO.C2",
+    "label": "精确限定复杂信息避免过度概括",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "DESCRIBE.Pre-A1",
+    "label": "用词或短语指出人物物品",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "DESCRIBE.A1",
+    "label": "描述人物物品与熟悉地点",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "DESCRIBE.A2",
+    "label": "描述生活习惯与周围环境",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "DESCRIBE.B1",
+    "label": "描述变化并解释对自己的影响",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "DESCRIBE.B2",
+    "label": "有组织地描述复杂现象并突出重点",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "DESCRIBE.C1",
+    "label": "根据听者背景重组复杂描述",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "DESCRIBE.C2",
+    "label": "以精确细节和风格描述复杂体验",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.Pre-A1",
+    "label": "指出想要或不想要的东西",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.A1",
+    "label": "表达喜好、基本感受和即时需求",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 6,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "NEEDS.A2",
+    "label": "说明偏好及一个简单原因",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.B1",
+    "label": "解释感受变化并询问对方体验",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.B2",
+    "label": "表达混合感受并权衡不同需要",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.C1",
+    "label": "清楚表达敏感感受并核查对方理解",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "NEEDS.C2",
+    "label": "传达细微情绪与保留意见",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STORY.A1",
+    "label": "按简单顺序说日常活动",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "STORY.A2",
+    "label": "简述过去经历及下一步计划",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "STORY.B1",
+    "label": "叙述经历并连接原因与结果",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STORY.B2",
+    "label": "叙述复杂经历并突出关键转折",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STORY.C1",
+    "label": "调整叙述结构以解释复杂经历",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STORY.C2",
+    "label": "控制叙事视角和修辞表达微妙意义",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "EXPLAIN.A1",
+    "label": "用简单句说明物品位置或用途",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "EXPLAIN.A2",
+    "label": "说明简单步骤与问题",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "EXPLAIN.B1",
+    "label": "解释故障原因并提出可行处理办法",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "EXPLAIN.B2",
+    "label": "解释多因素问题及条件限制",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "EXPLAIN.C1",
+    "label": "根据听者背景解释已知的复杂过程",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "EXPLAIN.C2",
+    "label": "精确解释复杂机制和例外",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "REQUEST.Pre-A1",
+    "label": "用简单说法请求帮助",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "REQUEST.A1",
+    "label": "提出简单请求并接受或拒绝",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "REQUEST.A2",
+    "label": "邀请对方并接受、婉拒或建议替代",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "REQUEST.B1",
+    "label": "根据关系提出请求并说明原因",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "REQUEST.B2",
+    "label": "协商请求范围并表达合适程度的礼貌",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "REQUEST.C1",
+    "label": "提出敏感请求并明确可选择的回应",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "REQUEST.C2",
+    "label": "根据权力与关系微调含蓄请求",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "ARRANGE.A1",
+    "label": "商定一个简单时间或地点",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "ARRANGE.A2",
+    "label": "遇到一次时间冲突后重新安排",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "ARRANGE.B1",
+    "label": "在多个限制条件下制定共同计划",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 8,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "ARRANGE.B2",
+    "label": "比较方案并协商取舍",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "ARRANGE.C1",
+    "label": "处理多方利益冲突并调整方案",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "ARRANGE.C2",
+    "label": "在模糊目标与冲突条件下促成决定",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "SERVICE.Pre-A1",
+    "label": "说出所需物品与数量",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "SERVICE.A1",
+    "label": "完成简单点单购买并核对价格",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 5,
+    "clb_conditions": 6,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "SERVICE.A2",
+    "label": "办理预订询价问路等常见服务",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 6,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SERVICE.B1",
+    "label": "处理预订出错、退换与服务故障",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 6,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "SERVICE.B2",
+    "label": "就复杂服务问题提出理由并协商",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SERVICE.C1",
+    "label": "在条款和责任不清时精确核查",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "COMPARE.A1",
+    "label": "说明两种事物的简单差异",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "COMPARE.A2",
+    "label": "按价格位置等熟悉标准比较",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "COMPARE.B1",
+    "label": "比较多个选择并提出推荐理由",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "COMPARE.B2",
+    "label": "权衡短期长期收益和风险",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "COMPARE.C1",
+    "label": "评价证据质量并给出有条件推荐",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "COMPARE.C2",
+    "label": "精确比较复杂方案中的隐性权衡",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "OPINION.A1",
+    "label": "表达简单赞同或不赞同",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "OPINION.A2",
+    "label": "表达观点并给出简单原因",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "OPINION.B1",
+    "label": "给出理由和例子并回应追问",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "OPINION.B2",
+    "label": "建立论点并回应反对意见",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "OPINION.C1",
+    "label": "处理抽象议题中的复杂论证",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "OPINION.C2",
+    "label": "区分细微立场并重构对方论证",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 0,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "RELATE.Pre-A1",
+    "label": "回应感谢与简单道歉",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "RELATE.A1",
+    "label": "感谢道歉祝贺并作合适回应",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "RELATE.A2",
+    "label": "婉拒、表示关心并解释简单理由",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "RELATE.B1",
+    "label": "说明分歧并修复一次误会",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 8,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "RELATE.B2",
+    "label": "在冲突中表达边界和建设性反馈",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "RELATE.C1",
+    "label": "处理敏感分歧并识别隐含立场",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "RELATE.C2",
+    "label": "在高敏感关系中精确调节立场和语气",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "COLLAB.A2",
+    "label": "轮流参与简单共同任务",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "COLLAB.B1",
+    "label": "汇报进度、澄清任务并接续发言",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 5,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "COLLAB.B2",
+    "label": "参与多人讨论并组织行动事项",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "COLLAB.C1",
+    "label": "主持复杂讨论并帮助他人参与",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "COLLAB.C2",
+    "label": "在快速复杂讨论中重构并促成理解",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 1,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "REPAIR.Pre-A1",
+    "label": "表示没听懂并请求帮助",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "REPAIR.A1",
+    "label": "请求重复、慢一点或拼写",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 4,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "REPAIR.A2",
+    "label": "确认关键意思并用简单说法补充缺失词",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "REPAIR.B1",
+    "label": "定位误解并主动换说法",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "REPAIR.B2",
+    "label": "用精确追问核查歧义或隐含条件",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "REPAIR.C1",
+    "label": "把复杂理解障碍分解并重新组织",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "REPAIR.C2",
+    "label": "自然重构表达并保留细微意义",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 3,
+    "clb_conditions": 6,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "LISTEN.Pre-A1",
+    "label": "识别慢速熟悉问题和数字",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "LISTEN.A1",
+    "label": "听懂清晰慢速短问句与指令",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LISTEN.A2",
+    "label": "抓住短对话意图和关键细节",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 5,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LISTEN.B1",
+    "label": "理解熟悉话题主旨并追问遗漏",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 5,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LISTEN.B2",
+    "label": "理解较长解释与不同观点",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 6,
+    "clb_conditions": 6,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "LISTEN.C1",
+    "label": "识别隐含立场、语体与不明显关系",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 6,
+    "clb_conditions": 8,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "LISTEN.C2",
+    "label": "理解快速复杂交流的细微含义",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "MEDIA.A1",
+    "label": "识别简短公告中的时间地点",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "MEDIA.A2",
+    "label": "听懂常见公告与简短语音消息",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIA.B1",
+    "label": "理解熟悉主题音频的主旨与细节",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIA.B2",
+    "label": "理解访谈和节目中的观点与论据",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIA.C1",
+    "label": "理解长音频中未明确标示的结构",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 4,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "MEDIA.C2",
+    "label": "在快速密集媒体输入中识别修辞与立场",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "PHONE.A1",
+    "label": "在支持下完成简单电话确认",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "PHONE.A2",
+    "label": "完成简短电话预约与留言",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 5,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "PHONE.B1",
+    "label": "独立处理熟悉电话任务并修复听不清",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 6,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "PHONE.B2",
+    "label": "应对电话故障与复杂远程协调",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "PHONE.C1",
+    "label": "在多人远程会议中管理信息与轮次",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "MEDIATE.A1",
+    "label": "转告简单时间价格地点信息",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIATE.A2",
+    "label": "转述简短消息或指令",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 4,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIATE.B1",
+    "label": "概括对方意见并解释给另一人",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIATE.B2",
+    "label": "整合不同人的意见并澄清分歧",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 1,
+    "clb_conditions": 2,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "MEDIATE.C1",
+    "label": "在复杂讨论中帮助建立共同理解",
+    "cefr": "C1",
+    "subtargets": 3,
+    "gse_candidates": 4,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "MEDIATE.C2",
+    "label": "精确重述复杂含蓄信息以消除障碍",
+    "cefr": "C2",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "SOUND.CONTRAST",
+    "label": "辨别会改变词义的关键音差",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.ENDING",
+    "label": "听辨并说清词尾重要信息",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.SYLLABLE",
+    "label": "按音节说出陌生词并标记重音",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.STRESS",
+    "label": "用句子重音突出关键信息",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.REDUCTION",
+    "label": "听懂常见连读弱读与缩略形式",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.GROUP",
+    "label": "按意义组块表达较长信息",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.INTONATION",
+    "label": "用语调表达疑问态度与结束信号",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "SOUND.VARIETY",
+    "label": "适应不同口音和说话习惯",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LEX.RETRIEVE",
+    "label": "从沟通意图提取已认识的表达",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LEX.CHUNK",
+    "label": "组合常用表达完成自己的意思",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 2,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "LEX.PARAPHRASE",
+    "label": "缺词时用已知说法继续表达",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "LEX.REGISTER",
+    "label": "根据对象选择表达与搭配",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 4,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "FORM.QUESTION",
+    "label": "理解并构造完成任务所需问题",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "FORM.TIME",
+    "label": "区分现在过去与未来的事件",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "FORM.CONDITION",
+    "label": "表达条件可能性与建议",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 1
+  },
+  {
+    "id": "DISCOURSE.LINK",
+    "label": "组织原因对比和结论",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 6,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "DISCOURSE.HEDGE",
+    "label": "表达不确定性及适用范围",
+    "cefr": "B2",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 3,
+    "clb_conditions": 2,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STRATEGY.PLAN",
+    "label": "用短提示准备表达并逐步减少依赖",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STRATEGY.MONITOR",
+    "label": "发现影响意思的错误并及时修复",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 6,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "STRATEGY.TURN",
+    "label": "进入维持和交出发言轮次",
+    "cefr": "B1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 2,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "LEX.ACQUIRE",
+    "label": "理解并建立新词句的声音与意义联系",
+    "cefr": "Pre-A1",
+    "subtargets": 3,
+    "gse_candidates": 0,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "FORM.CLAUSE",
+    "label": "用已知词组合出完成任务的基本句子",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 2
+  },
+  {
+    "id": "FORM.NEGATION",
+    "label": "理解并表达否定和纠正",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 2,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 0
+  },
+  {
+    "id": "FORM.QUANTITY",
+    "label": "表达并核对数量程度和基本比较",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 3,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 3
+  },
+  {
+    "id": "FORM.SPACE",
+    "label": "表达位置方向与目标之间的关系",
+    "cefr": "A1",
+    "subtargets": 3,
+    "gse_candidates": 6,
+    "clb_links": 0,
+    "clb_conditions": 4,
+    "cross_level_candidates": 4
+  },
+  {
+    "id": "DISCOURSE.REFERENCE",
+    "label": "用指代和复述连接连续表达",
+    "cefr": "A2",
+    "subtargets": 3,
+    "gse_candidates": 5,
+    "clb_links": 4,
+    "clb_conditions": 6,
+    "cross_level_candidates": 2
+  }
+]
