@@ -43,7 +43,10 @@ SAYWITH_MODE=fixture：不调用外部服务。只有 ARRANGE.A2.s2 的固定约
 
 连接真实iPhone：在Xcode配置自己的签名团队，开启手机开发者模式，使用HTTPS后端地址。
 同网调试可用Mac的 .local 主机名，同时以 --host 0.0.0.0 启动后端；localhost在手机上指手机本身。
-当前连接的iPhone关闭开发者模式，尚未完成真机安装/麦克风人工验收。模拟器编译和自动化流程已验证。
+真机首次安装可在构建时指定 SAYWITH_BACKEND_URL=http://你的Mac主机名.local:8083，写入App配置；也可在App中修改地址。模拟器默认继续使用localhost。首次访问需要允许本地网络。
+当前真机开发构建使用 http://lhydeMacBook-Pro.local:8083；后端已绑定0.0.0.0供同网访问。
+Xcode未登录账号时，可用自己的App Store Connect API密钥配合 -authenticationKeyPath、-authenticationKeyID、-authenticationKeyIssuerID 和 -allowProvisioningUpdates 完成开发签名。密钥不放入代码或App。
+2026-10-03：已在连接的iPhone 12 Pro Max上安装开发签名版本；真机启动记录见 verification/device-install-2026-10-03.json。麦克风录音和完整真人学习流程仍待人工验收。
 
 四、容器
 配置 .env 中随机 SAYWITH_DB_PASSWORD 后：docker compose up --build -d

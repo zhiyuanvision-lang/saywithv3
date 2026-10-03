@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-03T11:20:15.623515+00:00",
+  "bundle_id": "com.saywith.v3",
+  "device": "iPhone 12 Pro Max",
+  "developer_mode": "enabled",
+  "development_build": "passed",
+  "installed": true,
+  "launched": true,
+  "running_process_verified": true,
+  "backend_url": "http://lhydeMacBook-Pro.local:8083",
+  "backend_health_from_mac": {
+    "status_code": 200,
+    "mode": "provider"
+  },
+  "backend_on_phone": "requires local network permission and same network; not yet verified",
+  "microphone_and_human_flow": "not yet verified",
+  "simulator_unit_tests_after_configuration_change": {
+    "passed": 3,
+    "result_bundle": "var/ios-build/Logs/Test/Test-SayWithV3-2026.10.03_19-18-41-+0800.xcresult"
+  },
+  "logs": {
+    "device_build_sha256": "55783a0d078967fd22009fe8731801f1bf8c784384fc03c8634c96b341c2e506",
+    "install_outcome": "success",
+    "launch_outcome": "success"
+  }
+}

@@ -3,7 +3,15 @@ import Observation
 
 @MainActor @Observable
 final class LearningModel {
-    var baseURL = UserDefaults.standard.string(forKey:"backendURL") ?? "http://localhost:8083"
+    static var defaultBackendURL: String {
+        #if targetEnvironment(simulator)
+        return "http://localhost:8083"
+        #else
+        let configured=Bundle.main.object(forInfoDictionaryKey:"SayWithBackendURL") as? String ?? ""
+        return configured.hasPrefix("http://") || configured.hasPrefix("https://") ? configured : ""
+        #endif
+    }
+    var baseURL = UserDefaults.standard.string(forKey:"backendURL") ?? LearningModel.defaultBackendURL
     var stage = "A2"
     var context = "校园与日常生活"
     var targets: [Target] = []

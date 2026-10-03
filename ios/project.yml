@@ -17,10 +17,12 @@ targets:
     info:
       path: SayWithV3/Info.plist
       properties:
+        SayWithBackendURL: "$(SAYWITH_BACKEND_URL)"
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
     settings:
       base:
+        SAYWITH_BACKEND_URL: ""
         PRODUCT_BUNDLE_IDENTIFIER: com.saywith.v3
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1"
