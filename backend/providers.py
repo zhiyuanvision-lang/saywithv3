@@ -210,7 +210,7 @@ class APIProvider:
         from .contracts import LexicalCandidate
         return await self.json('Evaluate ONLY actual lexical use in learner turns, separately from task completion. '
             'Accept correct paraphrases as communication; when selected word/forms are absent return not_used, never failure. '
-            'Check the supplied sense only. Correct spontaneous contextual use can support comprehension; repetition of supplied answers cannot demonstrate independent retrieval. '
+            'Check the supplied sense only. Correct use of another valid sense is not a vocabulary failure; return not_used for the requested sense. Correct spontaneous contextual use can support comprehension; repetition of supplied answers cannot demonstrate independent retrieval. '
             'meaning_mismatch requires clear use of this word with incompatible meaning, not minor grammar, hesitation or omission. '
             'Do not infer hearing ability, pronunciation or fluency from text. If unsure return unjudgeable or low confidence. '
             'Return checks using exact resource_id, sense_id, result correct_usage|meaning_mismatch|not_used|unjudgeable, confidence high|medium|low, '

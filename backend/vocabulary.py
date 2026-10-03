@@ -34,7 +34,9 @@ class Vocabulary:
         key=hashlib.sha256((head+':'+str(detail)).encode()).hexdigest()
         try:
             cached=self.store.get('DictionaryCache',key,'dictionary')['payload']
-            if cached['expires_at']>time.time():return copy.deepcopy(cached['card'])
+            if cached['expires_at']>time.time():
+                card=copy.deepcopy(cached['card']);card['tapped_word']=token
+                return card
         except Missing:pass
         # Reuse the legacy dictionary resolver and full knowledge cards; no learner credentials cross services.
         card=None

@@ -27,6 +27,7 @@ def test_bounded_relevant_sense_selection_and_contracts(client,application):
     from backend.contracts import NotebookEntry,LexicalPracticeInput,TaskAttempt
     h,user,s,lesson,r,saved=setup_word(client,application)
     NotebookEntry.model_validate(saved)
+    NotebookEntry.model_validate(client.get('/v1/notebook/'+saved['id'],headers=h).json())
     assert '有空' in r['meaning_zh'] and r['resource_id']=='lexeme:available'
     assert len(lesson['lexical_practices'])==1
     assert not s['view']['lexical_practices'][0]['completed']
@@ -155,3 +156,24 @@ def test_main_task_paraphrase_and_word_evidence_separate(client,application):
     p=client.get('/v1/profile',headers=h).json();assert p['resource_states'][0]['retrieval']=='provisional'
     assert asyncio.run(svc.assessor.assess(a,task))==result
     assert len(client.get('/v1/profile',headers=h).json()['resource_states'][0]['senses'][r['sense_id']]['observations'])==1
+
+
+def test_unsuitable_notebook_content_deferred_without_blocking_main_course(client,application):
+    h,user=register(client);svc=application.state.services
+    client.post('/v1/notebook',headers=h,json={'word':'available','context':'Are you available tomorrow?'})
+    original=svc.provider.generate
+    async def unsuitable(assignment,target,feedback=None):
+        lesson=await original(assignment,target,feedback)
+        if lesson['lexical_practices']:lesson['lexical_practices'][0]['prompt_zh']='请用 available 回答。'
+        return lesson
+    svc.provider.generate=unsuitable
+    r=client.post('/v1/course-generation-jobs',headers={**h,'Idempotency-Key':'deferred'},json={'target_id':'ARRANGE.A2.s2'}).json()
+    asyncio.run(svc.generator.run_one('worker'))
+    first=svc.store.job(r['job_id'],user);assert first['state']=='generating_text' and first['payload']['notebook_deferred']
+    assert svc.store.get('QualityReport',first['payload']['assignment']['resource_plan']['notebook_deferral_report_ref'],user)['payload']['stage']=='text'
+    assert first['payload']['assignment']['target_ids']==['ARRANGE.A2.s2']
+    asyncio.run(svc.generator.run_one('worker'))
+    ready=svc.store.job(r['job_id'],user);assert ready['state']=='preview_ready'
+    assert ready['payload']['lesson']['lexical_practices']==[]
+    assert ready['payload']['assignment']['resource_plan']['notebook_deferred'][0]['resource_id']=='lexeme:available'
+    assert client.get('/v1/profile',headers=h).json()['resource_states'][0]['retrieval']=='not_checked'

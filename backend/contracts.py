@@ -43,6 +43,7 @@ class NotebookEntry(Contract):
     card: dict[str, Any]
     contexts: list[str] = Field(default_factory=list)
     sources: list[NotebookSource] = Field(default_factory=list)
+    practice_state: dict[str,Any] | None = None
 
 class LexicalSelection(BaseModel):
     model_config = ConfigDict(extra='forbid')

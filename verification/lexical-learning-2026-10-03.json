@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "backend_tests": {
-    "passed": 61,
+    "passed": 62,
     "subtests_passed": 4,
     "warnings": 1,
     "source": "isolated delivery snapshot"
@@ -14,7 +14,7 @@
     "microphone_permission": "granted for simulator testing"
   },
   "production": {
-    "release": "20261003T141219Z",
+    "release": "20261003T143336Z",
     "cloud_smoke": {
       "status": "passed",
       "backend": "https://api.saywith.zhiyuanv.com/learning",
@@ -27,12 +27,27 @@
       "notebook_detail_state": true,
       "no_false_ability_updates": true,
       "test_account_only": true,
-      "human_voice_evidence_not_simulated": true
+      "human_voice_evidence_not_simulated": true,
+      "verified_release": "20261003T141219Z"
     },
     "source_check": {
       "matched": true,
       "files": 19,
       "mismatches": []
+    },
+    "final_patch_check": {
+      "status": "passed",
+      "health": {
+        "status": "ok",
+        "mode": "provider",
+        "map_version": "1.0.1-model-reviewed"
+      },
+      "authentication_preserved": true,
+      "lexical_route_present": true,
+      "matched": true,
+      "files": 4,
+      "mismatches": [],
+      "word_form_cache_profile_notebook": "passed"
     }
   },
   "ios_device": {
@@ -58,12 +73,14 @@
       7,
       14,
       30
-    ]
+    ],
+    "failed_optional_vocabulary_defers_without_blocking_main_goal": true
   },
   "deployment_isolation": {
     "intermediate_release_with_concurrent_auth": "20261003T140602Z",
     "restored_stable_account_implementation": true,
-    "other_working_tree_changes_preserved": true
+    "other_working_tree_changes_preserved": true,
+    "final_patch_preserves_latest_authentication": true
   },
   "limitations": [
     "Scheduling thresholds require real learner calibration",

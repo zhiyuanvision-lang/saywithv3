@@ -62,6 +62,23 @@ class Generator:
     def __init__(self,store,planner,curriculum,provider,settings):
         self.store=store;self.planner=planner;self.curriculum=curriculum;self.provider=provider;self.settings=settings
 
+    def defer_notebook(self,row,p,reasons):
+        selected=p['assignment'].get('resource_plan',{}).get('notebook_words',[])
+        text=json.dumps(reasons,ensure_ascii=False).lower()
+        if not selected or p.get('notebook_deferred') or not any(term in text for term in ('生词','收藏词','目标词','词义','lexical','notebook')):return False
+        # A failed optional vocabulary candidate must not replace or block the main goal.
+        report=p.get('text_report') or {'report_id':uid(),'stage':'text','decision':'fail','issues':reasons}
+        original=p['assignment']['assignment_id'];assignment=copy.deepcopy(p['assignment']);assignment['assignment_id']=uid()
+        assignment['resource_plan'].update(notebook_words=[],notebook_deferred=[{'resource_id':r['resource_id'],'reason':'本次词汇内容未通过质检，保留待练习'} for r in selected],deferred_from_assignment_id=original,notebook_deferral_report_ref=report['report_id'])
+        p['assignment']=assignment;p['notebook_deferred']=True;p['text_revisions']=0
+        p['repair_feedback']={'issues':['本次先推进原沟通目标，收藏词延后。lexical_practices必须为空数组，保留目标、难度与用户语境。']}
+        p.pop('lesson',None);p.pop('text_report',None)
+        with self.store.transaction() as c:
+            self.store.advance(row,'generating_text',p,c,release=True)
+            self.store.put('TeachingAssignment',assignment['assignment_id'],row['owner'],assignment,conn=c)
+            self.store.put('QualityReport',report['report_id'],row['owner'],report,conn=c)
+        return True
+
     async def audio(self,text,owner,purpose):
         key=digest({'text':text,'speaker':self.settings.doubao_speaker,'resource':self.settings.doubao_tts_resource,
                     'fixture':self.provider.fixture,'speech_text_version':'clock-v2'})
@@ -129,6 +146,7 @@ class Generator:
                         p['repair_feedback']='修复JSON结构，禁止额外字段（例如根对象type）；只返回LessonPackage。'+str(error)[:3000]
                         self.store.advance(row,'generating_text',p,release=True)
                         return True
+                    if self.defer_notebook(row,p,str(error)):return True
                     raise ReviewRequired('课程结构校验未通过：'+str(error)[:1200])
                 p['lesson']=lesson;row=self.store.advance(row,'checking_text',p)
             if 'text_report' not in p:
@@ -143,6 +161,7 @@ class Generator:
                         p.pop('lesson');p.pop('text_report')
                         self.store.advance(row,'generating_text',p,release=True)
                         return True
+                    if self.defer_notebook(row,p,review.get('reasons',issues)):return True
                     raise ReviewRequired('课程质检未通过：'+json.dumps(review.get('reasons',issues),ensure_ascii=False))
                 row=self.store.advance(row,'generating_audio',p)
             lesson=p['lesson']

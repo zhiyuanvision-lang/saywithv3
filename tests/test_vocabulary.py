@@ -11,6 +11,7 @@ def test_lookup_notebook_canonical_identity_ownership_and_signals(client,applica
     assert p['target_states']==before['target_states']
     signal=next(x for x in p['resource_states'] if x['resource_id']=='lexeme:be')
     assert signal['understanding']=='not_checked' and signal['lookup_count']==1
+    assert client.post('/v1/vocabulary/lookup',headers=h,json={'word':'be'}).json()['tapped_word']=='be'
     body={'word':'available','context':'Are you available tomorrow?'}
     saved=client.post('/v1/notebook',headers=h,json=body)
     assert saved.status_code==201,saved.text
