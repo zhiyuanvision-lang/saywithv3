@@ -166,6 +166,7 @@ def test_recording_validation(client):
     assert r.status_code==201,r.text
 
 def test_map_release_review_activation_and_immutability(application,client,tmp_path):
+    h,_=register(client)
     svc=application.state.services
     file=tmp_path/'source.json';file.write_text('{"text":"source"}')
     # Normalization rejects source paths outside the controlled workspace.
@@ -178,6 +179,8 @@ def test_map_release_review_activation_and_immutability(application,client,tmp_p
     release=svc.curriculum.publish(review['review_id'])
     assert release['map_version']=='test-v2'
     assert svc.curriculum.target('ARRANGE.A2.s2')['map_version']=='test-v2'
+    assert client.get('/v1/curriculum/targets',headers=h).json()['map_version']=='test-v2'
+    assert client.get('/health').json()['map_version']=='test-v2'
     assert svc.curriculum.target('ARRANGE.A2.s2','1.0.1-model-reviewed')['map_version']=='1.0.1-model-reviewed'
     with pytest.raises(Conflict):svc.curriculum.publish(review['review_id'])
 

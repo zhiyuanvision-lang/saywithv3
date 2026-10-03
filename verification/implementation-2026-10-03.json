@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "verified_at": "2026-10-03T11:09:29.678051+00:00",
+  "verified_at": "2026-10-03T11:11:15.134738+00:00",
   "checks": {
     "python": {
       "command": ".venv/bin/python -m pytest -q",
@@ -9,13 +9,13 @@
       "warnings": [
         "Starlette test-client dependency deprecation"
       ],
-      "log_sha256": "7f3f33a5d76e8e76a4d5e4233ce0447c9609a4cac59df05a5b30d0de7b0403ee"
+      "log_sha256": "f0e43776c3b567ad90e8cd5584b711781f4ef4977acfd162cf23ad9cb0d5d2c5"
     },
     "postgresql": {
       "version": 17,
       "backend_integration_passed": 14,
       "isolated_test_databases": true,
-      "log_sha256": "7762cabc5fbb367981e732bdd002d2d8edb66e1edd3acda623edf18a58672db0"
+      "log_sha256": "a68b2fc00d114f409869f4d89dc215bf765c0ca1d7bef4cab5771c9486284991"
     },
     "iphone": {
       "platform": "iPhone 17 simulator / iOS 26.5",
@@ -24,7 +24,8 @@
       "ui_tests_passed": 2,
       "result_bundle": "var/ios-build/Logs/Test/Test-SayWithV3-2026.10.03_19-07-00-+0800.xcresult",
       "final_build": "passed",
-      "physical_device": "not installed: Developer Mode disabled"
+      "physical_device": "not installed: Developer Mode disabled",
+      "app_icon_configured": true
     },
     "curriculum": {
       "status": "passed",
@@ -88,7 +89,12 @@
       "No fluency/pronunciation scores inferred from transcript",
       "Anonymous developer accounts; no account recovery or app-store release",
       "Transactional outbox stored; external broker delivery not implemented"
-    ]
+    ],
+    "running_backend": {
+      "address": "http://localhost:8083",
+      "mode": "provider",
+      "api_and_worker_started": true
+    }
   },
   "source_sha256": {
     ".dockerignore": "957a138f77b0375929a6cb50103f7186adce0e47202c404243ee460b1ae48f91",
@@ -98,20 +104,20 @@
     "README.txt": "060ba37c90f18b2991e703c03a986cdaa6accdd921e663a80c2e312b2de59206",
     "backend/__init__.py": "8cf53998c5777e3aa1c836a2254369cf05f577413aa46fcc48a1effccb1a7c41",
     "backend/__main__.py": "ba2b6160ee6cb38fc684b6e59d84ffb47842d4825c669d0325163927e55f7035",
-    "backend/app.py": "b91fd656e75249408db938daf143b8535bf11ac7a8d8d12e9aaf548e61f936bd",
+    "backend/app.py": "3b740ffabbd8d126a07fba1947115ccd33376c2a0515d9aae9fd06db0896d494",
     "backend/assessment.py": "e82c31f5fc734d5a6f5ade40f06cde0b9d1688d3040bde22bca88f023396f94c",
     "backend/byte_speech.py": "2290d151f818cedfc990d34106c57b660528388061c8db6d680accec2d1c5f94",
     "backend/config.py": "2418c343bbdb39ed08b359e16a822854fee18da33ea9f35e539ea77943a9b8cf",
     "backend/contracts.py": "049b2889eaeb3b0505b87a3b53f71bb0265213d0053f3cc7c269125e93703c26",
     "backend/contracts.schema.json": "e3770280c238acae75ea9e48e17c37146d63f4b4d1a445e77c424309b164b7b3",
-    "backend/curriculum.py": "ecb74aaa5e5e8ede535f613c6c68f4e0aa0b836433204fe34680681e4f63cb67",
+    "backend/curriculum.py": "0812537dbb13908aea625fa9dc456cb9f8e55517d4dab6bacec6303c5892ac9a",
     "backend/doubao/__init__.py": "be14f9a27b65fdeeff3ee92e3b6308da03da66f7f016b790ec16be26346a88d4",
     "backend/doubao/asr_client.py": "a1af64fc5d8377e445db2e225cf7ed1f16434f0249489a70a62a7b7c1743d399",
     "backend/doubao/protocol.py": "e152ea9b58ffd3183333efb0e187afc8536a94ccab28a447c985a7b610153c9e",
     "backend/doubao/tts_client.py": "4fb7b64924f530d46cdf21ac16e9fdd7ac6be3abdc59f417e43aa4bd76417117",
     "backend/generation.py": "f7fb76f45cfa4f1a96ccfdce199a06d1523672fefd7c8479465a3bca3064f7fb",
     "backend/openapi.json": "9f4a2c893fa2a0a8ff1f9c7e82b83cef0991782f1c9f16b804cb58b0255d6d13",
-    "backend/planning.py": "f922ffd106f1886a2c162affa06aaa3fb077e47fffc240736e74f884538f0b6e",
+    "backend/planning.py": "2c25794d6c9ff28a6638b2e56cc823ac279fd8051c69387bea2ca0992f5e6d41",
     "backend/providers.py": "42ae00ceaa69c33dfd4b04ce833390cc40bda3f2ba684f3b6842a35200a98728",
     "backend/sessions.py": "37dc3592e3fa7a15e4fb861270911f30b0d95d27d36876ddc9db06e8574344ca",
     "backend/store.py": "b57dfc19e41eca5c688d293ebbe95d1b5e4081fed9278a426ef6b9cadb8780a6",
@@ -134,7 +140,7 @@
     "modules/course_planning/README.txt": "7fc523df746db4fbf7d400d89e8a4c6268c909f08a00c6501c9013a02b7f6756",
     "pyproject.toml": "4ae353f07c120a9cccd0acc543cfc3a158d9eeeac6fad3d92f5db859dfac6017",
     "requirements.lock.txt": "4bf5b40b782d651945441a63daedd89891584f49b081588ed49ef74eafbc671e",
-    "tests/test_backend.py": "3349b8ad3d47d3dcd6f70021694d19e017390b89c6841168dc714c22a819cf86",
+    "tests/test_backend.py": "54fd631657b115f9e6dbc794d60cad7b71b4aee6c8b6d75e2c349fe902f24aa3",
     "tests/test_providers.py": "0f1e5ca004653566fdbbcfcfd93214d22d6669dbf34527200f9d6a204cdaa8a2"
   }
 }

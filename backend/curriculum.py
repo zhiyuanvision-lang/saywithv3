@@ -9,10 +9,13 @@ from sqlalchemy.exc import IntegrityError
 class CurriculumService:
     def __init__(self,repository,store):self.repository=repository;self.store=store
 
+    @property
+    def active_version(self):
+        try:return self.store.get('ActiveCurriculum','current')['payload']['map_version']
+        except Missing:return self.repository.version
+
     def target(self,id,map_version=None):
-        if map_version is None:
-            try:map_version=self.store.get('ActiveCurriculum','current')['payload']['map_version']
-            except Missing:map_version=self.repository.version
+        if map_version is None:map_version=self.active_version
         if map_version!=self.repository.version:
             return self.store.get('TargetDefinition',map_version+'/'+id)['payload']
         t=self.repository.get_target(id)
@@ -44,9 +47,8 @@ class CurriculumService:
             # Another API/worker initialized the same immutable release concurrently.
             self.store.get('CurriculumRelease',self.repository.version)
 
-    def list_targets(self,stage=None,family=None):
-        try:version=self.store.get('ActiveCurriculum','current')['payload']['map_version']
-        except Missing:version=self.repository.version
+    def list_targets(self,stage=None,family=None,map_version=None):
+        version=map_version or self.active_version
         if version==self.repository.version:return [self.target(t['target_id'],version) for t in self.repository.list_targets(stage=stage,family=family)]
         return [r['payload'] for r in self.store.list('TargetDefinition') if r['payload']['map_version']==version
                 and (stage is None or r['payload']['reference_stage']==stage)

@@ -95,7 +95,7 @@ def create_app(settings=None,provider=None):
     @app.get('/health')
     def health():
         with svc.store.engine.connect() as c:c.execute(select(svc.store.users.c.id).limit(1))
-        return {'status':'ok','mode':settings.mode,'map_version':svc.curriculum.repository.version}
+        return {'status':'ok','mode':settings.mode,'map_version':svc.curriculum.active_version}
 
     @app.post('/v1/users',status_code=201)
     def register(preferences:Preferences):
@@ -118,8 +118,9 @@ def create_app(settings=None,provider=None):
 
     @app.get('/v1/curriculum/targets')
     def targets(stage:str|None=None,family:str|None=None,user=Depends(owner)):
-        return {'map_version':svc.curriculum.repository.version,'targets':[{'target_id':t['target_id'],'outcome':t['outcome'],
-            'reference_stage':t['reference_stage']} for t in svc.curriculum.list_targets(stage=stage,family=family)]}
+        version=svc.curriculum.active_version
+        return {'map_version':version,'targets':[{'target_id':t['target_id'],'outcome':t['outcome'],
+            'reference_stage':t['reference_stage']} for t in svc.curriculum.list_targets(stage=stage,family=family,map_version=version)]}
 
     @app.get('/v1/curriculum/targets/{id}')
     def target(id:str,user=Depends(owner)):
@@ -160,7 +161,7 @@ def create_app(settings=None,provider=None):
     @app.get('/v1/lessons')
     def lessons(user=Depends(owner)):
         return [{'lesson_id':r['id'],'lesson_version':r['payload']['lesson_version'],'target_ids':r['payload']['target_ids'],
-            'outcome':svc.curriculum.target(r['payload']['target_ids'][0])['outcome'],
+            'outcome':svc.curriculum.target(r['payload']['target_ids'][0],r['payload']['map_version'])['outcome'],
             'learner_ready':r['payload']['learner_ready'],'fixture':r['payload']['provenance']['fixture']} for r in svc.store.list('LessonPackage',user)]
 
     @app.post('/v1/sessions',status_code=201)

@@ -18,14 +18,15 @@ class Planner:
         if explicit:
             target=self.curriculum.target(explicit);reason='用户选择此沟通目标'
         else:
-            candidates=self.curriculum.list_targets(stage=stage)
+            map_version=self.curriculum.active_version
+            candidates=self.curriculum.list_targets(stage=stage,map_version=map_version)
             # Move the practice band only after every goal in the current band has
             # repeated independent and transfer evidence; this is not certification.
             while candidates and all(states.get(t['target_id'],{}).get('independent')=='demonstrated'
                                      and states.get(t['target_id'],{}).get('transfer')=='demonstrated' for t in candidates):
                 index=STAGES.index(stage)
                 if index==len(STAGES)-1:break
-                higher=self.curriculum.list_targets(stage=STAGES[index+1])
+                higher=self.curriculum.list_targets(stage=STAGES[index+1],map_version=map_version)
                 if not higher:break
                 # Overdue practice across previously completed bands remains eligible.
                 if any(states.get(t['target_id'],{}).get('due_at',float('inf'))<=time.time() for t in candidates):break
@@ -40,7 +41,7 @@ class Planner:
                 need=0 if due else 1 if s.get('independent') in ('needs_practice','supported') else 2 if not s else 3
                 priorities.append((need,coverage,t['target_id']))
             if not priorities:raise ValueError('No targets at requested stage')
-            id=min(priorities)[2];target=self.curriculum.target(id)
+            id=min(priorities)[2];target=next(t for t in candidates if t['target_id']==id)
         state=states.get(target['target_id'],{})
         if state.get('independent') in ('needs_practice','supported'):purpose='consolidation';reason='此前表现仍需要帮助，先减少提示完成此目标'
         elif state.get('due_at',float('inf'))<=time.time():purpose='retention';reason='之前完成过此目标，现在检查隔期是否仍能完成'
