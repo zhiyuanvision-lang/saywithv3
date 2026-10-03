@@ -1,0 +1,53 @@
+{
+  "release": "20261003T143821Z",
+  "source_files_verified": 20,
+  "source_hashes_match": true,
+  "health": {
+    "status": "ok",
+    "mode": "provider",
+    "map_version": "1.0.1-model-reviewed"
+  },
+  "login_methods": "passed",
+  "lexical_route": "passed",
+  "existing_account_profile_notebook_dictionary": "passed",
+  "date": "2026-10-03",
+  "backend_tests": {
+    "passed": 70,
+    "subtests_passed": 4
+  },
+  "ios_unit_tests": {
+    "passed": 15
+  },
+  "ios_device": {
+    "version": "2.0.1",
+    "build": "606",
+    "release_build": "passed",
+    "signature": "verified",
+    "installed": "passed",
+    "launch": "passed",
+    "connected_backend": "https://api.saywith.zhiyuanv.com/learning"
+  },
+  "source_delivery": "fixed snapshot of latest runtime code; downloadable research archives remain local",
+  "source_commit": "20b13b552506916660a2a258175c72c466aa19ed",
+  "git_branch": "main",
+  "git_push": "verified",
+  "ios_ui_tests": {
+    "passed": 9,
+    "skipped": 1,
+    "failures": 0,
+    "skip_reason": "fixture account has no independently mastered target for review",
+    "login_restart_account_switch": "passed",
+    "fixture_ports": [
+      18086,
+      18087,
+      8095
+    ],
+    "simulator_signing": "normal local signing; keychain unit tests passed"
+  },
+  "verification_logs": {
+    "backend": "/tmp/saywith-latest-snapshot-tests.log",
+    "ios_unit": "/tmp/saywith-latest-unit-signed.log",
+    "ios_ui": "/tmp/saywith-latest-ui-isolated-final.log",
+    "device_build": "/tmp/saywith-latest-device-build.log"
+  }
+}
