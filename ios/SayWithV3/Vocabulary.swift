@@ -20,7 +20,7 @@ struct DictionaryCard:Codable,Sendable {
     var shortMeaning:String {senses?.prefix(2).map {($0.pos ?? "")+" "+($0.meaningCn ?? "")}.joined(separator:"；") ?? meaning ?? ""}
 }
 struct NotebookEntry:Codable,Sendable,Identifiable,Hashable {
-    let id:String;let word:String;let createdAt:Double;let card:DictionaryCard;let contexts:[String]
+    let id:String;let word:String;let createdAt:Double;let card:DictionaryCard;let contexts:[String];let practiceState:[String:JSONValue]?
     static func ==(lhs:Self,rhs:Self)->Bool {lhs.id==rhs.id}
     func hash(into hasher:inout Hasher) {hasher.combine(id)}
 }
@@ -263,10 +263,17 @@ struct NotebookDetail:View {
     @State private var audio=DictionaryAudio()
     @State private var removing=false
     @State private var confirm=false
+    @State private var practiceState:[String:JSONValue]?
     var body:some View {
         ScrollView {
             VStack(alignment:.leading,spacing:20) {
                 VStack(alignment:.leading,spacing:8) {LookupText(entry.word).font(.title.bold());DictionaryPhonetics(card:card ?? entry.card,audio:audio)}.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+                VStack(alignment:.leading,spacing:8) {
+                    Text("练习记录").font(.headline)
+                    Text(lexicalStatus).font(.subheadline).accessibilityIdentifier("notebookPracticeState")
+                    if let state=practiceState ?? entry.practiceState,case .number(let due)=state["due_at"] {Text("下次检查："+Date(timeIntervalSince1970:due).formatted(date:.abbreviated,time:.omitted)).font(.footnote).foregroundStyle(.secondary)}
+                    Text("相关生词会融入课程；正确改述也能完成交流任务。").font(.footnote).foregroundStyle(.secondary)
+                }.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
                 if let error {Text(error).font(.footnote).foregroundStyle(.red)}
                 ForEach(Array(((card ?? entry.card).senses ?? []).enumerated()),id:\.offset) {_,sense in
                     VStack(alignment:.leading,spacing:12) {
@@ -282,8 +289,13 @@ struct NotebookDetail:View {
         }.background(Color(uiColor:.systemGroupedBackground)).navigationTitle("生词").navigationBarTitleDisplayMode(.inline)
         .toolbar {Button("移出",role:.destructive) {confirm=true}.disabled(removing).accessibilityIdentifier("removeNotebookWord")}
         .confirmationDialog("移出生词本？已有学习证据会保留。",isPresented:$confirm,titleVisibility:.visible) {Button("移出",role:.destructive) {remove()}.accessibilityIdentifier("confirmRemoveNotebookWord")}
-        .task {do {let api=try await model.feedbackClient();let encoded=entry.word.addingPercentEncoding(withAllowedCharacters:.urlQueryAllowed) ?? entry.word;card=try await api.request("v1/vocabulary/knowledge?word="+encoded);audio.play(entry.word,accent:"us")} catch {self.error="完整词条暂时无法加载，保留已保存的释义。"}}
+        .task {do {let api=try await model.feedbackClient();let encoded=entry.word.addingPercentEncoding(withAllowedCharacters:.urlQueryAllowed) ?? entry.word;let latest:NotebookEntry=try await api.request("v1/notebook/"+entry.id);practiceState=latest.practiceState;card=try await api.request("v1/vocabulary/knowledge?word="+encoded);audio.play(entry.word,accent:"us")} catch {self.error="完整词条暂时无法加载，保留已保存的释义。"}}
         .onDisappear {audio.stop()}
+    }
+    private var lexicalStatus:String {
+        let state=practiceState ?? entry.practiceState
+        let value=state?["retrieval"]?.text ?? "not_checked"
+        return ["not_checked":"待练习，尚未确认能力", "supported":"已在提示下使用，待独立检查", "provisional":"当前词义已有一次独立使用证据", "demonstrated":"当前词义已有多次独立使用证据", "needs_practice":"当前词义需要加强", "needs_recheck":"当前词义待重新检查"][value] ?? "待练习，尚未确认能力"
     }
     private func exampleView(_ example:DictionaryExample)->some View {
         VStack(alignment:.leading,spacing:6) {

@@ -90,7 +90,31 @@
       ],
       "focus": [
         "提出替代时间"
-      ]
+      ],
+      "notebook_words": [
+        {
+          "resource_id": "lexeme:available",
+          "notebook_entry_id": "example-notebook-entry",
+          "word": "available",
+          "sense_id": "sense:4e334e292b501f9d0339",
+          "meaning_zh": "有空的；可会见的",
+          "forms": [
+            "available"
+          ],
+          "recent_contexts": [
+            "Are you available tomorrow?"
+          ],
+          "target_ids": [
+            "ARRANGE.A2.s2"
+          ],
+          "reason": "先检查收藏词的起点",
+          "relevance": "同目标来源",
+          "understanding": "not_checked",
+          "retrieval": "not_checked",
+          "due_at": null
+        }
+      ],
+      "lexical_policy_version": "lexical-v1"
     },
     "difficulty": {
       "time_conflicts": 1,
@@ -154,7 +178,18 @@
       "model_version": "model-pinned-v1",
       "prompt_version": "lesson-prompt-v1"
     },
-    "example_notice": "approved为演示流程值；此示例不是已真实审核的上线课程"
+    "example_notice": "approved为演示流程值；此示例不是已真实审核的上线课程",
+    "lexical_practices": [
+      {
+        "practice_id": "example-practice",
+        "resource_id": "lexeme:available",
+        "sense_id": "sense:4e334e292b501f9d0339",
+        "prompt_zh": "告诉Alex你明天下午有空。",
+        "example": "I am available tomorrow afternoon.",
+        "explanation_zh": "available 在这里表示有空，可与别人见面。",
+        "hint_pattern": "I am available ___."
+      }
+    ]
   },
   "LearnerLessonView": {
     "schema_version": "1.0",
@@ -225,7 +260,30 @@
         "transcript": "How about two?"
       }
     ],
-    "support_used": []
+    "support_used": [],
+    "lexical_resources": [
+      {
+        "resource_id": "lexeme:available",
+        "notebook_entry_id": "example-notebook-entry",
+        "word": "available",
+        "sense_id": "sense:4e334e292b501f9d0339",
+        "meaning_zh": "有空的；可会见的",
+        "forms": [
+          "available"
+        ],
+        "recent_contexts": [
+          "Are you available tomorrow?"
+        ],
+        "target_ids": [
+          "ARRANGE.A2.s2"
+        ],
+        "reason": "先检查收藏词的起点",
+        "relevance": "同目标来源",
+        "understanding": "not_checked",
+        "retrieval": "not_checked",
+        "due_at": null
+      }
+    ]
   },
   "AssessmentResult": {
     "schema_version": "1.0",
@@ -264,6 +322,188 @@
         "当前评价所需模态证据可用"
       ],
       "validation_version": "validation-v1"
-    }
+    },
+    "lexical_results": [
+      {
+        "resource_id": "lexeme:available",
+        "sense_id": "sense:4e334e292b501f9d0339",
+        "result": "correct_usage",
+        "confidence": "high",
+        "evidence_refs": [
+          "example-input"
+        ],
+        "quote": "I am available tomorrow.",
+        "validation": "accepted"
+      }
+    ]
+  },
+  "NotebookEntry": {
+    "schema_version": "1.0",
+    "id": "example-notebook-entry",
+    "word": "available",
+    "created_at": 1791021600,
+    "card": {
+      "word": "available",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meaning_cn": "有空的；可会见的",
+          "meaning_en": "free to see or talk to people"
+        }
+      ]
+    },
+    "contexts": [
+      "Are you available tomorrow?"
+    ],
+    "sources": [
+      {
+        "sentence": "Are you available tomorrow?",
+        "session_id": "example-session",
+        "target_ids": [
+          "ARRANGE.A2.s2"
+        ],
+        "scene": "arrange-basketball",
+        "recorded_at": 1791021600
+      }
+    ]
+  },
+  "LexicalSelection": {
+    "resource_id": "lexeme:available",
+    "notebook_entry_id": "example-notebook-entry",
+    "word": "available",
+    "sense_id": "sense:4e334e292b501f9d0339",
+    "meaning_zh": "有空的；可会见的",
+    "forms": [
+      "available"
+    ],
+    "recent_contexts": [
+      "Are you available tomorrow?"
+    ],
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "reason": "先检查收藏词的起点",
+    "relevance": "同目标来源",
+    "understanding": "not_checked",
+    "retrieval": "not_checked",
+    "due_at": null
+  },
+  "LexicalPractice": {
+    "practice_id": "example-practice",
+    "resource_id": "lexeme:available",
+    "sense_id": "sense:4e334e292b501f9d0339",
+    "prompt_zh": "告诉Alex你明天下午有空。",
+    "example": "I am available tomorrow afternoon.",
+    "explanation_zh": "available 在这里表示有空，可与别人见面。",
+    "hint_pattern": "I am available ___."
+  },
+  "LexicalPracticeInput": {
+    "schema_version": "1.0",
+    "input_id": "example-input",
+    "practice_id": "example-practice",
+    "type": "speech",
+    "audio_ref": "/v1/media/example-recording",
+    "hint_level": "meaning"
+  },
+  "LexicalResourceState": {
+    "schema_version": "1.0",
+    "resource_id": "lexeme:available",
+    "resource_type": "word",
+    "word": "available",
+    "understanding": "not_checked",
+    "retrieval": "not_checked",
+    "practice_signal": "self_selected",
+    "notebook_active": true,
+    "evidence_strength": "weak",
+    "observations": [],
+    "senses": {}
+  },
+  "LexicalResult": {
+    "resource_id": "lexeme:available",
+    "sense_id": "sense:4e334e292b501f9d0339",
+    "result": "correct_usage",
+    "confidence": "high",
+    "evidence_refs": [
+      "example-input"
+    ],
+    "quote": "I am available tomorrow.",
+    "validation": "accepted"
+  },
+  "LexicalPracticeAttempt": {
+    "schema_version": "1.0",
+    "request_hash": "example-request-digest",
+    "response": {
+      "completed": true,
+      "support_used": [],
+      "lexical_results": [
+        {
+          "resource_id": "lexeme:available",
+          "sense_id": "sense:4e334e292b501f9d0339",
+          "result": "correct_usage",
+          "confidence": "high",
+          "evidence_refs": [
+            "example-input"
+          ],
+          "quote": "I am available tomorrow.",
+          "validation": "accepted"
+        }
+      ]
+    },
+    "input": {
+      "schema_version": "1.0",
+      "input_id": "example-input",
+      "practice_id": "example-practice",
+      "type": "speech",
+      "audio_ref": "/v1/media/example-recording",
+      "hint_level": "meaning"
+    },
+    "turns": [
+      {
+        "turn_id": "example-input",
+        "speaker": "learner",
+        "transcript": "I am available tomorrow.",
+        "audio_ref": "/v1/media/example-recording",
+        "asr": {
+          "quality": "final_transcript_available"
+        }
+      }
+    ],
+    "resource": {
+      "resource_id": "lexeme:available",
+      "notebook_entry_id": "example-notebook-entry",
+      "word": "available",
+      "sense_id": "sense:4e334e292b501f9d0339",
+      "meaning_zh": "有空的；可会见的",
+      "forms": [
+        "available"
+      ],
+      "recent_contexts": [
+        "Are you available tomorrow?"
+      ],
+      "target_ids": [
+        "ARRANGE.A2.s2"
+      ],
+      "reason": "先检查收藏词的起点",
+      "relevance": "同目标来源",
+      "understanding": "not_checked",
+      "retrieval": "not_checked",
+      "due_at": null
+    },
+    "practice_snapshot": {
+      "practice_id": "example-practice",
+      "resource_id": "lexeme:available",
+      "sense_id": "sense:4e334e292b501f9d0339",
+      "prompt_zh": "告诉Alex你明天下午有空。",
+      "example": "I am available tomorrow afternoon.",
+      "explanation_zh": "available 在这里表示有空，可与别人见面。",
+      "hint_pattern": "I am available ___."
+    },
+    "lesson_id": "example-lesson",
+    "lesson_version": 1,
+    "map_version": "1.0.1-model-reviewed",
+    "model_version": "configured-review-model",
+    "policy_version": "lexical-v1",
+    "fixture": false,
+    "evidence_valid": true
   }
 }

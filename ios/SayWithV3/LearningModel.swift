@@ -63,6 +63,11 @@ final class LearningModel {
             try CredentialStore.save(registration.accessToken,account:url.absoluteString)
             await client.authenticate(registration.accessToken)
         }
+        #if DEBUG
+        if loadedHealth.mode == "fixture" && ProcessInfo.processInfo.arguments.contains("--ui-test-notebook") {
+            let _:NotebookEntry=try await client.request("v1/notebook",method:"POST",body:["word":.string("available"),"context":.string("Are you available tomorrow?")])
+        }
+        #endif
         let loaded: Profile = try await client.request("v1/profile")
         let connected: Profile
         if savePreferences {

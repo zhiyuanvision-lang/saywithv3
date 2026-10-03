@@ -101,7 +101,7 @@ review_metadata 保存目的、策略版本、基准尝试、实际间隔及条�
 首页标题使用可缩放的26pt，音频播放以系统喇叭/暂停图标呈现，保留VoiceOver操作说明。
 
 八、腾讯云新版（2026-10-03）
-正式应用名称、Bundle ID、图标和法律/支持地址沿用 ../SayWith；iOS 1.0.6 (601)。
+正式应用名称、Bundle ID、图标和法律/支持地址沿用 ../SayWith；iOS 1.0.6 (603)。
 导航为学习、进展、我的；课程地图由后端用于调度。Release 默认连接 https://api.saywith.zhiyuanv.com/learning，支持基址路径与私有音频请求；不显示调试地址输入。
 GET /v1/recommendations 的 next_learning 与课程调度使用同一选择函数；读取推荐不会创建课程或教学记录。
 已学清单同时读取真实学习接触记录和能力证据；未证明独立能力的目标可以巩固复习，但不称为保持或迁移成功。fixture 不计入真实已学记录。
@@ -120,3 +120,5 @@ GET /v1/recommendations 的 next_learning 与课程调度使用同一选择函�
 全局查词、生词本与反馈导出（2026-10-03）：
 我的页新增生词本与详情；所有课程英文、提示与记录支持点击查词，加入生词本按账号和词头去重，删除保留历史证据。收藏作为弱词汇练习信号进入课程规划；查词释义记入实际任务支持，不计为无帮助独立表现。说明见 docs/v6-vocabulary.md。
 make feedback 将工单文字与图片导出到本项目 support.md 和 tmp/feedback-inbox，默认保留后台状态；make feedback-close 可在导出成功后关闭工单。
+
+生词课程闭环：每课最多2个相关词，先尝试、按需提示、按词义保存真实用词证据，正确改述不算词汇失败。到期词进入相关任务复习，主路径保留课程进度。说明及截图见 docs/v6-vocabulary.md，验证见 verification/lexical-learning-2026-10-03.json。

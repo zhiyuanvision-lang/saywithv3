@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-03",
+  "backend_tests": {
+    "passed": 61,
+    "subtests_passed": 4,
+    "warnings": 1,
+    "source": "isolated delivery snapshot"
+  },
+  "ios_tests": {
+    "contract_tests_passed": 9,
+    "ui_tests_passed": 2,
+    "try_first_scaffolding_continue": "passed",
+    "original_learning_guided_independent_feedback": "passed",
+    "microphone_permission": "granted for simulator testing"
+  },
+  "production": {
+    "release": "20261003T141219Z",
+    "cloud_smoke": {
+      "status": "passed",
+      "backend": "https://api.saywith.zhiyuanv.com/learning",
+      "production_generation": "approved",
+      "word": "available",
+      "try_first_hides_answers": true,
+      "meaning_pattern_example": true,
+      "replay_deduplicated": true,
+      "continue_main_course": true,
+      "notebook_detail_state": true,
+      "no_false_ability_updates": true,
+      "test_account_only": true,
+      "human_voice_evidence_not_simulated": true
+    },
+    "source_check": {
+      "matched": true,
+      "files": 19,
+      "mismatches": []
+    }
+  },
+  "ios_device": {
+    "version": "1.0.6",
+    "build": "603",
+    "release_build": "succeeded",
+    "install": "succeeded",
+    "launch": "succeeded",
+    "device_apps_confirmed": true
+  },
+  "evidence_policy": {
+    "bookmark_is_weak": true,
+    "sense_specific": true,
+    "quoted_learner_evidence_required": true,
+    "paraphrase_or_omission_is_not_word_failure": true,
+    "help_is_server_tracked": true,
+    "retries_do_not_duplicate_evidence": true,
+    "maximum_selected_words_per_lesson": 2,
+    "automatic_word_driven_target_selection_cadence": 5,
+    "initial_intervals_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ]
+  },
+  "deployment_isolation": {
+    "intermediate_release_with_concurrent_auth": "20261003T140602Z",
+    "restored_stable_account_implementation": true,
+    "other_working_tree_changes_preserved": true
+  },
+  "limitations": [
+    "Scheduling thresholds require real learner calibration",
+    "No human voice assessment result was fabricated during cloud smoke",
+    "Full VoiceOver and largest Dynamic Type audit not performed"
+  ]
+}

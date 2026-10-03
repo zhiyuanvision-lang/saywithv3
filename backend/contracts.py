@@ -28,6 +28,103 @@ class TargetDefinition(Contract):
     reviewed_standard_references: list[dict[str, Any]]
     reference_note: str | None = None
 
+class NotebookSource(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    sentence: str = ''
+    session_id: str | None = None
+    target_ids: list[str] = Field(default_factory=list)
+    scene: str = ''
+    recorded_at: float
+
+class NotebookEntry(Contract):
+    id: str
+    word: str
+    created_at: float
+    card: dict[str, Any]
+    contexts: list[str] = Field(default_factory=list)
+    sources: list[NotebookSource] = Field(default_factory=list)
+
+class LexicalSelection(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    resource_id: str
+    notebook_entry_id: str
+    word: str
+    sense_id: str
+    meaning_zh: str
+    forms: list[str] = Field(default_factory=list)
+    recent_contexts: list[str] = Field(default_factory=list)
+    target_ids: list[str] = Field(default_factory=list)
+    reason: str
+    relevance: str
+    understanding: str = 'not_checked'
+    retrieval: str = 'not_checked'
+    due_at: float | None = None
+
+class LexicalPractice(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    practice_id: str = ''
+    resource_id: str
+    sense_id: str
+    prompt_zh: str
+    example: str
+    explanation_zh: str
+    hint_pattern: str
+
+class LexicalCheck(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    resource_id: str
+    sense_id: str
+    result: Literal['correct_usage','meaning_mismatch','not_used','unjudgeable']
+    confidence: Literal['high','medium','low']
+    evidence_refs: list[str] = Field(default_factory=list)
+    quote: str = ''
+
+class LexicalResult(LexicalCheck):
+    validation: Literal['accepted','rejected']
+
+class LexicalCandidate(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    checks: list[LexicalCheck] = Field(default_factory=list, max_length=2)
+
+class LexicalResourceState(Contract):
+    resource_id: str
+    resource_type: Literal['word'] = 'word'
+    word: str
+    understanding: str = 'not_checked'
+    retrieval: str = 'not_checked'
+    practice_signal: str = 'self_selected'
+    notebook_active: bool = True
+    lookup_count: int = 0
+    evidence_strength: str = 'weak'
+    observations: list[dict[str,Any]] = Field(default_factory=list)
+    senses: dict[str,dict[str,Any]] = Field(default_factory=dict)
+    updated_at: float | None = None
+    due_at: float | None = None
+    last_assessed_sense: str | None = None
+
+class LexicalPracticeInput(Contract):
+    input_id: str = Field(min_length=1,max_length=100)
+    practice_id: str
+    type: Literal['speech','text','request_hint','skip']
+    audio_ref: str | None = None
+    text: str | None = Field(default=None,max_length=2000)
+    hint_level: Literal['meaning','pattern','example'] = 'meaning'
+
+class LexicalPracticeAttempt(Contract):
+    request_hash: str
+    response: dict[str,Any]
+    input: LexicalPracticeInput
+    turns: list[dict[str,Any]]
+    resource: LexicalSelection
+    practice_snapshot: LexicalPractice
+    lesson_id: str
+    lesson_version: int
+    map_version: str
+    model_version: str
+    policy_version: str
+    fixture: bool
+    evidence_valid: bool
+
 class LearnerProfile(Contract):
     user_id: str
     profile_version: int = 0
@@ -86,6 +183,7 @@ class LessonPackage(Contract):
     map_version: str
     target_ids: list[str] = Field(min_length=1,max_length=1)
     learning_materials: list[Material] = Field(min_length=1,max_length=8)
+    lexical_practices: list[LexicalPractice] = Field(default_factory=list,max_length=2)
     practice_task_ref: str
     practice_task: Task | None = None
     independent_task: Task
@@ -112,6 +210,7 @@ class LearnerLessonView(Contract):
     available_actions: list[str]
     materials: list[dict[str, Any]] = Field(default_factory=list)
     completed_material_indices: list[int] = Field(default_factory=list)
+    lexical_practices: list[dict[str,Any]] = Field(default_factory=list)
     fixture: bool = False
     entry_kind: str = 'course'
     review_metadata: dict[str,Any] = Field(default_factory=dict)
@@ -163,6 +262,7 @@ class TaskAttempt(Contract):
     task_snapshot_ref: str
     turns: list[dict[str, Any]]
     support_used: list[str]
+    lexical_resources: list[LexicalSelection] = Field(default_factory=list,max_length=2)
     fixture: bool = False
     started_at: str | None = None
     finished_at: str | None = None
@@ -173,12 +273,13 @@ class AssessmentResult(Contract):
     assessment_version: str
     model_version: str
     target_results: list[dict[str, Any]]
+    lexical_results: list[LexicalResult] = Field(default_factory=list)
     evidence_ids: list[str]
     validation: dict[str, Any]
     example_notice: str | None = None
 
 CONTRACTS = {c.__name__:c for c in (SourceCatalog,CurriculumRelease,TargetDefinition,LearnerProfile,
-    TeachingAssignment,LessonPackage,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult)}
+    TeachingAssignment,LessonPackage,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult,NotebookEntry,LexicalPracticeInput,LexicalResourceState,LexicalSelection,LexicalPractice,LexicalResult,LexicalPracticeAttempt)}
 
 
 class AssessmentCheckCandidate(BaseModel):

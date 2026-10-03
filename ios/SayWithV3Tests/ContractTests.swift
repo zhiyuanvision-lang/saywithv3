@@ -2,6 +2,44 @@ import XCTest
 @testable import SayWithV3
 
 final class ContractTests: XCTestCase {
+    @MainActor
+    func testCancelledRecordingStartNeverOpensMicrophone() async {
+        let audio=AudioController()
+        let start=Task {try await audio.start()}
+        start.cancel()
+        do {try await start.value;XCTFail("Cancelled start must not record")}
+        catch is CancellationError {}
+        catch {XCTFail("Unexpected error: \(error)")}
+        XCTAssertFalse(audio.recording)
+        XCTAssertNil(audio.lastRecording)
+    }
+    func testHoldRecordingReleaseAndDuplicateEnd() {
+        var gesture=HoldRecordingGesture()
+        XCTAssertTrue(gesture.update(verticalTranslation:0))
+        XCTAssertFalse(gesture.update(verticalTranslation:-20))
+        XCTAssertEqual(gesture.finish(verticalTranslation:-20),.send)
+        XCTAssertNil(gesture.finish(verticalTranslation:0))
+        XCTAssertFalse(gesture.active)
+    }
+    func testHoldRecordingSwipeCancellationAndReturnToSend() {
+        var gesture=HoldRecordingGesture()
+        _ = gesture.update(verticalTranslation:0)
+        _ = gesture.update(verticalTranslation:-60)
+        XCTAssertTrue(gesture.cancelling)
+        XCTAssertEqual(gesture.finish(verticalTranslation:-60),.cancel)
+        _ = gesture.update(verticalTranslation:0)
+        _ = gesture.update(verticalTranslation:-80)
+        _ = gesture.update(verticalTranslation:-30)
+        XCTAssertFalse(gesture.cancelling)
+        XCTAssertEqual(gesture.finish(verticalTranslation:-30),.send)
+    }
+    func testInterruptedHoldCannotSubmit() {
+        var gesture=HoldRecordingGesture()
+        _ = gesture.update(verticalTranslation:0)
+        gesture.reset()
+        XCTAssertNil(gesture.finish(verticalTranslation:0))
+        XCTAssertTrue(gesture.update(verticalTranslation:0))
+    }
     func testPrivateFactsHaveNoLearnerViewField() throws {
         let json = #"{"session_id":"s1","lesson_id":"l1","lesson_version":1,"task_id":"t1","phase":"independent_application","instruction":"Arrange","learner_facts":{"available_times":["14:00"]},"available_actions":["speak"],"materials":[],"fixture":false}"#
         let decoder=JSONDecoder();decoder.keyDecodingStrategy = .convertFromSnakeCase

@@ -13,6 +13,8 @@ class Sessions:
     def __init__(self,store,curriculum,provider,generator,assessor,settings):
         self.store=store;self.curriculum=curriculum;self.provider=provider;self.generator=generator;self.assessor=assessor;self.settings=settings
         self.support=TeachingSupport(self)
+        from .lexical_practice import LexicalPracticeService
+        self.lexical=LexicalPracticeService(self)
 
     def create(self,owner,lesson_id,entry_kind="course"):
         lesson=self.store.get('LessonPackage',lesson_id,owner)['payload']
@@ -51,6 +53,7 @@ class Sessions:
             learner_facts=task['learner_facts'] if phase!='learning' else {},fixture=s['fixture'],
             available_actions=self.support.actions(s),
             materials=lesson['learning_materials'] if phase=='learning' else [],
+            lexical_practices=self.lexical.view(s,lesson) if phase=='learning' else [],
             completed_material_indices=sorted({e['material_index'] for e in s['learning_events']}),
             title=(lesson.get('title_zh') if phase=='learning' else '') or self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])['outcome'],
             entry_kind=s.get('entry_kind','course'),review_metadata={k:v for k,v in s.get('review_metadata',{}).items() if k not in ('transfer_conditions',)},
@@ -58,6 +61,8 @@ class Sessions:
             demonstration=self.support.demo(s,lesson),guided_round=s.get('guided_index',0)+1 if phase in ('supported_practice','guided_feedback') else None,
             guided_round_title=ROUND_NAMES[s.get('guided_index',0)] if phase in ('supported_practice','guided_feedback') else '',
             support_used=s['support_used'],shadow_feedback=s.get('shadow_feedback'),assessment=assessment).model_dump()
+        if phase=='learning' and any(not p['completed'] for p in view['lexical_practices']):
+            view['materials']=[];view['demonstration']=[]
         public_turns=[]
         for t in s['turns']:
             public={k:t[k] for k in ('turn_id','speaker','text','transcript','audio_ref') if k in t}
@@ -181,7 +186,7 @@ class Sessions:
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             attempt=TaskAttempt(attempt_id=attempt_id,user_id=owner,session_id=id,lesson_id=s['lesson_id'],lesson_version=s['lesson_version'],
                 map_version=lesson['map_version'],task_id=task['task_id'],task_version=task['task_version'],
-                target_ids=lesson['target_ids'],phase=s['phase'],task_snapshot_ref=attempt_id+'/snapshot',
+                target_ids=lesson['target_ids'],lexical_resources=self.store.get('TeachingAssignment',lesson['assignment_id'],owner)['payload']['resource_plan'].get('notebook_words',[]),phase=s['phase'],task_snapshot_ref=attempt_id+'/snapshot',
                 turns=s['turns'],review_metadata=s.get('review_metadata',{}),support_used=s['support_used'],fixture=s['fixture'],started_at=s['started_at'],finished_at=timestamp()).model_dump()
             if s['phase'] not in ('supported_practice','independent_application'):raise Conflict('当前没有可结束的任务')
             with self.store.transaction() as c:

@@ -7,6 +7,7 @@ from .contracts import AssessmentResult, AssessmentCandidate
 from pydantic import ValidationError
 from .byte_speech import wav_info
 from .store import uid, Missing, Conflict
+from .lexical import validate_checks, apply_checks
 
 def timestamp():return datetime.now(timezone.utc).isoformat()
 
@@ -63,11 +64,20 @@ class Assessor:
         if candidate.get('confidence')=='low':problems.append('低可信度需要更多证据')
         # Unknown diagnoses stay hypotheses; never store them as established causes.
         diagnoses=[{**d,'status':'hypothesis'} for d in candidate.get('diagnosis',[]) if isinstance(d,dict)]
+        lexical=[]
+        resources=attempt.get('lexical_resources',[])
+        if not problems and resources:
+            try:
+                lexical=validate_checks(await self.provider.evaluate_lexical(resources,turns,{'task':task,'support_used':attempt['support_used']}),resources,turns)
+            except (ValidationError,ValueError,TypeError,KeyError):lexical=[]
+            except Exception:
+                # Lexical analysis is supplementary and must not block task evidence.
+                lexical=[]
         result=AssessmentResult(assessment_id=uid(),attempt_id=id,assessment_version='eval-v1',model_version=self.provider.model,
             target_results=[{'target_id':target['target_id'],'result':'unjudgeable' if problems else candidate['result'],
                 'checks':checks,'confidence':candidate.get('confidence','low'),'diagnosis':diagnoses,
                 'fluency':'not_calibrated','pronunciation':'not_assessed'}],
-            evidence_ids=[] if problems else [uid()],validation={'status':'rejected' if problems else 'accepted',
+            lexical_results=lexical,evidence_ids=[] if problems else [uid()],validation={'status':'rejected' if problems else 'accepted',
                 'checks':problems or ['证据引用存在','任务条件和实际支持已保存','音频模态证据可用' if spoken else '文字任务证据可用'],
                 'validation_version':'validation-v1'}).model_dump()
         for retry in range(3):
@@ -98,8 +108,7 @@ class Assessor:
         successes=[e for e in state['observations'] if e['independent'] and e['completed']]
         if r['result']=='completed':
             if not independent and state['independent'] not in ('demonstrated','provisional'):state['independent']='supported'
-            elif len({e['session_id'] for e in successes})>=2:state['independent']='demonstrated'
-            else:state['independent']='provisional'
+            elif independent:state['independent']='demonstrated' if len({e['session_id'] for e in successes})>=2 else 'provisional'
             if independent and attempt.get('review_metadata',{}).get('purpose')=='transfer' and attempt.get('review_metadata',{}).get('transfer_validated') and len({e['scenario_signature'] for e in successes})>=2:state['transfer']='demonstrated'
             previous=[e for e in successes if e['attempt_id']!=attempt['attempt_id']]
             if independent and previous and now-min(e['time'] for e in previous)>=self.settings.retention_days*86400:state['retention']='demonstrated'
@@ -109,6 +118,7 @@ class Assessor:
         state['confidence']='provisional_rule_requires_pilot'
         state['last_result']=r['result'];state['updated_at']=now
         state['due_at']=now+(self.settings.retention_days*86400 if r['result']=='completed' else 86400)
+        apply_checks(profile,result.get('lexical_results',[]),attempt.get('lexical_resources',[]),attempt['attempt_id'],attempt['session_id'],independent,supports,task['scenario_signature'],result['assessment_id'],retention_days=self.settings.retention_days)
         profile['target_states']=list(states.values());profile['profile_version']+=1
         self.store.put('LearnerProfile',owner,owner,profile,expected=row['version'],conn=conn)
         self.store.put('Evidence',evidence['evidence_id'],owner,{'assessment':result,'observation':evidence,

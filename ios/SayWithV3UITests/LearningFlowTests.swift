@@ -2,8 +2,8 @@ import XCTest
 
 @MainActor
 final class LearningFlowTests:XCTestCase {
-    private func launch()->XCUIApplication {
-        let app=XCUIApplication();app.launchArguments=["--backend-url","http://localhost:8086"];app.launch()
+    private func launch(backend:String="http://localhost:8086",extra:[String]=[])->XCUIApplication {
+        let app=XCUIApplication();app.launchArguments=["--backend-url",backend]+extra;app.launch()
         if app.buttons["exitLesson"].waitForExistence(timeout:2) {
             app.buttons["更多学习操作"].tap();app.buttons["退出本次任务"].tap();app.buttons["退出本次任务"].tap()
         }
@@ -25,6 +25,22 @@ final class LearningFlowTests:XCTestCase {
         if !field.exists {app.buttons["也可以输入英文练习"].tap()}
         XCTAssertTrue(field.waitForExistence(timeout:3));field.tap();field.typeText(text)
         ready(app.buttons["sendReply"]);app.buttons["sendReply"].tap()
+    }
+    func testNotebookTryFirstHintsAndContinue() {
+        let app=launch(backend:"http://localhost:8087",extra:["--ui-test-notebook"])
+        app.buttons["startLearning"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["lexicalPracticeCard"].firstMatch.waitForExistence(timeout:30))
+        XCTAssertFalse(app.descendants(matching:.any)["englishExpression"].firstMatch.exists)
+        shot(app,"v6-lexical-try-first")
+        ready(app.buttons["lexicalHint"]);app.buttons["lexicalHint"].tap()
+        XCTAssertTrue(app.staticTexts["lexicalFeedback"].waitForExistence(timeout:10))
+        ready(app.buttons["lexicalHint"]);app.buttons["lexicalHint"].tap()
+        ready(app.buttons["lexicalHint"]);app.buttons["lexicalHint"].tap()
+        shot(app,"v6-lexical-scaffold")
+        ready(app.buttons["lexicalSkip"]);app.buttons["lexicalSkip"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:10))
+        shot(app,"v6-lexical-continue-course")
+        app.buttons["更多学习操作"].tap();app.buttons["退出本次任务"].tap();app.buttons["退出本次任务"].tap()
     }
     func testLearningGuidedIndependentFeedback() {
         let app=launch();shot(app,"v6-home");app.buttons["startLearning"].tap()

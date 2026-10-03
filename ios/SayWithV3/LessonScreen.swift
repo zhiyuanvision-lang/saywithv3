@@ -49,7 +49,9 @@ struct LessonScreen:View {
             GeometryReader {viewport in ScrollViewReader {proxy in ScrollView {
                 VStack(alignment:.leading,spacing:16) {
                     if !(isGuided || isIndependent) || typeSize.isAccessibilitySize {taskRegion}
-                    if phase=="learning" {learningContent}
+                    if phase=="learning" {
+                        if let pending=current?.view.lexicalPractices?.first(where:{!$0.completed}) {LexicalPracticeCard(model:model,practice:pending).id(pending.id)} else {learningContent}
+                    }
                     else if phase=="guided_feedback" {guidedSummary}
                     else if isFeedback {feedbackContent}
                     else {conversationContent}
@@ -64,7 +66,7 @@ struct LessonScreen:View {
             }}
         }
         .background(Color(uiColor:.systemBackground))
-        .safeAreaInset(edge:.bottom,spacing:0) {footer}
+        .safeAreaInset(edge:.bottom,spacing:0) {if phase != "learning" || current?.view.lexicalPractices?.contains(where:{!$0.completed}) != true {footer}}
         .sheet(isPresented:$showHints) {hintPanel}
         .sheet(isPresented:$showTextInput) {textInputPanel}
         .sheet(isPresented:$showTaskInfo) {taskInfoPanel}
@@ -116,7 +118,7 @@ struct LessonScreen:View {
                 Spacer()
                 Menu {
                     if isIndependent {Button("需要答案帮助，转回引导练习") {showReturn=true}}
-                    if phase=="learning" {Button("用法说明") {showUsage=true};Button("完整示范对话") {showDemo=true}}
+                    if phase=="learning" && current?.view.lexicalPractices?.contains(where:{!$0.completed}) != true {Button("用法说明") {showUsage=true};Button("完整示范对话") {showDemo=true}}
                     Button("查看任务与条件") {showTaskInfo=true}
                     Button("退出本次任务",role:.destructive) {showExit=true}
                 } label:{Image(systemName:"ellipsis").font(.system(size:18)).frame(width:44,height:44)}
@@ -413,4 +415,48 @@ struct LessonScreen:View {
 private struct ConversationBottomKey:PreferenceKey {
     static let defaultValue:CGFloat=0
     static func reduce(value:inout CGFloat,nextValue:()->CGFloat) {value=nextValue()}
+}
+
+/// Same press/release/cancel behavior for course and vocabulary practice.
+struct HoldToSpeakButton:View {
+    @Binding var hold:HoldRecordingGesture
+    let idleTitle:String
+    let processing:Bool
+    let disabled:Bool
+    let identifier:String
+    let canStart:()->Bool
+    let onBegin:()->Void
+    let onFinish:(CGFloat)->Void
+    let onCancel:()->Void
+    @GestureState private var touching=false
+    var body:some View {
+        HStack(spacing:8) {
+            Image(systemName:hold.cancelling ? "xmark":"mic.fill")
+            Text(processing ? "正在处理":hold.active ? (hold.cancelling ? "松开取消":"松开发送"):idleTitle)
+        }.font(.headline).frame(maxWidth:.infinity,minHeight:50).foregroundStyle(Color.white)
+            .background(hold.cancelling ? Color.red:Color.accentColor,in:RoundedRectangle(cornerRadius:12))
+            .contentShape(Rectangle())
+            .gesture(DragGesture(minimumDistance:0,coordinateSpace:.global)
+                .updating($touching) {_,active,_ in active=true}
+                .onChanged {value in
+                    guard !disabled,canStart() else {return}
+                    if hold.update(verticalTranslation:value.translation.height) {onBegin()}
+                }
+                .onEnded {value in onFinish(value.translation.height)})
+            .onChange(of:touching) {_,active in
+                if !active {Task { @MainActor in
+                    await Task.yield()
+                    if !touching && hold.active {onCancel()}
+                }}
+            }
+            .accessibilityElement(children:.ignore).accessibilityAddTraits(.isButton)
+            .accessibilityLabel(hold.active ? "结束录音并发送":idleTitle)
+            .accessibilityHint("按住录音，松开发送，上滑松开取消。辅助操作可双击开始，再次双击发送。")
+            .accessibilityAction {
+                if hold.active {onFinish(0)}
+                else if !disabled,canStart() {_ = hold.update(verticalTranslation:0);onBegin()}
+            }
+            .accessibilityAction(named:Text("取消录音")) {onCancel()}
+            .accessibilityIdentifier(identifier).disabled(disabled)
+    }
 }

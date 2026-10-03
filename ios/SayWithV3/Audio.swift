@@ -1,6 +1,25 @@
 import AVFoundation
 import Observation
 
+struct HoldRecordingGesture {
+    enum Release { case send, cancel }
+    private(set) var active=false
+    private(set) var cancelling=false
+    mutating func update(verticalTranslation:Double) -> Bool {
+        let began = !active
+        active=true
+        cancelling=verticalTranslation <= -60
+        return began
+    }
+    mutating func finish(verticalTranslation:Double) -> Release? {
+        guard active else {return nil}
+        let result:Release=verticalTranslation <= -60 ? .cancel:.send
+        reset()
+        return result
+    }
+    mutating func reset() {active=false;cancelling=false}
+}
+
 @MainActor @Observable
 final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
     var recording=false
@@ -23,6 +42,7 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
         }
     }
     func start() async throws {
+        try Task.checkCancellation()
         guard await AVAudioApplication.requestRecordPermission() else {throw APIError.server("请在系统设置中允许麦克风访问。")}
         stopPlayback();lastRecording=nil;interruptionMessage=nil;duration=0
         let session=AVAudioSession.sharedInstance()

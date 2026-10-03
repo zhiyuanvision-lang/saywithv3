@@ -288,6 +288,50 @@
   },
   "LessonPackage": {
     "$defs": {
+      "LexicalPractice": {
+        "additionalProperties": false,
+        "properties": {
+          "practice_id": {
+            "default": "",
+            "title": "Practice Id",
+            "type": "string"
+          },
+          "resource_id": {
+            "title": "Resource Id",
+            "type": "string"
+          },
+          "sense_id": {
+            "title": "Sense Id",
+            "type": "string"
+          },
+          "prompt_zh": {
+            "title": "Prompt Zh",
+            "type": "string"
+          },
+          "example": {
+            "title": "Example",
+            "type": "string"
+          },
+          "explanation_zh": {
+            "title": "Explanation Zh",
+            "type": "string"
+          },
+          "hint_pattern": {
+            "title": "Hint Pattern",
+            "type": "string"
+          }
+        },
+        "required": [
+          "resource_id",
+          "sense_id",
+          "prompt_zh",
+          "example",
+          "explanation_zh",
+          "hint_pattern"
+        ],
+        "title": "LexicalPractice",
+        "type": "object"
+      },
       "Material": {
         "additionalProperties": false,
         "properties": {
@@ -489,6 +533,14 @@
         "title": "Learning Materials",
         "type": "array"
       },
+      "lexical_practices": {
+        "items": {
+          "$ref": "#/$defs/LexicalPractice"
+        },
+        "maxItems": 2,
+        "title": "Lexical Practices",
+        "type": "array"
+      },
       "practice_task_ref": {
         "title": "Practice Task Ref",
         "type": "string"
@@ -608,6 +660,14 @@
           "type": "integer"
         },
         "title": "Completed Material Indices",
+        "type": "array"
+      },
+      "lexical_practices": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Lexical Practices",
         "type": "array"
       },
       "fixture": {
@@ -898,6 +958,95 @@
     "type": "object"
   },
   "TaskAttempt": {
+    "$defs": {
+      "LexicalSelection": {
+        "additionalProperties": false,
+        "properties": {
+          "resource_id": {
+            "title": "Resource Id",
+            "type": "string"
+          },
+          "notebook_entry_id": {
+            "title": "Notebook Entry Id",
+            "type": "string"
+          },
+          "word": {
+            "title": "Word",
+            "type": "string"
+          },
+          "sense_id": {
+            "title": "Sense Id",
+            "type": "string"
+          },
+          "meaning_zh": {
+            "title": "Meaning Zh",
+            "type": "string"
+          },
+          "forms": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Forms",
+            "type": "array"
+          },
+          "recent_contexts": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Recent Contexts",
+            "type": "array"
+          },
+          "target_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Target Ids",
+            "type": "array"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          },
+          "relevance": {
+            "title": "Relevance",
+            "type": "string"
+          },
+          "understanding": {
+            "default": "not_checked",
+            "title": "Understanding",
+            "type": "string"
+          },
+          "retrieval": {
+            "default": "not_checked",
+            "title": "Retrieval",
+            "type": "string"
+          },
+          "due_at": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Due At"
+          }
+        },
+        "required": [
+          "resource_id",
+          "notebook_entry_id",
+          "word",
+          "sense_id",
+          "meaning_zh",
+          "reason",
+          "relevance"
+        ],
+        "title": "LexicalSelection",
+        "type": "object"
+      }
+    },
     "additionalProperties": false,
     "properties": {
       "schema_version": {
@@ -982,6 +1131,14 @@
         "title": "Support Used",
         "type": "array"
       },
+      "lexical_resources": {
+        "items": {
+          "$ref": "#/$defs/LexicalSelection"
+        },
+        "maxItems": 2,
+        "title": "Lexical Resources",
+        "type": "array"
+      },
       "fixture": {
         "default": false,
         "title": "Fixture",
@@ -1031,6 +1188,69 @@
     "type": "object"
   },
   "AssessmentResult": {
+    "$defs": {
+      "LexicalResult": {
+        "additionalProperties": false,
+        "properties": {
+          "resource_id": {
+            "title": "Resource Id",
+            "type": "string"
+          },
+          "sense_id": {
+            "title": "Sense Id",
+            "type": "string"
+          },
+          "result": {
+            "enum": [
+              "correct_usage",
+              "meaning_mismatch",
+              "not_used",
+              "unjudgeable"
+            ],
+            "title": "Result",
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidence Refs",
+            "type": "array"
+          },
+          "quote": {
+            "default": "",
+            "title": "Quote",
+            "type": "string"
+          },
+          "validation": {
+            "enum": [
+              "accepted",
+              "rejected"
+            ],
+            "title": "Validation",
+            "type": "string"
+          }
+        },
+        "required": [
+          "resource_id",
+          "sense_id",
+          "result",
+          "confidence",
+          "validation"
+        ],
+        "title": "LexicalResult",
+        "type": "object"
+      }
+    },
     "additionalProperties": false,
     "properties": {
       "schema_version": {
@@ -1061,6 +1281,13 @@
           "type": "object"
         },
         "title": "Target Results",
+        "type": "array"
+      },
+      "lexical_results": {
+        "items": {
+          "$ref": "#/$defs/LexicalResult"
+        },
+        "title": "Lexical Results",
         "type": "array"
       },
       "evidence_ids": {
@@ -1098,6 +1325,767 @@
       "validation"
     ],
     "title": "AssessmentResult",
+    "type": "object"
+  },
+  "NotebookEntry": {
+    "$defs": {
+      "NotebookSource": {
+        "additionalProperties": false,
+        "properties": {
+          "sentence": {
+            "default": "",
+            "title": "Sentence",
+            "type": "string"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Session Id"
+          },
+          "target_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Target Ids",
+            "type": "array"
+          },
+          "scene": {
+            "default": "",
+            "title": "Scene",
+            "type": "string"
+          },
+          "recorded_at": {
+            "title": "Recorded At",
+            "type": "number"
+          }
+        },
+        "required": [
+          "recorded_at"
+        ],
+        "title": "NotebookSource",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "word": {
+        "title": "Word",
+        "type": "string"
+      },
+      "created_at": {
+        "title": "Created At",
+        "type": "number"
+      },
+      "card": {
+        "additionalProperties": true,
+        "title": "Card",
+        "type": "object"
+      },
+      "contexts": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Contexts",
+        "type": "array"
+      },
+      "sources": {
+        "items": {
+          "$ref": "#/$defs/NotebookSource"
+        },
+        "title": "Sources",
+        "type": "array"
+      }
+    },
+    "required": [
+      "id",
+      "word",
+      "created_at",
+      "card"
+    ],
+    "title": "NotebookEntry",
+    "type": "object"
+  },
+  "LexicalPracticeInput": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "input_id": {
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Input Id",
+        "type": "string"
+      },
+      "practice_id": {
+        "title": "Practice Id",
+        "type": "string"
+      },
+      "type": {
+        "enum": [
+          "speech",
+          "text",
+          "request_hint",
+          "skip"
+        ],
+        "title": "Type",
+        "type": "string"
+      },
+      "audio_ref": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Audio Ref"
+      },
+      "text": {
+        "anyOf": [
+          {
+            "maxLength": 2000,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Text"
+      },
+      "hint_level": {
+        "default": "meaning",
+        "enum": [
+          "meaning",
+          "pattern",
+          "example"
+        ],
+        "title": "Hint Level",
+        "type": "string"
+      }
+    },
+    "required": [
+      "input_id",
+      "practice_id",
+      "type"
+    ],
+    "title": "LexicalPracticeInput",
+    "type": "object"
+  },
+  "LexicalResourceState": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "resource_id": {
+        "title": "Resource Id",
+        "type": "string"
+      },
+      "resource_type": {
+        "const": "word",
+        "default": "word",
+        "title": "Resource Type",
+        "type": "string"
+      },
+      "word": {
+        "title": "Word",
+        "type": "string"
+      },
+      "understanding": {
+        "default": "not_checked",
+        "title": "Understanding",
+        "type": "string"
+      },
+      "retrieval": {
+        "default": "not_checked",
+        "title": "Retrieval",
+        "type": "string"
+      },
+      "practice_signal": {
+        "default": "self_selected",
+        "title": "Practice Signal",
+        "type": "string"
+      },
+      "notebook_active": {
+        "default": true,
+        "title": "Notebook Active",
+        "type": "boolean"
+      },
+      "lookup_count": {
+        "default": 0,
+        "title": "Lookup Count",
+        "type": "integer"
+      },
+      "evidence_strength": {
+        "default": "weak",
+        "title": "Evidence Strength",
+        "type": "string"
+      },
+      "observations": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Observations",
+        "type": "array"
+      },
+      "senses": {
+        "additionalProperties": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Senses",
+        "type": "object"
+      },
+      "updated_at": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Updated At"
+      },
+      "due_at": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Due At"
+      },
+      "last_assessed_sense": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Last Assessed Sense"
+      }
+    },
+    "required": [
+      "resource_id",
+      "word"
+    ],
+    "title": "LexicalResourceState",
+    "type": "object"
+  },
+  "LexicalSelection": {
+    "additionalProperties": false,
+    "properties": {
+      "resource_id": {
+        "title": "Resource Id",
+        "type": "string"
+      },
+      "notebook_entry_id": {
+        "title": "Notebook Entry Id",
+        "type": "string"
+      },
+      "word": {
+        "title": "Word",
+        "type": "string"
+      },
+      "sense_id": {
+        "title": "Sense Id",
+        "type": "string"
+      },
+      "meaning_zh": {
+        "title": "Meaning Zh",
+        "type": "string"
+      },
+      "forms": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Forms",
+        "type": "array"
+      },
+      "recent_contexts": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Recent Contexts",
+        "type": "array"
+      },
+      "target_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Target Ids",
+        "type": "array"
+      },
+      "reason": {
+        "title": "Reason",
+        "type": "string"
+      },
+      "relevance": {
+        "title": "Relevance",
+        "type": "string"
+      },
+      "understanding": {
+        "default": "not_checked",
+        "title": "Understanding",
+        "type": "string"
+      },
+      "retrieval": {
+        "default": "not_checked",
+        "title": "Retrieval",
+        "type": "string"
+      },
+      "due_at": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Due At"
+      }
+    },
+    "required": [
+      "resource_id",
+      "notebook_entry_id",
+      "word",
+      "sense_id",
+      "meaning_zh",
+      "reason",
+      "relevance"
+    ],
+    "title": "LexicalSelection",
+    "type": "object"
+  },
+  "LexicalPractice": {
+    "additionalProperties": false,
+    "properties": {
+      "practice_id": {
+        "default": "",
+        "title": "Practice Id",
+        "type": "string"
+      },
+      "resource_id": {
+        "title": "Resource Id",
+        "type": "string"
+      },
+      "sense_id": {
+        "title": "Sense Id",
+        "type": "string"
+      },
+      "prompt_zh": {
+        "title": "Prompt Zh",
+        "type": "string"
+      },
+      "example": {
+        "title": "Example",
+        "type": "string"
+      },
+      "explanation_zh": {
+        "title": "Explanation Zh",
+        "type": "string"
+      },
+      "hint_pattern": {
+        "title": "Hint Pattern",
+        "type": "string"
+      }
+    },
+    "required": [
+      "resource_id",
+      "sense_id",
+      "prompt_zh",
+      "example",
+      "explanation_zh",
+      "hint_pattern"
+    ],
+    "title": "LexicalPractice",
+    "type": "object"
+  },
+  "LexicalResult": {
+    "additionalProperties": false,
+    "properties": {
+      "resource_id": {
+        "title": "Resource Id",
+        "type": "string"
+      },
+      "sense_id": {
+        "title": "Sense Id",
+        "type": "string"
+      },
+      "result": {
+        "enum": [
+          "correct_usage",
+          "meaning_mismatch",
+          "not_used",
+          "unjudgeable"
+        ],
+        "title": "Result",
+        "type": "string"
+      },
+      "confidence": {
+        "enum": [
+          "high",
+          "medium",
+          "low"
+        ],
+        "title": "Confidence",
+        "type": "string"
+      },
+      "evidence_refs": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Evidence Refs",
+        "type": "array"
+      },
+      "quote": {
+        "default": "",
+        "title": "Quote",
+        "type": "string"
+      },
+      "validation": {
+        "enum": [
+          "accepted",
+          "rejected"
+        ],
+        "title": "Validation",
+        "type": "string"
+      }
+    },
+    "required": [
+      "resource_id",
+      "sense_id",
+      "result",
+      "confidence",
+      "validation"
+    ],
+    "title": "LexicalResult",
+    "type": "object"
+  },
+  "LexicalPracticeAttempt": {
+    "$defs": {
+      "LexicalPractice": {
+        "additionalProperties": false,
+        "properties": {
+          "practice_id": {
+            "default": "",
+            "title": "Practice Id",
+            "type": "string"
+          },
+          "resource_id": {
+            "title": "Resource Id",
+            "type": "string"
+          },
+          "sense_id": {
+            "title": "Sense Id",
+            "type": "string"
+          },
+          "prompt_zh": {
+            "title": "Prompt Zh",
+            "type": "string"
+          },
+          "example": {
+            "title": "Example",
+            "type": "string"
+          },
+          "explanation_zh": {
+            "title": "Explanation Zh",
+            "type": "string"
+          },
+          "hint_pattern": {
+            "title": "Hint Pattern",
+            "type": "string"
+          }
+        },
+        "required": [
+          "resource_id",
+          "sense_id",
+          "prompt_zh",
+          "example",
+          "explanation_zh",
+          "hint_pattern"
+        ],
+        "title": "LexicalPractice",
+        "type": "object"
+      },
+      "LexicalPracticeInput": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "1.0",
+            "default": "1.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "input_id": {
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Input Id",
+            "type": "string"
+          },
+          "practice_id": {
+            "title": "Practice Id",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "speech",
+              "text",
+              "request_hint",
+              "skip"
+            ],
+            "title": "Type",
+            "type": "string"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Audio Ref"
+          },
+          "text": {
+            "anyOf": [
+              {
+                "maxLength": 2000,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Text"
+          },
+          "hint_level": {
+            "default": "meaning",
+            "enum": [
+              "meaning",
+              "pattern",
+              "example"
+            ],
+            "title": "Hint Level",
+            "type": "string"
+          }
+        },
+        "required": [
+          "input_id",
+          "practice_id",
+          "type"
+        ],
+        "title": "LexicalPracticeInput",
+        "type": "object"
+      },
+      "LexicalSelection": {
+        "additionalProperties": false,
+        "properties": {
+          "resource_id": {
+            "title": "Resource Id",
+            "type": "string"
+          },
+          "notebook_entry_id": {
+            "title": "Notebook Entry Id",
+            "type": "string"
+          },
+          "word": {
+            "title": "Word",
+            "type": "string"
+          },
+          "sense_id": {
+            "title": "Sense Id",
+            "type": "string"
+          },
+          "meaning_zh": {
+            "title": "Meaning Zh",
+            "type": "string"
+          },
+          "forms": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Forms",
+            "type": "array"
+          },
+          "recent_contexts": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Recent Contexts",
+            "type": "array"
+          },
+          "target_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Target Ids",
+            "type": "array"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          },
+          "relevance": {
+            "title": "Relevance",
+            "type": "string"
+          },
+          "understanding": {
+            "default": "not_checked",
+            "title": "Understanding",
+            "type": "string"
+          },
+          "retrieval": {
+            "default": "not_checked",
+            "title": "Retrieval",
+            "type": "string"
+          },
+          "due_at": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Due At"
+          }
+        },
+        "required": [
+          "resource_id",
+          "notebook_entry_id",
+          "word",
+          "sense_id",
+          "meaning_zh",
+          "reason",
+          "relevance"
+        ],
+        "title": "LexicalSelection",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "request_hash": {
+        "title": "Request Hash",
+        "type": "string"
+      },
+      "response": {
+        "additionalProperties": true,
+        "title": "Response",
+        "type": "object"
+      },
+      "input": {
+        "$ref": "#/$defs/LexicalPracticeInput"
+      },
+      "turns": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Turns",
+        "type": "array"
+      },
+      "resource": {
+        "$ref": "#/$defs/LexicalSelection"
+      },
+      "practice_snapshot": {
+        "$ref": "#/$defs/LexicalPractice"
+      },
+      "lesson_id": {
+        "title": "Lesson Id",
+        "type": "string"
+      },
+      "lesson_version": {
+        "title": "Lesson Version",
+        "type": "integer"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "model_version": {
+        "title": "Model Version",
+        "type": "string"
+      },
+      "policy_version": {
+        "title": "Policy Version",
+        "type": "string"
+      },
+      "fixture": {
+        "title": "Fixture",
+        "type": "boolean"
+      },
+      "evidence_valid": {
+        "title": "Evidence Valid",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "request_hash",
+      "response",
+      "input",
+      "turns",
+      "resource",
+      "practice_snapshot",
+      "lesson_id",
+      "lesson_version",
+      "map_version",
+      "model_version",
+      "policy_version",
+      "fixture",
+      "evidence_valid"
+    ],
+    "title": "LexicalPracticeAttempt",
     "type": "object"
   }
 }

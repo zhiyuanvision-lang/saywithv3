@@ -4,11 +4,22 @@ import time
 from datetime import datetime
 from .contracts import TeachingAssignment
 from .store import uid
+from .lexical import select_words, POLICY_VERSION
 
 STAGES=['Pre-A1','A1','A2','B1','B2','C1','C2']
 
 class Planner:
     def __init__(self,curriculum,store,retention_days=7):self.curriculum=curriculum;self.store=store;self.retention_days=retention_days
+
+    def lexical_due(self,profile):
+        due={};now=time.time()
+        for state in profile['resource_states']:
+            if not state.get('notebook_active'):continue
+            for sense in state.get('senses',{}).values():
+                if sense.get('due_at',float('inf'))>now:continue
+                for o in sense.get('observations',[]):
+                    for target_id in o.get('target_ids',[]):due[target_id]=min(due.get(target_id,float('inf')),sense['due_at'])
+        return due
 
     def contacts(self,profile):
         """Learning exposure is separate from assessed ability; fixture sessions are excluded."""
@@ -24,14 +35,15 @@ class Planner:
 
     def recommendations(self,profile):
         states={s['target_id']:s for s in profile['target_states']};contacts=self.contacts(profile)
+        lexical_due=self.lexical_due(profile)
         learned=[];due=[]
-        for target_id in sorted(states.keys()|contacts.keys()):
+        for target_id in sorted(states.keys()|contacts.keys()|lexical_due.keys()):
             try:target=self.curriculum.target(target_id)
             except KeyError:continue
             state=states.get(target_id,{})
-            due_at=state.get('due_at',contacts.get(target_id,time.time())+self.retention_days*86400)
+            due_at=min(state.get('due_at',contacts.get(target_id,time.time())+self.retention_days*86400),lexical_due.get(target_id,float('inf')))
             item={'target_id':target_id,'title':target['outcome'],'minutes':5,'task_count':1,
-                  'reason':'复习已学内容，先听对方，再用语音回答。','due_at':due_at,
+                  'reason':'在相关交流任务中复习到期生词。' if target_id in lexical_due else '复习已学内容，先听对方，再用语音回答。','due_at':due_at,'lexical_only':not bool(state) and target_id not in contacts,
                   'exposure_only':not bool(state)}
             learned.append(item)
             if due_at<=time.time():due.append(item)
@@ -63,6 +75,16 @@ class Planner:
                 if any(states.get(t['target_id'],{}).get('due_at',float('inf'))<=time.time() for t in candidates):break
                 stage=STAGES[index+1];candidates=higher
             now=time.time()
+            # At most one word-driven choice per five automatic plans; large notebooks cannot replace the main path.
+            plans=sorted((r['payload'] for r in self.store.list('LearningPlan',profile['user_id'])),key=lambda x:x.get('planned_at',0))
+            since=next((i for i,p in enumerate(reversed(plans)) if p.get('lexical_driven')),len(plans))
+            lexical_due=self.lexical_due(profile)
+            if since>=4:
+                for target_id,_ in sorted(lexical_due.items(),key=lambda x:x[1]):
+                    try:related=self.curriculum.target(target_id)
+                    except KeyError:continue
+                    if related['reference_stage'] in STAGES and STAGES.index(related['reference_stage'])<=STAGES.index(stage):
+                        return related,'consolidation','在相关交流任务中复习到期生词，保持主课程进度'
             priorities=[]
             for t in candidates:
                 s=states.get(t['target_id'],{})
@@ -85,7 +107,7 @@ class Planner:
         target,purpose,reason=self.select_target(profile,request.get('target_id'))
         state=next((s for s in profile['target_states'] if s['target_id']==target['target_id']),{})
         review=request.get('entry_kind')=='review'
-        if review and not state and target['target_id'] not in self.contacts(profile):raise ValueError('此目标还没有已学表现记录')
+        if review and not state and target['target_id'] not in self.contacts(profile) and target['target_id'] not in self.lexical_due(profile):raise ValueError('此目标还没有已学表现记录')
         if review and purpose in ('new','diagnostic'):purpose='consolidation';reason='复习已经接触的目标，先尝试独立完成'
         successes=[e for e in state.get('observations',[]) if e.get('independent') and e.get('completed')]
         baseline=max(successes,key=lambda e:e['time']) if successes else None
@@ -106,8 +128,9 @@ class Planner:
             profile_version=profile['profile_version'],target_ids=[target['target_id']],reason=reason,
             context=request.get('context') or profile['preferences'].get('context','校园与日常生活'),
             resource_plan={'review':known[:5],'focus':[target['outcome']], 'candidates':candidates,
-                           'notebook_words':[{'word':x.get('word'),'status':x.get('understanding','not_checked'),'recent_contexts':[o.get('context_sentence','') for o in x.get('observations',[])[-2:]]} for x in sorted(profile['resource_states'],key=lambda x:x.get('updated_at',0),reverse=True) if x.get('notebook_active')][:8],
-                           'notebook_policy':'收藏是弱练习线索，不代表失败或已掌握。仅在适合任务时复用，优先相关词，不强塞全部词。',
+                           'notebook_words':select_words(profile,target,[r['payload'] for r in self.store.list('NotebookEntry',profile['user_id'])],request.get('context') or profile['preferences'].get('context','')),
+                           'notebook_policy':'每课最多2词；先试再按需解释。只检查实际用词证据，接受正确改述，未使用不算词汇失败。',
+                           'lexical_policy_version':POLICY_VERSION,
                            'known_resources':known,'candidate_policy':'候选不是强制新词，按实际任务核查必要性'},
             difficulty={'support':'示例→渐退提示→独立应用','reference_stage':target['reference_stage'],
                         'new_expression_limit':3,'purpose':purpose},purpose=purpose,
@@ -126,6 +149,7 @@ class Planner:
         assignment['resource_plan']['introduced_resources']=[x for x in profile['resource_states'] if x.get('introduced')]
         self.store.put('LearningPlan',assignment['assignment_id'],profile['user_id'],
             {'rule_version':'scheduler-v1','purpose':purpose,'target_id':target['target_id'],
-             'reason':reason,'profile_version':profile['profile_version']})
+             'reason':reason,'profile_version':profile['profile_version'],'planned_at':time.time(),'lexical_driven':'保持主课程进度' in reason,
+             'notebook_resource_ids':[r['resource_id'] for r in assignment['resource_plan']['notebook_words']]})
         self.store.put('TeachingAssignment',assignment['assignment_id'],profile['user_id'],assignment)
         return assignment,target

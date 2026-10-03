@@ -64,6 +64,7 @@ struct LessonView: Decodable, Sendable {
     let sessionId: String; let lessonId: String; let lessonVersion: Int; let taskId: String
     let phase: String; let instruction: String; let learnerFacts: [String: JSONValue]
     let availableActions: [String]; let materials: [Material]; let fixture: Bool
+    let lexicalPractices:[LexicalPracticeView]?
     let completedMaterialIndices: [Int]?
     let title:String?;let partnerName:String?;let demonstration:[DemoLine]?
     let guidedRound:Int?;let guidedRoundTitle:String?;let supportUsed:[String]?

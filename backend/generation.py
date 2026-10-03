@@ -47,6 +47,15 @@ def inspect_lesson(lesson,assignment,target):
         if re.search(r'\+|_{2,}|<[^>]+>|\[[^\]]+\]',material['expression']):
             issues.append('learning_materials.expression 必须为可直接朗读的完整示例，例如 How about four thirty?；句型占位符只能放入 hint_pattern，不能合成语音。')
         if not material['expression'].strip() or not material.get('explanation_zh') or not material.get('personal_prompt_zh'):issues.append('学习材料缺少解释或个人替换要求')
+    selected={r['resource_id']:r for r in assignment.get('resource_plan',{}).get('notebook_words',[])}
+    practices=lesson.get('lexical_practices',[])
+    if len(practices)!=len(selected) or {p['resource_id'] for p in practices}!=set(selected):issues.append('收藏词练习必须与本次选词一一对应')
+    for p in practices:
+        r=selected.get(p['resource_id'])
+        if not r or p['sense_id']!=r['sense_id']:issues.append('生词练习词义关联不匹配');continue
+        if not all(p.get(k,'').strip() for k in ('prompt_zh','example','explanation_zh','hint_pattern')):issues.append('生词练习缺少意图、例句、解释或提示')
+        if not set(re.findall(r"[a-z]+(?:['’-][a-z]+)*",p['example'].lower()))&set(r['forms']):issues.append('生词示例未使用所选词或词形')
+        if set(re.findall(r"[a-z]+(?:['’-][a-z]+)*",p['prompt_zh'].lower()))&set(r['forms']):issues.append('先尝试的意图泄露了英文目标词。prompt_zh只写具体中文交流意图，例如“询问Alex明天下午是否有空”。删除英文词、句式及“用该词说”的要求；保留本任务的具体事实。')
     return issues
 
 class Generator:
@@ -102,10 +111,11 @@ class Generator:
                 generated.update(schema_version='1.0',lesson_id=uid(),lesson_version=1,
                     assignment_id=p['assignment']['assignment_id'],map_version=p['target']['map_version'],
                     target_ids=p['assignment']['target_ids'],quality={'status':'draft'},learner_ready=False,
-                    provenance={'model_version':self.provider.model,'prompt_version':'lesson-v1',
+                    provenance={'model_version':self.provider.model,'prompt_version':'lesson-lexical-v2',
                         'map_version':p['target']['map_version'],'rules_version':'qa-v1','fixture':self.provider.fixture})
                 for name in ['practice_task','independent_task']:
                     if generated.get(name):generated[name].update(task_id=uid(),task_version=1)
+                for p0 in generated.get('lexical_practices',[]):p0['practice_id']=uid()
                 for m in generated.get('learning_materials',[]):m['audio_ref']=None
                 for m in generated.get('learning_materials',[]):
                     # Resource IDs are assigned on the server, not trusted model claims.
@@ -123,7 +133,7 @@ class Generator:
                 p['lesson']=lesson;row=self.store.advance(row,'checking_text',p)
             if 'text_report' not in p:
                 issues=inspect_lesson(p['lesson'],p['assignment'],p['target'])
-                review=await self.provider.review(p['lesson'],p['target']) if not issues else {'decision':'fail','reasons':issues}
+                review=await self.provider.review(p['lesson'],{**p['target'],'lexical_resources':p['assignment']['resource_plan'].get('notebook_words',[])}) if not issues else {'decision':'fail','reasons':issues}
                 p['text_report']={'report_id':uid(),'stage':'text','checker_version':'qa-v1','decision':review.get('decision'),
                                   'issues':issues,'semantic_review':review,'independent_model':False}
                 if issues or review.get('decision')!='pass':

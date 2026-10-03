@@ -1586,6 +1586,69 @@
         }
       }
     },
+    "/v1/sessions/{id}/vocabulary-attempts": {
+      "post": {
+        "summary": "Vocabulary Attempt",
+        "operationId": "vocabulary_attempt_v1_sessions__id__vocabulary_attempts_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LexicalPracticeInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/sessions/{id}/shadow": {
       "post": {
         "summary": "Shadow",
@@ -2201,7 +2264,7 @@
         "properties": {
           "file": {
             "type": "string",
-            "format": "binary",
+            "contentMediaType": "application/octet-stream",
             "title": "File"
           }
         },
@@ -2215,7 +2278,7 @@
         "properties": {
           "audio": {
             "type": "string",
-            "format": "binary",
+            "contentMediaType": "application/octet-stream",
             "title": "Audio"
           }
         },
@@ -2487,6 +2550,77 @@
           "recorded_at"
         ],
         "title": "LearnerInput"
+      },
+      "LexicalPracticeInput": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "input_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Input Id"
+          },
+          "practice_id": {
+            "type": "string",
+            "title": "Practice Id"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "speech",
+              "text",
+              "request_hint",
+              "skip"
+            ],
+            "title": "Type"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Audio Ref"
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Text"
+          },
+          "hint_level": {
+            "type": "string",
+            "enum": [
+              "meaning",
+              "pattern",
+              "example"
+            ],
+            "title": "Hint Level",
+            "default": "meaning"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "input_id",
+          "practice_id",
+          "type"
+        ],
+        "title": "LexicalPracticeInput"
       },
       "NextRequest": {
         "properties": {
@@ -2766,6 +2900,13 @@
           "type": {
             "type": "string",
             "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
           }
         },
         "type": "object",

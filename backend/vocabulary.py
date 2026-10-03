@@ -67,18 +67,20 @@ class Vocabulary:
 
     def entry_id(self,user,word):return hashlib.sha256((user+':'+word).encode()).hexdigest()
     def mine(self,user):
-        return {'items':sorted((r['payload'] for r in self.store.list('NotebookEntry',user)),key=lambda x:x['created_at'],reverse=True)}
+        profile=self.store.get('LearnerProfile',user,user)['payload'];states={s['resource_id']:s for s in profile['resource_states']}
+        items=sorted((r['payload'] for r in self.store.list('NotebookEntry',user)),key=lambda x:x['created_at'],reverse=True)
+        return {'items':[{**e,'practice_state':states.get('lexeme:'+e['word'],{})} for e in items]}
 
     def signal(self,user,card,kind,context='',session_id=None,save=False):
         head=card['word'];id=self.entry_id(user,head);now=time.time()
         with self.store.transaction() as c:
             # Serialise user mutations against each other in PostgreSQL and SQLite.
             c.execute(update(self.store.users).where(self.store.users.c.id==user).values(created_at=self.store.users.c.created_at))
-            session_row=None;target_ids=[]
+            session_row=None;target_ids=[];scene=''
             if session_id:
                 session_row=self.store.get('Session',session_id,user,c)
                 session=session_row['payload']
-                lesson=self.store.get('LessonPackage',session['lesson_id'],user,c)['payload'];target_ids=lesson['target_ids']
+                lesson=self.store.get('LessonPackage',session['lesson_id'],user,c)['payload'];target_ids=lesson['target_ids'];scene=session['task'].get('scenario_signature','')
             row=self.store.get('LearnerProfile',user,user,c);profile=copy.deepcopy(row['payload'])
             states=profile['resource_states'];resource_id='lexeme:'+head
             state=next((x for x in states if x['resource_id']==resource_id),None)
@@ -92,18 +94,28 @@ class Vocabulary:
             self.store.put('LearnerProfile',user,user,profile,expected=row['version'],conn=c)
             if session_row and kind=='looked_up':
                 s=copy.deepcopy(session_row['payload'])
-                if s['phase'] in ('supported_practice','independent_application'):
+                if s['phase']=='learning':
+                    lesson=self.store.get('LessonPackage',s['lesson_id'],user,c)['payload']
+                    for practice in lesson.get('lexical_practices',[]):
+                        if practice['resource_id']==resource_id:
+                            progress=s.setdefault('lexical_progress',{}).setdefault(practice['practice_id'],{'completed':False,'support_used':[]})
+                            progress['support_used']=sorted(set(progress['support_used']+['查词释义']))
+                    self.store.put('Session',session_id,user,s,expected=session_row['version'],conn=c)
+                elif s['phase'] in ('supported_practice','independent_application'):
                     s['support_used']=sorted(set(s['support_used']+['查词释义']))
                     s['dictionary_lookups']=(s.get('dictionary_lookups',[])+[{'word':head,'time':now}])[-50:]
                     self.store.put('Session',session_id,user,s,expected=session_row['version'],conn=c)
             if save:
+                source={'sentence':context[:1200],'session_id':session_id,'target_ids':target_ids,'scene':scene,'recorded_at':now}
                 try:
                     existing=self.store.get('NotebookEntry',id,user,c)
                     entry=copy.deepcopy(existing['payload']);entry['card']=card
+                    entry['sources']=(entry.get('sources',[])+[source])[-10:]
+                    entry['schema_version']='1.0'
                     entry['contexts']=(entry.get('contexts',[])+([context[:1200]] if context and context not in entry.get('contexts',[]) else []))[-10:]
                     self.store.put('NotebookEntry',id,user,entry,expected=existing['version'],conn=c)
                 except Missing:
-                    entry={'id':id,'word':head,'created_at':now,'card':card,'contexts':[context[:1200]] if context else []}
+                    entry={'schema_version':'1.0','id':id,'word':head,'created_at':now,'card':card,'contexts':[context[:1200]] if context else [],'sources':[source]}
                     self.store.put('NotebookEntry',id,user,entry,conn=c)
                 return entry
         return state

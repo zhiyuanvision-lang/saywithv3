@@ -13,7 +13,7 @@ from sqlalchemy import insert, select, update
 from modules.curriculum import CurriculumRepository
 from .config import Settings
 from .store import Store, uid, Missing, Conflict
-from .contracts import LearnerProfile, LearnerInput, SourceCatalog, TargetDefinition, CONTRACTS
+from .contracts import LexicalPracticeInput, LearnerProfile, LearnerInput, SourceCatalog, TargetDefinition, CONTRACTS
 from .curriculum import CurriculumService
 from .planning import Planner, STAGES
 from .providers import FixtureProvider, ProviderFailure, ReviewRequired
@@ -151,7 +151,9 @@ def create_app(settings=None,provider=None):
         card=await svc.vocabulary.lookup(data.word,detail=True)
         return svc.vocabulary.signal(user,card,'saved_to_notebook',data.context,data.session_id,save=True)
     @app.get('/v1/notebook/{id}')
-    def notebook_get(id:str,user=Depends(owner)):return svc.store.get('NotebookEntry',id,user)['payload']
+    def notebook_get(id:str,user=Depends(owner)):
+        entry=svc.store.get('NotebookEntry',id,user)['payload'];profile=svc.store.get('LearnerProfile',user,user)['payload']
+        return {**entry,'practice_state':next((r for r in profile['resource_states'] if r['resource_id']=='lexeme:'+entry['word']),{})}
     @app.delete('/v1/notebook/{id}')
     def notebook_delete(id:str,user=Depends(owner)):return svc.vocabulary.remove(user,id)
 
@@ -267,6 +269,10 @@ def create_app(settings=None,provider=None):
     def learn(id:str,data:LearnRequest,user=Depends(owner)):return svc.sessions.learned(id,user,data.material_index,data.personal_text)
     @app.post('/v1/sessions/{id}/next')
     async def next_phase(id:str,data:NextRequest,user=Depends(owner)):return await svc.sessions.next(id,user,data.expected_session_version,data.advance_round)
+    @app.post('/v1/sessions/{id}/vocabulary-attempts')
+    async def vocabulary_attempt(id:str,data:LexicalPracticeInput,user=Depends(owner)):
+        return await svc.sessions.lexical.input(id,user,data.model_dump())
+
     @app.post('/v1/sessions/{id}/shadow')
     async def shadow(id:str,data:ShadowRequest,user=Depends(owner)):
         return await svc.sessions.support.shadow(id,user,data.model_dump())

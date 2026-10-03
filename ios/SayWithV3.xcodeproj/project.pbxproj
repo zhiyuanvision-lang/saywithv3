@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB7D0BAD5A9BDA6436E43F1 /* LexicalPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */; };
 		3845954177D2286C4C138A26 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0FE6277B336B27A34CABB /* Audio.swift */; };
 		48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03623349FEC8F4563DE3BC /* SayWithApp.swift */; };
 		663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */; };
@@ -51,6 +52,7 @@
 		9D9A048397D3EE2E9D2C91DF /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
 		9E061121C5F521F9ED81E840 /* SayWithV3.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SayWithV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B459D554CE56EDFF8F0E2A11 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalPractice.swift; sourceTree = "<group>"; };
 		BAD04842E4F67A5A8825E2AE /* SayWithV3Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SayWithV3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE03623349FEC8F4563DE3BC /* SayWithApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayWithApp.swift; sourceTree = "<group>"; };
 		E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				77D13FE2B3CE2B9C863755A7 /* Info.plist */,
 				288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */,
 				E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */,
+				B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */,
 				299B405BB603C7503EC6E1B4 /* Models.swift */,
 				E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */,
 				DE03623349FEC8F4563DE3BC /* SayWithApp.swift */,
@@ -226,6 +229,7 @@
 				DB93384914AE8342101CBC3A /* Feedback.swift in Sources */,
 				F7B8862373817EE2892AF064 /* LearningModel.swift in Sources */,
 				663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */,
+				1FB7D0BAD5A9BDA6436E43F1 /* LexicalPractice.swift in Sources */,
 				8B19C2AD608C23BC93CC5F46 /* Models.swift in Sources */,
 				48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */,
 				D305DC7C7113B3C41BED515F /* Vocabulary.swift in Sources */,
@@ -298,7 +302,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 601;
+				CURRENT_PROJECT_VERSION = 603;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -456,7 +460,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 601;
+				CURRENT_PROJECT_VERSION = 603;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
