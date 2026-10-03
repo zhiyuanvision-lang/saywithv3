@@ -95,7 +95,7 @@ struct LessonScreen:View {
             } catch is CancellationError {} catch {model.error=error.localizedDescription}
         }
         .onReceive(NotificationCenter.default.publisher(for:Notification.Name("PauseSayWithLearning"))) {_ in
-            feedbackOpen=true;demoTask?.cancel();if audio.recording {audio.discard()} else {audio.pausePlayback()}
+            feedbackOpen=true;demoTask?.cancel();if audio.recording {_ = try? audio.stop();audio.interruptionMessage="录音已暂停，可回听后发送，或重新录制。"} else {audio.pausePlayback()}
         }
         .onReceive(NotificationCenter.default.publisher(for:Notification.Name("ResumeSayWithLearning"))) {_ in feedbackOpen=false}
         .onDisappear {demoTask?.cancel();audio.discard()}
@@ -130,11 +130,11 @@ struct LessonScreen:View {
         NavigationStack {
             ScrollView {
                 VStack(alignment:.leading,spacing:20) {
-                    Text(current?.view.title ?? "本次任务").font(.title3.weight(.semibold))
+                    LookupText(current?.view.title ?? "本次任务").font(.title3.weight(.semibold))
                     if let round=current?.view.guidedRound {Text("第 \(round) / 3 轮")}
-                    Text(current?.view.instruction ?? "")
+                    LookupText(current?.view.instruction ?? "")
                     ForEach((current?.view.learnerFacts ?? [:]).keys.sorted(),id:\.self) {key in
-                        Text(current?.view.learnerFacts[key]?.text ?? "")
+                        LookupText(current?.view.learnerFacts[key]?.text ?? "")
                     }
                     if isIndependent {Text("需要答案帮助时，请转回引导练习。").foregroundStyle(.secondary)}
                     if current?.view.fixture==true {Text("测试内容 · 不计入能力").foregroundStyle(.secondary)}
@@ -150,13 +150,13 @@ struct LessonScreen:View {
     private var regularTaskRegion:some View {
         VStack(alignment:.leading,spacing:12) {
             HStack(alignment:.firstTextBaseline) {
-                Text(isFeedback ? feedbackTitle : current?.view.title ?? "本次交流任务").font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true).accessibilityIdentifier("taskTitle")
+                LookupText(isFeedback ? feedbackTitle : current?.view.title ?? "本次交流任务").font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true).accessibilityIdentifier("taskTitle")
                 Spacer(minLength:8)
                 if isReview && !isFeedback {Text("1/1").font(.subheadline).foregroundStyle(.secondary)}
                 else if let round=current?.view.guidedRound {Text("\(round)/3").font(.subheadline).foregroundStyle(.secondary).accessibilityIdentifier("guidedRound").accessibilityLabel("第 \(round) 轮，共三轮，\(current?.view.guidedRoundTitle ?? "")")}
             }
-            if isFeedback {Text(result?.summary ?? "正在整理本次表现").font(.subheadline).foregroundStyle(.secondary)}
-            else if phase=="learning" {Text(current?.view.instruction ?? "").font(.subheadline).foregroundStyle(.secondary)}
+            if isFeedback {LookupText(result?.summary ?? "正在整理本次表现").font(.subheadline).foregroundStyle(.secondary)}
+            else if phase=="learning" {LookupText(current?.view.instruction ?? "").font(.subheadline).foregroundStyle(.secondary)}
             else if phase=="guided_feedback" {Text("三轮引导练习已结束").font(.subheadline).foregroundStyle(.secondary)}
             else if !ownTimes.isEmpty {
                 HStack(alignment:.center,spacing:16) {
@@ -171,7 +171,7 @@ struct LessonScreen:View {
             if let first=current?.view.demonstration?.first {
                 VStack(alignment:.leading,spacing:10) {
                     Text(current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
-                    Text(first.text).font(.body).fixedSize(horizontal:false,vertical:true)
+                    LookupText(first.text).font(.body).fixedSize(horizontal:false,vertical:true)
                     HStack(spacing:4) {
                         if let ref=first.audioRef {Button {togglePlayback(ref)} label:{Image(systemName:audio.playingID==ref && audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("重播这句话")}
                         translationButton("demo:0",known:first.meaningZh)
@@ -181,7 +181,7 @@ struct LessonScreen:View {
             }
             Text("重点表达").font(.headline).padding(.top,4)
             VStack(alignment:.leading,spacing:12) {
-                Text(material.expression).font(.title3).fixedSize(horizontal:false,vertical:true).accessibilityIdentifier("englishExpression")
+                LookupText(material.expression).font(.title3).fixedSize(horizontal:false,vertical:true).accessibilityIdentifier("englishExpression")
                 if shownTranslations.contains("material:\(model.selectedMaterial)") {Text(material.meaningZh ?? model.translations["material:\(model.selectedMaterial)"] ?? "正在加载翻译").font(.subheadline).foregroundStyle(.secondary)}
                 Divider()
                 HStack(spacing:4) {
@@ -194,7 +194,7 @@ struct LessonScreen:View {
         }
     }
     private var usagePanel:some View {
-        NavigationStack {ScrollView {Text(activeMaterial?.explanationZh ?? "").frame(maxWidth:.infinity,alignment:.leading).padding(20)}.navigationTitle("用法说明").navigationBarTitleDisplayMode(.inline).toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {showUsage=false}}}}.presentationDetents([.medium,.large])
+        NavigationStack {ScrollView {LookupText(activeMaterial?.explanationZh ?? "").frame(maxWidth:.infinity,alignment:.leading).padding(20)}.navigationTitle("用法说明").navigationBarTitleDisplayMode(.inline).toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {showUsage=false}}}}.presentationDetents([.medium,.large])
     }
     private var demoPanel:some View {
         NavigationStack {ScrollView {VStack(alignment:.leading,spacing:20) {
@@ -202,7 +202,7 @@ struct LessonScreen:View {
             ForEach(Array((current?.view.demonstration ?? []).enumerated()),id:\.offset) {index,line in
                 VStack(alignment:.leading,spacing:10) {
                     Text(line.speaker=="learner" ? "你":current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
-                    Text(line.text).foregroundStyle(highlightedLine==index ? Color.accentColor:Color.primary)
+                    LookupText(line.text).foregroundStyle(highlightedLine==index ? Color.accentColor:Color.primary)
                     HStack(spacing:4) {if let ref=line.audioRef {Button {togglePlayback(ref)} label:{Image(systemName:"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("重播这句话")};translationButton("demo-line:\(index)",known:line.meaningZh,source:index==0 ? "demo:0":"material:\(index-1)")}
                     if shownTranslations.contains("demo-line:\(index)") {Text(line.meaningZh ?? model.translations[index==0 ? "demo:0":"material:\(index-1)"] ?? "正在加载翻译").font(.subheadline).foregroundStyle(.secondary)}
                 }
@@ -221,7 +221,7 @@ struct LessonScreen:View {
                 VStack(alignment:own ? .trailing:.leading,spacing:10) {
                     Text(own ? "我" : current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
                     VStack(alignment:.leading,spacing:10) {
-                    if own || actions.contains("show_text") {Text(turn.content).font(.body).foregroundStyle(own ? Color.white:Color.primary).fixedSize(horizontal:false,vertical:true)}
+                    if own || actions.contains("show_text") {LookupText(turn.content).font(.body).foregroundStyle(own ? Color.white:Color.primary).fixedSize(horizontal:false,vertical:true)}
                     else {Text("请听对方的声音，再说出回应。").font(.body)}
                     HStack(spacing:4) {
                     if let ref=turn.audioRef,own || actions.contains("request_repeat") || !playedTurns.contains(turn.turnId) || (audio.paused && audio.playingID==ref) {
@@ -238,7 +238,7 @@ struct LessonScreen:View {
                     }
                         if !own && actions.contains("request_translation") {translationButton(turn.turnId)}
                     }
-                    if shownTranslations.contains(turn.turnId),let text=model.translations[turn.turnId] {Text(text).font(.subheadline).foregroundStyle(.secondary)}
+                    if shownTranslations.contains(turn.turnId),let text=model.translations[turn.turnId] {LookupText(text).font(.subheadline).foregroundStyle(.secondary)}
                     }.tint(own ? Color.white:Color.accentColor).padding(.horizontal,14).padding(.vertical,12).background(own ? Color.accentColor:Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
                 }
                 if !own {Spacer(minLength:32)}
@@ -277,11 +277,11 @@ struct LessonScreen:View {
             VStack(alignment:.leading,spacing:12) {
                 Label("完成证据",systemImage:taskCompleted ? "checkmark.circle.fill":"circle").font(.headline)
                 Text(resultLabel).font(.subheadline).foregroundStyle(result?.validation["status"]?.text=="accepted" ? Color.accentColor:Color.secondary)
-                if let turn=current?.turns.last(where:{$0.speaker=="learner"}),!turn.content.isEmpty {Text(turn.content).font(.title3)}
-                if let check=evidence.first {Text(check["criterion"]?.text ?? "").font(.subheadline).foregroundStyle(.secondary)}
+                if let turn=current?.turns.last(where:{$0.speaker=="learner"}),!turn.content.isEmpty {LookupText(turn.content).font(.title3)}
+                if let check=evidence.first {LookupText(check["criterion"]?.text ?? "").font(.subheadline).foregroundStyle(.secondary)}
             }.frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
             Text("下一步").font(.subheadline).foregroundStyle(.secondary)
-            Text(improvement).font(.subheadline).foregroundStyle(.secondary)
+            LookupText(improvement).font(.subheadline).foregroundStyle(.secondary)
             Button("针对性补练") {run {try await model.transition("retry_guided")}}.frame(minHeight:44)
         }
     }
@@ -357,7 +357,7 @@ struct LessonScreen:View {
                     ForEach([("intent","表达意图"),("pattern","句型提示"),("example","完整示范"),("learned","所学表达")],id:\.0) {level,title in
                         Button(title) {run {try await model.send(kind:"request_hint",hintLevel:level)}}.buttonStyle(.bordered).frame(minHeight:44).disabled(model.busy).accessibilityIdentifier("hint-"+level)
                     }
-                    if let text=model.hintText {Text(text).font(.title3).textSelection(.enabled).accessibilityIdentifier("hintText")}
+                    if let text=model.hintText {LookupText(text).font(.title3).accessibilityIdentifier("hintText")}
                     if let error=model.error {Text(error).foregroundStyle(.red)}
                     if model.busy {ProgressView("正在准备提示")}
                 }.frame(maxWidth:.infinity,alignment:.leading).padding(20)

@@ -106,6 +106,8 @@ class Planner:
             profile_version=profile['profile_version'],target_ids=[target['target_id']],reason=reason,
             context=request.get('context') or profile['preferences'].get('context','校园与日常生活'),
             resource_plan={'review':known[:5],'focus':[target['outcome']], 'candidates':candidates,
+                           'notebook_words':[{'word':x.get('word'),'status':x.get('understanding','not_checked'),'recent_contexts':[o.get('context_sentence','') for o in x.get('observations',[])[-2:]]} for x in sorted(profile['resource_states'],key=lambda x:x.get('updated_at',0),reverse=True) if x.get('notebook_active')][:8],
+                           'notebook_policy':'收藏是弱练习线索，不代表失败或已掌握。仅在适合任务时复用，优先相关词，不强塞全部词。',
                            'known_resources':known,'candidate_policy':'候选不是强制新词，按实际任务核查必要性'},
             difficulty={'support':'示例→渐退提示→独立应用','reference_stage':target['reference_stage'],
                         'new_expression_limit':3,'purpose':purpose},purpose=purpose,

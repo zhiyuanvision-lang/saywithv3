@@ -22,6 +22,7 @@ from .generation import Generator
 from .assessment import Assessor
 from .sessions import Sessions
 from .feedback import Feedback
+from .vocabulary import Vocabulary
 
 class InputModel(BaseModel):model_config=ConfigDict(extra='forbid')
 class FeedbackMessage(InputModel):
@@ -31,6 +32,10 @@ class FeedbackRequest(FeedbackMessage):
     category: Literal['bug','account','vocab','speak','suggestion','other'] = 'bug'
     contact: str = Field(default='',max_length=200)
     app_version: str = Field(default='',max_length=100)
+class VocabularyRequest(InputModel):
+    word: str = Field(min_length=1,max_length=80)
+    context: str = Field(default='',max_length=1200)
+    session_id: str | None = Field(default=None,max_length=100)
 class Preferences(InputModel):
     context: str = Field(default='校园与日常生活',max_length=200)
     interests: list[str] = Field(default_factory=list,max_length=10)
@@ -67,6 +72,7 @@ class Services:
     def __init__(self,settings,provider=None):
         settings.validate();self.settings=settings;self.store=Store(settings.database_url)
         self.feedback=Feedback(settings,self.store)
+        self.vocabulary=Vocabulary(settings,self.store)
         self.curriculum=CurriculumService(CurriculumRepository(settings.workspace),self.store)
         self.curriculum.bootstrap()
         self.provider=provider or (FixtureProvider(settings.workspace) if settings.mode=='fixture' else DeepSeekByteProvider(settings))
@@ -127,6 +133,27 @@ def create_app(settings=None,provider=None):
             profile=LearnerProfile(user_id=id,preferences=preferences.model_dump()).model_dump()
             svc.store.put('LearnerProfile',id,id,profile,conn=c)
         return {'user_id':id,'access_token':token,'profile':profile}
+
+    @app.post('/v1/vocabulary/lookup')
+    async def vocabulary_lookup(data:VocabularyRequest,user=Depends(owner)):
+        if data.session_id:svc.store.get('Session',data.session_id,user)
+        card=await svc.vocabulary.lookup(data.word)
+        svc.vocabulary.signal(user,card,'looked_up',data.context,data.session_id)
+        return card
+    @app.get('/v1/vocabulary/knowledge')
+    async def vocabulary_knowledge(word:str,user=Depends(owner)):
+        return await svc.vocabulary.lookup(word,detail=True)
+    @app.get('/v1/notebook')
+    def notebook_list(user=Depends(owner)):return svc.vocabulary.mine(user)
+    @app.post('/v1/notebook',status_code=201)
+    async def notebook_add(data:VocabularyRequest,user=Depends(owner)):
+        if data.session_id:svc.store.get('Session',data.session_id,user)
+        card=await svc.vocabulary.lookup(data.word,detail=True)
+        return svc.vocabulary.signal(user,card,'saved_to_notebook',data.context,data.session_id,save=True)
+    @app.get('/v1/notebook/{id}')
+    def notebook_get(id:str,user=Depends(owner)):return svc.store.get('NotebookEntry',id,user)['payload']
+    @app.delete('/v1/notebook/{id}')
+    def notebook_delete(id:str,user=Depends(owner)):return svc.vocabulary.remove(user,id)
 
     @app.post('/v1/feedback',status_code=201)
     def feedback_create(data:FeedbackRequest,idempotency_key:Annotated[str,Header(min_length=1,max_length=200)],user=Depends(owner)):

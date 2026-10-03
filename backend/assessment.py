@@ -89,7 +89,7 @@ class Assessor:
         state=states.setdefault(id,{'target_id':id,'independent':'insufficient_evidence','retention':'not_checked',
             'transfer':'not_checked','support_dependency':[],'evidence_ids':[],'observations':[]})
         r=result['target_results'][0];now=time.time()
-        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示') for x in supports)
+        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示','查词释义') for x in supports)
         evidence={'evidence_id':result['evidence_ids'][0],'attempt_id':attempt['attempt_id'],'session_id':attempt['session_id'],
             'time':now,'completed':r['result']=='completed','independent':independent,
             'review_metadata':attempt.get('review_metadata',{}),'scenario_signature':task['scenario_signature'],'confidence':r['confidence'],'support_used':supports}
@@ -97,7 +97,7 @@ class Assessor:
         state['support_dependency']=sorted(set(state['support_dependency']+supports))
         successes=[e for e in state['observations'] if e['independent'] and e['completed']]
         if r['result']=='completed':
-            if not independent:state['independent']='supported'
+            if not independent and state['independent'] not in ('demonstrated','provisional'):state['independent']='supported'
             elif len({e['session_id'] for e in successes})>=2:state['independent']='demonstrated'
             else:state['independent']='provisional'
             if independent and attempt.get('review_metadata',{}).get('purpose')=='transfer' and attempt.get('review_metadata',{}).get('transfer_validated') and len({e['scenario_signature'] for e in successes})>=2:state['transfer']='demonstrated'

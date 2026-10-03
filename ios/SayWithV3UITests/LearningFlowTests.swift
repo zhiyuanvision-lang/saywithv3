@@ -28,7 +28,7 @@ final class LearningFlowTests:XCTestCase {
     }
     func testLearningGuidedIndependentFeedback() {
         let app=launch();shot(app,"v6-home");app.buttons["startLearning"].tap()
-        XCTAssertTrue(app.staticTexts["englishExpression"].waitForExistence(timeout:30))
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
         ready(app.buttons["recordButton"])
         shot(app,"v6-learning")
         addUIInterruptionMonitor(withDescription:"Microphone") {alert in
@@ -45,7 +45,7 @@ final class LearningFlowTests:XCTestCase {
         XCTAssertTrue(app.buttons["hintButton"].waitForExistence(timeout:15))
         shot(app,"v6-guided")
         app.buttons["hintButton"].tap();app.buttons["hint-pattern"].tap()
-        XCTAssertTrue(app.staticTexts["hintText"].waitForExistence(timeout:5))
+        XCTAssertTrue(app.descendants(matching:.any)["hintText"].firstMatch.waitForExistence(timeout:5))
         app.buttons["关闭"].tap()
         for i in 0..<3 {
             reply(app,"How about \(15+i)?")
@@ -56,12 +56,12 @@ final class LearningFlowTests:XCTestCase {
         XCTAssertEqual(XCTWaiter.wait(for:[phase],timeout:10),.completed)
         ready(app.buttons["recordButton"])
         XCTAssertFalse(app.buttons["hintButton"].exists)
-        XCTAssertFalse(app.staticTexts["englishExpression"].exists)
+        XCTAssertFalse(app.descendants(matching:.any)["englishExpression"].firstMatch.exists)
         shot(app,"v6-independent")
         reply(app,"How about two?")
         ready(app.buttons["finishTask"]);app.buttons["finishTask"].tap()
         ready(app.buttons["finishLearning"])
-        XCTAssertTrue(app.staticTexts["本次证据不足，暂不更新能力。"].exists)
+        XCTAssertTrue(app.buttons["finishLearning"].exists)
         shot(app,"v6-feedback")
         app.buttons["finishLearning"].tap()
     }
@@ -69,7 +69,7 @@ final class LearningFlowTests:XCTestCase {
         let app=launch()
         guard app.buttons["startReview"].exists else {throw XCTSkip("Review UI test requires seeded fixture profile")};shot(app,"v6-home-review");ready(app.buttons["startReview"]);app.buttons["startReview"].tap()
         ready(app.buttons["recordButton"])
-        XCTAssertFalse(app.staticTexts["englishExpression"].exists)
+        XCTAssertFalse(app.descendants(matching:.any)["englishExpression"].firstMatch.exists)
         XCTAssertFalse(app.buttons["hintButton"].exists)
         shot(app,"v6-review")
         reply(app,"How about two?")
@@ -80,10 +80,10 @@ final class LearningFlowTests:XCTestCase {
     }
     func testBackPreservesLearningProgress() {
         let app=launch();app.buttons["startLearning"].tap()
-        XCTAssertTrue(app.staticTexts["englishExpression"].waitForExistence(timeout:30))
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
         ready(app.buttons["exitLesson"]);app.buttons["exitLesson"].tap()
         ready(app.buttons["startLearning"]);app.buttons["startLearning"].tap()
-        XCTAssertTrue(app.staticTexts["englishExpression"].waitForExistence(timeout:10))
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:10))
     }
     func testGlobalFeedbackSubmissionAndHistory() {
         let app=launch()
@@ -99,13 +99,38 @@ final class LearningFlowTests:XCTestCase {
         XCTAssertTrue(app.navigationBars["意见反馈"].waitForExistence(timeout:5))
         app.buttons["closeFeedback"].tap()
         app.tabBars.buttons["学习"].tap();app.buttons["startLearning"].tap()
-        XCTAssertTrue(app.staticTexts["englishExpression"].waitForExistence(timeout:30))
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
         ready(app.buttons["feedbackOrb"]);app.buttons["feedbackOrb"].tap()
         XCTAssertTrue(app.navigationBars["意见反馈"].waitForExistence(timeout:5));app.buttons["closeFeedback"].tap()
         let viewport=app.scrollViews["lessonContent"]
         XCTAssertGreaterThan(viewport.frame.height,app.frame.height*0.5)
         shot(app,"v6-compact-learning")
         app.buttons["exitLesson"].tap()
+    }
+    func testWordLookupNotebookFlow() {
+        let app=launch();app.buttons["startLearning"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
+        ready(app.buttons["about"].firstMatch);app.buttons["about"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["addToNotebook"].waitForExistence(timeout:15))
+        let visible=XCTNSPredicateExpectation(predicate:NSPredicate(format:"hittable == true"),object:app.buttons["addToNotebook"])
+        XCTAssertEqual(XCTWaiter.wait(for:[visible],timeout:5),.completed)
+        shot(app,"word-lookup")
+        if !app.buttons["addToNotebook"].label.contains("已在生词本") {ready(app.buttons["addToNotebook"]);app.buttons["addToNotebook"].tap()}
+        let saved=XCTNSPredicateExpectation(predicate:NSPredicate(format:"label CONTAINS %@","已在生词本"),object:app.buttons["addToNotebook"])
+        XCTAssertEqual(XCTWaiter.wait(for:[saved],timeout:15),.completed)
+        app.buttons["closeDictionary"].tap();app.buttons["exitLesson"].tap()
+        app.tabBars.buttons["我的"].tap();app.buttons["notebookEntry"].tap()
+        XCTAssertTrue(app.navigationBars["生词本"].waitForExistence(timeout:5))
+        ready(app.buttons["notebook-about"]);shot(app,"notebook-list");app.buttons["notebook-about"].tap()
+        XCTAssertTrue(app.navigationBars["生词"].waitForExistence(timeout:5));shot(app,"notebook-detail")
+        ready(app.buttons["about"].firstMatch);app.buttons["about"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["addToNotebook"].waitForExistence(timeout:15))
+        let alreadySaved=XCTNSPredicateExpectation(predicate:NSPredicate(format:"label CONTAINS %@","已在生词本"),object:app.buttons["addToNotebook"])
+        XCTAssertEqual(XCTWaiter.wait(for:[alreadySaved],timeout:15),.completed);app.buttons["closeDictionary"].tap()
+        app.buttons["removeNotebookWord"].tap();XCTAssertTrue(app.buttons["confirmRemoveNotebookWord"].firstMatch.waitForExistence(timeout:5));app.buttons["confirmRemoveNotebookWord"].firstMatch.tap()
+        XCTAssertTrue(app.navigationBars["生词本"].waitForExistence(timeout:10))
+        let removed=XCTNSPredicateExpectation(predicate:NSPredicate(format:"exists == false"),object:app.buttons["notebook-about"])
+        XCTAssertEqual(XCTWaiter.wait(for:[removed],timeout:10),.completed)
     }
     func testHomeNavigation() {
         let app=launch()

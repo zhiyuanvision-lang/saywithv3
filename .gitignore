@@ -9,3 +9,7 @@ test-results/
 ios/**/xcuserdata/
 releases/curriculum/*/research/
 releases/curriculum/*/modules/
+
+# Local feedback contains private user text and screenshots.
+support.md
+tmp/feedback-inbox/

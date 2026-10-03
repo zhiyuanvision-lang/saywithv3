@@ -40,7 +40,7 @@ struct RootView: View {
                         if let profile=model.profile, !profile.targetStates.isEmpty {
                             ForEach(Array(profile.targetStates.enumerated()),id:\.offset) {_,s in
                                 VStack(alignment:.leading,spacing:6) {
-                                    Text(model.recommendations?.learned.first(where:{$0.targetId==s["target_id"]?.text})?.title ?? "交流目标")
+                                    LookupText(model.recommendations?.learned.first(where:{$0.targetId==s["target_id"]?.text})?.title ?? "交流目标")
                                     Text("独立：\(stateName(s["independent"]?.text)) · 保持：\(stateName(s["retention"]?.text)) · 迁移：\(stateName(s["transfer"]?.text))")
                                         .font(.caption).foregroundStyle(.secondary)
                                 }
@@ -61,6 +61,7 @@ struct RootView: View {
                         }.padding(.vertical,8)
                     }
                     Section {
+                        NavigationLink {NotebookPage(model:model)} label:{Label("生词本",systemImage:"bookmark")}.accessibilityIdentifier("notebookEntry")
                         Button {showSettings=true} label:{Label("学习设置",systemImage:"slider.horizontal.3")}
                         Button {NotificationCenter.default.post(name:Notification.Name("OpenSayWithFeedback"),object:nil)} label:{Label("意见反馈",systemImage:"bubble.left.and.bubble.right")}.accessibilityIdentifier("mineFeedbackEntry")
                     }
@@ -77,6 +78,7 @@ struct RootView: View {
         .sheet(isPresented:$showLearned) {learnedPage}
         .tint(.accentColor)
         .background(GlobalFeedbackHost(model:model).frame(width:0,height:0))
+        .background(GlobalDictionaryHost(model:model).frame(width:0,height:0))
         .fullScreenCover(isPresented:Binding(get:{model.session != nil},set:{_ in})) {LessonScreen(model:model)}
         .task {if CredentialStore.read(account:model.baseURL) != nil {await model.perform {try await model.connect()}}}
     }
@@ -100,11 +102,11 @@ struct RootView: View {
             Text(model.recommendations?.recommended == nil ? "继续学习":"今日复习").font(.subheadline).foregroundStyle(.secondary)
             VStack(alignment:.leading,spacing:12) {
                 if let review=model.recommendations?.recommended {
-                    Text(review.title).font(.headline)
+                    LookupText(review.title).font(.headline)
                     Text("\(review.taskCount ?? 1) 个任务 · 约 \(review.minutes) 分钟").font(.subheadline).foregroundStyle(.secondary)
                     Button {Task {await model.perform {try await model.generate(review:review)}}} label:{Text("开始复习").font(.headline).foregroundStyle(.white).frame(maxWidth:.infinity,minHeight:50).background(Color.accentColor,in:RoundedRectangle(cornerRadius:12))}.buttonStyle(.plain).disabled(model.busy).accessibilityIdentifier("startReview")
                 } else {
-                    Text(model.recommendations?.nextLearning?.title ?? "练好一个交流目标").font(.headline)
+                    LookupText(model.recommendations?.nextLearning?.title ?? "练好一个交流目标").font(.headline)
                     Text("约 \(model.recommendations?.nextLearning?.minutes ?? 10) 分钟").font(.subheadline).foregroundStyle(.secondary)
                     Button {Task {await model.perform {try await model.continueCourse()}}} label:{Text("继续学习").font(.headline).foregroundStyle(.white).frame(maxWidth:.infinity,minHeight:50).background(Color.accentColor,in:RoundedRectangle(cornerRadius:12))}.buttonStyle(.plain).disabled(model.busy).accessibilityIdentifier("startLearning")
                 }
@@ -112,7 +114,7 @@ struct RootView: View {
             if model.recommendations?.recommended != nil {
                 Text("继续学习").font(.subheadline).foregroundStyle(.secondary).padding(.top,4)
                 Button {Task {await model.perform {try await model.continueCourse()}}} label: {
-                    HStack(spacing:14) {Image(systemName:"book").font(.system(size:26)).foregroundStyle(Color.accentColor);Text(model.recommendations?.nextLearning?.title ?? "继续学习").font(.headline).foregroundStyle(.primary);Spacer();Image(systemName:"chevron.right").foregroundStyle(.secondary)}.frame(maxWidth:.infinity,minHeight:44).padding(18).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+                    HStack(spacing:14) {Image(systemName:"book").font(.system(size:26)).foregroundStyle(Color.accentColor);LookupText(model.recommendations?.nextLearning?.title ?? "继续学习").font(.headline).foregroundStyle(.primary);Spacer();Image(systemName:"chevron.right").foregroundStyle(.secondary)}.frame(maxWidth:.infinity,minHeight:44).padding(18).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
                 }.buttonStyle(.plain).disabled(model.busy).accessibilityIdentifier("startLearning")
             }
             if model.health?.mode=="fixture" {Text("当前为测试模式，不更新真实能力。").font(.footnote).foregroundStyle(.secondary)}
@@ -129,7 +131,7 @@ struct RootView: View {
                 if model.recommendations?.learned.isEmpty != false {Text("完成练习后，可在这里选择已学目标再练。").foregroundStyle(.secondary)}
                 ForEach(model.recommendations?.learned ?? []) {review in
                     VStack(alignment:.leading,spacing:12) {
-                        Text(review.title)
+                        LookupText(review.title)
                         Text("约 \(review.minutes) 分钟 · 先尝试，再按需补练").font(.footnote).foregroundStyle(.secondary)
                         Button("练一次") {showLearned=false;Task {await model.perform {try await model.generate(review:review)}}}.frame(minHeight:44).disabled(model.busy)
                     }

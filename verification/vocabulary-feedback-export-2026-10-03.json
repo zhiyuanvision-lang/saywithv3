@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-03",
+  "backend_tests": {
+    "passed": 55,
+    "subtests_passed": 4,
+    "warnings": 1,
+    "feedback_export_after_atomic_save": 2
+  },
+  "ios": {
+    "contract_tests_passed": 5,
+    "notebook_flow_light": "passed",
+    "notebook_flow_dark": "passed",
+    "existing_full_learning_flow": "passed",
+    "release_build": "succeeded",
+    "version": "1.0.6",
+    "build": "601",
+    "physical_install": "succeeded",
+    "physical_launch": "succeeded",
+    "device_apps_confirmed": true
+  },
+  "cloud": {
+    "release": "20261003T133403Z",
+    "smoke": {
+      "status": "passed",
+      "backend": "https://api.saywith.zhiyuanv.com/learning",
+      "lookup": true,
+      "saved_and_deduplicated": true,
+      "detail_examples": true,
+      "list_visible": true,
+      "removed": true,
+      "target_states_unchanged": true,
+      "profile_lexical_signal_is_weak": true,
+      "test_account_only": true
+    },
+    "code_and_dictionary_sha256_match_files": 21
+  },
+  "feedback_export": {
+    "tickets": 2,
+    "image_files": 2,
+    "repeated_export_deduplicated": true,
+    "backend_status_preserved": true,
+    "markdown": "support.md",
+    "images": "tmp/feedback-inbox/"
+  },
+  "ability_policy": {
+    "lookup_and_bookmark_evidence": "weak",
+    "lexical_understanding_and_retrieval": "not_checked",
+    "bookmark_does_not_change_target_mastery": true,
+    "lookup_counts_as_assistance": true,
+    "assisted_attempt_does_not_erase_prior_independent_evidence": true
+  },
+  "limitations": [
+    "Old account vocabulary is not migrated",
+    "Dictionary pronunciation uses native iOS speech",
+    "No full VoiceOver audit or real learning outcome validation"
+  ]
+}

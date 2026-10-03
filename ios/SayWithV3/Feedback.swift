@@ -67,7 +67,7 @@ struct FeedbackComposer:View {
             } header:{Text("提交反馈")} footer:{Text("一般建议或非紧急问题我们会尽快处理。最多 4 张图，点缩略图可放大。")}
             Section("我的反馈") {
                 if mine.isEmpty {Text("还没有反馈记录").foregroundStyle(.secondary)}
-                ForEach(mine) {ticket in NavigationLink {FeedbackThread(model:model,ticket:ticket)} label:{VStack(alignment:.leading,spacing:6) {HStack {Text(ticket.statusLabel).font(.caption).foregroundStyle(.secondary);Spacer();Text(String(ticket.createdAt.replacingOccurrences(of:"T",with:" ").prefix(16))).font(.caption).foregroundStyle(.tertiary)};Text(ticket.content).lineLimit(2);if let reply=ticket.reply,!reply.isEmpty {Text("官方回复："+reply).font(.footnote).foregroundStyle(.secondary)}}}}
+                ForEach(mine) {ticket in NavigationLink {FeedbackThread(model:model,ticket:ticket)} label:{VStack(alignment:.leading,spacing:6) {HStack {Text(ticket.statusLabel).font(.caption).foregroundStyle(.secondary);Spacer();Text(String(ticket.createdAt.replacingOccurrences(of:"T",with:" ").prefix(16))).font(.caption).foregroundStyle(.tertiary)};LookupText(ticket.content).lineLimit(2);if let reply=ticket.reply,!reply.isEmpty {LookupText("官方回复："+reply).font(.footnote).foregroundStyle(.secondary)}}}}
             }
         }.navigationTitle("意见反馈").navigationBarTitleDisplayMode(.inline).tint(feedbackAccent).scrollDismissesKeyboard(.interactively)
         .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {dismiss()}.accessibilityIdentifier("closeFeedback")}}
@@ -119,7 +119,7 @@ struct FeedbackThread:View {
         ScrollView {
             VStack(alignment:.leading,spacing:20) {
                 ForEach(ticket.messages ?? []) {message in
-                    VStack(alignment:.leading,spacing:8) {Text(message.senderType=="support" ? "小帆团队":"我").font(.caption).foregroundStyle(.secondary);Text(message.content);ForEach(message.images ?? [],id:\.self) {ref in if let url=URL(string:ref) {AsyncImage(url:url) {image in image.resizable().scaledToFit()} placeholder:{ProgressView()}.frame(maxHeight:220)}}}.padding(14).frame(maxWidth:.infinity,alignment:.leading).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:12))
+                    VStack(alignment:.leading,spacing:8) {Text(message.senderType=="support" ? "小帆团队":"我").font(.caption).foregroundStyle(.secondary);LookupText(message.content);ForEach(message.images ?? [],id:\.self) {ref in if let url=URL(string:ref) {AsyncImage(url:url) {image in image.resizable().scaledToFit()} placeholder:{ProgressView()}.frame(maxHeight:220)}}}.padding(14).frame(maxWidth:.infinity,alignment:.leading).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:12))
                 }
                 Text(ticket.status=="closed" ? "这条反馈已结束":"收到了，我们会在这里回复").font(.footnote).foregroundStyle(.secondary)
                 if let error {Text(error).foregroundStyle(.red)}

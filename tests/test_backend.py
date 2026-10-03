@@ -217,6 +217,12 @@ def test_evidence_dedup_and_retention_dimensions(application,client):
     asyncio.run(svc.assessor.assess(attempt('a2','session2'),task))
     state=svc.store.get('LearnerProfile',user,user)['payload']['target_states'][0]
     assert state['independent']=='demonstrated' and state['retention']=='demonstrated' and state['transfer']=='not_checked'
+    supported=attempt('dictionary-assisted','dictionary-session');supported['support_used']=['查词释义']
+    asyncio.run(svc.assessor.assess(supported,task))
+    after=svc.store.get('LearnerProfile',user,user)['payload']['target_states'][0]
+    assert after['independent']=='demonstrated'
+    assert after['observations'][-1]['independent'] is False
+    assert '查词释义' in after['observations'][-1]['support_used']
     result=asyncio.run(svc.assessor.assess(attempt('a3','s3',textonly=True),task))
     assert result['validation']['status']=='rejected'
 

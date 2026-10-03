@@ -31,4 +31,12 @@ final class ContractTests: XCTestCase {
         XCTAssertTrue(job.terminal)
         XCTAssertEqual(job.label,"课程需要审核")
     }
+    func testDictionaryTokensKeepContractionsPunctuationAndChinese() {
+        let text="I'm free at four-thirty. 可以吗？\nDon't worry."
+        let tokens=LookupText.tokens(text)
+        XCTAssertEqual(tokens.joined(),text)
+        XCTAssertTrue(tokens.contains("I'm"));XCTAssertTrue(tokens.contains("four-thirty"))
+        XCTAssertTrue(tokens.contains("Don't"));XCTAssertTrue(tokens.contains("\n"))
+    }
+
 }
