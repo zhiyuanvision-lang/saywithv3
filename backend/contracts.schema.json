@@ -1,0 +1,939 @@
+{
+  "SourceCatalog": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "catalog_version": {
+        "title": "Catalog Version",
+        "type": "string"
+      },
+      "sources": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Sources",
+        "type": "array"
+      },
+      "status": {
+        "title": "Status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "catalog_version",
+      "sources",
+      "status"
+    ],
+    "title": "SourceCatalog",
+    "type": "object"
+  },
+  "CurriculumRelease": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "map_ref": {
+        "title": "Map Ref",
+        "type": "string"
+      },
+      "dependencies": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Dependencies",
+        "type": "array"
+      },
+      "release_scope": {
+        "title": "Release Scope",
+        "type": "string"
+      },
+      "learner_content_ready": {
+        "title": "Learner Content Ready",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "map_version",
+      "map_ref",
+      "dependencies",
+      "release_scope",
+      "learner_content_ready"
+    ],
+    "title": "CurriculumRelease",
+    "type": "object"
+  },
+  "TargetDefinition": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "target_id": {
+        "title": "Target Id",
+        "type": "string"
+      },
+      "target_version": {
+        "title": "Target Version",
+        "type": "string"
+      },
+      "outcome": {
+        "title": "Outcome",
+        "type": "string"
+      },
+      "reference_stage": {
+        "title": "Reference Stage",
+        "type": "string"
+      },
+      "contract": {
+        "additionalProperties": true,
+        "title": "Contract",
+        "type": "object"
+      },
+      "reviewed_standard_references": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Reviewed Standard References",
+        "type": "array"
+      },
+      "reference_note": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Reference Note"
+      }
+    },
+    "required": [
+      "map_version",
+      "target_id",
+      "target_version",
+      "outcome",
+      "reference_stage",
+      "contract",
+      "reviewed_standard_references"
+    ],
+    "title": "TargetDefinition",
+    "type": "object"
+  },
+  "LearnerProfile": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "user_id": {
+        "title": "User Id",
+        "type": "string"
+      },
+      "profile_version": {
+        "default": 0,
+        "title": "Profile Version",
+        "type": "integer"
+      },
+      "target_states": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Target States",
+        "type": "array"
+      },
+      "resource_states": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Resource States",
+        "type": "array"
+      },
+      "preferences": {
+        "additionalProperties": true,
+        "title": "Preferences",
+        "type": "object"
+      }
+    },
+    "required": [
+      "user_id"
+    ],
+    "title": "LearnerProfile",
+    "type": "object"
+  },
+  "TeachingAssignment": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "assignment_id": {
+        "title": "Assignment Id",
+        "type": "string"
+      },
+      "user_id": {
+        "title": "User Id",
+        "type": "string"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "profile_version": {
+        "title": "Profile Version",
+        "type": "integer"
+      },
+      "target_ids": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 1,
+        "minItems": 1,
+        "title": "Target Ids",
+        "type": "array"
+      },
+      "reason": {
+        "title": "Reason",
+        "type": "string"
+      },
+      "context": {
+        "title": "Context",
+        "type": "string"
+      },
+      "resource_plan": {
+        "additionalProperties": true,
+        "title": "Resource Plan",
+        "type": "object"
+      },
+      "difficulty": {
+        "additionalProperties": true,
+        "title": "Difficulty",
+        "type": "object"
+      },
+      "purpose": {
+        "default": "new",
+        "enum": [
+          "diagnostic",
+          "new",
+          "consolidation",
+          "retention",
+          "transfer"
+        ],
+        "title": "Purpose",
+        "type": "string"
+      },
+      "completion_standard": {
+        "default": "",
+        "title": "Completion Standard",
+        "type": "string"
+      },
+      "minutes": {
+        "default": 10,
+        "maximum": 30,
+        "minimum": 3,
+        "title": "Minutes",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "assignment_id",
+      "user_id",
+      "map_version",
+      "profile_version",
+      "target_ids",
+      "reason",
+      "context",
+      "resource_plan",
+      "difficulty"
+    ],
+    "title": "TeachingAssignment",
+    "type": "object"
+  },
+  "LessonPackage": {
+    "$defs": {
+      "Material": {
+        "additionalProperties": false,
+        "properties": {
+          "intent_zh": {
+            "title": "Intent Zh",
+            "type": "string"
+          },
+          "expression": {
+            "title": "Expression",
+            "type": "string"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Audio Ref"
+          },
+          "explanation_zh": {
+            "default": "",
+            "title": "Explanation Zh",
+            "type": "string"
+          },
+          "personal_prompt_zh": {
+            "default": "",
+            "title": "Personal Prompt Zh",
+            "type": "string"
+          },
+          "resource_id": {
+            "default": "",
+            "title": "Resource Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "intent_zh",
+          "expression"
+        ],
+        "title": "Material",
+        "type": "object"
+      },
+      "Task": {
+        "additionalProperties": false,
+        "properties": {
+          "task_id": {
+            "title": "Task Id",
+            "type": "string"
+          },
+          "task_version": {
+            "minimum": 1,
+            "title": "Task Version",
+            "type": "integer"
+          },
+          "learner_facts": {
+            "additionalProperties": true,
+            "title": "Learner Facts",
+            "type": "object"
+          },
+          "partner_private_facts": {
+            "additionalProperties": true,
+            "title": "Partner Private Facts",
+            "type": "object"
+          },
+          "role_rules": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "title": "Role Rules",
+            "type": "array"
+          },
+          "allowed_support": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Allowed Support",
+            "type": "array"
+          },
+          "assessment_contract": {
+            "additionalProperties": true,
+            "title": "Assessment Contract",
+            "type": "object"
+          },
+          "learner_prompt": {
+            "default": "",
+            "title": "Learner Prompt",
+            "type": "string"
+          },
+          "opening": {
+            "default": "",
+            "title": "Opening",
+            "type": "string"
+          },
+          "scenario_signature": {
+            "default": "",
+            "title": "Scenario Signature",
+            "type": "string"
+          },
+          "modality": {
+            "default": "spoken_interaction",
+            "enum": [
+              "spoken_interaction",
+              "text_interaction"
+            ],
+            "title": "Modality",
+            "type": "string"
+          }
+        },
+        "required": [
+          "task_id",
+          "task_version",
+          "learner_facts",
+          "partner_private_facts",
+          "role_rules",
+          "allowed_support",
+          "assessment_contract"
+        ],
+        "title": "Task",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "lesson_id": {
+        "title": "Lesson Id",
+        "type": "string"
+      },
+      "lesson_version": {
+        "minimum": 1,
+        "title": "Lesson Version",
+        "type": "integer"
+      },
+      "assignment_id": {
+        "title": "Assignment Id",
+        "type": "string"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "target_ids": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 1,
+        "minItems": 1,
+        "title": "Target Ids",
+        "type": "array"
+      },
+      "learning_materials": {
+        "items": {
+          "$ref": "#/$defs/Material"
+        },
+        "maxItems": 8,
+        "minItems": 1,
+        "title": "Learning Materials",
+        "type": "array"
+      },
+      "practice_task_ref": {
+        "title": "Practice Task Ref",
+        "type": "string"
+      },
+      "practice_task": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Task"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "independent_task": {
+        "$ref": "#/$defs/Task"
+      },
+      "quality": {
+        "additionalProperties": true,
+        "title": "Quality",
+        "type": "object"
+      },
+      "provenance": {
+        "additionalProperties": true,
+        "title": "Provenance",
+        "type": "object"
+      },
+      "learner_ready": {
+        "default": false,
+        "title": "Learner Ready",
+        "type": "boolean"
+      },
+      "example_notice": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Example Notice"
+      }
+    },
+    "required": [
+      "lesson_id",
+      "lesson_version",
+      "assignment_id",
+      "map_version",
+      "target_ids",
+      "learning_materials",
+      "practice_task_ref",
+      "independent_task",
+      "quality",
+      "provenance"
+    ],
+    "title": "LessonPackage",
+    "type": "object"
+  },
+  "LearnerLessonView": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "session_id": {
+        "title": "Session Id",
+        "type": "string"
+      },
+      "lesson_id": {
+        "title": "Lesson Id",
+        "type": "string"
+      },
+      "lesson_version": {
+        "title": "Lesson Version",
+        "type": "integer"
+      },
+      "task_id": {
+        "title": "Task Id",
+        "type": "string"
+      },
+      "phase": {
+        "title": "Phase",
+        "type": "string"
+      },
+      "instruction": {
+        "title": "Instruction",
+        "type": "string"
+      },
+      "learner_facts": {
+        "additionalProperties": true,
+        "title": "Learner Facts",
+        "type": "object"
+      },
+      "available_actions": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Available Actions",
+        "type": "array"
+      },
+      "materials": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Materials",
+        "type": "array"
+      },
+      "completed_material_indices": {
+        "items": {
+          "type": "integer"
+        },
+        "title": "Completed Material Indices",
+        "type": "array"
+      },
+      "fixture": {
+        "default": false,
+        "title": "Fixture",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "session_id",
+      "lesson_id",
+      "lesson_version",
+      "task_id",
+      "phase",
+      "instruction",
+      "learner_facts",
+      "available_actions"
+    ],
+    "title": "LearnerLessonView",
+    "type": "object"
+  },
+  "DialogueResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "session_id": {
+        "title": "Session Id",
+        "type": "string"
+      },
+      "task_id": {
+        "title": "Task Id",
+        "type": "string"
+      },
+      "turn_id": {
+        "title": "Turn Id",
+        "type": "string"
+      },
+      "reply_to": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Reply To"
+      },
+      "speaker": {
+        "const": "partner",
+        "default": "partner",
+        "title": "Speaker",
+        "type": "string"
+      },
+      "text": {
+        "title": "Text",
+        "type": "string"
+      },
+      "audio_ref": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Audio Ref"
+      },
+      "support_provided": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Support Provided",
+        "type": "array"
+      }
+    },
+    "required": [
+      "session_id",
+      "task_id",
+      "turn_id",
+      "reply_to",
+      "text"
+    ],
+    "title": "DialogueResponse",
+    "type": "object"
+  },
+  "LearnerInput": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "session_id": {
+        "title": "Session Id",
+        "type": "string"
+      },
+      "task_id": {
+        "title": "Task Id",
+        "type": "string"
+      },
+      "input_id": {
+        "title": "Input Id",
+        "type": "string"
+      },
+      "type": {
+        "enum": [
+          "speech",
+          "text",
+          "request_repeat",
+          "request_hint"
+        ],
+        "title": "Type",
+        "type": "string"
+      },
+      "audio_ref": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Audio Ref"
+      },
+      "recorded_at": {
+        "title": "Recorded At",
+        "type": "string"
+      },
+      "text": {
+        "anyOf": [
+          {
+            "maxLength": 4000,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Text"
+      },
+      "expected_session_version": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Expected Session Version"
+      }
+    },
+    "required": [
+      "session_id",
+      "task_id",
+      "input_id",
+      "type",
+      "recorded_at"
+    ],
+    "title": "LearnerInput",
+    "type": "object"
+  },
+  "TaskAttempt": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "attempt_id": {
+        "title": "Attempt Id",
+        "type": "string"
+      },
+      "user_id": {
+        "title": "User Id",
+        "type": "string"
+      },
+      "session_id": {
+        "title": "Session Id",
+        "type": "string"
+      },
+      "lesson_id": {
+        "title": "Lesson Id",
+        "type": "string"
+      },
+      "lesson_version": {
+        "title": "Lesson Version",
+        "type": "integer"
+      },
+      "map_version": {
+        "title": "Map Version",
+        "type": "string"
+      },
+      "task_id": {
+        "title": "Task Id",
+        "type": "string"
+      },
+      "task_version": {
+        "title": "Task Version",
+        "type": "integer"
+      },
+      "target_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Target Ids",
+        "type": "array"
+      },
+      "phase": {
+        "title": "Phase",
+        "type": "string"
+      },
+      "task_snapshot_ref": {
+        "title": "Task Snapshot Ref",
+        "type": "string"
+      },
+      "turns": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Turns",
+        "type": "array"
+      },
+      "support_used": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Support Used",
+        "type": "array"
+      },
+      "fixture": {
+        "default": false,
+        "title": "Fixture",
+        "type": "boolean"
+      },
+      "started_at": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Started At"
+      },
+      "finished_at": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Finished At"
+      }
+    },
+    "required": [
+      "attempt_id",
+      "user_id",
+      "session_id",
+      "lesson_id",
+      "lesson_version",
+      "map_version",
+      "task_id",
+      "task_version",
+      "target_ids",
+      "phase",
+      "task_snapshot_ref",
+      "turns",
+      "support_used"
+    ],
+    "title": "TaskAttempt",
+    "type": "object"
+  },
+  "AssessmentResult": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "assessment_id": {
+        "title": "Assessment Id",
+        "type": "string"
+      },
+      "attempt_id": {
+        "title": "Attempt Id",
+        "type": "string"
+      },
+      "assessment_version": {
+        "title": "Assessment Version",
+        "type": "string"
+      },
+      "model_version": {
+        "title": "Model Version",
+        "type": "string"
+      },
+      "target_results": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Target Results",
+        "type": "array"
+      },
+      "evidence_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Evidence Ids",
+        "type": "array"
+      },
+      "validation": {
+        "additionalProperties": true,
+        "title": "Validation",
+        "type": "object"
+      },
+      "example_notice": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Example Notice"
+      }
+    },
+    "required": [
+      "assessment_id",
+      "attempt_id",
+      "assessment_version",
+      "model_version",
+      "target_results",
+      "evidence_ids",
+      "validation"
+    ],
+    "title": "AssessmentResult",
+    "type": "object"
+  }
+}

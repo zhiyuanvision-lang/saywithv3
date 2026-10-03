@@ -1,0 +1,140 @@
+{
+  "version": "0.1.0",
+  "verified_at": "2026-10-03T11:09:29.678051+00:00",
+  "checks": {
+    "python": {
+      "command": ".venv/bin/python -m pytest -q",
+      "passed": 32,
+      "subtests_passed": 4,
+      "warnings": [
+        "Starlette test-client dependency deprecation"
+      ],
+      "log_sha256": "7f3f33a5d76e8e76a4d5e4233ce0447c9609a4cac59df05a5b30d0de7b0403ee"
+    },
+    "postgresql": {
+      "version": 17,
+      "backend_integration_passed": 14,
+      "isolated_test_databases": true,
+      "log_sha256": "7762cabc5fbb367981e732bdd002d2d8edb66e1edd3acda623edf18a58672db0"
+    },
+    "iphone": {
+      "platform": "iPhone 17 simulator / iOS 26.5",
+      "xcode": "26.6",
+      "unit_tests_passed": 3,
+      "ui_tests_passed": 2,
+      "result_bundle": "var/ios-build/Logs/Test/Test-SayWithV3-2026.10.03_19-07-00-+0800.xcresult",
+      "final_build": "passed",
+      "physical_device": "not installed: Developer Mode disabled"
+    },
+    "curriculum": {
+      "status": "passed",
+      "map_version": "1.0.1-model-reviewed",
+      "groups": 140,
+      "targets": 424,
+      "senses": 41402,
+      "failed": [],
+      "scope": "data structure, references, runtime contracts and read-only resource integrity"
+    },
+    "container": {
+      "status_code": 200,
+      "body": {
+        "status": "ok",
+        "mode": "fixture",
+        "map_version": "1.0.1-model-reviewed"
+      }
+    },
+    "live_providers": {
+      "text": "DeepSeek",
+      "speech": "ByteDance",
+      "generation": {
+        "state": "approved",
+        "job_id": "d5f65566-6627-4590-a0f1-0b13e81dfa45",
+        "error": null,
+        "revisions": 1
+      },
+      "teaching": {
+        "generated_lesson": "ccaa6cde-c75f-4b69-a36a-e4ec20e16f02",
+        "human_mastery_tested": false,
+        "phases": [
+          {
+            "phase": "supported_practice",
+            "transcript": "I cannot make the original time. How about Thursday at 4? Does that work for you?",
+            "reply": "Thursday at 4 works great for me! See you at the school court.",
+            "model_assessment_result": "completed"
+          },
+          {
+            "phase": "independent_application",
+            "transcript": "I cannot make the original time. How about Wednesday at 10? Does that work for you?",
+            "reply": "Wednesday at 10 works for me. See you at the library then!",
+            "model_assessment_result": "completed"
+          }
+        ],
+        "ability_validation": {
+          "status": "rejected",
+          "checks": [
+            "录音来源或资产不可用",
+            "关键检查未全部评价",
+            "低可信度需要更多证据"
+          ],
+          "validation_version": "validation-v1"
+        },
+        "synthetic_recording_not_counted": true
+      },
+      "human_recording_tested": false
+    },
+    "credential_scan": "staged files do not contain configured secret values",
+    "limits": [
+      "Assessment rules require human pilot calibration",
+      "No fluency/pronunciation scores inferred from transcript",
+      "Anonymous developer accounts; no account recovery or app-store release",
+      "Transactional outbox stored; external broker delivery not implemented"
+    ]
+  },
+  "source_sha256": {
+    ".dockerignore": "957a138f77b0375929a6cb50103f7186adce0e47202c404243ee460b1ae48f91",
+    ".env.example": "051f0f33eb911cf3596a4dd3bdb3a1c349119f9ed60a874db8708b17a6a440fd",
+    ".gitignore": "28abf8aee8380c73f6068def1dc2687f9ea75cb3aea94941792042ac759df184",
+    "Dockerfile": "3a8229a57fae350a849f1170896372ca64abd58bb9f05ba746e1e5b629b4278e",
+    "README.txt": "060ba37c90f18b2991e703c03a986cdaa6accdd921e663a80c2e312b2de59206",
+    "backend/__init__.py": "8cf53998c5777e3aa1c836a2254369cf05f577413aa46fcc48a1effccb1a7c41",
+    "backend/__main__.py": "ba2b6160ee6cb38fc684b6e59d84ffb47842d4825c669d0325163927e55f7035",
+    "backend/app.py": "b91fd656e75249408db938daf143b8535bf11ac7a8d8d12e9aaf548e61f936bd",
+    "backend/assessment.py": "e82c31f5fc734d5a6f5ade40f06cde0b9d1688d3040bde22bca88f023396f94c",
+    "backend/byte_speech.py": "2290d151f818cedfc990d34106c57b660528388061c8db6d680accec2d1c5f94",
+    "backend/config.py": "2418c343bbdb39ed08b359e16a822854fee18da33ea9f35e539ea77943a9b8cf",
+    "backend/contracts.py": "049b2889eaeb3b0505b87a3b53f71bb0265213d0053f3cc7c269125e93703c26",
+    "backend/contracts.schema.json": "e3770280c238acae75ea9e48e17c37146d63f4b4d1a445e77c424309b164b7b3",
+    "backend/curriculum.py": "ecb74aaa5e5e8ede535f613c6c68f4e0aa0b836433204fe34680681e4f63cb67",
+    "backend/doubao/__init__.py": "be14f9a27b65fdeeff3ee92e3b6308da03da66f7f016b790ec16be26346a88d4",
+    "backend/doubao/asr_client.py": "a1af64fc5d8377e445db2e225cf7ed1f16434f0249489a70a62a7b7c1743d399",
+    "backend/doubao/protocol.py": "e152ea9b58ffd3183333efb0e187afc8536a94ccab28a447c985a7b610153c9e",
+    "backend/doubao/tts_client.py": "4fb7b64924f530d46cdf21ac16e9fdd7ac6be3abdc59f417e43aa4bd76417117",
+    "backend/generation.py": "f7fb76f45cfa4f1a96ccfdce199a06d1523672fefd7c8479465a3bca3064f7fb",
+    "backend/openapi.json": "9f4a2c893fa2a0a8ff1f9c7e82b83cef0991782f1c9f16b804cb58b0255d6d13",
+    "backend/planning.py": "f922ffd106f1886a2c162affa06aaa3fb077e47fffc240736e74f884538f0b6e",
+    "backend/providers.py": "42ae00ceaa69c33dfd4b04ce833390cc40bda3f2ba684f3b6842a35200a98728",
+    "backend/sessions.py": "37dc3592e3fa7a15e4fb861270911f30b0d95d27d36876ddc9db06e8574344ca",
+    "backend/store.py": "b57dfc19e41eca5c688d293ebbe95d1b5e4081fed9278a426ef6b9cadb8780a6",
+    "compose.yaml": "dfb5999e9349c12d08744b578c0cbceea6245d4727f5dad87c879e58a03ad881",
+    "ios/SayWithV3.xcodeproj/project.pbxproj": "b514b9eabb4a93d74b9f0b95ec87c8e999bde0601df7051ccf05cba34cb6d0c0",
+    "ios/SayWithV3.xcodeproj/project.xcworkspace/contents.xcworkspacedata": "7f3b00b5c3fdb45242d7b87e1e5c4e25d1fa8129a16c94295ecc4e8ea2235c5f",
+    "ios/SayWithV3.xcodeproj/xcshareddata/xcschemes/SayWithV3.xcscheme": "2767cbd4aeda645a4aa19ff8e688ada6abec8ab8e7d2874e1ccf922a3e1ccebf",
+    "ios/SayWithV3/API.swift": "e6b3de67744f57cc94e4b07c7df6a64f7f9c62ed474edd0ec07908153d618d64",
+    "ios/SayWithV3/Assets.xcassets/AppIcon.appiconset/AppIcon.png": "902b73fa66618789c75df11129652bbc655dd3c16fa2e36d20683cdf20776c81",
+    "ios/SayWithV3/Assets.xcassets/AppIcon.appiconset/Contents.json": "9239900ca4c37dc860feb154216409f05d906e26f2d79550e1e8e8b8db6324c7",
+    "ios/SayWithV3/Assets.xcassets/Contents.json": "10e3b5dc202f1cd9fad1f688c8fc9fe9e9669bf3f8295e67d216b10fd99b6f49",
+    "ios/SayWithV3/Audio.swift": "31b39215dbd91e8849c805cf42cdec99209a4fb4a67ed70f45a431affa5e7dc7",
+    "ios/SayWithV3/Info.plist": "96b0ca359abb19167fdef4a72a304112c52ab789e96b5d14ff9924ce560e84dc",
+    "ios/SayWithV3/LearningModel.swift": "f0f24d04c9b0a6da7ce6b2b3c653f0c29010ac8f799662f4d1b0025a41152a5c",
+    "ios/SayWithV3/Models.swift": "7320bc17a47a0f4074f67d4ef3fbc4b28898dd9912e0d27c271c60c9d6024f36",
+    "ios/SayWithV3/SayWithApp.swift": "f9ea9ba20e7beb8d8eb749038e029e8480a5b2c6d7a5e9ae56eca4b223461eee",
+    "ios/SayWithV3Tests/ContractTests.swift": "a0fd591e13a4d49a63604d28532508ac46edb7c7bda2cbdfdc4f3819edcbe085",
+    "ios/SayWithV3UITests/LearningFlowTests.swift": "c6727a61c439a1eed6d19b2019274154fd74b73f4de2ef70321936b9507b19f3",
+    "ios/project.yml": "86d66717c116f407fbca955d451a23804149a6a68ce338ab7954e063ab88beef",
+    "modules/course_planning/README.txt": "7fc523df746db4fbf7d400d89e8a4c6268c909f08a00c6501c9013a02b7f6756",
+    "pyproject.toml": "4ae353f07c120a9cccd0acc543cfc3a158d9eeeac6fad3d92f5db859dfac6017",
+    "requirements.lock.txt": "4bf5b40b782d651945441a63daedd89891584f49b081588ed49ef74eafbc671e",
+    "tests/test_backend.py": "3349b8ad3d47d3dcd6f70021694d19e017390b89c6841168dc714c22a819cf86",
+    "tests/test_providers.py": "0f1e5ca004653566fdbbcfcfd93214d22d6669dbf34527200f9d6a204cdaa8a2"
+  }
+}

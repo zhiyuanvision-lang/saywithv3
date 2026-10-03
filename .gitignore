@@ -1,4 +1,11 @@
 **/__pycache__/
 *.py[cod]
+.venv/
+.env
+var/
+.pytest_cache/
+test-results/
+*.egg-info/
+ios/**/xcuserdata/
 releases/curriculum/*/research/
 releases/curriculum/*/modules/

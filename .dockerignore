@@ -1,0 +1,10 @@
+.git
+.env
+.venv
+var
+releases
+ios
+**/__pycache__
+**/*.zip
+**/*.pyc
+*.egg-info

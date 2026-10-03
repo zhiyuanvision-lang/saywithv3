@@ -1,3 +1,5 @@
+当前状态（2026-10-03）：后端与iPhone实现位于 ../../backend/ 和 ../../ios/；启动、实际合同、测试与边界见 ../../README.txt。下文为保留的初始开发设计。
+
 课程规划与生成模块：Python 开发设计 v1
 
 阅读入口：design.html；结构化设计：design.json。
