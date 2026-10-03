@@ -22,6 +22,7 @@ class Assessor:
         turns=attempt['turns'];learner=[t for t in turns if t['speaker']=='learner']
         spoken=task['modality']=='spoken_interaction'
         problems=[]
+        if attempt.get('status')=='abandoned':problems.append('任务已退出，不作能力失败判定')
         if attempt.get('fixture'):problems.append('测试用例不作为用户能力证据')
         if not learner:problems.append('没有学习者表现')
         if spoken and any(not t.get('audio_ref') or t.get('asr',{}).get('quality')!='final_transcript_available' for t in learner):
@@ -88,10 +89,10 @@ class Assessor:
         state=states.setdefault(id,{'target_id':id,'independent':'insufficient_evidence','retention':'not_checked',
             'transfer':'not_checked','support_dependency':[],'evidence_ids':[],'observations':[]})
         r=result['target_results'][0];now=time.time()
-        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x!='请求重复' for x in supports)
+        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示') for x in supports)
         evidence={'evidence_id':result['evidence_ids'][0],'attempt_id':attempt['attempt_id'],'session_id':attempt['session_id'],
             'time':now,'completed':r['result']=='completed','independent':independent,
-            'scenario_signature':task['scenario_signature'],'confidence':r['confidence'],'support_used':supports}
+            'review_metadata':attempt.get('review_metadata',{}),'scenario_signature':task['scenario_signature'],'confidence':r['confidence'],'support_used':supports}
         state['observations'].append(evidence);state['evidence_ids'].append(evidence['evidence_id'])
         state['support_dependency']=sorted(set(state['support_dependency']+supports))
         successes=[e for e in state['observations'] if e['independent'] and e['completed']]
@@ -99,7 +100,7 @@ class Assessor:
             if not independent:state['independent']='supported'
             elif len({e['session_id'] for e in successes})>=2:state['independent']='demonstrated'
             else:state['independent']='provisional'
-            if independent and len({e['scenario_signature'] for e in successes})>=2:state['transfer']='demonstrated'
+            if independent and attempt.get('review_metadata',{}).get('purpose')=='transfer' and attempt.get('review_metadata',{}).get('transfer_validated') and len({e['scenario_signature'] for e in successes})>=2:state['transfer']='demonstrated'
             previous=[e for e in successes if e['attempt_id']!=attempt['attempt_id']]
             if independent and previous and now-min(e['time'] for e in previous)>=self.settings.retention_days*86400:state['retention']='demonstrated'
         elif independent:

@@ -254,6 +254,11 @@
         "title": "Purpose",
         "type": "string"
       },
+      "review_metadata": {
+        "additionalProperties": true,
+        "title": "Review Metadata",
+        "type": "object"
+      },
       "completion_standard": {
         "default": "",
         "title": "Completion Standard",
@@ -319,6 +324,26 @@
           "resource_id": {
             "default": "",
             "title": "Resource Id",
+            "type": "string"
+          },
+          "meaning_zh": {
+            "default": "",
+            "title": "Meaning Zh",
+            "type": "string"
+          },
+          "partner_line": {
+            "default": "",
+            "title": "Partner Line",
+            "type": "string"
+          },
+          "partner_meaning_zh": {
+            "default": "",
+            "title": "Partner Meaning Zh",
+            "type": "string"
+          },
+          "hint_pattern": {
+            "default": "",
+            "title": "Hint Pattern",
             "type": "string"
           }
         },
@@ -394,6 +419,13 @@
             ],
             "title": "Modality",
             "type": "string"
+          },
+          "interaction_policy": {
+            "additionalProperties": {
+              "type": "boolean"
+            },
+            "title": "Interaction Policy",
+            "type": "object"
           }
         },
         "required": [
@@ -415,6 +447,11 @@
         "const": "1.0",
         "default": "1.0",
         "title": "Schema Version",
+        "type": "string"
+      },
+      "title_zh": {
+        "default": "",
+        "title": "Title Zh",
         "type": "string"
       },
       "lesson_id": {
@@ -577,6 +614,84 @@
         "default": false,
         "title": "Fixture",
         "type": "boolean"
+      },
+      "entry_kind": {
+        "default": "course",
+        "title": "Entry Kind",
+        "type": "string"
+      },
+      "review_metadata": {
+        "additionalProperties": true,
+        "title": "Review Metadata",
+        "type": "object"
+      },
+      "title": {
+        "default": "",
+        "title": "Title",
+        "type": "string"
+      },
+      "partner_name": {
+        "default": "对方",
+        "title": "Partner Name",
+        "type": "string"
+      },
+      "demonstration": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Demonstration",
+        "type": "array"
+      },
+      "guided_round": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Guided Round"
+      },
+      "guided_round_title": {
+        "default": "",
+        "title": "Guided Round Title",
+        "type": "string"
+      },
+      "support_used": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Support Used",
+        "type": "array"
+      },
+      "shadow_feedback": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Shadow Feedback"
+      },
+      "assessment": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Assessment"
       }
     },
     "required": [
@@ -652,6 +767,17 @@
         },
         "title": "Support Provided",
         "type": "array"
+      },
+      "kind": {
+        "default": "dialogue",
+        "enum": [
+          "dialogue",
+          "hint",
+          "translation",
+          "repeat"
+        ],
+        "title": "Kind",
+        "type": "string"
       }
     },
     "required": [
@@ -690,7 +816,8 @@
           "speech",
           "text",
           "request_repeat",
-          "request_hint"
+          "request_hint",
+          "request_translation"
         ],
         "title": "Type",
         "type": "string"
@@ -735,6 +862,29 @@
         ],
         "default": null,
         "title": "Expected Session Version"
+      },
+      "hint_level": {
+        "default": "intent",
+        "enum": [
+          "intent",
+          "pattern",
+          "example",
+          "learned"
+        ],
+        "title": "Hint Level",
+        "type": "string"
+      },
+      "source_turn_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Source Turn Id"
       }
     },
     "required": [
@@ -797,6 +947,20 @@
       },
       "phase": {
         "title": "Phase",
+        "type": "string"
+      },
+      "review_metadata": {
+        "additionalProperties": true,
+        "title": "Review Metadata",
+        "type": "object"
+      },
+      "status": {
+        "default": "completed",
+        "enum": [
+          "completed",
+          "abandoned"
+        ],
+        "title": "Status",
         "type": "string"
       },
       "task_snapshot_ref": {

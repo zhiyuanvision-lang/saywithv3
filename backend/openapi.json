@@ -57,6 +57,386 @@
         }
       }
     },
+    "/v1/feedback": {
+      "post": {
+        "summary": "Feedback Create",
+        "operationId": "feedback_create_v1_feedback_post",
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/mine": {
+      "get": {
+        "summary": "Feedback Mine",
+        "operationId": "feedback_mine_v1_feedback_mine_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/images": {
+      "post": {
+        "summary": "Feedback Upload",
+        "operationId": "feedback_upload_v1_feedback_images_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_feedback_upload_v1_feedback_images_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/images/{id}": {
+      "get": {
+        "summary": "Feedback Image",
+        "operationId": "feedback_image_v1_feedback_images__id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/{id}": {
+      "get": {
+        "summary": "Feedback Get",
+        "operationId": "feedback_get_v1_feedback__id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/{id}/messages": {
+      "post": {
+        "summary": "Feedback Reply",
+        "operationId": "feedback_reply_v1_feedback__id__messages_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "title": "Idempotency-Key"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackMessage"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/feedback/{id}/close": {
+      "post": {
+        "summary": "Feedback Close",
+        "operationId": "feedback_close_v1_feedback__id__close_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/profile": {
       "get": {
         "summary": "Profile",
@@ -245,6 +625,50 @@
               "title": "Id"
             }
           },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/recommendations": {
+      "get": {
+        "summary": "Recommendations",
+        "operationId": "recommendations_v1_recommendations_get",
+        "parameters": [
           {
             "name": "authorization",
             "in": "header",
@@ -855,6 +1279,132 @@
         }
       }
     },
+    "/v1/sessions/{id}/shadow": {
+      "post": {
+        "summary": "Shadow",
+        "operationId": "shadow_v1_sessions__id__shadow_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShadowRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{id}/transition": {
+      "post": {
+        "summary": "Transition",
+        "operationId": "transition_v1_sessions__id__transition_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransitionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/sessions/{id}/inputs": {
       "post": {
         "summary": "Input",
@@ -1340,6 +1890,20 @@
   },
   "components": {
     "schemas": {
+      "Body_feedback_upload_v1_feedback_images_post": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "contentMediaType": "application/octet-stream",
+            "title": "File"
+          }
+        },
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "title": "Body_feedback_upload_v1_feedback_images_post"
+      },
       "Body_upload_v1_media_post": {
         "properties": {
           "audio": {
@@ -1353,6 +1917,73 @@
           "audio"
         ],
         "title": "Body_upload_v1_media_post"
+      },
+      "FeedbackMessage": {
+        "properties": {
+          "content": {
+            "type": "string",
+            "maxLength": 4000,
+            "title": "Content",
+            "default": ""
+          },
+          "images": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Images"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "FeedbackMessage"
+      },
+      "FeedbackRequest": {
+        "properties": {
+          "content": {
+            "type": "string",
+            "maxLength": 4000,
+            "title": "Content",
+            "default": ""
+          },
+          "images": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Images"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "bug",
+              "account",
+              "vocab",
+              "speak",
+              "suggestion",
+              "other"
+            ],
+            "title": "Category",
+            "default": "bug"
+          },
+          "contact": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "Contact",
+            "default": ""
+          },
+          "app_version": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "App Version",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "FeedbackRequest"
       },
       "GenerationRequest": {
         "properties": {
@@ -1390,6 +2021,15 @@
               }
             ],
             "title": "Context"
+          },
+          "entry_kind": {
+            "type": "string",
+            "enum": [
+              "course",
+              "review"
+            ],
+            "title": "Entry Kind",
+            "default": "course"
           },
           "minutes": {
             "type": "integer",
@@ -1464,7 +2104,8 @@
               "speech",
               "text",
               "request_repeat",
-              "request_hint"
+              "request_hint",
+              "request_translation"
             ],
             "title": "Type"
           },
@@ -1505,6 +2146,28 @@
               }
             ],
             "title": "Expected Session Version"
+          },
+          "hint_level": {
+            "type": "string",
+            "enum": [
+              "intent",
+              "pattern",
+              "example",
+              "learned"
+            ],
+            "title": "Hint Level",
+            "default": "intent"
+          },
+          "source_turn_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Turn Id"
           }
         },
         "additionalProperties": false,
@@ -1523,6 +2186,11 @@
           "expected_session_version": {
             "type": "integer",
             "title": "Expected Session Version"
+          },
+          "advance_round": {
+            "type": "boolean",
+            "title": "Advance Round",
+            "default": false
           }
         },
         "additionalProperties": false,
@@ -1606,6 +2274,15 @@
           "lesson_id": {
             "type": "string",
             "title": "Lesson Id"
+          },
+          "entry_kind": {
+            "type": "string",
+            "enum": [
+              "course",
+              "review"
+            ],
+            "title": "Entry Kind",
+            "default": "course"
           }
         },
         "additionalProperties": false,
@@ -1614,6 +2291,31 @@
           "lesson_id"
         ],
         "title": "SessionRequest"
+      },
+      "ShadowRequest": {
+        "properties": {
+          "material_index": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Material Index"
+          },
+          "audio_ref": {
+            "type": "string",
+            "title": "Audio Ref"
+          },
+          "input_id": {
+            "type": "string",
+            "title": "Input Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "material_index",
+          "audio_ref",
+          "input_id"
+        ],
+        "title": "ShadowRequest"
       },
       "SourceCatalog": {
         "properties": {
@@ -1714,6 +2416,25 @@
           "reviewed_standard_references"
         ],
         "title": "TargetDefinition"
+      },
+      "TransitionRequest": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "expected_session_version": {
+            "type": "integer",
+            "title": "Expected Session Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "action",
+          "expected_session_version"
+        ],
+        "title": "TransitionRequest"
       },
       "ValidationError": {
         "properties": {

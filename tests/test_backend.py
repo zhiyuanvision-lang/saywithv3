@@ -216,7 +216,7 @@ def test_evidence_dedup_and_retention_dimensions(application,client):
     task=copy.deepcopy(task);task['scenario_signature']='arrange-work'
     asyncio.run(svc.assessor.assess(attempt('a2','session2'),task))
     state=svc.store.get('LearnerProfile',user,user)['payload']['target_states'][0]
-    assert state['independent']=='demonstrated' and state['retention']=='demonstrated' and state['transfer']=='demonstrated'
+    assert state['independent']=='demonstrated' and state['retention']=='demonstrated' and state['transfer']=='not_checked'
     result=asyncio.run(svc.assessor.assess(attempt('a3','s3',textonly=True),task))
     assert result['validation']['status']=='rejected'
 

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-03",
+  "app_version": "1.0.6",
+  "build": "599",
+  "bundle_id": "com.zhiyuanv.beidanciliankouyu",
+  "backend": "https://api.saywith.zhiyuanv.com/learning",
+  "reference": "docs/v6-app-learning-stage.md",
+  "device_install": {
+    "device": "iPhone 12 Pro Max",
+    "installed": true,
+    "launched": true,
+    "verified_bundle_version": "599"
+  },
+  "limitations": [
+    "真人录音效果尚未人工验收",
+    "未完成全部 VoiceOver 操作验收",
+    "测试课程不作为真实能力证据"
+  ],
+  "backend_tests": {
+    "passed": 50,
+    "subtests_passed": 4,
+    "warnings": 1
+  },
+  "native_tests": [
+    {
+      "result": "passed",
+      "tests": 2,
+      "appearance": "light",
+      "content_size": "large",
+      "xcresult": "var/ios-cloud-build/Logs/Test/Test-SayWithV3-2026.10.03_21-13-15-+0800.xcresult"
+    },
+    {
+      "result": "passed",
+      "tests": 2,
+      "appearance": "dark",
+      "content_size": "accessibility-extra-extra-extra-large",
+      "reduce_motion": true,
+      "xcresult": "var/ios-cloud-build/Logs/Test/Test-SayWithV3-2026.10.03_21-10-21-+0800.xcresult"
+    },
+    {
+      "result": "passed",
+      "tests": 1,
+      "test": "ReviewStartsWithoutRepeatingLearning",
+      "fixture_profile_restored": true,
+      "xcresult": "var/ios-cloud-build/Logs/Test/Test-SayWithV3-2026.10.03_21-15-09-+0800.xcresult"
+    }
+  ],
+  "screenshots": "docs/v6-native-alignment-2026-10-03.md"
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-03",
+  "app_version": "1.0.6",
+  "build": "599",
+  "bundle_id": "com.zhiyuanv.beidanciliankouyu",
+  "backend": "https://api.saywith.zhiyuanv.com/learning",
+  "reference": "docs/v6-app-learning-stage.md",
+  "device_install": {
+    "device": "iPhone 12 Pro Max",
+    "installed": true,
+    "launched": true,
+    "verified_bundle_version": "599"
+  },
+  "limitations": [
+    "真人录音效果尚未人工验收",
+    "未完成全部 VoiceOver 操作验收",
+    "测试课程不作为真实能力证据"
+  ],
+  "feedback_integration": {
+    "status": "passed",
+    "ticket_id": "5bb35262b72757948233320d170d4af9",
+    "image_access": true,
+    "idempotent_submission": true,
+    "history_visible": true,
+    "user_reply": true,
+    "backend": "https://api.saywith.zhiyuanv.com/learning/",
+    "admin_page": "https://www.zhiyuanv.com/admin/product/saywith/section-feedback",
+    "image_retry_reuses_random_url": true,
+    "admin_inbox_visible": true
+  },
+  "admin_verification": "原后台接口，浏览器未登录管理员",
+  "feedback_tests": {
+    "submission_history_and_cross_screen_entry": "passed",
+    "my_and_settings_sheet_entry": "passed",
+    "xcresult": "var/ios-cloud-build/Logs/Test/Test-SayWithV3-2026.10.03_21-07-14-+0800.xcresult"
+  },
+  "screenshots": "docs/v6-native-alignment-2026-10-03.md",
+  "cloud_database_role": "dedicated role: SELECT/INSERT feedbacks+feedback_messages; UPDATE(status) feedbacks"
+}

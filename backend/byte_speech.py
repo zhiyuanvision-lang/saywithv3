@@ -2,7 +2,7 @@
 import asyncio
 import io
 import wave
-from .providers import APIProvider, ProviderFailure, ReviewRequired
+from .providers import APIProvider, ProviderFailure, ReviewRequired, spoken_clock
 from .doubao.asr_client import DoubaoASRClient, AsrResult, AsrErrorResult
 from .doubao.tts_client import (DoubaoTTSClient, EVENT_SESSION_FINISHED, EVENT_SESSION_FAILED,
                               EVENT_SESSION_CANCELED)
@@ -26,7 +26,7 @@ class DeepSeekByteProvider(APIProvider):
         try:
             async with asyncio.timeout(60):
                 await client.connect();id=await client.start_session()
-                await client.send_text(id,text);await client.finish_session(id)
+                await client.send_text(id,spoken_clock(text));await client.finish_session(id)
                 async for msg in client.messages():
                     if msg.audio:chunks.append(msg.audio)
                     if msg.event in (-1,EVENT_SESSION_FAILED,EVENT_SESSION_CANCELED):raise ProviderFailure('ByteDance synthesis failed')

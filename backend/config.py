@@ -21,6 +21,8 @@ class Settings:
     doubao_tts_resource: str = field(default_factory=lambda: os.getenv('DOUBAO_TTS_RESOURCE_ID', 'seed-tts-2.0'))
     doubao_speaker: str = field(default_factory=lambda: os.getenv('DOUBAO_TTS_SPEAKER', 'en_female_dacey_uranus_bigtts'))
     admin_token: str = field(default_factory=lambda: os.getenv('SAYWITH_ADMIN_TOKEN', ''))
+    feedback_database_url: str = field(default_factory=lambda: os.getenv('SAYWITH_FEEDBACK_DATABASE_URL', ''))
+    feedback_public_base: str = field(default_factory=lambda: os.getenv('SAYWITH_FEEDBACK_PUBLIC_BASE', 'https://api.saywith.zhiyuanv.com/learning'))
     max_audio_bytes: int = field(default_factory=lambda: int(os.getenv('SAYWITH_MAX_AUDIO_BYTES', '10485760')))
     retention_days: int = field(default_factory=lambda: int(os.getenv('SAYWITH_RETENTION_DAYS', '7')))
     max_job_attempts: int = field(default_factory=lambda: int(os.getenv('SAYWITH_MAX_JOB_ATTEMPTS', '3')))

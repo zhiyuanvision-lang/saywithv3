@@ -14,6 +14,17 @@ final class ContractTests: XCTestCase {
         XCTAssertThrowsError(try API.validatedURL("https://example.com?token=secret"))
         XCTAssertEqual(try API.validatedURL("https://example.com").host,"example.com")
     }
+    func testCloudBasePathAppliesToJSONAndAudio() async throws {
+        let base=try API.validatedURL("https://api.saywith.zhiyuanv.com/learning")
+        let api=API(base:base,token:nil)
+        let profile=try await api.endpoint("v1/profile")
+        XCTAssertEqual(profile.path,"/learning/v1/profile")
+        let audio=try await api.endpoint("/v1/media/a")
+        XCTAssertEqual(audio.path,"/learning/v1/media/a")
+        let query=try await api.endpoint("v1/curriculum/targets?stage=A2")
+        XCTAssertEqual(query.query,"stage=A2")
+        do {_ = try await api.endpoint("../private");XCTFail("Traversal must be rejected")} catch {}
+    }
     func testJobTerminalNeedsReview() throws {
         let decoder=JSONDecoder();decoder.keyDecodingStrategy = .convertFromSnakeCase
         let job=try decoder.decode(Job.self,from:Data(#"{"job_id":"j1","state":"needs_review","row_version":2,"error":{"message":"Task quality failed"}}"#.utf8))

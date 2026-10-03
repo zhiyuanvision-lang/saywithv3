@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "app_version": "1.0.6",
+  "build": "599",
+  "bundle_id": "com.zhiyuanv.beidanciliankouyu",
+  "backend": "https://api.saywith.zhiyuanv.com/learning",
+  "reference": "docs/v6-app-learning-stage.md",
+  "device_install": {
+    "device": "iPhone 12 Pro Max",
+    "installed": true,
+    "launched": true,
+    "verified_bundle_version": "599"
+  },
+  "limitations": [
+    "真人录音效果尚未人工验收",
+    "未完成全部 VoiceOver 操作验收",
+    "测试课程不作为真实能力证据"
+  ],
+  "main_flow": {
+    "backend": "https://api.saywith.zhiyuanv.com/learning",
+    "human_recording": false,
+    "steps": [
+      "cloud registration, profile and recommendation",
+      "real generation, QA, TTS and session creation",
+      "owned synthetic recordings, ByteDance ASR and learning feedback",
+      "three guided rounds and assessment",
+      "independent task, feedback and no synthetic mastery",
+      "learned content available for consolidation review"
+    ],
+    "generation": {
+      "schema_version": "1.0",
+      "job_id": "e76086ad-63f7-4b78-ac2f-956b169cf215",
+      "state": "approved",
+      "row_version": 26,
+      "error": null,
+      "result_lesson_id": "97d8ddff-8108-4500-bb62-78e99e89278e",
+      "attempts": 2
+    },
+    "session_id": "2e81df1a-ad9e-4f8e-a498-964d7275ef40",
+    "assessment_validation": {
+      "status": "accepted",
+      "checks": [
+        "证据引用存在",
+        "任务条件和实际支持已保存",
+        "音频模态证据可用"
+      ],
+      "validation_version": "validation-v1"
+    },
+    "status": "passed"
+  },
+  "backend_code_hash_check": {
+    "matched": true,
+    "file_count": 19,
+    "mismatched": []
+  },
+  "health": {
+    "status": "ok",
+    "mode": "provider",
+    "map_version": "1.0.1-model-reviewed"
+  },
+  "review_generation": {
+    "state": "needs_review",
+    "job_id": "2533a6a4-e5a3-4446-a4b8-f2744424f333",
+    "reason": "内容质检未通过，未发布；主流程成功不代表每次生成都通过"
+  }
+}

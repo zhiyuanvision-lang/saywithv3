@@ -57,19 +57,28 @@ struct Job: Decodable, Sendable {
 struct Material: Decodable, Sendable {
     let intentZh: String; let expression: String; let audioRef: String?
     let explanationZh: String; let personalPromptZh: String
+    let meaningZh: String?;let hintPattern: String?
 }
 struct LessonView: Decodable, Sendable {
+    let entryKind:String?;let reviewMetadata:[String:JSONValue]?
     let sessionId: String; let lessonId: String; let lessonVersion: Int; let taskId: String
     let phase: String; let instruction: String; let learnerFacts: [String: JSONValue]
     let availableActions: [String]; let materials: [Material]; let fixture: Bool
     let completedMaterialIndices: [Int]?
+    let title:String?;let partnerName:String?;let demonstration:[DemoLine]?
+    let guidedRound:Int?;let guidedRoundTitle:String?;let supportUsed:[String]?
+    let shadowFeedback:ShadowFeedback?;let assessment:Assessment?
 }
 struct Turn: Decodable, Identifiable, Sendable {
     let turnId: String; let speaker: String; let text: String?; let transcript: String?; let audioRef: String?
     var id: String {turnId}; var content: String {text ?? transcript ?? ""}
 }
 struct SessionState: Decodable, Sendable { let view: LessonView; let sessionVersion: Int; let turns: [Turn] }
-struct Dialogue: Decodable, Sendable { let text: String; let audioRef: String? }
+struct Dialogue: Decodable, Sendable { let text:String;let audioRef:String?;let kind:String?;let supportProvided:[String]? }
+struct DemoLine:Decodable,Sendable {let speaker:String;let text:String;let meaningZh:String?;let audioRef:String?}
+struct ShadowFeedback:Decodable,Sendable {let transcript:String;let canContinue:Bool;let message:String;let audioRef:String;let materialIndex:Int
+    func materialIndexMatches(_ index:Int)->Bool {materialIndex==index}}
+struct ShadowResponse:Decodable,Sendable {let feedback:ShadowFeedback;let session:SessionState}
 struct AudioUpload: Decodable, Sendable { let audioRef: String }
 struct Assessment: Decodable, Sendable {
     let assessmentId: String; let targetResults: [[String: JSONValue]]; let validation: [String: JSONValue]
@@ -83,3 +92,9 @@ struct Assessment: Decodable, Sendable {
         }
     }
 }
+
+struct ReviewRecommendation:Decodable,Sendable,Identifiable {
+    let targetId:String;let title:String;let minutes:Int;let reason:String;let taskCount:Int?
+    var id:String {targetId}
+}
+struct Recommendations:Decodable,Sendable {let recommended:ReviewRecommendation?;let dueCount:Int;let learned:[ReviewRecommendation];let nextLearning:ReviewRecommendation?}

@@ -46,6 +46,7 @@ class TeachingAssignment(Contract):
     resource_plan: dict[str, Any]
     difficulty: dict[str, Any]
     purpose: Literal['diagnostic','new','consolidation','retention','transfer'] = 'new'
+    review_metadata: dict[str,Any] = Field(default_factory=dict)
     completion_standard: str = ''
     minutes: int = Field(default=10, ge=3, le=30)
 
@@ -57,6 +58,10 @@ class Material(BaseModel):
     explanation_zh: str = ''
     personal_prompt_zh: str = ''
     resource_id: str = ''
+    meaning_zh: str = ''
+    partner_line: str = ''
+    partner_meaning_zh: str = ''
+    hint_pattern: str = ''
 
 class Task(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -71,8 +76,10 @@ class Task(BaseModel):
     opening: str = ''
     scenario_signature: str = ''
     modality: Literal['spoken_interaction','text_interaction'] = 'spoken_interaction'
+    interaction_policy: dict[str,bool] = Field(default_factory=dict)
 
 class LessonPackage(Contract):
+    title_zh: str = ""
     lesson_id: str
     lesson_version: int = Field(ge=1)
     assignment_id: str
@@ -106,6 +113,16 @@ class LearnerLessonView(Contract):
     materials: list[dict[str, Any]] = Field(default_factory=list)
     completed_material_indices: list[int] = Field(default_factory=list)
     fixture: bool = False
+    entry_kind: str = 'course'
+    review_metadata: dict[str,Any] = Field(default_factory=dict)
+    title: str = ''
+    partner_name: str = '对方'
+    demonstration: list[dict[str,Any]] = Field(default_factory=list)
+    guided_round: int | None = None
+    guided_round_title: str = ''
+    support_used: list[str] = Field(default_factory=list)
+    shadow_feedback: dict[str,Any] | None = None
+    assessment: dict[str,Any] | None = None
 
 class DialogueResponse(Contract):
     session_id: str
@@ -116,16 +133,19 @@ class DialogueResponse(Contract):
     text: str
     audio_ref: str | None = None
     support_provided: list[str] = Field(default_factory=list)
+    kind: Literal['dialogue','hint','translation','repeat'] = 'dialogue'
 
 class LearnerInput(Contract):
     session_id: str
     task_id: str
     input_id: str
-    type: Literal['speech','text','request_repeat','request_hint']
+    type: Literal['speech','text','request_repeat','request_hint','request_translation']
     audio_ref: str | None = None
     recorded_at: str
     text: str | None = Field(default=None,max_length=4000)
     expected_session_version: int | None = None
+    hint_level: Literal['intent','pattern','example','learned'] = 'intent'
+    source_turn_id: str | None = None
 
 class TaskAttempt(Contract):
     attempt_id: str
@@ -138,6 +158,8 @@ class TaskAttempt(Contract):
     task_version: int
     target_ids: list[str]
     phase: str
+    review_metadata: dict[str,Any] = Field(default_factory=dict)
+    status: Literal['completed','abandoned'] = 'completed'
     task_snapshot_ref: str
     turns: list[dict[str, Any]]
     support_used: list[str]

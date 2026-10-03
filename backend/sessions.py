@@ -5,35 +5,66 @@ from .contracts import LearnerLessonView, DialogueResponse, LearnerInput, TaskAt
 from .store import uid, Conflict, Missing, digest
 from .assessment import timestamp
 from .providers import ReviewRequired
+from .teaching_support import TeachingSupport, ROUND_NAMES
 
 PHASES=['learning','supported_practice','independent_application','finished']
 
 class Sessions:
     def __init__(self,store,curriculum,provider,generator,assessor,settings):
         self.store=store;self.curriculum=curriculum;self.provider=provider;self.generator=generator;self.assessor=assessor;self.settings=settings
+        self.support=TeachingSupport(self)
 
-    def create(self,owner,lesson_id):
+    def create(self,owner,lesson_id,entry_kind="course"):
         lesson=self.store.get('LessonPackage',lesson_id,owner)['payload']
         fixture=bool(lesson['provenance'].get('fixture'))
         if not lesson['learner_ready'] and not (self.settings.mode=='fixture' and fixture):raise Conflict('课程尚未通过发布审核')
+        assignment=self.store.get('TeachingAssignment',lesson['assignment_id'],owner)['payload']
+        if entry_kind=='review' and assignment['purpose'] not in ('consolidation','retention','transfer'):raise Conflict('该课程没有复习依据')
+        metadata=copy.deepcopy(assignment.get('review_metadata',{}));metadata['entry_kind']=entry_kind
+        if metadata.get('baseline_time') is not None:metadata['actual_interval_seconds']=max(0,time.time()-metadata['baseline_time'])
         id=uid();session={'session_id':id,'lesson_id':lesson_id,'lesson_version':lesson['lesson_version'],
-            'phase':'learning','fixture':fixture,'task':copy.deepcopy(lesson['practice_task']),
+            'phase':'independent_application' if entry_kind=='review' else 'learning','review_metadata':metadata,'entry_kind':entry_kind,'owner':owner,'fixture':fixture,'task':copy.deepcopy(lesson['practice_task']),
             'turns':[],'support_used':[],'started_at':timestamp(),'learning_events':[],'finished_attempts':[],
             'request_responses':{}}
+        if metadata.get('baseline_attempt_id'):
+            try:
+                baseline=self.store.get('TaskSnapshot',metadata['baseline_attempt_id']+'/snapshot',owner)['payload']
+                metadata['transfer_conditions']=[key for key in ('learner_facts','partner_private_facts','scenario_signature') if baseline.get(key)!=lesson['independent_task'].get(key)]
+            except Missing:pass
+        if entry_kind=='review':
+            session['task']=copy.deepcopy(lesson['independent_task'])
+            asset=next((r['payload'] for r in self.store.list('AudioAsset',owner) if r['payload'].get('text')==session['task']['opening']),{})
+            session['turns']=[{'turn_id':uid(),'speaker':'partner','text':session['task']['opening'],'audio_ref':asset.get('audio_ref')}]
         self.store.put('Session',id,owner,session)
         return self.view(id,owner)
 
     def view(self,id,owner):
         row=self.store.get('Session',id,owner);s=row['payload'];lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
-        task=s['task'];phase=s['phase']
+        task=s['task'];phase=s['phase'];s['owner']=owner
+        assessment=None
+        if phase=='finished':
+            try:assessment=self.store.get('AssessmentResult',id+'/'+task['task_id'],owner)['payload']
+            except Missing:pass
         # Only explicit projection fields are emitted; private facts/criteria remain server-side.
         view=LearnerLessonView(session_id=id,lesson_id=s['lesson_id'],lesson_version=s['lesson_version'],
-            task_id=task['task_id'],phase=phase,instruction=task['learner_prompt'] if phase!='learning' else '理解说法，换成自己的内容，然后遮住答案试说。',
+            task_id=task['task_id'],phase=phase,instruction=task['learner_prompt'],
             learner_facts=task['learner_facts'] if phase!='learning' else {},fixture=s['fixture'],
-            available_actions=(['learn','next'] if phase=='learning' else ['speak','request_repeat','finish']+(['request_hint'] if phase=='supported_practice' else [])) if phase not in ('finished','evaluating') else (['next'] if phase=='evaluating' and s.get('evaluating_phase')=='supported_practice' else ['finish'] if phase=='evaluating' else []),
+            available_actions=self.support.actions(s),
             materials=lesson['learning_materials'] if phase=='learning' else [],
-            completed_material_indices=sorted({e['material_index'] for e in s['learning_events']})).model_dump()
-        return {'view':view,'session_version':row['version'],'turns':[{k:t[k] for k in ('turn_id','speaker','text','transcript','audio_ref') if k in t} for t in s['turns']]}
+            completed_material_indices=sorted({e['material_index'] for e in s['learning_events']}),
+            title=(lesson.get('title_zh') if phase=='learning' else '') or self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])['outcome'],
+            entry_kind=s.get('entry_kind','course'),review_metadata={k:v for k,v in s.get('review_metadata',{}).items() if k not in ('transfer_conditions',)},
+            partner_name=task['partner_private_facts'].get('name','对方'),
+            demonstration=self.support.demo(s,lesson),guided_round=s.get('guided_index',0)+1 if phase in ('supported_practice','guided_feedback') else None,
+            guided_round_title=ROUND_NAMES[s.get('guided_index',0)] if phase in ('supported_practice','guided_feedback') else '',
+            support_used=s['support_used'],shadow_feedback=s.get('shadow_feedback'),assessment=assessment).model_dump()
+        public_turns=[]
+        for t in s['turns']:
+            public={k:t[k] for k in ('turn_id','speaker','text','transcript','audio_ref') if k in t}
+            if t['speaker']=='partner' and 'show_text' not in view['available_actions'] and phase not in ('finished','guided_feedback'):
+                public.pop('text',None)
+            public_turns.append(public)
+        return {'view':view,'session_version':row['version'],'turns':public_turns}
 
     def learned(self,id,owner,index,personal_text):
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
@@ -56,18 +87,31 @@ class Sessions:
             self.store.put('Session',id,owner,s,expected=row['version'],conn=c)
         return self.view(id,owner)
 
-    async def next(self,id,owner,expected):
+    async def next(self,id,owner,expected,advance_round=False):
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
         if row['version']!=expected:raise Conflict('Session changed')
         if s['phase']=='learning':
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             done={e['material_index'] for e in s['learning_events']}
-            if len(done)<len(lesson['learning_materials']):raise Conflict('请先完成表达替换和遮答案试说')
-            s['phase']='supported_practice'
+            if len(done)<len(lesson['learning_materials']):raise Conflict('请先完成本次学习内容')
+            if advance_round and len(set(s.get('shadow_completed_indices',[])))<len(lesson['learning_materials']):raise Conflict('请先完成每个表达的跟读')
+            await self.support.prepare(s,owner)
+            s['phase']='supported_practice';s['task']=copy.deepcopy(s['guided_tasks'][0])
         elif s['phase']=='supported_practice' or (s['phase']=='evaluating' and s.get('evaluating_phase')=='supported_practice'):
             if not any(t['speaker']=='learner' for t in s['turns']):raise Conflict('请先完成一次有提示练习')
             await self.finish_attempt(id,owner)
             row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
+            if advance_round and s.get('guided_index',2)<2:
+                s['guided_index']+=1
+                s.update(phase='supported_practice',task=copy.deepcopy(s['guided_tasks'][s['guided_index']]),turns=[],started_at=timestamp(),request_responses={})
+            elif advance_round:
+                s['phase']='guided_feedback'
+                self.store.put('Session',id,owner,s,expected=row['version'])
+                return self.view(id,owner)
+            else:
+                lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
+                s.update(phase='independent_application',task=copy.deepcopy(lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
+        elif s['phase']=='guided_feedback':
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             s.update(phase='independent_application',task=copy.deepcopy(lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
         else:raise Conflict('无法进入下一阶段')
@@ -85,21 +129,16 @@ class Sessions:
             saved=s['request_responses'][key]
             if saved['hash']!=hash:raise Conflict('Input ID reused with different data')
             return saved['response']
-        if s['phase'] not in ('supported_practice','independent_application'):raise Conflict('当前不能提交对话')
+        if s['phase'] not in ('supported_practice','independent_application','learning'):raise Conflict('当前不能提交对话')
         if entry['session_id']!=id or entry['task_id']!=s['task']['task_id']:raise Conflict('Input task mismatch')
         if entry.get('expected_session_version') is not None and entry['expected_session_version']!=row['version']:raise Conflict('Session changed')
         if len(s['turns'])>=60:raise Conflict('达到本次对话上限，请结束任务')
         support=[];kind=entry['type'];task=s['task']
-        if kind=='request_hint':
-            if s['phase']!='supported_practice':raise Conflict('独立任务不提供答案提示')
-            lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
-            target=self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])
-            hint=await self.provider.hint(task,s['turns'],lesson['learning_materials'],target)
-            text=hint.get('text','');support=['完整示例' if self.provider.fixture else '模型提示']
-            if not isinstance(text,str) or not text.strip() or len(text)>1000:raise ReviewRequired('没有可用提示')
-        elif kind=='request_repeat':
-            text=next((t['text'] for t in reversed(s['turns']) if t['speaker']=='partner'),task['opening']);support=['请求重复']
+        if kind in ('request_hint','request_repeat','request_translation'):
+            return await self.support.help(id,owner,entry,row,s)
         else:
+            if s['phase']=='learning':raise Conflict('请通过跟读入口提交录音')
+            if kind=='text' and 'text_input' not in self.support.actions(s):raise Conflict('本次任务不允许文字回应')
             turn={'turn_id':uid(),'speaker':'learner','input_id':key,'recorded_at':entry['recorded_at']}
             if kind=='speech':
                 asset=self.store.get('AudioAsset',entry['audio_ref'].rsplit('/',1)[-1],owner)['payload']
@@ -128,9 +167,11 @@ class Sessions:
         response=DialogueResponse(session_id=id,task_id=task['task_id'],turn_id=uid(),reply_to=key,
             text=text,audio_ref=asset['audio_ref'],support_provided=support).model_dump()
         s['turns'].append({'turn_id':response['turn_id'],'speaker':'partner','text':text,'audio_ref':response['audio_ref'],'support_provided':support})
-        s['request_responses'][key]={'hash':hash,'response':response}
+        public_response=copy.deepcopy(response)
+        if 'show_text' not in self.support.actions(s):public_response['text']=''
+        s['request_responses'][key]={'hash':hash,'response':public_response}
         self.store.put('Session',id,owner,s,expected=row['version'])
-        return response
+        return public_response
 
     async def finish_attempt(self,id,owner):
         row=self.store.get('Session',id,owner);s=row['payload']
@@ -141,7 +182,7 @@ class Sessions:
             attempt=TaskAttempt(attempt_id=attempt_id,user_id=owner,session_id=id,lesson_id=s['lesson_id'],lesson_version=s['lesson_version'],
                 map_version=lesson['map_version'],task_id=task['task_id'],task_version=task['task_version'],
                 target_ids=lesson['target_ids'],phase=s['phase'],task_snapshot_ref=attempt_id+'/snapshot',
-                turns=s['turns'],support_used=s['support_used'],fixture=s['fixture'],started_at=s['started_at'],finished_at=timestamp()).model_dump()
+                turns=s['turns'],review_metadata=s.get('review_metadata',{}),support_used=s['support_used'],fixture=s['fixture'],started_at=s['started_at'],finished_at=timestamp()).model_dump()
             if s['phase'] not in ('supported_practice','independent_application'):raise Conflict('当前没有可结束的任务')
             with self.store.transaction() as c:
                 self.store.put('TaskAttempt',attempt_id,owner,attempt,conn=c)

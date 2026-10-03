@@ -5,11 +5,11 @@ import secrets
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Literal
 from fastapi import FastAPI, Depends, Header, HTTPException, UploadFile, File, Request
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field, ConfigDict
-from sqlalchemy import insert, select
+from sqlalchemy import insert, select, update
 from modules.curriculum import CurriculumRepository
 from .config import Settings
 from .store import Store, uid, Missing, Conflict
@@ -21,8 +21,16 @@ from .byte_speech import DeepSeekByteProvider, wav_info
 from .generation import Generator
 from .assessment import Assessor
 from .sessions import Sessions
+from .feedback import Feedback
 
 class InputModel(BaseModel):model_config=ConfigDict(extra='forbid')
+class FeedbackMessage(InputModel):
+    content: str = Field(default='',max_length=4000)
+    images: list[str] = Field(default_factory=list,max_length=4)
+class FeedbackRequest(FeedbackMessage):
+    category: Literal['bug','account','vocab','speak','suggestion','other'] = 'bug'
+    contact: str = Field(default='',max_length=200)
+    app_version: str = Field(default='',max_length=100)
 class Preferences(InputModel):
     context: str = Field(default='校园与日常生活',max_length=200)
     interests: list[str] = Field(default_factory=list,max_length=10)
@@ -31,9 +39,21 @@ class GenerationRequest(InputModel):
     target_id: str | None = None
     profile_version: int | None = Field(default=None,ge=0)
     context: str | None = Field(default=None,max_length=200)
+    entry_kind: Literal['course','review'] = 'course'
     minutes: int = Field(default=10,ge=3,le=30)
-class SessionRequest(InputModel):lesson_id: str
-class NextRequest(InputModel):expected_session_version: int
+class SessionRequest(InputModel):
+    lesson_id: str
+    entry_kind: Literal['course','review'] = 'course'
+class NextRequest(InputModel):
+    expected_session_version: int
+    advance_round: bool = False
+class ShadowRequest(InputModel):
+    material_index: int = Field(ge=0)
+    audio_ref: str
+    input_id: str
+class TransitionRequest(InputModel):
+    action: str
+    expected_session_version: int
 class LearnRequest(InputModel):
     material_index: int = Field(ge=0)
     personal_text: str = Field(min_length=1,max_length=1000)
@@ -46,10 +66,11 @@ class PublishRequest(InputModel):review_id: str
 class Services:
     def __init__(self,settings,provider=None):
         settings.validate();self.settings=settings;self.store=Store(settings.database_url)
+        self.feedback=Feedback(settings,self.store)
         self.curriculum=CurriculumService(CurriculumRepository(settings.workspace),self.store)
         self.curriculum.bootstrap()
         self.provider=provider or (FixtureProvider(settings.workspace) if settings.mode=='fixture' else DeepSeekByteProvider(settings))
-        self.planner=Planner(self.curriculum,self.store)
+        self.planner=Planner(self.curriculum,self.store,settings.retention_days)
         self.generator=Generator(self.store,self.planner,self.curriculum,self.provider,settings)
         self.assessor=Assessor(self.store,self.curriculum,self.provider,settings)
         self.sessions=Sessions(self.store,self.curriculum,self.provider,self.generator,self.assessor,settings)
@@ -107,6 +128,49 @@ def create_app(settings=None,provider=None):
             svc.store.put('LearnerProfile',id,id,profile,conn=c)
         return {'user_id':id,'access_token':token,'profile':profile}
 
+    @app.post('/v1/feedback',status_code=201)
+    def feedback_create(data:FeedbackRequest,idempotency_key:Annotated[str,Header(min_length=1,max_length=200)],user=Depends(owner)):
+        return svc.feedback.create(user,idempotency_key,data.model_dump())
+    @app.get('/v1/feedback/mine')
+    def feedback_mine(user=Depends(owner)):return svc.feedback.mine(user)
+    @app.post('/v1/feedback/images',status_code=201)
+    async def feedback_upload(file:UploadFile=File(),user=Depends(owner)):
+        data=await file.read(2*1024*1024+1)
+        if len(data)>2*1024*1024:raise HTTPException(413,'图片不能超过2MB')
+        # Decode the entire image, rejecting malformed payloads and decompression bombs.
+        import io
+        from PIL import Image, UnidentifiedImageError
+        try:
+            with Image.open(io.BytesIO(data)) as image:
+                if image.width*image.height>20000000 or image.format not in ('JPEG','PNG'):raise ValueError('请选择JPEG或PNG图片')
+                image.verify()
+        except (UnidentifiedImageError,OSError,Image.DecompressionBombError):raise ValueError('图片内容无效')
+        cache_key=hashlib.sha256(user.encode()+data).hexdigest()
+        with svc.store.transaction() as c:
+            # Serialize repeated uploads by owner; retries reuse an unpredictable URL.
+            c.execute(update(svc.store.users).where(svc.store.users.c.id==user).values(created_at=svc.store.users.c.created_at))
+            try:
+                cached=svc.store.get('FeedbackImageDigest',cache_key,user,conn=c)['payload']
+                return {'url':'/v1/feedback/images/'+cached['image_id']}
+            except Missing:pass
+            id=secrets.token_hex(16);filename='feedback-'+id
+            (settings.media_dir/filename).write_bytes(data)
+            svc.store.put('FeedbackImage',id,user,{'filename':filename,'mime':'image/jpeg' if data.startswith(b'\xff\xd8') else 'image/png'},conn=c)
+            svc.store.put('FeedbackImageDigest',cache_key,user,{'image_id':id},conn=c)
+        return {'url':'/v1/feedback/images/'+id}
+    @app.get('/v1/feedback/images/{id}')
+    def feedback_image(id:str):
+        # Random capability URL is compatible with the existing admin image viewer.
+        asset=svc.store.get('FeedbackImage',id)['payload']
+        return FileResponse(settings.media_dir/asset['filename'],media_type=asset['mime'],headers={'Cache-Control':'private, max-age=86400','X-Content-Type-Options':'nosniff'})
+    @app.get('/v1/feedback/{id}')
+    def feedback_get(id:str,user=Depends(owner)):return svc.feedback.get(user,id)
+    @app.post('/v1/feedback/{id}/messages')
+    def feedback_reply(id:str,data:FeedbackMessage,idempotency_key:Annotated[str,Header(min_length=1,max_length=200)],user=Depends(owner)):
+        return svc.feedback.reply(user,id,idempotency_key,data.model_dump())
+    @app.post('/v1/feedback/{id}/close')
+    def feedback_close(id:str,user=Depends(owner)):return svc.feedback.close(user,id)
+
     @app.get('/v1/profile')
     def profile(user=Depends(owner)):return svc.store.get('LearnerProfile',user,user)['payload']
 
@@ -126,6 +190,10 @@ def create_app(settings=None,provider=None):
     def target(id:str,user=Depends(owner)):
         try:return svc.curriculum.target(id)
         except KeyError:raise Missing('target')
+
+    @app.get('/v1/recommendations')
+    def recommendations(user=Depends(owner)):
+        return svc.planner.recommendations(svc.store.get('LearnerProfile',user,user)['payload'])
 
     @app.get('/v1/contracts')
     def contracts():return {name:c.model_json_schema() for name,c in CONTRACTS.items()}
@@ -165,13 +233,19 @@ def create_app(settings=None,provider=None):
             'learner_ready':r['payload']['learner_ready'],'fixture':r['payload']['provenance']['fixture']} for r in svc.store.list('LessonPackage',user)]
 
     @app.post('/v1/sessions',status_code=201)
-    def session(data:SessionRequest,user=Depends(owner)):return svc.sessions.create(user,data.lesson_id)
+    def session(data:SessionRequest,user=Depends(owner)):return svc.sessions.create(user,data.lesson_id,data.entry_kind)
     @app.get('/v1/sessions/{id}')
     def view(id:str,user=Depends(owner)):return svc.sessions.view(id,user)
     @app.post('/v1/sessions/{id}/learn')
     def learn(id:str,data:LearnRequest,user=Depends(owner)):return svc.sessions.learned(id,user,data.material_index,data.personal_text)
     @app.post('/v1/sessions/{id}/next')
-    async def next_phase(id:str,data:NextRequest,user=Depends(owner)):return await svc.sessions.next(id,user,data.expected_session_version)
+    async def next_phase(id:str,data:NextRequest,user=Depends(owner)):return await svc.sessions.next(id,user,data.expected_session_version,data.advance_round)
+    @app.post('/v1/sessions/{id}/shadow')
+    async def shadow(id:str,data:ShadowRequest,user=Depends(owner)):
+        return await svc.sessions.support.shadow(id,user,data.model_dump())
+    @app.post('/v1/sessions/{id}/transition')
+    async def transition(id:str,data:TransitionRequest,user=Depends(owner)):
+        return await svc.sessions.support.transition(id,user,data.action,data.expected_session_version)
     @app.post('/v1/sessions/{id}/inputs')
     async def input(id:str,data:LearnerInput,user=Depends(owner)):return await svc.sessions.input(id,user,data.model_dump())
     @app.post('/v1/sessions/{id}/finish')

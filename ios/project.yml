@@ -1,14 +1,14 @@
 name: SayWithV3
 options:
-  bundleIdPrefix: com.saywith
+  bundleIdPrefix: com.zhiyuanv
   deploymentTarget:
     iOS: "17.0"
 settings:
   base:
     SWIFT_VERSION: "6.0"
     TARGETED_DEVICE_FAMILY: "1"
-    MARKETING_VERSION: "0.1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "1.0.6"
+    CURRENT_PROJECT_VERSION: "599"
 targets:
   SayWithV3:
     type: application
@@ -17,17 +17,22 @@ targets:
     info:
       path: SayWithV3/Info.plist
       properties:
+        CFBundleDisplayName: 背单词练口语
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        ITSAppUsesNonExemptEncryption: false
         SayWithBackendURL: "$(SAYWITH_BACKEND_URL)"
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
     settings:
       base:
-        SAYWITH_BACKEND_URL: ""
-        PRODUCT_BUNDLE_IDENTIFIER: com.saywith.v3
+        SAYWITH_BACKEND_URL: "https://api.saywith.zhiyuanv.com/learning"
+        PRODUCT_BUNDLE_IDENTIFIER: com.zhiyuanv.beidanciliankouyu
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1"
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: SayWith
+        INFOPLIST_KEY_CFBundleDisplayName: 背单词练口语
         INFOPLIST_KEY_NSMicrophoneUsageDescription: 录音用于英语口语练习和表现评价。
         INFOPLIST_KEY_NSLocalNetworkUsageDescription: 连接你的英语教学后端服务。
         INFOPLIST_KEY_UILaunchScreen_Generation: YES

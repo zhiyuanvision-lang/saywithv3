@@ -4,18 +4,15 @@ import Observation
 @MainActor @Observable
 final class LearningModel {
     static var defaultBackendURL: String {
-        #if targetEnvironment(simulator)
-        return "http://localhost:8083"
-        #else
         let configured=Bundle.main.object(forInfoDictionaryKey:"SayWithBackendURL") as? String ?? ""
-        return configured.hasPrefix("http://") || configured.hasPrefix("https://") ? configured : ""
-        #endif
+        return configured.hasPrefix("https://") ? configured : "https://api.saywith.zhiyuanv.com/learning"
     }
-    var baseURL = UserDefaults.standard.string(forKey:"backendURL") ?? LearningModel.defaultBackendURL
+    var baseURL = LearningModel.defaultBackendURL
     var stage = "A2"
     var context = "校园与日常生活"
-    var targets: [Target] = []
     var profile: Profile?
+    var recommendations:Recommendations?
+    var reviewEntry=false
     var health: Health?
     var job: Job?
     var session: SessionState?
@@ -26,6 +23,14 @@ final class LearningModel {
     var selectedMaterial = 0
     var answerVisible = true
     var typedReply = ""
+    var requestStatus=""
+    var hintText:String?
+    var translations:[String:String]=[:]
+    var shadowFeedback:ShadowFeedback?
+    private var pendingUpload:Data?
+    private var pendingShadowAudio:Data?
+    var hasPendingShadow:Bool {pendingShadowAudio != nil}
+    private var pendingShadowRequest:[String:JSONValue]?
     private var api: API?
     private var activeJobKey: String?
     private var storageScope: String { "-" + (apiScope ?? baseURL) }
@@ -33,10 +38,17 @@ final class LearningModel {
     private var pendingInput: [String: JSONValue]?
     var hasAccount: Bool {profile != nil}
 
+    init() {
+        #if DEBUG
+        baseURL=UserDefaults.standard.string(forKey:"backendURL") ?? baseURL
+        let args=ProcessInfo.processInfo.arguments
+        if let i=args.firstIndex(of:"--backend-url"),args.indices.contains(i+1) {baseURL=args[i+1]}
+        #endif
+    }
     func perform(_ operation: () async throws -> Void) async {
         guard !busy else {return}
         busy=true;error=nil
-        defer {busy=false}
+        defer {busy=false;requestStatus=""}
         do {try await operation()}
         catch is CancellationError {}
         catch {self.error=error.localizedDescription}
@@ -61,11 +73,15 @@ final class LearningModel {
             stage=loaded.preferences["reference_stage"]?.text ?? stage
             context=loaded.preferences["context"]?.text ?? context
         }
-        let list: TargetList=try await client.request("v1/curriculum/targets?stage="+stage)
         if apiScope != url.absoluteString {session=nil;job=nil;assessment=nil;pendingInput=nil}
-        targets=list.targets;api=client;profile=connected;health=loadedHealth;apiScope=url.absoluteString
-        if create {session=nil;job=nil;assessment=nil;pendingInput=nil;activeJobKey=nil}
+        recommendations=try await client.request("v1/recommendations")
+        api=client;profile=connected;health=loadedHealth;apiScope=url.absoluteString
+        if create {
+            session=nil;job=nil;assessment=nil;pendingInput=nil;activeJobKey=nil
+            for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest","activeEntryKind"] {UserDefaults.standard.removeObject(forKey:key+storageScope)}
+        }
         else {
+            reviewEntry=UserDefaults.standard.string(forKey:"activeEntryKind"+storageScope)=="review" || (UserDefaults.standard.data(forKey:"pendingJobRequest"+storageScope).flatMap {try? JSONDecoder().decode([String:JSONValue].self,from:$0)}?["entry_kind"]?.text)=="review"
             activeJobKey=UserDefaults.standard.string(forKey:"pendingJobKey"+storageScope)
             if let id=UserDefaults.standard.string(forKey:"activeJob"+storageScope) {
                 job=try await client.request("v1/course-generation-jobs/"+id)
@@ -75,6 +91,7 @@ final class LearningModel {
         if !create, let id=UserDefaults.standard.string(forKey:"activeSession"+storageScope) {
             do {
                 session=try await client.request("v1/sessions/"+id)
+                if session?.view.phase=="abandoned" {session=nil;UserDefaults.standard.removeObject(forKey:"activeSession"+storageScope)}
                 if let view=session?.view, view.phase == "learning" {
                     let completed=view.completedMaterialIndices ?? []
                     selectedMaterial=view.materials.indices.first { !completed.contains($0) } ?? max(0,view.materials.count-1)
@@ -86,21 +103,25 @@ final class LearningModel {
     func refresh() async throws {
         guard let api else {return}
         profile=try await api.request("v1/profile")
-        let list:TargetList=try await api.request("v1/curriculum/targets?stage="+stage);targets=list.targets
+        recommendations=try await api.request("v1/recommendations")
     }
-    func generate(target: Target? = nil) async throws {
+    func generate(review:ReviewRecommendation?=nil) async throws {
+        reviewEntry=review != nil
+        try await refresh()
         guard let api,let profile else {throw APIError.missingToken}
         if job?.terminal != false {
             let key=activeJobKey ?? UUID().uuidString;activeJobKey=key
             UserDefaults.standard.set(key,forKey:"pendingJobKey"+storageScope)
             var request:[String:JSONValue]=["minutes":.number(10),"context":.string(context),"profile_version":.number(Double(profile.profileVersion))]
-            if let target {request["target_id"] = .string(target.targetId)}
+            if let review {request["target_id"] = .string(review.targetId);request["entry_kind"] = .string("review");request["minutes"] = .number(Double(review.minutes))}
             else if health?.mode == "fixture" {request["target_id"] = .string("ARRANGE.A2.s2")}
             if let saved=UserDefaults.standard.data(forKey:"pendingJobRequest"+storageScope), activeJobKey != nil {
                 request=try JSONDecoder().decode([String:JSONValue].self,from:saved)
             } else {
                 UserDefaults.standard.set(try JSONEncoder().encode(request),forKey:"pendingJobRequest"+storageScope)
             }
+            reviewEntry=request["entry_kind"]?.text=="review"
+            UserDefaults.standard.set(reviewEntry ? "review":"course",forKey:"activeEntryKind"+storageScope)
             job=try await api.request("v1/course-generation-jobs",method:"POST",body:request,key:key)
             UserDefaults.standard.set(job?.jobId,forKey:"activeJob"+storageScope)
         }
@@ -117,11 +138,11 @@ final class LearningModel {
                 UserDefaults.standard.removeObject(forKey:"pendingJobRequest"+storageScope)
                 if let lesson=current.resultLessonId {
                     if session?.view.lessonId != lesson {
-                        session=try await api.request("v1/sessions",method:"POST",body:["lesson_id":.string(lesson)])
+                        session=try await api.request("v1/sessions",method:"POST",body:["lesson_id":.string(lesson),"entry_kind":.string(reviewEntry ? "review":"course")])
                     }
                     if let session {UserDefaults.standard.set(session.view.sessionId,forKey:"activeSession"+storageScope)}
-                    selectedMaterial=0;answerVisible=true;assessment=nil
-                } else {throw APIError.server(current.error?["message"]?.text ?? "课程暂未就绪，请重试。")}
+                    selectedMaterial=0;answerVisible=true;assessment=nil;shadowFeedback=nil;hintText=nil;translations=[:];typedReply=""
+                } else {throw APIError.server(current.state=="needs_review" ? "这份课程需要重新准备，请再次尝试。":"课程暂未就绪，请重试。")}
                 return
             }
             try await Task.sleep(for:.seconds(2))
@@ -145,29 +166,36 @@ final class LearningModel {
     }
     func next() async throws {
         guard let api,let current=session else {return}
-        session=try await api.request("v1/sessions/"+current.view.sessionId+"/next",method:"POST",body:["expected_session_version":.number(Double(current.sessionVersion))])
+        session=try await api.request("v1/sessions/"+current.view.sessionId+"/next",method:"POST",body:["expected_session_version":.number(Double(current.sessionVersion)),"advance_round":.bool(true)])
+        hintText=nil;shadowFeedback=nil
         personalText="";answerVisible=true;typedReply=""
     }
-    func send(kind: String, audio: Data? = nil) async throws {
+    func send(kind: String, audio: Data? = nil, hintLevel:String="intent",sourceTurnID:String?=nil) async throws {
         guard let api,let current=session else {return}
         if pendingInput == nil {
             var body:[String:JSONValue]=["schema_version":.string("1.0"),"session_id":.string(current.view.sessionId),
                 "task_id":.string(current.view.taskId),"input_id":.string(UUID().uuidString),"type":.string(kind),
                 "recorded_at":.string(ISO8601DateFormatter().string(from:Date())),
-                "expected_session_version":.number(Double(current.sessionVersion))]
+                "expected_session_version":.number(Double(current.sessionVersion)),"hint_level":.string(hintLevel)]
+            if let sourceTurnID {body["source_turn_id"] = .string(sourceTurnID)}
             if let audio {
-                let uploaded=try await api.upload(audio);body["audio_ref"] = .string(uploaded.audioRef)
+                pendingUpload=audio;requestStatus="上传中"
+                let uploaded=try await api.upload(audio);body["audio_ref"] = .string(uploaded.audioRef);pendingUpload=nil
             } else if kind == "text" {body["text"] = .string(typedReply)}
             pendingInput=body
         }
-        let _:Dialogue=try await api.request("v1/sessions/"+current.view.sessionId+"/inputs",method:"POST",body:pendingInput)
+        requestStatus="等待回应"
+        let response:Dialogue=try await api.request("v1/sessions/"+current.view.sessionId+"/inputs",method:"POST",body:pendingInput)
+        if response.kind=="hint" {hintText=response.text}
+        if response.kind=="translation",let key=sourceTurnID ?? pendingInput?["source_turn_id"]?.text {translations[key]=response.text}
         pendingInput=nil;typedReply=""
         session=try await api.request("v1/sessions/"+current.view.sessionId)
     }
-    func retryInput() async throws {try await send(kind:"text")}
-    var hasPendingInput: Bool {pendingInput != nil}
+    func retryInput() async throws {try await send(kind:pendingUpload == nil ? "text" : "speech",audio:pendingUpload)}
+    var hasPendingInput: Bool {pendingInput != nil || pendingUpload != nil}
     func finish() async throws {
         guard let api,let current=session else {return}
+        requestStatus="正在整理本次表现"
         assessment=try await api.request("v1/sessions/"+current.view.sessionId+"/finish",method:"POST")
         session=try await api.request("v1/sessions/"+current.view.sessionId)
         try await refresh()
@@ -176,9 +204,52 @@ final class LearningModel {
         guard let api else {throw APIError.missingToken}
         return try await api.audio(ref)
     }
+    func shadow(_ audio:Data) async throws {
+        guard let api,let current=session else {return}
+        if pendingShadowRequest==nil {
+            pendingShadowAudio=audio;requestStatus="上传中"
+            let uploaded=try await api.upload(audio)
+            pendingShadowRequest=["material_index":.number(Double(selectedMaterial)),"audio_ref":.string(uploaded.audioRef),"input_id":.string(UUID().uuidString)]
+        }
+        requestStatus="正在确认跟读"
+        let result:ShadowResponse=try await api.request("v1/sessions/"+current.view.sessionId+"/shadow",method:"POST",body:pendingShadowRequest)
+        session=result.session;shadowFeedback=result.feedback;pendingShadowRequest=nil;pendingShadowAudio=nil
+    }
+    func retryShadow() async throws {if let audio=pendingShadowAudio {try await shadow(audio)}}
+    func discardShadowRequest() {pendingShadowRequest=nil;pendingShadowAudio=nil}
+    func advanceMaterial() async throws {
+        guard let current=session else {return}
+        if selectedMaterial+1<current.view.materials.count {
+            selectedMaterial+=1;shadowFeedback=nil;answerVisible=true
+        } else {try await next()}
+    }
+    func transition(_ action:String) async throws {
+        guard let api,let current=session else {return}
+        session=try await api.request("v1/sessions/"+current.view.sessionId+"/transition",method:"POST",body:[
+            "action":.string(action),"expected_session_version":.number(Double(current.sessionVersion))])
+        pendingInput=nil;pendingUpload=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;assessment=nil;shadowFeedback=nil
+        if action=="exit" {leave()}
+    }
+    func backToHome() {
+        if session?.view.phase=="finished" {leave();return}
+        session=nil;assessment=nil;hintText=nil;shadowFeedback=nil
+    }
+    func continueCourse() async throws {
+        guard let api else {return}
+        if let id=UserDefaults.standard.string(forKey:"activeSession"+storageScope) {
+            let restored:SessionState=try await api.request("v1/sessions/"+id)
+            if !["finished","abandoned"].contains(restored.view.phase) {
+                session=restored
+                let completed=restored.view.completedMaterialIndices ?? []
+                selectedMaterial=restored.view.materials.indices.first { !completed.contains($0) } ?? max(0,restored.view.materials.count-1)
+                return
+            }
+        }
+        try await generate()
+    }
     func leave() {
-        session=nil;assessment=nil;pendingInput=nil;job=nil;activeJobKey=nil
-        for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest"] {
+        session=nil;assessment=nil;pendingInput=nil;pendingUpload=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;translations=[:];shadowFeedback=nil;job=nil;activeJobKey=nil
+        for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest","activeEntryKind"] {
             UserDefaults.standard.removeObject(forKey:key+storageScope)
         }
     }

@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		3845954177D2286C4C138A26 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0FE6277B336B27A34CABB /* Audio.swift */; };
 		48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03623349FEC8F4563DE3BC /* SayWithApp.swift */; };
+		663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */; };
 		747E9803591012A1BA7258E0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459D554CE56EDFF8F0E2A11 /* API.swift */; };
+		8A7C744506720C1C40786C48 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */; };
 		8A99C2B5200CE938453C377C /* LearningFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16211DA0A439F9A2764CA2A4 /* LearningFlowTests.swift */; };
 		8B19C2AD608C23BC93CC5F46 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B405BB603C7503EC6E1B4 /* Models.swift */; };
+		DB93384914AE8342101CBC3A /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C958FA0FD29C3E60202B316 /* Feedback.swift */; };
 		F4752E47C60F6F1E8BF4BFAF /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F664AB156CCB99EDC8AA9 /* ContractTests.swift */; };
 		F7B8862373817EE2892AF064 /* LearningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */; };
 		FD2F564D8E04DBAD401D6C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7752775819A61241A400C39B /* Assets.xcassets */; };
@@ -40,6 +43,7 @@
 		288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModel.swift; sourceTree = "<group>"; };
 		299B405BB603C7503EC6E1B4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		34D0FE6277B336B27A34CABB /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		4C958FA0FD29C3E60202B316 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		647F664AB156CCB99EDC8AA9 /* ContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTests.swift; sourceTree = "<group>"; };
 		7752775819A61241A400C39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D13FE2B3CE2B9C863755A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		B459D554CE56EDFF8F0E2A11 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BAD04842E4F67A5A8825E2AE /* SayWithV3Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SayWithV3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE03623349FEC8F4563DE3BC /* SayWithApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayWithApp.swift; sourceTree = "<group>"; };
+		E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -92,9 +98,12 @@
 				B459D554CE56EDFF8F0E2A11 /* API.swift */,
 				7752775819A61241A400C39B /* Assets.xcassets */,
 				34D0FE6277B336B27A34CABB /* Audio.swift */,
+				4C958FA0FD29C3E60202B316 /* Feedback.swift */,
 				77D13FE2B3CE2B9C863755A7 /* Info.plist */,
 				288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */,
+				E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */,
 				299B405BB603C7503EC6E1B4 /* Models.swift */,
+				E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */,
 				DE03623349FEC8F4563DE3BC /* SayWithApp.swift */,
 			);
 			path = SayWithV3;
@@ -198,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2F564D8E04DBAD401D6C80 /* Assets.xcassets in Resources */,
+				8A7C744506720C1C40786C48 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +220,9 @@
 			files = (
 				747E9803591012A1BA7258E0 /* API.swift in Sources */,
 				3845954177D2286C4C138A26 /* Audio.swift in Sources */,
+				DB93384914AE8342101CBC3A /* Feedback.swift in Sources */,
 				F7B8862373817EE2892AF064 /* LearningModel.swift in Sources */,
+				663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */,
 				8B19C2AD608C23BC93CC5F46 /* Models.swift in Sources */,
 				48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */,
 			);
@@ -282,7 +294,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 599;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -301,7 +313,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -324,7 +336,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.SayWithV3UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.SayWithV3UITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SayWithV3;
@@ -335,10 +347,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SayWithV3/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SayWith;
+				INFOPLIST_KEY_CFBundleDisplayName = "背单词练口语";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "连接你的英语教学后端服务。";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "录音用于英语口语练习和表现评价。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,8 +360,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.v3;
-				SAYWITH_BACKEND_URL = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.beidanciliankouyu;
+				SAYWITH_BACKEND_URL = "https://api.saywith.zhiyuanv.com/learning";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -364,7 +377,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.SayWithV3Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.SayWithV3Tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SayWithV3.app/SayWithV3";
@@ -381,7 +394,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.SayWithV3Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.SayWithV3Tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SayWithV3.app/SayWithV3";
@@ -398,7 +411,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.SayWithV3UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.SayWithV3UITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SayWithV3;
@@ -439,7 +452,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 599;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -452,7 +465,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,10 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SayWithV3/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = SayWith;
+				INFOPLIST_KEY_CFBundleDisplayName = "背单词练口语";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "连接你的英语教学后端服务。";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "录音用于英语口语练习和表现评价。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -480,8 +494,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saywith.v3;
-				SAYWITH_BACKEND_URL = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.beidanciliankouyu;
+				SAYWITH_BACKEND_URL = "https://api.saywith.zhiyuanv.com/learning";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

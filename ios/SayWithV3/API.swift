@@ -46,10 +46,12 @@ actor API {
         session = URLSession(configuration:config)
     }
     func authenticate(_ token: String) {self.token = token}
-    private func endpoint(_ path: String) throws -> URL {
+    func endpoint(_ path: String) throws -> URL {
         guard let relative = URLComponents(string:path), relative.host == nil, relative.scheme == nil,
+              !relative.path.split(separator:"/").contains(".."),
               var result = URLComponents(url:base,resolvingAgainstBaseURL:false) else {throw APIError.invalidURL}
-        result.path = "/" + relative.path.trimmingCharacters(in:CharacterSet(charactersIn:"/"))
+        result.path = base.path.trimmingCharacters(in:CharacterSet(charactersIn:"/"))
+        result.path = "/" + ([result.path,relative.path.trimmingCharacters(in:CharacterSet(charactersIn:"/"))].filter {!$0.isEmpty}.joined(separator:"/"))
         result.query = relative.query
         guard let url = result.url else {throw APIError.invalidURL}
         return url
@@ -57,7 +59,7 @@ actor API {
     static func validatedURL(_ raw: String) throws -> URL {
         guard let url = URL(string: raw.trimmingCharacters(in:.whitespacesAndNewlines)),
               let host = url.host, url.user == nil, url.password == nil,
-              url.path.isEmpty || url.path == "/", url.query == nil, url.fragment == nil else {throw APIError.invalidURL}
+              ["","/","/learning","/learning/"].contains(url.path), url.query == nil, url.fragment == nil else {throw APIError.invalidURL}
         if url.scheme == "https" {return url}
         #if DEBUG
         if url.scheme == "http", ["localhost","127.0.0.1"].contains(host) || host.hasSuffix(".local") {return url}
@@ -97,6 +99,17 @@ actor API {
         try validate(response,data:result)
         let decoder=JSONDecoder();decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode(AudioUpload.self,from:result)
+    }
+    func feedbackImage(_ data:Data) async throws -> FeedbackUpload {
+        guard let token else {throw APIError.missingToken}
+        let boundary=UUID().uuidString
+        var body=Data("--\(boundary)\r\nContent-Disposition: form-data; name=\"file\"; filename=\"feedback.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n".utf8)
+        body.append(data);body.append(Data("\r\n--\(boundary)--\r\n".utf8))
+        var req=URLRequest(url:try endpoint("v1/feedback/images"));req.httpMethod="POST"
+        req.setValue("Bearer "+token,forHTTPHeaderField:"Authorization")
+        req.setValue("multipart/form-data; boundary=\(boundary)",forHTTPHeaderField:"Content-Type")
+        let (result,response)=try await session.upload(for:req,from:body);try validate(response,data:result)
+        return try JSONDecoder().decode(FeedbackUpload.self,from:result)
     }
     func audio(_ ref: String) async throws -> Data {
         guard ref.hasPrefix("/v1/media/"), let token else {throw APIError.missingToken}

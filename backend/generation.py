@@ -11,7 +11,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from pydantic import ValidationError
 from .contracts import LessonPackage
-from .providers import ProviderFailure, ReviewRequired, normalized
+from .providers import ProviderFailure, ReviewRequired, normalized, audio_normalized
 from .byte_speech import wav_info
 from .store import uid, digest, Conflict
 
@@ -34,13 +34,18 @@ def inspect_lesson(lesson,assignment,target):
         own=set(task['learner_facts'].get('available_times',[]));partner=set(task['partner_private_facts'].get('available_times',[]))
         if own or partner:
             possible=own&partner
-            if not possible or set(contract.get('acceptable_times',[]))!=possible:issues.append('时间任务无解或可接受结果不完整')
+            if not possible or set(contract.get('acceptable_times',[]))!=possible:
+                issues.append(name+'.assessment_contract.acceptable_times 必须为双方 available_times 的完整交集 '+json.dumps(sorted(possible),ensure_ascii=False)+'；该字段实际为 '+json.dumps(contract.get('acceptable_times'),ensure_ascii=False)+'。把该数组写入 assessment_contract，不是仅写入 partner_private_facts。若交集为空则修改双方时间条件，使任务可解。')
+    previous=assignment.get('resource_plan',{}).get('previous_task')
+    if previous and previous['learner_facts']==lesson['independent_task']['learner_facts'] and previous['partner_private_facts']==lesson['independent_task']['partner_private_facts']:issues.append('复习任务与基准任务事实相同，请更换事实')
     practice=lesson.get('practice_task',{})
     independent=lesson['independent_task']
     if practice and (practice['learner_facts']==independent['learner_facts'] and practice['partner_private_facts']==independent['partner_private_facts']):issues.append('独立变体未改变任务条件')
     if any(x in independent['allowed_support'] for x in ('完整答案','关键词提示','句型补全')):issues.append('独立检查提供了答案提示')
     if len(lesson['learning_materials'])>assignment['difficulty']['new_expression_limit']:issues.append('新表达超过本次负荷限制')
     for material in lesson['learning_materials']:
+        if re.search(r'\+|_{2,}|<[^>]+>|\[[^\]]+\]',material['expression']):
+            issues.append('learning_materials.expression 必须为可直接朗读的完整示例，例如 How about four thirty?；句型占位符只能放入 hint_pattern，不能合成语音。')
         if not material['expression'].strip() or not material.get('explanation_zh') or not material.get('personal_prompt_zh'):issues.append('学习材料缺少解释或个人替换要求')
     return issues
 
@@ -50,7 +55,7 @@ class Generator:
 
     async def audio(self,text,owner,purpose):
         key=digest({'text':text,'speaker':self.settings.doubao_speaker,'resource':self.settings.doubao_tts_resource,
-                    'fixture':self.provider.fixture})
+                    'fixture':self.provider.fixture,'speech_text_version':'clock-v2'})
         from .store import Missing
         try:
             row=self.store.get('AudioCache',key)
@@ -106,7 +111,15 @@ class Generator:
                     # Resource IDs are assigned on the server, not trusted model claims.
                     m['resource_id']='expr:'+digest({'expression':normalized(m['expression']),'target':p['target']['target_id']})[:24]
                 generated['practice_task_ref']='tasks/'+generated.get('practice_task',{}).get('task_id','missing')
-                lesson=LessonPackage.model_validate(generated).model_dump()
+                try:
+                    lesson=LessonPackage.model_validate(generated).model_dump()
+                except ValidationError as error:
+                    if p.get('text_revisions',0)<2 and not self.provider.fixture:
+                        p['text_revisions']=p.get('text_revisions',0)+1
+                        p['repair_feedback']='修复JSON结构，禁止额外字段（例如根对象type）；只返回LessonPackage。'+str(error)[:3000]
+                        self.store.advance(row,'generating_text',p,release=True)
+                        return True
+                    raise ReviewRequired('课程结构校验未通过：'+str(error)[:1200])
                 p['lesson']=lesson;row=self.store.advance(row,'checking_text',p)
             if 'text_report' not in p:
                 issues=inspect_lesson(p['lesson'],p['assignment'],p['target'])
@@ -140,8 +153,11 @@ class Generator:
             for asset in p['audio_assets']:
                 if asset['quality']=='passed' or self.provider.fixture:continue
                 transcription=await self.provider.transcribe((self.settings.media_dir/asset['filename']).read_bytes(),asset['filename'])
-                actual=normalized(transcription['text']);expected=normalized(asset['text'])
-                if SequenceMatcher(None,expected,actual).ratio()<0.85:
+                actual=audio_normalized(transcription['text']);expected=audio_normalized(asset['text'])
+                alignment=SequenceMatcher(None,expected,actual).ratio()
+                p.setdefault('audio_alignment_checks',[]).append({'asset_id':asset['asset_id'],'expected':asset['text'],'transcript':transcription['text'],'similarity':alignment})
+                row=self.store.advance(row,'checking_audio',p)
+                if alignment<0.85:
                     raise ReviewRequired('合成音频与文本对照不一致，需要音频审核')
                 # Critical numbers and negations need strict matching after number normalization.
                 numbers=lambda x:re.findall(r'\b\d+\b',x)
