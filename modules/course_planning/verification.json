@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-03",
+  "unit_tests": {
+    "passed": 13,
+    "scope": "curriculum read-only contract, path and vocabulary integrity; course schema positive/negative fixtures"
+  },
+  "local_snapshot": {
+    "files_hash_verified": 184,
+    "data_checks_passed": 2033,
+    "path": "releases/curriculum/1.0.1-model-reviewed",
+    "map_version": "1.0.1-model-reviewed"
+  },
+  "runtime_course_service_implemented": false,
+  "sql_executed": false,
+  "real_model_audio_calls": false,
+  "schema_dependency": "jsonschema==4.25.1",
+  "canvas_typescript_check": "passed"
+}

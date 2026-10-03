@@ -1,0 +1,40 @@
+{
+  "status": "completed_model_assisted_review",
+  "version": "1.0.1-model-reviewed",
+  "groups_reviewed": 140,
+  "targets_reviewed": 424,
+  "targets_reworded": 24,
+  "existing_relations_reviewed": 1315,
+  "reference_decisions": {
+    "retain_component_reference": 500,
+    "reject_for_this_group": 173,
+    "reject_for_this_target": 642
+  },
+  "targets_with_adopted_partial_reference": 223,
+  "targets_without_adopted_reference": 201,
+  "new_reference_assignments": 12,
+  "source_audit": {
+    "original_rows": 4057,
+    "coordinate_rows": 4054,
+    "corrected_existing_rows": 167,
+    "original_rows_not_reconciled": [
+      "GSE.GENERAL.Reading.10.52",
+      "GSE.GENERAL.Listening.20.334",
+      "GSE.ACADEMIC.Reading.13.53",
+      "GSE.ACADEMIC.Speaking.46.687",
+      "GSE.PROFESSIONAL.Reading.14.59",
+      "GSE.PROFESSIONAL.Reading.14.60",
+      "GSE.PROFESSIONAL.Listening.27.322",
+      "GSE.PROFESSIONAL.Speaking.41.591"
+    ]
+  },
+  "completed_review_is_not_public_release": true,
+  "independent_review": false,
+  "public_ready": false,
+  "remaining_checks": [
+    "具体课程及独立变体自动质检",
+    "实际大模型与语音评分链路测试",
+    "真实使用证据与延迟保持检查"
+  ],
+  "review_method": "助手读取全量分组、子目标和既有候选原文，手工编写review_decisions.py中的逐目标决策矩阵；build_review.py落实决策并记录每条关系。不是关键词分数达到阈值就算语义审核。"
+}

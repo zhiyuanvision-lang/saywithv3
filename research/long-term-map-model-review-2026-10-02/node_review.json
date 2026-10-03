@@ -1,0 +1,1809 @@
+[
+  {
+    "node_id": "CONTACT.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.361",
+      "GSE.GENERAL.Speaking.21.341"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.22.376",
+      "GSE.GENERAL.Speaking.22.390",
+      "GSE.ACADEMIC.Speaking.41.570",
+      "GSE.GENERAL.Speaking.23.400",
+      "GSE.GENERAL.Speaking.21.337"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.503",
+      "GSE.GENERAL.Speaking.25.448",
+      "GSE.GENERAL.Speaking.28.549"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.596"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.33.696"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.808",
+      "GSE.GENERAL.Speaking.36.804"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "CONTACT.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.817"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.336",
+      "GSE.GENERAL.Listening.14.143"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.353",
+      "GSE.GENERAL.Speaking.23.404"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.505",
+      "GSE.GENERAL.Speaking.25.449",
+      "GSE.GENERAL.Speaking.28.529",
+      "GSE.GENERAL.Speaking.28.563",
+      "GSE.GENERAL.Speaking.25.452"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.48.723",
+      "GSE.PROFESSIONAL.Speaking.52.814"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.65.1027"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "概括文章和微调表达不能直接证明核查来源可信度；保持原创目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "INFO.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.817"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.343",
+      "GSE.GENERAL.Speaking.21.356",
+      "GSE.GENERAL.Speaking.22.382"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.22.382",
+      "GSE.GENERAL.Speaking.22.394",
+      "GSE.GENERAL.Speaking.21.356"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.440",
+      "GSE.GENERAL.Speaking.25.469"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "预订修改属于服务请求，不能证明描述变化；经历叙述仅参考例子和影响表达。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.30.608"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.34.737",
+      "GSE.GENERAL.Speaking.32.673"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.35.787"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DESCRIBE.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.355"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.23.406",
+      "GSE.GENERAL.Speaking.22.388",
+      "GSE.GENERAL.Speaking.23.413",
+      "GSE.GENERAL.Speaking.24.423",
+      "GSE.GENERAL.Speaking.24.438"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.28.534",
+      "GSE.GENERAL.Speaking.28.545",
+      "GSE.PROFESSIONAL.Speaking.45.662"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.30.608",
+      "GSE.GENERAL.Speaking.30.621"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.33.702"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "NEEDS.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.817"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "点餐与索取物品不属于叙述活动顺序；只留日常生活描述的部分参考。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.440",
+      "GSE.GENERAL.Speaking.26.481"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.521",
+      "GSE.GENERAL.Speaking.29.565",
+      "GSE.GENERAL.Speaking.28.532"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.587",
+      "GSE.GENERAL.Speaking.31.662"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.34.743",
+      "GSE.GENERAL.Speaking.33.724"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STORY.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.25.459"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.513",
+      "GSE.GENERAL.Speaking.28.544",
+      "GSE.GENERAL.Speaking.29.590"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.32.679",
+      "GSE.GENERAL.Speaking.31.644"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.792"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "EXPLAIN.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.818"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.22.388"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.22.379",
+      "GSE.GENERAL.Speaking.22.388",
+      "GSE.GENERAL.Speaking.25.460"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 4,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.444",
+      "GSE.GENERAL.Speaking.26.489",
+      "GSE.GENERAL.Speaking.28.557"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.56.875",
+      "GSE.GENERAL.Speaking.32.685"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "幽默缓和、回避问题、回应敌意不等于提出敏感请求；不强行配标准。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REQUEST.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.22.383",
+      "GSE.GENERAL.Speaking.25.455",
+      "GSE.ACADEMIC.Speaking.41.571"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.505",
+      "GSE.GENERAL.Speaking.28.563",
+      "GSE.GENERAL.Speaking.27.514",
+      "GSE.GENERAL.Speaking.25.470",
+      "GSE.PROFESSIONAL.Speaking.45.677"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.28.563",
+      "GSE.GENERAL.Speaking.29.565",
+      "GSE.GENERAL.Speaking.30.620",
+      "GSE.PROFESSIONAL.Speaking.50.768"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.56.909",
+      "GSE.ACADEMIC.Speaking.65.1024",
+      "GSE.PROFESSIONAL.Speaking.60.962",
+      "GSE.PROFESSIONAL.Speaking.61.972",
+      "GSE.PROFESSIONAL.Speaking.61.979"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.70.1118",
+      "GSE.PROFESSIONAL.Speaking.71.1129",
+      "GSE.PROFESSIONAL.Speaking.71.1130"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "ARRANGE.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "提出选项不是在模糊目标下促成决定；保留原创沟通目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.343",
+      "GSE.GENERAL.Speaking.21.364",
+      "GSE.GENERAL.Speaking.21.355",
+      "GSE.GENERAL.Speaking.22.371"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.433",
+      "GSE.GENERAL.Speaking.22.378",
+      "GSE.GENERAL.Speaking.24.446",
+      "GSE.GENERAL.Speaking.22.374",
+      "GSE.GENERAL.Speaking.24.431"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.520",
+      "GSE.GENERAL.Speaking.24.431",
+      "GSE.GENERAL.Speaking.25.452"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.566",
+      "GSE.GENERAL.Speaking.30.623"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.35.777",
+      "GSE.PROFESSIONAL.Speaking.67.1060"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SERVICE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "行业术语复杂度不等于核查条款与责任；拒绝原候选。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.25.454"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.27.515",
+      "GSE.GENERAL.Speaking.25.454",
+      "GSE.GENERAL.Speaking.28.552"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.32.686",
+      "GSE.GENERAL.Speaking.28.552"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.61.958",
+      "GSE.GENERAL.Speaking.33.725",
+      "GSE.GENERAL.Speaking.32.686",
+      "GSE.GENERAL.Speaking.35.764"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COMPARE.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.25.455"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.26.476",
+      "GSE.GENERAL.Speaking.28.534"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.49.754",
+      "GSE.GENERAL.Speaking.33.713"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.33.713",
+      "GSE.GENERAL.Speaking.34.736",
+      "GSE.ACADEMIC.Speaking.65.1026",
+      "GSE.PROFESSIONAL.Speaking.69.1088"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.790",
+      "GSE.GENERAL.Speaking.35.785",
+      "GSE.GENERAL.Speaking.36.802",
+      "GSE.ACADEMIC.Speaking.70.1106"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "OPINION.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.819"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.342"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只道歉不能覆盖感谢与祝贺；逐个动作保留独立证据。",
+    "objectives_reviewed": 6,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.441"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.26.477",
+      "GSE.GENERAL.Speaking.28.533",
+      "GSE.GENERAL.Speaking.26.497"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.578",
+      "GSE.GENERAL.Speaking.32.693",
+      "GSE.GENERAL.Speaking.32.669",
+      "GSE.PROFESSIONAL.Speaking.56.890"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.61.981",
+      "GSE.PROFESSIONAL.Speaking.62.990",
+      "GSE.PROFESSIONAL.Speaking.63.1003"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.795",
+      "GSE.ACADEMIC.Speaking.65.1031"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "RELATE.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.817"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COLLAB.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.26.484",
+      "GSE.ACADEMIC.Speaking.52.805"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COLLAB.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.30.630",
+      "GSE.GENERAL.Speaking.31.632",
+      "GSE.GENERAL.Speaking.31.645",
+      "GSE.GENERAL.Speaking.31.653"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COLLAB.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.60.964",
+      "GSE.GENERAL.Speaking.32.677",
+      "GSE.ACADEMIC.Speaking.66.1049"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COLLAB.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.68.1072",
+      "GSE.GENERAL.Speaking.35.786",
+      "GSE.PROFESSIONAL.Speaking.68.1070"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "COLLAB.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.21.366",
+      "GSE.ACADEMIC.Speaking.41.565"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.41.569",
+      "GSE.GENERAL.Speaking.22.372",
+      "GSE.GENERAL.Speaking.26.474"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.28.550",
+      "GSE.GENERAL.Speaking.28.543"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.32.693"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.65.1027",
+      "GSE.ACADEMIC.Speaking.66.1034",
+      "GSE.GENERAL.Speaking.31.650",
+      "GSE.ACADEMIC.Speaking.55.862"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.67.1056",
+      "GSE.ACADEMIC.Speaking.68.1077",
+      "GSE.ACADEMIC.Speaking.67.1065",
+      "GSE.ACADEMIC.Speaking.69.1104",
+      "GSE.ACADEMIC.Speaking.69.1095",
+      "GSE.ACADEMIC.Speaking.66.1050"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "REPAIR.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.36.818",
+      "GSE.GENERAL.Speaking.36.806"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.Pre-A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.14.143",
+      "GSE.GENERAL.Listening.14.156",
+      "GSE.GENERAL.Listening.14.153",
+      "GSE.GENERAL.Listening.14.165",
+      "GSE.GENERAL.Listening.14.166",
+      "GSE.ACADEMIC.Listening.25.280"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.14.159",
+      "GSE.GENERAL.Listening.14.163",
+      "GSE.PROFESSIONAL.Listening.23.222",
+      "GSE.PROFESSIONAL.Listening.23.224"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.15.199",
+      "GSE.GENERAL.Listening.15.200",
+      "GSE.GENERAL.Listening.16.210",
+      "GSE.GENERAL.Listening.15.195",
+      "GSE.GENERAL.Listening.16.207"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.17.240",
+      "GSE.GENERAL.Listening.17.244",
+      "GSE.GENERAL.Listening.17.255",
+      "GSE.GENERAL.Listening.17.239",
+      "GSE.GENERAL.Listening.18.275"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.19.313",
+      "GSE.GENERAL.Listening.18.267",
+      "GSE.GENERAL.Listening.19.297",
+      "GSE.GENERAL.Listening.19.302",
+      "GSE.GENERAL.Listening.19.318"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Listening.38.517",
+      "GSE.GENERAL.Listening.20.333",
+      "GSE.GENERAL.Listening.20.329",
+      "GSE.GENERAL.Listening.20.330",
+      "GSE.ACADEMIC.Listening.39.530",
+      "GSE.GENERAL.Listening.19.307"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LISTEN.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.20.335",
+      "GSE.ACADEMIC.Listening.39.526"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.15.195"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.15.195",
+      "GSE.GENERAL.Listening.16.203"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Listening.29.345",
+      "GSE.ACADEMIC.Listening.28.345",
+      "GSE.GENERAL.Listening.17.240",
+      "GSE.GENERAL.Listening.17.242",
+      "GSE.GENERAL.Listening.17.244",
+      "GSE.GENERAL.Listening.17.246"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.18.280",
+      "GSE.GENERAL.Listening.18.289",
+      "GSE.GENERAL.Listening.19.296",
+      "GSE.PROFESSIONAL.Listening.30.382"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.20.329",
+      "GSE.GENERAL.Listening.19.307"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIA.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Listening.20.331",
+      "GSE.ACADEMIC.Listening.39.526"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "PHONE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.425",
+      "GSE.GENERAL.Speaking.25.458",
+      "GSE.GENERAL.Speaking.26.486"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "PHONE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.28.558",
+      "GSE.GENERAL.Speaking.27.507",
+      "GSE.GENERAL.Speaking.27.520",
+      "GSE.GENERAL.Speaking.27.517"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "PHONE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.52.814",
+      "GSE.GENERAL.Speaking.28.550",
+      "GSE.GENERAL.Speaking.29.574",
+      "GSE.GENERAL.Speaking.29.583",
+      "GSE.GENERAL.Speaking.29.594",
+      "GSE.GENERAL.Speaking.29.595"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "PHONE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.55.875",
+      "GSE.PROFESSIONAL.Speaking.69.1089",
+      "GSE.PROFESSIONAL.Speaking.59.947",
+      "GSE.PROFESSIONAL.Speaking.68.1070"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "PHONE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.69.1084",
+      "GSE.PROFESSIONAL.Speaking.68.1070",
+      "GSE.PROFESSIONAL.Speaking.68.1072"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.A1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.A2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.24.439",
+      "GSE.GENERAL.Speaking.27.513",
+      "GSE.GENERAL.Speaking.27.517"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.B1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.567",
+      "GSE.GENERAL.Speaking.31.647",
+      "GSE.GENERAL.Speaking.31.654",
+      "GSE.GENERAL.Speaking.31.655"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.B2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.67.1065",
+      "GSE.GENERAL.Speaking.34.739"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.C1",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.67.1056",
+      "GSE.GENERAL.Speaking.36.795",
+      "GSE.ACADEMIC.Speaking.67.1065"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "MEDIATE.C2",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "重组自己的表达不同于准确转述他人信息；新增他人复杂信息改述的部分参考。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.CONTRAST",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.ENDING",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.SYLLABLE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.STRESS",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.REDUCTION",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.GROUP",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.INTONATION",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "SOUND.VARIETY",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LEX.RETRIEVE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LEX.CHUNK",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LEX.PARAPHRASE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GENERAL.Speaking.29.584",
+      "GSE.GENERAL.Speaking.29.567"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LEX.REGISTER",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "缺词替代与占住话轮不等于语体选择；新增正式/非正式语体条目。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.QUESTION",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p7.1",
+      "GSE.GRAMMAR.p7.11",
+      "GSE.GRAMMAR.p8.11",
+      "GSE.GRAMMAR.p8.9",
+      "GSE.GRAMMAR.p9.2"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.TIME",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "许可和义务的现在/未来只是时间词面重合，不能代替事件时间表达。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p12.11",
+      "GSE.GRAMMAR.p11.8",
+      "GSE.GRAMMAR.p17.10"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.CONDITION",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p20.14",
+      "GSE.GRAMMAR.p21.7",
+      "GSE.GRAMMAR.p33.1",
+      "GSE.GRAMMAR.p34.1",
+      "GSE.GRAMMAR.p24.1",
+      "GSE.GRAMMAR.p33.2"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DISCOURSE.LINK",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.ACADEMIC.Speaking.51.784"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DISCOURSE.HEDGE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "连接词、轮次维持和改述不能证明表达不确定性；拒绝原候选。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STRATEGY.PLAN",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STRATEGY.MONITOR",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "STRATEGY.TURN",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.PROFESSIONAL.Speaking.54.859",
+      "GSE.GENERAL.Speaking.29.568"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "LEX.ACQUIRE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.CLAUSE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p7.3",
+      "GSE.GRAMMAR.p7.4",
+      "GSE.GRAMMAR.p7.8",
+      "GSE.GRAMMAR.p10.9"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.NEGATION",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p8.8",
+      "GSE.GRAMMAR.p9.13"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.QUANTITY",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "只采用与本节点具体沟通动作相关的部分参考；不把一个条目覆盖为整组目标。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p10.3",
+      "GSE.GRAMMAR.p10.13",
+      "GSE.GRAMMAR.p11.3"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "FORM.SPACE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "at/after的时间用法和形容词位置不是空间关系；拒绝这些候选。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [
+      "GSE.GRAMMAR.p8.13",
+      "GSE.GRAMMAR.p10.11",
+      "GSE.GRAMMAR.p9.3"
+    ],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  },
+  {
+    "node_id": "DISCOURSE.REFERENCE",
+    "model_review_completed": true,
+    "decision": "retain_group_navigation",
+    "review_notes": "时间线与过去时不是指代追踪；拒绝原候选。",
+    "objectives_reviewed": 3,
+    "accepted_partial_reference_ids": [],
+    "clb_conditions_reviewed_as_reference": true,
+    "official_level_equivalence": false
+  }
+]

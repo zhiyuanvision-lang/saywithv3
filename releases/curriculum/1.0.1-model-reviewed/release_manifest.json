@@ -1,0 +1,944 @@
+{
+  "schema_version": "1.0",
+  "map_version": "1.0.1-model-reviewed",
+  "release_scope": "local_map_and_resource_snapshot",
+  "public_ready": false,
+  "map_path": "research/long-term-map-model-review-2026-10-02/curriculum_map.json",
+  "omitted": [
+    "__pycache__",
+    "*.pyc",
+    "pre-existing *.zip archives"
+  ],
+  "files": [
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/README.md",
+      "bytes": 4992,
+      "sha256": "8ddadf7295becfed0ac3fb2eab43cb04b682bc60f8588cb20e0986ee4a15aa42"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/build.py",
+      "bytes": 40560,
+      "sha256": "5efcf1dad7b77549ea48b4a26452126321de83c8edc72b5f40c3b36492a087e5"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/clb_conditions.json",
+      "bytes": 240709,
+      "sha256": "0dddf0f2b7683aa48e16a4c9195b6cf377c2b2426350e410144178e0dba58072"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/curriculum_map.json",
+      "bytes": 3247071,
+      "sha256": "72febf1abb04152b16f08db2a5923161ce3a2c29f2c4960dc1bb7b00635da9a4"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/gse_grammar.json",
+      "bytes": 180129,
+      "sha256": "c080f3d8d8d8a3b68bbc0b4725ea9f0679826133c4fd1ba673da9dd6cef8cb38"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/gse_objectives.json",
+      "bytes": 1912074,
+      "sha256": "366e5604ef7c559f553c0ddad3cc0505b766dd07db825938ee952b75fe8eef6c"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/node_alignment_audit.json",
+      "bytes": 32136,
+      "sha256": "48c756f76b327faec19b12ca81ac222cbd77cd651c2e1874dca5fe7553b659aa"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/official_clb_gse_links.json",
+      "bytes": 557983,
+      "sha256": "d557fe7387df0c60549936c799615d1d04d755a850636b2bceaa25d511c5b7f5"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/refinements.py",
+      "bytes": 18197,
+      "sha256": "6363c6070e53194248f47c91f2a6e3a16406cfa567129852091d19f7ffe264d9"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/report.html",
+      "bytes": 505856,
+      "sha256": "b72aa54fc015da16cfe95e0a7c4f0c6cde776f2cb9c2303e0ea03be36685f51d"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-2012.pdf",
+      "bytes": 4384103,
+      "sha256": "1cc07fd9eb4082e77f0a32fae81ea0a26c5524b64ce7720c531f2251c9c38746"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-2012.txt",
+      "bytes": 628699,
+      "sha256": "af7d20a50768a77f19b9cd3b94bd86c2b84368dca1e7bbdbe976cf6988352c0c"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-I-report.pdf",
+      "bytes": 1250718,
+      "sha256": "2468178d81f407b82c18fc8c39e3385eee3c0f6fb82dc8051df403970d59a2e6"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-I-report.txt",
+      "bytes": 58008,
+      "sha256": "c616e41fe19b56a79f5617d073bb6c5f1b7ec4c5b3d2c0b6ba84a45061d6e4ee"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-II-report.pdf",
+      "bytes": 1306394,
+      "sha256": "c75e00651dcd25e612566fc5e2326d641f5e8bb0dee75e29f78dfbc4d0a7e083"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-II-report.txt",
+      "bytes": 80296,
+      "sha256": "e47d229ef2fc7dc4f9b8f23d706c5f88b4145a9628cb183cac7a56468dd89e6f"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-III-report.pdf",
+      "bytes": 1276737,
+      "sha256": "86ca3ed9db6aa1859283103646aec73ecef918d722392893242fde6a4c185b9c"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/clb-stage-III-report.txt",
+      "bytes": 69558,
+      "sha256": "d1df3c52071465935ccf05cfb5e51cb901f236938ad3f5293a52a8f12b48b5be"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/download_manifest.json",
+      "bytes": 1058,
+      "sha256": "35d0dce32f21d7989ca1e290b9a8c9f9d5076f3585a408953966d2d273602ef9"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-adult-general.pdf",
+      "bytes": 1477342,
+      "sha256": "ce5713618e4583f416c02276f7ec7feba7ebdd2ca4e55ec2bb0fafc29dd8604d"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-adult-general.txt",
+      "bytes": 110221,
+      "sha256": "1fd2efaf7283f9e3c0d7e32e59d828f4c72c7d8e1bc40d69f6534e2f01e7682c"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-grammar.pdf",
+      "bytes": 5022005,
+      "sha256": "1c34b40a6baa07f110d665a41214f8550de46a9bcb7968a3e2080fcafae098ee"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-grammar.txt",
+      "bytes": 123093,
+      "sha256": "1de91feffe0f1a016a82615cfc82ea25efea26d33fbca25028dbd485f3052758"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-learning-objectives-adult-academic-english.pdf",
+      "bytes": 6450388,
+      "sha256": "a98b2269450afcdebec6fcbc11d046294ee092f11f1ef36e4ecf50869c76b966"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-learning-objectives-adult-academic-english.txt",
+      "bytes": 157526,
+      "sha256": "e0c1f9f9067e02ffb852fd90d5cf9186be206cb850a37aae13ac2262596302ca"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-learning-objectives-adult-professional-english.pdf",
+      "bytes": 7388783,
+      "sha256": "8c3d3bb07ae10b67edae9fd16babc028cf1c62f5b236c7aadbe7f423590d80f8"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/sources/gse-learning-objectives-adult-professional-english.txt",
+      "bytes": 158870,
+      "sha256": "9b1d4957e49d132df340bb68f0d70a5774868cf56abd7385afe16d6f4961c554"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/standard_ranges.json",
+      "bytes": 902,
+      "sha256": "bf5244a17825f950f8839443a0e5caaeb3a791bf52b1027ecdaba27a85adf74f"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/subtargets.csv",
+      "bytes": 23029,
+      "sha256": "5e30e487a0af642ba0bedbb46734bb55f6997071c3a5e2d813445f96081756cd"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/verification.json",
+      "bytes": 1877,
+      "sha256": "c4cfe3257bc633b96407c4240c804fd2e681e25af4f9207590c72f4683da488e"
+    },
+    {
+      "path": "research/long-term-map-gse-clb-2026-10-02/verify.py",
+      "bytes": 5057,
+      "sha256": "63a0e13ec72bc70af4d061af562da42e8abb2bdd4d2a093bbb96ca5b83f4f48e"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/CALIBRATION.md",
+      "bytes": 3004,
+      "sha256": "a3e783cd34ddde27afdf84527a98c864f05a0d71898ca5c35133712339f3b505"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/README.md",
+      "bytes": 6057,
+      "sha256": "50bd023392b5df98bb6b2f0c099e69c39915bc90e529a611cd46098c8c95b472"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/assessment_calibration.py",
+      "bytes": 5789,
+      "sha256": "3045fdaa53f85e6a184583e11de8c71cc8febe7c750c27a4566b75ddc283b3f5"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/build_reader.py",
+      "bytes": 14497,
+      "sha256": "d82f57b5948823dc6f83a7987f822b39a3871da28f5816c00b12c40bcec42f61"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/build_release.py",
+      "bytes": 21589,
+      "sha256": "0026fb9138a353df34229654691ae7bb416a20cf82b4833c8ee76fc61859dba4"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/calibrate.py",
+      "bytes": 5895,
+      "sha256": "a162aa24406c88e7c6aaa2f95e22d1763e2e91c199793d241fb49bf35175ab74"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/calibration_verification.json",
+      "bytes": 332,
+      "sha256": "b51130deca836523bb7b4393bb57fc4ec34533cebb0160b7589f5e8c6f759bc8"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/curriculum_map.json",
+      "bytes": 4626549,
+      "sha256": "b067159fff88e23dec198495b46e26811cfb58b91a05802bc9ea83c38d955697"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/curriculum_map.schema.json",
+      "bytes": 2377,
+      "sha256": "dc3b9bb564dde3c9a36e05c769550bc55e3bbd6ff8ba910eeddd55beb1ac0c8c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/export_vocabulary.py",
+      "bytes": 5356,
+      "sha256": "5f09cd9fa788c2d6d1d24056fa6b38600a31af87e50f2a62d49cd9cf7d7c6877"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/gse_objectives_corrected.json",
+      "bytes": 2077991,
+      "sha256": "44713b5a9ca06038f1ec7bf7381e88bc4f49375221bcdfff071da73c3adb2d3a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/learning_objectives.csv",
+      "bytes": 43558,
+      "sha256": "b6921e2c5f6db66b4b39dabc231cc1a99dff4f008a73ca78d7cad4e53a936734"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/migration.json",
+      "bytes": 68558,
+      "sha256": "3a8ccb7a814db3a2791ce68700fd3b4b792e7d3fcf7525a9e08d7474e8030ecf"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/node_review.json",
+      "bytes": 67231,
+      "sha256": "2d216192c5404616dd73b1c211dec9976af436b8d182c91b155aadf7e08a0d4f"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/objective_calibration.json",
+      "bytes": 373213,
+      "sha256": "6924444442557d54ca814b7abaf8845f637b80f7b13a58c17955b74f654f68cb"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/official_oral_objectives.json",
+      "bytes": 1048080,
+      "sha256": "81ec531493bbe65ca57db636e378d1728fa1e1d1d7745704ffd465aa73f82672"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/optimization_audit.json",
+      "bytes": 1064,
+      "sha256": "3bdda017433e0fa9a7ccedab67a8fe9da9c0ac0021a64a5d6ed514112d7f01ee"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/reader.html",
+      "bytes": 42721309,
+      "sha256": "c717a8a1f826911cd18214b0bc8d0230114915e8ace704084ed8dd1f648203d0"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/release_policy.json",
+      "bytes": 1370,
+      "sha256": "72a6f72cc03957d3fa53b1c2f24a7757ae916cbf6fd55d5beceab9fc3d3dd602"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/report.html",
+      "bytes": 46518,
+      "sha256": "8fedadd8cf4838510502930b206051dcf1132864e5b2f5d92de218b7aba1564b"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/runtime_policy.json",
+      "bytes": 1383,
+      "sha256": "386043cd77a5d4c4defc90244a95c1c0b3b575f4f390e7d050da7bd626b80c1a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/scoring_anchor_cases.json",
+      "bytes": 88290,
+      "sha256": "0df062c05794dfb95377124e2b553c6b89a45c91514f0299eb45427ceb4486be"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/source_calibration_audit.json",
+      "bytes": 66089,
+      "sha256": "eb27a53fe30d9db2e4fa8801d3fef68d42bfe194c8796f70fd1cd01e3ecdc599"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/task_fixture.json",
+      "bytes": 1763,
+      "sha256": "d861ad7fe90400831c5574f47b81dbe6588e147775bd3de913708fab04ffa4e1"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/upload_manifest.json",
+      "bytes": 33498,
+      "sha256": "467f4a3276447d7c1721ef63c32106d14486ce4446a9dbeaed6f35f1b738f119"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/upload_package.json",
+      "bytes": 262,
+      "sha256": "3439439e48cec4a34011b17da9c5ebd284d93d5b585288872e17c6aa68ce3bf0"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/verification.json",
+      "bytes": 498,
+      "sha256": "346d96ebc9ba633800d3fac9ac91b39f222fd017bead2679e3cf4d26e89199c8"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/verify_release.py",
+      "bytes": 6889,
+      "sha256": "10d301af1296bd16f4250be16e1c39af769656f99c0b788bd07c35605c8e6cc0"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/grammaticalCategories.json",
+      "bytes": 502,
+      "sha256": "8f668cee1dfce94acf9331dcfa35ba8863e73663d1002f9a5ed079887c75df73"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/gse_vocabulary.csv",
+      "bytes": 37863075,
+      "sha256": "f5731ef2f2f41376dfc041ac629130c548f0325e33d18c6e13a769857fb8d3c6"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/gse_vocabulary.jsonl",
+      "bytes": 42153316,
+      "sha256": "26ba5dfbb27ab8b2eb99d8616cf2661e916108da66f294ca3eef79b52048bbd2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/gse_vocabulary.sqlite",
+      "bytes": 76308480,
+      "sha256": "631293f247d71e34a2f61e4197e0f2dff9b92f6a1387af9622e90c4b451987b2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/manifest.json",
+      "bytes": 10170,
+      "sha256": "8a5f3fc9f412af7f74dee3143b131575b488aaf30f4fb8bc75ff162be1dc791d"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/all-audience-probe.json",
+      "bytes": 988460,
+      "sha256": "c0cb78f30f6239761e61f557468a1000dd8f259332a6bdd51a58327f80135160"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-21-page-1.json",
+      "bytes": 1062403,
+      "sha256": "8102cf231771db54658d4b2ec90bc043c9e6fdf874f90e08fae138aec6839732"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-21-page-2.json",
+      "bytes": 105370,
+      "sha256": "cbc33a50146738e96cb009eca876cb02a8ed2506f7844d7585f38254c8104f4c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-1.json",
+      "bytes": 1066206,
+      "sha256": "ef3dcfcffaf1055ebb2f107312c5a7d3004982152e02558007a9bd6bec87a475"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-10.json",
+      "bytes": 1024288,
+      "sha256": "8825c615dba6621e2bc6643ac48949b2d78a75ebffdf96a6b1ad0ba9f5a7c0e0"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-11.json",
+      "bytes": 1052449,
+      "sha256": "2c1b8cc3cd0ffa6679d4fea2c57724f5b19b47f3a7d0a778beae99dcdbe164c2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-12.json",
+      "bytes": 1014535,
+      "sha256": "15e3436d116a6f720d88194c637327d5166bb2cebdd585fb57ecc3aa9f3c2d53"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-13.json",
+      "bytes": 1135582,
+      "sha256": "92a4662522741c240a3eafa94d7406743d5210f78b83cf074b25f77a3464912a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-14.json",
+      "bytes": 992537,
+      "sha256": "f28db9ddccb3e0718814dd2afd1d5c5ae79f878e40fb5f1313f7f6b1efa2f3e1"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-15.json",
+      "bytes": 1010631,
+      "sha256": "778aaa52f913aefd5599f07f874ded37446a6d19dee93bb46a581433b30e23d4"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-16.json",
+      "bytes": 937663,
+      "sha256": "04dd529f96b5496aad40008d824d3aa1f55082414f74dc9653fdaaac2ab800e4"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-17.json",
+      "bytes": 945969,
+      "sha256": "a6c500eb203935fa7c3396d29c145bb092b549437241de210b03af4f8f232d72"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-18.json",
+      "bytes": 1026886,
+      "sha256": "c22f6fdf7579a8277f0cdc0d89c79e92682649267009b2ebe896daeab188cf2e"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-19.json",
+      "bytes": 1183035,
+      "sha256": "0126ee67c4ebc7a9f18b0e0b1bfa0b97f23618ee5b59c931c506bf4f35c20a2a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-2.json",
+      "bytes": 1068115,
+      "sha256": "8d591c49b4a1590c0d43a6e59b242d51661544aba3bd35a3d4516105d55384e9"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-20.json",
+      "bytes": 1044643,
+      "sha256": "04f3df3d07c5a7ae03839c11b7807df9b4d72aa92db8dcc306a4e7c1aeb8537d"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-21.json",
+      "bytes": 962187,
+      "sha256": "a60c4d2bdc49da37166afb014db92616ebdc9ee027bb761f3942cf188d41d0ea"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-22.json",
+      "bytes": 1005979,
+      "sha256": "36063ffcb33799e2946cfedfc00c2eb6a4d34dd825c11b31e98bba2e538ecdf8"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-23.json",
+      "bytes": 1018364,
+      "sha256": "a56fdd7de5bbe787fcd4ab136d821ff4c7521aa3fff9ee3d6344a211c8734162"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-24.json",
+      "bytes": 999716,
+      "sha256": "b1ee980572054fc1b651eba66493d5b812000e6dae54e3b6185b19765de50d79"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-25.json",
+      "bytes": 978821,
+      "sha256": "b1d49cd77b7d782fbce5736fbb4dbcc3ea639b2f4aa4ef59cd382e72727074c3"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-26.json",
+      "bytes": 1077165,
+      "sha256": "bb25999260f21c05d79304228babb48b663196c03713ded55a8d58ea3b8a5f9e"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-27.json",
+      "bytes": 1002191,
+      "sha256": "b485046dc98bd8bd8beffa6433445cb24433710bd7e11671e49466fe486d1a75"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-28.json",
+      "bytes": 1022833,
+      "sha256": "dbdc721bd8508b835c164464eec87cd9ac643ac7b7ef6e23b099c27e9b22b3b2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-29.json",
+      "bytes": 1049956,
+      "sha256": "c9613c292e55319d46ac894b8c352a41c0657aae9d5e0bb10937885819ee6f39"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-3.json",
+      "bytes": 1052224,
+      "sha256": "0442b428ab9f3b5e6f9cc35ca9755cfd5cc05ad06b64abe4cb8776b0c5200695"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-30.json",
+      "bytes": 1062107,
+      "sha256": "86515c4d02c6ae8a658e2c5dfd0f76e0cb505e04e78b36aa22606df4abdcb951"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-31.json",
+      "bytes": 1008669,
+      "sha256": "2b7020a584334d0826ad0ce5ac32dbc26bf9866442ab8d4888fa3b57e87ce432"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-32.json",
+      "bytes": 995806,
+      "sha256": "58a87f109cb00ae2ad9dc75fb21fc69fe2cee15319e73e6f300cf7e6be4779c9"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-33.json",
+      "bytes": 997121,
+      "sha256": "c9329edd1ca6b8e26349759ca3e79a3ab112727ac4da8102c63a23614e9d9982"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-34.json",
+      "bytes": 980735,
+      "sha256": "6893b5ccf53aa4f2bfaa43055bbf75a4445dfbda7f07a8d745694e9f578f0f10"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-35.json",
+      "bytes": 989037,
+      "sha256": "1f1631cb0655baa9c7a718e17edbe586bc2502e20faea19867fae62490914661"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-36.json",
+      "bytes": 996604,
+      "sha256": "471632097d1cacbafa2d116db80f019dcac2926a4e47496e8fd4bdb40ef089f6"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-37.json",
+      "bytes": 1000263,
+      "sha256": "14de14183b1b1e332d023664e3accb5bae4579ef43f2178005002f76c5f57134"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-38.json",
+      "bytes": 1035626,
+      "sha256": "34813e0c9afd60c03742057e57b1a4890c9a85635172994df2b2b380c83860cb"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-39.json",
+      "bytes": 959232,
+      "sha256": "e73e985b21d1a9ce1ac2055e968ad8446f8b57a511690794db7422e1861356c9"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-4.json",
+      "bytes": 956848,
+      "sha256": "a261e026689fbf2faec7f30dc7cdc0ea2430cffc74b55f547faa1e9db1b32f40"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-40.json",
+      "bytes": 1013667,
+      "sha256": "d2eb0aa9702fd2f2e4ef8ae1854fe39fc91985d2b79d788c20a0b5bacb51f55a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-41.json",
+      "bytes": 1032192,
+      "sha256": "2469240b6e54258f91d703a59fac571c4b999307f449980cfc98f16a4926b814"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-42.json",
+      "bytes": 413845,
+      "sha256": "c8d8b1701599cd146efb0ad8ad8976d07247af14928f770aa95111ce1c92293c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-5.json",
+      "bytes": 934282,
+      "sha256": "2e1c117e8113edb11da733182004ce57184da4756c41aa959ae11316b49d09bd"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-6.json",
+      "bytes": 999624,
+      "sha256": "53d10aa3c7a460962e1299f458e5a88653a8e2e368567ce9f5c909b54bc6d5e8"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-7.json",
+      "bytes": 1030301,
+      "sha256": "8ceb834fe9413cb63c574984e2953580287a2a5962ab9e2b4b044619af2285d9"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-8.json",
+      "bytes": 1062410,
+      "sha256": "1c20f3d146df845af6fd8cac726f590c8de107bffba0ae5c33115b405083a9f2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-10-90-page-9.json",
+      "bytes": 1055466,
+      "sha256": "1a2e82f85dae667844d537f62064ac1089e6582c61c3c2fab4f2875fedfb900b"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-22-29-page-1.json",
+      "bytes": 1019936,
+      "sha256": "6aebf090a18a3205b22248b03e8e578314015788708e4ab59954619ac88c5f6c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-22-29-page-2.json",
+      "bytes": 473215,
+      "sha256": "b17368e581a15aea30bb40aa4d02845805fff3b4096e2fc55111f86521c9ddd6"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-30-35-page-1.json",
+      "bytes": 1082083,
+      "sha256": "30aac085dcb5492f9d4ee6dc2daa8982499765395dcb73440f7eb4c9aa706dda"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-30-35-page-2.json",
+      "bytes": 674205,
+      "sha256": "c48ae2f046a7cf031361d413a219ed7e8ed962069529039def7654cbf308d53a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-36-42-page-1.json",
+      "bytes": 1090667,
+      "sha256": "773312560e5768d5c59222a944093f40683ea15e8e61413a8994fba691e6436b"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-36-42-page-2.json",
+      "bytes": 651355,
+      "sha256": "92dda468faf88a123c4b088353a055d378a3f5aab536fba9a86fd52d85da2d50"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-43-50-page-1.json",
+      "bytes": 1275317,
+      "sha256": "e24c9275a62e1aca9cb4ce163f7f989d44c782806481abebfa31615039ac11fb"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-43-50-page-2.json",
+      "bytes": 689323,
+      "sha256": "be418d34af38b42e9b9a11a79f121471ae6ea67b3de59d5152b7f9e371e1dcb2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-51-58-page-1.json",
+      "bytes": 1262570,
+      "sha256": "a13e585bb31c4fd1e93ed841586c989b4cedea1659c1a3beb5dc342325cd27cd"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-51-58-page-2.json",
+      "bytes": 1228189,
+      "sha256": "918ed3f497474be114e98d0a76650d1feaa82ce0427ec0fb1c6024b97d41e55a"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-51-58-page-3.json",
+      "bytes": 1240058,
+      "sha256": "e9d0bea4bde1365c74a5b649fa8f20120caf27b05727689ae6242fdb0cfbf7b7"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-51-58-page-4.json",
+      "bytes": 704294,
+      "sha256": "d99f7d4bbdeea787b5b473dd13f0f0ebce97b725e010aecedcf6b4f32f87e086"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-1.json",
+      "bytes": 1127512,
+      "sha256": "e2ceda942c3139849dee9c2c97ff2f881a05608eed333dfb85e5fcc6fb774bb5"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-2.json",
+      "bytes": 1167616,
+      "sha256": "9de4de421ada159b496cefffbe5211a4129f61618ba735e2e4c9b08ed1839e1e"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-3.json",
+      "bytes": 1126225,
+      "sha256": "bc1936612e8077a1ab7dfbc101f66037e1ed235c5b2da752bf97a18857a050a3"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-4.json",
+      "bytes": 1139791,
+      "sha256": "71ef740ce06cba5168f370365b332d08a9c0862ff4b1bf0f6f719c990db2c915"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-5.json",
+      "bytes": 1121744,
+      "sha256": "ae54f5b0066dcad187de7219307ed8454abad009175a8b1a72dee1465edcac57"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-59-66-page-6.json",
+      "bytes": 108134,
+      "sha256": "28f0fcc88f5637ac28467d88831549c157b75a5c9f337d87a0d688797065dd3c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-71-page-1.json",
+      "bytes": 1075860,
+      "sha256": "a77fa6b84954ab3ab3c99dbb15678729ededc2b89576b3de2094a5d167db9754"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-71-page-2.json",
+      "bytes": 1035081,
+      "sha256": "e4a5287442f79aec8071801905ae0fa0a8db78de5746b97ffe929e3922ecd8cf"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-71-page-3.json",
+      "bytes": 1087501,
+      "sha256": "4e1c679ee5059b2d3ae3d7de35b384c1fad3b38597ff87da8ac07cc30b8de07c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-71-page-4.json",
+      "bytes": 1034568,
+      "sha256": "c15a807b7e09dd9e80ce84452f3eb7e6f0979b22e629f80d971e694a6dcf0240"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-71-page-5.json",
+      "bytes": 734866,
+      "sha256": "359105ad3791dd5dc75da27c63ab979815cc09ffc123af006a6d0f2c6c648025"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-67-75-page-1.json",
+      "bytes": 1057271,
+      "sha256": "2d792a5906028027db4a9f133709dd5cb188051071d0e48a6411fe141c9af7e6"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-72-75-page-1.json",
+      "bytes": 1036940,
+      "sha256": "41976258f7d98860aa1d9ffa0ef9032c36540b8e68b5df3c442b3eb69a64bdf2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-72-75-page-2.json",
+      "bytes": 989513,
+      "sha256": "3c74fba9f8400b475fb9e0677997583ac2ffbc55a63fb8fa755d8214bd91a4db"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-72-75-page-3.json",
+      "bytes": 1047288,
+      "sha256": "c88aebe326e1119fb10a5b8ff2e36fdbaf3691b77f476d9baa15616801a67852"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-72-75-page-4.json",
+      "bytes": 986701,
+      "sha256": "acdaae97daf27b46c90d6d6776ba2edcdf24a5e5a46c86f413b4e44fc5834730"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-72-75-page-5.json",
+      "bytes": 565528,
+      "sha256": "a89662710b55b7b7d03a022ded420521020b1f79ec00dac0e26b37b1863a4b77"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-1.json",
+      "bytes": 934081,
+      "sha256": "6b9d86ba02717a0d12e4bbacd4787c64940e51605f7e99651aa78a1000033cd4"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-2.json",
+      "bytes": 944737,
+      "sha256": "8ee790d007c4bea9d0c0eebc860eff95af7e47330bb55aa4cc4eee7ef4e156ad"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-3.json",
+      "bytes": 923304,
+      "sha256": "b41795bbdf24f7bfe2992f2f9c6bb7d2f1c7391189b1316bff61088f4ef50c8e"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-4.json",
+      "bytes": 951779,
+      "sha256": "761c35130691b1e30baef87b73aea6b5266d3e6ac4e2887b6307f56c9f03ae26"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-5.json",
+      "bytes": 949622,
+      "sha256": "7a5e34a61056e724744c44fe4bc4e51d672d2e0e4e1416d86ccc716daaf8f276"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-6.json",
+      "bytes": 921477,
+      "sha256": "132d732b553171ae09b16f51bf642328cba7521e10be5800b67f31f6e6804d60"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-80-page-7.json",
+      "bytes": 722539,
+      "sha256": "0f540e8eef254b9cf5e4d497837f06358a304407362c5c7aec9de132668acfe2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-76-84-page-1.json",
+      "bytes": 914976,
+      "sha256": "10b5bfb53933998ac54c6e54a85bbb4b1c755f0cca668054f4f90428eab5c5d7"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-1.json",
+      "bytes": 861928,
+      "sha256": "57da439db3a1004dcc151c5767e1ff23c44fe29dcf5b57d95ea15282da6bceee"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-2.json",
+      "bytes": 877300,
+      "sha256": "f6484e355f4eb55c5351c949946cf6744006628036dccc8d231f34f95b87cd02"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-3.json",
+      "bytes": 870971,
+      "sha256": "0aa4261f871f8c1b56004c3f6c366aef4aa1a95cc77eb0955b99b4fd6b88a62b"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-4.json",
+      "bytes": 850020,
+      "sha256": "e7946a20eeec17d654654c09bbe91983cf4ef74273a2e3af1314d45e6e2baa52"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-5.json",
+      "bytes": 884286,
+      "sha256": "52bec0082ec4e220e45d3728b2f33b5b49c4a1b42df07336ac9ecccb8dc5af14"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-6.json",
+      "bytes": 879434,
+      "sha256": "9a0af4f736853445666601bc5ed220268f0096098230a5fd64cad98601e296ac"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-7.json",
+      "bytes": 862158,
+      "sha256": "e5d8d0d5f57b58bc7719af72edae74183fbcb79bc7cfd3bfbe014221e7437e6c"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-81-84-page-8.json",
+      "bytes": 290284,
+      "sha256": "0b0f691ba8a4ebcfb0e0ab9a93fbe71bed3454ab2a65e646b755013a8ec9cfe2"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/band-85-90-page-1.json",
+      "bytes": 546787,
+      "sha256": "9859ac96fdadf9e4969548dd4a78bb971a9dc57e16cce1ea51cb131404babcbc"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/probe.json",
+      "bytes": 113696,
+      "sha256": "127caedb4a553103d0dc5d5c5294df723897b279610c43a71626770463fc48f8"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/syllabuses.json",
+      "bytes": 974,
+      "sha256": "6723ff219d017599138d7fe0aba5f07413fb8e88e0458cf49f9b000eda328bf3"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/toolkit-main.js",
+      "bytes": 1790205,
+      "sha256": "a5acaf465ba81b69523be457c23d7cc1191021b21ca009b872280e9bc47be808"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/raw/topics.json",
+      "bytes": 87557,
+      "sha256": "f10a7c893885f441c6cb0c37c7eb722c3ae899443b83c3a0364b11e65f250ea5"
+    },
+    {
+      "path": "research/long-term-map-release-2026-10-02/vocabulary/topics.json",
+      "bytes": 87557,
+      "sha256": "f10a7c893885f441c6cb0c37c7eb722c3ae899443b83c3a0364b11e65f250ea5"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/README.md",
+      "bytes": 3685,
+      "sha256": "8c9021cf76cb7672ec2af5f0357b5f191c0526be8ef7902ad39c54cb4968ecc5"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/alignment_review.json",
+      "bytes": 755743,
+      "sha256": "63d0bd15560fad4d8b574241adccba7f309c1897c7433efa66e67315ce3cfa6f"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/build_report.py",
+      "bytes": 9460,
+      "sha256": "e12f251e0e8b5a15848d631bd23842c2ab60c4497eec4d12563ef27946d3f1e2"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/build_review.py",
+      "bytes": 15335,
+      "sha256": "0084fc579f30e8c4dd5e8d930469ced50d3ca6cb113f57b4bf6db05457e75434"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/curriculum_map.json",
+      "bytes": 6203185,
+      "sha256": "f46f1fe22f87575506a2a1fc4bf3e87063989b225b5dc19b92c5c6b915a0d6f1"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/extract_verified_sources.py",
+      "bytes": 6125,
+      "sha256": "4b6eb1750fa0c03256766c0805f03a85b59de1d2f26d0298deaae12ae0dc355d"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/gse_objectives_corrected.json",
+      "bytes": 2455196,
+      "sha256": "0c0262dd76c428819358275a3a41abba687a00b6b4ad0af000c189cbd6e30248"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/node_review.json",
+      "bytes": 68422,
+      "sha256": "8463a6dde1f6c5b5d2695ab3ce966668c783269927f0d0b7b4ecc5bbb752db2e"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/objective_calibration.json",
+      "bytes": 373213,
+      "sha256": "6924444442557d54ca814b7abaf8845f637b80f7b13a58c17955b74f654f68cb"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/official_oral_objectives.json",
+      "bytes": 1046291,
+      "sha256": "95e07029df3bea272b01dc474ddb370d83a2630162a004678557686c12f10718"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/overlap_review.json",
+      "bytes": 2137,
+      "sha256": "0d0b9da46450363acd1c7408755a5d462f525929d027180a6ecca0740370b386"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/release_policy.json",
+      "bytes": 1656,
+      "sha256": "ae6f3e39bb5ca8da2951efef9e879824e5a87c5541789f91b0e88b64aa9376ba"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/report.html",
+      "bytes": 6993489,
+      "sha256": "b4d956bf6d42c3433f20e37c304189bb41496e436e6e2665827b8b7a6e18a8eb"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/review_decisions.py",
+      "bytes": 12598,
+      "sha256": "9f39b09f232782e912244e39f34251946dc1ebbca93ee9e6b262a002c6c65dbe"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/review_summary.json",
+      "bytes": 1471,
+      "sha256": "1bb7a95b15fa2d4dbcb1683d6e6859034dad8330d567b7fb2689c99b11f39178"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/source_calibration_audit.json",
+      "bytes": 51000,
+      "sha256": "f0e9dd6829cba376fd56294ccc69a5a39a28886f52468b73196b28f389cbad1a"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/target_review.csv",
+      "bytes": 69676,
+      "sha256": "09899d61760a67a5f4a4c0eeaed995e91dd962b2c8b775db99923b6c8fd4fbfd"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/target_review.json",
+      "bytes": 1632771,
+      "sha256": "be8a018baa3ed0a5861ed40829eb2fbeec9bd633c5a3af696073c590f075e626"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/verification.json",
+      "bytes": 239,
+      "sha256": "4b8c4bedb88f37e27aa98308170cb04c8dec970d6f3917ecfa3880cae5ff1eef"
+    },
+    {
+      "path": "research/long-term-map-model-review-2026-10-02/verify_review.py",
+      "bytes": 4627,
+      "sha256": "7cc3bbfe8aaf88d6ad4bf6e335c598f54ef409dc9266ed132bc86e6607f4b6e4"
+    },
+    {
+      "path": "modules/curriculum/__init__.py",
+      "bytes": 161,
+      "sha256": "638f72f0ba8ae6ccf5c8849a79761d663e82d39551a245c462d399c3d499b557"
+    },
+    {
+      "path": "modules/curriculum/__main__.py",
+      "bytes": 1258,
+      "sha256": "2cb7315e6a237ca07fbfc59133dc077e4441c3b1184da551c639ebda893bcb88"
+    },
+    {
+      "path": "modules/curriculum/packaging.py",
+      "bytes": 3850,
+      "sha256": "a8f9dee9d48e2165137027f28e2f7aef491b103174a30c3f99f55716605ab4af"
+    },
+    {
+      "path": "modules/curriculum/repository.py",
+      "bytes": 6339,
+      "sha256": "008e5240b94cc83fa07956a3f9e789acef140f4bcb18eac67cd9b08c84d8b441"
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "map_version": "1.0.1-model-reviewed",
+    "groups": 140,
+    "targets": 424,
+    "senses": 41402,
+    "checks": 2033,
+    "failed": [],
+    "scope": "data structure, references, runtime contracts and read-only resource integrity"
+  }
+}

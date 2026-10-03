@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": 4204,
+  "failed": [],
+  "schema_errors": [],
+  "scope": "review coverage, references, versions, deployment paths, regression decisions, release boundaries",
+  "actual_generator_or_audio_tested": false
+}

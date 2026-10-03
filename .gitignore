@@ -1,0 +1,4 @@
+**/__pycache__/
+*.py[cod]
+releases/curriculum/*/research/
+releases/curriculum/*/modules/

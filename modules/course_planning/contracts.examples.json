@@ -1,0 +1,112 @@
+{
+  "TeachingAssignment": {
+    "schema_version": "1.0",
+    "assignment_id": "as001",
+    "user_id": "u001",
+    "map_version": "1.0.1-model-reviewed",
+    "profile_version": 8,
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "reason": "能理解替代建议，但表达仍依赖提示",
+    "context": "约同学打篮球",
+    "resource_plan": {
+      "review": [
+        "邀请表达",
+        "时间表达"
+      ],
+      "focus": [
+        "提出替代时间"
+      ]
+    },
+    "difficulty": {
+      "time_conflicts": 1,
+      "support": "练习提示渐退；独立任务不展示答案"
+    }
+  },
+  "LessonPackage": {
+    "schema_version": "1.0",
+    "lesson_id": "ls001",
+    "lesson_version": 1,
+    "assignment_id": "as001",
+    "map_version": "1.0.1-model-reviewed",
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "learning_materials": [
+      {
+        "intent_zh": "那四点半怎么样？",
+        "expression": "How about four thirty?",
+        "audio_ref": "media/example001"
+      }
+    ],
+    "practice_task_ref": "tasks/tk001-v1",
+    "independent_task": {
+      "task_id": "tk002",
+      "task_version": 1,
+      "learner_facts": {
+        "available_times": [
+          "10:00",
+          "14:00"
+        ]
+      },
+      "partner_private_facts": {
+        "available_times": [
+          "11:00",
+          "14:00"
+        ]
+      },
+      "role_rules": [
+        "说明十点没空，不主动提供最终答案"
+      ],
+      "allowed_support": [
+        "请求重复"
+      ],
+      "assessment_contract": {
+        "critical_checks": [
+          "提出双方可行的替代时间"
+        ],
+        "acceptable_times": [
+          "14:00"
+        ],
+        "accept_correct_paraphrase": true
+      }
+    },
+    "quality": {
+      "status": "approved",
+      "report_ref": "qa/ls001-v1",
+      "qa_version": "qa-v1"
+    },
+    "provenance": {
+      "model_version": "model-pinned-v1",
+      "prompt_version": "lesson-prompt-v1"
+    },
+    "example_notice": "approved为演示流程值；此示例不是已真实审核的上线课程",
+    "learner_ready": false
+  },
+  "GenerationJob": {
+    "schema_version": "1.0",
+    "job_id": "job001",
+    "user_id": "u001",
+    "state": "queued",
+    "row_version": 1,
+    "created_at": "2026-10-03T18:00:00+08:00"
+  },
+  "QualityReport": {
+    "schema_version": "1.0",
+    "report_id": "qa001",
+    "job_id": "job001",
+    "lesson_id": "ls001",
+    "lesson_version": 1,
+    "stage": "text",
+    "decision": "pass",
+    "checker_version": "qa-v1",
+    "checks": [
+      {
+        "id": "target_contract",
+        "passed": true,
+        "reason": "接口演示，未执行真实模型检查"
+      }
+    ]
+  }
+}

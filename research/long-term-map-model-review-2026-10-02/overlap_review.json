@@ -1,0 +1,83 @@
+[
+  {
+    "objectives": [
+      "CONTACT.A1.s1",
+      "INFO.Pre-A1.s1"
+    ],
+    "reason": "姓名表达；身份信息和任务条件不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "NEEDS.Pre-A1.s1",
+      "SERVICE.Pre-A1.s1"
+    ],
+    "reason": "所需物品；服务数量和交易条件不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "REQUEST.A2.s2.decline",
+      "RELATE.A2.s1"
+    ],
+    "reason": "拒绝；邀请与关系维护语境不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "INFO.A2.s2",
+      "SERVICE.A2.s3"
+    ],
+    "reason": "路线；服务互动与一般信息交换不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "ARRANGE.A1.s3",
+      "INFO.A1.s3"
+    ],
+    "reason": "核对安排；核对的信息与双方限制不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "REPAIR.A2.s3",
+      "LEX.PARAPHRASE.s1"
+    ],
+    "reason": "缺词描述；主线修复和支持练习共同记录同一证据ID",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "CONTACT.B2.s1",
+      "STRATEGY.TURN.s1"
+    ],
+    "reason": "进入话轮；社交任务和策略支持不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "LEX.RETRIEVE.s1",
+      "LEX.ACQUIRE.s3"
+    ],
+    "reason": "表达提取；是否新学及证据条件不同",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  },
+  {
+    "objectives": [
+      "REPAIR.B1.s2",
+      "LEX.PARAPHRASE.s2"
+    ],
+    "reason": "改述；修复成功与资源提取分开观察",
+    "automatic_mastery_transfer": false,
+    "shared_evidence_must_deduplicate": true
+  }
+]

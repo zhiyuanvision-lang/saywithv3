@@ -1,0 +1,269 @@
+{
+  "SourceCatalog": {
+    "schema_version": "1.0",
+    "catalog_version": "sources-v1",
+    "sources": [
+      {
+        "source_id": "GSE_GENERAL",
+        "kind": "standard",
+        "document_ref": "sources/gse-general.pdf"
+      }
+    ],
+    "status": "source_records_require_review"
+  },
+  "CurriculumRelease": {
+    "schema_version": "1.0",
+    "map_version": "1.0.1-model-reviewed",
+    "map_ref": "curriculum_map.json",
+    "dependencies": [
+      {
+        "kind": "lexicon",
+        "ref": "vocabulary/gse_vocabulary.sqlite",
+        "version": "lexicon-v1"
+      }
+    ],
+    "release_scope": "backend_map_data",
+    "learner_content_ready": false
+  },
+  "TargetDefinition": {
+    "schema_version": "1.0",
+    "map_version": "1.0.1-model-reviewed",
+    "target_id": "ARRANGE.A2.s2",
+    "target_version": "1.0.1-model-reviewed",
+    "outcome": "提出可行替代时间",
+    "reference_stage": "A2",
+    "contract": {
+      "observable_action": "提出另一时间，并满足任务双方的时间限制",
+      "accept_correct_paraphrase": true,
+      "independent_check": "不展示答案或句型补全"
+    },
+    "reviewed_standard_references": [],
+    "reference_note": "此示例未展开标准参考；实际读取地图中的已采纳参考及allowed_usage，不代表该目标无参考"
+  },
+  "LearnerProfile": {
+    "schema_version": "1.0",
+    "user_id": "u001",
+    "profile_version": 8,
+    "target_states": [
+      {
+        "target_id": "ARRANGE.A2.s2",
+        "independent": "insufficient_evidence",
+        "retention": "not_checked",
+        "transfer": "not_checked",
+        "support_dependency": [
+          "关键词提示"
+        ],
+        "evidence_ids": [
+          "ev001"
+        ]
+      }
+    ],
+    "resource_states": [
+      {
+        "resource_id": "expr_how_about_time",
+        "understanding": "demonstrated",
+        "retrieval": "needs_support"
+      }
+    ],
+    "preferences": {
+      "context": "校园",
+      "interests": [
+        "篮球"
+      ]
+    }
+  },
+  "TeachingAssignment": {
+    "schema_version": "1.0",
+    "assignment_id": "as001",
+    "user_id": "u001",
+    "map_version": "1.0.1-model-reviewed",
+    "profile_version": 8,
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "reason": "能理解替代建议，但表达仍依赖提示",
+    "context": "约同学打篮球",
+    "resource_plan": {
+      "review": [
+        "邀请表达",
+        "时间表达"
+      ],
+      "focus": [
+        "提出替代时间"
+      ]
+    },
+    "difficulty": {
+      "time_conflicts": 1,
+      "support": "练习提示渐退；独立任务不展示答案"
+    }
+  },
+  "LessonPackage": {
+    "schema_version": "1.0",
+    "lesson_id": "ls001",
+    "lesson_version": 1,
+    "assignment_id": "as001",
+    "map_version": "1.0.1-model-reviewed",
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "learning_materials": [
+      {
+        "intent_zh": "那四点半怎么样？",
+        "expression": "How about four thirty?",
+        "audio_ref": "media/example001"
+      }
+    ],
+    "practice_task_ref": "tasks/tk001-v1",
+    "independent_task": {
+      "task_id": "tk002",
+      "task_version": 1,
+      "learner_facts": {
+        "available_times": [
+          "10:00",
+          "14:00"
+        ]
+      },
+      "partner_private_facts": {
+        "available_times": [
+          "11:00",
+          "14:00"
+        ]
+      },
+      "role_rules": [
+        "说明十点没空，不主动提供最终答案"
+      ],
+      "allowed_support": [
+        "请求重复"
+      ],
+      "assessment_contract": {
+        "critical_checks": [
+          "提出双方可行的替代时间"
+        ],
+        "acceptable_times": [
+          "14:00"
+        ],
+        "accept_correct_paraphrase": true
+      }
+    },
+    "quality": {
+      "status": "approved",
+      "report_ref": "qa/ls001-v1",
+      "qa_version": "qa-v1"
+    },
+    "provenance": {
+      "model_version": "model-pinned-v1",
+      "prompt_version": "lesson-prompt-v1"
+    },
+    "example_notice": "approved为演示流程值；此示例不是已真实审核的上线课程"
+  },
+  "LearnerLessonView": {
+    "schema_version": "1.0",
+    "session_id": "ss001",
+    "lesson_id": "ls001",
+    "lesson_version": 1,
+    "task_id": "tk002",
+    "phase": "independent_application",
+    "instruction": "与同学商量一个你们都有空的打球时间",
+    "learner_facts": {
+      "available_times": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "available_actions": [
+      "speak",
+      "request_repeat"
+    ]
+  },
+  "DialogueResponse": {
+    "schema_version": "1.0",
+    "session_id": "ss001",
+    "task_id": "tk002",
+    "turn_id": "turn002",
+    "reply_to": "turn001",
+    "speaker": "partner",
+    "text": "I’m not free at ten.",
+    "audio_ref": "media/partner002",
+    "support_provided": []
+  },
+  "LearnerInput": {
+    "schema_version": "1.0",
+    "session_id": "ss001",
+    "task_id": "tk002",
+    "input_id": "in001",
+    "type": "speech",
+    "audio_ref": "media/user001",
+    "recorded_at": "2026-10-02T16:00:00+08:00"
+  },
+  "TaskAttempt": {
+    "schema_version": "1.0",
+    "attempt_id": "at001",
+    "user_id": "u001",
+    "session_id": "ss001",
+    "lesson_id": "ls001",
+    "lesson_version": 1,
+    "map_version": "1.0.1-model-reviewed",
+    "task_id": "tk002",
+    "task_version": 1,
+    "target_ids": [
+      "ARRANGE.A2.s2"
+    ],
+    "phase": "independent_application",
+    "task_snapshot_ref": "snapshot/tk002-v1",
+    "turns": [
+      {
+        "turn_id": "turn002",
+        "speaker": "partner",
+        "text": "I’m not free at ten.",
+        "audio_ref": "media/partner002"
+      },
+      {
+        "turn_id": "turn003",
+        "speaker": "learner",
+        "input_id": "in001",
+        "audio_ref": "media/user001",
+        "transcript": "How about two?"
+      }
+    ],
+    "support_used": []
+  },
+  "AssessmentResult": {
+    "schema_version": "1.0",
+    "assessment_id": "ar001",
+    "attempt_id": "at001",
+    "assessment_version": "eval-v1",
+    "model_version": "assessment-model-pinned-v1",
+    "target_results": [
+      {
+        "target_id": "ARRANGE.A2.s2",
+        "result": "completed",
+        "checks": [
+          {
+            "criterion": "提出双方可行的替代时间",
+            "result": "met",
+            "evidence_refs": [
+              "turn003",
+              "snapshot/tk002-v1"
+            ]
+          }
+        ],
+        "confidence": "high",
+        "diagnosis": []
+      }
+    ],
+    "evidence_ids": [
+      "ev002"
+    ],
+    "example_notice": "此处为示例评价，尚未运行实际语音或模型服务",
+    "validation": {
+      "status": "accepted",
+      "checks": [
+        "证据引用存在",
+        "实际支持记录已核对",
+        "任务限制满足",
+        "当前评价所需模态证据可用"
+      ],
+      "validation_version": "validation-v1"
+    }
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:saywith:course-planning:design-v1",
+  "title": "Course planning design contracts",
+  "description": "设计合同，不代表服务已实现；供应商结构化输出需适配其支持的Schema子集",
+  "$defs": {
+    "TeachingAssignment": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "assignment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "user_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "map_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile_version": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "maxItems": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource_plan": {
+          "type": "object",
+          "properties": {
+            "review": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "focus": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "review",
+            "focus"
+          ],
+          "additionalProperties": false
+        },
+        "difficulty": {
+          "type": "object",
+          "properties": {
+            "time_conflicts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "support": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "time_conflicts",
+            "support"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "assignment_id",
+        "user_id",
+        "map_version",
+        "profile_version",
+        "target_ids",
+        "reason",
+        "context",
+        "resource_plan",
+        "difficulty"
+      ],
+      "additionalProperties": false
+    },
+    "LessonPackage": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "lesson_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lesson_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "assignment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "map_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "maxItems": 1
+        },
+        "learning_materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intent_zh": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expression": {
+                "type": "string",
+                "minLength": 1
+              },
+              "audio_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "intent_zh",
+              "expression"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "practice_task_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "independent_task": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "task_version": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "learner_facts": {
+              "type": "object"
+            },
+            "partner_private_facts": {
+              "type": "object"
+            },
+            "role_rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "allowed_support": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "assessment_contract": {
+              "type": "object",
+              "required": [
+                "critical_checks",
+                "accept_correct_paraphrase"
+              ],
+              "properties": {
+                "critical_checks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1
+                },
+                "accept_correct_paraphrase": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "required": [
+            "task_id",
+            "task_version",
+            "learner_facts",
+            "partner_private_facts",
+            "role_rules",
+            "allowed_support",
+            "assessment_contract"
+          ],
+          "additionalProperties": false
+        },
+        "quality": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "draft",
+                "approved",
+                "needs_review"
+              ]
+            },
+            "report_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "qa_version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "learner_ready": {
+          "type": "boolean"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "model_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "prompt_version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "model_version",
+            "prompt_version"
+          ],
+          "additionalProperties": false
+        },
+        "example_notice": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "lesson_id",
+        "lesson_version",
+        "assignment_id",
+        "map_version",
+        "target_ids",
+        "learning_materials",
+        "practice_task_ref",
+        "independent_task",
+        "quality",
+        "provenance"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "quality": {
+                "properties": {
+                  "status": {
+                    "const": "approved"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "quality": {
+                "required": [
+                  "report_ref",
+                  "qa_version"
+                ]
+              },
+              "learning_materials": {
+                "items": {
+                  "required": [
+                    "audio_ref"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "learner_ready"
+            ],
+            "properties": {
+              "learner_ready": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "quality": {
+                "properties": {
+                  "status": {
+                    "const": "approved"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GenerationJob": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "job_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "user_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "enum": [
+            "queued",
+            "planning",
+            "generating_text",
+            "checking_text",
+            "generating_audio",
+            "checking_audio",
+            "approved",
+            "needs_review",
+            "failed",
+            "cancelled"
+          ]
+        },
+        "row_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "assignment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result_lesson_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "result_lesson_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "error": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "schema_version",
+        "job_id",
+        "user_id",
+        "state",
+        "row_version",
+        "created_at"
+      ],
+      "additionalProperties": false
+    },
+    "QualityReport": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "job_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lesson_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lesson_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "stage": {
+          "enum": [
+            "text",
+            "audio",
+            "publication"
+          ]
+        },
+        "decision": {
+          "enum": [
+            "pass",
+            "fail",
+            "unjudgeable"
+          ]
+        },
+        "checker_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "passed": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "passed",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "report_id",
+        "job_id",
+        "lesson_id",
+        "lesson_version",
+        "stage",
+        "decision",
+        "checker_version",
+        "checks"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

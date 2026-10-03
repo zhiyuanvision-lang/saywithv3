@@ -1,0 +1,43 @@
+{
+  "version": "1.0.1-model-reviewed",
+  "public_ready": false,
+  "backend_data_ready": true,
+  "mandatory_gates": [
+    {
+      "id": "MAP_DATA",
+      "scope": "地图数据",
+      "status": "passed",
+      "requirement": "schema、引用、版本、迁移和资源完整性检查通过"
+    },
+    {
+      "id": "TASK_REVIEW",
+      "scope": "用户可见任务",
+      "status": "not_completed",
+      "requirement": "每个发布任务具备双方事实、响应规则、关键意义、难度和审核后的评分样例"
+    },
+    {
+      "id": "GENERATOR_QA",
+      "scope": "AI动态内容",
+      "status": "not_completed",
+      "requirement": "用当前实际模型与语音链路验证内容自然度、难度、信息一致性及答案隔离"
+    },
+    {
+      "id": "SCORER_CALIBRATION",
+      "scope": "自动诊断与判掌握",
+      "status": "not_completed",
+      "requirement": "模型锚点与实际语音评分器对照；积累真实使用证据，低可信度不更新掌握。无需先配置人工团队，但不能把合成证据等同真人校准。"
+    },
+    {
+      "id": "LEARNER_PILOT",
+      "scope": "长期教学承诺",
+      "status": "not_completed",
+      "requirement": "真实目标用户的陌生任务表现与延迟保持检查；不预先承诺最快路径"
+    }
+  ],
+  "decision": "地图规格完成模型审核，可以制作并检查具体课程；实际内容、评分与学习效果门槛继续按证据判定。",
+  "model_assisted_map_review": {
+    "status": "completed",
+    "evidence": "review_summary.json",
+    "scope": "地图目标与候选对应；不代替具体课程/语音测评"
+  }
+}

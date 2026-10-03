@@ -1,0 +1,2054 @@
+{
+  "original_rows": 4057,
+  "coordinate_rows": 4054,
+  "corrected_existing_rows": 167,
+  "changes": [
+    {
+      "id": "GSE.GENERAL.Reading.9.6",
+      "before": {
+        "skill": "Reading",
+        "gse": 15
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 14
+      },
+      "text": "Can recognise familiar names, words and very basic phrases on simple notices."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.10.39",
+      "before": {
+        "skill": "Reading",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 36
+      },
+      "text": "Can understand short, simple personal emails and letters."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.10.47",
+      "before": {
+        "skill": "Reading",
+        "gse": 39
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 38
+      },
+      "text": "Can understand short, simple narratives and biographies."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.11.67",
+      "before": {
+        "skill": "Reading",
+        "gse": 46
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 45
+      },
+      "text": "Can generally understand straightforward factual texts on familiar topics."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.11.71",
+      "before": {
+        "skill": "Reading",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 46
+      },
+      "text": "Can extract relevant details in everyday letters, brochures and short official documents."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.12.97",
+      "before": {
+        "skill": "Reading",
+        "gse": 62
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 61
+      },
+      "text": "Can understand the plot of extended narratives written in standard, non-literary language."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.12.106",
+      "before": {
+        "skill": "Reading",
+        "gse": 66
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 65
+      },
+      "text": "Can summarise, comment on and discuss a wide range of factual and imaginative texts."
+    },
+    {
+      "id": "GSE.GENERAL.Reading.13.136",
+      "before": {
+        "skill": "Reading",
+        "gse": 80
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 79
+      },
+      "text": "Can understand the details of long complex texts in their field without needing to reread."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.14.147",
+      "before": {
+        "skill": "Listening",
+        "gse": 11
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 10
+      },
+      "text": "Can recognise the letters of the English alphabet when pronounced."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.14.169",
+      "before": {
+        "skill": "Listening",
+        "gse": 25
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 24
+      },
+      "text": "Can follow speech which is very slow and carefully articulated, with long pauses."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.15.189",
+      "before": {
+        "skill": "Listening",
+        "gse": 29
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 28
+      },
+      "text": "Can identify objects, places or people from short spoken descriptions."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.18.267",
+      "before": {
+        "skill": "Listening",
+        "gse": 56
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 55
+      },
+      "text": "Can distinguish between different points of view in a discussion or presentation."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.18.268",
+      "before": {
+        "skill": "Listening",
+        "gse": 57
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 56
+      },
+      "text": "Can follow classes and training courses on a range of subjects, provided the content is simple."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.18.282",
+      "before": {
+        "skill": "Listening",
+        "gse": 61
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 60
+      },
+      "text": "Can understand scripted speech delivered quickly, if the accent is familiar."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.18.286",
+      "before": {
+        "skill": "Listening",
+        "gse": 62
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 61
+      },
+      "text": "Can follow a natural group discussion, but may find it difficult to participate effectively."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.18.289",
+      "before": {
+        "skill": "Listening",
+        "gse": 64
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 63
+      },
+      "text": "Can understand TV documentaries, interviews, plays and most films in standard speech."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.19.306",
+      "before": {
+        "skill": "Listening",
+        "gse": 70
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 69
+      },
+      "text": "Can follow the main points in a linguistically complex interview, if provided with written supporting material."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.19.304",
+      "before": {
+        "skill": "Listening",
+        "gse": 69
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 70
+      },
+      "text": "Can follow the main points in a linguistically complex interview, if provided with written supporting material."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.19.307",
+      "before": {
+        "skill": "Listening",
+        "gse": 71
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 70
+      },
+      "text": "Can infer attitude and mood in discussions by using contextual, grammatical and lexical cues."
+    },
+    {
+      "id": "GSE.GENERAL.Listening.20.335",
+      "before": {
+        "skill": "Listening",
+        "gse": 88
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 86
+      },
+      "text": "Can understand in detail discussions on abstract and complex topics among speakers with a variety of accents and dialects."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.21.338",
+      "before": {
+        "skill": "Speaking",
+        "gse": 11
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 10
+      },
+      "text": "Can make simple purchases by pointing or other gestures."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.21.358",
+      "before": {
+        "skill": "Speaking",
+        "gse": 19
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 18
+      },
+      "text": "Can ask for and give the day and date."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.21.366",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 21
+      },
+      "text": "Can ask very simply for repetition when they don’t understand."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.21.367",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 21
+      },
+      "text": "Can ask and answer simple questions about things they have in a limited way."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.368",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can say where they and other people are in a limited way."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.369",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can ask and answer basic questions about family and friends in a limited way."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.370",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can tell the time of day to within five minutes."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.371",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can answer simple questions about objects (e.g. ‘colour’, ‘size’)."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.372",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can ask for the spelling of a word, or for a word to be written down."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.22.373",
+      "before": {
+        "skill": "Speaking",
+        "gse": 20
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 22
+      },
+      "text": "Can introduce themselves in a basic way, giving some information about where they live, their family etc."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.23.404",
+      "before": {
+        "skill": "Speaking",
+        "gse": 28
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 27
+      },
+      "text": "Can exchange personal details (e.g. ‘where they live’, ‘things they have’)."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.29.568",
+      "before": {
+        "skill": "Speaking",
+        "gse": 44
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 43
+      },
+      "text": "Can use fixed expressions to keep a conversation going (e.g. ‘I see.’, ‘right’)."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.33.717",
+      "before": {
+        "skill": "Speaking",
+        "gse": 64
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 63
+      },
+      "text": "Can make spontaneous announcements clearly and fluently."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.34.746",
+      "before": {
+        "skill": "Speaking",
+        "gse": 68
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 67
+      },
+      "text": "Can initiate, maintain and end discourse naturally with effective turn-taking."
+    },
+    {
+      "id": "GSE.GENERAL.Speaking.34.748",
+      "before": {
+        "skill": "Speaking",
+        "gse": 69
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 68
+      },
+      "text": "Can comment tactfully on other people’s contributions to a discussion."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.37.822",
+      "before": {
+        "skill": "Writing",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 10
+      },
+      "text": "Can write cardinal numbers from 1 to 20 as words."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.37.823",
+      "before": {
+        "skill": "Writing",
+        "gse": 18
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 12
+      },
+      "text": "Can copy familiar words and short phrases about everyday objects and set phrases."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.38.845",
+      "before": {
+        "skill": "Writing",
+        "gse": 31
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 30
+      },
+      "text": "Can give personal details in written form in a limited way."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.38.868",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write a description of a simple everyday process (e.g. ‘a recipe’)."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.38.869",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write very simple personal emails/letters expressing thanks and apology."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.38.870",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write short, simple notes, emails and messages relating to everyday matters."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.38.871",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write short, basic descriptions of places, people or things."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.872",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can write a simple email/letter in response to a request for information."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.873",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can write basic instructions with a simple list of points."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.874",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can write basic sentences comparing products, people or places."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.875",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can signal contrast in a simple text with a limited range of language."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.876",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can take a short, simple message if they are able to ask the speaker to repeat and reformulate it."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.39.877",
+      "before": {
+        "skill": "Writing",
+        "gse": 37
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 39
+      },
+      "text": "Can write short basic descriptions of past events and activities."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.41.954",
+      "before": {
+        "skill": "Writing",
+        "gse": 57
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 56
+      },
+      "text": "Can summarise factual information within their field of interest."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.41.957",
+      "before": {
+        "skill": "Writing",
+        "gse": 58
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 57
+      },
+      "text": "Can collate short pieces of information and summarise them for somebody else."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.42.986",
+      "before": {
+        "skill": "Writing",
+        "gse": 64
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 63
+      },
+      "text": "Can summarise in writing different points of view."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.43.1010",
+      "before": {
+        "skill": "Writing",
+        "gse": 68
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 67
+      },
+      "text": "Can seek confirmation of information and ideas on abstract and concrete topics."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.43.1013",
+      "before": {
+        "skill": "Writing",
+        "gse": 69
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 68
+      },
+      "text": "Can write a structured review of a film, book or play with some references and examples."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.43.1015",
+      "before": {
+        "skill": "Writing",
+        "gse": 70
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 69
+      },
+      "text": "Can convey information and ideas on abstract and concrete topics."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.43.1020",
+      "before": {
+        "skill": "Writing",
+        "gse": 71
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 70
+      },
+      "text": "Can demonstrate understanding of structure and conventions of different written genres."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.43.1022",
+      "before": {
+        "skill": "Writing",
+        "gse": 72
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 71
+      },
+      "text": "Can write a detailed, reasoned argument for or against a case."
+    },
+    {
+      "id": "GSE.GENERAL.Writing.44.1039",
+      "before": {
+        "skill": "Writing",
+        "gse": 80
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 79
+      },
+      "text": "Can write summaries and reviews of professional or literary works."
+    },
+    {
+      "id": "GSE.ACADEMIC.Reading.11.6",
+      "before": {
+        "skill": "Reading",
+        "gse": 15
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 14
+      },
+      "text": "Can recognise familiar names, words and very basic phrases on simple notices."
+    },
+    {
+      "id": "GSE.ACADEMIC.Reading.11.10",
+      "before": {
+        "skill": "Reading",
+        "gse": 25
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 23
+      },
+      "text": "Can understand short, simple descriptions of objects, people and animals, given visual support."
+    },
+    {
+      "id": "GSE.ACADEMIC.Reading.13.55",
+      "before": {
+        "skill": "Reading",
+        "gse": 41
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 40
+      },
+      "text": "Can follow the sequence of actions or events in a text on a familiar everyday topic."
+    },
+    {
+      "id": "GSE.ACADEMIC.Reading.18.153",
+      "before": {
+        "skill": "Reading",
+        "gse": 64
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 63
+      },
+      "text": "Can research a topic by reading a range of newspapers and magazines."
+    },
+    {
+      "id": "GSE.ACADEMIC.Reading.18.157",
+      "before": {
+        "skill": "Reading",
+        "gse": 66
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 65
+      },
+      "text": "Can critically evaluate the effectiveness of a simple argumentative essay."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.284",
+      "before": {
+        "skill": "Listening",
+        "gse": 26
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can identify a caller’s name and phone number from a short, simple telephone conversation."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.279",
+      "before": {
+        "skill": "Listening",
+        "gse": 24
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 25
+      },
+      "text": "Can follow speech which is very slow and carefully articulated, with long pauses."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.280",
+      "before": {
+        "skill": "Listening",
+        "gse": 24
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 25
+      },
+      "text": "Can understand cardinal numbers from 101 to 1000."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.281",
+      "before": {
+        "skill": "Listening",
+        "gse": 24
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 25
+      },
+      "text": "Can recognise basic factual information about times and dates."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.282",
+      "before": {
+        "skill": "Listening",
+        "gse": 24
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 25
+      },
+      "text": "Can understand basic information about someone’s likes and dislikes."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.25.272",
+      "before": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 26
+      },
+      "text": "Can identify a caller’s name and phone number from a short, simple telephone conversation."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.28.340",
+      "before": {
+        "skill": "Listening",
+        "gse": 40
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 39
+      },
+      "text": "Can understand enough to manage simple routine exchanges without undue effort."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.28.341",
+      "before": {
+        "skill": "Listening",
+        "gse": 41
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 40
+      },
+      "text": "Can derive the probable meaning of simple, unknown words from short, familiar contexts."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.36.487",
+      "before": {
+        "skill": "Listening",
+        "gse": 73
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 71
+      },
+      "text": "Can recognise the use of language that expresses doubt in a linguistically complex presentation or lecture."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.36.472",
+      "before": {
+        "skill": "Listening",
+        "gse": 71
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 73
+      },
+      "text": "Can recognise the use of language that expresses doubt in a linguistically complex presentation or lecture."
+    },
+    {
+      "id": "GSE.ACADEMIC.Listening.39.530",
+      "before": {
+        "skill": "Listening",
+        "gse": 84
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 83
+      },
+      "text": "Can understand implied or unstated meanings in a linguistically complex presentation or lecture."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.858",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can paraphrase information taken from a simple academic text."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.859",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can respond to ideas and suggestions in informal discussions."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.860",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can contribute ideas in a panel discussion, using simple language."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.861",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can use synonyms to describe or gloss an unknown word."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.862",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can ask for clarification of an unknown acronym or technical term used in conversation."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.863",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can explain the main points in an idea or problem with reasonable precision."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.864",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can report factual information given by other people."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.865",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can explain why something is a problem."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.866",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can politely interrupt during a formal conversation, using fixed expressions"
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.867",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can express their thoughts in some detail on cultural topics (e.g. ‘music’, ‘films’)."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.868",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can describe conclusions they have drawn from graphs and charts, using simple language."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.869",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can ask someone to elaborate on a point in an academic discussion, using simple language."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.870",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can summarise information from a simple presentation or lecture aimed at a general audience."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.871",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can generally follow most of what is said and repeat back details to confirm understanding."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.55.872",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 55
+      },
+      "text": "Can lead a simple discussion, if given time in advance to prepare."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.873",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can decline offers politely using a range of formal and informal expressions."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.874",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can discuss charts and graphs in an academic text, using simple language."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.875",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can effectively request information from a professor outside of class."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.876",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can give an opinion on practical problems, with support when necessary."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.877",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can express and comment on ideas and suggestions in informal discussions."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.878",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can summarise and give opinions on issues and stories and answer questions in detail."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.879",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can summarise and comment on a short story or article and answer questions in detail."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.880",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can ask for confirmation of understanding during a live discussion or presentation."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.881",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can give brief comments on the views of others."
+    },
+    {
+      "id": "GSE.ACADEMIC.Speaking.56.882",
+      "before": {
+        "skill": "Speaking",
+        "gse": 54
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 56
+      },
+      "text": "Can express approval and appreciation of other people’s ideas in a discussion."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.71.1119",
+      "before": {
+        "skill": "Writing",
+        "gse": 18
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 12
+      },
+      "text": "Can copy familiar words and short phrases about everyday objects and set phrases."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.72.1157",
+      "before": {
+        "skill": "Writing",
+        "gse": 35
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 34
+      },
+      "text": "Can write a simple text (e.g. ‘an invitation to a party’) containing key information, given a model."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1180",
+      "before": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write short, simple notes, emails and messages relating to everyday matters."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1181",
+      "before": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write a description of a simple everyday process (e.g. ‘a recipe’)."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1182",
+      "before": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "text": "Can write short, basic descriptions of places, people or things."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1165",
+      "before": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "text": "Can write short, simple notes, emails and messages relating to everyday matters."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1166",
+      "before": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "text": "Can write a description of a simple everyday process (e.g. ‘a recipe’)."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.73.1167",
+      "before": {
+        "skill": "Writing",
+        "gse": 38
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 40
+      },
+      "text": "Can write short, basic descriptions of places, people or things."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1331",
+      "before": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "text": "Can write instructions on how to repair an object, device or product."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1332",
+      "before": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "text": "Can clearly signal the difference between fact and opinion in structured text."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1333",
+      "before": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "text": "Can reformulate an idea in different words to emphasise or explain a point."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1320",
+      "before": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "text": "Can write instructions on how to repair an object, device or product."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1321",
+      "before": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "text": "Can clearly signal the difference between fact and opinion in structured text."
+    },
+    {
+      "id": "GSE.ACADEMIC.Writing.80.1322",
+      "before": {
+        "skill": "Writing",
+        "gse": 61
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 62
+      },
+      "text": "Can reformulate an idea in different words to emphasise or explain a point."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Reading.12.3",
+      "before": {
+        "skill": "Reading",
+        "gse": 10
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 12
+      },
+      "text": "Can read and understand simple prices."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Reading.12.6",
+      "before": {
+        "skill": "Reading",
+        "gse": 15
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 14
+      },
+      "text": "Can recognise familiar names, words and very basic phrases on simple notices."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Reading.15.89",
+      "before": {
+        "skill": "Reading",
+        "gse": 47
+      },
+      "after": {
+        "skill": "Reading",
+        "gse": 46
+      },
+      "text": "Can understand the main information in the agenda for a work- related meeting."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.221",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can extract the names of people or places from short, simple dialogues, if delivered slowly and clearly."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.222",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can understand short, simple instructions addressed carefully and slowly."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.223",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can identify a caller’s name and phone number from a short, simple telephone conversation."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.238",
+      "before": {
+        "skill": "Listening",
+        "gse": 26
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can identify a caller’s name and phone number from a short, simple telephone conversation."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.224",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can understand questions addressed carefully and slowly."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.225",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can understand the time of day when expressed to the quarter hour."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.226",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 23
+      },
+      "text": "Can understand the time of day when expressed to within five minutes."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.23.223",
+      "before": {
+        "skill": "Listening",
+        "gse": 22
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 26
+      },
+      "text": "Can identify a caller’s name and phone number from a short, simple telephone conversation."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.27.318",
+      "before": {
+        "skill": "Listening",
+        "gse": 41
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 40
+      },
+      "text": "Can derive the probable meaning of simple, unknown words from short, familiar contexts."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.29.355",
+      "before": {
+        "skill": "Listening",
+        "gse": 56
+      },
+      "after": {
+        "skill": "Listening",
+        "gse": 55
+      },
+      "text": "Can distinguish between different points of view in a discussion or presentation."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.434",
+      "before": {
+        "skill": "Listening",
+        "gse": 10
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 10
+      },
+      "text": "Can ask someone for their name."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.435",
+      "before": {
+        "skill": "Listening",
+        "gse": 11
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 11
+      },
+      "text": "Can make simple purchases by pointing or other gestures."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.436",
+      "before": {
+        "skill": "Listening",
+        "gse": 11
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 11
+      },
+      "text": "Can say the letters of the alphabet."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.437",
+      "before": {
+        "skill": "Listening",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 12
+      },
+      "text": "Can introduce themselves using a basic phrase (e.g. ‘My name’s ...’)."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.438",
+      "before": {
+        "skill": "Listening",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 12
+      },
+      "text": "Can recognise and say the name of their own country, nationality and language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.439",
+      "before": {
+        "skill": "Listening",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 12
+      },
+      "text": "Can name a few very common everyday objects."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.440",
+      "before": {
+        "skill": "Listening",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 12
+      },
+      "text": "Can use a few basic words and phrases to show politeness (e.g. ‘please’, ‘thank you’)."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.441",
+      "before": {
+        "skill": "Listening",
+        "gse": 12
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 12
+      },
+      "text": "Can greet people using a few basic fixed expressions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.442",
+      "before": {
+        "skill": "Listening",
+        "gse": 13
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 13
+      },
+      "text": "Can ask someone what their nationality is."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.443",
+      "before": {
+        "skill": "Listening",
+        "gse": 13
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 13
+      },
+      "text": "Can read out phone numbers."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.444",
+      "before": {
+        "skill": "Listening",
+        "gse": 14
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 14
+      },
+      "text": "Can spell out their own name and address."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.445",
+      "before": {
+        "skill": "Listening",
+        "gse": 15
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 15
+      },
+      "text": "Can say other people’s nationalities."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.446",
+      "before": {
+        "skill": "Listening",
+        "gse": 16
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 16
+      },
+      "text": "Can tell the time of day in full hours."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.447",
+      "before": {
+        "skill": "Listening",
+        "gse": 16
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 16
+      },
+      "text": "Can name a few common jobs."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.448",
+      "before": {
+        "skill": "Listening",
+        "gse": 16
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 16
+      },
+      "text": "Can ask and answer basic requests for information with ‘What’s this/that?’."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Listening.34.449",
+      "before": {
+        "skill": "Listening",
+        "gse": 16
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 16
+      },
+      "text": "Can give very limited personal information using basic fixed expressions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.45.681",
+      "before": {
+        "skill": "Speaking",
+        "gse": 42
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 41
+      },
+      "text": "Can talk about orders or deliveries using a few fixed expressions and given help with vocabulary."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.45.669",
+      "before": {
+        "skill": "Speaking",
+        "gse": 41
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 42
+      },
+      "text": "Can talk about orders or deliveries using a few fixed expressions and given help with vocabulary."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.748",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can discuss everyday, practical issues when the conversation is conducted slowly and clearly."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.749",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can talk about risk using simple language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.750",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can leave a voicemail message including key information."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.751",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can discuss a travel-related problem (accommodation/transport) with a service agent over the phone."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.752",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can maintain professional etiquette in conversation using simple phrases and fixed expressions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.753",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can give a simple update on a work-related project."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.754",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can make and justify a simple point of view on a work-related topic."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.755",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can give detailed accounts of experiences, describing feelings and reactions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.756",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can discuss product features in a business setting using simple language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.757",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can respond in a simple way to verbal challenge or aggression."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.758",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can state the purpose of a meeting using some basic fixed expressions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.49.759",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 49
+      },
+      "text": "Can invite colleagues to a work-related event or function using informal language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.760",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can carry out a simple informal interview."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.761",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can ask someone to clarify or elaborate what they have just said."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.762",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can negotiate prices and ask for discounts."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.763",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can present a conclusion in a meeting using simple language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.764",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can relate the plot of a book or film and describe their reactions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.765",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can give simple reasons to justify a viewpoint on a familiar topic."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.766",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can give detailed directions to a driver."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.767",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can take some initiative in an interview, but is generally very dependent on interviewer."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.768",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can talk about work-related plans and intentions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.769",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can summarise the main ideas in a meeting using simple language."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Speaking.50.770",
+      "before": {
+        "skill": "Speaking",
+        "gse": 48
+      },
+      "after": {
+        "skill": "Speaking",
+        "gse": 50
+      },
+      "text": "Can discuss films, books or plays in simple terms, using fixed expressions."
+    },
+    {
+      "id": "GSE.PROFESSIONAL.Writing.73.1147",
+      "before": {
+        "skill": "Writing",
+        "gse": 18
+      },
+      "after": {
+        "skill": "Writing",
+        "gse": 12
+      },
+      "text": "Can copy familiar words and short phrases about everyday objects and set phrases."
+    }
+  ],
+  "original_rows_not_reconciled": [
+    "GSE.GENERAL.Reading.10.52",
+    "GSE.GENERAL.Listening.20.334",
+    "GSE.ACADEMIC.Reading.13.53",
+    "GSE.ACADEMIC.Speaking.46.687",
+    "GSE.PROFESSIONAL.Reading.14.59",
+    "GSE.PROFESSIONAL.Reading.14.60",
+    "GSE.PROFESSIONAL.Listening.27.322",
+    "GSE.PROFESSIONAL.Speaking.41.591"
+  ],
+  "unresolved_coordinate_rows": [
+    {
+      "id": "GSE.GENERAL.COORD.p6.1",
+      "source": "GSE.GENERAL",
+      "skill": null,
+      "gse": 35,
+      "source_band": null,
+      "text": "Can describe a travel experience with a few very basic stock phrases.",
+      "origin_code": "P",
+      "pdf_page": 6,
+      "source_file": "../long-term-map-gse-clb-2026-10-02/sources/gse-adult-general.pdf",
+      "legacy_alias_ids": [],
+      "extraction": "coordinate_order_without_margin_labels",
+      "source_verification": "page_text_and_row_geometry"
+    },
+    {
+      "id": "GSE.GENERAL.Listening.20.334",
+      "source": "GSE.GENERAL",
+      "skill": "Listening",
+      "gse": null,
+      "source_band": "GSE 85–90/C2: Listening",
+      "text": "Can understand the details of extended and linguistically complex professional and technical presentations.",
+      "origin_code": "N2000a",
+      "pdf_page": 20,
+      "source_file": "../long-term-map-gse-clb-2026-10-02/sources/gse-adult-general.pdf",
+      "legacy_alias_ids": [
+        "GSE.GENERAL.Listening.20.334"
+      ],
+      "extraction": "coordinate_order_without_margin_labels",
+      "source_verification": "page_text_and_row_geometry"
+    }
+  ],
+  "policy": "Only coordinate-extracted records may be used; unreconciled legacy references disabled. No CEFR proficiency calibration claimed."
+}

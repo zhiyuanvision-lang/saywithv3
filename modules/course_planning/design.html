@@ -1,0 +1,123 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>课程规划与生成模块开发设计</title><style>body{font:16px/1.65 system-ui;color:#24313c;background:#fafbfc;margin:0}main{max-width:1050px;margin:auto;padding:32px 24px}h1{font-size:28px}h2{font-size:22px;margin-top:36px}h3{font-size:18px}a{color:#145782}pre{white-space:pre-wrap;background:#edf2f5;padding:16px;font-size:13px}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:10px;border-bottom:1px solid #dce1e6;text-align:left;vertical-align:top}.note{padding:14px;border-left:3px solid #778d9d;background:#edf2f5}li{margin:6px 0}</style><main>
+<h1>课程规划与生成模块开发设计</h1><p>2026-10-03 · Python 后端 · 固定地图 1.0.1-model-reviewed · 设计 v1</p>
+<p class="note">本文是开发设计。地图读取、校验和快照导出代码已经整理；课程规划、供应商调用、异步任务、语音生成与发布服务尚未实现。SQL未执行到任何数据库。</p>
+<p>沿用已确认的总体结构：调度 → 教学任务 → 生成课程与音频 → 质检与保存。下述8个子模块是内部开发分工，不替换总体图。</p>
+<p><b>初版：</b>Python + FastAPI + 独立异步Worker + PostgreSQL任务队列和业务存储 + 音频对象存储。地图通过只读仓库访问，模型与语音通过可替换接口调用。</p>
+<p><a href="design.json">结构化设计</a> · <a href="contracts.schema.json">JSON Schema</a> · <a href="contracts.examples.json">接口示例</a> · <a href="schema.sql">数据库草案</a> · <a href="ports.py">Python接口</a></p>
+<h2>输入、输出与边界</h2><p>输入：固定版本的TargetDefinition、LearnerProfile、需求与预算。输出：有审核状态的LessonPackage。内部负责目标和资源选择、生成、质检与发布；能力掌握更新由模块2执行，实时角色状态和公开负载投影由会话服务执行。</p>
+<section><h2>目标调度</h2><p><b>实现：</b>rules</p><ul><li>证据不足先选低负担诊断；尚未检查不等于不会</li><li>优先当前交流阻碍和到期保持检查</li><li>选择需求相关缺口，检查理解、互动修复的长期遗漏</li><li>建议前置可跳过，不推导整个等级掌握</li><li>记录选择理由、证据ID和其他候选</li></ul></section><section><h2>资源选择</h2><p><b>实现：</b>rules_with_optional_model_review</p><ul><li>按词义ID而非单词字符串排除已掌握资源</li><li>认识但提取失败的表达进入练习，不重新解释整遍</li><li>GL、SSGL为成人默认候选；YL需明确开启</li><li>GSE未分级和星号状态保留，不自动给课程定级</li><li>候选词必须与实际任务相关，主题命中不等于教学适配</li><li>必要新资源必须在测评前确认理解，或记录支持，不据此误判沟通能力</li></ul></section><section><h2>教学任务构建</h2><p><b>实现：</b>rules</p><ul><li>用户、地图和能力摘要版本</li><li>一个主目标与单独记录的附加目标</li><li>明确的学习目的与理由</li><li>主题、输入和支持条件</li><li>已知、新学及复习资源</li><li>学习、应用及独立变体要求</li><li>目标必要意义和允许改述</li><li>任务模式与音频证据要求</li></ul></section><section><h2>文本与任务生成</h2><p><b>实现：</b>LLM</p><ul><li>先检查是否有版本及条件兼容的审核模板</li><li>无匹配模板时模型按结构化合同生成</li><li>中文意图→英文说法→必要解释→个人替换→遮答案表达→信息差应用</li><li>具体化双方可见事实、角色私有信息、回应规则、关键意义和可接受结果</li><li>独立变体改变影响结果的条件，不只换名字</li><li>生成pass/partial/fail/unjudgeable锚点，但锚点不是已校准评分器</li></ul><p>格式或内容失败可限次修订；没有合格模板则标needs_review，不伪造回退资源</p></section><section><h2>文本与任务质检</h2><p><b>实现：</b>rules_and_LLM</p><ul><li>Schema、固定版本和目标引用</li><li>逻辑限制与可行结果</li><li>输入资源已学或支持被明确记录</li><li>阶段、输入条件与允许帮助</li><li>角色不替用户完成关键动作</li><li>独立变体不暴露示例答案</li><li>评分检查只评价主目标必要意义</li><li>用户拒绝、个人立场或不熟悉专业知识不算语言失败</li><li>客户端负载不含对方私有信息和评分锚点</li></ul></section><section><h2>音频生成与复用</h2><p><b>实现：</b>speech_service_and_rules</p><ul><li>为已审核文本生成或匹配适配音频</li><li>学习示例和测评输入分别标用途</li><li>异步执行，固定声音配置和文本版本</li><li>网络失败按阶段重试，不重做已完成文本</li></ul></section><section><h2>音频质检</h2><p><b>实现：</b>speech_tools_and_rules</p><ul><li>资产存在且能解码播放</li><li>关键词、数字、否定与文本一致</li><li>语速、长度与清晰度符合任务条件</li><li>测评字幕和提示显示规则</li><li>语音转写对照是辅助检查，不是绝对正确性证明</li></ul><p>failed_audio_qa，修订音频；有文本不能宣称听力课程已可使用</p></section><section><h2>课程保存与交付</h2><p><b>实现：</b>rules</p><ul><li>仅必要文本和音频检查通过才能learner_ready</li><li>课程版本发布后不可原位改写，修订生成新版本</li><li>保留模型、提示、地图、规则、资源和音频版本</li><li>服务端保留全部角色和评分内容；由会话服务按阶段投影公开负载</li><li>未通过的草稿可保存研究，但不得成为用户可见课程</li></ul></section>
+<h2>异步状态与失败恢复</h2><p>queued → planning → generating_text → checking_text → generating_audio → checking_audio → approved → needs_review → failed → cancelled</p><ul><li>阶段进度和课程版本分开保存</li><li>重试可恢复成功阶段，记录尝试次数、错误分类和预算</li><li>生成请求固定profile_version，用户变化不修改执行中的任务；完成时按明确新鲜度政策交付或重规划</li><li>idempotency_key仅在同一用户范围去重，同key不同请求体返回冲突</li><li>取消和worker回收使用job版本/lease，过期worker不能覆盖新结果</li><li>模型超时、拒绝、限流、格式错误、内容错误和音频错误分别处理</li><li>发布课程与完成事件在同一事务保存，消费者按事件ID去重</li></ul>
+<h2>API合同</h2><div style="overflow:auto"><table><thead><tr><th>方法</th><th>路径</th><th>输入</th><th>输出与边界</th></tr></thead><tbody><tr><td>POST</td><td>/v1/course-generation-jobs</td><td>目标可选、profile_version、需求、预算；目标未给则调度选择</td><td>202 GenerationJob；认证用户由服务端确定；需Idempotency-Key</td></tr><tr><td>GET</td><td>/v1/course-generation-jobs/{job_id}</td><td></td><td>GenerationJob阶段、错误摘要和公开结果引用；不返回私有草稿</td></tr><tr><td>POST</td><td>/v1/course-generation-jobs/{job_id}/cancel</td><td></td><td>取消请求及当前状态；幂等</td></tr><tr><td>GET</td><td>/v1/lessons/{lesson_id}/versions/{version}</td><td></td><td>服务端内部LessonPackage；学习者端不得调用此完整包接口</td></tr><tr><td>POST</td><td>/internal/v1/lessons/{lesson_id}/publish</td><td></td><td>全部门槛通过的固定版本；仅内部流程允许</td></tr></tbody></table></div>
+<h2>数据库与事件</h2><p>保存learning_plans、teaching_assignments、generation_jobs、lesson_versions、quality_reports、audio_assets和outbox_events。公开课程版本不可原位改写；用户数据与角色私有负载分开授权读取。模型输出不能自行设置发布通过。</p>
+<h2>已有20节课程如何接入</h2><p>将research/course-qa-2026-10-02的20节课程作为任务合同与错误注入回归样例。它们含学习步骤、角色规则和独立变体，但没有真实声音，也未调用生产生成器，须显式字段适配，不能整包发给App。</p><ul><li>main_objective_id → target_ids中的主目标</li><li>learning → learning_materials与学习步骤</li><li>supported_practice → 有提示练习任务</li><li>independent_task、role_response_rules、assessment → 独立任务合同及私有角色规则</li><li>release、audio_assets → QA与资产状态，不继承为上线许可</li></ul>
+<h2>开发顺序与验收</h2><h3>M1 合同、调度规则及任务队列骨架</h3><ul><li>同输入和规则版本可重现调度</li><li>已知资源不重复解释</li><li>一次课程一个主目标</li><li>失败和不确定证据可触发诊断</li><li>幂等及重启恢复</li></ul><h3>M2 文本生成与QA</h3><ul><li>真实供应商结构化输出</li><li>20节样例字段映射</li><li>注入错误及正确改述回归</li><li>未通过不能发布</li><li>缺少模板正确进入needs_review</li></ul><h3>M3 音频链路与课程发布</h3><ul><li>实际声音与文本核查</li><li>公开/伙伴/评分负载隔离</li><li>版本不可覆盖</li><li>重试不重复计费阶段或重复发布</li></ul><h3>M4 与能力模块及会话模块联调</h3><ul><li>真实用户摘要读入</li><li>会话实际支持记录可评价</li><li>真实延迟及成本基线</li><li>保持与迁移试点；不预先承诺最快</li></ul>
+<h2>仍需确定</h2><ul><li>大模型、语音供应商及调用预算</li><li>用户单次时长与新资源负荷，作为可配置初始参数</li><li>真实评价和学习效果校准由相邻模块及试点提供</li></ul>
+<h2>接口示例</h2><p>示例ID用便于阅读的缩写；生产数据库设计使用UUID，需在实现时统一。示例状态只展示格式，不代表真实服务已执行。Schema只检查结构，事实、角色、质量和语音需要其他检查。</p><h3>TeachingAssignment</h3><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;assignment_id&quot;: &quot;as001&quot;,
+  &quot;user_id&quot;: &quot;u001&quot;,
+  &quot;map_version&quot;: &quot;1.0.1-model-reviewed&quot;,
+  &quot;profile_version&quot;: 8,
+  &quot;target_ids&quot;: [
+    &quot;ARRANGE.A2.s2&quot;
+  ],
+  &quot;reason&quot;: &quot;能理解替代建议，但表达仍依赖提示&quot;,
+  &quot;context&quot;: &quot;约同学打篮球&quot;,
+  &quot;resource_plan&quot;: {
+    &quot;review&quot;: [
+      &quot;邀请表达&quot;,
+      &quot;时间表达&quot;
+    ],
+    &quot;focus&quot;: [
+      &quot;提出替代时间&quot;
+    ]
+  },
+  &quot;difficulty&quot;: {
+    &quot;time_conflicts&quot;: 1,
+    &quot;support&quot;: &quot;练习提示渐退；独立任务不展示答案&quot;
+  }
+}</pre><h3>LessonPackage</h3><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;lesson_id&quot;: &quot;ls001&quot;,
+  &quot;lesson_version&quot;: 1,
+  &quot;assignment_id&quot;: &quot;as001&quot;,
+  &quot;map_version&quot;: &quot;1.0.1-model-reviewed&quot;,
+  &quot;target_ids&quot;: [
+    &quot;ARRANGE.A2.s2&quot;
+  ],
+  &quot;learning_materials&quot;: [
+    {
+      &quot;intent_zh&quot;: &quot;那四点半怎么样？&quot;,
+      &quot;expression&quot;: &quot;How about four thirty?&quot;,
+      &quot;audio_ref&quot;: &quot;media/example001&quot;
+    }
+  ],
+  &quot;practice_task_ref&quot;: &quot;tasks/tk001-v1&quot;,
+  &quot;independent_task&quot;: {
+    &quot;task_id&quot;: &quot;tk002&quot;,
+    &quot;task_version&quot;: 1,
+    &quot;learner_facts&quot;: {
+      &quot;available_times&quot;: [
+        &quot;10:00&quot;,
+        &quot;14:00&quot;
+      ]
+    },
+    &quot;partner_private_facts&quot;: {
+      &quot;available_times&quot;: [
+        &quot;11:00&quot;,
+        &quot;14:00&quot;
+      ]
+    },
+    &quot;role_rules&quot;: [
+      &quot;说明十点没空，不主动提供最终答案&quot;
+    ],
+    &quot;allowed_support&quot;: [
+      &quot;请求重复&quot;
+    ],
+    &quot;assessment_contract&quot;: {
+      &quot;critical_checks&quot;: [
+        &quot;提出双方可行的替代时间&quot;
+      ],
+      &quot;acceptable_times&quot;: [
+        &quot;14:00&quot;
+      ],
+      &quot;accept_correct_paraphrase&quot;: true
+    }
+  },
+  &quot;quality&quot;: {
+    &quot;status&quot;: &quot;approved&quot;,
+    &quot;report_ref&quot;: &quot;qa/ls001-v1&quot;,
+    &quot;qa_version&quot;: &quot;qa-v1&quot;
+  },
+  &quot;provenance&quot;: {
+    &quot;model_version&quot;: &quot;model-pinned-v1&quot;,
+    &quot;prompt_version&quot;: &quot;lesson-prompt-v1&quot;
+  },
+  &quot;example_notice&quot;: &quot;approved为演示流程值；此示例不是已真实审核的上线课程&quot;,
+  &quot;learner_ready&quot;: false
+}</pre><h3>GenerationJob</h3><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;job_id&quot;: &quot;job001&quot;,
+  &quot;user_id&quot;: &quot;u001&quot;,
+  &quot;state&quot;: &quot;queued&quot;,
+  &quot;row_version&quot;: 1,
+  &quot;created_at&quot;: &quot;2026-10-03T18:00:00+08:00&quot;
+}</pre><h3>QualityReport</h3><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;report_id&quot;: &quot;qa001&quot;,
+  &quot;job_id&quot;: &quot;job001&quot;,
+  &quot;lesson_id&quot;: &quot;ls001&quot;,
+  &quot;lesson_version&quot;: 1,
+  &quot;stage&quot;: &quot;text&quot;,
+  &quot;decision&quot;: &quot;pass&quot;,
+  &quot;checker_version&quot;: &quot;qa-v1&quot;,
+  &quot;checks&quot;: [
+    {
+      &quot;id&quot;: &quot;target_contract&quot;,
+      &quot;passed&quot;: true,
+      &quot;reason&quot;: &quot;接口演示，未执行真实模型检查&quot;
+    }
+  ]
+}</pre>
+<p>语言选择参考：<a href="https://fastapi.tiangolo.com/async/">FastAPI异步与并发说明</a>。部署和队列仍需结合实际请求量测试。</p>
+</main></html>
