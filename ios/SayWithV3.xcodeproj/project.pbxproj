@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		1FB7D0BAD5A9BDA6436E43F1 /* LexicalPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */; };
+		382E0E5AAE6B2A9E1134E0F2 /* WechatOpenSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751FD504B7D49C4FBCFE35E6 /* WechatOpenSDK.xcframework */; };
 		3845954177D2286C4C138A26 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0FE6277B336B27A34CABB /* Audio.swift */; };
 		48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03623349FEC8F4563DE3BC /* SayWithApp.swift */; };
+		4B35B6130015447484A7737B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681346DD3080B554923375AB /* WebKit.framework */; };
+		58D7A1872AE168E7F5B71A8F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9192EFB615E5ED8960DD71 /* Account.swift */; };
 		663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */; };
+		74116F10657B23ADDD4FF2DD /* WeChatAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606598BBB5F4A31F6421CFC /* WeChatAuth.swift */; };
 		747E9803591012A1BA7258E0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459D554CE56EDFF8F0E2A11 /* API.swift */; };
+		85F6C4E66531F4378DE1D955 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A686FCCEE4AFA5F90A48D65 /* LoginView.swift */; };
+		869AE76067F74CCC90F9300B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CBF4C01B8C886D542895A9 /* Security.framework */; };
+		87453036F15AD2BBC712AB44 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776C9E0E29D4DB98777A948 /* AppleAuth.swift */; };
 		8A7C744506720C1C40786C48 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */; };
 		8A99C2B5200CE938453C377C /* LearningFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16211DA0A439F9A2764CA2A4 /* LearningFlowTests.swift */; };
 		8B19C2AD608C23BC93CC5F46 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B405BB603C7503EC6E1B4 /* Models.swift */; };
+		BBAE80CFF368E519E358D7D2 /* LoginFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1A3A2A498B7C32AD355FC /* LoginFlowTests.swift */; };
+		C3078344EFC0062993C23289 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C60694023B4EC7FECCD50072 /* libc++.tbd */; };
 		D305DC7C7113B3C41BED515F /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A048397D3EE2E9D2C91DF /* Vocabulary.swift */; };
 		DB93384914AE8342101CBC3A /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C958FA0FD29C3E60202B316 /* Feedback.swift */; };
+		E36D72172882BE5864D54DDF /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB0B9913992FA7B93FDDF5B /* AuthenticationServices.framework */; };
+		F1DF9FDB05C47314C13875A5 /* WechatOpenSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 751FD504B7D49C4FBCFE35E6 /* WechatOpenSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4752E47C60F6F1E8BF4BFAF /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F664AB156CCB99EDC8AA9 /* ContractTests.swift */; };
 		F7B8862373817EE2892AF064 /* LearningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */; };
+		F7C8A2DDA11FDD82107367DE /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76ED2F16475C19AEFD4A238 /* AccountTests.swift */; };
 		FD2F564D8E04DBAD401D6C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7752775819A61241A400C39B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -39,30 +51,72 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D4F7012B5D0C3E364B2284A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1DF9FDB05C47314C13875A5 /* WechatOpenSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0CBB999DD36ADBD9B4C678E9 /* SayWithV3UITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SayWithV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16211DA0A439F9A2764CA2A4 /* LearningFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningFlowTests.swift; sourceTree = "<group>"; };
+		1A686FCCEE4AFA5F90A48D65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModel.swift; sourceTree = "<group>"; };
 		299B405BB603C7503EC6E1B4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2AE1A3A2A498B7C32AD355FC /* LoginFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowTests.swift; sourceTree = "<group>"; };
 		34D0FE6277B336B27A34CABB /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		480328CE73DBA88751F1DDBA /* SayWithV3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SayWithV3.entitlements; sourceTree = "<group>"; };
 		4C958FA0FD29C3E60202B316 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		647F664AB156CCB99EDC8AA9 /* ContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTests.swift; sourceTree = "<group>"; };
+		681346DD3080B554923375AB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		751FD504B7D49C4FBCFE35E6 /* WechatOpenSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WechatOpenSDK.xcframework; path = Frameworks/WechatOpenSDK.xcframework; sourceTree = "<group>"; };
 		7752775819A61241A400C39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D13FE2B3CE2B9C863755A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8606598BBB5F4A31F6421CFC /* WeChatAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatAuth.swift; sourceTree = "<group>"; };
+		8AB0B9913992FA7B93FDDF5B /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		9D9A048397D3EE2E9D2C91DF /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
 		9E061121C5F521F9ED81E840 /* SayWithV3.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SayWithV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CBF4C01B8C886D542895A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A76ED2F16475C19AEFD4A238 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		B459D554CE56EDFF8F0E2A11 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalPractice.swift; sourceTree = "<group>"; };
 		BAD04842E4F67A5A8825E2AE /* SayWithV3Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SayWithV3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60694023B4EC7FECCD50072 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DE03623349FEC8F4563DE3BC /* SayWithApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayWithApp.swift; sourceTree = "<group>"; };
 		E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E776C9E0E29D4DB98777A948 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
 		E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonScreen.swift; sourceTree = "<group>"; };
+		FA9192EFB615E5ED8960DD71 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02F4C8954683097204E6BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382E0E5AAE6B2A9E1134E0F2 /* WechatOpenSDK.xcframework in Frameworks */,
+				869AE76067F74CCC90F9300B /* Security.framework in Frameworks */,
+				E36D72172882BE5864D54DDF /* AuthenticationServices.framework in Frameworks */,
+				4B35B6130015447484A7737B /* WebKit.framework in Frameworks */,
+				C3078344EFC0062993C23289 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		55C03938DEC6E9CE034599DF /* SayWithV3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A76ED2F16475C19AEFD4A238 /* AccountTests.swift */,
 				647F664AB156CCB99EDC8AA9 /* ContractTests.swift */,
 			);
 			path = SayWithV3Tests;
@@ -74,6 +128,7 @@
 				E2A5C020DFF22F589B82039D /* SayWithV3 */,
 				55C03938DEC6E9CE034599DF /* SayWithV3Tests */,
 				D559BB049EDD767CCAD81BE4 /* SayWithV3UITests */,
+				8E76A231A1849EF633AB9822 /* Frameworks */,
 				7A35F421A5F37337B085F7ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,10 +143,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8E76A231A1849EF633AB9822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB0B9913992FA7B93FDDF5B /* AuthenticationServices.framework */,
+				C60694023B4EC7FECCD50072 /* libc++.tbd */,
+				A5CBF4C01B8C886D542895A9 /* Security.framework */,
+				681346DD3080B554923375AB /* WebKit.framework */,
+				751FD504B7D49C4FBCFE35E6 /* WechatOpenSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D559BB049EDD767CCAD81BE4 /* SayWithV3UITests */ = {
 			isa = PBXGroup;
 			children = (
 				16211DA0A439F9A2764CA2A4 /* LearningFlowTests.swift */,
+				2AE1A3A2A498B7C32AD355FC /* LoginFlowTests.swift */,
 			);
 			path = SayWithV3UITests;
 			sourceTree = "<group>";
@@ -99,7 +167,9 @@
 		E2A5C020DFF22F589B82039D /* SayWithV3 */ = {
 			isa = PBXGroup;
 			children = (
+				FA9192EFB615E5ED8960DD71 /* Account.swift */,
 				B459D554CE56EDFF8F0E2A11 /* API.swift */,
+				E776C9E0E29D4DB98777A948 /* AppleAuth.swift */,
 				7752775819A61241A400C39B /* Assets.xcassets */,
 				34D0FE6277B336B27A34CABB /* Audio.swift */,
 				4C958FA0FD29C3E60202B316 /* Feedback.swift */,
@@ -107,10 +177,13 @@
 				288FE54AD8D2BEA7546F7F80 /* LearningModel.swift */,
 				E8CEC3D3DE1B17719F1ECAAB /* LessonScreen.swift */,
 				B557AA562F7DB98FB4E9D03E /* LexicalPractice.swift */,
+				1A686FCCEE4AFA5F90A48D65 /* LoginView.swift */,
 				299B405BB603C7503EC6E1B4 /* Models.swift */,
 				E1B8321A571E69D3638ACD87 /* PrivacyInfo.xcprivacy */,
 				DE03623349FEC8F4563DE3BC /* SayWithApp.swift */,
+				480328CE73DBA88751F1DDBA /* SayWithV3.entitlements */,
 				9D9A048397D3EE2E9D2C91DF /* Vocabulary.swift */,
+				8606598BBB5F4A31F6421CFC /* WeChatAuth.swift */,
 			);
 			path = SayWithV3;
 			sourceTree = "<group>";
@@ -160,6 +233,8 @@
 			buildPhases = (
 				51BE17D9ABCA85854B3D4ADC /* Sources */,
 				7F8D0D93E7A10A8E0245C934 /* Resources */,
+				A02F4C8954683097204E6BF5 /* Frameworks */,
+				D4F7012B5D0C3E364B2284A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +258,9 @@
 				TargetAttributes = {
 					BFE846C9161395C7581D84BE = {
 						TestTargetID = EF08B6F19E02BA13FA39E16F;
+					};
+					EF08B6F19E02BA13FA39E16F = {
+						DevelopmentTeam = 24J3ZHSPYY;
 					};
 				};
 			};
@@ -225,14 +303,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				747E9803591012A1BA7258E0 /* API.swift in Sources */,
+				58D7A1872AE168E7F5B71A8F /* Account.swift in Sources */,
+				87453036F15AD2BBC712AB44 /* AppleAuth.swift in Sources */,
 				3845954177D2286C4C138A26 /* Audio.swift in Sources */,
 				DB93384914AE8342101CBC3A /* Feedback.swift in Sources */,
 				F7B8862373817EE2892AF064 /* LearningModel.swift in Sources */,
 				663F28670D141E3C00DB5C6A /* LessonScreen.swift in Sources */,
 				1FB7D0BAD5A9BDA6436E43F1 /* LexicalPractice.swift in Sources */,
+				85F6C4E66531F4378DE1D955 /* LoginView.swift in Sources */,
 				8B19C2AD608C23BC93CC5F46 /* Models.swift in Sources */,
 				48F8AEE4AB0B7AC23C5CFE79 /* SayWithApp.swift in Sources */,
 				D305DC7C7113B3C41BED515F /* Vocabulary.swift in Sources */,
+				74116F10657B23ADDD4FF2DD /* WeChatAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C8A2DDA11FDD82107367DE /* AccountTests.swift in Sources */,
 				F4752E47C60F6F1E8BF4BFAF /* ContractTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A99C2B5200CE938453C377C /* LearningFlowTests.swift in Sources */,
+				BBAE80CFF368E519E358D7D2 /* LoginFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +386,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 603;
+				CURRENT_PROJECT_VERSION = 606;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -321,7 +405,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 2.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,7 +440,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SayWithV3/SayWithV3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 24J3ZHSPYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Frameworks\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SayWithV3/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "背单词练口语";
@@ -368,6 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.beidanciliankouyu;
 				SAYWITH_BACKEND_URL = "https://api.saywith.zhiyuanv.com/learning";
 				SDKROOT = iphoneos;
@@ -460,7 +551,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 603;
+				CURRENT_PROJECT_VERSION = 606;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -473,7 +564,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 2.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,7 +581,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SayWithV3/SayWithV3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 24J3ZHSPYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Frameworks\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SayWithV3/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "背单词练口语";
@@ -502,6 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuanv.beidanciliankouyu;
 				SAYWITH_BACKEND_URL = "https://api.saywith.zhiyuanv.com/learning";
 				SDKROOT = iphoneos;

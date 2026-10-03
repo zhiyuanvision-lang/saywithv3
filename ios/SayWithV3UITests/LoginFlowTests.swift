@@ -1,0 +1,87 @@
+import XCTest
+
+@MainActor
+final class LoginFlowTests:XCTestCase {
+    private func launch()->XCUIApplication {
+        let app=XCUIApplication();app.launchArguments=["--backend-url","http://localhost:8095","--ui-test-show-wechat"]
+        app.launch();return app
+    }
+    private func shot(_ app:XCUIApplication,_ name:String) {
+        let attachment=XCTAttachment(screenshot:app.screenshot());attachment.name=name;attachment.lifetime = .keepAlways;add(attachment)
+    }
+    func testLoginConsentInvalidCodeRestartAndAccountSwitch() {
+        let app=launch()
+        if app.buttons["startLearning"].waitForExistence(timeout:5) {
+            app.tabBars.buttons["我的"].tap();app.buttons["signOut"].tap();app.buttons["confirmSignOut"].firstMatch.tap()
+        }
+        XCTAssertTrue(app.textFields["loginPhone"].waitForExistence(timeout:15))
+        XCTAssertTrue(app.textFields["loginCode"].isHittable)
+        XCTAssertFalse(app.buttons["smsLoginEntry"].exists)
+        XCTAssertTrue(app.buttons["appleLogin"].exists)
+        XCTAssertTrue(app.buttons["wechatLogin"].exists)
+        XCTAssertEqual(app.buttons["appleLogin"].frame.midY,app.buttons["wechatLogin"].frame.midY,accuracy:2)
+        XCTAssertEqual(app.buttons["appleLogin"].frame.width,52,accuracy:1)
+        XCTAssertEqual(app.buttons["appleLogin"].frame.width,app.buttons["wechatLogin"].frame.width,accuracy:1)
+        shot(app,"login-home")
+        XCTAssertTrue(app.buttons["sendLoginCode"].isEnabled)
+        app.buttons["sendLoginCode"].tap()
+        XCTAssertTrue(app.staticTexts["loginError"].waitForExistence(timeout:5))
+        XCTAssertFalse(app.buttons["agreeAndContinue"].exists)
+        XCTAssertFalse(app.buttons["createAccount"].exists)
+        let phone=app.textFields["loginPhone"]
+        XCTAssertTrue(phone.waitForExistence(timeout:5));phone.tap();phone.typeText("13800138000")
+        XCTAssertTrue(app.buttons["sendLoginCode"].isEnabled)
+        app.buttons["sendLoginCode"].tap()
+        XCTAssertTrue(app.buttons["cancelConsent"].waitForExistence(timeout:5))
+        app.buttons["cancelConsent"].tap()
+        XCTAssertTrue(app.buttons["sendLoginCode"].isEnabled)
+        XCTAssertEqual(app.buttons["loginConsent"].value as? String,"未勾选")
+        app.buttons["wechatLogin"].tap()
+        XCTAssertTrue(app.buttons["cancelConsent"].waitForExistence(timeout:5))
+        app.buttons["cancelConsent"].tap()
+        app.buttons["appleLogin"].tap()
+        XCTAssertTrue(app.buttons["cancelConsent"].waitForExistence(timeout:5))
+        app.buttons["cancelConsent"].tap()
+        app.buttons["sendLoginCode"].tap()
+        XCTAssertTrue(app.buttons["agreeAndContinue"].waitForExistence(timeout:5))
+        app.buttons["agreeAndContinue"].tap()
+        XCTAssertTrue(app.buttons["sendLoginCode"].waitForExistence(timeout:5))
+        let code=app.textFields["loginCode"];code.tap();code.typeText("000000")
+        app.buttons["smsLoginSubmit"].tap()
+        XCTAssertTrue(app.staticTexts["loginError"].waitForExistence(timeout:10))
+        XCTAssertTrue(app.staticTexts["loginError"].isHittable)
+        shot(app,"login-invalid-code")
+        code.tap();code.typeText(String(repeating:XCUIKeyboardKey.delete.rawValue,count:6)+"123456")
+        app.buttons["smsLoginSubmit"].tap()
+        XCTAssertTrue(app.buttons["startLearning"].waitForExistence(timeout:15))
+        app.terminate();app.launch()
+        XCTAssertTrue(app.buttons["startLearning"].waitForExistence(timeout:15))
+        XCTAssertFalse(app.textFields["loginPhone"].exists)
+        app.tabBars.buttons["我的"].tap()
+        XCTAssertTrue(app.staticTexts["138****8000"].exists)
+        XCTAssertTrue(app.buttons["notebookEntry"].exists)
+        XCTAssertTrue(app.buttons["mineSettings"].exists)
+        XCTAssertEqual(app.staticTexts["appVersion"].label,"版本 2.0.1")
+        shot(app,"restored-account")
+        app.buttons["notebookEntry"].tap()
+        XCTAssertTrue(app.navigationBars["生词本"].waitForExistence(timeout:5))
+        app.navigationBars.buttons.firstMatch.tap()
+        XCTAssertTrue(app.buttons["mineSettings"].waitForExistence(timeout:5))
+        app.buttons["mineSettings"].tap()
+        XCTAssertTrue(app.navigationBars["学习设置"].waitForExistence(timeout:5))
+        app.buttons["关闭"].tap()
+        app.buttons["signOut"].tap();app.buttons["confirmSignOut"].firstMatch.tap()
+        XCTAssertTrue(app.textFields["loginPhone"].waitForExistence(timeout:10))
+        phone.tap();phone.typeText("13900139000")
+        code.tap();code.typeText("123456")
+        app.buttons["smsLoginSubmit"].tap()
+        XCTAssertTrue(app.buttons["agreeAndContinue"].waitForExistence(timeout:5))
+        app.buttons["agreeAndContinue"].tap()
+        XCTAssertTrue(app.buttons["startLearning"].waitForExistence(timeout:15))
+        app.tabBars.buttons["我的"].tap()
+        XCTAssertTrue(app.staticTexts["139****9000"].exists)
+        XCTAssertFalse(app.staticTexts["138****8000"].exists)
+        app.buttons["signOut"].tap();app.buttons["confirmSignOut"].firstMatch.tap()
+        XCTAssertTrue(app.textFields["loginPhone"].waitForExistence(timeout:10))
+    }
+}

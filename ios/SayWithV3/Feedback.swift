@@ -19,9 +19,7 @@ struct FeedbackUpload:Decodable,Sendable {let url:String}
 
 extension LearningModel {
     func feedbackClient() async throws -> API {
-        let url=try API.validatedURL(baseURL)
-        if CredentialStore.read(account:url.absoluteString)==nil {try await connect(create:true)}
-        return API(base:url,token:CredentialStore.read(account:url.absoluteString))
+        try authenticatedClient()
     }
 }
 

@@ -3,7 +3,7 @@ import XCTest
 @MainActor
 final class LearningFlowTests:XCTestCase {
     private func launch(backend:String="http://localhost:8086",extra:[String]=[])->XCUIApplication {
-        let app=XCUIApplication();app.launchArguments=["--backend-url",backend]+extra;app.launch()
+        let app=XCUIApplication();app.launchArguments=["--backend-url",backend,"--ui-test-anonymous"]+extra;app.launch()
         if app.buttons["exitLesson"].waitForExistence(timeout:2) {
             app.buttons["更多学习操作"].tap();app.buttons["退出本次任务"].tap();app.buttons["退出本次任务"].tap()
         }
@@ -51,9 +51,7 @@ final class LearningFlowTests:XCTestCase {
             let allowed=alert.buttons.matching(NSPredicate(format:"label CONTAINS 'Allow' OR label CONTAINS '允许' OR label == 'OK' OR label == '好'" )).firstMatch
             if allowed.exists {allowed.tap();return true};return false
         }
-        app.buttons["recordButton"].tap()
-        XCTAssertTrue(app.staticTexts["audioStatus"].waitForExistence(timeout:3))
-        sleep(1);app.buttons["recordButton"].tap()
+        app.buttons["recordButton"].press(forDuration:1.5)
         ready(app.buttons["nextPhase"])
         XCTAssertTrue(app.buttons["playOwnRecording"].exists)
         app.buttons["playOwnRecording"].tap()
@@ -80,6 +78,42 @@ final class LearningFlowTests:XCTestCase {
         XCTAssertTrue(app.buttons["finishLearning"].exists)
         shot(app,"v6-feedback")
         app.buttons["finishLearning"].tap()
+    }
+    func testHoldSwipeCancelsWithoutSending() {
+        let app=launch();app.buttons["startLearning"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
+        let record=app.buttons["recordButton"];ready(record)
+        let start=record.coordinate(withNormalizedOffset:CGVector(dx:0.5,dy:0.5))
+        let cancel=start.withOffset(CGVector(dx:0,dy:-100))
+        start.press(forDuration:1,thenDragTo:cancel)
+        XCTAssertTrue(record.waitForExistence(timeout:3))
+        XCTAssertEqual(record.label,"按住跟读")
+        XCTAssertFalse(app.buttons["nextPhase"].exists)
+        XCTAssertFalse(app.buttons["playOwnRecording"].exists)
+        XCTAssertFalse(app.staticTexts["audioStatus"].exists)
+        record.press(forDuration:1.5)
+        ready(app.buttons["nextPhase"])
+        XCTAssertTrue(app.buttons["playOwnRecording"].exists)
+        app.buttons["重试"].tap()
+        XCTAssertTrue(record.waitForExistence(timeout:3))
+        XCTAssertFalse(app.buttons["nextPhase"].exists)
+        record.press(forDuration:1.5)
+        ready(app.buttons["nextPhase"])
+    }
+    func testPlaybackKeepsPageLayoutAndUsesNormalSpeed() {
+        let app=launch();app.buttons["startLearning"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["englishExpression"].firstMatch.waitForExistence(timeout:30))
+        let playback=app.buttons["播放示范"].firstMatch;ready(playback)
+        let expression=app.descendants(matching:.any)["englishExpression"].firstMatch
+        let before=expression.frame
+        let recordFrame=app.buttons["recordButton"].frame
+        playback.tap()
+        XCTAssertFalse(app.buttons["慢速"].exists)
+        XCTAssertFalse(app.staticTexts["audioStatus"].exists)
+        XCTAssertEqual(expression.frame,before)
+        XCTAssertEqual(app.buttons["recordButton"].frame,recordFrame)
+        XCTAssertTrue(app.buttons["recordButton"].isEnabled)
+        XCTAssertTrue(app.buttons["exitLesson"].isEnabled)
     }
     func testReviewStartsWithoutRepeatingLearning() throws {
         let app=launch()

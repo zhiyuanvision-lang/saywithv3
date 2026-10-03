@@ -13,6 +13,7 @@ class Settings:
     database_url: str = field(default_factory=lambda: os.getenv('SAYWITH_DATABASE_URL', 'sqlite:///var/saywith.sqlite'))
     media_dir: Path = field(default_factory=lambda: Path(os.getenv('SAYWITH_MEDIA_DIR', 'var/media')))
     dictionary_api_base: str = field(default_factory=lambda: os.getenv('SAYWITH_DICTIONARY_API_BASE','https://api.saywith.zhiyuanv.com').rstrip('/'))
+    identity_api_base: str = field(default_factory=lambda: os.getenv('SAYWITH_IDENTITY_API_BASE','https://api.saywith.zhiyuanv.com').rstrip('/'))
     api_base: str = field(default_factory=lambda: os.getenv('SAYWITH_API_BASE', 'https://api.deepseek.com'))
     api_key: str = field(default_factory=lambda: os.getenv('SAYWITH_API_KEY', ''))
     text_model: str = field(default_factory=lambda: os.getenv('SAYWITH_TEXT_MODEL', ''))

@@ -28,6 +28,11 @@ class Store:
             Column('payload',JSON,nullable=False),Column('created_at',Float,nullable=False))
         self.users=Table('users',self.meta,Column('id',String,primary_key=True),
             Column('token_hash',String,unique=True,nullable=False),Column('created_at',Float,nullable=False))
+        self.identities=Table('account_identities',self.meta,
+            Column('external_id',String,primary_key=True),Column('owner',String,unique=True,nullable=False))
+        self.auth_sessions=Table('account_sessions',self.meta,
+            Column('access_hash',String,primary_key=True),Column('refresh_hash',String,unique=True,nullable=False),
+            Column('owner',String,nullable=False),Column('expires_at',Float,nullable=False))
         self.jobs=Table('generation_jobs',self.meta,
             Column('id',String,primary_key=True),Column('owner',String,nullable=False),
             Column('key',String,nullable=False),Column('request_hash',String,nullable=False),

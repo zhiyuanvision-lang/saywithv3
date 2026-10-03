@@ -18,6 +18,12 @@ struct LessonScreen:View {
     @State private var showDemo=false
     @State private var demoTask:Task<Void,Never>?
     @State private var highlightedLine:Int?
+    @State private var loadingAudioID:String?
+    @State private var playbackTask:Task<Void,Never>?
+    @State private var playbackToken=UUID()
+    @State private var hold=HoldRecordingGesture()
+    @State private var recordingStartTask:Task<Void,Never>?
+    @State private var retryingShadow=false
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dynamicTypeSize) private var typeSize
     private var current:SessionState? {model.session}
@@ -33,12 +39,10 @@ struct LessonScreen:View {
     private var partner:Turn? {current?.turns.last(where:{$0.speaker=="partner"})}
     private var actions:[String] {current?.view.availableActions ?? []}
     private var status:String {
-        if audio.recording {return "录音中 · \(Int(audio.duration)) 秒"}
+        if audio.recording {return hold.cancelling ? "松开取消":"录音中 · \(Int(audio.duration)) 秒 · 上滑取消"}
         if !model.requestStatus.isEmpty {return model.requestStatus}
         if model.busy {return "正在准备下一步"}
-        if audio.paused {return "语音已暂停"}
-        if audio.playing {return audio.playingID=="own" || current?.turns.contains(where:{$0.speaker=="learner" && $0.audioRef==audio.playingID})==true ? "正在回听自己" : phase=="learning" ? "示范播放中" : "对方说话中"}
-        if phase=="learning" {return typeSize.isAccessibilitySize ? "点击录音跟读":"点击录音，跟着示范说"}
+        if phase=="learning" {return "按住跟读"}
         return "轮到你了"
     }
     var body:some View {
@@ -83,24 +87,28 @@ struct LessonScreen:View {
         }
         .interactiveDismissDisabled()
         .onChange(of:scenePhase) {_,value in
-            if value != .active {demoTask?.cancel();audio.discard()}
+            if value != .active {cancelAudioInteraction()}
         }
-        .onChange(of:current?.view.taskId) {_,_ in audio.discard();showHistory=false;replyFocused=false;followConversation=true}
-        .onChange(of:phase) {_,_ in demoTask?.cancel();audio.discard();showHints=false;showHistory=false;highlightedLine=nil;replyFocused=false}
+        .onChange(of:current?.view.taskId) {_,_ in cancelAudioInteraction();showHistory=false;replyFocused=false;followConversation=true}
+        .onChange(of:phase) {_,_ in cancelAudioInteraction();retryingShadow=false;showHints=false;showHistory=false;highlightedLine=nil;replyFocused=false}
+        .onChange(of:model.selectedMaterial) {_,_ in retryingShadow=false}
         .task(id:partner?.turnId) {
             guard (isGuided || isIndependent),let ref=partner?.audioRef else {return}
             do {
                 while model.busy {try await Task.sleep(for:.milliseconds(50))}
                 try Task.checkCancellation()
                 guard !audio.recording,!feedbackOpen,scenePhase == .active else {return}
-                try audio.play(try await model.sound(ref),id:ref);playedTurns.insert(partner?.turnId ?? "")
+                play(ref,turnID:partner?.turnId)
             } catch is CancellationError {} catch {model.error=error.localizedDescription}
         }
         .onReceive(NotificationCenter.default.publisher(for:Notification.Name("PauseSayWithLearning"))) {_ in
-            feedbackOpen=true;demoTask?.cancel();if audio.recording {_ = try? audio.stop();audio.interruptionMessage="录音已暂停，可回听后发送，或重新录制。"} else {audio.pausePlayback()}
+            feedbackOpen=true;cancelAudioInteraction()
         }
         .onReceive(NotificationCenter.default.publisher(for:Notification.Name("ResumeSayWithLearning"))) {_ in feedbackOpen=false}
-        .onDisappear {demoTask?.cancel();audio.discard()}
+        .onDisappear {cancelAudioInteraction()}
+        .onChange(of:audio.interruptionMessage) {_,message in
+            if message != nil && !audio.recording && audio.lastRecording == nil {cancelHoldRecording()}
+        }
     }
     private var stageIndex:Int {
         if isFeedback || phase=="evaluating" {return 3}
@@ -175,7 +183,7 @@ struct LessonScreen:View {
                     Text(current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
                     LookupText(first.text).font(.body).fixedSize(horizontal:false,vertical:true)
                     HStack(spacing:4) {
-                        if let ref=first.audioRef {Button {togglePlayback(ref)} label:{Image(systemName:audio.playingID==ref && audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("重播这句话")}
+                        if let ref=first.audioRef {playbackButton(ref,label:"重播这句话")}
                         translationButton("demo:0",known:first.meaningZh)
                     }
                     if shownTranslations.contains("demo:0") {Text(first.meaningZh ?? model.translations["demo:0"] ?? "正在加载翻译").font(.subheadline).foregroundStyle(.secondary)}
@@ -187,10 +195,9 @@ struct LessonScreen:View {
                 if shownTranslations.contains("material:\(model.selectedMaterial)") {Text(material.meaningZh ?? model.translations["material:\(model.selectedMaterial)"] ?? "正在加载翻译").font(.subheadline).foregroundStyle(.secondary)}
                 Divider()
                 HStack(spacing:4) {
-                    if let ref=material.audioRef {Button {togglePlayback(ref)} label:{Image(systemName:audio.playingID==ref && audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("播放示范")}
+                    if let ref=material.audioRef {playbackButton(ref,label:"播放示范")}
                     translationButton("material:\(model.selectedMaterial)",known:material.meaningZh)
                     Spacer()
-                    if let ref=material.audioRef {Button("慢速") {play(ref,rate:0.75)}.font(.subheadline).frame(minWidth:44,minHeight:44)}
                 }.disabled(model.busy || audio.recording)
             }.frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
         }
@@ -200,12 +207,12 @@ struct LessonScreen:View {
     }
     private var demoPanel:some View {
         NavigationStack {ScrollView {VStack(alignment:.leading,spacing:20) {
-            Button {playDemo()} label:{Image(systemName:audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("播放完整对话")
+            Button {playDemo()} label:{playbackIcon("demo",playing:demoTask != nil && audio.playing)}.accessibilityLabel("播放完整对话").disabled(model.busy || hold.active)
             ForEach(Array((current?.view.demonstration ?? []).enumerated()),id:\.offset) {index,line in
                 VStack(alignment:.leading,spacing:10) {
                     Text(line.speaker=="learner" ? "你":current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
                     LookupText(line.text).foregroundStyle(highlightedLine==index ? Color.accentColor:Color.primary)
-                    HStack(spacing:4) {if let ref=line.audioRef {Button {togglePlayback(ref)} label:{Image(systemName:"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("重播这句话")};translationButton("demo-line:\(index)",known:line.meaningZh,source:index==0 ? "demo:0":"material:\(index-1)")}
+                    HStack(spacing:4) {if let ref=line.audioRef {playbackButton(ref,label:"重播这句话")};translationButton("demo-line:\(index)",known:line.meaningZh,source:index==0 ? "demo:0":"material:\(index-1)")}
                     if shownTranslations.contains("demo-line:\(index)") {Text(line.meaningZh ?? model.translations[index==0 ? "demo:0":"material:\(index-1)"] ?? "正在加载翻译").font(.subheadline).foregroundStyle(.secondary)}
                 }
             }
@@ -227,16 +234,8 @@ struct LessonScreen:View {
                     else {Text("请听对方的声音，再说出回应。").font(.body)}
                     HStack(spacing:4) {
                     if let ref=turn.audioRef,own || actions.contains("request_repeat") || !playedTurns.contains(turn.turnId) || (audio.paused && audio.playingID==ref) {
-                        Button {
-                            if audio.playingID==ref && audio.playing {audio.pausePlayback()}
-                            else if audio.playingID==ref && audio.paused {do {try audio.resumePlayback()} catch {model.error=error.localizedDescription}}
-                            else if own {play(ref)}
-                            else {run {
-                                if playedTurns.contains(turn.turnId) {try await model.send(kind:"request_repeat",sourceTurnID:turn.turnId)}
-                                try audio.play(try await model.sound(ref),id:ref);playedTurns.insert(turn.turnId)
-                            }}
-                        } label:{Image(systemName:audio.playingID==ref && audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}
-                        .accessibilityLabel(audio.playingID==ref && audio.playing ? "暂停播放":own ? "回听自己":"重播这句话").disabled(model.busy || audio.recording)
+                        playbackButton(ref,label:own ? "回听自己":"重播这句话",turnID:own ? nil:turn.turnId)
+
                     }
                         if !own && actions.contains("request_translation") {translationButton(turn.turnId)}
                     }
@@ -288,7 +287,7 @@ struct LessonScreen:View {
         }
     }
     private var shadowReady:Bool {
-        guard phase=="learning",let feedback=model.shadowFeedback ?? current?.view.shadowFeedback else {return false}
+        guard phase=="learning",!retryingShadow,let feedback=model.shadowFeedback ?? current?.view.shadowFeedback else {return false}
         return feedback.canContinue && feedback.materialIndexMatches(model.selectedMaterial)
     }
     private var footer:some View {
@@ -306,20 +305,21 @@ struct LessonScreen:View {
                 ProgressView("正在整理本次表现")
                 Button("继续等待结果") {run {if actions.contains("next") {try await model.next()} else {try await model.finish()}}}.frame(minHeight:44)
             } else {
-                if audio.recording || model.busy || audio.playing || audio.paused || audio.lastRecording != nil {
+                if audio.recording || model.busy {
                     HStack {if model.busy {ProgressView()};Text(status).font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("audioStatus")}
                 }
-                if phase=="learning",let feedback=model.shadowFeedback ?? current?.view.shadowFeedback,feedback.materialIndexMatches(model.selectedMaterial) {Text(feedback.message).font(.caption).foregroundStyle(.secondary).lineLimit(2)}
+                if phase=="learning",!retryingShadow,let feedback=model.shadowFeedback ?? current?.view.shadowFeedback,feedback.materialIndexMatches(model.selectedMaterial) {Text(feedback.message).font(.caption).foregroundStyle(.secondary).lineLimit(2)}
                 if shadowReady {
                     mainButton(model.selectedMaterial+1<(current?.view.materials.count ?? 0) ? "继续学习下一表达":"试着换个内容说",id:"nextPhase") {audio.discard();run {try await model.advanceMaterial()}}
                 } else {
-                    Button {if audio.lastRecording != nil && !audio.recording {audio.lastRecording=nil};record()} label:{HStack(spacing:8) {Image(systemName:audio.recording ? "stop.fill":"mic.fill");Text(audio.recording ? "结束录音":model.busy ? "正在处理":phase=="learning" ? "录音跟读":"开始录音")}.font(.headline).frame(maxWidth:.infinity,minHeight:50).foregroundStyle(Color.white).background(audio.recording ? Color.red:Color.accentColor,in:RoundedRectangle(cornerRadius:12))}.buttonStyle(.plain).accessibilityLabel(audio.recording ? "结束录音":phase=="learning" ? "录音跟读":"开始录音").accessibilityIdentifier("recordButton").disabled(model.busy || model.hasPendingInput || model.hasPendingShadow)
+                    holdRecordingButton
+
                 }
                 if audio.lastRecording != nil || isGuided || isIndependent {
                     HStack(spacing:12) {
                         if let recording=audio.lastRecording {
                             Button {if audio.playingID=="own" && audio.playing {audio.pausePlayback()} else {tryPlay(recording)}} label:{Image(systemName:audio.playingID=="own" && audio.playing ? "pause.fill":"speaker.wave.2.fill").frame(width:44,height:44)}.accessibilityLabel("回听自己").accessibilityIdentifier("playOwnRecording")
-                            if phase=="learning" {Button("重试") {audio.lastRecording=nil;model.shadowFeedback=nil;record()}.frame(minHeight:44)}
+                            if phase=="learning" {Button("重试") {audio.lastRecording=nil;model.shadowFeedback=nil;retryingShadow=true}.frame(minHeight:44)}
                         }
                         Spacer(minLength:0)
                         if isGuided {Button("提示") {showHints=true}.font(.subheadline).frame(minHeight:44).accessibilityIdentifier("hintButton")}
@@ -331,7 +331,7 @@ struct LessonScreen:View {
                         Spacer(minLength:0)
                     }.disabled(model.busy || audio.recording)
                 }
-                if model.hasPendingShadow {Button("重试提交跟读") {run {try await model.retryShadow()}}.frame(minHeight:44);Button("放弃本次录音") {model.discardShadowRequest();audio.lastRecording=nil}.frame(minHeight:44)}
+                if model.hasPendingShadow {Button("重试提交跟读") {run {try await model.retryShadow();retryingShadow=false}}.frame(minHeight:44);Button("放弃本次录音") {model.discardShadowRequest();audio.lastRecording=nil}.frame(minHeight:44)}
                 if model.hasPendingInput {Button("重试发送") {run {try await model.retryInput()}}.frame(minHeight:44)}
                 if let recording=audio.lastRecording,!audio.recording,audio.interruptionMessage != nil {Button("发送已保存的录音") {run {if phase=="learning" {try await model.shadow(recording)} else {try await model.send(kind:"speech",audio:recording)}}}.frame(minHeight:44)}
             }
@@ -372,13 +372,44 @@ struct LessonScreen:View {
             .buttonStyle(.plain).background(Color.accentColor,in:RoundedRectangle(cornerRadius:12)).disabled(model.busy || audio.recording).accessibilityIdentifier(id)
     }
     private func run(_ operation:@escaping () async throws -> Void) {Task {await model.perform(operation)}}
-    private func togglePlayback(_ ref:String) {
-        if audio.playingID==ref && audio.playing {audio.pausePlayback()}
-        else if audio.playingID==ref && audio.paused {
-            do {try audio.resumePlayback()} catch {model.error=error.localizedDescription}
-        } else {play(ref)}
+    private func play(_ ref:String,turnID:String?=nil) {
+        guard !audio.recording,!hold.active,!model.busy,loadingAudioID != ref else {return}
+        stopAudioLoading();demoTask?.cancel();demoTask=nil
+        audio.stopPlayback()
+        let token=UUID();playbackToken=token;loadingAudioID=ref
+        playbackTask=Task {
+            defer {if playbackToken==token {loadingAudioID=nil;playbackTask=nil}}
+            do {
+                if let turnID,playedTurns.contains(turnID) {try await model.recordRepeat(sourceTurnID:turnID)}
+                let data=try await model.sound(ref)
+                try Task.checkCancellation()
+                guard playbackToken==token,scenePhase == .active,!feedbackOpen,!hold.active else {return}
+                try audio.play(data,id:ref)
+                if let turnID {playedTurns.insert(turnID)}
+            } catch is CancellationError {} catch {
+                if !Task.isCancelled && playbackToken==token {model.error=error.localizedDescription}
+            }
+        }
     }
-    private func play(_ ref:String,rate:Float=1) {run {try audio.play(try await model.sound(ref),id:ref,rate:rate)}}
+    private func stopAudioLoading() {
+        playbackTask?.cancel();playbackTask=nil;playbackToken=UUID();loadingAudioID=nil
+    }
+    private func playbackIcon(_ ref:String,playing:Bool)->some View {
+        ZStack {
+            if loadingAudioID==ref {ProgressView().controlSize(.small).accessibilityLabel("正在加载声音")}
+            else {Image(systemName:playing ? "pause.fill":"speaker.wave.2.fill")}
+        }.frame(width:44,height:44)
+    }
+    private func playbackButton(_ ref:String,label:String,turnID:String?=nil)->some View {
+        Button {
+            if loadingAudioID != nil {return}
+            if audio.playingID==ref && audio.playing {audio.pausePlayback()}
+            else if audio.playingID==ref && audio.paused {do {try audio.resumePlayback()} catch {model.error=error.localizedDescription}}
+            else {play(ref,turnID:turnID)}
+        } label:{playbackIcon(ref,playing:audio.playingID==ref && audio.playing)}
+            .accessibilityLabel(loadingAudioID==ref ? "正在加载声音":audio.playingID==ref && audio.playing ? "暂停播放":label)
+            .accessibilityIdentifier("audio-"+ref).disabled(model.busy || audio.recording || hold.active)
+    }
     private func tryPlay(_ data:Data) {do {try audio.play(data)} catch {model.error=error.localizedDescription}}
     private func translationButton(_ key:String,known:String?=nil,source:String?=nil)->some View {
         Button {
@@ -388,26 +419,58 @@ struct LessonScreen:View {
             .accessibilityLabel(shownTranslations.contains(key) ? "收起翻译":"查看翻译").disabled(model.busy || audio.recording)
     }
     private func translate(_ key:String) {run {try await model.send(kind:"request_translation",sourceTurnID:key)}}
-    private func record() {
-        run {
-            if audio.recording {
-                let data=try audio.stop()
-                if phase=="learning" {try await model.shadow(data)} else {try await model.send(kind:"speech",audio:data)}
-            } else {try await audio.start()}
+    private var holdRecordingButton:some View {
+        HoldToSpeakButton(hold:$hold,idleTitle:phase=="learning" ? "按住跟读":"按住说话",
+            processing:model.busy,disabled:model.busy || model.hasPendingInput || model.hasPendingShadow,
+            identifier:"recordButton",canStart:{loadingAudioID==nil},
+            onBegin:beginHoldRecording,onFinish:finishHoldRecording,onCancel:cancelHoldRecording)
+    }
+    private func beginHoldRecording() {
+        demoTask?.cancel();demoTask=nil;audio.stopPlayback();model.error=nil
+        audio.lastRecording=nil;audio.duration=0
+        recordingStartTask?.cancel()
+        recordingStartTask=Task {
+            do {try await audio.start()}
+            catch is CancellationError {} catch {
+                if !Task.isCancelled {hold.reset();model.error=error.localizedDescription}
+            }
         }
     }
+    private func finishHoldRecording(verticalTranslation:CGFloat) {
+        guard let release=hold.finish(verticalTranslation:verticalTranslation) else {return}
+        recordingStartTask?.cancel();recordingStartTask=nil
+        guard release == .send else {audio.discard();return}
+        guard audio.recording || audio.lastRecording != nil else {return}
+        do {
+            let data=try audio.recording ? audio.stop():audio.lastRecording ?? Data()
+            guard audio.duration>=0.4,!data.isEmpty else {audio.discard();model.error="录音太短，请按住说完再松开。";return}
+            run {if phase=="learning" {try await model.shadow(data);retryingShadow=false} else {try await model.send(kind:"speech",audio:data)}}
+        } catch {model.error=error.localizedDescription}
+    }
+    private func cancelHoldRecording() {
+        hold.reset();recordingStartTask?.cancel();recordingStartTask=nil;audio.discard()
+    }
+    private func cancelAudioInteraction() {
+        demoTask?.cancel();demoTask=nil;stopAudioLoading();cancelHoldRecording()
+    }
     private func playDemo() {
-        if demoTask != nil {demoTask?.cancel();demoTask=nil;audio.stopPlayback();highlightedLine=nil;return}
+        if demoTask != nil {demoTask?.cancel();demoTask=nil;loadingAudioID=nil;audio.stopPlayback();highlightedLine=nil;return}
+        stopAudioLoading()
+        let token=UUID();playbackToken=token
         demoTask=Task {
             do {
                 for (index,line) in (current?.view.demonstration ?? []).enumerated() {
                     try Task.checkCancellation()
                     guard let ref=line.audioRef else {continue}
-                    let data=try await model.sound(ref);highlightedLine=index
+                    loadingAudioID="demo"
+                    let data=try await model.sound(ref)
+                    try Task.checkCancellation()
+                    guard playbackToken==token else {return}
+                    loadingAudioID=nil;highlightedLine=index
                     try await audio.playAndWait(data,id:"demo-\(index)")
                 }
             } catch is CancellationError {} catch {model.error=error.localizedDescription}
-            highlightedLine=nil;demoTask=nil
+            if playbackToken==token {highlightedLine=nil;demoTask=nil;loadingAudioID=nil}
         }
     }
 }

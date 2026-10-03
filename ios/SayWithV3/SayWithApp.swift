@@ -3,6 +3,7 @@ import SwiftUI
 @main
 struct SayWithApp: App {
     @State private var model=LearningModel()
+    init() {WeChatAuth.shared.registerIfConfigured()}
     var body: some Scene {WindowGroup {RootView(model:model)}}
 }
 
@@ -10,9 +11,33 @@ struct RootView: View {
     @Bindable var model: LearningModel
     @State private var showSettings=false
     @State private var showLearned=false
+    @State private var confirmLogout=false
+    @State private var logoutError:String?
     @ScaledMetric(relativeTo:.title2) private var homeTitleSize:CGFloat=26
     @Environment(\.scenePhase) private var scenePhase
     var body: some View {
+        Group {
+            if model.restoringLogin {ProgressView("正在恢复登录…")}
+            else if model.hasAccount {accountTabs}
+            else {LoginView(model:model)}
+        }
+        .task {
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("--ui-test-anonymous") {
+                await model.perform {try await model.connect(create:CredentialStore.read(account:model.baseURL)==nil)}
+                model.restoringLogin=false
+            } else {await model.restoreLogin()}
+            #else
+            await model.restoreLogin()
+            #endif
+        }
+        .onOpenURL {WeChatAuth.shared.handleOpen(url:$0)}
+        .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) {WeChatAuth.shared.handleUniversalLink($0)}
+        .onReceive(NotificationCenter.default.publisher(for:.loginExpired)) {notification in
+            if notification.userInfo?["baseURL"] as? String == model.baseURL {model.loginExpired()}
+        }
+    }
+    private var accountTabs:some View {
         TabView {
             NavigationStack {
                 VStack(alignment:.leading,spacing:0) {
@@ -21,8 +46,7 @@ struct RootView: View {
                         .accessibilityIdentifier("homeTitle").accessibilityAddTraits(.isHeader)
                 ScrollView {
                     VStack(alignment:.leading,spacing:24) {
-                        if !model.hasAccount {welcome}
-                        else {home}
+                        home
                         if let error=model.error {
                             Text(error).foregroundStyle(.red).accessibilityIdentifier("errorMessage")
                             if model.hasPendingInput {Button("重试发送") {Task {await model.perform {try await model.retryInput()}}}}
@@ -52,50 +76,92 @@ struct RootView: View {
                     Button("刷新能力记录") {Task {await model.perform {try await model.refresh()}}}
                 }.navigationTitle("学习进展")
             }.tabItem {Label("进展",systemImage:"chart.bar")}
-            NavigationStack {
-                List {
-                    Section {
-                        HStack(spacing:14) {
-                            Image(systemName:"person.crop.circle.fill").font(.system(size:44)).foregroundStyle(Color.accentColor)
-                            VStack(alignment:.leading,spacing:6) {Text("学习者").font(.headline);Text("难度参考 · \(model.stage)").font(.subheadline).foregroundStyle(.secondary)}
-                        }.padding(.vertical,8)
-                    }
-                    Section {
-                        NavigationLink {NotebookPage(model:model)} label:{Label("生词本",systemImage:"bookmark")}.accessibilityIdentifier("notebookEntry")
-                        Button {showSettings=true} label:{Label("学习设置",systemImage:"slider.horizontal.3")}
-                        Button {NotificationCenter.default.post(name:Notification.Name("OpenSayWithFeedback"),object:nil)} label:{Label("意见反馈",systemImage:"bubble.left.and.bubble.right")}.accessibilityIdentifier("mineFeedbackEntry")
-                    }
-                    Section {
-                        Link("隐私政策",destination:URL(string:"https://saywith.zhiyuanv.com/legal/privacy")!)
-                        Link("用户协议",destination:URL(string:"https://saywith.zhiyuanv.com/legal/terms")!)
-                        Link("联系支持",destination:URL(string:"https://saywith.zhiyuanv.com/contact.html")!)
-                        Text("版本 \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") (\(Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""))").font(.footnote).foregroundStyle(.secondary)
-                    }
-                }.navigationTitle("我的").navigationBarTitleDisplayMode(.inline)
-                    .sheet(isPresented:$showSettings) {settings}
-            }.tabItem {Label("我的",systemImage:"person.crop.circle")}
+            NavigationStack {minePage.sheet(isPresented:$showSettings) {settings}}
+                .tabItem {Label("我的",systemImage:"person.crop.circle")}
+
         }
         .sheet(isPresented:$showLearned) {learnedPage}
         .tint(.accentColor)
         .background(GlobalFeedbackHost(model:model).frame(width:0,height:0))
         .background(GlobalDictionaryHost(model:model).frame(width:0,height:0))
         .fullScreenCover(isPresented:Binding(get:{model.session != nil},set:{_ in})) {LessonScreen(model:model)}
-        .task {if CredentialStore.read(account:model.baseURL) != nil {await model.perform {try await model.connect()}}}
+        .confirmationDialog("退出当前账号？",isPresented:$confirmLogout,titleVisibility:.visible) {
+            Button("退出登录",role:.destructive) {Task {await model.perform {try await model.signOut()};logoutError=model.error}}.accessibilityIdentifier("confirmSignOut")
+            Button("取消",role:.cancel) {}
+        } message:{Text("学习记录会保留，重新登录后可以继续。")}
+        .alert("退出登录未完成",isPresented:Binding(get:{logoutError != nil},set:{if !$0 {logoutError=nil}})) {
+            Button("知道了",role:.cancel) {logoutError=nil}
+        } message:{Text(logoutError ?? "")}
     }
-    private var welcome: some View {
-        VStack(alignment:.leading,spacing:20) {
-            Text("把英语说出来").font(.largeTitle.bold())
-            Text("先理解一种说法，再换成自己的内容，最后完成一次真实交流任务。")
-            #if DEBUG
-            TextField("后端服务地址",text:$model.baseURL).textInputAutocapitalization(.never).autocorrectionDisabled().keyboardType(.URL)
-                .textFieldStyle(.roundedBorder).accessibilityIdentifier("backendURL")
-            #endif
-            Picker("目前熟悉的难度",selection:$model.stage) {ForEach(["Pre-A1","A1","A2","B1","B2","C1","C2"],id:\.self) {Text($0)}}
-            Text("难度只是起点参考，实际表现会影响后续推荐。").font(.footnote).foregroundStyle(.secondary)
-            TextField("感兴趣的交流主题",text:$model.context).textFieldStyle(.roundedBorder)
-            Button("开始建立学习记录") {Task {await model.perform {try await model.connect(create:true)}}}
-                .buttonStyle(.borderedProminent).disabled(model.busy).accessibilityIdentifier("createAccount")
-        }
+    private var minePage:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:20) {
+                HStack {
+                    Text("我的").font(.system(size:homeTitleSize,weight:.semibold)).accessibilityAddTraits(.isHeader)
+                    Spacer()
+                }
+                HStack(spacing:14) {
+                    Text(String(model.displayName.prefix(1))).font(.title2.weight(.semibold))
+                        .foregroundStyle(Color.accentColor).frame(width:56,height:56)
+                        .background(Color.accentColor.opacity(0.10),in:Circle()).accessibilityHidden(true)
+                    VStack(alignment:.leading,spacing:7) {
+                        Text(model.displayName).font(.title3.weight(.semibold)).lineLimit(2)
+                        Text(model.maskedPhone.isEmpty ? "学习账号":model.maskedPhone).font(.subheadline).foregroundStyle(.secondary)
+                    }
+                    Spacer(minLength:4)
+                    Text(model.stage).font(.subheadline.weight(.medium)).foregroundStyle(Color.accentColor)
+                        .padding(.horizontal,10).padding(.vertical,6).background(Color.accentColor.opacity(0.08),in:Capsule())
+                        .accessibilityLabel("难度参考 \(model.stage)")
+                }.padding(18).frame(maxWidth:.infinity,alignment:.leading)
+                    .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:18))
+                NavigationLink {NotebookPage(model:model).toolbar(.visible,for:.navigationBar)} label:{
+                    HStack(spacing:14) {
+                        Image(systemName:"bookmark.fill").font(.system(size:23)).foregroundStyle(Color.accentColor)
+                            .frame(width:44,height:44).background(Color.accentColor.opacity(0.10),in:RoundedRectangle(cornerRadius:12))
+                        VStack(alignment:.leading,spacing:6) {
+                            Text("生词本").font(.headline).foregroundStyle(.primary)
+                            Text("收藏词语，在课程中练习").font(.subheadline).foregroundStyle(.secondary)
+                        }
+                        Spacer(minLength:8)
+                        Image(systemName:"chevron.right").font(.system(size:13,weight:.semibold)).foregroundStyle(.tertiary)
+                    }.padding(18).frame(maxWidth:.infinity,alignment:.leading)
+                        .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:18))
+                }.buttonStyle(.plain).accessibilityIdentifier("notebookEntry")
+                VStack(spacing:0) {
+                    Button {showSettings=true} label:{mineRow("学习设置",symbol:"slider.horizontal.3")}.accessibilityIdentifier("mineSettings")
+                    Divider().padding(.leading,62)
+                    Button {NotificationCenter.default.post(name:Notification.Name("OpenSayWithFeedback"),object:nil)} label:{mineRow("意见反馈",symbol:"bubble.left.and.bubble.right")}.accessibilityIdentifier("mineFeedbackEntry")
+                    Divider().padding(.leading,62)
+                    Link(destination:URL(string:"https://saywith.zhiyuanv.com/contact.html")!) {mineRow("联系支持",symbol:"lifepreserver")}
+                }.buttonStyle(.plain).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:18))
+                Button("退出登录",role:.destructive) {confirmLogout=true}
+                    .font(.body).frame(maxWidth:.infinity,minHeight:50)
+                    .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+                    .disabled(model.busy).accessibilityIdentifier("signOut")
+                VStack(spacing:4) {
+                    HStack(spacing:8) {
+                        Link("用户协议",destination:URL(string:"https://saywith.zhiyuanv.com/legal/terms")!)
+                            .frame(minHeight:44).accessibilityIdentifier("mineTerms")
+                        Text("·").accessibilityHidden(true)
+                        Link("隐私政策",destination:URL(string:"https://saywith.zhiyuanv.com/legal/privacy")!)
+                            .frame(minHeight:44).accessibilityIdentifier("minePrivacy")
+                    }.font(.footnote).foregroundStyle(.secondary).tint(.secondary)
+                    Text("版本 \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")")
+                        .font(.caption2).foregroundStyle(.secondary).accessibilityIdentifier("appVersion")
+                    Link("京ICP备2024066384号-6A",destination:URL(string:"https://beian.miit.gov.cn/")!)
+                        .font(.caption2).foregroundStyle(.secondary).tint(.secondary)
+                        .frame(minHeight:44).accessibilityIdentifier("mineFiling")
+                }.frame(maxWidth:.infinity).padding(.top,-12).padding(.bottom,8)
+            }.padding(.horizontal,20).padding(.top,8).padding(.bottom,20)
+        }.background(Color(uiColor:.systemGroupedBackground)).toolbar(.hidden,for:.navigationBar)
+    }
+    private func mineRow(_ title:String,symbol:String)->some View {
+        HStack(spacing:14) {
+            Image(systemName:symbol).font(.system(size:19)).foregroundStyle(.secondary).frame(width:26)
+            Text(title).font(.body).foregroundStyle(.primary)
+            Spacer(minLength:8)
+            Image(systemName:"chevron.right").font(.system(size:12,weight:.semibold)).foregroundStyle(.tertiary)
+        }.padding(.horizontal,18).frame(minHeight:54).contentShape(Rectangle())
     }
     private var home:some View {
         VStack(alignment:.leading,spacing:20) {

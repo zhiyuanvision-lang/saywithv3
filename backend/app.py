@@ -23,8 +23,20 @@ from .assessment import Assessor
 from .sessions import Sessions
 from .feedback import Feedback
 from .vocabulary import Vocabulary
+from .auth import Accounts
 
 class InputModel(BaseModel):model_config=ConfigDict(extra='forbid')
+class SMSPhone(InputModel):
+    phone: str = Field(pattern=r'^1[3-9][0-9]{9}$')
+class SMSLogin(SMSPhone):
+    code: str = Field(pattern=r'^[0-9]{6}$')
+class AppleLogin(InputModel):
+    identity_token: str = Field(min_length=1,max_length=10000)
+    full_name: str = Field(default='',max_length=200)
+class WeChatLogin(InputModel):
+    code: str = Field(min_length=1,max_length=1000)
+class RefreshLogin(InputModel):
+    refresh_token: str = Field(min_length=1,max_length=1000)
 class FeedbackMessage(InputModel):
     content: str = Field(default='',max_length=4000)
     images: list[str] = Field(default_factory=list,max_length=4)
@@ -71,6 +83,7 @@ class PublishRequest(InputModel):review_id: str
 class Services:
     def __init__(self,settings,provider=None):
         settings.validate();self.settings=settings;self.store=Store(settings.database_url)
+        self.accounts=Accounts(settings,self.store)
         self.feedback=Feedback(settings,self.store)
         self.vocabulary=Vocabulary(settings,self.store)
         self.curriculum=CurriculumService(CurriculumRepository(settings.workspace),self.store)
@@ -93,6 +106,7 @@ def create_app(settings=None,provider=None):
     async def lifespan(app):
         yield
         if hasattr(app.state.services.provider,'close'):await app.state.services.provider.close()
+        await app.state.services.accounts.close()
     app=FastAPI(title='SayWith V3',version='0.1.0',lifespan=lifespan)
     svc=Services(settings,provider);app.state.services=svc
 
@@ -109,11 +123,7 @@ def create_app(settings=None,provider=None):
 
     async def owner(authorization: Annotated[str|None,Header()]=None):
         if not authorization or not authorization.startswith('Bearer '):raise HTTPException(401,'请登录')
-        token=authorization[7:];hash=hashlib.sha256(token.encode()).hexdigest()
-        with svc.store.engine.connect() as c:
-            row=c.execute(select(svc.store.users).where(svc.store.users.c.token_hash==hash)).mappings().first()
-        if not row:raise HTTPException(401,'登录凭据失效')
-        return row['id']
+        return svc.accounts.owner(authorization[7:])
 
     async def admin(x_admin_token: Annotated[str|None,Header()]=None):
         if not settings.admin_token or not x_admin_token or not secrets.compare_digest(x_admin_token,settings.admin_token):
@@ -126,6 +136,7 @@ def create_app(settings=None,provider=None):
 
     @app.post('/v1/users',status_code=201)
     def register(preferences:Preferences):
+        if settings.mode != 'fixture':raise HTTPException(403,'请使用手机号、微信或Apple登录')
         if preferences.reference_stage not in STAGES:raise ValueError('Invalid reference stage')
         id=uid();token=secrets.token_urlsafe(32)
         with svc.store.transaction() as c:
@@ -133,6 +144,44 @@ def create_app(settings=None,provider=None):
             profile=LearnerProfile(user_id=id,preferences=preferences.model_dump()).model_dump()
             svc.store.put('LearnerProfile',id,id,profile,conn=c)
         return {'user_id':id,'access_token':token,'profile':profile}
+
+    @app.get('/v1/auth/methods')
+    async def auth_methods():
+        methods=await svc.accounts.upstream('methods')
+        return {key:bool(methods.get(key)) for key in ('sms','wechat','apple')}
+
+    @app.post('/v1/auth/sms/send')
+    async def sms_send(data:SMSPhone,request:Request):
+        return await svc.accounts.upstream('sms/send',data.model_dump(),caller=request.client.host if request.client else None)
+
+    async def login_with(path,data,request,legacy_token):
+        return await svc.accounts.login(path,data.model_dump(),legacy_token=legacy_token,
+            caller=request.client.host if request.client else None)
+
+    @app.post('/v1/auth/sms/login')
+    async def sms_login(data:SMSLogin,request:Request,x_learning_token:Annotated[str|None,Header(max_length=1000)]=None):
+        return await login_with('sms/login',data,request,x_learning_token)
+
+    @app.post('/v1/auth/apple')
+    async def apple_login(data:AppleLogin,request:Request,x_learning_token:Annotated[str|None,Header(max_length=1000)]=None):
+        return await login_with('apple',data,request,x_learning_token)
+
+    @app.post('/v1/auth/wechat')
+    async def wechat_login(data:WeChatLogin,request:Request,x_learning_token:Annotated[str|None,Header(max_length=1000)]=None):
+        return await login_with('wechat',data,request,x_learning_token)
+
+    @app.post('/v1/auth/token/refresh')
+    async def auth_refresh(data:RefreshLogin,request:Request):
+        return await svc.accounts.refresh(data.refresh_token,caller=request.client.host if request.client else None)
+
+    @app.post('/v1/auth/logout')
+    async def auth_logout(data:RefreshLogin):return await svc.accounts.logout(data.refresh_token)
+
+    @app.get('/v1/auth/me')
+    def auth_me(user=Depends(owner)):
+        with svc.store.engine.connect() as c:
+            identity=c.execute(select(svc.store.identities.c.external_id).where(svc.store.identities.c.owner==user)).first()
+        return {'user_id':user,'verified':bool(identity)}
 
     @app.post('/v1/vocabulary/lookup')
     async def vocabulary_lookup(data:VocabularyRequest,user=Depends(owner)):

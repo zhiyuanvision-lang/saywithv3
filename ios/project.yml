@@ -7,8 +7,8 @@ settings:
   base:
     SWIFT_VERSION: "6.0"
     TARGETED_DEVICE_FAMILY: "1"
-    MARKETING_VERSION: "1.0.6"
-    CURRENT_PROJECT_VERSION: "603"
+    MARKETING_VERSION: "2.0.1"
+    CURRENT_PROJECT_VERSION: "606"
 targets:
   SayWithV3:
     type: application
@@ -22,12 +22,31 @@ targets:
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         ITSAppUsesNonExemptEncryption: false
         SayWithBackendURL: "$(SAYWITH_BACKEND_URL)"
+        CFBundleURLTypes:
+          - CFBundleURLSchemes: [wxb9dff3017930c9ee]
+        LSApplicationQueriesSchemes: [weixin, weixinULAPI, weixinURLParamsAPI]
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
+    entitlements:
+      path: SayWithV3/SayWithV3.entitlements
+      properties:
+        com.apple.developer.applesignin: [Default]
+        com.apple.developer.associated-domains: [applinks:saywith.zhiyuanv.com]
+    dependencies:
+      - framework: Frameworks/WechatOpenSDK.xcframework
+        embed: true
+        codeSign: true
+      - sdk: Security.framework
+      - sdk: AuthenticationServices.framework
+      - sdk: WebKit.framework
+      - sdk: libc++.tbd
     settings:
       base:
         SAYWITH_BACKEND_URL: "https://api.saywith.zhiyuanv.com/learning"
         PRODUCT_BUNDLE_IDENTIFIER: com.zhiyuanv.beidanciliankouyu
+        CODE_SIGN_ENTITLEMENTS: SayWithV3/SayWithV3.entitlements
+        DEVELOPMENT_TEAM: "24J3ZHSPYY"
+        OTHER_LDFLAGS: "$(inherited) -ObjC"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1"

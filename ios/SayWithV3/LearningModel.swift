@@ -11,6 +11,12 @@ final class LearningModel {
     var stage = "A2"
     var context = "校园与日常生活"
     var profile: Profile?
+    var restoringLogin=true
+    var displayName:String {CredentialStore.login(account:baseURL)?.displayName ?? "学习者"}
+    var maskedPhone:String {
+        let phone=CredentialStore.login(account:baseURL)?.phone ?? ""
+        return phone.count == 11 ? String(phone.prefix(3))+"****"+String(phone.suffix(4)) : ""
+    }
     var recommendations:Recommendations?
     var reviewEntry=false
     var health: Health?
@@ -33,9 +39,12 @@ final class LearningModel {
     private var pendingShadowRequest:[String:JSONValue]?
     private var api: API?
     private var activeJobKey: String?
-    private var storageScope: String { "-" + (apiScope ?? baseURL) }
+    var storageScope: String { Self.accountStorageScope(baseURL:apiScope ?? baseURL,userID:profile?.userId ?? "visitor") }
+    static func accountStorageScope(baseURL:String,userID:String)->String {"-"+baseURL+"-"+userID}
     private var apiScope: String?
     private var pendingInput: [String: JSONValue]?
+    private var repeatInFlight=false
+    private var pendingRepeat:[String:JSONValue]?
     var hasAccount: Bool {profile != nil}
 
     init() {
@@ -46,7 +55,7 @@ final class LearningModel {
         #endif
     }
     func perform(_ operation: () async throws -> Void) async {
-        guard !busy else {return}
+        guard !busy,!repeatInFlight else {return}
         busy=true;error=nil
         defer {busy=false;requestStatus=""}
         do {try await operation()}
@@ -58,11 +67,23 @@ final class LearningModel {
         let client=API(base:url,token:CredentialStore.read(account:url.absoluteString))
         let loadedHealth: Health=try await client.request("health",auth:false)
         if create {
+            #if DEBUG
+            guard loadedHealth.mode == "fixture",ProcessInfo.processInfo.arguments.contains("--ui-test-anonymous") else {throw APIError.missingToken}
             let registration: Registration=try await client.request("v1/users",method:"POST",body:[
                 "context":.string(context),"reference_stage":.string(stage),"interests":.array([])],auth:false)
             try CredentialStore.save(registration.accessToken,account:url.absoluteString)
             await client.authenticate(registration.accessToken)
+            #else
+            throw APIError.missingToken
+            #endif
         }
+        let identity:AccountStatus=try await client.request("v1/auth/me")
+        #if DEBUG
+        let fixtureAccount=loadedHealth.mode == "fixture" && ProcessInfo.processInfo.arguments.contains("--ui-test-anonymous")
+        #else
+        let fixtureAccount=false
+        #endif
+        guard identity.verified || fixtureAccount else {throw APIError.missingToken}
         #if DEBUG
         if loadedHealth.mode == "fixture" && ProcessInfo.processInfo.arguments.contains("--ui-test-notebook") {
             let _:NotebookEntry=try await client.request("v1/notebook",method:"POST",body:["word":.string("available"),"context":.string("Are you available tomorrow?")])
@@ -78,7 +99,7 @@ final class LearningModel {
             stage=loaded.preferences["reference_stage"]?.text ?? stage
             context=loaded.preferences["context"]?.text ?? context
         }
-        if apiScope != url.absoluteString {session=nil;job=nil;assessment=nil;pendingInput=nil}
+        if apiScope != url.absoluteString || profile?.userId != connected.userId {clearAccountMemory()}
         recommendations=try await client.request("v1/recommendations")
         api=client;profile=connected;health=loadedHealth;apiScope=url.absoluteString
         if create {
@@ -104,6 +125,56 @@ final class LearningModel {
                 }
             } catch {session=nil}
         }
+    }
+    func restoreLogin() async {
+        guard !busy else {return}
+        defer {restoringLogin=false}
+        guard CredentialStore.login(account:baseURL) != nil else {return}
+        await perform {try await connect()}
+    }
+    func loginClient() throws -> API {API(base:try API.validatedURL(baseURL),token:nil)}
+    func login(path:String,body:[String:JSONValue]) async throws {
+        let url=try API.validatedURL(baseURL)
+        let legacy=CredentialStore.login(account:url.absoluteString)==nil ? CredentialStore.read(account:url.absoluteString) : nil
+        let client=API(base:url,token:nil)
+        let response:LoginResponse=try await client.request(path,method:"POST",body:body,auth:false,legacyToken:legacy)
+        try CredentialStore.save(SavedLogin(response),account:url.absoluteString)
+        // Only the first adoption may move the old service-scoped resume keys.
+        if response.adoptedAnonymous == true {
+            let newScope=Self.accountStorageScope(baseURL:url.absoluteString,userID:response.userId)
+            for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest","activeEntryKind"] {
+                let old=key+"-"+url.absoluteString
+                if let value=UserDefaults.standard.object(forKey:old) {
+                    UserDefaults.standard.set(value,forKey:key+newScope)
+                    UserDefaults.standard.removeObject(forKey:old)
+                }
+            }
+        }
+        try await connect()
+    }
+    func signOut() async throws {
+        let url=try API.validatedURL(baseURL)
+        if let login=CredentialStore.login(account:url.absoluteString) {
+            let client=API(base:url,token:nil)
+            let _:LogoutResponse=try await client.request("v1/auth/logout",method:"POST",
+                body:["refresh_token":.string(login.refreshToken)],auth:false)
+        }
+        try CredentialStore.delete(account:url.absoluteString)
+        clearAccountMemory();profile=nil;api=nil;apiScope=nil;health=nil;error=nil
+    }
+    func loginExpired() {
+        clearAccountMemory();profile=nil;api=nil;apiScope=nil;health=nil
+        error=APIError.loginExpired.localizedDescription
+    }
+    private func clearAccountMemory() {
+        session=nil;job=nil;assessment=nil;recommendations=nil;pendingInput=nil;pendingUpload=nil
+        pendingShadowRequest=nil;pendingShadowAudio=nil;pendingRepeat=nil;activeJobKey=nil
+        translations=[:];hintText=nil;shadowFeedback=nil;personalText="";typedReply=""
+        reviewEntry=false;selectedMaterial=0;answerVisible=true
+    }
+    func authenticatedClient() throws -> API {
+        guard let api,hasAccount else {throw APIError.missingToken}
+        return api
     }
     func refresh() async throws {
         guard let api else {return}
@@ -208,6 +279,23 @@ final class LearningModel {
     func sound(_ ref: String) async throws -> Data {
         guard let api else {throw APIError.missingToken}
         return try await api.audio(ref)
+    }
+    // Replay is logged as support, without replacing the page's action/status state.
+    func recordRepeat(sourceTurnID:String) async throws {
+        guard let api,let current=session,!busy,!repeatInFlight,!hasPendingInput else {throw APIError.server("请等待当前操作完成。")}
+        repeatInFlight=true
+        defer {repeatInFlight=false}
+        if pendingRepeat?["session_id"]?.text != current.view.sessionId || pendingRepeat?["source_turn_id"]?.text != sourceTurnID {
+            pendingRepeat=["schema_version":.string("1.0"),"session_id":.string(current.view.sessionId),
+                "task_id":.string(current.view.taskId),"input_id":.string(UUID().uuidString),
+                "type":.string("request_repeat"),"source_turn_id":.string(sourceTurnID),
+                "recorded_at":.string(ISO8601DateFormatter().string(from:Date())),
+                "expected_session_version":.number(Double(current.sessionVersion))]
+        }
+        let _:Dialogue=try await api.request("v1/sessions/"+current.view.sessionId+"/inputs",method:"POST",body:pendingRepeat)
+        let refreshed:SessionState=try await api.request("v1/sessions/"+current.view.sessionId)
+        if session?.view.sessionId==current.view.sessionId {session=refreshed}
+        pendingRepeat=nil
     }
     func shadow(_ audio:Data) async throws {
         guard let api,let current=session else {return}

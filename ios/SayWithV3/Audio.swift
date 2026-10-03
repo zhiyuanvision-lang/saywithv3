@@ -43,7 +43,10 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
     }
     func start() async throws {
         try Task.checkCancellation()
-        guard await AVAudioApplication.requestRecordPermission() else {throw APIError.server("请在系统设置中允许麦克风访问。")}
+        let allowed=await AVAudioApplication.requestRecordPermission()
+        // A permission prompt can outlive the finger press or the screen.
+        try Task.checkCancellation()
+        guard allowed else {throw APIError.server("请在系统设置中允许麦克风访问。")}
         stopPlayback();lastRecording=nil;interruptionMessage=nil;duration=0
         let session=AVAudioSession.sharedInstance()
         try session.setCategory(.playAndRecord,mode:.default,options:[.defaultToSpeaker,.allowBluetoothHFP]);try session.setActive(true)
@@ -62,6 +65,7 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
         }
     }
     func stop() throws -> Data {
+        duration=recorder?.currentTime ?? duration
         recorder?.stop();recording=false;timer?.cancel()
         guard let file else {throw APIError.server("没有录音文件。")}
         let data=try Data(contentsOf:file);lastRecording=data
@@ -78,12 +82,12 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
         file=nil;lastRecording=nil
         try? AVAudioSession.sharedInstance().setActive(false,options:.notifyOthersOnDeactivation)
     }
-    func play(_ data:Data,id:String="own",rate:Float=1) throws {
+    func play(_ data:Data,id:String="own") throws {
         guard !recording else {return}
         stopPlayback()
         let session=AVAudioSession.sharedInstance()
         try session.setCategory(.playback,mode:.spokenAudio);try session.setActive(true)
-        let new=try AVAudioPlayer(data:data);new.delegate=self;new.enableRate=true;new.rate=rate
+        let new=try AVAudioPlayer(data:data);new.delegate=self
         guard new.play() else {throw APIError.server("声音暂时无法播放，请重试。")}
         player=new;playing=true;playingID=id
     }
@@ -101,8 +105,9 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
         }
     }
     nonisolated func audioRecorderDidFinishRecording(_ recorder:AVAudioRecorder,successfully flag:Bool) {
+        let identity=ObjectIdentifier(recorder)
         Task { @MainActor [weak self] in
-            guard let self,self.recording else {return}
+            guard let self,self.recording,let active=self.recorder,ObjectIdentifier(active)==identity else {return}
             self.recording=false;self.timer?.cancel()
             if let file=self.file {self.lastRecording=try? Data(contentsOf:file);try? FileManager.default.removeItem(at:file);self.file=nil}
             self.recorder=nil
