@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-04",
+  "feedback": "1236c412019f5f61b46e42c82174fb67",
+  "layout": {
+    "vertical_spacing_pt": 0,
+    "bottom_padding_pt": 2,
+    "button_hit_area_pt": [
+      44,
+      44
+    ]
+  },
+  "release_build": "passed",
+  "device_install": "success",
+  "device_launch": "success",
+  "ui_flow": "blocked before learning screen: expired isolated simulator fixture credentials",
+  "backend_change": false
+}

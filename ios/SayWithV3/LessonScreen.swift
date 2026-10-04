@@ -231,7 +231,7 @@ struct LessonScreen:View {
                 if own {Spacer(minLength:32)}
                 VStack(alignment:own ? .trailing:.leading,spacing:10) {
                     Text(own ? "我" : current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
-                    VStack(alignment:.leading,spacing:10) {
+                    VStack(alignment:.leading,spacing:0) {
                     if own || actions.contains("show_text") {LookupText(turn.content).font(.body).foregroundStyle(own ? Color.white:Color.primary).fixedSize(horizontal:false,vertical:true)}
                     else {Label("对方语音",systemImage:"waveform").font(.subheadline).foregroundStyle(.secondary)}
                     HStack(spacing:4) {
@@ -242,7 +242,7 @@ struct LessonScreen:View {
                         if !own && actions.contains("request_translation") {translationButton(turn.turnId)}
                     }
                     if shownTranslations.contains(turn.turnId),let text=model.translations[turn.turnId] {LookupText(text).font(.subheadline).foregroundStyle(.secondary)}
-                    }.tint(own ? Color.white:Color.accentColor).padding(.horizontal,14).padding(.vertical,12).background(own ? Color.accentColor:Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+                    }.tint(own ? Color.white:Color.accentColor).padding(.horizontal,14).padding(.top,12).padding(.bottom,2).background(own ? Color.accentColor:Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
                 }
                 if !own {Spacer(minLength:32)}
             }.id(turn.turnId)
