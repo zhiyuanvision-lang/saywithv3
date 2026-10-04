@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "backend_tests": {
+    "passed": 77,
+    "subtests": 4
+  },
+  "hint_tests": {
+    "passed": 19
+  },
+  "ui_test": "testProgressiveHintAndExample passed; isolated fixture speech, no mastery updates",
+  "live": {
+    "base": "https://api.saywith.zhiyuanv.com/learning",
+    "health": {
+      "status": "ok",
+      "mode": "provider",
+      "map_version": "1.0.1-model-reviewed"
+    },
+    "hint_content_schema": true,
+    "response_field": true
+  },
+  "deepseek_hint_examples": {
+    "pattern": {
+      "schema_version": "1.0",
+      "direction_zh": "说出你方便的时间",
+      "expression": "How about ___ in the afternoon?",
+      "meaning_zh": "下午___怎么样？",
+      "explanation_zh": null
+    },
+    "example": {
+      "schema_version": "1.0",
+      "direction_zh": null,
+      "expression": "How about three in the afternoon?",
+      "meaning_zh": "下午三点怎么样？用来提出一个替代时间。",
+      "explanation_zh": "How about 后直接加时间即可提出建议。"
+    }
+  },
+  "release": {
+    "release": "20261004T025816Z",
+    "strategy": "patch latest release; preserve generation and authentication"
+  },
+  "device": {
+    "install": "success",
+    "launch": "success",
+    "build": "Release build succeeded"
+  },
+  "scope": "Only progressive hint changes committed; concurrent changes preserved"
+}

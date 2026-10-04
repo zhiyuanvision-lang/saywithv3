@@ -30,6 +30,7 @@ final class LearningModel {
     var answerVisible = true
     var typedReply = ""
     var requestStatus=""
+    var hintResponse:Dialogue?
     var hintText:String?
     var translations:[String:String]=[:]
     var shadowFeedback:ShadowFeedback?
@@ -170,7 +171,7 @@ final class LearningModel {
     private func clearAccountMemory() {
         session=nil;job=nil;assessment=nil;recommendations=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil
         pendingShadowRequest=nil;pendingShadowAudio=nil;pendingRepeat=nil;activeJobKey=nil
-        translations=[:];hintText=nil;shadowFeedback=nil;personalText="";typedReply=""
+        translations=[:];hintText=nil;hintResponse=nil;shadowFeedback=nil;personalText="";typedReply=""
         reviewEntry=false;selectedMaterial=0;answerVisible=true
     }
     func authenticatedClient() throws -> API {
@@ -218,7 +219,7 @@ final class LearningModel {
                         session=try await api.request("v1/sessions",method:"POST",body:["lesson_id":.string(lesson),"entry_kind":.string(reviewEntry ? "review":"course")])
                     }
                     if let session {UserDefaults.standard.set(session.view.sessionId,forKey:"activeSession"+storageScope)}
-                    selectedMaterial=0;answerVisible=true;assessment=nil;shadowFeedback=nil;hintText=nil;translations=[:];typedReply=""
+                    selectedMaterial=0;answerVisible=true;assessment=nil;shadowFeedback=nil;hintText=nil;hintResponse=nil;translations=[:];typedReply=""
                 } else {throw APIError.server(current.state=="needs_review" ? "这份课程需要重新准备，请再次尝试。":"课程暂未就绪，请重试。")}
                 return
             }
@@ -244,7 +245,7 @@ final class LearningModel {
     func next() async throws {
         guard let api,let current=session else {return}
         session=try await api.request("v1/sessions/"+current.view.sessionId+"/next",method:"POST",body:["expected_session_version":.number(Double(current.sessionVersion)),"advance_round":.bool(true)])
-        hintText=nil;shadowFeedback=nil
+        hintText=nil;hintResponse=nil;shadowFeedback=nil
         personalText="";answerVisible=true;typedReply=""
     }
     private func watchInput(_ key:String,sessionID:String,api:API) async {
@@ -281,7 +282,7 @@ final class LearningModel {
         if let draft=outgoingMessage {outgoingMessage?.stage="recognizing";receiptTask=Task {await self.watchInput(draft.id,sessionID:current.view.sessionId,api:api)}} else {receiptTask=nil}
         defer {receiptTask?.cancel()}
         let response:Dialogue=try await api.request("v1/sessions/"+current.view.sessionId+"/inputs",method:"POST",body:pendingInput)
-        if response.kind=="hint" {hintText=response.text}
+        if response.kind=="hint" {hintText=response.text;hintResponse=response}
         if response.kind=="translation",let key=sourceTurnID ?? pendingInput?["source_turn_id"]?.text {translations[key]=response.text}
         session=try await api.request("v1/sessions/"+current.view.sessionId)
         pendingInput=nil;typedReply="";outgoingMessage=nil
@@ -339,12 +340,12 @@ final class LearningModel {
         guard let api,let current=session else {return}
         session=try await api.request("v1/sessions/"+current.view.sessionId+"/transition",method:"POST",body:[
             "action":.string(action),"expected_session_version":.number(Double(current.sessionVersion))])
-        pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;assessment=nil;shadowFeedback=nil
+        pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;assessment=nil;shadowFeedback=nil
         if action=="exit" {leave()}
     }
     func backToHome() {
         if session?.view.phase=="finished" {leave();return}
-        session=nil;assessment=nil;hintText=nil;shadowFeedback=nil
+        session=nil;assessment=nil;hintText=nil;hintResponse=nil;shadowFeedback=nil
     }
     func continueCourse() async throws {
         guard let api else {return}
@@ -360,7 +361,7 @@ final class LearningModel {
         try await generate()
     }
     func leave() {
-        session=nil;assessment=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;translations=[:];shadowFeedback=nil;job=nil;activeJobKey=nil
+        session=nil;assessment=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;translations=[:];shadowFeedback=nil;job=nil;activeJobKey=nil
         for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest","activeEntryKind"] {
             UserDefaults.standard.removeObject(forKey:key+storageScope)
         }

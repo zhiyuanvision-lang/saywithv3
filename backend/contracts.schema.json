@@ -602,6 +602,67 @@
     "title": "LessonPackage",
     "type": "object"
   },
+  "HintContent": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "direction_zh": {
+        "anyOf": [
+          {
+            "maxLength": 100,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Direction Zh"
+      },
+      "expression": {
+        "maxLength": 240,
+        "minLength": 1,
+        "title": "Expression",
+        "type": "string"
+      },
+      "meaning_zh": {
+        "anyOf": [
+          {
+            "maxLength": 160,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Meaning Zh"
+      },
+      "explanation_zh": {
+        "anyOf": [
+          {
+            "maxLength": 200,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Explanation Zh"
+      }
+    },
+    "required": [
+      "expression"
+    ],
+    "title": "HintContent",
+    "type": "object"
+  },
   "LearnerLessonView": {
     "additionalProperties": false,
     "properties": {
@@ -768,6 +829,69 @@
     "type": "object"
   },
   "DialogueResponse": {
+    "$defs": {
+      "HintContent": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "1.0",
+            "default": "1.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "direction_zh": {
+            "anyOf": [
+              {
+                "maxLength": 100,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Direction Zh"
+          },
+          "expression": {
+            "maxLength": 240,
+            "minLength": 1,
+            "title": "Expression",
+            "type": "string"
+          },
+          "meaning_zh": {
+            "anyOf": [
+              {
+                "maxLength": 160,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Meaning Zh"
+          },
+          "explanation_zh": {
+            "anyOf": [
+              {
+                "maxLength": 200,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Explanation Zh"
+          }
+        },
+        "required": [
+          "expression"
+        ],
+        "title": "HintContent",
+        "type": "object"
+      }
+    },
     "additionalProperties": false,
     "properties": {
       "schema_version": {
@@ -838,6 +962,17 @@
         ],
         "title": "Kind",
         "type": "string"
+      },
+      "hint_content": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/HintContent"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
       }
     },
     "required": [

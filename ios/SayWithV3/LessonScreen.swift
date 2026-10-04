@@ -5,7 +5,10 @@ struct LessonScreen:View {
     @State private var audio=AudioController()
     @State private var showHints=false
     @State private var selectedHint:String?
-    @State private var hintCache:[String:String]=[:]
+    @State private var hintCache:[String:Dialogue]=[:]
+    @State private var hintExplanationVisible=false
+    @State private var hintTranslationVisible=false
+    @State private var showCourseExpressions=false
     @State private var feedbackOpen=false
     @State private var showTextInput=false
     @State private var showTaskInfo=false
@@ -74,6 +77,7 @@ struct LessonScreen:View {
         .background(Color(uiColor:.systemBackground))
         .safeAreaInset(edge:.bottom,spacing:0) {if phase != "learning" || current?.view.lexicalPractices?.contains(where:{!$0.completed}) != true {footer}}
         .sheet(isPresented:$showHints) {hintPanel}
+        .sheet(isPresented:$showCourseExpressions) {courseExpressionsPanel}
         .sheet(isPresented:$showTextInput) {textInputPanel}
         .sheet(isPresented:$showTaskInfo) {taskInfoPanel}
         .sheet(isPresented:$showUsage) {usagePanel}
@@ -92,6 +96,7 @@ struct LessonScreen:View {
             if value != .active {cancelAudioInteraction()}
         }
         .onChange(of:current?.view.taskId) {_,_ in cancelAudioInteraction();hintCache=[:];selectedHint=nil;showHistory=false;replyFocused=false;followConversation=true}
+        .onChange(of:hintContext) {_,_ in hintCache=[:];selectedHint=nil;hintExplanationVisible=false;hintTranslationVisible=false}
         .onChange(of:phase) {_,_ in cancelAudioInteraction();retryingShadow=false;showHints=false;showHistory=false;highlightedLine=nil;replyFocused=false}
         .onChange(of:model.selectedMaterial) {_,_ in retryingShadow=false}
         .task(id:partner?.turnId) {
@@ -129,6 +134,7 @@ struct LessonScreen:View {
                 Menu {
                     if isIndependent {Button("需要答案帮助，转回引导练习") {showReturn=true}}
                     if phase=="learning" && current?.view.lexicalPractices?.contains(where:{!$0.completed}) != true {Button("用法说明") {showUsage=true};Button("完整示范对话") {showDemo=true}}
+                    if isGuided {Button("本课表达") {showCourseExpressions=true}}
                     Button("查看任务与条件") {showTaskInfo=true}
                     Button("退出本次任务",role:.destructive) {showExit=true}
                 } label:{Image(systemName:"ellipsis").font(.system(size:18)).frame(width:44,height:44)}
@@ -376,36 +382,80 @@ struct LessonScreen:View {
                 .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {replyFocused=false;showTextInput=false}}}
         }.presentationDetents([.medium,.large]).presentationDragIndicator(.visible)
     }
+    private func loadHint(_ level:String) {
+        selectedHint=level;hintExplanationVisible=false;hintTranslationVisible=false
+        guard hintCache[level]==nil else {return}
+        let context=hintContext
+        run {
+            try await model.send(kind:"request_hint",hintLevel:level)
+            guard hintContext==context,let response=model.hintResponse else {return}
+            hintCache[level]=response
+        }
+    }
+    private var hintContext:String {(current?.view.taskId ?? "")+":"+(current?.turns.last?.turnId ?? "")}
     private var hintPanel:some View {
         NavigationStack {
-            List {
-                Section {
-                    ForEach([("intent","表达意图","想清楚这次要表达什么","lightbulb"),("pattern","句型提示","用空白替换自己的内容","textformat"),("example","完整示范","需要时查看一句示例","quote.bubble"),("learned","所学表达","回顾本课学过的说法","book")],id:\.0) {level,title,detail,icon in
-                        VStack(alignment:.leading,spacing:12) {
-                            Button {
-                                if selectedHint==level {selectedHint=nil}
-                                else {
-                                    selectedHint=level
-                                    if hintCache[level]==nil {run {try await model.send(kind:"request_hint",hintLevel:level);hintCache[level]=model.hintText}}
-                                }
-                            } label: {
-                                HStack(spacing:12) {
-                                    Image(systemName:icon).frame(width:24).foregroundStyle(Color.accentColor)
-                                    VStack(alignment:.leading,spacing:3) {Text(title).font(.body).foregroundStyle(.primary);Text(detail).font(.caption).foregroundStyle(.secondary)}
-                                    Spacer();Image(systemName:selectedHint==level ? "chevron.up":"chevron.down").font(.caption).foregroundStyle(.secondary)
-                                }.frame(minHeight:44).contentShape(Rectangle())
-                            }.buttonStyle(.plain).disabled(model.busy).accessibilityIdentifier("hint-"+level)
-                            if selectedHint==level {
-                                if let text=hintCache[level] {LookupText(text).font(.body).textSelection(.enabled).accessibilityIdentifier("hintText")}
-                                else if model.busy {ProgressView("正在准备提示")}
-                                else if let error=model.error {Text(error).foregroundStyle(.red)}
+            ScrollView {
+                VStack(alignment:.leading,spacing:16) {
+                    let level=selectedHint ?? "pattern"
+                    let response=hintCache[level]
+                    VStack(alignment:.leading,spacing:12) {
+                        Text(level=="example" ? "一句示范":"一点提示").font(.headline)
+                        if let response {
+                            if let direction=response.hintContent?.directionZh,!direction.isEmpty,direction != current?.view.instruction,direction != current?.view.title {
+                                Text(direction).font(.subheadline).foregroundStyle(.secondary)
                             }
-                        }.padding(.vertical,4)
+                            LookupText(response.hintContent?.expression ?? response.text).font(.title3)
+                                .fixedSize(horizontal:false,vertical:true).accessibilityIdentifier("hintExpression")
+                            if level=="pattern" {Text("换成你自己的内容，再试着说。 ").font(.caption).foregroundStyle(.secondary)}
+                            HStack(spacing:4) {
+                                if let ref=response.audioRef {playbackButton(ref,label:"播放这句示范")}
+                                if response.hintContent?.meaningZh != nil {
+                                    Button {hintTranslationVisible.toggle()} label:{Image(systemName:"translate").frame(width:44,height:44)}
+                                        .accessibilityLabel(hintTranslationVisible ? "收起翻译":"查看翻译").accessibilityIdentifier("hintTranslation")
+                                }
+                            }
+                            if hintTranslationVisible,let meaning=response.hintContent?.meaningZh {Text(meaning).font(.subheadline).foregroundStyle(.secondary)}
+                            if let explanation=response.hintContent?.explanationZh,!explanation.isEmpty {
+                                Button(hintExplanationVisible ? "收起解释":"解释这个说法") {hintExplanationVisible.toggle()}.font(.subheadline).frame(minHeight:44)
+                                if hintExplanationVisible {Text(explanation).font(.subheadline).foregroundStyle(.secondary)}
+                            }
+                        } else if model.busy {ProgressView("正在准备本轮提示")}
+                        else {
+                            Text(model.error ?? "暂时没有获取到提示").font(.subheadline).foregroundStyle(.secondary)
+                            Button("重新获取") {loadHint(level)}.frame(minHeight:44)
+                        }
+                    }.frame(maxWidth:.infinity,alignment:.leading).padding(18)
+                        .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+                    if level=="pattern" {
+                        Button("看一句示范") {loadHint("example")}.frame(minHeight:44).disabled(model.busy).accessibilityIdentifier("hint-example")
+                    } else {
+                        Button("回到一点提示") {loadHint("pattern")}.frame(minHeight:44).disabled(model.busy).accessibilityIdentifier("hint-pattern")
                     }
-                } footer: {Text("按需展开，已使用的帮助会记录在本次练习中。")}
-            }.navigationTitle("提示").navigationBarTitleDisplayMode(.inline)
-                .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {showHints=false}}}
-        }.presentationDetents([.height(440),.large]).presentationDragIndicator(.visible)
+                    Button("回到对话，试着说") {audio.stopPlayback();showHints=false}.buttonStyle(.borderedProminent).frame(minHeight:44)
+                    Text("有帮助完成后，后续会再练习独立表达。").font(.caption).foregroundStyle(.secondary)
+                }.padding(20)
+            }.background(Color(uiColor:.systemGroupedBackground))
+                .navigationTitle("本轮提示").navigationBarTitleDisplayMode(.inline)
+                .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {audio.stopPlayback();showHints=false}}}
+                .task {if hintCache[selectedHint ?? "pattern"]==nil {loadHint(selectedHint ?? "pattern")}}
+        }.presentationDetents([.medium,.large]).presentationDragIndicator(.visible)
+    }
+    private var courseExpressionsPanel:some View {
+        NavigationStack {ScrollView {
+            VStack(alignment:.leading,spacing:16) {
+                ForEach(Array((current?.view.materials ?? []).enumerated()),id:\.offset) {index,material in
+                    VStack(alignment:.leading,spacing:8) {
+                        LookupText(material.expression).font(.body)
+                        if let ref=material.audioRef {playbackButton(ref,label:"播放本课表达")}
+                        if let meaning=material.meaningZh {Text(meaning).font(.subheadline).foregroundStyle(.secondary)}
+                    }.frame(maxWidth:.infinity,alignment:.leading).padding(16)
+                        .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:12))
+                }
+            }.padding(20)
+        }.background(Color(uiColor:.systemGroupedBackground)).navigationTitle("本课表达").navigationBarTitleDisplayMode(.inline)
+            .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {audio.stopPlayback();showCourseExpressions=false}}}
+        }
     }
     private func mainButton(_ title:String,id:String,action:@escaping()->Void)->some View {
         Button(action:action) {Text(title).font(.headline).foregroundStyle(Color.white).frame(maxWidth:.infinity,minHeight:50)}

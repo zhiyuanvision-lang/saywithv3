@@ -26,6 +26,25 @@ final class LearningFlowTests:XCTestCase {
         XCTAssertTrue(field.waitForExistence(timeout:3));field.tap();field.typeText(text)
         ready(app.buttons["sendReply"]);app.buttons["sendReply"].tap()
     }
+    func testProgressiveHintAndExample() {
+        let app=launch();app.buttons["startLearning"].tap()
+        ready(app.buttons["recordButton"]);app.buttons["recordButton"].press(forDuration:1.5)
+        ready(app.buttons["nextPhase"]);app.buttons["nextPhase"].tap()
+        ready(app.buttons["hintButton"]);app.buttons["hintButton"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["hintExpression"].firstMatch.waitForExistence(timeout:10))
+        XCTAssertFalse(app.buttons["hint-intent"].exists);XCTAssertFalse(app.buttons["hint-learned"].exists)
+        XCTAssertFalse(app.buttons["hint-pattern"].exists)
+        shot(app,"progressive-hint-frame")
+        ready(app.buttons["hint-example"]);app.buttons["hint-example"].tap()
+        XCTAssertTrue(app.buttons["回到一点提示"].waitForExistence(timeout:10))
+        XCTAssertTrue(app.buttons["播放这句示范"].waitForExistence(timeout:15))
+        XCTAssertTrue(app.buttons["解释这个说法"].exists)
+        shot(app,"progressive-hint-example")
+        app.buttons["hintTranslation"].tap();app.buttons["解释这个说法"].tap()
+        shot(app,"progressive-hint-explanation")
+        app.buttons["回到对话，试着说"].tap()
+        ready(app.buttons["recordButton"])
+    }
     func testNotebookTryFirstHintsAndContinue() {
         let app=launch(backend:"http://localhost:8087",extra:["--ui-test-notebook"])
         app.buttons["startLearning"].tap()
@@ -58,8 +77,8 @@ final class LearningFlowTests:XCTestCase {
         app.buttons["nextPhase"].tap()
         XCTAssertTrue(app.buttons["hintButton"].waitForExistence(timeout:15))
         shot(app,"v6-guided")
-        app.buttons["hintButton"].tap();app.buttons["hint-pattern"].tap()
-        XCTAssertTrue(app.descendants(matching:.any)["hintText"].firstMatch.waitForExistence(timeout:5))
+        app.buttons["hintButton"].tap()
+        XCTAssertTrue(app.descendants(matching:.any)["hintExpression"].firstMatch.waitForExistence(timeout:5))
         app.buttons["关闭"].tap()
         for i in 0..<3 {
             reply(app,"How about \(15+i)?")

@@ -224,6 +224,12 @@ class LearnerLessonView(Contract):
     shadow_feedback: dict[str,Any] | None = None
     assessment: dict[str,Any] | None = None
 
+class HintContent(Contract):
+    direction_zh: str | None = Field(default=None,max_length=100)
+    expression: str = Field(min_length=1,max_length=240)
+    meaning_zh: str | None = Field(default=None,max_length=160)
+    explanation_zh: str | None = Field(default=None,max_length=200)
+
 class DialogueResponse(Contract):
     session_id: str
     task_id: str
@@ -234,6 +240,7 @@ class DialogueResponse(Contract):
     audio_ref: str | None = None
     support_provided: list[str] = Field(default_factory=list)
     kind: Literal['dialogue','hint','translation','repeat'] = 'dialogue'
+    hint_content: HintContent | None = None
 
 class LearnerInput(Contract):
     session_id: str
@@ -288,7 +295,7 @@ class AssessmentResult(Contract):
     example_notice: str | None = None
 
 CONTRACTS = {c.__name__:c for c in (SourceCatalog,CurriculumRelease,TargetDefinition,LearnerProfile,
-    TeachingAssignment,LessonPackage,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult,NotebookEntry,LexicalPracticeInput,LexicalResourceState,LexicalSelection,LexicalPractice,LexicalResult,LexicalPracticeAttempt,InputProgress)}
+    TeachingAssignment,LessonPackage,HintContent,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult,NotebookEntry,LexicalPracticeInput,LexicalResourceState,LexicalSelection,LexicalPractice,LexicalResult,LexicalPracticeAttempt,InputProgress)}
 
 
 class AssessmentCheckCandidate(BaseModel):

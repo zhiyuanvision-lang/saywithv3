@@ -219,7 +219,8 @@
     "speaker": "partner",
     "text": "I’m not free at ten.",
     "audio_ref": "media/partner002",
-    "support_provided": []
+    "support_provided": [],
+    "hint_content": null
   },
   "LearnerInput": {
     "schema_version": "1.0",
@@ -514,5 +515,12 @@
     "status": "responding",
     "transcript": "That doesn't work for me. How about three?",
     "audio_ref": "/v1/media/learner_example"
+  },
+  "HintContent": {
+    "schema_version": "1.0",
+    "direction_zh": null,
+    "expression": "How about three in the afternoon?",
+    "meaning_zh": "下午三点怎么样？",
+    "explanation_zh": "How about 后接时间，用于提出建议。"
   }
 }

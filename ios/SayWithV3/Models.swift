@@ -75,7 +75,8 @@ struct Turn: Decodable, Identifiable, Sendable {
     var id: String {turnId}; var content: String {text ?? transcript ?? ""}
 }
 struct SessionState: Decodable, Sendable { let view: LessonView; let sessionVersion: Int; let turns: [Turn] }
-struct Dialogue: Decodable, Sendable { let text:String;let audioRef:String?;let kind:String?;let supportProvided:[String]? }
+struct HintContent:Decodable,Sendable {let directionZh:String?;let expression:String;let meaningZh:String?;let explanationZh:String?}
+struct Dialogue: Decodable, Sendable { let text:String;let audioRef:String?;let kind:String?;let supportProvided:[String]?;let hintContent:HintContent? }
 struct DemoLine:Decodable,Sendable {let speaker:String;let text:String;let meaningZh:String?;let audioRef:String?}
 struct ShadowFeedback:Decodable,Sendable {let transcript:String;let canContinue:Bool;let message:String;let audioRef:String;let materialIndex:Int
     func materialIndexMatches(_ index:Int)->Bool {materialIndex==index}}

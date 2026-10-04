@@ -127,6 +127,7 @@ class TeachingSupport:
     async def help(self,id,owner,entry,row,s):
         task=s['task'];kind=entry['type'];actions=self.actions(s)
         if kind not in actions:raise Conflict('本阶段合同不允许此项帮助')
+        hint_content=None
         if kind=='request_repeat':
             source=entry.get('source_turn_id')
             turn=next((t for t in s['turns'] if t['turn_id']==source and t['speaker']=='partner'),None) if source else next((t for t in reversed(s['turns']) if t['speaker']=='partner'),None)
@@ -148,14 +149,17 @@ class TeachingSupport:
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             target=self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])
             level=entry['hint_level']
-            text=(await self.provider.hint(task,s['turns'],lesson['learning_materials'],target,level)).get('text','')
+            hint=await self.provider.hint(task,s['turns'],lesson['learning_materials'],target,level)
+            text=hint.get('text','');hint_content=hint.get('hint_content')
             support=[{'intent':'意图提示','pattern':'句型提示','example':'完整示例','learned':'所学表达'}[level]]
-            audio=None;response_kind='hint'
+            audio=(await self.generator.audio(text,owner,'hint_example'))['audio_ref'] if level=='example' else None;response_kind='hint'
         if not isinstance(text,str) or not text.strip() or len(text)>2000:raise ReviewRequired('暂时没有可用帮助，请重试')
         response=DialogueResponse(session_id=id,task_id=task['task_id'],turn_id=uid(),reply_to=entry['input_id'],text='' if response_kind=='repeat' and 'show_text' not in actions else text,
-                                  audio_ref=audio,support_provided=support,kind=response_kind).model_dump()
+                                  audio_ref=audio,support_provided=support,kind=response_kind,hint_content=hint_content).model_dump()
         s['support_used']=sorted(set(s['support_used']+support))
-        s.setdefault('help_events',[]).append({'kind':kind,'support':support,'text':text,'recorded_at':timestamp()})
+        s.setdefault('help_events',[]).append({'kind':kind,'support':support,'text':text,'recorded_at':timestamp(),
+            'hint_level':entry['hint_level'] if response_kind=='hint' else None,
+            'source_turn_id':s['turns'][-1]['turn_id'] if s['turns'] else None})
         s['request_responses'][entry['input_id']]={'hash':digest(entry),'response':response}
         self.store.put('Session',id,owner,s,expected=row['version'])
         return response

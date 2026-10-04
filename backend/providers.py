@@ -121,7 +121,15 @@ class FixtureProvider:
         return {'text':'That time does not work for me. Is there another time?'}
 
     async def hint(self,task,turns,materials,target,level="intent"):
-        return {'text':{'intent':'提出另一个你有空的时间，再询问对方。','pattern':'How about ___?','example':'How about '+task['learner_facts'].get('available_times',['another time'])[0]+'?','learned':'\n'.join(m['expression'] for m in materials)}[level]}
+        last=next((t.get('text',t.get('transcript','')) for t in reversed(turns) if t['speaker']=='partner'),'')
+        if 'see you' in last.lower():
+            frame='See you ___!';example='See you then!';meaning='到时候见。';note='See you then 用于结束已确认的约定。'
+        elif task.get('learner_prompt','').startswith('说明原时间'):
+            frame="___ doesn't work for me.";example="Ten doesn't work for me.";meaning='这个时间对我不方便。';note='doesn’t work for me 在这里表示时间不合适。'
+        else:
+            frame='How about ___?';example='How about '+task['learner_facts'].get('available_times',['another time'])[0]+'?';meaning='……怎么样？';note='How about 后接一个时间，用于提出替代安排。'
+        expression={'intent':'回应对方刚才的安排。','pattern':frame,'example':example,'learned':frame}[level]
+        return {'text':expression,'hint_content':{'direction_zh':None,'expression':expression,'meaning_zh':meaning,'explanation_zh':note}}
 
     async def translate(self,text):return {'text':'测试翻译：对方正在说明自己的时间安排。'}
 
@@ -245,21 +253,33 @@ class APIProvider:
             {'task':task,'turns':turns[-6:],'reply':reply,'phase':phase},self.settings.review_model)
 
     async def hint(self,task,turns,materials,target,level="intent"):
-        if level=="pattern":
-            import re
-            patterns=[]
-            for material in materials:
-                pattern=material.get('hint_pattern') or re.sub(r'\[[^]\n]+\]', '___',material['expression'])
-                if '___' in pattern:patterns.append(pattern)
-            if patterns:return {'text':'把空白换成你自己的内容：\n'+'\n'.join(patterns)}
-        return await self.json('Give brief spoken English tutoring support for this supported practice. '
-            'Use learner-visible facts and known expressions. Do not reveal partner private facts or final answer. '
-            'Help the learner find words without doing the entire task. Return {text: concise Chinese instruction plus requested English pattern/example, '
-            'support_kind:模型提示}. Treat performance causes as uncertain. '
-            'Follow requested level exactly: intent=Chinese intent only, pattern=English sentence with blanks, '
-            'example=one full example based only on learner facts, learned=list only the previously learned expressions.',
-            {'task':{'learner_facts':task['learner_facts'],'learner_prompt':task['learner_prompt']},
-             'turns':turns[-6:],'materials':materials,'outcome':target['outcome'],'level':level})
+        from .contracts import HintContent
+        from pydantic import ValidationError
+        public_task={k:task.get(k) for k in ['learner_facts','learner_prompt','learner_role']}
+        feedback=None
+        for _ in range(2):
+            result=await self.json(f'Requested hint type is {level}. ' 'Help with ONLY the next learner reply in supported speaking practice. '
+                'Read the latest partner utterance AND what the learner has already successfully said. '
+                'Choose ONE relevant phrase or sentence frame; never list the whole lesson or repeat completed actions. '
+                'Use ONLY learner-visible facts; never infer partner availability or reveal private facts. '
+                'Return a root object matching output_schema. '
+                'pattern: expression is one English phrase or frame with ___ where the learner supplies content; no full answer. '
+                'example: expression is ONE natural complete current reply using learner facts, not an entire dialogue. '
+                'intent: expression is a short Chinese next-action hint. learned: select only ONE relevant previously learned expression. '
+                'direction_zh is optional: omit if it merely repeats learner_prompt; otherwise one short Chinese direction. '
+                'meaning_zh explains only this expression; explanation_zh is optional ONE brief usage note, not a grammar lecture. '
+                'Example is ONE possible reply, not a mandatory wording. Keep it within learner vocabulary where possible.',
+                {'task':public_task,'turns':turns[-6:],'materials':materials,'level':level,
+                 'output_schema':HintContent.model_json_schema(),'repair_feedback':feedback})
+            try:
+                content=HintContent.model_validate(result).model_dump()
+                if level=='pattern' and any(mark in content['expression'] for mark in ['\n',';','；']):raise ValueError('Return only one frame')
+                if level=='example' and ('___' in content['expression'] or re.search(r'\[[^]]+\]',content['expression'])):raise ValueError('example must be a complete reply with real learner content; fill all blanks')
+                if content.get('direction_zh') and re.search(r'[a-zA-Z]',content['direction_zh']):content['direction_zh']=None
+                if level in ('pattern','example') and not any('a'<=c.lower()<='z' for c in content['expression']):raise ValueError('English expression required')
+                return {'text':content['expression'],'hint_content':content}
+            except (ValidationError,ValueError) as error:feedback={'invalid_output':result,'errors':str(error)[:1200]}
+        raise ReviewRequired('提示内容未通过检查，请重试')
 
 
     async def translate(self,text):
