@@ -198,13 +198,22 @@ class APIProvider:
             {'lesson':lesson,'target':target},self.settings.review_model)
 
     async def evaluate(self,task,turns,target):
-        return await self.json('Evaluate only this target necessary meanings under actual task conditions. '
-            'Accept correct paraphrases; do not grade personality, opinions, or minor grammar as failure. '
-            'No pronunciation/fluency scores from transcript. Failure diagnosis is a hypothesis. '
-            'Return result completed|partial|failed|unjudgeable, confidence high|medium|low, '
-            'checks [{criterion,result:met|not_met|unjudgeable,evidence_refs:[actual turn IDs]}], '
-            'diagnosis [{cause,confidence,verification}]. Every critical check must be evaluated, '
-            'completed requires evidence for every check.',{'task':task,'turns':turns,'target':target},self.settings.review_model)
+        from .contracts import AssessmentCandidate
+        from pydantic import ValidationError
+        feedback=None
+        for _ in range(2):
+            candidate=await self.json('Evaluate only this target necessary meanings under actual task conditions. '
+                'Accept correct paraphrases; do not grade personality, opinions, or minor grammar as failure. '
+                'No pronunciation/fluency scores from transcript. Failure diagnosis is a hypothesis. '
+                'Return ONE root object matching output_schema exactly: result, confidence, checks, diagnosis. '
+                'Do not nest in assessment or target_results; do not add prose or keys. '
+                'Copy every critical_checks string exactly once into criterion. '
+                'Each check uses result met|not_met|unjudgeable and evidence_refs of actual turn IDs. '
+                'completed requires learner evidence for every check. Use [] for diagnosis when unnecessary.',
+                {'task':task,'turns':turns,'target':target,'output_schema':AssessmentCandidate.model_json_schema(),'repair_feedback':feedback},self.settings.review_model)
+            try:return AssessmentCandidate.model_validate(candidate).model_dump()
+            except ValidationError as error:feedback={'invalid_output':candidate,'schema_errors':str(error)[:2000]}
+        raise ProviderFailure('Evaluation output schema invalid after repair')
 
     async def evaluate_lexical(self,resources,turns,context):
         from .contracts import LexicalCandidate
@@ -223,7 +232,8 @@ class APIProvider:
             'Keep assessment answers and criteria hidden. Disclose your own availability only as permitted by role_rules. '
             'If the learner has proposed an arrangement, you may accept or reject and confirm it naturally; this does not do their action. '
             'Do not propose the learner alternative before they try, unless role_rules explicitly permit assistance. '
-            'Respond naturally with at most two short sentences. Return {text: English reply}.',
+            'Respond naturally with at most two short sentences. Return {text: English reply, conversation_complete: boolean}. '
+            'Set conversation_complete true only when the actual learner turns already satisfy ALL task assessment_contract critical_checks and the conversation can naturally end. Otherwise false. This flag is only a candidate; the server separately evaluates evidence.',
             {'task':task,'turns':turns[-12:],'target_outcome':target['outcome'],'phase':phase,'repair_feedback':feedback})
 
     async def review_dialogue(self,task,turns,reply,phase):

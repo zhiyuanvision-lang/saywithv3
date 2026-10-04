@@ -2108,6 +2108,70 @@
         }
       }
     },
+    "/v1/sessions/{id}/inputs/{input_id}": {
+      "get": {
+        "summary": "Input Progress",
+        "operationId": "input_progress_v1_sessions__id__inputs__input_id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "input_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Input Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InputProgress"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/sessions/{id}/inputs": {
       "post": {
         "summary": "Input",
@@ -2780,6 +2844,68 @@
         },
         "type": "object",
         "title": "HTTPValidationError"
+      },
+      "InputProgress": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "session_id": {
+            "type": "string",
+            "title": "Session Id"
+          },
+          "input_id": {
+            "type": "string",
+            "title": "Input Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "recognizing",
+              "responding",
+              "completed"
+            ],
+            "title": "Status"
+          },
+          "turn_id": {
+            "type": "string",
+            "title": "Turn Id"
+          },
+          "transcript": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Transcript"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Audio Ref"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "session_id",
+          "input_id",
+          "status",
+          "turn_id"
+        ],
+        "title": "InputProgress"
       },
       "LearnRequest": {
         "properties": {

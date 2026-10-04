@@ -505,5 +505,14 @@
     "policy_version": "lexical-v1",
     "fixture": false,
     "evidence_valid": true
+  },
+  "InputProgress": {
+    "schema_version": "1.0",
+    "session_id": "session_example",
+    "input_id": "input_example",
+    "turn_id": "turn_example",
+    "status": "responding",
+    "transcript": "That doesn't work for me. How about three?",
+    "audio_ref": "/v1/media/learner_example"
   }
 }

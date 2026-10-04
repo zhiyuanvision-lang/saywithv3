@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-04",
+  "feedback_ids": [
+    "3235c62d776e5d36abf34071ef0b4c67",
+    "a99d9e9192065ff695604ed4c826a147",
+    "b0a06c78c22f5327acb38edf7f587141"
+  ],
+  "source_baseline": "644b2a30",
+  "backend_tests": {
+    "passed": 74,
+    "subtests_passed": 4,
+    "warning_count": 1
+  },
+  "ios_unit_tests": {
+    "passed": 15
+  },
+  "ios_ui_tests": {
+    "test": "testLearningGuidedIndependentFeedback",
+    "passed": 1,
+    "speech": "isolated fixture recognition plus delayed partner; no real ASR accuracy claim"
+  },
+  "model_readonly_recheck": {
+    "schema_valid": true,
+    "critical_checks_complete": true,
+    "references_valid": true,
+    "result": "completed",
+    "confidence": "high",
+    "learner_records_unchanged": true
+  },
+  "live": {
+    "base": "https://api.saywith.zhiyuanv.com/learning",
+    "health": {
+      "status": "ok",
+      "mode": "provider",
+      "map_version": "1.0.1-model-reviewed"
+    },
+    "progress_route": true,
+    "progress_schema": true
+  },
+  "deployment": {
+    "release": "20261004T022826Z",
+    "strategy": "patch latest release; preserve generation and authentication"
+  },
+  "ios": {
+    "version": "2.0.1",
+    "build": "610",
+    "release_build": "succeeded",
+    "installation": "succeeded",
+    "launch": "succeeded"
+  },
+  "data_policy": "No learner history reset or retrospective profile update; private feedback photos not committed",
+  "isolation": "Existing concurrent work preserved; only this feedback patch staged"
+}

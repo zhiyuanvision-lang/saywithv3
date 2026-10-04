@@ -83,8 +83,15 @@ struct ShadowResponse:Decodable,Sendable {let feedback:ShadowFeedback;let sessio
 struct AudioUpload: Decodable, Sendable { let audioRef: String }
 struct Assessment: Decodable, Sendable {
     let assessmentId: String; let targetResults: [[String: JSONValue]]; let validation: [String: JSONValue]
+    var failureExplanation:String {
+        let reasons=validation["checks"]?.text ?? ""
+        if reasons.contains("测试用例") {return "这是测试内容，本次不计入能力记录。"}
+        if reasons.contains("模型评价结构") || reasons.contains("关键检查未全部评价") {return "系统未能完成本次评价。这不代表你不会表达，本次没有改动能力记录。"}
+        if reasons.contains("音频") || reasons.contains("录音") {return "本次录音或识别结果不足以确认表现，请回听后再试。"}
+        return "本次还无法可靠确认表现，能力记录保持不变。"
+    }
     var summary: String {
-        guard validation["status"]?.text == "accepted" else { return "本次证据不足，暂不更新能力。" }
+        guard validation["status"]?.text == "accepted" else { return failureExplanation }
         switch targetResults.first?["result"]?.text {
         case "completed": return "本次任务已完成。后续还会检查保持与迁移。"
         case "partial": return "已完成部分目标，下一次继续补练。"
@@ -99,3 +106,20 @@ struct ReviewRecommendation:Decodable,Sendable,Identifiable {
     var id:String {targetId}
 }
 struct Recommendations:Decodable,Sendable {let recommended:ReviewRecommendation?;let dueCount:Int;let learned:[ReviewRecommendation];let nextLearning:ReviewRecommendation?}
+
+struct InputProgress:Decodable,Sendable {
+    let inputId:String;let sessionId:String;let turnId:String;let status:String
+    let transcript:String?;let audioRef:String?
+}
+struct OutgoingMessage:Identifiable,Sendable {
+    let id:String
+    var turnId:String?;var text:String?;var stage:String;var audioRef:String?
+    var statusText:String {
+        switch stage {
+        case "uploading":return "正在发送录音"
+        case "recognizing":return "正在识别语音"
+        case "failed":return "发送未完成，可重试"
+        default:return "正在等待对方回应"
+        }
+    }
+}

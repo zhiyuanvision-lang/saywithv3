@@ -2100,5 +2100,69 @@
     ],
     "title": "LexicalPracticeAttempt",
     "type": "object"
+  },
+  "InputProgress": {
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "1.0",
+        "default": "1.0",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "session_id": {
+        "title": "Session Id",
+        "type": "string"
+      },
+      "input_id": {
+        "title": "Input Id",
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "recognizing",
+          "responding",
+          "completed"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "turn_id": {
+        "title": "Turn Id",
+        "type": "string"
+      },
+      "transcript": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Transcript"
+      },
+      "audio_ref": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Audio Ref"
+      }
+    },
+    "required": [
+      "session_id",
+      "input_id",
+      "status",
+      "turn_id"
+    ],
+    "title": "InputProgress",
+    "type": "object"
   }
 }

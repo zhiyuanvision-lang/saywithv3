@@ -13,7 +13,7 @@ from sqlalchemy import insert, select, update
 from modules.curriculum import CurriculumRepository
 from .config import Settings
 from .store import Store, uid, Missing, Conflict
-from .contracts import LexicalPracticeInput, LearnerProfile, LearnerInput, SourceCatalog, TargetDefinition, CONTRACTS
+from .contracts import InputProgress, LexicalPracticeInput, LearnerProfile, LearnerInput, SourceCatalog, TargetDefinition, CONTRACTS
 from .curriculum import CurriculumService
 from .planning import Planner, STAGES
 from .providers import FixtureProvider, ProviderFailure, ReviewRequired
@@ -328,6 +328,9 @@ def create_app(settings=None,provider=None):
     @app.post('/v1/sessions/{id}/transition')
     async def transition(id:str,data:TransitionRequest,user=Depends(owner)):
         return await svc.sessions.support.transition(id,user,data.action,data.expected_session_version)
+    @app.get('/v1/sessions/{id}/inputs/{input_id}',response_model=InputProgress)
+    def input_progress(id:str,input_id:str,user=Depends(owner)):return svc.sessions.input_progress(id,user,input_id)
+
     @app.post('/v1/sessions/{id}/inputs')
     async def input(id:str,data:LearnerInput,user=Depends(owner)):return await svc.sessions.input(id,user,data.model_dump())
     @app.post('/v1/sessions/{id}/finish')

@@ -247,6 +247,14 @@ class LearnerInput(Contract):
     hint_level: Literal['intent','pattern','example','learned'] = 'intent'
     source_turn_id: str | None = None
 
+class InputProgress(Contract):
+    session_id: str
+    input_id: str
+    status: Literal['recognizing','responding','completed']
+    turn_id: str
+    transcript: str | None = None
+    audio_ref: str | None = None
+
 class TaskAttempt(Contract):
     attempt_id: str
     user_id: str
@@ -280,7 +288,7 @@ class AssessmentResult(Contract):
     example_notice: str | None = None
 
 CONTRACTS = {c.__name__:c for c in (SourceCatalog,CurriculumRelease,TargetDefinition,LearnerProfile,
-    TeachingAssignment,LessonPackage,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult,NotebookEntry,LexicalPracticeInput,LexicalResourceState,LexicalSelection,LexicalPractice,LexicalResult,LexicalPracticeAttempt)}
+    TeachingAssignment,LessonPackage,LearnerLessonView,DialogueResponse,LearnerInput,TaskAttempt,AssessmentResult,NotebookEntry,LexicalPracticeInput,LexicalResourceState,LexicalSelection,LexicalPractice,LexicalResult,LexicalPracticeAttempt,InputProgress)}
 
 
 class AssessmentCheckCandidate(BaseModel):

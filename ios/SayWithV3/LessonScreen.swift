@@ -4,6 +4,8 @@ struct LessonScreen:View {
     @Bindable var model:LearningModel
     @State private var audio=AudioController()
     @State private var showHints=false
+    @State private var selectedHint:String?
+    @State private var hintCache:[String:String]=[:]
     @State private var feedbackOpen=false
     @State private var showTextInput=false
     @State private var showTaskInfo=false
@@ -64,7 +66,7 @@ struct LessonScreen:View {
             }.background(Color(uiColor:.systemGroupedBackground))
                 .accessibilityIdentifier("lessonContent").coordinateSpace(name:"lessonScroll")
                 .onPreferenceChange(ConversationBottomKey.self) {y in followConversation=y<=viewport.size.height+60}
-                .onChange(of:current?.turns.last?.turnId) {_,_ in
+                .onChange(of:(current?.turns.last?.turnId ?? "")+(model.outgoingMessage?.id ?? "")) {_,_ in
                     if followConversation && (isGuided || isIndependent) {proxy.scrollTo("conversationBottom",anchor:.bottom)}
                 }
             }}
@@ -89,7 +91,7 @@ struct LessonScreen:View {
         .onChange(of:scenePhase) {_,value in
             if value != .active {cancelAudioInteraction()}
         }
-        .onChange(of:current?.view.taskId) {_,_ in cancelAudioInteraction();showHistory=false;replyFocused=false;followConversation=true}
+        .onChange(of:current?.view.taskId) {_,_ in cancelAudioInteraction();hintCache=[:];selectedHint=nil;showHistory=false;replyFocused=false;followConversation=true}
         .onChange(of:phase) {_,_ in cancelAudioInteraction();retryingShadow=false;showHints=false;showHistory=false;highlightedLine=nil;replyFocused=false}
         .onChange(of:model.selectedMaterial) {_,_ in retryingShadow=false}
         .task(id:partner?.turnId) {
@@ -231,7 +233,7 @@ struct LessonScreen:View {
                     Text(own ? "我" : current?.view.partnerName ?? "对方").font(.caption).foregroundStyle(.secondary)
                     VStack(alignment:.leading,spacing:10) {
                     if own || actions.contains("show_text") {LookupText(turn.content).font(.body).foregroundStyle(own ? Color.white:Color.primary).fixedSize(horizontal:false,vertical:true)}
-                    else {Text("请听对方的声音，再说出回应。").font(.body)}
+                    else {Label("对方语音",systemImage:"waveform").font(.subheadline).foregroundStyle(.secondary)}
                     HStack(spacing:4) {
                     if let ref=turn.audioRef,own || actions.contains("request_repeat") || !playedTurns.contains(turn.turnId) || (audio.paused && audio.playingID==ref) {
                         playbackButton(ref,label:own ? "回听自己":"重播这句话",turnID:own ? nil:turn.turnId)
@@ -245,6 +247,20 @@ struct LessonScreen:View {
                 if !own {Spacer(minLength:32)}
             }.id(turn.turnId)
         }
+        if let draft=model.outgoingMessage,!((current?.turns ?? []).contains(where:{$0.turnId==draft.turnId})) {outgoingBubble}
+    }
+    private var outgoingBubble:some View {
+        HStack {
+            Spacer(minLength:32)
+            VStack(alignment:.leading,spacing:10) {
+                if let text=model.outgoingMessage?.text,!text.isEmpty {LookupText(text).font(.body)}
+                HStack(spacing:8) {
+                    if model.outgoingMessage?.stage=="failed" {Image(systemName:"exclamationmark.circle")} else {ProgressView().tint(.white)}
+                    Text(model.outgoingMessage?.statusText ?? "正在发送").font(.caption)
+                }
+                if model.outgoingMessage?.stage=="failed" {Button("重试发送") {run {try await model.retryInput()}}.underline().disabled(model.busy)}
+            }.foregroundStyle(.white).tint(.white).padding(14).background(Color.accentColor,in:RoundedRectangle(cornerRadius:16)).accessibilityIdentifier("outgoingMessage")
+        }.id(model.outgoingMessage?.id ?? "outgoing")
     }
     private var guidedSummary:some View {
         VStack(alignment:.leading,spacing:24) {
@@ -254,10 +270,10 @@ struct LessonScreen:View {
             Button("再练一次") {run {try await model.transition("retry_guided")}}.frame(minHeight:44).buttonStyle(.bordered)
         }
     }
-    private var result:Assessment? {model.assessment ?? current?.view.assessment}
+    private var result:Assessment? {current?.view.assessment ?? model.assessment}
     private var feedbackTitle:String {
         guard let result else {return "正在整理本次表现"}
-        if result.validation["status"]?.text != "accepted" {return "本次表现还无法确认"}
+        if result.validation["status"]?.text != "accepted" {return "本次评价未完成"}
         return ["completed":isReview ? "复习完成":"任务完成","partial":"已完成部分要求","failed":"还需要练习"][result.targetResults.first?["result"]?.text ?? ""] ?? "本次表现还无法确认"
     }
     private var evidence:[[String:JSONValue]] {
@@ -265,7 +281,7 @@ struct LessonScreen:View {
         return checks.compactMap {if case .object(let d)=$0 {return d};return nil}
     }
     private var improvement:String {
-        if result?.validation["status"]?.text != "accepted" {return "回听录音，再用一组有效任务确认表现。"}
+        if result?.validation["status"]?.text != "accepted" {return "可以回听本次记录，或换一组内容再试。"}
         return evidence.first(where:{$0["result"]?.text != "met"})?["criterion"]?.text ?? "换一个场景，再检查能否独立完成。"
     }
     private var taskCompleted:Bool {result?.validation["status"]?.text=="accepted" && result?.targetResults.first?["result"]?.text=="completed"}
@@ -275,12 +291,21 @@ struct LessonScreen:View {
     }
     private var feedbackContent:some View {
         VStack(alignment:.leading,spacing:16) {
+            if result?.validation["status"]?.text=="accepted" {
             VStack(alignment:.leading,spacing:12) {
-                Label("完成证据",systemImage:taskCompleted ? "checkmark.circle.fill":"circle").font(.headline)
+                Label(result?.validation["status"]?.text=="accepted" ? (taskCompleted ? "完成依据":"本次表现"):"本次评价",systemImage:taskCompleted ? "checkmark.circle.fill":"circle").font(.headline)
                 Text(resultLabel).font(.subheadline).foregroundStyle(result?.validation["status"]?.text=="accepted" ? Color.accentColor:Color.secondary)
-                if let turn=current?.turns.last(where:{$0.speaker=="learner"}),!turn.content.isEmpty {LookupText(turn.content).font(.title3)}
+                if result?.validation["status"]?.text=="accepted" {
+                    ForEach((current?.turns ?? []).filter {turn in
+                        turn.speaker=="learner" && evidence.contains {check in
+                            guard case .array(let refs)=check["evidence_refs"] else {return false}
+                            return refs.contains(where:{$0.text==turn.turnId})
+                        }
+                    }) {turn in LookupText(turn.content).font(.body)}
+                } else {LookupText(result?.failureExplanation ?? "正在整理本次表现").font(.body)}
                 if let check=evidence.first {LookupText(check["criterion"]?.text ?? "").font(.subheadline).foregroundStyle(.secondary)}
             }.frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
+            }
             Text("下一步").font(.subheadline).foregroundStyle(.secondary)
             LookupText(improvement).font(.subheadline).foregroundStyle(.secondary)
             Button("针对性补练") {run {try await model.transition("retry_guided")}}.frame(minHeight:44)
@@ -292,7 +317,7 @@ struct LessonScreen:View {
     }
     private var footer:some View {
         VStack(spacing:8) {
-            if let error=model.error {Text(error).font(.footnote).foregroundStyle(.red).lineLimit(2).accessibilityIdentifier("errorMessage");if error.contains("麦克风") {Button("打开系统设置") {if let url=URL(string:UIApplication.openSettingsURLString) {UIApplication.shared.open(url)}}}}
+            if let error=model.error,model.outgoingMessage==nil {Text(error).font(.footnote).foregroundStyle(.red).lineLimit(2).accessibilityIdentifier("errorMessage");if error.contains("麦克风") {Button("打开系统设置") {if let url=URL(string:UIApplication.openSettingsURLString) {UIApplication.shared.open(url)}}}}
             if let message=audio.interruptionMessage {Text(message).font(.footnote).foregroundStyle(.secondary)}
             if isFeedback {
                 mainButton(isReview ? "完成复习":"完成学习",id:"finishLearning") {audio.discard();model.leave()}
@@ -305,7 +330,7 @@ struct LessonScreen:View {
                 ProgressView("正在整理本次表现")
                 Button("继续等待结果") {run {if actions.contains("next") {try await model.next()} else {try await model.finish()}}}.frame(minHeight:44)
             } else {
-                if audio.recording || model.busy {
+                if audio.recording || (model.busy && model.outgoingMessage==nil) {
                     HStack {if model.busy {ProgressView()};Text(status).font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("audioStatus")}
                 }
                 if phase=="learning",!retryingShadow,let feedback=model.shadowFeedback ?? current?.view.shadowFeedback,feedback.materialIndexMatches(model.selectedMaterial) {Text(feedback.message).font(.caption).foregroundStyle(.secondary).lineLimit(2)}
@@ -326,13 +351,13 @@ struct LessonScreen:View {
                         if actions.contains("text_input") {Button {showTextInput=true} label:{Image(systemName:"keyboard").frame(width:44,height:44)}.accessibilityLabel("也可以输入英文练习")}
                         if current?.turns.contains(where:{$0.speaker=="learner"})==true {
                             if isGuided {Button((current?.view.guidedRound ?? 1)<3 ? "继续下一轮":"结束引导练习") {run {try await model.next()}}.font(.subheadline).frame(minHeight:44).accessibilityIdentifier("nextGuidedRound")}
-                            else if isIndependent {Button("结束任务") {run {try await model.finish()}}.font(.subheadline).frame(minHeight:44).accessibilityIdentifier("finishTask")}
+                            else if isIndependent {Button("结束任务并查看结果") {run {try await model.finish()}}.font(.subheadline).frame(minHeight:44).accessibilityIdentifier("finishTask")}
                         }
                         Spacer(minLength:0)
                     }.disabled(model.busy || audio.recording)
                 }
                 if model.hasPendingShadow {Button("重试提交跟读") {run {try await model.retryShadow();retryingShadow=false}}.frame(minHeight:44);Button("放弃本次录音") {model.discardShadowRequest();audio.lastRecording=nil}.frame(minHeight:44)}
-                if model.hasPendingInput {Button("重试发送") {run {try await model.retryInput()}}.frame(minHeight:44)}
+                if model.hasPendingInput && model.outgoingMessage==nil {Button("重试发送") {run {try await model.retryInput()}}.frame(minHeight:44)}
                 if let recording=audio.lastRecording,!audio.recording,audio.interruptionMessage != nil {Button("发送已保存的录音") {run {if phase=="learning" {try await model.shadow(recording)} else {try await model.send(kind:"speech",audio:recording)}}}.frame(minHeight:44)}
             }
         }.padding(.horizontal,20).padding(.top,16).padding(.bottom,12).frame(maxWidth:.infinity).background(Color(uiColor:.systemBackground)).overlay(alignment:.top) {Divider()}
@@ -353,19 +378,34 @@ struct LessonScreen:View {
     }
     private var hintPanel:some View {
         NavigationStack {
-            ScrollView {
-                VStack(alignment:.leading,spacing:20) {
-                    Text("先自己尝试，需要时再逐步展开帮助。").foregroundStyle(.secondary)
-                    ForEach([("intent","表达意图"),("pattern","句型提示"),("example","完整示范"),("learned","所学表达")],id:\.0) {level,title in
-                        Button(title) {run {try await model.send(kind:"request_hint",hintLevel:level)}}.buttonStyle(.bordered).frame(minHeight:44).disabled(model.busy).accessibilityIdentifier("hint-"+level)
+            List {
+                Section {
+                    ForEach([("intent","表达意图","想清楚这次要表达什么","lightbulb"),("pattern","句型提示","用空白替换自己的内容","textformat"),("example","完整示范","需要时查看一句示例","quote.bubble"),("learned","所学表达","回顾本课学过的说法","book")],id:\.0) {level,title,detail,icon in
+                        VStack(alignment:.leading,spacing:12) {
+                            Button {
+                                if selectedHint==level {selectedHint=nil}
+                                else {
+                                    selectedHint=level
+                                    if hintCache[level]==nil {run {try await model.send(kind:"request_hint",hintLevel:level);hintCache[level]=model.hintText}}
+                                }
+                            } label: {
+                                HStack(spacing:12) {
+                                    Image(systemName:icon).frame(width:24).foregroundStyle(Color.accentColor)
+                                    VStack(alignment:.leading,spacing:3) {Text(title).font(.body).foregroundStyle(.primary);Text(detail).font(.caption).foregroundStyle(.secondary)}
+                                    Spacer();Image(systemName:selectedHint==level ? "chevron.up":"chevron.down").font(.caption).foregroundStyle(.secondary)
+                                }.frame(minHeight:44).contentShape(Rectangle())
+                            }.buttonStyle(.plain).disabled(model.busy).accessibilityIdentifier("hint-"+level)
+                            if selectedHint==level {
+                                if let text=hintCache[level] {LookupText(text).font(.body).textSelection(.enabled).accessibilityIdentifier("hintText")}
+                                else if model.busy {ProgressView("正在准备提示")}
+                                else if let error=model.error {Text(error).foregroundStyle(.red)}
+                            }
+                        }.padding(.vertical,4)
                     }
-                    if let text=model.hintText {LookupText(text).font(.title3).accessibilityIdentifier("hintText")}
-                    if let error=model.error {Text(error).foregroundStyle(.red)}
-                    if model.busy {ProgressView("正在准备提示")}
-                }.frame(maxWidth:.infinity,alignment:.leading).padding(20)
+                } footer: {Text("按需展开，已使用的帮助会记录在本次练习中。")}
             }.navigationTitle("提示").navigationBarTitleDisplayMode(.inline)
                 .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {showHints=false}}}
-        }.presentationDetents([.medium,.large]).presentationDragIndicator(.visible)
+        }.presentationDetents([.height(440),.large]).presentationDragIndicator(.visible)
     }
     private func mainButton(_ title:String,id:String,action:@escaping()->Void)->some View {
         Button(action:action) {Text(title).font(.headline).foregroundStyle(Color.white).frame(maxWidth:.infinity,minHeight:50)}

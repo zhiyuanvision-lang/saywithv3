@@ -15,7 +15,7 @@ class Assessor:
     def __init__(self,store,curriculum,provider,settings):
         self.store=store;self.curriculum=curriculum;self.provider=provider;self.settings=settings
 
-    async def assess(self,attempt,task):
+    async def assess(self,attempt,task,candidate=None):
         owner=attempt['user_id'];id=attempt['attempt_id']
         try:return self.store.get('AssessmentResult',id,owner)['payload']
         except Missing:pass
@@ -43,7 +43,7 @@ class Assessor:
             except ValueError:problems.append('录音格式损坏')
             except Missing:problems.append('录音证据不存在或不属于用户')
         if len(learner)>30:problems.append('超出评价输入限制')
-        candidate=await self.provider.evaluate(task,turns,target) if not problems else {
+        candidate=(candidate if candidate is not None else await self.provider.evaluate(task,turns,target)) if not problems else {
             'result':'unjudgeable','confidence':'low','checks':[],'diagnosis':[]}
         try:candidate=AssessmentCandidate.model_validate(candidate).model_dump()
         except ValidationError:

@@ -1,10 +1,10 @@
 """Server-controlled phase, role state, private facts and actual support tracking."""
 import copy
 import time
-from .contracts import LearnerLessonView, DialogueResponse, LearnerInput, TaskAttempt
+from .contracts import LearnerLessonView, DialogueResponse, LearnerInput, TaskAttempt, InputProgress, AssessmentCandidate
 from .store import uid, Conflict, Missing, digest
 from .assessment import timestamp
-from .providers import ReviewRequired
+from .providers import ReviewRequired, ProviderFailure
 from .teaching_support import TeachingSupport, ROUND_NAMES
 
 PHASES=['learning','supported_practice','independent_application','finished']
@@ -126,6 +126,11 @@ class Sessions:
         self.store.put('Session',id,owner,s,expected=row['version'])
         return self.view(id,owner)
 
+    def input_progress(self,id,owner,key):
+        self.store.get('Session',id,owner)
+        progress=self.store.get('InputProgress',id+'/'+key,owner)['payload']
+        return InputProgress.model_validate({k:v for k,v in progress.items() if k in InputProgress.model_fields}).model_dump()
+
     async def input(self,id,owner,data):
         entry=LearnerInput.model_validate(data).model_dump()
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
@@ -144,15 +149,24 @@ class Sessions:
         else:
             if s['phase']=='learning':raise Conflict('请通过跟读入口提交录音')
             if kind=='text' and 'text_input' not in self.support.actions(s):raise Conflict('本次任务不允许文字回应')
-            turn={'turn_id':uid(),'speaker':'learner','input_id':key,'recorded_at':entry['recorded_at']}
+            receipt_id=id+'/'+key
+            try:
+                progress_row=self.store.get('InputProgress',receipt_id,owner);receipt=progress_row['payload'];progress_version=progress_row['version']
+                if receipt['request_hash']!=hash:raise Conflict('Input ID reused with different data')
+            except Missing:
+                receipt={'schema_version':'1.0','session_id':id,'input_id':key,'status':'recognizing','turn_id':uid(),'request_hash':hash,'audio_ref':entry.get('audio_ref')}
+                progress_version=self.store.put('InputProgress',receipt_id,owner,receipt)
+            turn={'turn_id':receipt['turn_id'],'speaker':'learner','input_id':key,'recorded_at':entry['recorded_at']}
             if kind=='speech':
                 asset=self.store.get('AudioAsset',entry['audio_ref'].rsplit('/',1)[-1],owner)['payload']
                 if asset['purpose']!='learner_recording':raise ValueError('Audio is not a learner recording')
-                transcript=await self.provider.transcribe((self.settings.media_dir/asset['filename']).read_bytes(),asset['filename'])
+                transcript=receipt.get('asr') or await self.provider.transcribe((self.settings.media_dir/asset['filename']).read_bytes(),asset['filename'])
                 turn.update(audio_ref=entry['audio_ref'],transcript=transcript['text'],asr=transcript)
             else:
                 if not entry.get('text','').strip():raise ValueError('Empty learner text')
                 turn.update(transcript=entry['text'],modality='text')
+            receipt.update(status='responding',transcript=turn.get('transcript'),asr=turn.get('asr'))
+            progress_version=self.store.put('InputProgress',receipt_id,owner,receipt,expected=progress_version)
             s['turns'].append(turn)
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             target=self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])
@@ -176,9 +190,22 @@ class Sessions:
         if 'show_text' not in self.support.actions(s):public_response['text']=''
         s['request_responses'][key]={'hash':hash,'response':public_response}
         self.store.put('Session',id,owner,s,expected=row['version'])
+        receipt.update(status='completed')
+        progress_version=self.store.put('InputProgress',receipt_id,owner,receipt,expected=progress_version)
+        # Partner closure is a proposal, never proof of mastery. Check actual learner evidence.
+        if reply.get('conversation_complete') is True and s['phase']=='independent_application' and not s['fixture']:
+            try:
+                candidate=AssessmentCandidate.model_validate(await self.provider.evaluate(task,s['turns'],target)).model_dump()
+                checks=candidate['checks'];needed=task['assessment_contract']['critical_checks'];refs={t['turn_id'] for t in s['turns']};learner_refs={t['turn_id'] for t in s['turns'] if t['speaker']=='learner'}
+                complete=candidate['result']=='completed' and candidate['confidence']=='high' and len(checks)==len(needed) and {c['criterion'] for c in checks}==set(needed)
+                complete=complete and all(c['result']=='met' and set(c['evidence_refs'])<=refs and bool(set(c['evidence_refs'])&learner_refs) for c in checks)
+                if complete:await self.finish(id,owner,candidate)
+            except (ValueError,ReviewRequired,ProviderFailure):
+                # Conversation remains available for manual completion and retry.
+                pass
         return public_response
 
-    async def finish_attempt(self,id,owner):
+    async def finish_attempt(self,id,owner,candidate=None):
         row=self.store.get('Session',id,owner);s=row['payload']
         task=s['task'];attempt_id=id+'/'+task['task_id']
         try:attempt=self.store.get('TaskAttempt',attempt_id,owner)['payload']
@@ -195,14 +222,14 @@ class Sessions:
                 # Freeze the phase while evaluation is pending; inputs cannot modify recorded evidence.
                 updated=copy.deepcopy(s);updated['phase']='evaluating';updated['evaluating_phase']=s['phase']
                 self.store.put('Session',id,owner,updated,expected=row['version'],conn=c)
-        return await self.assessor.assess(attempt,task)
+        return await self.assessor.assess(attempt,task,candidate)
 
-    async def finish(self,id,owner):
+    async def finish(self,id,owner,candidate=None):
         row=self.store.get('Session',id,owner)
         if row['payload']['phase']=='finished':
             return self.store.get('AssessmentResult',id+'/'+row['payload']['task']['task_id'],owner)['payload']
         if row['payload']['phase'] not in ('independent_application','evaluating'):raise Conflict('请完成学习和练习后再结束独立任务')
-        result=await self.finish_attempt(id,owner)
+        result=await self.finish_attempt(id,owner,candidate)
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload']);s['phase']='finished'
         self.store.put('Session',id,owner,s,expected=row['version'])
         return result
