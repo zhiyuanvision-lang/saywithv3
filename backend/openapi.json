@@ -1982,6 +1982,69 @@
         }
       }
     },
+    "/v1/sessions/{id}/learning-practice": {
+      "post": {
+        "summary": "Learning Practice",
+        "operationId": "learning_practice_v1_sessions__id__learning_practice_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LearningPracticeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/sessions/{id}/shadow": {
       "post": {
         "summary": "Shadow",
@@ -2219,6 +2282,70 @@
             "content": {
               "application/json": {
                 "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{id}/turns/{turn_id}/feedback": {
+      "post": {
+        "summary": "Reply Advice",
+        "operationId": "reply_advice_v1_sessions__id__turns__turn_id__feedback_post",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "turn_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Turn Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReplyFeedback"
+                }
               }
             }
           },
@@ -3032,6 +3159,116 @@
         ],
         "title": "LearnerInput"
       },
+      "LearningPracticeRequest": {
+        "properties": {
+          "material_index": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Material Index"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "prepare",
+              "start",
+              "recall",
+              "show_pattern",
+              "show_example",
+              "attempt",
+              "shadow"
+            ],
+            "title": "Action"
+          },
+          "expected_session_version": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expected Session Version"
+          },
+          "input_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Input Id"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Audio Ref"
+          },
+          "stage": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "recall"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stage"
+          },
+          "recognition_retry": {
+            "type": "boolean",
+            "title": "Recognition Retry",
+            "default": false
+          },
+          "confirmed_transcript": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 1000,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confirmed Transcript"
+          },
+          "original_transcript": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 1000,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Original Transcript"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "material_index",
+          "action"
+        ],
+        "title": "LearningPracticeRequest"
+      },
       "LexicalPracticeInput": {
         "properties": {
           "schema_version": {
@@ -3122,6 +3359,29 @@
         ],
         "title": "NextRequest"
       },
+      "Phrase": {
+        "properties": {
+          "expression": {
+            "type": "string",
+            "maxLength": 120,
+            "minLength": 1,
+            "title": "Expression"
+          },
+          "meaning_zh": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Meaning Zh"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "expression",
+          "meaning_zh"
+        ],
+        "title": "Phrase"
+      },
       "Preferences": {
         "properties": {
           "context": {
@@ -3177,6 +3437,69 @@
           "refresh_token"
         ],
         "title": "RefreshLogin"
+      },
+      "ReplyFeedback": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "clear",
+              "correction",
+              "alternative",
+              "uncertain"
+            ],
+            "title": "Status"
+          },
+          "explanation_zh": {
+            "type": "string",
+            "maxLength": 160,
+            "minLength": 1,
+            "title": "Explanation Zh"
+          },
+          "expression": {
+            "type": "string",
+            "maxLength": 300,
+            "title": "Expression",
+            "default": ""
+          },
+          "meaning_zh": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "Meaning Zh",
+            "default": ""
+          },
+          "phrases": {
+            "items": {
+              "$ref": "#/components/schemas/Phrase"
+            },
+            "type": "array",
+            "maxItems": 2,
+            "title": "Phrases"
+          },
+          "turn_id": {
+            "type": "string",
+            "title": "Turn Id"
+          },
+          "audio_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Audio Ref"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "explanation_zh",
+          "turn_id"
+        ],
+        "title": "ReplyFeedback"
       },
       "ReviewRequest": {
         "properties": {

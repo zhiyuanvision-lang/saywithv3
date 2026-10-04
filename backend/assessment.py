@@ -99,7 +99,7 @@ class Assessor:
         state=states.setdefault(id,{'target_id':id,'independent':'insufficient_evidence','retention':'not_checked',
             'transfer':'not_checked','support_dependency':[],'evidence_ids':[],'observations':[]})
         r=result['target_results'][0];now=time.time()
-        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示','查词释义') for x in supports)
+        supports=attempt['support_used'];independent=attempt['phase']=='independent_application' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示','查词释义','回答示范') for x in supports)
         evidence={'evidence_id':result['evidence_ids'][0],'attempt_id':attempt['attempt_id'],'session_id':attempt['session_id'],
             'time':now,'completed':r['result']=='completed','independent':independent,
             'review_metadata':attempt.get('review_metadata',{}),'scenario_signature':task['scenario_signature'],'confidence':r['confidence'],'support_used':supports}
@@ -111,13 +111,13 @@ class Assessor:
             elif independent:state['independent']='demonstrated' if len({e['session_id'] for e in successes})>=2 else 'provisional'
             if independent and attempt.get('review_metadata',{}).get('purpose')=='transfer' and attempt.get('review_metadata',{}).get('transfer_validated') and len({e['scenario_signature'] for e in successes})>=2:state['transfer']='demonstrated'
             previous=[e for e in successes if e['attempt_id']!=attempt['attempt_id']]
-            if independent and previous and now-min(e['time'] for e in previous)>=self.settings.retention_days*86400:state['retention']='demonstrated'
+            if independent and attempt.get('review_metadata',{}).get('retention_eligible',True) and previous and now-max(e['time'] for e in previous)>=self.settings.retention_days*86400:state['retention']='demonstrated'
         elif independent:
             state['independent']='needs_practice'
             if successes:state['retention']='needs_recheck'
         state['confidence']='provisional_rule_requires_pilot'
         state['last_result']=r['result'];state['updated_at']=now
-        state['due_at']=now+(self.settings.retention_days*86400 if r['result']=='completed' else 86400)
+        state['due_at']=now+(self.settings.retention_days*86400 if independent and r['result']=='completed' else 86400)
         apply_checks(profile,result.get('lexical_results',[]),attempt.get('lexical_resources',[]),attempt['attempt_id'],attempt['session_id'],independent,supports,task['scenario_signature'],result['assessment_id'],retention_days=self.settings.retention_days)
         profile['target_states']=list(states.values());profile['profile_version']+=1
         self.store.put('LearnerProfile',owner,owner,profile,expected=row['version'],conn=conn)

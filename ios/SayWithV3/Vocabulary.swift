@@ -120,13 +120,21 @@ struct DictionaryGlance:View {
     @State private var saving=false
     @State private var audio=DictionaryAudio()
     var body:some View {
-        VStack(alignment:.leading,spacing:10) {
-                HStack {Text(card?.word ?? word).font(.title3.bold());Spacer();Button(action:close) {Image(systemName:"xmark.circle.fill").foregroundStyle(.tertiary).frame(width:44,height:44)}.buttonStyle(.plain).accessibilityLabel("关闭查词").accessibilityIdentifier("closeDictionary")}
+        VStack(alignment:.leading,spacing:12) {
+            VStack(alignment:.leading,spacing:2) {
+                Text(card?.word ?? word).font(.title3.bold()).padding(.top,4)
+                if let card {DictionaryPhonetics(card:card,audio:audio).accessibilityElement(children:.contain).accessibilityIdentifier("dictionaryPhonetics")}
+            }.frame(maxWidth:.infinity,alignment:.leading).padding(.trailing,44)
+                .overlay(alignment:.topTrailing) {
+                    Button(action:close) {Image(systemName:"xmark.circle.fill").foregroundStyle(.tertiary).frame(width:44,height:44)}
+                        .buttonStyle(.plain).accessibilityLabel("关闭查词").accessibilityIdentifier("closeDictionary")
+                }.fixedSize(horizontal:false,vertical:true)
                 if let card {
-                    DictionaryPhonetics(card:card,audio:audio)
                     if let tapped=card.tappedWord,tapped.lowercased() != card.word.lowercased() {Text("\(tapped) 的词头：\(card.word)").font(.caption).foregroundStyle(.secondary)}
                     if card.generated==true {Label("AI 释义，仅供参考",systemImage:"sparkles").font(.caption).foregroundStyle(.secondary)}
-                    ForEach(Array((card.senses ?? []).prefix(8).enumerated()),id:\.offset) {_,sense in LookupText((sense.pos ?? "")+" "+(sense.meaningCn ?? "")).font(.subheadline)}
+                    VStack(alignment:.leading,spacing:6) {
+                        ForEach(Array((card.senses ?? []).prefix(8).enumerated()),id:\.offset) {_,sense in Text((sense.pos ?? "")+" "+(sense.meaningCn ?? "")).font(.subheadline).fixedSize(horizontal:false,vertical:true)}
+                    }
                     if (card.senses ?? []).isEmpty {LookupText(card.meaning ?? "暂无释义").font(.subheadline)}
                     if !card.commonCollocations.isEmpty {Text("常用搭配").font(.caption.weight(.semibold)).foregroundStyle(.secondary);ForEach(card.commonCollocations,id:\.self) {LookupText($0).font(.caption)}}
                     Divider()
@@ -181,10 +189,24 @@ struct GlobalDictionaryHost:UIViewRepresentable {
         return super.hitTest(point,with:event)
     }
 }
+enum DictionaryPlacement {
+    static func origin(anchor:CGRect,bounds:CGRect,safeInsets:UIEdgeInsets)->CGPoint {
+        let gutter:CGFloat=20,width=min(380,bounds.width-2*gutter)
+        let top=safeInsets.top+8,bottom=bounds.height-safeInsets.bottom-8
+        let reservedHeight=min(440,max(0,bottom-top))
+        var y=anchor.maxY+8
+        if y+reservedHeight>bottom {y=anchor.minY-reservedHeight-8}
+        if anchor == .zero {y=bounds.midY-reservedHeight/2}
+        return CGPoint(x:max(gutter,min(bounds.width-width-gutter,anchor.midX-width/2)),y:max(top,min(bottom-reservedHeight,y)))
+    }
+}
+
 @MainActor final class DictionaryController:UIViewController,UIGestureRecognizerDelegate {
     let model:LearningModel;var opened=false
     private var card:UIHostingController<DictionaryGlance>?
     private var anchorRect=CGRect.zero
+    private var placementOrigin:CGPoint?
+    private var placementBounds=CGSize.zero
     private let popup=UIScrollView()
     private let plate=UIView()
     init(model:LearningModel) {self.model=model;super.init(nibName:nil,bundle:nil)}
@@ -192,7 +214,7 @@ struct GlobalDictionaryHost:UIViewRepresentable {
     override func viewDidLoad() {super.viewDidLoad();view.backgroundColor = .clear;let tap=UITapGestureRecognizer(target:self,action:#selector(dismissCard));tap.delegate=self;view.addGestureRecognizer(tap);NotificationCenter.default.addObserver(self,selector:#selector(open(_:)),name:Notification.Name("OpenSayWithDictionary"),object:nil);NotificationCenter.default.addObserver(self,selector:#selector(relayout(_:)),name:Notification.Name("SayWithDictionaryLayout"),object:nil)}
     @objc private func open(_ n:Notification) {
         guard let word=n.userInfo?["word"] as? String else {return}
-        dismissCard();opened=true;anchorRect=n.userInfo?["rect"] as? CGRect ?? .zero
+        dismissCard();opened=true;placementOrigin=nil;anchorRect=n.userInfo?["rect"] as? CGRect ?? .zero
         NotificationCenter.default.post(name:Notification.Name("PauseSayWithLearning"),object:nil)
         let host=UIHostingController(rootView:DictionaryGlance(model:model,word:word,sentence:n.userInfo?["context"] as? String ?? "",close:{[weak self] in self?.dismissCard()}))
         host.sizingOptions = [.preferredContentSize];host.view.backgroundColor = .clear
@@ -209,12 +231,15 @@ struct GlobalDictionaryHost:UIViewRepresentable {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews();guard let card else {return}
         let gutter:CGFloat=20,width=min(380,view.bounds.width-2*gutter)
-        let natural=card.sizeThatFits(in:CGSize(width:width,height:10000));let height=min(440,natural.height)
-        let safeTop=view.safeAreaInsets.top+8,lower=view.bounds.height-view.safeAreaInsets.bottom-height-8
-        var y=anchorRect.maxY+8
-        if y>lower {y=anchorRect.minY-height-8}
-        if anchorRect == .zero {y=view.bounds.midY-height/2}
-        plate.frame=CGRect(x:max(gutter,min(view.bounds.width-width-gutter,anchorRect.midX-width/2)),y:max(safeTop,min(lower,y)),width:width,height:height)
+        let fitted=card.sizeThatFits(in:CGSize(width:width,height:UIView.layoutFittingExpandedSize.height))
+        let natural=CGSize(width:width,height:ceil(fitted.height))
+        // Reserve the loaded card's space before presenting the small loading view.
+        // Async definitions and phonetics can resize content without moving the popup.
+        if placementBounds != view.bounds.size {placementOrigin=nil;placementBounds=view.bounds.size}
+        let origin=placementOrigin ?? DictionaryPlacement.origin(anchor:anchorRect,bounds:view.bounds,safeInsets:view.safeAreaInsets)
+        placementOrigin=origin
+        let height=min(440,natural.height,max(0,view.bounds.height-view.safeAreaInsets.bottom-8-origin.y))
+        plate.frame=CGRect(origin:origin,size:CGSize(width:width,height:height))
         popup.frame=plate.bounds;card.view.frame=CGRect(x:0,y:0,width:width,height:natural.height);popup.contentSize=natural
     }
     @objc private func dismissCard() {

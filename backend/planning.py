@@ -117,6 +117,16 @@ class Planner:
                   'required_gap_days':self.retention_days,
                   'transfer_conditions':[],'transfer_validated':False}
         known=[x['resource_id'] for x in profile['resource_states'] if x.get('understanding')=='demonstrated']
+        from .lesson_policy import lesson_policy
+        introduced={r['resource_id'] for r in profile['resource_states'] if r.get('introduced') or r.get('understanding')=='demonstrated'}
+        reusable=[]
+        for row in self.store.list('LessonPackage',profile['user_id']):
+            old=row['payload']
+            if old.get('provenance',{}).get('fixture') or target['target_id'] not in old.get('target_ids',[]):continue
+            for material in old.get('learning_materials',[]):
+                if material.get('resource_id') in introduced and not any(m['expression']==material['expression'] for m in reusable):
+                    reusable.append({k:material.get(k,'') for k in ('expression','hint_pattern','meaning_zh','resource_id')})
+        speaking_plan=lesson_policy(target['reference_stage'],request.get('minutes',10),purpose,known,reusable[-4:])
         refs=target['reviewed_standard_references']
         words=re.findall(r'\b[a-zA-Z]{4,}\b',' '.join(r.get('outcome_en','') for r in refs))
         stop={'with','that','from','this','simple','their','basic','using','about','someone','people','information'}
@@ -127,13 +137,13 @@ class Planner:
         assignment=TeachingAssignment(assignment_id=uid(),user_id=profile['user_id'],map_version=target['map_version'],
             profile_version=profile['profile_version'],target_ids=[target['target_id']],reason=reason,
             context=request.get('context') or profile['preferences'].get('context','校园与日常生活'),
-            resource_plan={'review':known[:5],'focus':[target['outcome']], 'candidates':candidates,
+            resource_plan={'speaking_plan':speaking_plan,'review':known[:5],'focus':[target['outcome']], 'candidates':candidates,
                            'notebook_words':select_words(profile,target,[r['payload'] for r in self.store.list('NotebookEntry',profile['user_id'])],request.get('context') or profile['preferences'].get('context','')),
                            'notebook_policy':'每课最多2词；先试再按需解释。只检查实际用词证据，接受正确改述，未使用不算词汇失败。',
                            'lexical_policy_version':POLICY_VERSION,
                            'known_resources':known,'candidate_policy':'候选不是强制新词，按实际任务核查必要性'},
             difficulty={'support':'示例→渐退提示→独立应用','reference_stage':target['reference_stage'],
-                        'new_expression_limit':3,'purpose':purpose},purpose=purpose,
+                        'new_expression_limit':speaking_plan['material_count'],'purpose':purpose},purpose=purpose,
             review_metadata=metadata,completion_standard=target['outcome'],minutes=request.get('minutes',10)).model_dump()
         if review:
             previous=[r['payload'] for r in self.store.list('TaskAttempt',profile['user_id']) if target['target_id'] in r['payload'].get('target_ids',[]) and r['payload'].get('phase')=='independent_application']

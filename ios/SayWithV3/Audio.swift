@@ -29,6 +29,7 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
     var interruptionMessage:String?
     var lastRecording:Data?
     var duration:TimeInterval=0
+    var level:Double=0
     private var recorder:AVAudioRecorder?
     private var player:AVAudioPlayer?
     private var file:URL?
@@ -47,26 +48,28 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
         // A permission prompt can outlive the finger press or the screen.
         try Task.checkCancellation()
         guard allowed else {throw APIError.server("请在系统设置中允许麦克风访问。")}
-        stopPlayback();lastRecording=nil;interruptionMessage=nil;duration=0
+        stopPlayback();lastRecording=nil;interruptionMessage=nil;duration=0;level=0
         let session=AVAudioSession.sharedInstance()
-        try session.setCategory(.playAndRecord,mode:.default,options:[.defaultToSpeaker,.allowBluetoothHFP]);try session.setActive(true)
+        try session.setCategory(.playAndRecord,mode:.default,options:[.defaultToSpeaker,.allowBluetoothHFP]);try session.setAllowHapticsAndSystemSoundsDuringRecording(true);try session.setActive(true)
         let url=FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString+".wav")
         let new=try AVAudioRecorder(url:url,settings:[AVFormatIDKey:kAudioFormatLinearPCM,AVSampleRateKey:16000,
             AVNumberOfChannelsKey:1,AVLinearPCMBitDepthKey:16,AVLinearPCMIsFloatKey:false,AVLinearPCMIsBigEndianKey:false])
-        new.delegate=self
+        new.delegate=self;new.isMeteringEnabled=true
         guard new.record(forDuration:90) else {throw APIError.server("无法开始录音。")}
         recorder=new;file=url;recording=true
         timer=Task { [weak self] in
             while !Task.isCancelled {
-                try? await Task.sleep(for:.milliseconds(200))
+                try? await Task.sleep(for:.milliseconds(100))
                 guard let self,self.recording else {return}
                 self.duration=self.recorder?.currentTime ?? 0
+                self.recorder?.updateMeters()
+                self.level=Double(max(0,min(1,((self.recorder?.averagePower(forChannel:0) ?? -50)+50)/50)))
             }
         }
     }
     func stop() throws -> Data {
         duration=recorder?.currentTime ?? duration
-        recorder?.stop();recording=false;timer?.cancel()
+        recorder?.stop();recording=false;level=0;timer?.cancel()
         guard let file else {throw APIError.server("没有录音文件。")}
         let data=try Data(contentsOf:file);lastRecording=data
         try? FileManager.default.removeItem(at:file);self.file=nil;recorder=nil
@@ -77,7 +80,7 @@ final class AudioController: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDel
     func pausePlayback() {player?.pause();playing=false;paused=true}
     func resumePlayback() throws {guard player?.play()==true else {throw APIError.server("声音暂时无法播放，请重试。")};playing=true;paused=false}
     func discard() {
-        recorder?.stop();recording=false;recorder=nil;timer?.cancel();stopPlayback()
+        recorder?.stop();recording=false;level=0;recorder=nil;timer?.cancel();stopPlayback()
         if let file {try? FileManager.default.removeItem(at:file)}
         file=nil;lastRecording=nil
         try? AVAudioSession.sharedInstance().setActive(false,options:.notifyOthersOnDeactivation)

@@ -19,7 +19,7 @@ class TeachingSupport:
         phase=s['phase'];task=s['task']
         if phase=='learning':return ['shadow','learn','next','request_translation','exit']
         if phase=='guided_feedback':return ['next','retry_guided','exit']
-        if phase=='finished':return ['retry_guided','exit']
+        if phase=='finished':return ['retry_guided','retry_independent','exit']
         if phase=='evaluating':return ['next' if s.get('evaluating_phase')=='supported_practice' else 'finish']
         if phase=='abandoned':return ['exit']
         actions=['speak','finish','exit']
@@ -32,21 +32,25 @@ class TeachingSupport:
 
     def demo(self,s,lesson):
         if s['phase']!='learning':return []
-        opening=s['task']['opening']
-        asset=next((a['payload'] for a in self.store.list('AudioAsset',s['owner'])
-                    if a['payload'].get('text')==opening),{})
-        return [{'speaker':'partner','text':opening,'audio_ref':asset.get('audio_ref'),
-                 'meaning_zh':lesson['learning_materials'][0].get('partner_meaning_zh','')},
-                *[{'speaker':'learner','text':m['expression'],'meaning_zh':m.get('meaning_zh',''),
-                   'audio_ref':m.get('audio_ref')} for m in lesson['learning_materials']]]
+        materials=lesson['learning_materials']
+        assets={a['payload'].get('text'):a['payload'] for a in self.store.list('AudioAsset',s['owner'])}
+        lines=[]
+        for index,m in enumerate(materials):
+            cue=m.get('partner_line') or (s['task']['opening'] if index==0 else '')
+            if cue:
+                lines.append({'speaker':'partner','text':cue,'audio_ref':assets.get(cue,{}).get('audio_ref'),
+                              'meaning_zh':m.get('partner_meaning_zh','')})
+            lines.append({'speaker':'learner','text':m['expression'],'meaning_zh':m.get('meaning_zh',''),
+                          'audio_ref':m.get('audio_ref')})
+        return lines
 
     async def prepare(self,s,owner,renew=False):
         if len(s.get('guided_tasks',[]))==3 and not renew:return
         lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
         target=self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])
-        feedback=None
+        feedback={'practice_focus':s.get('practice_focus','')} if s.get('practice_focus') else None
         for attempt in range(3):
-            result=await self.provider.guided(lesson,target,s.get('guided_tasks',[]) if renew else [],feedback)
+            result=await self.provider.guided(lesson,target,s.get('guided_tasks',[])+[s['task']] if renew else [],feedback)
             try:
                 parsed=self.validate_guided(result,s,lesson,renew)
                 review=await self.provider.review_guided(parsed,target,lesson['learning_materials'])
@@ -69,6 +73,12 @@ class TeachingSupport:
         parsed=[]
         for index,task in enumerate(tasks):
             task.update(task_id=uid(),task_version=1)
+            if renew and index==2:
+                template=lesson['independent_task']
+                task['assessment_contract']['critical_checks']=copy.deepcopy(template['assessment_contract']['critical_checks'])
+                task['assessment_contract']['critical_meanings']=copy.deepcopy(template['assessment_contract'].get('critical_meanings',[]))
+                task['allowed_support']=copy.deepcopy(template['allowed_support'])
+                task['interaction_policy']=copy.deepcopy(template.get('interaction_policy',{}))
             t=Task.model_validate(task).model_dump()
             if not t['learner_prompt'] or not t['opening'] or not t['learner_facts'] or not t['partner_private_facts']:
                 raise ReviewRequired('引导任务缺少具体条件')
@@ -77,7 +87,7 @@ class TeachingSupport:
             if own or partner:
                 if not own&partner or set(t['assessment_contract'].get('acceptable_times',[]))!=own&partner:
                     raise ReviewRequired(f'第{index+1}轮时间条件矛盾：双方交集应为{sorted(own&partner)}，acceptable_times实际为{t["assessment_contract"].get("acceptable_times",[])}。把对方会拒绝的时间移出partner_private_facts.available_times，放入cannot_make_times；同步修正opening和role_rules。')
-            previous=(s.get('guided_tasks') or [lesson['practice_task']])
+            previous=(s.get('guided_tasks') or [lesson['practice_task']])+[s['task']]
             if renew and any(t['learner_facts']==old['learner_facts'] and t['partner_private_facts']==old['partner_private_facts'] for old in previous):
                 raise ReviewRequired('再练任务未更换内容')
             if index and t['learner_facts']==parsed[-1]['learner_facts'] and t['partner_private_facts']==parsed[-1]['partner_private_facts']:
@@ -179,13 +189,32 @@ class TeachingSupport:
     async def transition(self,id,owner,action,expected):
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
         if row['version']!=expected:raise Conflict('Session changed')
-        if action not in ('exit','return_guided','retry_guided'):raise ValueError('未知阶段操作')
+        if action not in ('exit','return_guided','retry_guided','retry_independent'):raise ValueError('未知阶段操作')
         if s['phase']=='evaluating':raise Conflict('评价正在保存，请完成后再切换')
         if action!='exit':
             if action=='return_guided' and s['phase']!='independent_application':raise Conflict('当前不是独立应用')
             if action=='retry_guided' and s['phase'] not in ('guided_feedback','finished'):raise Conflict('当前不能重新练习')
-            updated=copy.deepcopy(s);await self.prepare(updated,owner,renew=True)
-            updated.update(phase='supported_practice',task=copy.deepcopy(updated['guided_tasks'][0]),turns=[],support_used=[],help_events=[],started_at=timestamp(),request_responses={})
+            if action=='retry_independent' and s['phase']!='finished':raise Conflict('请先结束本次独立任务')
+            updated=copy.deepcopy(s)
+            try:
+                result=self.store.get('AssessmentResult',id+'/'+s['task']['task_id'],owner)['payload']
+                checks=result['target_results'][0]['checks']
+                updated['practice_focus']=next((x['criterion'] for x in checks if x['result']=='not_met'),'')
+            except Missing:updated['practice_focus']=''
+            await self.prepare(updated,owner,renew=True)
+            lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
+            fresh=copy.deepcopy(updated['guided_tasks'][2])
+            original=lesson['independent_task']
+            # Same target contract, new concrete conditions, no worked-answer assistance.
+            fresh['assessment_contract']['critical_checks']=original['assessment_contract']['critical_checks']
+            fresh['assessment_contract']['critical_meanings']=original['assessment_contract'].get('critical_meanings',[])
+            fresh['allowed_support']=copy.deepcopy(original['allowed_support'])
+            fresh['interaction_policy']=copy.deepcopy(original.get('interaction_policy',{}))
+            updated['next_independent_task']=fresh
+            updated.setdefault('review_metadata',{})['transfer_validated']=False
+            updated['review_metadata']['retention_eligible']=False
+            direct=action=='retry_independent'
+            updated.update(phase='independent_application' if direct else 'supported_practice',guided_start_index=1,guided_end_index=1,guided_index=1,remediation=True,task=copy.deepcopy(fresh if direct else updated['guided_tasks'][1]),turns=[],support_used=[],help_events=[],started_at=timestamp(),request_responses={})
             asset=await self.generator.audio(updated['task']['opening'],owner,'partner_opening')
             updated['turns']=[{'turn_id':uid(),'speaker':'partner','text':updated['task']['opening'],'audio_ref':asset['audio_ref']}]
         else:updated={**s,'phase':'abandoned' if s['phase']!='finished' else 'finished'}

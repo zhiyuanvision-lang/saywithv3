@@ -98,7 +98,11 @@ def job_view(row):
     p=row['payload']
     return {'schema_version':'1.0','job_id':row['id'],'state':row['state'],'row_version':row['version'],
         'error':p.get('error'),'result_lesson_id':p.get('lesson',{}).get('lesson_id') if row['state'] in ('approved','preview_ready') else None,
-        'reason':p.get('assignment',{}).get('reason'),'attempts':row['attempts']}
+        'reason':p.get('assignment',{}).get('reason'),'attempts':row['attempts'],
+        'created_at':p.get('created_at'),'text_revisions':p.get('text_revisions',0),
+        'progress':{'audio_total':len(p.get('lesson',{}).get('learning_materials',[]))+2 if p.get('lesson') else 0,
+                    'audio_ready':len(p.get('audio_assets',[])),
+                    'audio_checked':sum(a.get('quality')=='passed' for a in p.get('audio_assets',[]))}}
 
 def create_app(settings=None,provider=None):
     settings=settings or Settings()
@@ -322,6 +326,10 @@ def create_app(settings=None,provider=None):
     async def vocabulary_attempt(id:str,data:LexicalPracticeInput,user=Depends(owner)):
         return await svc.sessions.lexical.input(id,user,data.model_dump())
 
+    from .learning_practice import LearningPracticeRequest
+    @app.post('/v1/sessions/{id}/learning-practice')
+    async def learning_practice(id:str,data:LearningPracticeRequest,user=Depends(owner)):
+        return await svc.sessions.learning.act(id,user,data.model_dump())
     @app.post('/v1/sessions/{id}/shadow')
     async def shadow(id:str,data:ShadowRequest,user=Depends(owner)):
         return await svc.sessions.support.shadow(id,user,data.model_dump())
@@ -333,6 +341,11 @@ def create_app(settings=None,provider=None):
 
     @app.post('/v1/sessions/{id}/inputs')
     async def input(id:str,data:LearnerInput,user=Depends(owner)):return await svc.sessions.input(id,user,data.model_dump())
+    from .reply_feedback import ReplyFeedback
+    @app.post('/v1/sessions/{id}/turns/{turn_id}/feedback',response_model=ReplyFeedback)
+    async def reply_advice(id:str,turn_id:str,user=Depends(owner)):
+        from .reply_feedback import reply_feedback
+        return await reply_feedback(svc.sessions,id,user,turn_id)
     @app.post('/v1/sessions/{id}/finish')
     async def finish(id:str,user=Depends(owner)):return await svc.sessions.finish(id,user)
 

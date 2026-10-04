@@ -48,6 +48,9 @@ struct Registration: Decodable, Sendable { let userId: String; let accessToken: 
 struct Health: Decodable, Sendable { let mode: String; let mapVersion: String }
 struct Job: Decodable, Sendable {
     let jobId: String; let state: String; let rowVersion: Int
+    var createdAt:Double?=nil
+    var progress:[String:Int]?=nil
+    var textRevisions:Int?=nil
     let resultLessonId: String?; let reason: String?; let error: [String: JSONValue]?
     var terminal: Bool { ["approved", "preview_ready", "needs_review", "failed", "cancelled"].contains(state) }
     var label: String {
@@ -67,6 +70,8 @@ struct LessonView: Decodable, Sendable {
     let lexicalPractices:[LexicalPracticeView]?
     let completedMaterialIndices: [Int]?
     let title:String?;let partnerName:String?;let demonstration:[DemoLine]?
+    let feedbackTurnId:String?;let practiceFocus:String?
+    let guidedRoundTotal:Int?;let learningPractice:LearningPracticeView?
     let guidedRound:Int?;let guidedRoundTitle:String?;let supportUsed:[String]?
     let shadowFeedback:ShadowFeedback?;let assessment:Assessment?
 }
@@ -76,7 +81,7 @@ struct Turn: Decodable, Identifiable, Sendable {
 }
 struct SessionState: Decodable, Sendable { let view: LessonView; let sessionVersion: Int; let turns: [Turn] }
 struct HintContent:Decodable,Sendable {let directionZh:String?;let expression:String;let meaningZh:String?;let explanationZh:String?}
-struct Dialogue: Decodable, Sendable { let text:String;let audioRef:String?;let kind:String?;let supportProvided:[String]?;let hintContent:HintContent? }
+struct Dialogue: Decodable, Sendable { let text:String;let audioRef:String?;let kind:String?;let supportProvided:[String]?;let hintContent:HintContent?;let continuation:String? }
 struct DemoLine:Decodable,Sendable {let speaker:String;let text:String;let meaningZh:String?;let audioRef:String?}
 struct ShadowFeedback:Decodable,Sendable {let transcript:String;let canContinue:Bool;let message:String;let audioRef:String;let materialIndex:Int
     func materialIndexMatches(_ index:Int)->Bool {materialIndex==index}}
@@ -119,8 +124,44 @@ struct OutgoingMessage:Identifiable,Sendable {
         switch stage {
         case "uploading":return "正在发送录音"
         case "recognizing":return "正在识别语音"
+        case "checking":return "文字已识别，正在确认表达"
         case "failed":return "发送未完成，可重试"
         default:return "正在等待对方回应"
         }
+    }
+}
+
+struct ReplyAdvice: Decodable, Sendable {
+    struct Phrase: Decodable, Sendable { let expression:String; let meaningZh:String }
+    let turnId:String; let status:String; let explanationZh:String
+    let expression:String; let meaningZh:String; let phrases:[Phrase]; let audioRef:String?
+    var title:String { ["clear":"表达清楚","correction":"建议修正","alternative":"更自然的说法","uncertain":"需要确认录音"][status] ?? "表达建议" }
+}
+
+struct LearningWorkedExample:Decodable,Sendable {let expression:String;let meaningZh:String;let audioRef:String?}
+struct LearningPracticeView:Decodable,Sendable {
+    let example:LearningWorkedExample?
+    let previousFeedback:Feedback?
+    struct Feedback:Decodable,Sendable {
+        let met:Bool;let confidence:String;let explanationZh:String
+        let betterExpression:String;let meaningZh:String;let transcript:String;let audioRef:String;let fixture:Bool
+        let transcriptSource:String?
+    }
+    let materialIndex:Int;let stage:String;let usageZh:String;let pattern:String;let promptZh:String;let feedback:Feedback?
+}
+
+// Split the public cue only; English answer frames remain in the opt-in help UI.
+struct SpeakingCue {
+    let context:String
+    let intention:String
+    init(_ text:String) {
+        let parts=text.components(separatedBy:"\n轮到你：")
+        if parts.count==2,parts[0].hasPrefix("情境：") {
+            context=String(parts[0].dropFirst(3)).trimmingCharacters(in:.whitespacesAndNewlines)
+            intention=parts[1].trimmingCharacters(in:.whitespacesAndNewlines)
+        } else {context="";intention=text}
+    }
+    static func learnerTitle(_ title:String)->String {
+        title.replacingOccurrences(of:"（诊断课）",with:"").replacingOccurrences(of:"(诊断课)",with:"").trimmingCharacters(in:.whitespacesAndNewlines)
     }
 }

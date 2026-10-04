@@ -218,6 +218,10 @@ class LearnerLessonView(Contract):
     title: str = ''
     partner_name: str = '对方'
     demonstration: list[dict[str,Any]] = Field(default_factory=list)
+    feedback_turn_id: str | None = None
+    practice_focus: str = ''
+    guided_round_total: int = 3
+    learning_practice: dict[str,Any] | None = None
     guided_round: int | None = None
     guided_round_title: str = ''
     support_used: list[str] = Field(default_factory=list)
@@ -241,6 +245,7 @@ class DialogueResponse(Contract):
     support_provided: list[str] = Field(default_factory=list)
     kind: Literal['dialogue','hint','translation','repeat'] = 'dialogue'
     hint_content: HintContent | None = None
+    continuation: Literal['none','advanced','retry'] = 'none'
 
 class LearnerInput(Contract):
     session_id: str

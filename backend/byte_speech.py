@@ -1,8 +1,9 @@
 """DeepSeek text + ByteDance 16k PCM ASR / 24k PCM TTS."""
 import asyncio
 import io
+import re
 import wave
-from .providers import APIProvider, ProviderFailure, ReviewRequired, spoken_clock
+from .providers import APIProvider, ProviderFailure, ReviewRequired, speech_pronunciation
 from .doubao.asr_client import DoubaoASRClient, AsrResult, AsrErrorResult
 from .doubao.tts_client import (DoubaoTTSClient, EVENT_SESSION_FINISHED, EVENT_SESSION_FAILED,
                               EVENT_SESSION_CANCELED)
@@ -26,7 +27,7 @@ class DeepSeekByteProvider(APIProvider):
         try:
             async with asyncio.timeout(60):
                 await client.connect();id=await client.start_session()
-                await client.send_text(id,spoken_clock(text));await client.finish_session(id)
+                await client.send_text(id,speech_pronunciation(text));await client.finish_session(id)
                 async for msg in client.messages():
                     if msg.audio:chunks.append(msg.audio)
                     if msg.event in (-1,EVENT_SESSION_FAILED,EVENT_SESSION_CANCELED):raise ProviderFailure('ByteDance synthesis failed')
@@ -39,7 +40,13 @@ class DeepSeekByteProvider(APIProvider):
             return b.getvalue()
         finally:await client.close()
 
-    async def transcribe(self,data,filename):
+    async def transcribe_learning(self,data,filename,material):
+        words=re.findall(r"[A-Za-z]{3,}",material.get("expression", ""))
+        stop=set("let check pack unpack and you your the this that with about how three four five thirty prepare not can could would should tomorrow afternoon morning".split())
+        hotwords=list(dict.fromkeys(w.lower() for w in words if w.lower() not in stop))[:20]
+        return await self.transcribe(data,filename,hotwords=hotwords)
+
+    async def transcribe(self,data,filename,hotwords=None):
         info,pcm=wav_info(data)
         if info['channels']!=1 or info['width']!=2:raise ValueError('ASR requires mono PCM16 WAV')
         if info['rate']!=16000:
@@ -53,7 +60,7 @@ class DeepSeekByteProvider(APIProvider):
                 converted.append(round(samples[j]*(1-frac)+samples[min(j+1,len(samples)-1)]*frac))
             pcm=struct.pack('<'+'h'*len(converted),*converted)
         client=DoubaoASRClient(api_key=self.settings.doubao_key,resource_id=self.settings.doubao_asr_resource,
-            language='en-US',two_pass=True)
+            language='en-US',two_pass=True,hotwords=hotwords)
         async def send():
             for start in range(0,len(pcm),6400):await client.send_audio(pcm[start:start+6400])
             await client.send_audio(b'',is_last=True)

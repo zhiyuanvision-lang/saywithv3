@@ -13,6 +13,8 @@ class Sessions:
     def __init__(self,store,curriculum,provider,generator,assessor,settings):
         self.store=store;self.curriculum=curriculum;self.provider=provider;self.generator=generator;self.assessor=assessor;self.settings=settings
         self.support=TeachingSupport(self)
+        from .learning_practice import LearningPracticeService
+        self.learning=LearningPracticeService(self)
         from .lexical_practice import LexicalPracticeService
         self.lexical=LexicalPracticeService(self)
 
@@ -22,7 +24,7 @@ class Sessions:
         if not lesson['learner_ready'] and not (self.settings.mode=='fixture' and fixture):raise Conflict('课程尚未通过发布审核')
         assignment=self.store.get('TeachingAssignment',lesson['assignment_id'],owner)['payload']
         if entry_kind=='review' and assignment['purpose'] not in ('consolidation','retention','transfer'):raise Conflict('该课程没有复习依据')
-        metadata=copy.deepcopy(assignment.get('review_metadata',{}));metadata['entry_kind']=entry_kind
+        metadata=copy.deepcopy(assignment.get('review_metadata',{}));metadata['entry_kind']=entry_kind;metadata['retention_eligible']=entry_kind=='review'
         if metadata.get('baseline_time') is not None:metadata['actual_interval_seconds']=max(0,time.time()-metadata['baseline_time'])
         id=uid();session={'session_id':id,'lesson_id':lesson_id,'lesson_version':lesson['lesson_version'],
             'phase':'independent_application' if entry_kind=='review' else 'learning','review_metadata':metadata,'entry_kind':entry_kind,'owner':owner,'fixture':fixture,'task':copy.deepcopy(lesson['practice_task']),
@@ -47,6 +49,14 @@ class Sessions:
         if phase=='finished':
             try:assessment=self.store.get('AssessmentResult',id+'/'+task['task_id'],owner)['payload']
             except Missing:pass
+        feedback_turn=None
+        if assessment:
+            learners=[t for t in s['turns'] if t['speaker']=='learner']
+            for turn in learners:
+                try:advice=self.store.get('ReplyFeedback',id+'/'+turn['turn_id'],owner)['payload']
+                except Missing:continue
+                if advice['status']=='correction':feedback_turn=turn['turn_id'];break
+            if feedback_turn is None and learners:feedback_turn=learners[-1]['turn_id']
         # Only explicit projection fields are emitted; private facts/criteria remain server-side.
         view=LearnerLessonView(session_id=id,lesson_id=s['lesson_id'],lesson_version=s['lesson_version'],
             task_id=task['task_id'],phase=phase,instruction=task['learner_prompt'],
@@ -58,7 +68,9 @@ class Sessions:
             title=(lesson.get('title_zh') if phase=='learning' else '') or self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])['outcome'],
             entry_kind=s.get('entry_kind','course'),review_metadata={k:v for k,v in s.get('review_metadata',{}).items() if k not in ('transfer_conditions',)},
             partner_name=task['partner_private_facts'].get('name','对方'),
-            demonstration=self.support.demo(s,lesson),guided_round=s.get('guided_index',0)+1 if phase in ('supported_practice','guided_feedback') else None,
+            demonstration=self.support.demo(s,lesson),guided_round=s.get('guided_index',0)-s.get('guided_start_index',0)+1 if phase in ('supported_practice','guided_feedback') else None,
+            feedback_turn_id=feedback_turn,practice_focus=s.get('practice_focus',''),
+            guided_round_total=s.get('guided_end_index',2)-s.get('guided_start_index',0)+1,learning_practice=self.learning.view(s) if phase=='learning' else None,
             guided_round_title=ROUND_NAMES[s.get('guided_index',0)] if phase in ('supported_practice','guided_feedback') else '',
             support_used=s['support_used'],shadow_feedback=s.get('shadow_feedback'),assessment=assessment).model_dump()
         if phase=='learning' and any(not p['completed'] for p in view['lexical_practices']):
@@ -99,14 +111,22 @@ class Sessions:
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             done={e['material_index'] for e in s['learning_events']}
             if len(done)<len(lesson['learning_materials']):raise Conflict('请先完成本次学习内容')
-            if advance_round and len(set(s.get('shadow_completed_indices',[])))<len(lesson['learning_materials']):raise Conflict('请先完成每个表达的跟读')
+            if s.get('active_learning'):
+                if any(s.get('learning_practices',{}).get(str(i),{}).get('stage')!='complete' for i in range(len(lesson['learning_materials']))):
+                    raise Conflict('请先完成每个表达的脱离示范练习')
+            elif advance_round and len(set(s.get('shadow_completed_indices',[])))<len(lesson['learning_materials']):
+                raise Conflict('请先完成每个表达的跟读')
             await self.support.prepare(s,owner)
-            s['phase']='supported_practice';s['task']=copy.deepcopy(s['guided_tasks'][0])
+            s['guided_start_index']=1 if s.get('active_learning') else 0
+            s['guided_index']=s['guided_start_index']
+            s['phase']='supported_practice';s['task']=copy.deepcopy(s['guided_tasks'][s['guided_index']])
         elif s['phase']=='supported_practice' or (s['phase']=='evaluating' and s.get('evaluating_phase')=='supported_practice'):
             if not any(t['speaker']=='learner' for t in s['turns']):raise Conflict('请先完成一次有提示练习')
-            await self.finish_attempt(id,owner)
+            result=await self.finish_attempt(id,owner)
             row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
-            if advance_round and s.get('guided_index',2)<2:
+            # A clean successful continuation needs no duplicate small task. Legacy sessions retain their sequence.
+            early=s.get('active_learning') and not s.get('remediation') and result['validation']['status']=='accepted' and result['target_results'][0]['result']=='completed' and result['target_results'][0]['confidence']=='high' and not any(x in ('意图提示','句型提示','完整示例','所学表达','模型提示','查词释义','回答示范') for x in s['support_used'])
+            if advance_round and not early and s.get('guided_index',2)<s.get('guided_end_index',2):
                 s['guided_index']+=1
                 s.update(phase='supported_practice',task=copy.deepcopy(s['guided_tasks'][s['guided_index']]),turns=[],started_at=timestamp(),request_responses={})
             elif advance_round:
@@ -115,10 +135,10 @@ class Sessions:
                 return self.view(id,owner)
             else:
                 lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
-                s.update(phase='independent_application',task=copy.deepcopy(lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
+                s.update(phase='independent_application',task=copy.deepcopy(s.get('next_independent_task') or lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
         elif s['phase']=='guided_feedback':
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
-            s.update(phase='independent_application',task=copy.deepcopy(lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
+            s.update(phase='independent_application',task=copy.deepcopy(s.get('next_independent_task') or lesson['independent_task']),turns=[],support_used=[],started_at=timestamp(),request_responses={})
         else:raise Conflict('无法进入下一阶段')
         asset=next((x for x in self.store.list('AudioAsset',owner) if x['payload'].get('text')==s['task']['opening']),None)
         s['turns']=[{'turn_id':uid(),'speaker':'partner','text':s['task']['opening'],
@@ -135,6 +155,12 @@ class Sessions:
         entry=LearnerInput.model_validate(data).model_dump()
         row=self.store.get('Session',id,owner);s=copy.deepcopy(row['payload'])
         key=entry['input_id'];hash=digest(entry)
+        try:
+            saved=self.store.get('InputResponse',id+'/'+key,owner)['payload']
+        except Missing:saved=None
+        if saved:
+            if saved['hash']!=hash:raise Conflict('Input ID reused with different data')
+            return saved['response']
         if key in s['request_responses']:
             saved=s['request_responses'][key]
             if saved['hash']!=hash:raise Conflict('Input ID reused with different data')
@@ -151,7 +177,8 @@ class Sessions:
             if kind=='text' and 'text_input' not in self.support.actions(s):raise Conflict('本次任务不允许文字回应')
             receipt_id=id+'/'+key
             try:
-                progress_row=self.store.get('InputProgress',receipt_id,owner);receipt=progress_row['payload'];progress_version=progress_row['version']
+                progress_row=self.store.get('InputProgress',receipt_id,owner)
+                receipt=progress_row['payload'];progress_version=progress_row['version']
                 if receipt['request_hash']!=hash:raise Conflict('Input ID reused with different data')
             except Missing:
                 receipt={'schema_version':'1.0','session_id':id,'input_id':key,'status':'recognizing','turn_id':uid(),'request_hash':hash,'audio_ref':entry.get('audio_ref')}
@@ -170,7 +197,11 @@ class Sessions:
             s['turns'].append(turn)
             lesson=self.store.get('LessonPackage',s['lesson_id'],owner)['payload']
             target=self.curriculum.target(lesson['target_ids'][0],lesson['map_version'])
-            reply=await self.provider.dialogue(task,s['turns'],target,s['phase'])
+            import asyncio
+            from .reply_feedback import analyze_reply
+            reply,_=await asyncio.gather(
+                self.provider.dialogue(task,s['turns'],target,s['phase']),
+                analyze_reply(self,id,owner,s,turn))
             text=reply.get('text','')
             if not isinstance(text,str) or not text.strip() or len(text)>1000:raise ReviewRequired('无合格对话回复')
             # Runtime role outputs get a separate semantic gate before delivery.
@@ -191,9 +222,22 @@ class Sessions:
         s['request_responses'][key]={'hash':hash,'response':public_response}
         self.store.put('Session',id,owner,s,expected=row['version'])
         receipt.update(status='completed')
-        progress_version=self.store.put('InputProgress',receipt_id,owner,receipt,expected=progress_version)
-        # Partner closure is a proposal, never proof of mastery. Check actual learner evidence.
-        if reply.get('conversation_complete') is True and s['phase']=='independent_application' and not s['fixture']:
+        self.store.put('InputProgress',receipt_id,owner,receipt,expected=progress_version)
+        from .conversation_end import learner_closed
+        closed=learner_closed(turn,reply)
+        if closed:
+            try:
+                if s['phase']=='supported_practice':
+                    latest=self.store.get('Session',id,owner)
+                    await self.next(id,owner,latest['version'],advance_round=True)
+                else:
+                    # End naturally even when the task is partial; assessment still validates evidence.
+                    await self.finish(id,owner)
+                public_response['continuation']='advanced'
+            except (ValueError,ReviewRequired,ProviderFailure):
+                public_response['continuation']='retry'
+        # Partner completion is a proposal, never proof of mastery. Check actual learner evidence.
+        if not closed and reply.get('conversation_complete') is True and s['phase']=='independent_application' and not s['fixture']:
             try:
                 candidate=AssessmentCandidate.model_validate(await self.provider.evaluate(task,s['turns'],target)).model_dump()
                 checks=candidate['checks'];needed=task['assessment_contract']['critical_checks'];refs={t['turn_id'] for t in s['turns']};learner_refs={t['turn_id'] for t in s['turns'] if t['speaker']=='learner'}
@@ -203,6 +247,8 @@ class Sessions:
             except (ValueError,ReviewRequired,ProviderFailure):
                 # Conversation remains available for manual completion and retry.
                 pass
+        # Keep response receipts across automatic task changes; a network retry cannot add the farewell again.
+        self.store.put('InputResponse',id+'/'+key,owner,{'hash':hash,'response':public_response})
         return public_response
 
     async def finish_attempt(self,id,owner,candidate=None):

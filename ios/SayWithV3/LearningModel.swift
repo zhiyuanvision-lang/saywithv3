@@ -38,6 +38,10 @@ final class LearningModel {
     private var pendingUpload:Data?
     private var pendingShadowAudio:Data?
     var hasPendingShadow:Bool {pendingShadowAudio != nil}
+    private var pendingLearningAudio:Data?
+    private var pendingLearningShadow=false
+    private var pendingLearningRequest:[String:JSONValue]?
+    var hasPendingLearning:Bool {pendingLearningAudio != nil || pendingLearningRequest != nil}
     private var pendingShadowRequest:[String:JSONValue]?
     private var api: API?
     private var activeJobKey: String?
@@ -170,7 +174,7 @@ final class LearningModel {
     }
     private func clearAccountMemory() {
         session=nil;job=nil;assessment=nil;recommendations=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil
-        pendingShadowRequest=nil;pendingShadowAudio=nil;pendingRepeat=nil;activeJobKey=nil
+        pendingLearningRequest=nil;pendingLearningAudio=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;pendingRepeat=nil;activeJobKey=nil
         translations=[:];hintText=nil;hintResponse=nil;shadowFeedback=nil;personalText="";typedReply=""
         reviewEntry=false;selectedMaterial=0;answerVisible=true
     }
@@ -248,13 +252,14 @@ final class LearningModel {
         hintText=nil;hintResponse=nil;shadowFeedback=nil
         personalText="";answerVisible=true;typedReply=""
     }
-    private func watchInput(_ key:String,sessionID:String,api:API) async {
+    private func watchInput(_ key:String,sessionID:String,api:API,learning:Bool=false) async {
         while !Task.isCancelled && outgoingMessage?.id==key {
             do {
                 let progress:InputProgress=try await api.request("v1/sessions/"+sessionID+"/inputs/"+key)
                 guard !Task.isCancelled,outgoingMessage?.id==key,session?.view.sessionId==sessionID else {return}
                 outgoingMessage?.turnId=progress.turnId;outgoingMessage?.text=progress.transcript
-                outgoingMessage?.audioRef=progress.audioRef;outgoingMessage?.stage=progress.status=="completed" ? "responding":progress.status
+                outgoingMessage?.audioRef=progress.audioRef
+                outgoingMessage?.stage=learning ? (progress.status=="recognizing" ? "recognizing":"checking"):(progress.status=="completed" ? "responding":progress.status)
             } catch is CancellationError {return} catch {}
             do {try await Task.sleep(for:.milliseconds(500))} catch {return}
         }
@@ -286,6 +291,8 @@ final class LearningModel {
         if response.kind=="translation",let key=sourceTurnID ?? pendingInput?["source_turn_id"]?.text {translations[key]=response.text}
         session=try await api.request("v1/sessions/"+current.view.sessionId)
         pendingInput=nil;typedReply="";outgoingMessage=nil
+        if response.continuation=="advanced",session?.view.phase=="finished" {try await refresh()}
+        if response.continuation=="retry" {error="对话已结束，后续流程暂未完成，请点击继续流程。"}
     }
     func retryInput() async throws {try await send(kind:pendingUpload == nil ? "text" : "speech",audio:pendingUpload)}
     var hasPendingInput: Bool {pendingInput != nil || pendingUpload != nil}
@@ -317,6 +324,55 @@ final class LearningModel {
         if session?.view.sessionId==current.view.sessionId {session=refreshed}
         pendingRepeat=nil
     }
+    func learningAction(_ action:String) async throws {
+        guard let api,let current=session else {return}
+        session=try await api.request("v1/sessions/"+current.view.sessionId+"/learning-practice",method:"POST",body:[
+            "material_index":.number(Double(selectedMaterial)),"action":.string(action),
+            "expected_session_version":.number(Double(current.sessionVersion))])
+    }
+    func learningAttempt(_ audio:Data,shadow:Bool=false) async throws {
+        guard let api,let current=session else {return}
+        if pendingLearningRequest==nil {
+            pendingLearningAudio=audio;pendingLearningShadow=shadow;requestStatus="上传中"
+            let inputID=UUID().uuidString
+            outgoingMessage=OutgoingMessage(id:inputID,stage:"uploading")
+            let uploaded=try await api.upload(audio)
+            var body:[String:JSONValue]=["material_index":.number(Double(selectedMaterial)),
+                "action":.string(shadow ? "shadow":"attempt"),"input_id":.string(inputID),
+                "audio_ref":.string(uploaded.audioRef),"expected_session_version":.number(Double(current.sessionVersion))]
+            if !shadow,let stage=current.view.learningPractice?.stage {body["stage"] = .string(stage)}
+            pendingLearningRequest=body
+        }
+        outgoingMessage?.stage="recognizing"
+        let receiptTask=Task {if let key=pendingLearningRequest?["input_id"]?.text {await watchInput(key,sessionID:current.view.sessionId,api:api,learning:true)}}
+        defer {receiptTask.cancel()}
+        requestStatus="正在确认表达"
+        session=try await api.request("v1/sessions/"+current.view.sessionId+"/learning-practice",method:"POST",body:pendingLearningRequest)
+        pendingLearningRequest=nil;pendingLearningAudio=nil;outgoingMessage=nil
+    }
+    func retryLearningAttempt() async throws {try await learningAttempt(pendingLearningAudio ?? Data(),shadow:pendingLearningShadow)}
+    func recheckLearningRecognition(_ ref:String) async throws {
+        guard let current=session else {return}
+        let key=UUID().uuidString
+        outgoingMessage=OutgoingMessage(id:key,stage:"recognizing")
+        pendingLearningShadow=false;pendingLearningAudio=nil
+        pendingLearningRequest=["material_index":.number(Double(selectedMaterial)),"action":.string("attempt"),
+            "input_id":.string(key),"audio_ref":.string(ref),"stage":.string(current.view.learningPractice?.stage ?? "recall"),
+            "recognition_retry":.bool(true),"expected_session_version":.number(Double(current.sessionVersion))]
+        try await learningAttempt(Data())
+    }
+    func confirmLearningTranscript(_ text:String,feedback:LearningPracticeView.Feedback) async throws {
+        guard let current=session else {return}
+        let key=UUID().uuidString
+        outgoingMessage=OutgoingMessage(id:key,text:text,stage:"checking")
+        pendingLearningShadow=false;pendingLearningAudio=nil
+        pendingLearningRequest=["material_index":.number(Double(selectedMaterial)),"action":.string("attempt"),
+            "input_id":.string(key),"audio_ref":.string(feedback.audioRef),"stage":.string(current.view.learningPractice?.stage ?? "recall"),
+            "confirmed_transcript":.string(text),"original_transcript":.string(feedback.transcript),
+            "expected_session_version":.number(Double(current.sessionVersion))]
+        try await learningAttempt(Data())
+    }
+    func discardLearningAttempt() {pendingLearningRequest=nil;pendingLearningAudio=nil;outgoingMessage=nil}
     func shadow(_ audio:Data) async throws {
         guard let api,let current=session else {return}
         if pendingShadowRequest==nil {
@@ -336,11 +392,20 @@ final class LearningModel {
             selectedMaterial+=1;shadowFeedback=nil;answerVisible=true
         } else {try await next()}
     }
+    func replyAdvice(_ turnID:String) async throws -> ReplyAdvice {
+        guard let api,let current=session else {throw APIError.missingToken}
+        let value:ReplyAdvice=try await api.request("v1/sessions/"+current.view.sessionId+"/turns/"+turnID+"/feedback",method:"POST")
+        // Viewing a worked example changes support tracking and the session version.
+        if session?.view.sessionId==current.view.sessionId {
+            session=try await api.request("v1/sessions/"+current.view.sessionId)
+        }
+        return value
+    }
     func transition(_ action:String) async throws {
         guard let api,let current=session else {return}
         session=try await api.request("v1/sessions/"+current.view.sessionId+"/transition",method:"POST",body:[
             "action":.string(action),"expected_session_version":.number(Double(current.sessionVersion))])
-        pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;assessment=nil;shadowFeedback=nil
+        pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingLearningRequest=nil;pendingLearningAudio=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;assessment=nil;shadowFeedback=nil
         if action=="exit" {leave()}
     }
     func backToHome() {
@@ -353,6 +418,9 @@ final class LearningModel {
             let restored:SessionState=try await api.request("v1/sessions/"+id)
             if !["finished","abandoned"].contains(restored.view.phase) {
                 session=restored
+                if restored.view.phase=="learning" {
+                    selectedMaterial=restored.view.learningPractice?.materialIndex ?? restored.view.materials.indices.first { !(restored.view.completedMaterialIndices ?? []).contains($0) } ?? 0
+                }
                 let completed=restored.view.completedMaterialIndices ?? []
                 selectedMaterial=restored.view.materials.indices.first { !completed.contains($0) } ?? max(0,restored.view.materials.count-1)
                 return
@@ -361,7 +429,7 @@ final class LearningModel {
         try await generate()
     }
     func leave() {
-        session=nil;assessment=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;translations=[:];shadowFeedback=nil;job=nil;activeJobKey=nil
+        session=nil;assessment=nil;pendingInput=nil;pendingUpload=nil;outgoingMessage=nil;pendingLearningRequest=nil;pendingLearningAudio=nil;pendingShadowRequest=nil;pendingShadowAudio=nil;hintText=nil;hintResponse=nil;translations=[:];shadowFeedback=nil;job=nil;activeJobKey=nil
         for key in ["activeSession","activeJob","pendingJobKey","pendingJobRequest","activeEntryKind"] {
             UserDefaults.standard.removeObject(forKey:key+storageScope)
         }

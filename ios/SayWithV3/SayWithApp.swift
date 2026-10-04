@@ -51,7 +51,7 @@ struct RootView: View {
                             Text(error).foregroundStyle(.red).accessibilityIdentifier("errorMessage")
                             if model.hasPendingInput {Button("重试发送") {Task {await model.perform {try await model.retryInput()}}}}
                         }
-                        if model.busy {ProgressView("正在处理…").accessibilityIdentifier("busyIndicator")}
+                        if model.busy && model.job?.terminal != false {ProgressView("正在处理…").accessibilityIdentifier("busyIndicator")}
                     }.padding(.horizontal,20).padding(.vertical,20)
                 }
                 }
@@ -185,9 +185,24 @@ struct RootView: View {
             }
             if model.health?.mode=="fixture" {Text("当前为测试模式，不更新真实能力。").font(.footnote).foregroundStyle(.secondary)}
             if let job=model.job,!job.terminal {
-                Text(job.label).accessibilityIdentifier("jobState")
-                Button("继续查看生成结果") {Task {await model.perform {try await model.poll()}}}.disabled(model.busy)
-                Button("取消生成",role:.destructive) {Task {do {try await model.cancelJob()} catch {model.error=error.localizedDescription}}}
+                VStack(alignment:.leading,spacing:12) {
+                    HStack {ProgressView();Text(job.label).font(.headline).accessibilityIdentifier("jobState")}
+                    if let progress=job.progress,let total=progress["audio_total"],total>0 {
+                        if job.state == "generating_audio" {Text("声音已准备 \(progress["audio_ready"] ?? 0) / \(total)").font(.subheadline).foregroundStyle(.secondary)}
+                        if job.state == "checking_audio" {Text("声音已检查 \(progress["audio_checked"] ?? 0) / \(total)").font(.subheadline).foregroundStyle(.secondary)}
+                    }
+                    if let created=job.createdAt {
+                        TimelineView(.periodic(from:.now,by:1)) {context in
+                            let seconds=max(0,Int(context.date.timeIntervalSince1970-created))
+                            Text("已等待 \(seconds) 秒").font(.footnote).foregroundStyle(.secondary).monospacedDigit()
+                        }
+                    }
+                    Text((job.textRevisions ?? 0)>0 ? "正在调整内容，让练习更符合本次目标。完成后会自动打开。":"正在准备适合你的练习和声音，完成后会自动打开。")
+                        .font(.footnote).foregroundStyle(.secondary)
+                    if !model.busy {Button("继续查看生成结果") {Task {await model.perform {try await model.poll()}}}}
+                    Button("取消生成",role:.destructive) {Task {do {try await model.cancelJob()} catch {model.error=error.localizedDescription}}}
+                }.padding(18).frame(maxWidth:.infinity,alignment:.leading)
+                    .background(Color(uiColor:.secondarySystemGroupedBackground),in:RoundedRectangle(cornerRadius:16))
             }
         }
     }

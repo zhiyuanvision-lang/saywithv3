@@ -25,7 +25,7 @@ extension LearningModel {
 
 struct FeedbackComposer:View {
     var model:LearningModel
-    @Environment(\.dismiss) private var dismiss
+    let onClose:()->Void
     @Environment(\.scenePhase) private var scenePhase
     @State private var category="bug"
     @State private var content=""
@@ -67,8 +67,8 @@ struct FeedbackComposer:View {
                 if mine.isEmpty {Text("还没有反馈记录").foregroundStyle(.secondary)}
                 ForEach(mine) {ticket in NavigationLink {FeedbackThread(model:model,ticket:ticket)} label:{VStack(alignment:.leading,spacing:6) {HStack {Text(ticket.statusLabel).font(.caption).foregroundStyle(.secondary);Spacer();Text(String(ticket.createdAt.replacingOccurrences(of:"T",with:" ").prefix(16))).font(.caption).foregroundStyle(.tertiary)};LookupText(ticket.content).lineLimit(2);if let reply=ticket.reply,!reply.isEmpty {LookupText("官方回复："+reply).font(.footnote).foregroundStyle(.secondary)}}}}
             }
-        }.navigationTitle("意见反馈").navigationBarTitleDisplayMode(.inline).tint(feedbackAccent).scrollDismissesKeyboard(.interactively)
-        .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {dismiss()}.accessibilityIdentifier("closeFeedback")}}
+        }.disabled(busy).navigationTitle("意见反馈").navigationBarTitleDisplayMode(.inline).tint(feedbackAccent).scrollDismissesKeyboard(.interactively)
+        .toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {save();onClose()}.accessibilityIdentifier("closeFeedback")}}
         .safeAreaInset(edge:.bottom) {Button {submit()} label:{HStack {if busy {ProgressView()};Text("提交反馈").frame(maxWidth:.infinity,minHeight:44)}}.buttonStyle(.borderedProminent).disabled(busy || (content.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty && images.isEmpty)).accessibilityIdentifier("submitFeedback").padding(.horizontal,20).padding(.vertical,10).background(.regularMaterial)}
         .task {restore();await loadMine()}
         .onChange(of:content) {_,_ in changed()}.onChange(of:contact) {_,_ in changed()}.onChange(of:category) {_,_ in changed()}.onChange(of:images) {_,_ in changed()}
@@ -82,7 +82,6 @@ struct FeedbackComposer:View {
             }};picked=[]} catch {self.error=error.localizedDescription}
         }}
         .sheet(isPresented:Binding(get:{zoomImage != nil},set:{if !$0 {zoomImage=nil}})) {if let data=zoomImage,let image=UIImage(data:data) {NavigationStack {Image(uiImage:image).resizable().scaledToFit().toolbar {ToolbarItem(placement:.cancellationAction) {Button("关闭") {zoomImage=nil}}}}}}
-        .disabled(busy)
     }
     private func submit() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),to:nil,from:nil,for:nil)
@@ -161,10 +160,11 @@ struct GlobalFeedbackHost:UIViewRepresentable {
         return hit is UIButton || hit?.superview is UIButton ? hit:nil
     }
 }
-@MainActor final class FeedbackOrbController:UIViewController {
+@MainActor final class FeedbackOrbController:UIViewController,UIAdaptivePresentationControllerDelegate {
     let model:LearningModel
     private let button=UIButton(type:.custom)
     private var start=CGPoint.zero
+    private weak var returnWindow:UIWindow?
     init(model:LearningModel) {self.model=model;super.init(nibName:nil,bundle:nil)}
     @available(*,unavailable) required init?(coder:NSCoder) {fatalError()}
     override func viewDidLoad() {
@@ -187,7 +187,20 @@ struct GlobalFeedbackHost:UIViewRepresentable {
     @objc private func open() {
         guard presentedViewController==nil else {return}
         NotificationCenter.default.post(name:Notification.Name("PauseSayWithLearning"),object:nil)
-        present(UIHostingController(rootView:NavigationStack {FeedbackComposer(model:model)}.onDisappear {NotificationCenter.default.post(name:Notification.Name("ResumeSayWithLearning"),object:nil)}),animated:true)
+        returnWindow=view.window?.windowScene?.windows.first {$0.isKeyWindow && $0 !== view.window}
+        let host=UIHostingController(rootView:NavigationStack {FeedbackComposer(model:model,onClose:{[weak self] in self?.closeFeedback()})})
+        present(host,animated:true)
+        host.presentationController?.delegate=self
+        view.window?.makeKey()
+    }
+    private func closeFeedback() {
+        view.window?.endEditing(true)
+        dismiss(animated:true) {[weak self] in self?.restoreEntry()}
+    }
+    func presentationControllerDidDismiss(_ presentationController:UIPresentationController) {restoreEntry()}
+    private func restoreEntry() {
+        returnWindow?.makeKey();returnWindow=nil
+        NotificationCenter.default.post(name:Notification.Name("ResumeSayWithLearning"),object:nil)
     }
     @objc private func drag(_ gesture:UIPanGestureRecognizer) {
         if gesture.state == .began {start=button.center}

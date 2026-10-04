@@ -764,6 +764,41 @@
         "title": "Demonstration",
         "type": "array"
       },
+      "feedback_turn_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Feedback Turn Id"
+      },
+      "practice_focus": {
+        "default": "",
+        "title": "Practice Focus",
+        "type": "string"
+      },
+      "guided_round_total": {
+        "default": 3,
+        "title": "Guided Round Total",
+        "type": "integer"
+      },
+      "learning_practice": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Learning Practice"
+      },
       "guided_round": {
         "anyOf": [
           {
@@ -973,6 +1008,16 @@
           }
         ],
         "default": null
+      },
+      "continuation": {
+        "default": "none",
+        "enum": [
+          "none",
+          "advanced",
+          "retry"
+        ],
+        "title": "Continuation",
+        "type": "string"
       }
     },
     "required": [

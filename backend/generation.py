@@ -19,7 +19,8 @@ log=logging.getLogger('saywith.generation')
 
 def inspect_lesson(lesson,assignment,target):
     LessonPackage.model_validate(lesson)
-    issues=[]
+    from .lesson_policy import policy_issues
+    issues=policy_issues(lesson,assignment.get('resource_plan',{}).get('speaking_plan'))
     if lesson['target_ids']!=assignment['target_ids'] or lesson['map_version']!=target['map_version']:issues.append('目标或地图版本不匹配')
     if not lesson.get('practice_task'):issues.append('缺少有提示练习')
     for name in ['practice_task','independent_task']:
@@ -79,21 +80,73 @@ class Generator:
             self.store.put('QualityReport',report['report_id'],row['owner'],report,conn=c)
         return True
 
-    async def audio(self,text,owner,purpose):
-        key=digest({'text':text,'speaker':self.settings.doubao_speaker,'resource':self.settings.doubao_tts_resource,
-                    'fixture':self.provider.fixture,'speech_text_version':'clock-v2'})
-        from .store import Missing
+    def audio_key(self,text,version="clock-v3"):
+        return digest({'text':text,'speaker':self.settings.doubao_speaker,'resource':self.settings.doubao_tts_resource,
+                       'fixture':self.provider.fixture,'speech_text_version':version})
+
+    async def concurrent(self,items,operation):
+        """Bound provider load; persist each result on the worker, cancel siblings on failure."""
+        semaphore=asyncio.Semaphore(3)
+        async def run(item):
+            async with semaphore:return item,await operation(item)
+        tasks=[asyncio.create_task(run(item)) for item in items]
         try:
-            row=self.store.get('AudioCache',key)
-            file=self.settings.media_dir/row['payload']['filename']
-            if file.is_file():
+            for future in asyncio.as_completed(tasks):yield await future
+        finally:
+            for task in tasks:
+                if not task.done():task.cancel()
+            await asyncio.gather(*tasks,return_exceptions=True)
+
+    async def check_audio(self,asset):
+        data=(self.settings.media_dir/asset['filename']).read_bytes()
+        if hashlib.sha256(data).hexdigest()!=asset['sha256']:raise ReviewRequired('音频文件校验失败，需要重新准备')
+        transcription=await self.provider.transcribe(data,asset['filename'])
+        actual=audio_normalized(transcription['text']);expected=audio_normalized(asset['text'])
+        alignment=SequenceMatcher(None,expected,actual).ratio()
+        if alignment<0.85:raise ReviewRequired('合成音频与文本对照不一致，需要音频审核')
+        numbers=lambda x:re.findall(r'\b\d+\b',x)
+        negation=r"\b(not|can t|don t|isn t|won t|couldn t|didn t|doesn t)\b"
+        if numbers(actual)!=numbers(expected) or bool(re.search(negation,actual))!=bool(re.search(negation,expected)):
+            raise ReviewRequired('关键数字或否定信息需要音频审核')
+        return {'asset_id':asset['asset_id'],'expected':asset['text'],'transcript':transcription['text'],
+                'similarity':alignment,'decision':'pass','asr':transcription}
+
+    def remember_audio_check(self,asset,owner):
+        # A cache hit skips ASR only for the exact previously verified bytes/text/voice.
+        from .store import Missing
+        with self.store.transaction() as c:
+            owned=self.store.get('AudioAsset',asset['asset_id'],owner,conn=c)
+            self.store.put('AudioAsset',asset['asset_id'],owner,{**owned['payload'],'quality':'passed'},expected=owned['version'],conn=c)
+            key=self.audio_key(asset['text'])
+            try:cached=self.store.get('AudioCache',key,conn=c)
+            except Missing:return
+            if cached['payload']['sha256']==asset['sha256']:
+                self.store.put('AudioCache',key,'system',{**cached['payload'],'quality':'passed'},expected=cached['version'],conn=c)
+
+    async def audio(self,text,owner,purpose):
+        key=self.audio_key(text)
+        from .store import Missing
+        for cache_key in (key,self.audio_key(text,version='clock-v2')):
+            try:
+                row=self.store.get('AudioCache',cache_key)
                 asset=row['payload']
+                # Previously verified v2 speech remains safe to reuse. Unchecked old
+                # abbreviations must be synthesized with the clearer pronunciation.
+                if cache_key!=key and asset.get('quality')!='passed':continue
+                file=self.settings.media_dir/asset['filename']
+                if not file.is_file():continue
+                if hashlib.sha256(file.read_bytes()).hexdigest()!=asset['sha256']:raise ReviewRequired('缓存音频文件校验失败，需要重新准备')
+                if cache_key!=key:
+                    with self.store.transaction() as c:
+                        try:
+                            with c.begin_nested():self.store.put('AudioCache',key,'system',asset,conn=c)
+                        except IntegrityError:pass
                 try:self.store.get('AudioAsset',asset['asset_id'],owner);return asset
                 except Missing:
                     id=uid();cloned={**asset,'asset_id':id,'audio_ref':'/v1/media/'+id}
                     self.store.put('AudioAsset',id,owner,cloned)
                     return cloned
-        except Missing:pass
+            except Missing:pass
         data=await self.provider.speech(text)
         info,_=wav_info(data)
         if info['channels']!=1 or info['width']!=2:raise ReviewRequired('Invalid generated speech format')
@@ -151,7 +204,7 @@ class Generator:
                 p['lesson']=lesson;row=self.store.advance(row,'checking_text',p)
             if 'text_report' not in p:
                 issues=inspect_lesson(p['lesson'],p['assignment'],p['target'])
-                review=await self.provider.review(p['lesson'],{**p['target'],'lexical_resources':p['assignment']['resource_plan'].get('notebook_words',[])}) if not issues else {'decision':'fail','reasons':issues}
+                review=await self.provider.review(p['lesson'],{**p['target'],'lexical_resources':p['assignment']['resource_plan'].get('notebook_words',[]),'speaking_plan':p['assignment']['resource_plan'].get('speaking_plan')}) if not issues else {'decision':'fail','reasons':issues}
                 p['text_report']={'report_id':uid(),'stage':'text','checker_version':'qa-v1','decision':review.get('decision'),
                                   'issues':issues,'semantic_review':review,'independent_model':False}
                 if issues or review.get('decision')!='pass':
@@ -166,34 +219,31 @@ class Generator:
                 row=self.store.advance(row,'generating_audio',p)
             lesson=p['lesson']
             if 'audio_assets' not in p:p['audio_assets']=[]
-            for m in lesson['learning_materials']:
-                if not m['audio_ref']:
-                    asset=await self.audio(m['expression'],owner,'learning_example')
-                    m['audio_ref']=asset['audio_ref'];p['audio_assets'].append(asset)
+            pending=[]
+            # Dialogue demonstration also needs validated partner audio, not consecutive learner lines.
+            for m in lesson['learning_materials'][1:]:
+                if m.get('partner_line') and not any(a.get('text')==m['partner_line'] for a in p['audio_assets']):
+                    p['audio_assets'].append(await self.audio(m['partner_line'],owner,'partner_opening'))
                     row=self.store.advance(row,'generating_audio',p)
+            for index,m in enumerate(lesson['learning_materials']):
+                if not m['audio_ref']:pending.append(('material',index,m['expression']))
             for name in ['practice_task','independent_task']:
                 task=lesson[name]
-                if not any(a.get('task_id')==task['task_id'] for a in p['audio_assets']):
-                    asset=await self.audio(task['opening'],owner,'partner_opening')
-                    p['audio_assets'].append({**asset,'task_id':task['task_id']})
-                    row=self.store.advance(row,'generating_audio',p)
+                if not any(a.get('task_id')==task['task_id'] for a in p['audio_assets']):pending.append(('task',name,task['opening']))
+            async def synthesize(item):return await self.audio(item[2],owner,'learning_example' if item[0]=='material' else 'partner_opening')
+            async for item,asset in self.concurrent(pending,synthesize):
+                if item[0]=='material':lesson['learning_materials'][item[1]]['audio_ref']=asset['audio_ref']
+                else:asset={**asset,'task_id':lesson[item[1]]['task_id']}
+                p['audio_assets'].append(asset)
+                row=self.store.advance(row,'generating_audio',p)
             row=self.store.advance(row,'checking_audio',p)
             reports=[]
-            for asset in p['audio_assets']:
-                if asset['quality']=='passed' or self.provider.fixture:continue
-                transcription=await self.provider.transcribe((self.settings.media_dir/asset['filename']).read_bytes(),asset['filename'])
-                actual=audio_normalized(transcription['text']);expected=audio_normalized(asset['text'])
-                alignment=SequenceMatcher(None,expected,actual).ratio()
-                p.setdefault('audio_alignment_checks',[]).append({'asset_id':asset['asset_id'],'expected':asset['text'],'transcript':transcription['text'],'similarity':alignment})
-                row=self.store.advance(row,'checking_audio',p)
-                if alignment<0.85:
-                    raise ReviewRequired('合成音频与文本对照不一致，需要音频审核')
-                # Critical numbers and negations need strict matching after number normalization.
-                numbers=lambda x:re.findall(r'\b\d+\b',x)
-                negation=r"\b(not|can t|don t|isn t|won t|couldn t|didn t|doesn t)\b"
-                if numbers(actual)!=numbers(expected) or bool(re.search(negation,actual))!=bool(re.search(negation,expected)):
-                    raise ReviewRequired('关键数字或否定信息需要音频审核')
-                asset['quality']='passed';reports.append({'asset_id':asset['asset_id'],'decision':'pass','asr':transcription})
+            unchecked=[a for a in p['audio_assets'] if a['quality']!='passed' and not self.provider.fixture]
+            async for asset,check in self.concurrent(unchecked,self.check_audio):
+                self.remember_audio_check(asset,owner)
+                asset['quality']='passed'
+                p.setdefault('audio_alignment_checks',[]).append(check)
+                reports.append(check)
                 row=self.store.advance(row,'checking_audio',p)
             p['audio_report']={'report_id':uid(),'stage':'audio','decision':'fixture' if self.provider.fixture else 'pass','checks':reports}
             lesson['quality']={'status':'draft' if self.provider.fixture else 'approved','report_ref':p['text_report']['report_id'],'qa_version':'qa-v1'}
