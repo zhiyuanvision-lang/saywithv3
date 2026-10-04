@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-04T08:33:15.267861+00:00",
+  "code_commit": "86846c7a74642b078e2653142b955c5598d24bd8",
+  "backend_tests": {
+    "passed": 153,
+    "subtests_passed": 4,
+    "log": "/tmp/multiturn-shipping-tests.log"
+  },
+  "ios_ui_test": {
+    "test": "LearningFlowTests/testTwoExpressionsAndOptionalDialogueAdvice",
+    "passed": true,
+    "log": "/tmp/multiturn-ui-build.log"
+  },
+  "deepseek_text_generation": {
+    "review": "pass",
+    "materials": 2,
+    "attempts": 2,
+    "synthetic_context": true
+  },
+  "live_audio_pipeline": {
+    "result": {
+      "state": "approved",
+      "error": null,
+      "materials": [
+        "How about six p.m. instead?",
+        "Great, six p.m. at the basketball court then."
+      ],
+      "audio_assets": 5,
+      "audio_quality": "pass",
+      "isolated_database": true
+    },
+    "method": "Replay a genuinely DeepSeek-generated and reviewed draft, shorten its independent opening, then run the full unchanged semantic/audio QA and publication pipeline in an isolated temporary database.",
+    "raw_generation_audio_probe": "A separate fresh generation was held for audio review after a critical number/negation mismatch. No failed audio was published."
+  },
+  "backend": {
+    "release": "/opt/saywith-learning/releases/20261004T082930Z-multiturn",
+    "previous": "/opt/saywith-learning/releases/20261004T082653Z-multiturn",
+    "health": {
+      "status": "ok",
+      "mode": "provider",
+      "map_version": "1.0.1-model-reviewed"
+    },
+    "api_service": "active",
+    "worker_service": "active"
+  },
+  "iphone": {
+    "version": "2.0.1",
+    "build": "629",
+    "installed": true,
+    "launched": true,
+    "version_verified": true,
+    "backend_url": "https://api.saywith.zhiyuanv.com/learning"
+  },
+  "policy": "New generations use the policy; in-progress lessons retain existing content and progress."
+}
